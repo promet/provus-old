@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+#: exec_target = cli
+
+## Runs PHPUnit tests found in custom code
+##
+## Usage: fin phpunit <args>
+##
+## Run `fin phpunit -h` for a full list of options.
+##
+## Runs with settings in the root `phpunit.xml` file.
+
+run_tests() {
+    cd ${PROJECT_ROOT}
+    ${PROJECT_ROOT}/vendor/bin/phpunit -c "${PROJECT_ROOT}/phpunit.xml" --printer "\\Drupal\\Tests\\Listeners\\HtmlOutputPrinter" "$@"
+    cd -
+}
+
+run_tests "$@"

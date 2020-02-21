@@ -1,0 +1,15 @@
+version: "2.1"
+
+services:
+  # Solr
+  solr:
+    extends:
+      file: ${HOME}/.docksal/stacks/services.yml
+      service: solr
+
+  # Memcached
+  memcached:
+    extends:
+      file: ${HOME}/.docksal/stacks/services.yml
+      service: memcached
+    command: ["-m", "256"]

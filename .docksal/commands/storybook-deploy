@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+fin exec "cp -r web/themes/custom/countyoc .; cd countyoc; yarn"
+git checkout storybook
+fin exec "cd countyoc; yarn build-storybook -o ../storybook"
+fin exec "rm -rf countyoc"
+#git add storybook
+#git commit -m "Updates storybook"
+#git push origin storybook
