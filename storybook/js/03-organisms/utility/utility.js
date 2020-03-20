@@ -1,0 +1,1 @@
+"use strict";Drupal.behaviors.tabs={attach:function attach(a){var b=!1,c=a.getElementById("google_translate_element");c&&(c.onclick=function(){if(!1===b){var c=a.getElementById("google_translate_element");c.innerHTML="",b=!0,new google.translate.TranslateElement({pageLanguage:"en",includedLanguages:"en,es,vi,ko,zh-TW"},"google_translate_element")}})}};
