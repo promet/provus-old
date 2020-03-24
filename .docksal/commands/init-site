@@ -67,9 +67,9 @@ init_settings ()
 	# Since we supply our own settings.php below, we have to drop the default file first.
 	# TODO: Uncomment the local config (settings.local.php) include section in settings.php inline instead.
 	# That'a the only change we need in the stock settings.php
-	rm -f "${SITEDIR_PATH}/settings.php"
+	#rm -f "${SITEDIR_PATH}/settings.php"
 
-	copy_settings_file "${PROJECT_ROOT}/.docksal/settings/settings.php" "${SITEDIR_PATH}/settings.php"
+	#copy_settings_file "${PROJECT_ROOT}/.docksal/settings/settings.php" "${SITEDIR_PATH}/settings.php"
 	copy_settings_file "${PROJECT_ROOT}/.docksal/settings/settings.local.php" "${SITEDIR_PATH}/settings.local.php"
 }
 
@@ -88,9 +88,9 @@ site_install ()
 	echo-green "Installing Drupal..."
 	# We disable email sending here so site-install does not return an error
 	# Credit: https://www.drupal.org/project/phpconfig/issues/1826652#comment-12071700
-	drush site-install standard -y \
-		install_configure_form.enable_update_status_module=NULL \
-		--site-name='My Drupal 8 Site'
+	drush si minimal -y 
+  drush config-set system.site uuid 1aa3a078-6e7f-4336-b6d9-bec3b1e61561 -y
+  drush cim -y
 }
 
 #-------------------------- END: Functions --------------------------------

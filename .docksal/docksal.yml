@@ -1,15 +1,29 @@
 version: "2.1"
 
 services:
-  # Solr
   solr:
     extends:
       file: ${HOME}/.docksal/stacks/services.yml
       service: solr
 
-  # Memcached
   memcached:
     extends:
       file: ${HOME}/.docksal/stacks/services.yml
       service: memcached
     command: ["-m", "256"]
+
+  pa11y:
+    hostname: pa11y
+    image: drydockcloud/ca-pa11y:0.1
+    command: tail -f /dev/null
+    volumes:
+      - ../tests/pa11y/wcag2-config.json:/home/node/app/wcag2-config.json
+services:
+  cli:
+    ports:
+      - "6006:6006"
+    labels:
+      - io.docksal.virtual-host=ds.${VIRTUAL_HOST}
+    dns:
+      - ${DOCKSAL_DNS1}
+      - ${DOCKSAL_DNS2}

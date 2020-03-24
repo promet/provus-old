@@ -1,3 +1,8 @@
 #!/usr/bin/env bash
 
-fin exec "cd web/themes/custom/countyoc; yarn build"
+## Builds theme dist files. Not currently necessary 
+##
+## Usage: fin build-theme 
+
+fin exec "cd /var/www/web/themes/custom/countyoc; yarn"
+fin exec "cd /var/www/web/themes/custom/countyoc; yarn build"

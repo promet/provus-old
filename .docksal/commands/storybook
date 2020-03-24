@@ -1,3 +1,9 @@
 #!/usr/bin/env bash
 
-fin exec "cd web/themes/custom/countyoc; yarn develop"
+## Run storybook tool locally 
+##
+## Usage: fin storybook 
+
+# Abort if anything fails
+
+fin exec "cd /var/www/web/themes/custom/countyoc; yarn; yarn develop"

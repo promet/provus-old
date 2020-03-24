@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+## lint theme js
+##
+## Usage: fin lint-theme 
+
+# Abort if anything fails
+
+fin exec "cd /var/www/web/themes/custom/countyoc; yarn lint"

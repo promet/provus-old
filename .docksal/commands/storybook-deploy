@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 
+## Deploy storybook to the oc-design.prometdev.com site. 
+##
+## Usage: fin init
+
+
 fin exec "cp -r web/themes/custom/countyoc .; cd countyoc; yarn"
 git checkout storybook
 fin exec "cd countyoc; yarn build-storybook -o ../storybook"

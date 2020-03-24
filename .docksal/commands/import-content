@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+## Imports current site content and menu 
+##
+## Usage: fin import-content 
+
+fin drush en -y oc_migrate 
+fin drush migrate:import --group=oc

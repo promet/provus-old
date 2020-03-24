@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+## Imports test content 
+##
+## Usage: fin test-content 
+
+fin drush update-migration-config
+fin drush migrate:import --group=entity_staging
