@@ -10,9 +10,9 @@ fin exec "cp -r web/themes/custom/countyoc .; cd countyoc; yarn"
 git checkout storybook
 git pull
 echo "Building storybook"
-#fin exec "cd countyoc; yarn build-storybook -o ../storybook"
+fin exec "cd countyoc; yarn build-storybook -o ../storybook"
 echo "Removing artifact"
-#fin exec "rm -rf countyoc"
+fin exec "rm -rf countyoc"
 echo "Adding to git"
 git add storybook
 git commit -m "Updates storybook"
