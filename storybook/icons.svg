@@ -1,4 +1,60 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><symbol viewBox="0 0 16 20" id="apple">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><symbol viewBox="0 0 11 18" id="Chevron_left">
+<style type="text/css">
+	#Chevron_left .st0{filter:url(#Chevron_left_Adobe_OpacityMaskFilter);}
+	#Chevron_left .st1{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+	#Chevron_left .st2{mask:url(#Chevron_left_mask-2_1_);}
+	#Chevron_left .st3{fill-rule:evenodd;clip-rule:evenodd;fill:#424B5A;}
+</style>
+<desc>Created with Sketch.</desc>
+<g id="Chevron_left_Theme-Options">
+	<g id="Chevron_left_Sub-Theme-1-Copy" transform="translate(-191.000000, -1032.000000)">
+		<g id="Chevron_left_Group-11" transform="translate(0.000000, 735.000000)">
+			<g id="Chevron_left_Atoms-_x2F_-icons-_x2F_-System-_x2F_-Chevron_x5F_right-Copy" transform="translate(191.000000, 297.000000)">
+				<defs>
+					<filter id="Chevron_left_Adobe_OpacityMaskFilter" filterUnits="userSpaceOnUse" x="-12" y="-8" width="34" height="34">
+						<feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"></feColorMatrix>
+					</filter>
+				</defs>
+				
+				<g id="Chevron_left__x21AA__xD83C__xDFA8_" class="st2">
+					<g id="Chevron_left_Atoms-_x2F_-Colors-_x2F_-Black" transform="translate(-11.000000, -8.000000)">
+						<rect x="-1" y="0" class="st3" width="34" height="34" />
+					</g>
+				</g>
+			</g>
+		</g>
+	</g>
+</g>
+</symbol><mask maskUnits="userSpaceOnUse" x="-12" y="-8" width="34" height="34" id="Chevron_left_mask-2_1_">
+					<g class="st0">
+						<path id="Chevron_left_path-1_2_" class="st1" d="M9.4,16.8l0.6-0.6c0.4-0.4,0.4-1,0-1.4L4.2,9l0,0L10,3.2c0.4-0.4,0.4-1,0-1.4L9.4,1.2
+							C9,0.8,8.4,0.8,8,1.2L0.2,9l0,0L8,16.8C8.4,17.2,9,17.2,9.4,16.8z" />
+					</g>
+				</mask><symbol viewBox="0 0 11 18" id="Chevron_right">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>Atoms / icons / System / Chevron_right</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M1.62372655,1.20710678 L1.03966943,1.79116391 C0.649446237,2.1813871 0.649101324,2.81395744 1.03889874,3.20460594 L6.82166667,9 L6.82166667,9 L1.03889874,14.7953941 C0.649101324,15.1860426 0.649446237,15.8186129 1.03966943,16.2088361 L1.62372655,16.7928932 C2.01425084,17.1834175 2.64741582,17.1834175 3.03794011,16.7928932 L10.8308333,9 L10.8308333,9 L3.03794011,1.20710678 C2.64741582,0.816582489 2.01425084,0.816582489 1.62372655,1.20710678 Z" id="Chevron_right_path-1" />
+    </defs>
+    <g id="Chevron_right_Theme-Options" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Chevron_right_Sub-Theme-1-Copy" transform="translate(-1238.000000, -1032.000000)">
+            <g id="Chevron_right_Group-11" transform="translate(0.000000, 735.000000)">
+                <g id="Chevron_right_Atoms-/-icons-/-System-/-Chevron_right" transform="translate(1238.000000, 297.000000)">
+                    
+                    <use id="Chevron_right_Mask" fill-opacity="0.7" fill="#000000" xlink:href="#Chevron_right_path-1" />
+                    <g id="Chevron_right_↪🎨" mask="url(#Chevron_right_mask-2)" fill="#424B5A">
+                        <g transform="translate(-11.000000, -8.000000)" id="Chevron_right_Atoms-/-Colors-/-Black">
+                            <rect x="0" y="0" width="34" height="34" />
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</symbol><mask id="Chevron_right_mask-2" fill="white">
+                        <use xlink:href="#Chevron_right_path-1" />
+                    </mask><symbol viewBox="0 0 16 20" id="apple">
     <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
     <title>Apple</title>
     <desc>Created with Sketch.</desc>
