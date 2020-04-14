@@ -84,7 +84,63 @@
     </g>
 </symbol><mask id="apple_mask-2" fill="white">
                                             <use xlink:href="#apple_path-1" />
-                                        </mask><symbol viewBox="0 0 23 20" id="chat">
+                                        </mask><symbol viewBox="0 0 41 43" id="arrow-left">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>Chevron Left</title>
+    <desc>Created with Sketch.</desc>
+    <g id="arrow-left_Blocks" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="arrow-left_Home---RD-3" transform="translate(0.000000, -2487.000000)">
+            <g id="arrow-left_Link_Group-Multicard_Carousel" transform="translate(0.000000, 2208.000000)">
+                <g id="arrow-left_Chevron-Left" transform="translate(20.500000, 300.500000) scale(-1, 1) translate(-20.500000, -300.500000) translate(0.000000, 279.000000)">
+                    <rect id="arrow-left_Rectangle-Copy" fill="#FFFFFF" x="0" y="0" width="41" height="43" />
+                    <polygon id="arrow-left_" fill="#9B9B9B" fill-rule="nonzero" points="19.32 28 24.32 23 19.32 18 18.14 19.18 21.98 23 18.14 26.82" />
+                </g>
+            </g>
+        </g>
+    </g>
+</symbol><symbol viewBox="0 0 41 43" id="arrow-left-hover">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>Chevron Left - Hover</title>
+    <desc>Created with Sketch.</desc>
+    <g id="arrow-left-hover_Blocks" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="arrow-left-hover_Home---RD-3" transform="translate(0.000000, -2487.000000)">
+            <g id="arrow-left-hover_Link_Group-Multicard_Carousel" transform="translate(0.000000, 2208.000000)">
+                <g id="arrow-left-hover_Chevron-Left---Hover" transform="translate(0.000000, 279.000000)">
+                    <rect id="arrow-left-hover_Rectangle" fill="#FAEBE0" x="0" y="0" width="41" height="43" />
+                    <polygon id="arrow-left-hover_" fill="#D53707" fill-rule="nonzero" points="22.68 28 23.86 26.82 20.02 23 23.86 19.18 22.68 18 17.68 23" />
+                </g>
+            </g>
+        </g>
+    </g>
+</symbol><symbol viewBox="0 0 41 43" id="arrow-right">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>Chevron Right</title>
+    <desc>Created with Sketch.</desc>
+    <g id="arrow-right_Blocks" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="arrow-right_Home---RD-3" transform="translate(-1399.000000, -2487.000000)">
+            <g id="arrow-right_Link_Group-Multicard_Carousel" transform="translate(0.000000, 2208.000000)">
+                <g id="arrow-right_Chevron-Right" transform="translate(1399.000000, 279.000000)">
+                    <rect id="arrow-right_Rectangle-Copy" fill="#FFFFFF" x="0" y="0" width="41" height="43" />
+                    <polygon id="arrow-right_" fill="#9B9B9B" fill-rule="nonzero" points="19.32 28 24.32 23 19.32 18 18.14 19.18 21.98 23 18.14 26.82" />
+                </g>
+            </g>
+        </g>
+    </g>
+</symbol><symbol viewBox="0 0 41 43" id="arrow-right-hover">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>Chevron Right - Hover</title>
+    <desc>Created with Sketch.</desc>
+    <g id="arrow-right-hover_Blocks" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="arrow-right-hover_Home---RD-3" transform="translate(-1399.000000, -2487.000000)">
+            <g id="arrow-right-hover_Link_Group-Multicard_Carousel" transform="translate(0.000000, 2208.000000)">
+                <g id="arrow-right-hover_Chevron-Right---Hover" transform="translate(1399.000000, 279.000000)">
+                    <rect id="arrow-right-hover_Rectangle-Copy" fill="#FAEBE0" x="0" y="0" width="41" height="43" />
+                    <polygon id="arrow-right-hover_" fill="#D53707" fill-rule="nonzero" points="19.32 28 24.32 23 19.32 18 18.14 19.18 21.98 23 18.14 26.82" />
+                </g>
+            </g>
+        </g>
+    </g>
+</symbol><symbol viewBox="0 0 23 20" id="chat">
     <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
     <title>Chat</title>
     <desc>Created with Sketch.</desc>
