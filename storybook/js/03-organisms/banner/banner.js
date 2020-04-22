@@ -1,1 +1,1 @@
-"use strict";(function(a){Drupal.behaviors.banner={attach:function attach(){a("#banner").carousel({interval:5e3,ride:"carousel"})}}})(jQuery);
+"use strict";(function(a){Drupal.behaviors.banner={attach:function attach(){a("#banner").once().carousel({interval:5e3,ride:"carousel"})}}})(jQuery);

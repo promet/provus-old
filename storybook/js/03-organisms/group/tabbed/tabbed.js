@@ -1,1 +1,1 @@
-"use strict";(function(a){Drupal.behaviors.tabbed={attach:function attach(){a("#pills-tab a").on("click",function(b){b.preventDefault(),a(this).tab("show")})}}})(jQuery);
+"use strict";(function(a){Drupal.behaviors.tabbed={attach:function attach(){a("#pills-tab a").once().on("click",function(b){b.preventDefault(),a(this).tab("show")})}}})(jQuery);
