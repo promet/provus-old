@@ -154,7 +154,3 @@ object-assign
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-
-//! stable.js 0.1.8, https://github.com/Two-Screen/stable
-
-//! © 2018 Angry Bytes and contributors. MIT licensed.
