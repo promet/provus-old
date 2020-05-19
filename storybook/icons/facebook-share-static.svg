@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Facebook Share Static</title>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Social_Icon-Links" transform="translate(0.000000, -50.000000)">
+            <g id="Static">
+                <g transform="translate(0.000000, 50.000000)">
+                    <g id="Facebook-Share-Static">
+                        <circle id="Oval" fill="#0071BC" cx="20" cy="20" r="20"></circle>
+                        <path d="M21.0089286,27.8571429 L21.0089286,21.0803571 L23.2767857,21.0803571 L23.625,18.4375 L21.0089286,18.4375 L21.0089286,16.75 C21.0089286,16.3214286 21.0982143,16 21.2767857,15.7857143 C21.4553571,15.5714286 21.8005952,15.4642857 22.3125,15.4642857 L22.3125,15.4642857 L23.7142857,15.4642857 L23.7142857,13.1071429 C23.2321429,13.0357143 22.5535714,13 21.6785714,13 C20.6488095,13 19.8244048,13.3050595 19.2053571,13.9151786 C18.5863095,14.5252976 18.2767857,15.3839286 18.2767857,16.4910714 L18.2767857,16.4910714 L18.2767857,18.4375 L16,18.4375 L16,21.0803571 L18.2767857,21.0803571 L18.2767857,27.8571429 L21.0089286,27.8571429 Z" id="" fill="#FFFFFF" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
