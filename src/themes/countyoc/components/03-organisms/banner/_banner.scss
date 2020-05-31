@@ -57,6 +57,7 @@
       img.logo__image {
         width: 110px;
         margin: 0 auto;
+        padding: 15px 12px 20px;
 
         @include medium {
           background-color: $gray-dark;
