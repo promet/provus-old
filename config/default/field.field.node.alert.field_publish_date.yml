@@ -1,0 +1,21 @@
+uuid: d740fa18-f1bf-4203-9b73-5cbf7e402d32
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_publish_date
+    - node.type.alert
+  module:
+    - datetime
+id: node.alert.field_publish_date
+field_name: field_publish_date
+entity_type: node
+bundle: alert
+label: 'Publish Date'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

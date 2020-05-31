@@ -1,0 +1,200 @@
+{
+    "node": [
+        {
+            "nid": [
+                {
+                    "value": 7
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "13a23a67-9a00-4661-8d80-02e4bc58f4a2"
+                }
+            ],
+            "vid": [
+                {
+                    "value": 7
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "type": [
+                {
+                    "target_id": "location",
+                    "target_type": "node_type",
+                    "target_uuid": "41d8e351-ce9c-4353-804d-8c4beb5ef9a9"
+                }
+            ],
+            "revision_timestamp": [
+                {
+                    "value": "2020-05-08T13:24:19+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "revision_uid": [
+                {
+                    "target_id": 0,
+                    "target_type": "user",
+                    "target_uuid": "264198e7-fcdf-4c69-a82d-c3c8ef37b0b0",
+                    "url": "\/user\/0"
+                }
+            ],
+            "revision_log": [],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "uid": [
+                {
+                    "target_id": 0,
+                    "target_type": "user",
+                    "target_uuid": "264198e7-fcdf-4c69-a82d-c3c8ef37b0b0",
+                    "url": "\/user\/0"
+                }
+            ],
+            "title": [
+                {
+                    "value": "OC Animal Care"
+                }
+            ],
+            "created": [
+                {
+                    "value": "2020-05-08T13:10:31+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2020-05-08T13:24:19+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "promote": [
+                {
+                    "value": true
+                }
+            ],
+            "sticky": [
+                {
+                    "value": false
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": true
+                }
+            ],
+            "revision_translation_affected": [
+                {
+                    "value": true
+                }
+            ],
+            "path": [
+                {
+                    "alias": "\/location\/oc-animal-care",
+                    "pid": 17,
+                    "langcode": "en"
+                }
+            ],
+            "body": [
+                {
+                    "value": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p>\r\n",
+                    "format": "basic_html",
+                    "processed": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p>",
+                    "summary": ""
+                }
+            ],
+            "field_accessible": [
+                {
+                    "value": false
+                }
+            ],
+            "field_address": [
+                {
+                    "langcode": "",
+                    "country_code": "US",
+                    "administrative_area": "CA",
+                    "locality": "South Southport",
+                    "dependent_locality": null,
+                    "postal_code": "92868",
+                    "sorting_code": null,
+                    "address_line1": "561 The City Drive",
+                    "address_line2": "",
+                    "organization": null,
+                    "given_name": null,
+                    "additional_name": null,
+                    "family_name": null
+                }
+            ],
+            "field_email": [
+                {
+                    "value": "someemail@ocgov.com"
+                }
+            ],
+            "field_file": [],
+            "field_hours": [
+                {
+                    "day": 0,
+                    "starthours": 1100,
+                    "endhours": 1700,
+                    "comment": ""
+                },
+                {
+                    "day": 1,
+                    "starthours": 1100,
+                    "endhours": 1700,
+                    "comment": ""
+                },
+                {
+                    "day": 2,
+                    "starthours": 1100,
+                    "endhours": 1700,
+                    "comment": ""
+                },
+                {
+                    "day": 3,
+                    "starthours": 1100,
+                    "endhours": 1700,
+                    "comment": ""
+                },
+                {
+                    "day": 4,
+                    "starthours": 1100,
+                    "endhours": 1700,
+                    "comment": ""
+                },
+                {
+                    "day": 5,
+                    "starthours": 1100,
+                    "endhours": 1700,
+                    "comment": ""
+                },
+                {
+                    "day": 6,
+                    "starthours": 1100,
+                    "endhours": 1700,
+                    "comment": ""
+                }
+            ],
+            "field_location_type": [],
+            "field_media_image": [
+                {
+                    "target_id": 14,
+                    "target_type": "media",
+                    "target_uuid": "5461d254-d7b8-43ac-a1ea-ef5de1bd5285",
+                    "url": "\/media\/14\/edit"
+                }
+            ],
+            "field_migrate_url": [],
+            "field_phone": [
+                {
+                    "value": "(714) 935-6848"
+                }
+            ]
+        }
+    ]
+}

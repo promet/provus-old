@@ -1,0 +1,86 @@
+/* LI */
+.main-menu__item {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  border-top: 1px solid $border-utility;
+  padding: 16px 0;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+
+  &:last-child {
+    border-bottom: 1px solid $border-utility;
+
+    @include desktop {
+      border-bottom: 0;
+    }
+  }
+
+  @include desktop {
+    border-top: none;
+    display: inline-block;
+    padding: 0 25px 0 0;
+    border-bottom: 0;
+
+    /* Only top level */
+    &:not(.main-menu__item--sub):hover {
+      transition: all 0.2s;
+
+      & > .main-menu--sub {
+        display: block;
+      }
+    }
+  }
+
+  @include xbig {
+    padding: 0 28px;
+  }
+
+  &:hover {
+    .main-menu__link::after {
+      color: $gray;
+    }
+  }
+}
+
+/* Expand Button */
+.header {
+  .expand-sub {
+    cursor: pointer;
+    display: block;
+    position: relative;
+    background-image: url("/images/icons/ico-next-menu-mobile.png");
+    background-size: 7px 10px;
+    background-position: right center;
+    background-repeat: no-repeat;
+    width: 7px;
+    height: 10px;
+    right: 15px;
+
+    @include desktop {
+      display: none;
+    }
+
+    /* See main-menu.js */
+    &--open {
+      background-color: $black;
+      color: $gray;
+    }
+  }
+}
+
+/*
+ * Sub Navigation
+ */
+
+/* LI (Nested) */
+.main-menu__item--sub {
+  @include desktop {
+    display: block;
+
+    &:not(:first-child) {
+      border-top: 1px solid $gray-light;
+    }
+  }
+}

@@ -1,0 +1,53 @@
+uuid: 0a50e41e-8234-40a8-b885-20450f09c080
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.alert.body
+    - field.field.node.alert.field_alert_visibility
+    - field.field.node.alert.field_publish_date
+    - field.field.node.alert.field_sunset_date
+    - node.type.alert
+  module:
+    - datetime
+    - text
+    - user
+id: node.alert.default
+targetEntityType: node
+bundle: alert
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_publish_date:
+    weight: 2
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_sunset_date:
+    weight: 3
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_alert_visibility: true
+  langcode: true
+  search_api_excerpt: true

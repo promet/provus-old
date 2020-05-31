@@ -1,0 +1,148 @@
+
+/* Carousel 3 Items */
+.carousel-3-items {
+  @include wrapper;
+
+  width: 100%;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+
+  .card-bordered {
+    max-width: inherit;
+  }
+
+  .carousel-inner {
+    padding: 0 40px;
+
+    @include medium {
+      padding: 0 40px;
+    }
+
+    @include large {
+      padding: 0 80px;
+    }
+
+    .card-bordered__content {
+      text-align: center;
+
+      .card-bordered__heading {
+        margin-bottom: 1.25rem;
+      }
+    }
+
+    .card-bordered-link:hover .card-bordered__heading {
+      text-decoration: none;
+    }
+  }
+}
+
+.carousel-3-items-wrapper {
+  padding-top: 40px;
+
+  h2.title {
+    text-align: center;
+    color: $title-section;
+    font-family: $font-heading;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    line-height: 2.3125rem;
+    margin-bottom: 35px;
+    text-transform: uppercase;
+
+    @include medium {
+      font-size: 1.875rem;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    flex-flow: column nowrap;
+
+    @include large {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  .carousel-control-prev {
+    width: 40px;
+    justify-content: center;
+    cursor: pointer;
+
+    .carousel-control-prev-icon {
+      margin-left: 0;
+      background-repeat: no-repeat;
+      background-position: left center;
+      background-image: url("/images/icons/Chevron_left.svg");
+    }
+  }
+
+  .carousel-control-next {
+    width: 40px;
+    justify-content: center;
+    cursor: pointer;
+
+    .carousel-control-next-icon {
+      margin-right: 0;
+      background-repeat: no-repeat;
+      background-position: right center;
+      background-image: url("/images/icons/Chevron_right.svg");
+    }
+  }
+
+  .lSSlideWrapper {
+    padding: 0;
+  }
+
+  .card-bordered {
+    margin-right: 5px;
+
+    img {
+      width: 100%;
+      height: 174px;
+      object-fit: cover;
+    }
+  }
+
+  .lightSlider {
+    overflow: visible;
+    margin-bottom: 25px;
+
+    .lslide {
+      padding: 0 15px;
+      margin-bottom: 15px;
+      height: 100%;
+    }
+  }
+
+  .lSSlideOuter {
+    .lSPager.lSpg {
+      li {
+        padding: 0;
+
+        &::before {
+          display: none !important;
+        }
+      }
+
+      li > a {
+        width: 9px;
+        height: 9px;
+        border: 1px solid $ada-orange;
+        background: transparent;
+        border-radius: 100%;
+        box-sizing: content-box;
+        margin-right: 3px;
+        margin-left: 3px;
+      }
+
+      li:hover a,
+      li.active > a {
+        border: 1px solid $ada-orange;
+        background: $ada-orange;
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+uuid: 4f3fc30a-b462-433b-80da-804c8ac062d0
+langcode: en
+status: true
+dependencies: {  }
+name: hero_tall_2x
+label: 'Hero Tall 2X'
+effects:
+  31080d21-a4f6-42cf-9b17-2e0774f3204e:
+    uuid: 31080d21-a4f6-42cf-9b17-2e0774f3204e
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 3360
+      height: 1180
+      anchor: center-center

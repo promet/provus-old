@@ -1,0 +1,95 @@
+diff --git a/web/themes/custom/countyoc/libraries/lightslider/src/js/lightslider.js b/web/themes/custom/countyoc/libraries/lightslider/src/js/lightslider.js
+index 6d9c79f..f2ac1d6 100644
+--- a/web/themes/custom/countyoc/libraries/lightslider/src/js/lightslider.js
++++ b/web/themes/custom/countyoc/libraries/lightslider/src/js/lightslider.js
+@@ -1,3 +1,4 @@
++/* eslint-disable */
+ (function ($, undefined) {
+     'use strict';
+     var defaults = {
+@@ -19,6 +20,7 @@
+         keyPress: false,
+         controls: true,
+         prevHtml: '',
++        initialWidth: 0,
+         nextHtml: '',
+         rtl: false,
+         adaptiveHeight: false,
+@@ -236,7 +238,7 @@
+                     elSize = settings.verticalHeight;
+                     $slide.css('height', elSize + 'px');
+                 } else {
+-                    elSize = $el.outerWidth();
++                    elSize = settings.initialWidth ? settings.initialWidth : $el.outerWidth();
+                 }
+                 $children.addClass('lslide');
+                 if (settings.loop === true && settings.mode === 'slide') {
+@@ -284,6 +286,7 @@
+                         }
+                     };
+                     refresh.clone();
++
+                 }
+                 refresh.sSW = function () {
+                     length = $children.length;
+@@ -420,9 +423,6 @@
+                     refresh.createPager();
+                 }
+
+-                setTimeout(function () {
+-                    refresh.init();
+-                }, 0);
+             },
+             setHeight: function (ob, fade) {
+                 var obj = null,
+@@ -558,8 +558,12 @@
+                 var $thumb = $slide.parent().find('.lSPager').find('li');
+                 this.active($thumb, true);
+             },
++            setElSize: function () {
++              elSize = $el.outerWidth();
++            },
+             slide: function () {
+                 var $this = this;
++
+                 refresh.calSlide = function () {
+                     if (w > elSize) {
+                         slideValue = $this.slideValue();
+@@ -883,13 +887,17 @@
+                 });
+ 
+                 $this.pager();
++                let width = settings.initialWidth ? settings.initialWidth : $slide.outerWidth();
++                setTimeout(function () {
++                    refresh.init(width);
++                }, 0);
+                 $this.pauseOnHover();
+                 $this.controls();
+                 $this.keyPress();
+             }
+         };
+         plugin.build();
+-        refresh.init = function () {
++        refresh.init = function (width) {
+             refresh.chbreakpoint();
+             if (settings.vertical === true) {
+                 if (settings.item > 1) {
+@@ -899,7 +907,7 @@
+                 }
+                 $slide.css('height', elSize + 'px');
+             } else {
+-                elSize = $slide.outerWidth();
++                elSize = width;
+             }
+             if (settings.loop === true && settings.mode === 'slide') {
+                 refresh.clone();
+@@ -1132,7 +1140,8 @@
+                 } else {
+                     e.returnValue = false;
+                 }
+-                refresh.init();
++                let width = $slide.outerWidth();
++                refresh.init(width);
+             }, 200);
+         });
+         return this;

@@ -1,0 +1,120 @@
+
+/* Image */
+.info-image {
+  margin-bottom: 15px;
+
+  @include medium {
+    margin-bottom: 0;
+  }
+
+  .content-img {
+    height: 141px;
+     width: 141px;
+     border: 2px solid $gray-dark;
+     background-color: $white;
+     border-radius: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+
+     span {
+      color: $primary;
+      font-family: $font-heading;
+      font-size: 2rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      line-height: 2.4375rem;
+     }
+  }
+}
+
+/* Full Name */
+.info-full-name {
+  &__heading {
+    color: $title-content-top;
+    font-family: $font-heading;
+    font-size: 1.25rem;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 1.75rem;
+    margin-top: 5px;
+    margin-bottom: 0;
+  }
+}
+
+/* Profession */
+.info-profession {
+  &__heading {
+    color: $gray-medium;
+    font-family: $font-body;
+    font-size: 0.9375rem;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 	1.625rem;
+    margin-bottom: 15px;
+  }
+}
+
+/* Phone */
+.info-phone {
+  width: 100%;
+  max-width: 263px;
+  margin-bottom: 15px;
+
+  @include medium {
+    margin-bottom: 5px;
+  }
+
+  &__heading {
+    color: $title-info;
+    font-family: $font-body;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 1.625rem;
+    margin-bottom: 0;
+
+    span {
+      text-decoration: underline;
+      color: $primary;
+      font-family: $font-body;
+      font-size: 1rem;
+      letter-spacing: 0;
+      line-height: v;
+      font-weight: normal;
+      margin-left: 15px;
+    }
+  }
+}
+
+/* Email */
+.info-email {
+  width: 100%;
+  max-width: 263px;
+  margin-bottom: 15px;
+
+  @include medium {
+    margin-bottom: 0;
+  }
+
+  &__heading {
+    color: $title-info;
+    font-family: $font-body;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 1.625rem;
+    margin-bottom: 5px;
+
+    span {
+      text-decoration: underline;
+      color: $primary;
+      font-family: $font-body;
+      font-size: 1rem;
+      letter-spacing: 0;
+      line-height: 1.625rem;
+      font-weight: normal;
+      margin-left: 20px;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+uuid: c1604d8c-504e-4c66-84a2-9bc95f2e58d6
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: content
+label: Content
+type: 'canonical_entities:node'
+pattern: '[node:menu-link:parents:join-path]/[node:menu-link]'
+selection_criteria: {  }
+selection_logic: and
+weight: -8
+relationships: {  }

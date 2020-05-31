@@ -1,0 +1,17 @@
+uuid: b77b5b84-a081-406e-b1e5-64dad3e0a739
+langcode: en
+status: true
+dependencies: {  }
+id: layout_editor
+label: 'Layout Editor'
+weight: 4
+is_admin: null
+permissions:
+  - 'access toolbar'
+  - 'configure all county_page node layout overrides'
+  - 'configure all landing_page node layout overrides'
+  - 'configure any layout'
+  - 'configure editable county_page node layout overrides'
+  - 'configure editable landing_page node layout overrides'
+  - 'create and edit custom blocks'
+  - 'view the administration theme'

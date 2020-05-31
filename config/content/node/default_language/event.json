@@ -1,0 +1,698 @@
+{
+    "node": [
+        {
+            "nid": [
+                {
+                    "value": 8
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "0d0c2d8a-1974-4447-910f-0ffb36b1b41b"
+                }
+            ],
+            "vid": [
+                {
+                    "value": 8
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "type": [
+                {
+                    "target_id": "event",
+                    "target_type": "node_type",
+                    "target_uuid": "541eec63-d84c-4459-8788-d080b7f508a7"
+                }
+            ],
+            "revision_timestamp": [
+                {
+                    "value": "2020-03-24T17:57:54+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "revision_uid": [
+                {
+                    "target_id": 0,
+                    "target_type": "user",
+                    "target_uuid": "264198e7-fcdf-4c69-a82d-c3c8ef37b0b0",
+                    "url": "\/user\/0"
+                }
+            ],
+            "revision_log": [],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "uid": [
+                {
+                    "target_id": 0,
+                    "target_type": "user",
+                    "target_uuid": "264198e7-fcdf-4c69-a82d-c3c8ef37b0b0",
+                    "url": "\/user\/0"
+                }
+            ],
+            "title": [
+                {
+                    "value": "Test Event 1"
+                }
+            ],
+            "created": [
+                {
+                    "value": "2020-03-24T17:56:47+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2020-03-24T18:11:39+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "promote": [
+                {
+                    "value": true
+                }
+            ],
+            "sticky": [
+                {
+                    "value": false
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": true
+                }
+            ],
+            "revision_translation_affected": [
+                {
+                    "value": true
+                }
+            ],
+            "path": [
+                {
+                    "alias": "",
+                    "pid": null,
+                    "langcode": null
+                }
+            ],
+            "body": [
+                {
+                    "value": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p>\r\n",
+                    "format": "basic_html",
+                    "processed": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p>",
+                    "summary": ""
+                }
+            ],
+            "field_end_date": [
+                {
+                    "value": "2020-05-20T18:00:00"
+                }
+            ],
+            "field_event_type": [],
+            "field_file": [],
+            "field_location": [],
+            "field_media_image": [
+                {
+                    "target_id": 1,
+                    "target_type": "media",
+                    "target_uuid": "8114da1d-fbd4-497b-94a6-0f3f9efede09",
+                    "url": "\/media\/1\/edit"
+                }
+            ],
+            "field_monthly_event": [],
+            "field_start_date": [
+                {
+                    "value": "2020-05-20T13:00:00"
+                }
+            ],
+            "field_weekly_event": []
+        },
+        {
+            "nid": [
+                {
+                    "value": 9
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "1403adb5-d88c-438a-84b6-6c175702699b"
+                }
+            ],
+            "vid": [
+                {
+                    "value": 9
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "type": [
+                {
+                    "target_id": "event",
+                    "target_type": "node_type",
+                    "target_uuid": "541eec63-d84c-4459-8788-d080b7f508a7"
+                }
+            ],
+            "revision_timestamp": [
+                {
+                    "value": "2020-03-24T18:12:24+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "revision_uid": [
+                {
+                    "target_id": 0,
+                    "target_type": "user",
+                    "target_uuid": "264198e7-fcdf-4c69-a82d-c3c8ef37b0b0",
+                    "url": "\/user\/0"
+                }
+            ],
+            "revision_log": [],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "uid": [
+                {
+                    "target_id": 0,
+                    "target_type": "user",
+                    "target_uuid": "264198e7-fcdf-4c69-a82d-c3c8ef37b0b0",
+                    "url": "\/user\/0"
+                }
+            ],
+            "title": [
+                {
+                    "value": "Test Event 2"
+                }
+            ],
+            "created": [
+                {
+                    "value": "2020-03-24T18:10:43+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2020-03-24T18:12:24+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "promote": [
+                {
+                    "value": true
+                }
+            ],
+            "sticky": [
+                {
+                    "value": false
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": true
+                }
+            ],
+            "revision_translation_affected": [
+                {
+                    "value": true
+                }
+            ],
+            "path": [
+                {
+                    "alias": "",
+                    "pid": null,
+                    "langcode": null
+                }
+            ],
+            "body": [
+                {
+                    "value": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p>\r\n",
+                    "format": "basic_html",
+                    "processed": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p>",
+                    "summary": ""
+                }
+            ],
+            "field_end_date": [
+                {
+                    "value": "2020-05-24T16:00:00"
+                }
+            ],
+            "field_event_type": [],
+            "field_file": [],
+            "field_location": [],
+            "field_media_image": [
+                {
+                    "target_id": 1,
+                    "target_type": "media",
+                    "target_uuid": "8114da1d-fbd4-497b-94a6-0f3f9efede09",
+                    "url": "\/media\/1\/edit"
+                }
+            ],
+            "field_monthly_event": [],
+            "field_start_date": [
+                {
+                    "value": "2020-05-24T08:30:00"
+                }
+            ],
+            "field_weekly_event": []
+        },
+        {
+            "nid": [
+                {
+                    "value": 10
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "2708d585-2dfe-46cd-9c69-3ec1a0eea448"
+                }
+            ],
+            "vid": [
+                {
+                    "value": 10
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "type": [
+                {
+                    "target_id": "event",
+                    "target_type": "node_type",
+                    "target_uuid": "541eec63-d84c-4459-8788-d080b7f508a7"
+                }
+            ],
+            "revision_timestamp": [
+                {
+                    "value": "2020-06-08T13:49:49+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "revision_uid": [
+                {
+                    "target_id": 0,
+                    "target_type": "user",
+                    "target_uuid": "264198e7-fcdf-4c69-a82d-c3c8ef37b0b0",
+                    "url": "\/user\/0"
+                }
+            ],
+            "revision_log": [],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "uid": [
+                {
+                    "target_id": 0,
+                    "target_type": "user",
+                    "target_uuid": "264198e7-fcdf-4c69-a82d-c3c8ef37b0b0",
+                    "url": "\/user\/0"
+                }
+            ],
+            "title": [
+                {
+                    "value": "Test Event 3"
+                }
+            ],
+            "created": [
+                {
+                    "value": "2020-03-24T18:16:07+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2020-06-08T13:49:49+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "promote": [
+                {
+                    "value": true
+                }
+            ],
+            "sticky": [
+                {
+                    "value": false
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": true
+                }
+            ],
+            "revision_translation_affected": [
+                {
+                    "value": true
+                }
+            ],
+            "path": [
+                {
+                    "alias": "\/events\/test-event-3",
+                    "pid": 18,
+                    "langcode": "en"
+                }
+            ],
+            "body": [
+                {
+                    "value": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p>\r\n",
+                    "format": "basic_html",
+                    "processed": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p>",
+                    "summary": ""
+                }
+            ],
+            "field_end_date": [
+                {
+                    "value": "2020-06-14T18:00:00"
+                }
+            ],
+            "field_event_type": [],
+            "field_file": [
+                {
+                    "target_id": 15,
+                    "target_type": "media",
+                    "target_uuid": "3d453e88-d6e4-40af-8c94-a1e076aa3304",
+                    "url": "\/media\/15\/edit"
+                },
+                {
+                    "target_id": 16,
+                    "target_type": "media",
+                    "target_uuid": "f469146c-00b5-4afc-a8e5-186347db46ac",
+                    "url": "\/media\/16\/edit"
+                },
+                {
+                    "target_id": 17,
+                    "target_type": "media",
+                    "target_uuid": "ce64fc9c-05ef-4040-870b-28d5a6dbecc3",
+                    "url": "\/media\/17\/edit"
+                }
+            ],
+            "field_location": [
+                {
+                    "target_id": 7,
+                    "target_type": "node",
+                    "target_uuid": "13a23a67-9a00-4661-8d80-02e4bc58f4a2",
+                    "url": "\/location\/oc-animal-care"
+                }
+            ],
+            "field_media_image": [
+                {
+                    "target_id": 1,
+                    "target_type": "media",
+                    "target_uuid": "8114da1d-fbd4-497b-94a6-0f3f9efede09",
+                    "url": "\/media\/1\/edit"
+                }
+            ],
+            "field_monthly_event": [],
+            "field_start_date": [
+                {
+                    "value": "2020-05-03T16:00:00"
+                }
+            ],
+            "field_weekly_event": [
+                {
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "nid": [
+                {
+                    "value": 11
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "4cf8a642-2f8c-4f36-9209-1f63f43efbc9"
+                }
+            ],
+            "vid": [
+                {
+                    "value": 11
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "type": [
+                {
+                    "target_id": "event",
+                    "target_type": "node_type",
+                    "target_uuid": "541eec63-d84c-4459-8788-d080b7f508a7"
+                }
+            ],
+            "revision_timestamp": [
+                {
+                    "value": "2020-03-24T18:19:32+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "revision_uid": [
+                {
+                    "target_id": 0,
+                    "target_type": "user",
+                    "target_uuid": "264198e7-fcdf-4c69-a82d-c3c8ef37b0b0",
+                    "url": "\/user\/0"
+                }
+            ],
+            "revision_log": [],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "uid": [
+                {
+                    "target_id": 0,
+                    "target_type": "user",
+                    "target_uuid": "264198e7-fcdf-4c69-a82d-c3c8ef37b0b0",
+                    "url": "\/user\/0"
+                }
+            ],
+            "title": [
+                {
+                    "value": "Test Event 3"
+                }
+            ],
+            "created": [
+                {
+                    "value": "2020-03-24T18:18:33+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2020-03-24T18:19:32+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "promote": [
+                {
+                    "value": true
+                }
+            ],
+            "sticky": [
+                {
+                    "value": false
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": true
+                }
+            ],
+            "revision_translation_affected": [
+                {
+                    "value": true
+                }
+            ],
+            "path": [
+                {
+                    "alias": "",
+                    "pid": null,
+                    "langcode": null
+                }
+            ],
+            "body": [
+                {
+                    "value": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p>\r\n",
+                    "format": "basic_html",
+                    "processed": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p>",
+                    "summary": ""
+                }
+            ],
+            "field_end_date": [
+                {
+                    "value": "2020-06-19T17:00:00"
+                }
+            ],
+            "field_event_type": [],
+            "field_file": [],
+            "field_location": [],
+            "field_media_image": [
+                {
+                    "target_id": 1,
+                    "target_type": "media",
+                    "target_uuid": "8114da1d-fbd4-497b-94a6-0f3f9efede09",
+                    "url": "\/media\/1\/edit"
+                }
+            ],
+            "field_monthly_event": [],
+            "field_start_date": [
+                {
+                    "value": "2020-06-17T08:00:00"
+                }
+            ],
+            "field_weekly_event": []
+        },
+        {
+            "nid": [
+                {
+                    "value": 12
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "51919af0-2c26-41e1-b326-3f7d28b71dc8"
+                }
+            ],
+            "vid": [
+                {
+                    "value": 12
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "type": [
+                {
+                    "target_id": "event",
+                    "target_type": "node_type",
+                    "target_uuid": "541eec63-d84c-4459-8788-d080b7f508a7"
+                }
+            ],
+            "revision_timestamp": [
+                {
+                    "value": "2020-03-24T18:23:46+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "revision_uid": [
+                {
+                    "target_id": 0,
+                    "target_type": "user",
+                    "target_uuid": "264198e7-fcdf-4c69-a82d-c3c8ef37b0b0",
+                    "url": "\/user\/0"
+                }
+            ],
+            "revision_log": [],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "uid": [
+                {
+                    "target_id": 0,
+                    "target_type": "user",
+                    "target_uuid": "264198e7-fcdf-4c69-a82d-c3c8ef37b0b0",
+                    "url": "\/user\/0"
+                }
+            ],
+            "title": [
+                {
+                    "value": "Test Event 4"
+                }
+            ],
+            "created": [
+                {
+                    "value": "2020-03-24T18:20:26+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2020-03-24T18:23:46+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "promote": [
+                {
+                    "value": true
+                }
+            ],
+            "sticky": [
+                {
+                    "value": false
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": true
+                }
+            ],
+            "revision_translation_affected": [
+                {
+                    "value": true
+                }
+            ],
+            "path": [
+                {
+                    "alias": "",
+                    "pid": null,
+                    "langcode": null
+                }
+            ],
+            "body": [
+                {
+                    "value": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p>\r\n",
+                    "format": "basic_html",
+                    "processed": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p>",
+                    "summary": ""
+                }
+            ],
+            "field_end_date": [
+                {
+                    "value": "2021-05-13T13:00:00"
+                }
+            ],
+            "field_event_type": [],
+            "field_file": [],
+            "field_location": [],
+            "field_media_image": [
+                {
+                    "target_id": 1,
+                    "target_type": "media",
+                    "target_uuid": "8114da1d-fbd4-497b-94a6-0f3f9efede09",
+                    "url": "\/media\/1\/edit"
+                }
+            ],
+            "field_monthly_event": [
+                {
+                    "value": 13
+                }
+            ],
+            "field_start_date": [
+                {
+                    "value": "2020-05-13T12:00:00"
+                }
+            ],
+            "field_weekly_event": []
+        }
+    ]
+}

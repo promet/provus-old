@@ -1,0 +1,52 @@
+uuid: 7649c084-3c1a-4dc0-b633-d5d81732fc2b
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.location.body
+    - field.field.node.location.field_accessible
+    - field.field.node.location.field_address
+    - field.field.node.location.field_alert
+    - field.field.node.location.field_email
+    - field.field.node.location.field_file
+    - field.field.node.location.field_hours
+    - field.field.node.location.field_location_type
+    - field.field.node.location.field_media_image
+    - field.field.node.location.field_migrate_url
+    - field.field.node.location.field_phone
+    - node.type.location
+  module:
+    - text
+    - user
+id: node.location.teaser
+targetEntityType: node
+bundle: location
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_accessible: true
+  field_address: true
+  field_alert: true
+  field_email: true
+  field_file: true
+  field_hours: true
+  field_location_type: true
+  field_media_image: true
+  field_migrate_url: true
+  field_phone: true
+  langcode: true
+  search_api_excerpt: true

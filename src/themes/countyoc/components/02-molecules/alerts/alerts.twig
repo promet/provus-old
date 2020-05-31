@@ -1,0 +1,30 @@
+{#
+/**
+ * @file
+ * Theme override for status messages.
+ *
+ * Displays status, error, and warning messages, grouped by type.
+ *
+ * An invisible heading identifies the messages for assistive technology.
+ * Sighted users see a colored box. See http://www.w3.org/TR/WCAG-TECHS/H69.html
+ * for info.
+ *
+ * Add an ARIA label to the contentinfo area so that assistive technology
+ * user agents will better describe this landmark.
+ *
+ * Available variables:
+ * - message_list: List of messages to be displayed, grouped by type.
+ * - status_headings: List of all status types.
+ * - display: (optional) May have a value of 'status' or 'error' when only
+ *   displaying messages of that specific type.
+ * - attributes: HTML attributes for the element, including:
+ *   - class: HTML classes.
+ */
+#}
+{% set card__base_class = 'alerts' %}
+
+<div {{ bem(card__base_class, card__modifiers, card__blockname, card__extra_classes) }}>
+  <div {{ bem('wrapper', card__content__modifiers, card__base_class) }}>
+    <i class="material-icons">error</i> <span><strong>{{ title }}</strong> {{ description }}</span>
+  </div>
+</div>

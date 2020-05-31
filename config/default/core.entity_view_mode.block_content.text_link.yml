@@ -1,0 +1,10 @@
+uuid: 086906b2-7e82-4856-9fa1-763e235a2f9b
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+id: block_content.text_link
+label: 'Card Text Link'
+targetEntityType: block_content
+cache: true

@@ -1,0 +1,26 @@
+uuid: 4d4319d8-f212-470c-800b-fc7563184591
+langcode: en
+status: true
+dependencies: {  }
+id: site_builder
+label: 'Site Builder'
+weight: 6
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access site reports'
+  - 'access toolbar'
+  - 'administer blocks'
+  - 'administer menu'
+  - 'administer pathauto'
+  - 'administer permissions'
+  - 'administer shortcuts'
+  - 'administer site configuration'
+  - 'administer url aliases'
+  - 'administer views'
+  - 'bypass node access'
+  - 'configure layout builder restrictions'
+  - 'customize shortcut links'
+  - 'link to any page'
+  - 'switch shortcut sets'
+  - 'use text format restricted_html'

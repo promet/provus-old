@@ -1,0 +1,110 @@
+{
+    "block_content": [
+        {
+            "id": [
+                {
+                    "value": 6
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "4646d761-11b9-4073-a8b1-8c4a827c1f86"
+                }
+            ],
+            "revision_id": [
+                {
+                    "value": 6
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "type": [
+                {
+                    "target_id": "banner",
+                    "target_type": "block_content_type",
+                    "target_uuid": "84bf6a77-909c-405a-a770-249b14c37b10"
+                }
+            ],
+            "revision_created": [
+                {
+                    "value": "2020-03-15T21:19:22+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "revision_user": [],
+            "revision_log": [],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "info": [
+                {
+                    "value": "Homepage Banner"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2020-03-15T21:19:22+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "reusable": [
+                {
+                    "value": true
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": true
+                }
+            ],
+            "revision_translation_affected": [
+                {
+                    "value": true
+                }
+            ],
+            "field_heading": [
+                {
+                    "value": "Welcome to Southport County"
+                }
+            ],
+            "field_include_search": [
+                {
+                    "value": true
+                }
+            ],
+            "field_link": [],
+            "field_logo_image": [
+                {
+                    "target_id": 12,
+                    "target_type": "media",
+                    "target_uuid": "0ad4f5fa-9660-4010-b5c3-b6cf2e375ad7",
+                    "url": "\/media\/12\/edit"
+                }
+            ],
+            "field_media_image": [
+                {
+                    "target_id": 8,
+                    "target_type": "media",
+                    "target_uuid": "659434c2-c254-425b-9a9d-0fe43cc65930",
+                    "url": "\/media\/8\/edit"
+                },
+                {
+                    "target_id": 7,
+                    "target_type": "media",
+                    "target_uuid": "bf9b9875-7589-43dd-bd9d-ad91c6806ff3",
+                    "url": "\/media\/7\/edit"
+                }
+            ],
+            "field_subheading": [
+                {
+                    "value": "Our County. Our Commitment."
+                }
+            ]
+        }
+    ]
+}

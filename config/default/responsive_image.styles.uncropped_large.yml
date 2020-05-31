@@ -1,0 +1,35 @@
+uuid: 9b33b50b-dbe9-4e2e-84c5-17551d0321ea
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.uncropped_1700
+    - image.style.uncropped_450
+    - image.style.uncropped_848
+  theme:
+    - countyoc
+id: uncropped_large
+label: 'Uncropped Large'
+image_style_mappings:
+  -
+    breakpoint_id: countyoc.desktop
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: uncropped_848
+  -
+    breakpoint_id: countyoc.desktop
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: uncropped_1700
+  -
+    breakpoint_id: countyoc.mobile
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: uncropped_450
+  -
+    breakpoint_id: countyoc.mobile
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: uncropped_848
+breakpoint_group: countyoc
+fallback_image_style: uncropped_450

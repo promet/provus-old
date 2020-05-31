@@ -1,0 +1,81 @@
+/* Create a mixin for paragraph styles that can be implemented
+ * in components with other classnames.
+*/
+@mixin paragraph($margin: 0 0 1em) {
+  margin: $margin;
+}
+
+@mixin body-copy {
+  font-family: $font-body;
+  font-size: 1rem;
+  line-height: 1.875rem;
+}
+
+body {
+  color: $gray-medium;
+
+  @include body-copy;
+}
+
+p,
+.paragraph {
+  @include paragraph;
+}
+
+a {
+  color: $primary;
+
+  &:hover {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+}
+
+blockquote,
+.blockquote {
+  font-style: normal;
+  border-left: solid 6px $color-border;
+  margin: 0;
+  padding-left: 25px;
+  color: $gray-dark;
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: 0.7px;
+  line-height: 3.25rem;
+  text-shadow: 0 0 20px 0 $white;
+}
+
+.hr {
+  border-style: solid;
+  border-width: 1px 0 0;
+  color: currentColor;
+}
+
+/* TODO: BEM selectors should be applied to wysiwyg-created content */
+
+.text-long {
+  p {
+    @extend .paragraph;
+  }
+
+  blockquote {
+    @extend .blockquote;
+  }
+
+  hr {
+    @extend .hr;
+  }
+}
+
+.field-publish-date {
+  margin-bottom: 2rem;
+  color: $gray-light;
+  font-size: .875rem;
+}
+
+.article-pre-title {
+  margin-bottom: 1rem;
+  color: $red;
+  text-transform: uppercase;
+  font-weight: bold;
+}

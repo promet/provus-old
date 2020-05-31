@@ -1,0 +1,109 @@
+uuid: e0e7ab93-279d-43bc-997c-1dc5ebe15314
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.card_event
+    - field.field.node.event.body
+    - field.field.node.event.field_end_date
+    - field.field.node.event.field_event_type
+    - field.field.node.event.field_file
+    - field.field.node.event.field_location
+    - field.field.node.event.field_media_image
+    - field.field.node.event.field_monthly_event
+    - field.field.node.event.field_start_date
+    - field.field.node.event.field_weekly_event
+    - node.type.event
+  module:
+    - datetime
+    - layout_builder
+    - options
+    - smart_trim
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: node.event.card_event
+targetEntityType: node
+bundle: event
+mode: card_event
+content:
+  body:
+    label: hidden
+    type: smart_trim
+    weight: 1
+    settings:
+      trim_length: 300
+      trim_type: chars
+      trim_suffix: ...
+      wrap_class: trimmed
+      more_text: More
+      more_class: more-link
+      summary_handler: full
+      wrap_output: false
+      more_link: false
+      trim_options:
+        text: false
+        trim_zero: false
+    third_party_settings: {  }
+    region: content
+  field_end_date:
+    weight: 4
+    label: hidden
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_location:
+    weight: 2
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_media_image:
+    weight: 7
+    label: hidden
+    settings:
+      view_mode: landscape_medium
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_monthly_event:
+    weight: 6
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_start_date:
+    weight: 3
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: county_longer
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_weekly_event:
+    weight: 5
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_event_type: true
+  field_file: true
+  langcode: true
+  search_api_excerpt: true

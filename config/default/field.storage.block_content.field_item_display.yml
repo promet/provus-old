@@ -1,0 +1,45 @@
+uuid: 9fff41a3-1155-4859-b307-4d72b5a434f8
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - options
+id: block_content.field_item_display
+field_name: field_item_display
+entity_type: block_content
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: card
+      label: Card
+    -
+      value: card_bordered
+      label: 'Card Bordered'
+    -
+      value: card_background
+      label: 'Card Background'
+    -
+      value: card_promo
+      label: 'Card Promo'
+    -
+      value: card_event
+      label: 'Card Event'
+    -
+      value: square_image
+      label: 'Card Square Image'
+    -
+      value: text_link
+      label: 'Card Text Link'
+    -
+      value: text_link_icon
+      label: 'Card Text Link w/ Icon'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

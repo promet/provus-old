@@ -1,0 +1,21 @@
+uuid: 1ddbee97-d411-49f2-89de-2762aced66dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.number_item
+    - field.storage.block_content.field_icon
+  module:
+    - options
+id: block_content.number_item.field_icon
+field_name: field_icon
+entity_type: block_content
+bundle: number_item
+label: Icon
+description: 'You can see what the full list of icons looks like here: <a href="https://material.io/resources/icons">https://material.io/resources/icons</a>'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

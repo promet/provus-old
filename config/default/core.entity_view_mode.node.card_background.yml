@@ -1,0 +1,10 @@
+uuid: 4698ecb1-ca50-433c-a8b8-e1fa540622fc
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.card_background
+label: 'Card Background'
+targetEntityType: node
+cache: true

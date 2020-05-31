@@ -1,0 +1,5 @@
+card__heading__date__time: 'Date and time'
+card__body__date__time: 'Fri, December 13, 2019 10:00 AM - 4:00 PM EST'
+card__link__text__date__time: 'Add to Calendar'
+card__link__url__date__time: '#'
+icon__date__time: 'calendar_today'

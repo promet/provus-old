@@ -1,0 +1,40 @@
+determine_menu: true
+disable_admin_page: true
+append_current_page: true
+current_page_as_link: true
+stop_on_first_match: false
+append_member_page: false
+member_page_as_link: false
+remove_home: false
+add_home: true
+front_title: 0
+exclude_empty_url: false
+derived_active_trail: false
+menu_breadcrumb_menus:
+  main:
+    enabled: 1
+    weight: -10
+    taxattach: 0
+    langhandle: 0
+  admin:
+    weight: 0
+    enabled: 0
+    taxattach: 0
+    langhandle: 0
+  footer:
+    weight: 0
+    enabled: 0
+    taxattach: 0
+    langhandle: 0
+  tools:
+    weight: 0
+    enabled: 0
+    taxattach: 0
+    langhandle: 0
+  account:
+    weight: 0
+    enabled: 0
+    taxattach: 0
+    langhandle: 0
+_core:
+  default_config_hash: dp50LLB10ui-pYgDqHSZdREslQ7DqY71aF20tyaas6I

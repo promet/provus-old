@@ -1,0 +1,36 @@
+<?php
+
+/**
+ * @file
+ * Contains oc_site.module.
+ */
+
+use Drupal\pathauto\PathautoPatternInterface;
+
+/**
+ * Implements hook_page_attachments().
+ */
+function oc_site_page_attachments(array &$page) {
+  $main_site = \Drupal::config('oc_site.settings')->get('site_css');
+  $main_site = $main_site ? $main_site : 'main';
+  $active_theme = \Drupal::theme()->getActiveTheme()->getName();
+
+  // Add only if active theme is countyoc.
+  if ($active_theme == 'countyoc') {
+    $page['#attached']['library'][] = 'oc_site/' . $main_site;
+  }
+}
+
+/**
+ * Implements hook_pathauto_pattern_alter().
+ */
+function oc_site_pathauto_pattern_alter(PathautoPatternInterface &$pattern, array $context) {
+  // If no menu item exists, then use the [node:content-type:name]/[node:title].
+  if ($context['module'] == 'node' && ($context['bundle'] <> 'county_article' && $context['bundle'] <> 'event')) {
+    $menu_link_manager = \Drupal::service('plugin.manager.menu.link');
+    $result = $menu_link_manager->loadLinksByRoute('entity.node.canonical', ['node' => $context['data']['node']->id()]);
+    if (empty($result)) {
+      $pattern->setPattern('[node:content-type:name]/[node:title]');
+    }
+  }
+}

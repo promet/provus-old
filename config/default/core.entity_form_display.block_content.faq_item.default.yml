@@ -1,0 +1,47 @@
+uuid: 729b0e44-298b-4aea-b060-a898ef32c654
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.faq_item
+    - field.field.block_content.faq_item.field_answer
+    - field.field.block_content.faq_item.field_question
+  module:
+    - text
+id: block_content.faq_item.default
+targetEntityType: block_content
+bundle: faq_item
+mode: default
+content:
+  field_answer:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_question:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+hidden: {  }

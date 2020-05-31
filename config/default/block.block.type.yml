@@ -1,0 +1,29 @@
+uuid: 15fcf2c1-a113-47f2-a407-b3d7ef5b6214
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.type
+  module:
+    - facets
+    - system
+  theme:
+    - countyoc
+id: type
+theme: countyoc
+region: sidebar
+weight: 0
+provider: null
+plugin: 'facet_block:type'
+settings:
+  id: 'facet_block:type'
+  label: Type
+  provider: facets
+  label_display: visible
+  block_id: type
+visibility:
+  request_path:
+    id: request_path
+    pages: /search
+    negate: false
+    context_mapping: {  }

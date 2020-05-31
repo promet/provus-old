@@ -1,0 +1,5 @@
+name: 'OC Sitemap'
+type: module
+description: 'Sitemap for OC.'
+core: 8.x
+package: 'Orange County'

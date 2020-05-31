@@ -1,0 +1,49 @@
+navigation:
+  label: Navigation
+  class: block-footernavigation-menu
+  inline_menu_items:
+    - title: 'OCgov Home'
+      url: '#'
+    - title: 'About the County'
+      url: '#'
+    - title: 'Departments'
+      url: '#'
+    - title: 'Business'
+      url: '#'
+    - title: 'How Do I'
+      url: '#'
+    - title: 'Residents'
+      url: '#'
+quicklinks:
+  label: Quick Links
+  class: block-footerquicklinks-menu
+  inline_menu_items:
+    - title: 'Acceptable Use'
+      url: '#'
+    - title: 'Accessibility'
+      url: '#'
+    - title: 'Contact the County'
+      url: '#'
+    - title: 'Disclaimer'
+      url: '#'
+    - title: 'Sitemap'
+      url: '#'
+resources:
+  label: Resources
+  class: block-footerresources-menu
+  inline_menu_items:
+    - title: 'Chambers of Commerce'
+      url: '#'
+    - title: 'Federal Governmemnt'
+      url: '#'
+    - title: 'General Information'
+      url: '#'
+    - title: 'Orange County Cities'
+      url: '#'
+    - title: 'Related Government Agencies'
+      url: '#'
+    - title: 'State Government'
+      url: '#'
+    - title: 'Visitor Bureaus'
+      url: '#'
+

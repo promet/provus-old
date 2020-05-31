@@ -1,0 +1,10 @@
+uuid: 7b5a4f0f-e5b7-43b8-ab9f-f79c8771406c
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+id: block_content.card_background
+label: 'Card Background'
+targetEntityType: block_content
+cache: true

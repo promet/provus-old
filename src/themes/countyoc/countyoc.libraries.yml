@@ -1,0 +1,97 @@
+global:
+  css:
+    theme:
+      dist/style.css: {}
+
+site-header:
+  js:
+    dist/js/03-organisms/site/site-header/site-header.js: {}
+
+site-footer:
+  js:
+    dist/js/03-organisms/site/site-footer/site-footer.js: {}
+
+main-menu:
+  js:
+    dist/js/02-molecules/menus/main-menu/main-menu.js: {}
+
+tabs:
+  js:
+    dist/js/02-molecules/tabs/tabs.js: {}
+    dist/js/03-organisms/navigation/navigation.js: {}
+
+google-translate:
+  js:
+    '//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit' : { type: external }
+
+bootstrap:
+  remote: https://github.com/twbs/bootstrap
+  version: 4.4.1
+  license:
+    name: MIT
+    url: https://github.com/twbs/bootstrap/blob/v4-dev/LICENSE
+    gpl-compatible: true
+  js:
+    libraries/bootstrap/dist/js/bootstrap.min.js: { minified: true }
+  css:
+    theme:
+      libraries/bootstrap/dist/css/bootstrap.min.css: { minified: true }
+
+lightslider:
+  remote: sachinchoolur/lightslider
+  version: 1.1.6
+  license:
+    name: MIT
+    url: https://raw.githubusercontent.com/sachinchoolur/lightslider/master/LICENSE
+    gpl-compatible: true
+  js:
+    libraries/lightslider/dist/js/lightslider.min.js: { minified: true }
+  css:
+    theme:
+      libraries/lightslider/dist/css/lightslider.min.css: { minified: true }
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/jquery.once
+
+carousel-3-item:
+  js:
+    dist/js/03-organisms/group/carousel/3-item/carousel-3-items.js: {}
+  dependencies:
+    - countyoc/lightslider
+
+multicard:
+  js:
+    dist/js/03-organisms/group/carousel/multicard/multicard.js: {}
+  dependencies:
+    - countyoc/lightslider
+
+promo-card:
+  js:
+    dist/js/03-organisms/group/carousel/promo-card/carousel-promo-card.js: {}
+  dependencies:
+    - countyoc/lightslider
+
+banner:
+  js:
+    dist/js/03-organisms/banner/banner.js: {}
+  dependencies:
+    - countyoc/bootstrap
+
+utility:
+  js:
+    dist/js/03-organisms/utility/utility.js: {}
+  dependencies:
+    - countyoc/google-translate
+
+navigation:
+  js:
+    dist/js/03-organisms/navigation/navigation.js: {}
+
+browser-detect:
+  js:
+    dist/js/02-molecules/browser-popup/browser-popup.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/jquery.once

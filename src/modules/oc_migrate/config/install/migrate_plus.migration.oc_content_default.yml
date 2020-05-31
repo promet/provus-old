@@ -1,0 +1,68 @@
+id: oc_content_default
+label: Default Orange County content migration
+migration_group: oc
+migration_dependencies: []
+migration_tags:
+  - Orange County
+source:
+  plugin: directory
+  path: 'public://import/data/content'
+  pattern: '/.*\.(json|jpg|bmp|gif)/i'
+  data_parser_plugin: json
+  include_raw_data: true
+  fields:
+    -
+      name: id
+      label: id
+      selector: id
+    -
+      name: title
+      label: title
+      selector: title
+    -
+      name: body
+      label: body
+      selector: body
+    -
+      name: type
+      label: type
+      selector: type
+    -
+      name: date
+      label: date
+      selector: date
+    -
+      name: article_type
+      label: article_type
+      selector: article_type
+  ids:
+    id:
+      type: string
+destination:
+  plugin: 'entity:node'
+  default_bundle: county_page
+process:
+  type:
+    plugin: oc_process
+  title:
+    plugin: oc_process
+    source: title
+  body/value:
+    plugin: oc_process
+    source: body
+  body/format:
+    plugin: default_value
+    default_value: basic_html
+  field_type:
+    plugin: oc_process
+    source: article_type
+  field_publish_date:
+    plugin: oc_process
+    source: date
+  created:
+    plugin: oc_process
+    source: date
+  changed:
+    plugin: oc_process
+    source: date
+dependencies: {}

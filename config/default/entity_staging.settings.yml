@@ -1,0 +1,70 @@
+staging_directory: ../config/content
+entity_types:
+  block_content:
+    enable: 1
+    bundles:
+      accordion: 1
+      accordion_item: 1
+      banner: 1
+      button: 1
+      columns: 1
+      faq_item: 1
+      inline_item: 1
+      link_group: 1
+      media_item: 1
+      number_item: 1
+      number_list: 1
+      social_feed: 1
+      tabs: 1
+      text: 1
+  comment:
+    enable: 0
+  contact_message:
+    enable: 0
+    bundles:
+      feedback: 0
+      personal: 0
+  file:
+    enable: 1
+  media:
+    enable: 1
+    bundles:
+      audio: 0
+      document: 1
+      image: 1
+      remote_video: 0
+      video: 0
+  node:
+    enable: 1
+    bundles:
+      alert: 1
+      county_article: 1
+      county_page: 1
+      event: 1
+      faq: 1
+      landing_page: 1
+      location: 1
+      person: 1
+  path_alias:
+    enable: 0
+  shortcut:
+    enable: 0
+    bundles:
+      default: 0
+  taxonomy_term:
+    enable: 1
+    bundles:
+      event_type: 1
+      location_type: 1
+      tags: 1
+  user:
+    enable: 0
+  webform_submission:
+    enable: 0
+    bundles:
+      contact: 0
+      libraries_contact: 0
+  menu_link_content:
+    enable: 1
+    bundles:
+      menu_link_content: 1

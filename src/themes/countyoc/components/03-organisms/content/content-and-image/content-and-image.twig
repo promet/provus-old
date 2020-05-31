@@ -1,0 +1,105 @@
+{% set numbergroup__base_class = 'content-and-image' %}
+
+<div {{ bem(numbergroup__base_class) }}>
+  <div {{ bem('inner', [], numbergroup__base_class) }}>
+
+    {# Two Column Text #}
+    <div class="content-and-image-wrapper">
+      {% block content %}
+        {% for item in content %}
+            {% block column__text %}
+              {% include "@molecules/card/two-column-text.twig" with
+                {
+                  card__heading: item.card__heading,
+                  card__body: item.card__body,
+                  card__link__url: item.card__link__url,
+                  card__link__pdf: item.card__link__pdf,
+                }
+              %}
+            {% endblock %}
+        {% endfor %}
+      {% endblock %}
+    </div>
+
+    {# Column Text With Left Image #}
+    <div class="content-and-image-wrapper">
+      {% block content2 %}
+        {% for item in content2 %}
+          <div class="content-and-image-item">
+            {% block column__text__left__img %}
+              {% include "@molecules/card/column-text-left-img.twig" with
+                {
+                  card__image__src: item.card__image__src,
+                  card__image__alt: item.card__image__alt,
+                  card__image__image_output_image_tag: item.card__image__image_output_image_tag,
+                  card__heading: item.card__heading,
+                  card__body: item.card__body,
+                  card__link__url: item.card__link__url,
+                }
+              %}
+            {% endblock %}
+          </div>
+        {% endfor %}
+      {% endblock %}
+    </div>
+
+    {# Column Text With Right Image #}
+    <div class="content-and-image-wrapper">
+      {% block content3 %}
+        {% for item in content3 %}
+          <div class="content-and-image-item">
+            {% block column__text__right__img %}
+              {% include "@molecules/card/column-text-right-img.twig" with
+                {
+                  card__image__src: item.card__image__src,
+                  card__image__alt: item.card__image__alt,
+                  card__image__image_output_image_tag: item.card__image__image_output_image_tag,
+                  card__heading: item.card__heading,
+                  card__body: item.card__body,
+                  card__link__url: item.card__link__url,
+                }
+              %}
+            {% endblock %}
+          </div>
+        {% endfor %}
+      {% endblock %}
+    </div>
+
+    {# Simple Column Text #}
+    <div class="content-and-image-wrapper">
+      {% block content4 %}
+        {% for item in content4 %}
+            {% block column__text %}
+              {% include "@molecules/card/simple-column-text.twig" with
+                {
+                  card__heading: item.card__heading,
+                  card__body: item.card__body,
+                  card__link__url: item.card__link__url,
+                  card__link__pdf: item.card__link__pdf,
+                }
+              %}
+            {% endblock %}
+        {% endfor %}
+      {% endblock %}
+    </div>
+
+    {# Three Column Text #}
+    <div class="content-and-image-wrapper">
+      {% block content5 %}
+        {% for item in content5 %}
+            {% block column__text %}
+              {% include "@molecules/card/three-column-text.twig" with
+                {
+                  card__heading: item.card__heading,
+                  card__body: item.card__body,
+                  card__link__url: item.card__link__url,
+                  card__link__pdf: item.card__link__pdf,
+                }
+              %}
+            {% endblock %}
+        {% endfor %}
+      {% endblock %}
+    </div>
+
+  </div>
+</div>

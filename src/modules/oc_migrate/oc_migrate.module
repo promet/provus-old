@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains oc_migrate.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function oc_migrate_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the oc_migrate module.
+    case 'help.page.oc_migrate':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Migration for OC.') . '</p>';
+      return $output;
+
+    default:
+  }
+}

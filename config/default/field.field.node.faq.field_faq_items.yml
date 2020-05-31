@@ -1,0 +1,28 @@
+uuid: fd9e6ff0-5dde-4018-ad17-c35c31ad939d
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.accordion
+    - field.storage.node.field_faq_items
+    - node.type.faq
+id: node.faq.field_faq_items
+field_name: field_faq_items
+entity_type: node
+bundle: faq
+label: 'FAQ Items'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:block_content'
+  handler_settings:
+    target_bundles:
+      accordion: accordion
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

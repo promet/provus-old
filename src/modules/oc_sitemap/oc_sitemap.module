@@ -1,0 +1,41 @@
+<?php
+
+/**
+ * @file
+ * Contains oc_sitemap.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function oc_sitemap_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'help.page.oc_sitemap':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Sitemap for OC.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function oc_sitemap_theme($existing, $type, $theme, $path) {
+  return [
+    'oc_sitemap_sitemap' => [
+      'variables' => ['items' => []],
+    ],
+    'oc_sitemap_link' => [
+      'variables' => [
+        'title' => NULL,
+        'link' => NULL,
+        'items' => [],
+      ],
+    ],
+  ];
+}

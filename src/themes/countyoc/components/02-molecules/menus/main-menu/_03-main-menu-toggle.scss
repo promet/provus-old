@@ -1,0 +1,63 @@
+/* Toggle */
+.toggle-expand {
+  @include link;
+
+  @include desktop {
+    display: none;
+  }
+
+  display: inline-block;
+  padding: $space;
+  text-decoration: none;
+  width: 100%;
+}
+
+.toggle-expand__text {
+  font-size: 0.9rem;
+  font-weight: bold;
+  display: none;
+
+  .toggle-expand--open & {
+    color: $white;
+  }
+}
+
+/* SVG icon */
+.toggle-expand__icon {
+  height: 3rem;
+  width: 3rem;
+  margin: 0 auto;
+  display: none;
+}
+
+.toggle-expand__open {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 22px 15px;
+  background-image: url("/images/icons/ico-hamburguer.png");
+  width: 22px;
+  height: 15px;
+
+  .toggle-expand--open & {
+    display: none;
+  }
+}
+
+.toggle-expand__close {
+  display: none;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 16px 17px;
+  background-image: url("/images/icons/ico-hamburguer-close.png");
+  width: 16px;
+  height: 17px;
+  background-color: transparent;
+  margin-left: -18px;
+
+  .toggle-expand--open & {
+    display: inline-block;
+    background-color: transparent;
+  }
+}

@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+## Imports test content 
+##
+## Usage: fin test-content [$site]
+
+if [[ "${1}" == "" ]]; then
+   echo "Need to specify site"
+   exit
+fi
+
+fin drush update-migration-config -l $1 
+fin drush migrate:import --group=entity_staging -l $1
+fin drush config-set -y system.site page.front '/landing-page/home-page'

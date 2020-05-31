@@ -1,0 +1,7 @@
+{% for item in items %}
+  {% include "@molecules/menus/inline/inline-menu.twig" with {
+    menu_class: 'inline-menu',
+    items: item.inline_menu_items,
+    label: item.label
+  } %}
+{% endfor %}

@@ -1,0 +1,123 @@
+.header {
+  &__navigation {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 10px 15px;
+    align-items: center;
+    position: relative;
+
+    @include desktop {
+      padding: 8px 40px;
+    }
+  }
+
+  &__branding {
+    order: 1;
+
+    .logo__image {
+      max-width: 44px;
+      margin-bottom: 0;
+
+      @include desktop {
+        max-width: 66px;
+        z-index: 999;
+        position: relative;
+      }
+    }
+  }
+
+  &__search {
+    order: 2;
+    position: absolute;
+    right: 65px;
+
+    @include desktop {
+      order: 3;
+      position: initial;
+      right: auto;
+    }
+
+    .ico-search {
+      width: 24px;
+      height: 25px;
+    }
+
+    .search__image {
+      margin-bottom: 0;
+    }
+  }
+
+  .search-block-form {
+    height: 0;
+    overflow: hidden;
+  }
+
+  &.search-bar-open {
+    .header__search {
+      position: initial;
+    }
+
+    .search__image {
+      display: none;
+      margin-bottom: 0;
+
+      @include desktop {
+        display: block;
+      }
+    }
+
+    .search-block-form {
+      height: 100%;
+      animation-name: openSearchBar;
+      animation-duration: 1s;
+    }
+  }
+
+  &.search-bar-closed {
+    .search-block-form {
+      animation-name: closeSearchBar;
+      animation-duration: 0.5s;
+    }
+  }
+
+  @keyframes openSearchBar {
+    from {
+      height: 0;
+    }
+
+    to {
+      height: 100%;
+    }
+  }
+
+  @keyframes closeSearchBar {
+    from {
+      height: 100%;
+    }
+
+    to {
+      height: 0;
+    }
+  }
+
+  &__menu {
+    order: 3;
+
+    @include desktop {
+      order: 2;
+    }
+
+    nav {
+      height: 15px;
+
+      @include desktop {
+        height: 100%;
+      }
+
+      .toggle-expand {
+        padding: 0;
+      }
+    }
+  }
+}

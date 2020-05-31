@@ -1,0 +1,10 @@
+uuid: da8b8fcd-dda3-4446-804b-0bf7c191a2cc
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.square_small
+label: 'Square Small'
+targetEntityType: media
+cache: true

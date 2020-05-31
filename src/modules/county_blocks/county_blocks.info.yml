@@ -1,0 +1,7 @@
+name: 'County Blocks'
+type: module
+description: 'Custom county blocks.'
+core: 8.x
+package: 'county'
+dependencies:
+  - layout_builder

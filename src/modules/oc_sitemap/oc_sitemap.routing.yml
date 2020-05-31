@@ -1,0 +1,7 @@
+oc_sitemap.sitemap:
+  path: '/contact/sitemap'
+  defaults:
+    _controller: '\Drupal\oc_sitemap\Controller\SitemapController::build'
+    _title: 'Sitemap'
+  requirements:
+    _permission: 'access content'

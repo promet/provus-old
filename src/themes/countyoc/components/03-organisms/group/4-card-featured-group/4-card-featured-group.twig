@@ -1,0 +1,59 @@
+{% set numbergroup__base_class = 'four-card-featured-group' %}
+
+<div {{ bem(numbergroup__base_class) }}>
+
+  <h2 class="title">{{ title }}</h2>
+
+  <div {{ bem('inner', [], numbergroup__base_class) }}>
+
+    <div class="four-card-featured-group-wrapper">
+      <div class="content-left">
+        {% block card__default %}
+          {% include "@molecules/card/card.twig" with
+            {
+              card__image__src: card__image__src,
+              card__image__alt: card__image__alt,
+              card__image__image_output_image_tag: card__image__image_output_image_tag,
+              card__heading: card__heading,
+              card__date: card__date,
+              card__body: card__body,
+              card__link__url: card__link__url,
+            }
+          %}
+        {% endblock %}
+      </div>
+      <div class="content-line"><div class="content-line-hr"></div>  </div>
+      <div class="content-right">
+        {% block content %}
+          {% for item in content %}
+            <div class="card-mini-item">
+              {% block card__mini %}
+                {% include "@molecules/card/card-mini.twig" with
+                  {
+                    card__image__src: item.card__image__src,
+                    card__image__alt: item.card__image__alt,
+                    card__image__image_output_image_tag: item.card__image__image_output_image_tag,
+                    card__heading: item.card__heading,
+                    card__date: item.card__date,
+                    card__link__url: item.card__link__url,
+                    card__link__pdf: item.card__link__pdf,
+                  }
+                %}
+              {% endblock %}
+            </div>
+          {% endfor %}
+        {% endblock %}
+      </div>
+    </div>
+  </div>
+  {# Link #}
+  {% if card__button__url %}
+    <div class="read-more-btn">
+      {% include "@atoms/buttons/twig/button.twig" with {
+        button_content: card__button__text,
+        button_modifiers: ['secondary'],
+        button_url: card__button__url,
+      } %}
+    </div>
+  {% endif %}
+</div>

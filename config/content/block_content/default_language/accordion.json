@@ -1,0 +1,94 @@
+{
+    "block_content": [
+        {
+            "id": [
+                {
+                    "value": 48
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "13362ff9-f915-44c6-a4fa-70070488f83c"
+                }
+            ],
+            "revision_id": [
+                {
+                    "value": 48
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "type": [
+                {
+                    "target_id": "accordion",
+                    "target_type": "block_content_type",
+                    "target_uuid": "93fe1960-3994-4c28-9dd9-4477af287bee"
+                }
+            ],
+            "revision_created": [
+                {
+                    "value": "2020-05-11T15:09:32+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "revision_user": [],
+            "revision_log": [],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "info": [],
+            "changed": [
+                {
+                    "value": "2020-05-11T15:09:32+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "reusable": [
+                {
+                    "value": true
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": true
+                }
+            ],
+            "revision_translation_affected": [
+                {
+                    "value": true
+                }
+            ],
+            "field_accordion_items": [
+                {
+                    "target_id": 44,
+                    "target_type": "block_content",
+                    "target_uuid": "579c340c-978f-4eb0-a579-aea62e1d9db2",
+                    "url": "\/block\/44"
+                },
+                {
+                    "target_id": 45,
+                    "target_type": "block_content",
+                    "target_uuid": "a35ffa83-1892-4bf9-97aa-1e45f4e5c6ba",
+                    "url": "\/block\/45"
+                },
+                {
+                    "target_id": 46,
+                    "target_type": "block_content",
+                    "target_uuid": "2e1da77c-3e21-4abd-8b79-3769a31ed852",
+                    "url": "\/block\/46"
+                },
+                {
+                    "target_id": 47,
+                    "target_type": "block_content",
+                    "target_uuid": "17f62b02-0e2f-4aab-8660-be44367b8719",
+                    "url": "\/block\/47"
+                }
+            ]
+        }
+    ]
+}

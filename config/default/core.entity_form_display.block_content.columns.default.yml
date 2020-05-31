@@ -1,0 +1,34 @@
+uuid: 9f6461e2-0f53-43dd-9422-488eb0c0cc52
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.columns
+    - field.field.block_content.columns.field_column_items
+  module:
+    - inline_entity_form
+id: block_content.columns.default
+targetEntityType: block_content
+bundle: columns
+mode: default
+content:
+  field_column_items:
+    weight: 0
+    settings:
+      form_mode: default
+      override_labels: true
+      label_singular: 'Column Item'
+      label_plural: 'Column Items'
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      revision: false
+      collapsible: false
+      collapsed: false
+      allow_duplicate: false
+    third_party_settings: {  }
+    type: inline_entity_form_complex
+    region: content
+hidden:
+  info: true
+  langcode: true

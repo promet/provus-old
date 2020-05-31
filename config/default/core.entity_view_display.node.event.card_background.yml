@@ -1,0 +1,68 @@
+uuid: 4d2bbb1f-7b6d-4e9e-8827-3fe8e951dade
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.card_background
+    - field.field.node.event.body
+    - field.field.node.event.field_end_date
+    - field.field.node.event.field_event_type
+    - field.field.node.event.field_file
+    - field.field.node.event.field_location
+    - field.field.node.event.field_media_image
+    - field.field.node.event.field_monthly_event
+    - field.field.node.event.field_start_date
+    - field.field.node.event.field_weekly_event
+    - node.type.event
+  module:
+    - layout_builder
+    - smart_trim
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: node.event.card_background
+targetEntityType: node
+bundle: event
+mode: card_background
+content:
+  body:
+    label: hidden
+    type: smart_trim
+    weight: 0
+    settings:
+      trim_length: 75
+      trim_type: chars
+      trim_suffix: ...
+      wrap_class: trimmed
+      more_text: More
+      more_class: more-link
+      summary_handler: trim
+      trim_options:
+        text: true
+        trim_zero: false
+      wrap_output: false
+      more_link: false
+    third_party_settings: {  }
+    region: content
+  field_media_image:
+    type: entity_reference_entity_view
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      view_mode: landscape_small
+      link: false
+    third_party_settings: {  }
+hidden:
+  field_end_date: true
+  field_event_type: true
+  field_file: true
+  field_location: true
+  field_monthly_event: true
+  field_start_date: true
+  field_weekly_event: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

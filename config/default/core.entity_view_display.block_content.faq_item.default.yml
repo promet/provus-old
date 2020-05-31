@@ -1,0 +1,33 @@
+uuid: d3346bac-b10d-462c-a68e-0348a7012314
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.faq_item
+    - field.field.block_content.faq_item.field_answer
+    - field.field.block_content.faq_item.field_question
+  module:
+    - text
+id: block_content.faq_item.default
+targetEntityType: block_content
+bundle: faq_item
+mode: default
+content:
+  field_answer:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_question:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

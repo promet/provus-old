@@ -1,0 +1,119 @@
+.social-menu {
+  @include list-reset;
+
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 145px;
+  margin: 14px auto 0 auto;
+
+  @include large {
+    margin: 14px 0 0 0;
+  }
+
+  &__item {
+    margin: 0 20px 20px 0;
+
+    &:nth-child(4) {
+      margin: 0 0 20px 0;
+    }
+
+    &:nth-child(5) {
+      margin: 0 18px 0 0;
+    }
+
+    &:nth-child(6) {
+      margin: 0 24px 0 0;
+    }
+
+    &:nth-child(7) {
+      margin: 0 23px 0 0;
+    }
+
+    &:nth-child(8) {
+      margin: 0 0 0 0;
+    }
+  }
+
+  &__icon {
+    margin: 0;
+    max-width: 21px;
+    height: 21px;
+  }
+
+  .ico-social-footer{
+    margin: 0;
+
+    &.facebook {
+      background-repeat: no-repeat;
+      background-position: right center;
+      background-size: 21px 21px;
+      background-image: url("/images/icons/facebook.svg");
+      height: 21px;
+      width: 21px;
+    }
+
+    &.twitter {
+      background-repeat: no-repeat;
+      background-position: right center;
+      background-size: 21px 21px;
+      background-image: url("/images/icons/twitter.svg");
+      height: 21px;
+      width: 21px;
+    }
+
+    &.youtube {
+      background-repeat: no-repeat;
+      background-position: right center;
+      background-size: 24px 18px;
+      background-image: url("/images/icons/youtube.svg");
+      height: 18px;
+      width: 24px;
+    }
+
+    &.rss {
+      background-repeat: no-repeat;
+      background-position: right center;
+      background-size: 19px 18px;
+      background-image: url("/images/icons/rss.svg");
+      height: 18px;
+      width: 19px;
+    }
+
+    &.chat {
+      background-repeat: no-repeat;
+      background-position: right center;
+      background-size: 23px 20px;
+      background-image: url("/images/icons/chat.svg");
+      height: 20px;
+      width: 23px;
+    }
+
+    &.flickr {
+      background-repeat: no-repeat;
+      background-position: right center;
+      background-size: 21px 21px;
+      background-image: url("/images/icons/flickr.svg");
+      height: 21px;
+      width: 21px;
+    }
+
+    &.apple {
+      background-repeat: no-repeat;
+      background-position: right center;
+      background-size: 17px 21px;
+      background-image: url("/images/icons/apple.svg");
+      height: 21px;
+      width: 17px;
+    }
+
+    &.google {
+      background-repeat: no-repeat;
+      background-position: right center;
+      background-size: 21px 23px;
+      background-image: url("/images/icons/google.svg");
+      height: 21px;
+      width: 19px;
+    }
+  }
+}

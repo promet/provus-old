@@ -1,0 +1,5 @@
+name: 'OC Site'
+type: module
+description: 'Site config for OC.'
+core: 8.x
+package: 'Orange County'

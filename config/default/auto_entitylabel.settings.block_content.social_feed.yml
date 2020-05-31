@@ -1,0 +1,6 @@
+status: 1
+pattern: 'Social Feed [block_content:field_social_type]'
+escape: false
+dependencies:
+  config:
+    - block_content.type.social_feed

@@ -1,0 +1,1189 @@
+{
+    "block_content": [
+        {
+            "id": [
+                {
+                    "value": 34
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "d5d680f8-fccf-485d-b108-00a944e48f3f"
+                }
+            ],
+            "revision_id": [
+                {
+                    "value": 34
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "type": [
+                {
+                    "target_id": "link_group",
+                    "target_type": "block_content_type",
+                    "target_uuid": "3cab7a2a-267b-4264-955b-1698ff79c9b3"
+                }
+            ],
+            "revision_created": [
+                {
+                    "value": "2020-04-21T09:45:48+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "revision_user": [],
+            "revision_log": [],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "info": [
+                {
+                    "value": "Promo Card"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2020-04-21T09:45:48+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "reusable": [
+                {
+                    "value": false
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": true
+                }
+            ],
+            "revision_translation_affected": [
+                {
+                    "value": true
+                }
+            ],
+            "field_block_items": [
+                {
+                    "target_id": 16,
+                    "target_type": "block_content",
+                    "target_uuid": "a9127945-020c-49b3-880c-10971f4f76e4",
+                    "url": "\/block\/16"
+                },
+                {
+                    "target_id": 18,
+                    "target_type": "block_content",
+                    "target_uuid": "7818f263-bda6-4dc3-b0eb-98f02372917a",
+                    "url": "\/block\/18"
+                },
+                {
+                    "target_id": 17,
+                    "target_type": "block_content",
+                    "target_uuid": "9775676b-56a0-4558-9e2b-145fab056261",
+                    "url": "\/block\/17"
+                },
+                {
+                    "target_id": 19,
+                    "target_type": "block_content",
+                    "target_uuid": "018abc9b-2c7a-46ab-84b2-56ab155d4932",
+                    "url": "\/block\/19"
+                }
+            ],
+            "field_content_references": [],
+            "field_content_type": [],
+            "field_count": [
+                {
+                    "value": 3
+                }
+            ],
+            "field_group_display": [
+                {
+                    "value": "carousel_3"
+                }
+            ],
+            "field_group_source": [
+                {
+                    "value": "manual_inline"
+                }
+            ],
+            "field_item_display": [
+                {
+                    "value": "card_promo"
+                }
+            ],
+            "field_link": [],
+            "field_section_background_style": [
+                {
+                    "value": "none"
+                }
+            ]
+        },
+        {
+            "id": [
+                {
+                    "value": 35
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "b212a7a6-9f8f-4d25-8bf3-4ddee070c088"
+                }
+            ],
+            "revision_id": [
+                {
+                    "value": 35
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "type": [
+                {
+                    "target_id": "link_group",
+                    "target_type": "block_content_type",
+                    "target_uuid": "3cab7a2a-267b-4264-955b-1698ff79c9b3"
+                }
+            ],
+            "revision_created": [
+                {
+                    "value": "2020-03-23T21:03:47+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "revision_user": [
+                {
+                    "target_id": 7231318
+                }
+            ],
+            "revision_log": [],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "info": [
+                {
+                    "value": "OC Highlights (LG: Carousel 3 Item)"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2020-03-23T21:03:47+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "reusable": [
+                {
+                    "value": true
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": true
+                }
+            ],
+            "revision_translation_affected": [
+                {
+                    "value": true
+                }
+            ],
+            "field_block_items": [
+                {
+                    "target_id": 20,
+                    "target_type": "block_content",
+                    "target_uuid": "c9507961-6c9f-478a-9c76-320013e58baa",
+                    "url": "\/block\/20"
+                },
+                {
+                    "target_id": 21,
+                    "target_type": "block_content",
+                    "target_uuid": "9f6f97bd-43c2-4f9a-886f-bc52642d291b",
+                    "url": "\/block\/21"
+                },
+                {
+                    "target_id": 22,
+                    "target_type": "block_content",
+                    "target_uuid": "1014ef9a-185c-48cc-94c1-a1630d6ccfcd",
+                    "url": "\/block\/22"
+                },
+                {
+                    "target_id": 23,
+                    "target_type": "block_content",
+                    "target_uuid": "aab2e0f4-3257-4ca4-b398-0f6e8ea1f393",
+                    "url": "\/block\/23"
+                }
+            ],
+            "field_content_references": [],
+            "field_content_type": [],
+            "field_count": [
+                {
+                    "value": 3
+                }
+            ],
+            "field_group_display": [
+                {
+                    "value": "carousel_3"
+                }
+            ],
+            "field_group_source": [
+                {
+                    "value": "manual_inline"
+                }
+            ],
+            "field_item_display": [
+                {
+                    "value": "card_bordered"
+                }
+            ],
+            "field_link": [],
+            "field_section_background_style": [
+                {
+                    "value": "none"
+                }
+            ]
+        },
+        {
+            "id": [
+                {
+                    "value": 36
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "2cf180af-dfe5-4815-8f79-bf5a8f014379"
+                }
+            ],
+            "revision_id": [
+                {
+                    "value": 36
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "type": [
+                {
+                    "target_id": "link_group",
+                    "target_type": "block_content_type",
+                    "target_uuid": "3cab7a2a-267b-4264-955b-1698ff79c9b3"
+                }
+            ],
+            "revision_created": [
+                {
+                    "value": "2020-03-23T21:06:28+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "revision_user": [
+                {
+                    "target_id": 7231318
+                }
+            ],
+            "revision_log": [],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "info": [
+                {
+                    "value": "Headlines (LG: 4 Card Featured)"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2020-03-23T21:06:28+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "reusable": [
+                {
+                    "value": true
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": true
+                }
+            ],
+            "revision_translation_affected": [
+                {
+                    "value": true
+                }
+            ],
+            "field_block_items": [
+                {
+                    "target_id": 20,
+                    "target_type": "block_content",
+                    "target_uuid": "c9507961-6c9f-478a-9c76-320013e58baa",
+                    "url": "\/block\/20"
+                },
+                {
+                    "target_id": 21,
+                    "target_type": "block_content",
+                    "target_uuid": "9f6f97bd-43c2-4f9a-886f-bc52642d291b",
+                    "url": "\/block\/21"
+                },
+                {
+                    "target_id": 22,
+                    "target_type": "block_content",
+                    "target_uuid": "1014ef9a-185c-48cc-94c1-a1630d6ccfcd",
+                    "url": "\/block\/22"
+                },
+                {
+                    "target_id": 23,
+                    "target_type": "block_content",
+                    "target_uuid": "aab2e0f4-3257-4ca4-b398-0f6e8ea1f393",
+                    "url": "\/block\/23"
+                }
+            ],
+            "field_content_references": [],
+            "field_content_type": [],
+            "field_count": [
+                {
+                    "value": 3
+                }
+            ],
+            "field_group_display": [
+                {
+                    "value": "featured_4"
+                }
+            ],
+            "field_group_source": [
+                {
+                    "value": "manual_inline"
+                }
+            ],
+            "field_item_display": [
+                {
+                    "value": "card"
+                }
+            ],
+            "field_link": [
+                {
+                    "uri": "internal:\/",
+                    "title": "Some More Link Button",
+                    "options": []
+                }
+            ],
+            "field_section_background_style": [
+                {
+                    "value": "none"
+                }
+            ]
+        },
+        {
+            "id": [
+                {
+                    "value": 37
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "92799a2a-0572-4888-ae69-5815f9f91480"
+                }
+            ],
+            "revision_id": [
+                {
+                    "value": 46
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "type": [
+                {
+                    "target_id": "link_group",
+                    "target_type": "block_content_type",
+                    "target_uuid": "3cab7a2a-267b-4264-955b-1698ff79c9b3"
+                }
+            ],
+            "revision_created": [
+                {
+                    "value": "2020-05-13T16:03:14+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "revision_user": [
+                {
+                    "target_id": 1,
+                    "target_type": "user",
+                    "target_uuid": "48afd4c5-3266-412a-a66a-933c4ad2f546",
+                    "url": "\/user\/1"
+                }
+            ],
+            "revision_log": [],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "info": [
+                {
+                    "value": "Quicklinks (LG: Carousel Multi)"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2020-05-13T16:03:14+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "reusable": [
+                {
+                    "value": true
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": true
+                }
+            ],
+            "revision_translation_affected": [
+                {
+                    "value": true
+                }
+            ],
+            "field_block_items": [
+                {
+                    "target_id": 20,
+                    "target_type": "block_content",
+                    "target_uuid": "c9507961-6c9f-478a-9c76-320013e58baa",
+                    "url": "\/block\/20"
+                },
+                {
+                    "target_id": 21,
+                    "target_type": "block_content",
+                    "target_uuid": "9f6f97bd-43c2-4f9a-886f-bc52642d291b",
+                    "url": "\/block\/21"
+                },
+                {
+                    "target_id": 22,
+                    "target_type": "block_content",
+                    "target_uuid": "1014ef9a-185c-48cc-94c1-a1630d6ccfcd",
+                    "url": "\/block\/22"
+                },
+                {
+                    "target_id": 23,
+                    "target_type": "block_content",
+                    "target_uuid": "aab2e0f4-3257-4ca4-b398-0f6e8ea1f393",
+                    "url": "\/block\/23"
+                },
+                {
+                    "target_id": 31,
+                    "target_type": "block_content",
+                    "target_uuid": "c8b08746-5033-403d-ac1d-842224b33f10",
+                    "url": "\/block\/31"
+                },
+                {
+                    "target_id": 32,
+                    "target_type": "block_content",
+                    "target_uuid": "eca4da01-24b0-4438-b111-304ee1f4f0c5",
+                    "url": "\/block\/32"
+                }
+            ],
+            "field_content_references": [],
+            "field_content_type": [
+                {
+                    "value": "county_article"
+                }
+            ],
+            "field_count": [
+                {
+                    "value": 3
+                }
+            ],
+            "field_group_display": [
+                {
+                    "value": "carousel_multi"
+                }
+            ],
+            "field_group_source": [
+                {
+                    "value": "manual_inline"
+                }
+            ],
+            "field_item_display": [
+                {
+                    "value": "card_background"
+                }
+            ],
+            "field_link": [],
+            "field_section_background_style": [
+                {
+                    "value": "gradient"
+                }
+            ]
+        },
+        {
+            "id": [
+                {
+                    "value": 38
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "3738c2db-ce57-4848-8d9f-7f86429dd5a8"
+                }
+            ],
+            "revision_id": [
+                {
+                    "value": 38
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "type": [
+                {
+                    "target_id": "link_group",
+                    "target_type": "block_content_type",
+                    "target_uuid": "3cab7a2a-267b-4264-955b-1698ff79c9b3"
+                }
+            ],
+            "revision_created": [
+                {
+                    "value": "2020-04-28T21:35:33+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "revision_user": [
+                {
+                    "target_id": 2518
+                }
+            ],
+            "revision_log": [],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "info": [
+                {
+                    "value": "Upcoming Events (LG: Column Row - 3)"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2020-04-28T21:35:33+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "reusable": [
+                {
+                    "value": true
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": true
+                }
+            ],
+            "revision_translation_affected": [
+                {
+                    "value": true
+                }
+            ],
+            "field_block_items": [
+                {
+                    "target_id": 31,
+                    "target_type": "block_content",
+                    "target_uuid": "c8b08746-5033-403d-ac1d-842224b33f10",
+                    "url": "\/block\/31"
+                },
+                {
+                    "target_id": 32,
+                    "target_type": "block_content",
+                    "target_uuid": "eca4da01-24b0-4438-b111-304ee1f4f0c5",
+                    "url": "\/block\/32"
+                },
+                {
+                    "target_id": 33,
+                    "target_type": "block_content",
+                    "target_uuid": "b7679fc7-2033-4a6b-9d3e-e9d19f44f5d8",
+                    "url": "\/block\/33"
+                }
+            ],
+            "field_content_references": [],
+            "field_content_type": [],
+            "field_count": [
+                {
+                    "value": 3
+                }
+            ],
+            "field_group_display": [
+                {
+                    "value": "column"
+                }
+            ],
+            "field_group_source": [
+                {
+                    "value": "manual_inline"
+                }
+            ],
+            "field_item_display": [
+                {
+                    "value": "card_event"
+                }
+            ],
+            "field_link": [
+                {
+                    "uri": "internal:\/",
+                    "title": "View All Events",
+                    "options": []
+                }
+            ],
+            "field_section_background_style": [
+                {
+                    "value": "solid"
+                }
+            ]
+        },
+        {
+            "id": [
+                {
+                    "value": 39
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "3cc914d1-7adc-401f-81d3-9afd0be36db2"
+                }
+            ],
+            "revision_id": [
+                {
+                    "value": 39
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "type": [
+                {
+                    "target_id": "link_group",
+                    "target_type": "block_content_type",
+                    "target_uuid": "3cab7a2a-267b-4264-955b-1698ff79c9b3"
+                }
+            ],
+            "revision_created": [
+                {
+                    "value": "2020-03-23T22:08:36+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "revision_user": [
+                {
+                    "target_id": 7231318
+                }
+            ],
+            "revision_log": [],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "info": [
+                {
+                    "value": "Popular Topics"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2020-03-23T22:08:36+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "reusable": [
+                {
+                    "value": true
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": true
+                }
+            ],
+            "revision_translation_affected": [
+                {
+                    "value": true
+                }
+            ],
+            "field_block_items": [
+                {
+                    "target_id": 24,
+                    "target_type": "block_content",
+                    "target_uuid": "440ba5cb-fff6-48cf-ae36-29ea58f129c2",
+                    "url": "\/block\/24"
+                },
+                {
+                    "target_id": 25,
+                    "target_type": "block_content",
+                    "target_uuid": "3616a6f6-2713-4e66-92ac-b0275f782b73",
+                    "url": "\/block\/25"
+                },
+                {
+                    "target_id": 26,
+                    "target_type": "block_content",
+                    "target_uuid": "ec746acf-3f6c-458e-960a-4829698006aa",
+                    "url": "\/block\/26"
+                },
+                {
+                    "target_id": 27,
+                    "target_type": "block_content",
+                    "target_uuid": "41012712-ccd4-4549-9d5b-275d5c1ac034",
+                    "url": "\/block\/27"
+                },
+                {
+                    "target_id": 28,
+                    "target_type": "block_content",
+                    "target_uuid": "53bc4dbe-1693-4f38-80c1-d917c0f4bfb5",
+                    "url": "\/block\/28"
+                },
+                {
+                    "target_id": 29,
+                    "target_type": "block_content",
+                    "target_uuid": "377353de-c203-42fe-9fdf-b49b077659b1",
+                    "url": "\/block\/29"
+                }
+            ],
+            "field_content_references": [],
+            "field_content_type": [],
+            "field_count": [
+                {
+                    "value": 3
+                }
+            ],
+            "field_group_display": [
+                {
+                    "value": "grid_3"
+                }
+            ],
+            "field_group_source": [
+                {
+                    "value": "manual_inline"
+                }
+            ],
+            "field_item_display": [
+                {
+                    "value": "text_link_icon"
+                }
+            ],
+            "field_link": [],
+            "field_section_background_style": [
+                {
+                    "value": "none"
+                }
+            ]
+        },
+        {
+            "id": [
+                {
+                    "value": 40
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "9bb1bf63-70e6-4ed9-8a89-dbc65b349199"
+                }
+            ],
+            "revision_id": [
+                {
+                    "value": 40
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "type": [
+                {
+                    "target_id": "link_group",
+                    "target_type": "block_content_type",
+                    "target_uuid": "3cab7a2a-267b-4264-955b-1698ff79c9b3"
+                }
+            ],
+            "revision_created": [
+                {
+                    "value": "2020-03-23T22:10:31+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "revision_user": [
+                {
+                    "target_id": 7231318
+                }
+            ],
+            "revision_log": [],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "info": [
+                {
+                    "value": "Resources"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2020-03-23T22:10:31+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "reusable": [
+                {
+                    "value": true
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": true
+                }
+            ],
+            "revision_translation_affected": [
+                {
+                    "value": true
+                }
+            ],
+            "field_block_items": [
+                {
+                    "target_id": 29,
+                    "target_type": "block_content",
+                    "target_uuid": "377353de-c203-42fe-9fdf-b49b077659b1",
+                    "url": "\/block\/29"
+                },
+                {
+                    "target_id": 28,
+                    "target_type": "block_content",
+                    "target_uuid": "53bc4dbe-1693-4f38-80c1-d917c0f4bfb5",
+                    "url": "\/block\/28"
+                },
+                {
+                    "target_id": 26,
+                    "target_type": "block_content",
+                    "target_uuid": "ec746acf-3f6c-458e-960a-4829698006aa",
+                    "url": "\/block\/26"
+                },
+                {
+                    "target_id": 27,
+                    "target_type": "block_content",
+                    "target_uuid": "41012712-ccd4-4549-9d5b-275d5c1ac034",
+                    "url": "\/block\/27"
+                },
+                {
+                    "target_id": 25,
+                    "target_type": "block_content",
+                    "target_uuid": "3616a6f6-2713-4e66-92ac-b0275f782b73",
+                    "url": "\/block\/25"
+                },
+                {
+                    "target_id": 24,
+                    "target_type": "block_content",
+                    "target_uuid": "440ba5cb-fff6-48cf-ae36-29ea58f129c2",
+                    "url": "\/block\/24"
+                }
+            ],
+            "field_content_references": [],
+            "field_content_type": [],
+            "field_count": [
+                {
+                    "value": 3
+                }
+            ],
+            "field_group_display": [
+                {
+                    "value": "grid_3"
+                }
+            ],
+            "field_group_source": [
+                {
+                    "value": "manual_inline"
+                }
+            ],
+            "field_item_display": [
+                {
+                    "value": "text_link"
+                }
+            ],
+            "field_link": [],
+            "field_section_background_style": [
+                {
+                    "value": "none"
+                }
+            ]
+        },
+        {
+            "id": [
+                {
+                    "value": 41
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "8d8227b1-5a03-4770-a0fe-b3b86006baf5"
+                }
+            ],
+            "revision_id": [
+                {
+                    "value": 41
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "type": [
+                {
+                    "target_id": "link_group",
+                    "target_type": "block_content_type",
+                    "target_uuid": "3cab7a2a-267b-4264-955b-1698ff79c9b3"
+                }
+            ],
+            "revision_created": [
+                {
+                    "value": "2020-05-06T12:00:59+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "revision_user": [
+                {
+                    "target_id": 37
+                }
+            ],
+            "revision_log": [],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "info": [
+                {
+                    "value": "Promo Card Example"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2020-05-06T12:00:59+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "reusable": [
+                {
+                    "value": true
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": true
+                }
+            ],
+            "revision_translation_affected": [
+                {
+                    "value": true
+                }
+            ],
+            "field_block_items": [
+                {
+                    "target_id": 16,
+                    "target_type": "block_content",
+                    "target_uuid": "a9127945-020c-49b3-880c-10971f4f76e4",
+                    "url": "\/block\/16"
+                },
+                {
+                    "target_id": 18,
+                    "target_type": "block_content",
+                    "target_uuid": "7818f263-bda6-4dc3-b0eb-98f02372917a",
+                    "url": "\/block\/18"
+                },
+                {
+                    "target_id": 17,
+                    "target_type": "block_content",
+                    "target_uuid": "9775676b-56a0-4558-9e2b-145fab056261",
+                    "url": "\/block\/17"
+                },
+                {
+                    "target_id": 19,
+                    "target_type": "block_content",
+                    "target_uuid": "018abc9b-2c7a-46ab-84b2-56ab155d4932",
+                    "url": "\/block\/19"
+                },
+                {
+                    "target_id": 30,
+                    "target_type": "block_content",
+                    "target_uuid": "d488e6cd-c99e-411d-b265-ba31e4ed4624",
+                    "url": "\/block\/30"
+                }
+            ],
+            "field_content_references": [],
+            "field_content_type": [],
+            "field_count": [
+                {
+                    "value": 3
+                }
+            ],
+            "field_group_display": [
+                {
+                    "value": "carousel_promo"
+                }
+            ],
+            "field_group_source": [
+                {
+                    "value": "manual_inline"
+                }
+            ],
+            "field_item_display": [
+                {
+                    "value": "card_promo"
+                }
+            ],
+            "field_link": [],
+            "field_section_background_style": [
+                {
+                    "value": "solid"
+                }
+            ]
+        },
+        {
+            "id": [
+                {
+                    "value": 42
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "767865ea-91e9-4673-ac8a-36679062d064"
+                }
+            ],
+            "revision_id": [
+                {
+                    "value": 42
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "type": [
+                {
+                    "target_id": "link_group",
+                    "target_type": "block_content_type",
+                    "target_uuid": "3cab7a2a-267b-4264-955b-1698ff79c9b3"
+                }
+            ],
+            "revision_created": [
+                {
+                    "value": "2020-05-06T11:57:50+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "revision_user": [
+                {
+                    "target_id": 37
+                }
+            ],
+            "revision_log": [],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "info": [
+                {
+                    "value": "Link Group 4 Images"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2020-05-06T11:57:50+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "reusable": [
+                {
+                    "value": true
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": true
+                }
+            ],
+            "revision_translation_affected": [
+                {
+                    "value": true
+                }
+            ],
+            "field_block_items": [
+                {
+                    "target_id": 18,
+                    "target_type": "block_content",
+                    "target_uuid": "7818f263-bda6-4dc3-b0eb-98f02372917a",
+                    "url": "\/block\/18"
+                },
+                {
+                    "target_id": 32,
+                    "target_type": "block_content",
+                    "target_uuid": "eca4da01-24b0-4438-b111-304ee1f4f0c5",
+                    "url": "\/block\/32"
+                },
+                {
+                    "target_id": 20,
+                    "target_type": "block_content",
+                    "target_uuid": "c9507961-6c9f-478a-9c76-320013e58baa",
+                    "url": "\/block\/20"
+                },
+                {
+                    "target_id": 31,
+                    "target_type": "block_content",
+                    "target_uuid": "c8b08746-5033-403d-ac1d-842224b33f10",
+                    "url": "\/block\/31"
+                }
+            ],
+            "field_content_references": [],
+            "field_content_type": [],
+            "field_count": [
+                {
+                    "value": 3
+                }
+            ],
+            "field_group_display": [
+                {
+                    "value": "column"
+                }
+            ],
+            "field_group_source": [
+                {
+                    "value": "manual_inline"
+                }
+            ],
+            "field_item_display": [
+                {
+                    "value": "square_image"
+                }
+            ],
+            "field_link": [],
+            "field_section_background_style": [
+                {
+                    "value": "none"
+                }
+            ]
+        }
+    ]
+}

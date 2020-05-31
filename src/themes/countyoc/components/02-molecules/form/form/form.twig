@@ -1,0 +1,76 @@
+{% set numbergroup__base_class = 'd-form' %}
+
+<div {{ bem(numbergroup__base_class) }}>
+  <div {{ bem('inner', [], numbergroup__base_class) }}>
+
+    {# form #}
+    <div class="d-form-wrapper">
+
+      <h2 class="title">{{ title }}</h2>
+
+      <div class="form-body">
+        {{ form__body }}
+      </div>
+
+      <div class="d-form-inputs">
+        {% block input__text %}
+          {% include "@atoms/forms/textfields/textfields.twig" %}
+        {% endblock %}
+        {% block input__text %}
+          {% include "@atoms/forms/textfields/textfields.twig" %}
+        {% endblock %}
+      </div>
+      <div class="d-form-inputs">
+        {% block input__text %}
+          {% include "@atoms/forms/textfields/textfields.twig" %}
+        {% endblock %}
+        {% block input__text %}
+          {% include "@atoms/forms/textfields/textfields.twig" %}
+        {% endblock %}
+      </div>
+      <div class="d-form-inputs">
+        {% block input__text %}
+          {% include "@atoms/forms/textfields/textfields.twig" %}
+        {% endblock %}
+        {% block input__text %}
+          {% include "@atoms/forms/textfields/textfields.twig" %}
+        {% endblock %}
+      </div>
+      <div class="d-form-inputs">
+        {% block input__text %}
+          {% include "@atoms/forms/textfields/textfields.twig" %}
+        {% endblock %}
+        {% block input__text %}
+          {% include "@atoms/forms/textfields/textfields.twig" %}
+        {% endblock %}
+      </div>
+      <div class="d-form-inputs">
+        {% block input__check %}
+        <ul class="form-item--checkboxes">
+          {% for key, checkbox in checkboxes %}
+            {% include "@atoms/forms/checkbox/_checkbox-item.twig" with {
+              checkbox_item: checkbox.title,
+              checkbox_item_checked: checkbox.checked,
+            } %}
+          {% endfor %}
+      </ul>
+        {% endblock %}
+      </div>
+
+      <div class="d-form-btn">
+        {# Link #}
+        {% if form__button__url %}
+          <div class="read-more-btn">
+            {% include "@atoms/buttons/twig/button.twig" with {
+              button_content: form__button__text,
+              button_modifiers: ['secondary'],
+              button_url: form__button__url,
+            } %}
+          </div>
+        {% endif %}
+      </div>
+
+    </div>
+
+  </div>
+</div>

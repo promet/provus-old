@@ -1,0 +1,75 @@
+{#
+/**
+ * @file
+ * Theme override to display a region.
+ *
+ * Available variables:
+ * - content: The content for this region, typically blocks.
+ * - attributes: HTML attributes for the region div.
+ * - region: The name of the region variable as defined in the theme's
+ *   .info.yml file.
+ *
+ * @see template_preprocess_region()
+ */
+#}
+{% extends "@organisms/site/site-footer/site-footer.twig" %}
+
+{% block footer__navigation_menu %}
+  {{ elements.footernavigation }}
+{% endblock %}
+{% block footer__resources_menu %}
+  {{ elements.footerresources }}
+{% endblock %}
+{% block footer__quick_links_menu %}
+  {{ elements.footerquicklinks }}
+{% endblock %}
+{% block footer__social %}
+  {% include "@molecules/menus/social/social-menu.twig" with {
+    "social_menu_items":
+      [
+        {
+          "title": "Facebook",
+          "url": "#",
+          "icon": "facebook"
+        },
+        {
+          "title": "Twitter",
+          "url": "#",
+          "icon": "twitter"
+        },
+        {
+          "title": "Youtube",
+          "url": "#",
+          "icon": "youtube"
+        },
+        {
+          "title": "RSS",
+          "url": "#",
+          "icon": "rss"
+        },
+        {
+          "title": "Chat",
+          "url": "#",
+          "icon": "chat"
+        },
+        {
+          "title": "Flickr",
+          "url": "#",
+          "icon": "flickr"
+        },
+        {
+          "title": "Apple",
+          "url": "#",
+          "icon": "apple"
+        },
+        {
+          "title": "Google",
+          "url": "#",
+          "icon": "google"
+        }
+      ]
+  }%}
+{% endblock %}
+{% block footer_content %}
+  {{ content }}
+{% endblock %}

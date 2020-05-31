@@ -1,0 +1,21 @@
+uuid: e577ecb5-fca6-4050-91c1-38ffdaf3b590
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.inline_item
+    - field.storage.block_content.field_icon
+  module:
+    - options
+id: block_content.inline_item.field_icon
+field_name: field_icon
+entity_type: block_content
+bundle: inline_item
+label: Icon
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

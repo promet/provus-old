@@ -1,0 +1,133 @@
+.files-table {
+  margin-top: $space-double;
+
+  &__inner {
+    @include wrapper;
+
+    max-width: 944px;
+  }
+
+  h2.title {
+    color: $title-content-top;
+    font-size: 1.25rem;
+    letter-spacing: 0;
+    line-height: 1.75rem;
+    margin-bottom: 0;
+  }
+
+  table {
+    width: 100%;
+
+    thead {
+      tr {
+        th {
+          padding: 20px 0;
+          color: $gray-light;
+          font-family: $font-body;
+          font-size: 1rem;
+          letter-spacing: 0;
+          font-weight: 400;
+
+          &.views-field-filename {
+            padding: 0 20px;
+          }
+          &.views-field-filesize {
+            text-align: right;
+          }
+          &.views-field-changed {
+            text-align: right;
+            padding-right: 20px;
+          }
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        background-color: $white;
+
+        td {
+          padding: 26px 0;
+
+          &.views-field-filename {
+            padding: 26px 20px;
+            max-width: 722px;
+            display: flex;
+            align-items: center;
+
+            &::before {
+              @include material-icon;
+
+              content: '\e873';
+              font-size: 20px;
+              margin-right: 15px;
+            }
+
+            .heading {
+              margin-bottom: 0
+            }
+
+            a {
+              color: $title-content-top;
+              font-family: $font-body;
+              font-size: 1rem;
+              letter-spacing: 0;
+              line-height: 1.625rem;
+              font-weight: 400;
+
+              &:hover {
+                color: $primary;
+                font-weight: 400;
+                text-decoration: none;
+              }
+            }
+
+            &:hover {
+              .material-icons {
+                color: $primary;
+              }
+
+              a {
+                color: $primary;
+              }
+            }
+          }
+
+          &.views-field-filesize {
+            color: $black;
+            font-family: $font-body;
+            font-size: 0.875rem;
+            letter-spacing: 0;
+            line-height: 1.875rem;
+            text-align: right;
+          }
+
+          &.views-field-changed {
+            color: $black;
+            font-family: $font-body;
+            font-size: 0.875rem;
+            letter-spacing: 0;
+            line-height: 1.875rem;
+            text-align: right;
+            padding-right: 20px;
+          }
+        }
+
+        &.extension-pdf td.views-field-filename::before {
+          content: '\e415';
+        }
+
+        &.extension-jpg {
+          td.views-field-filename::before {
+            content: '\e3f4';
+          }
+        }
+
+        &:nth-child(2n+1) {
+          background-color: $bg-table-files;
+        }
+      }
+    }
+  }
+
+}

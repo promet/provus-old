@@ -1,0 +1,36 @@
+uuid: c391583c-0d71-4c8e-8734-fc5840ae8976
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.landscape_1120
+    - image.style.landscape_450
+    - image.style.landscape_560
+    - image.style.landscape_900
+  theme:
+    - countyoc
+id: landscape_medium
+label: 'Landscape Medium'
+image_style_mappings:
+  -
+    breakpoint_id: countyoc.desktop
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: landscape_560
+  -
+    breakpoint_id: countyoc.desktop
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: landscape_1120
+  -
+    breakpoint_id: countyoc.mobile
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: landscape_450
+  -
+    breakpoint_id: countyoc.mobile
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: landscape_900
+breakpoint_group: countyoc
+fallback_image_style: landscape_560

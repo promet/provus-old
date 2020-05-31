@@ -1,0 +1,39 @@
+uuid: 6047afb0-4fc5-4d6b-8ae7-96c6def89bc7
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.hero_tall
+    - field.field.media.image.field_media_image
+    - media.type.image
+    - responsive_image.styles.hero_tall
+  module:
+    - layout_builder
+    - responsive_image
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+_core:
+  default_config_hash: B1a2aBHmUulUZN6HrxITEH1tSResuVjXMBEv1lUBtOo
+id: media.image.hero_tall
+targetEntityType: media
+bundle: image
+mode: hero_tall
+content:
+  field_media_image:
+    label: hidden
+    settings:
+      responsive_image_style: hero_tall
+      image_link: ''
+    third_party_settings: {  }
+    type: responsive_image
+    weight: 1
+    region: content
+hidden:
+  created: true
+  langcode: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true

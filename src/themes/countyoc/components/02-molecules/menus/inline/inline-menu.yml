@@ -1,0 +1,14 @@
+label: Navigats!
+inline_menu_items:
+  - title: 'OCgov Home'
+    url: '#'
+  - title: 'About the Conty'
+    url: '#'
+  - title: 'Departments'
+    url: '#'
+  - title: 'Business'
+    url: '#'
+  - title: 'How Do I'
+    url: '#'
+  - title: 'Residents'
+    url: '#'

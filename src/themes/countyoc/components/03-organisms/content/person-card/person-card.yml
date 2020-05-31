@@ -1,0 +1,37 @@
+content:
+  -
+    active: true
+    card__image__heading: 'JM'
+    card__first__name: 'Jon'
+    card__last_name: 'Mullins'
+    card__profession: 'Secretary II Title Ipsym'
+    card__heading__phone: 'Phone:'
+    card__phone: '(714) 671-1722'
+    card__heading__email: 'Email:'
+    card__email: 'ocpl.brea@occr.ocgov.com'
+    card__button__text: 'Email Me'
+    card__button__url: '#'
+  -
+    active: null
+    card__image__heading: 'MA'
+    card__first__name: 'Jon'
+    card__last_name: 'Mullins'
+    card__profession: 'Secretary II Title Ipsym'
+    card__heading__phone: 'Phone:'
+    card__phone: '(714) 671-1722'
+    card__heading__email: 'Email:'
+    card__email: 'ocpl.brea@occr.ocgov.com'
+    card__button__text: 'Email Me'
+    card__button__url: '#'
+  -
+    active: null
+    card__image__heading: 'MA'
+    card__first__name: 'Matt'
+    card__last_name: 'Mullins'
+    card__profession: 'Secretary II Title Ipsym'
+    card__heading__phone: 'Phone:'
+    card__phone: '(714) 671-1722'
+    card__heading__email: 'Email:'
+    card__email: 'ocpl.brea@occr.ocgov.com'
+    card__button__text: 'Email Me'
+    card__button__url: '#'

@@ -1,0 +1,8 @@
+title: 'Form Title'
+form__body: 'This is a paragraph using Lato regular at 16px, with a 30px line-height in the color #556575 Phasellus pharetra urna sit amet tellus elementum aliquet in et quam. In condimentum dui. Lorem ipsum dolor sit amet, hyperlinks color #170080 consectetur adipisicing elit, sed do eiusmod hover state bold and underline color #0071BC tempor incididunt ut allabore dolor clicked state color #122E51 et dolore magna aliqua.'
+form__button__text: 'Submit'
+form__button__url: '#'
+
+checkboxes:
+  - title: 'Option 1'
+    checked: 'checked'

@@ -1,0 +1,41 @@
+uuid: 81ed1b33-001b-4bbc-876d-c1b6e3b77930
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - menu_block
+    - node
+  theme:
+    - countyoc
+id: mainnavigation
+theme: countyoc
+region: sidebar
+weight: 0
+provider: null
+plugin: 'menu_block:main'
+settings:
+  id: 'menu_block:main'
+  label: 'Main navigation'
+  provider: menu_block
+  label_display: '0'
+  follow: true
+  follow_parent: active
+  level: 1
+  depth: 2
+  expand: true
+  parent: 'main:'
+  suggestion: sidebar
+  label_type: active_item
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      county_article: county_article
+      county_page: county_page
+      faq: faq
+      location: location
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

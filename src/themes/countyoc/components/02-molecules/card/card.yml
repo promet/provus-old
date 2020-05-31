@@ -1,0 +1,8 @@
+card__image__src: 'images/card.png'
+card__image__alt: "This is the card image's alt text"
+card__image__output_image_tag: true
+card__heading: 'Orange County Health Care Agency (OCHCA) Provides Recommendations for COVID-19 Community Mitigation Strategies'
+card__date: 'February 14, 2020'
+card__body: 'Community health mitigation decisions and strategies are crucial to slowing the transmission of COVID-19 (commonly known as novel coronavirus) in Orange County, California. While the County of Orange risk levels are ...'
+card__link__text: 'Read more'
+card__link__url: '#'

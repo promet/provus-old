@@ -1,0 +1,10 @@
+uuid: 3343c760-3d76-4abd-a5e2-52cde70249db
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+id: block_content.card_event
+label: 'Card Event'
+targetEntityType: block_content
+cache: true

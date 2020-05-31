@@ -1,0 +1,21 @@
+{% set numbergroup__base_class = 'content-top-event' %}
+
+<div {{ bem(numbergroup__base_class) }}>
+  <div {{ bem('inner', [], numbergroup__base_class) }}>
+    <h2 class="title">{{ title }}</h2>
+    <div class="content-top-wrapper">
+      <div class="content-left">
+        {% include "@molecules/info/date-time.twig" %}
+        {% include "@molecules/info/location.twig" %}
+        {% if filelink__on %}
+          {% include "@molecules/info/filelink.twig" %}
+        {% endif %}
+      </div>
+      <div class="content-right">
+        {% block content__img %}
+          {% include "@molecules/info/image.twig" %}
+        {% endblock %}
+      </div>
+    </div>
+  </div>
+</div>

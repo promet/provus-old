@@ -1,0 +1,21 @@
+uuid: bcee91ac-21f4-4d54-a52b-636f1691ebf7
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.social_feed
+    - field.storage.block_content.field_social_type
+  module:
+    - options
+id: block_content.social_feed.field_social_type
+field_name: field_social_type
+entity_type: block_content
+bundle: social_feed
+label: 'Social Type'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

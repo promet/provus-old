@@ -1,0 +1,46 @@
+.quicklinks {
+  padding-top: $space-triple;
+  padding-bottom: $space-triple;
+
+  h2.title {
+    text-align: center;
+    color: #21303e;
+    font-family: $font-heading;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    line-height: 2.3125rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+
+    @include medium {
+      font-size: 1.875rem;
+      margin-bottom: 50px;
+    }
+  }
+
+  &__inner {
+    @include wrapper;
+
+    display: flex;
+    flex-flow: column nowrap;
+
+    @include large {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  .quicklinks-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+    .quicklinks-item {
+      min-width: 50%;
+
+      @include large {
+        min-width: auto;
+      }
+    }
+  }
+}

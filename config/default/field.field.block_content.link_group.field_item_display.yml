@@ -1,0 +1,23 @@
+uuid: 2ec74944-db44-4cba-96b9-5f10b1657d59
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.link_group
+    - field.storage.block_content.field_item_display
+  module:
+    - options
+id: block_content.link_group.field_item_display
+field_name: field_item_display
+entity_type: block_content
+bundle: link_group
+label: 'Item Display'
+description: 'This is how each item will be presented.  Each display style looks slightly different and might not only show certain fields (heading, body, image, etc).'
+required: true
+translatable: false
+default_value:
+  -
+    value: card
+default_value_callback: ''
+settings: {  }
+field_type: list_string

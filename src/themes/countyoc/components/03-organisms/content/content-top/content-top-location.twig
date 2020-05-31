@@ -1,0 +1,38 @@
+{% set numbergroup__base_class = 'content-top-library' %}
+
+<div {{ bem(numbergroup__base_class) }}>
+
+  <div {{ bem('inner', [], numbergroup__base_class) }}>
+    <div class="content-top-wrapper">
+
+      <div class="content-left">
+        <h2 class="title">{{ title }}</h2>
+        <div class="content-info">
+          <div class="left">
+            {% include "@molecules/info/location.twig" %}
+            {% if card__phone %}
+              {% include "@molecules/info/phone.twig" %}
+            {% endif %}
+            {% if card__email %}
+              {% include "@molecules/info/email.twig" %}
+            {% endif %}
+            {% if filelink__on %}
+              {% include "@molecules/info/filelink.twig" %}
+            {% endif %}
+          </div>
+          <div class="right">
+            {% block content__hours %}
+              {% include "@molecules/info/location-hours.twig" %}
+            {% endblock %}
+          </div>
+        </div>
+      </div>
+      <div class="content-right">
+        {% block content__img %}
+          {% include "@molecules/info/image.twig" %}
+        {% endblock %}
+      </div>
+
+    </div>
+  </div>
+</div>

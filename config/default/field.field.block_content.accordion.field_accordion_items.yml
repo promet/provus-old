@@ -1,0 +1,28 @@
+uuid: f3e4ea19-7056-4a15-9955-49d21cab6226
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.accordion
+    - block_content.type.accordion_item
+    - field.storage.block_content.field_accordion_items
+id: block_content.accordion.field_accordion_items
+field_name: field_accordion_items
+entity_type: block_content
+bundle: accordion
+label: Items
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:block_content'
+  handler_settings:
+    target_bundles:
+      accordion_item: accordion_item
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

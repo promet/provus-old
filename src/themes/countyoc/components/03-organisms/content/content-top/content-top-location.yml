@@ -1,0 +1,34 @@
+title: 'Brea Library'
+
+card__heading__location: 'Location'
+card__body__location: '1 Civic Center Circle Brea, CA 92821'
+card__link__text__location: 'View Map'
+card__link__url__location: '#'
+icon__location: 'location_on'
+
+card__heading__phone: 'Phone:'
+card__phone: '(714) 671-1722'
+icon__phone: 'phone'
+
+card__heading__email: 'Email:'
+card__email: 'ocpl.brea@occr.ocgov.com'
+icon__email: 'email'
+
+card__heading__location__hours: 'Location Hours'
+card__sunday: 'Closed'
+card__monday: '10:00 AM - 7:00PM'
+card__tuesday: '10:00 AM - 7:00PM'
+card__wednesday: '10:00 AM - 7:00PM'
+card__thursday: '10:00 AM - 7:00PM'
+card__friday: '9:00 AM - 5:00 PM'
+card__saturday: '9:00 AM - 5:00 PM'
+icon__time: 'access_time'
+
+card__image__src: 'images/library-img.png'
+card__image__alt: "This is the card image's alt text"
+card__image__output_image_tag: true
+
+filelink__link__text: 'Related Files'
+filelink__link__url: '#'
+filelink__icon: 'attach_file'
+filelink__on: true

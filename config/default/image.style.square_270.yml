@@ -1,0 +1,15 @@
+uuid: a6b4e1f7-3812-4f1f-8f27-1b9a625ad826
+langcode: en
+status: true
+dependencies: {  }
+name: square_270
+label: 'Square 270'
+effects:
+  d74c8a05-0121-4a15-967b-b315b88c217b:
+    uuid: d74c8a05-0121-4a15-967b-b315b88c217b
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 270
+      height: 270
+      anchor: center-center

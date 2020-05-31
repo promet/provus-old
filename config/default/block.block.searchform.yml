@@ -1,0 +1,21 @@
+uuid: af89e169-3632-4500-bc0c-6a53ec31758a
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - countyoc
+id: searchform
+theme: countyoc
+region: header
+weight: -5
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form'
+  provider: search
+  label_display: '0'
+  page_id: ''
+visibility: {  }

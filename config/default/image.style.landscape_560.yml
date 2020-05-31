@@ -1,0 +1,15 @@
+uuid: 6cce8503-f4f4-4931-9965-0a2a70752362
+langcode: en
+status: true
+dependencies: {  }
+name: landscape_560
+label: 'Landscape 560'
+effects:
+  43a81a34-fe21-472b-81a5-030111822c0b:
+    uuid: 43a81a34-fe21-472b-81a5-030111822c0b
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 560
+      height: 314
+      anchor: center-center

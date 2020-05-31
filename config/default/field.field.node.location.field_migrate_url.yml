@@ -1,0 +1,23 @@
+uuid: 0934c19f-699c-42db-92d5-d6a00f7520ae
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_migrate_url
+    - node.type.location
+  module:
+    - link
+id: node.location.field_migrate_url
+field_name: field_migrate_url
+entity_type: node
+bundle: location
+label: 'Migrate URL'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link

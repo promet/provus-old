@@ -1,0 +1,15 @@
+uuid: dc7d4db1-8812-49cb-bff7-baac62268226
+langcode: en
+status: true
+dependencies: {  }
+name: landscape_720
+label: 'Landscape 720'
+effects:
+  916144c7-7f41-4eb3-9da1-9ad42558e9b3:
+    uuid: 916144c7-7f41-4eb3-9da1-9ad42558e9b3
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 720
+      height: 404
+      anchor: center-center

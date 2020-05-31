@@ -1,0 +1,15 @@
+uuid: 4a1cad6e-d4e0-45a8-89bf-772033a72560
+langcode: en
+status: true
+dependencies: {  }
+name: landscape_900
+label: 'Landscape 900'
+effects:
+  01475d42-d680-4a69-aadf-7eb0458c7373:
+    uuid: 01475d42-d680-4a69-aadf-7eb0458c7373
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 900
+      height: 506
+      anchor: center-center

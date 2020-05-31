@@ -1,0 +1,313 @@
+{
+    "media": [
+        {
+            "mid": [
+                {
+                    "value": 15
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "3d453e88-d6e4-40af-8c94-a1e076aa3304"
+                }
+            ],
+            "vid": [
+                {
+                    "value": 15
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "bundle": [
+                {
+                    "target_id": "document",
+                    "target_type": "media_type",
+                    "target_uuid": "7f212518-1ff8-4030-92d5-ae3e9f03d10c"
+                }
+            ],
+            "revision_created": [
+                {
+                    "value": "2020-05-13T14:29:04+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "revision_user": [],
+            "revision_log_message": [],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "uid": [
+                {
+                    "target_id": 1
+                }
+            ],
+            "name": [
+                {
+                    "value": "4077.pdf"
+                }
+            ],
+            "thumbnail": [
+                {
+                    "target_id": 18,
+                    "alt": "",
+                    "title": null,
+                    "width": 180,
+                    "height": 180,
+                    "target_type": "file",
+                    "target_uuid": "29a330b6-55b3-47ae-b1b4-4d0aea154a9c",
+                    "url": "http:\/\/oc-multi.docksal\/sites\/default\/files\/media-icons\/generic\/generic.png"
+                }
+            ],
+            "created": [
+                {
+                    "value": "2020-05-08T13:49:40+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2020-05-08T13:49:40+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": true
+                }
+            ],
+            "revision_translation_affected": [
+                {
+                    "value": true
+                }
+            ],
+            "path": [
+                {
+                    "alias": "",
+                    "pid": null,
+                    "langcode": null
+                }
+            ],
+            "field_media_document": [
+                {
+                    "target_id": 19,
+                    "display": null,
+                    "description": null,
+                    "target_type": "file",
+                    "target_uuid": "ffff737f-8242-4f4e-8bfa-9ef1b736b7a9",
+                    "url": "http:\/\/oc-multi.docksal\/sites\/default\/files\/2020-05\/4077_1.pdf"
+                }
+            ]
+        },
+        {
+            "mid": [
+                {
+                    "value": 16
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "f469146c-00b5-4afc-a8e5-186347db46ac"
+                }
+            ],
+            "vid": [
+                {
+                    "value": 16
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "bundle": [
+                {
+                    "target_id": "document",
+                    "target_type": "media_type",
+                    "target_uuid": "7f212518-1ff8-4030-92d5-ae3e9f03d10c"
+                }
+            ],
+            "revision_created": [
+                {
+                    "value": "2020-05-13T14:29:04+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "revision_user": [],
+            "revision_log_message": [],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "uid": [
+                {
+                    "target_id": 1
+                }
+            ],
+            "name": [
+                {
+                    "value": "4080.pdf"
+                }
+            ],
+            "thumbnail": [
+                {
+                    "target_id": 18,
+                    "alt": "",
+                    "title": null,
+                    "width": 180,
+                    "height": 180,
+                    "target_type": "file",
+                    "target_uuid": "29a330b6-55b3-47ae-b1b4-4d0aea154a9c",
+                    "url": "http:\/\/oc-multi.docksal\/sites\/default\/files\/media-icons\/generic\/generic.png"
+                }
+            ],
+            "created": [
+                {
+                    "value": "2020-05-08T13:49:40+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2020-05-08T13:49:40+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": true
+                }
+            ],
+            "revision_translation_affected": [
+                {
+                    "value": true
+                }
+            ],
+            "path": [
+                {
+                    "alias": "",
+                    "pid": null,
+                    "langcode": null
+                }
+            ],
+            "field_media_document": [
+                {
+                    "target_id": 20,
+                    "display": null,
+                    "description": null,
+                    "target_type": "file",
+                    "target_uuid": "cd2f2934-9f87-41e1-99aa-5ca4ac54d789",
+                    "url": "http:\/\/oc-multi.docksal\/sites\/default\/files\/2020-05\/4080_1.pdf"
+                }
+            ]
+        },
+        {
+            "mid": [
+                {
+                    "value": 17
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "ce64fc9c-05ef-4040-870b-28d5a6dbecc3"
+                }
+            ],
+            "vid": [
+                {
+                    "value": 17
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "bundle": [
+                {
+                    "target_id": "document",
+                    "target_type": "media_type",
+                    "target_uuid": "7f212518-1ff8-4030-92d5-ae3e9f03d10c"
+                }
+            ],
+            "revision_created": [
+                {
+                    "value": "2020-05-13T14:29:04+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "revision_user": [],
+            "revision_log_message": [],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "uid": [
+                {
+                    "target_id": 1
+                }
+            ],
+            "name": [
+                {
+                    "value": "4079.pdf"
+                }
+            ],
+            "thumbnail": [
+                {
+                    "target_id": 18,
+                    "alt": "",
+                    "title": null,
+                    "width": 180,
+                    "height": 180,
+                    "target_type": "file",
+                    "target_uuid": "29a330b6-55b3-47ae-b1b4-4d0aea154a9c",
+                    "url": "http:\/\/oc-multi.docksal\/sites\/default\/files\/media-icons\/generic\/generic.png"
+                }
+            ],
+            "created": [
+                {
+                    "value": "2020-05-08T13:49:40+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2020-05-08T13:49:40+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": true
+                }
+            ],
+            "revision_translation_affected": [
+                {
+                    "value": true
+                }
+            ],
+            "path": [
+                {
+                    "alias": "",
+                    "pid": null,
+                    "langcode": null
+                }
+            ],
+            "field_media_document": [
+                {
+                    "target_id": 21,
+                    "display": null,
+                    "description": null,
+                    "target_type": "file",
+                    "target_uuid": "5a76fa68-55eb-4d45-8be3-e29b85f9bf51",
+                    "url": "http:\/\/oc-multi.docksal\/sites\/default\/files\/2020-05\/4079_1.pdf"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+main:
+  version: 1.x
+  css:
+    theme:
+      css/main.css: {}
+orange:
+  version: 1.x
+  css:
+    theme:
+      css/orange.css: {}
+blue:
+  version: 1.x
+  css:
+    theme:
+      css/blue.css: {}
+green:
+  version: 1.x
+  css:
+    theme:
+      css/green.css: {}

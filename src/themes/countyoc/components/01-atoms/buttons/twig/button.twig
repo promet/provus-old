@@ -1,0 +1,38 @@
+{#
+/**
+ * Available variables:
+ * - button_content - the content of the button (typically text)
+ *
+ * Available blocks:
+ * - button_content - used to replace the content of the button with something other than text
+ *   for example: to insert an icon
+ */
+#}
+
+{% set button_base_class = button_base_class|default('button') %}
+
+{% set additional_attributes = {
+  class: bem(button_base_class, button_modifiers, button_blockname),
+  "aria-label": 'button',
+} %}
+
+{% if button_url %}
+  <a
+    {{ bem(link_base_class, button_url_modifiers, button_url_blockname) }}
+    {% for attribute, value in button_url_attributes %}
+      {{ attribute }}="{{ value }}"
+    {% endfor %}
+    href="{{ button_url }}" aria-label="{{ button_content }}"
+  >
+{% endif %}
+<button {{ add_attributes(additional_attributes) }}>
+  <span>
+    {% block button_content %}
+      {{ button_content }}
+    {% endblock %}
+  </span>
+  <i class = "material-icons">search</i>
+</button>
+{% if button_url %}
+  </a>
+{% endif %}

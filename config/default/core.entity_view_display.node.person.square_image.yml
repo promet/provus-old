@@ -1,0 +1,43 @@
+uuid: e728cb6b-ee2b-42b8-82c8-6629b6547073
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.square_image
+    - field.field.node.person.body
+    - field.field.node.person.field_first_name
+    - field.field.node.person.field_last_name
+    - field.field.node.person.field_location
+    - field.field.node.person.field_media_image
+    - field.field.node.person.field_middle_name
+    - node.type.person
+  module:
+    - layout_builder
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: node.person.square_image
+targetEntityType: node
+bundle: person
+mode: square_image
+content:
+  field_media_image:
+    type: entity_reference_entity_view
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      view_mode: square_medium
+      link: false
+    third_party_settings: {  }
+hidden:
+  body: true
+  field_first_name: true
+  field_last_name: true
+  field_location: true
+  field_middle_name: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

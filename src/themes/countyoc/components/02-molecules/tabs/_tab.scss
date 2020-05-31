@@ -1,0 +1,44 @@
+.tabs__link,
+.tabs__link--local-tasks {
+  background-color: $line-gray;
+  border: 1px solid $line-gray;
+  border-bottom: none;
+  color: $gray-dark;
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 1em 2.4em;
+  text-align: center;
+  text-decoration: none;
+  transition: color 0.3s;
+
+  @include large {
+    border-bottom: 1px solid $line-gray;
+    border-left: none;
+    display: inline-block;
+    font-size: 1rem;
+    padding: 0.6em 1.7em;
+    position: relative;
+    top: 1px;
+    width: auto;
+  }
+
+  &:hover {
+    background-color: $line-gray;
+    color: $gray-dark;
+  }
+
+  &.is-active {
+    background-color: $line-gray;
+    border: 1px solid $line-gray;
+    color: $white;
+
+    @include large {
+      background-color: $white;
+      border: 1px solid $line-gray;
+      border-bottom: 1px solid $line-gray;
+      border-left: none;
+      color: $gray-dark;
+    }
+  }
+}

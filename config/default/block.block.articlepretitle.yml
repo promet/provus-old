@@ -1,0 +1,20 @@
+uuid: 145d469b-1997-40e2-a643-118b3db97f66
+langcode: en
+status: true
+dependencies:
+  module:
+    - county_blocks
+  theme:
+    - countyoc
+id: articlepretitle
+theme: countyoc
+region: content
+weight: -9
+provider: null
+plugin: article_pre_title
+settings:
+  id: article_pre_title
+  label: 'Article Pre Title'
+  provider: county_blocks
+  label_display: '0'
+visibility: {  }

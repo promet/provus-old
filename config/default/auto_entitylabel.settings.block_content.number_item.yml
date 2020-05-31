@@ -1,0 +1,6 @@
+status: 1
+pattern: '[block_content:field_number_text] Number Item'
+escape: false
+dependencies:
+  config:
+    - block_content.type.number_item

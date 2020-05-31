@@ -1,0 +1,31 @@
+label: 'OC by the numbers'
+
+content:
+  -
+    active: true
+    icon: 'supervisor_account'
+    heading: '101M'
+    body: 'Lorem Ipsum'
+    link_text: 'Read more about this card'
+    link_url: '#'
+  -
+    active: null
+    icon: 'account_balance'
+    heading: '500+'
+    body: 'Lorem Ipsum'
+    link_text: 'Read more about this card'
+    link_url: '#'
+  -
+    active: null
+    icon: 'directions_boat'
+    heading: '12.4K'
+    body: 'Lorem Ipsum'
+    link_text: 'Read more about this card'
+    link_url: '#'
+  -
+    active: null
+    icon: 'local_florist'
+    heading: '820'
+    body: 'Lorem Ipsum'
+    link_text: 'Read more about this card'
+    link_url: '#'

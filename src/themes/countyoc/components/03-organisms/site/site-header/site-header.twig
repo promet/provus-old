@@ -1,0 +1,19 @@
+{{ attach_library('countyoc/site-header') }}
+
+{% set header__base_class = 'header' %}
+
+<header {{ bem(header__base_class) }}>
+  <div {{ bem('pre-inner', [], header__base_class) }}>
+    <div {{ bem('inner', [], header__base_class) }}>
+
+      {% block header__utility %}
+        {% include "@organisms/utility/utility.twig" %}
+      {% endblock %}
+
+      {% block header__navigation %}
+        {% include "@organisms/navigation/navigation.twig" %}
+      {% endblock %}
+
+    </div>
+  </div>
+</header>

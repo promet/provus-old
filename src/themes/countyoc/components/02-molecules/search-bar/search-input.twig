@@ -1,0 +1,14 @@
+<form action="/search" method="get" class="search-input-form" accept-charset="UTF-8">
+  <div class="form-type-textfield">
+    <input class="long form-text" placeholder="What are you looking for?" type="text" aria-label="Search" name="q">
+  </div>
+  <div class="form-actions">
+    {# Link #}
+    {% if search__button__url %}
+      {% include "@atoms/buttons/twig/button.twig" with {
+        button_content: search__button__text,
+        button_url: search__button__url,
+      } %}
+    {% endif %}
+  </div>
+</form>

@@ -1,0 +1,34 @@
+uuid: 6664fdea-dc88-48e7-a1a4-675a2e546349
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.number_list
+    - field.field.block_content.number_list.field_block_items
+  module:
+    - inline_entity_form
+id: block_content.number_list.default
+targetEntityType: block_content
+bundle: number_list
+mode: default
+content:
+  field_block_items:
+    weight: 0
+    settings:
+      form_mode: default
+      override_labels: true
+      label_singular: 'Number Item'
+      label_plural: 'Number Items'
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      revision: false
+      collapsible: false
+      collapsed: false
+      allow_duplicate: false
+    third_party_settings: {  }
+    type: inline_entity_form_complex
+    region: content
+hidden:
+  info: true
+  langcode: true

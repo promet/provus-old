@@ -1,0 +1,89 @@
+{
+    "block_content": [
+        {
+            "id": [
+                {
+                    "value": 7
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "525836ad-a1d3-463a-bad2-d7862d67b0cc"
+                }
+            ],
+            "revision_id": [
+                {
+                    "value": 7
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "type": [
+                {
+                    "target_id": "media_item",
+                    "target_type": "block_content_type",
+                    "target_uuid": "71785d18-cdf0-44f1-b757-75982c52058e"
+                }
+            ],
+            "revision_created": [
+                {
+                    "value": "2020-04-14T19:36:45+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "revision_user": [
+                {
+                    "target_id": 64253346
+                }
+            ],
+            "revision_log": [],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "info": [
+                {
+                    "value": "Image Media 1"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2020-04-14T19:36:45+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "reusable": [
+                {
+                    "value": true
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": true
+                }
+            ],
+            "revision_translation_affected": [
+                {
+                    "value": true
+                }
+            ],
+            "field_display_media": [
+                {
+                    "value": "teaser"
+                }
+            ],
+            "field_media": [
+                {
+                    "target_id": 13,
+                    "target_type": "media",
+                    "target_uuid": "f02d636b-dcd7-4709-a4c2-d3625b7c78ec",
+                    "url": "\/media\/13\/edit"
+                }
+            ]
+        }
+    ]
+}

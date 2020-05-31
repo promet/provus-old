@@ -1,0 +1,352 @@
+{
+    "block_content": [
+        {
+            "id": [
+                {
+                    "value": 1
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "230e4809-8a22-4a86-b88d-10d989b261b6"
+                }
+            ],
+            "revision_id": [
+                {
+                    "value": 1
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "type": [
+                {
+                    "target_id": "number_item",
+                    "target_type": "block_content_type",
+                    "target_uuid": "02c6244d-9e72-4eb3-8dcc-d9e91d223bc1"
+                }
+            ],
+            "revision_created": [
+                {
+                    "value": "2020-04-06T20:40:03+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "revision_user": [
+                {
+                    "target_id": 5884
+                }
+            ],
+            "revision_log": [],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "info": [
+                {
+                    "value": "101M"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2020-04-06T20:40:03+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "reusable": [
+                {
+                    "value": true
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": true
+                }
+            ],
+            "revision_translation_affected": [
+                {
+                    "value": true
+                }
+            ],
+            "field_description": [
+                {
+                    "value": "Ut enim ad minim veniam"
+                }
+            ],
+            "field_icon": [
+                {
+                    "value": "people"
+                }
+            ],
+            "field_number_text": [
+                {
+                    "value": "101M"
+                }
+            ]
+        },
+        {
+            "id": [
+                {
+                    "value": 2
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "0f24dc32-3f01-4769-b38d-1f3e0f85a618"
+                }
+            ],
+            "revision_id": [
+                {
+                    "value": 2
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "type": [
+                {
+                    "target_id": "number_item",
+                    "target_type": "block_content_type",
+                    "target_uuid": "02c6244d-9e72-4eb3-8dcc-d9e91d223bc1"
+                }
+            ],
+            "revision_created": [
+                {
+                    "value": "2020-04-06T20:40:14+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "revision_user": [
+                {
+                    "target_id": 5884
+                }
+            ],
+            "revision_log": [],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "info": [
+                {
+                    "value": "500+"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2020-04-06T20:40:14+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "reusable": [
+                {
+                    "value": true
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": true
+                }
+            ],
+            "revision_translation_affected": [
+                {
+                    "value": true
+                }
+            ],
+            "field_description": [
+                {
+                    "value": "Tempor incididunt ut labore"
+                }
+            ],
+            "field_icon": [
+                {
+                    "value": "account_balance"
+                }
+            ],
+            "field_number_text": [
+                {
+                    "value": "500+"
+                }
+            ]
+        },
+        {
+            "id": [
+                {
+                    "value": 3
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "74e56da3-9b84-4a95-97b7-72d5cd3667cd"
+                }
+            ],
+            "revision_id": [
+                {
+                    "value": 3
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "type": [
+                {
+                    "target_id": "number_item",
+                    "target_type": "block_content_type",
+                    "target_uuid": "02c6244d-9e72-4eb3-8dcc-d9e91d223bc1"
+                }
+            ],
+            "revision_created": [
+                {
+                    "value": "2020-04-06T20:40:24+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "revision_user": [
+                {
+                    "target_id": 5884
+                }
+            ],
+            "revision_log": [],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "info": [
+                {
+                    "value": "12.4K"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2020-04-06T20:40:24+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "reusable": [
+                {
+                    "value": true
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": true
+                }
+            ],
+            "revision_translation_affected": [
+                {
+                    "value": true
+                }
+            ],
+            "field_description": [
+                {
+                    "value": "Consectetur adipiscing elit, sed do eiusmod"
+                }
+            ],
+            "field_icon": [
+                {
+                    "value": "directions_boat"
+                }
+            ],
+            "field_number_text": [
+                {
+                    "value": "12.4K"
+                }
+            ]
+        },
+        {
+            "id": [
+                {
+                    "value": 4
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "9f3ab4de-58c4-4aaf-b16d-f00585f52740"
+                }
+            ],
+            "revision_id": [
+                {
+                    "value": 4
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "type": [
+                {
+                    "target_id": "number_item",
+                    "target_type": "block_content_type",
+                    "target_uuid": "02c6244d-9e72-4eb3-8dcc-d9e91d223bc1"
+                }
+            ],
+            "revision_created": [
+                {
+                    "value": "2020-04-06T20:40:31+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "revision_user": [
+                {
+                    "target_id": 5884
+                }
+            ],
+            "revision_log": [],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "info": [
+                {
+                    "value": "820"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2020-04-06T20:40:31+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "reusable": [
+                {
+                    "value": true
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": true
+                }
+            ],
+            "revision_translation_affected": [
+                {
+                    "value": true
+                }
+            ],
+            "field_description": [
+                {
+                    "value": "Lorem ipsum dolor sit amet"
+                }
+            ],
+            "field_icon": [
+                {
+                    "value": "local_florist"
+                }
+            ],
+            "field_number_text": [
+                {
+                    "value": "820"
+                }
+            ]
+        }
+    ]
+}

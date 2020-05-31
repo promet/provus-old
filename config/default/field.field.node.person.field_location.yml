@@ -1,0 +1,28 @@
+uuid: 43336343-794f-4ab9-af59-45a647f1ee43
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_location
+    - node.type.location
+    - node.type.person
+id: node.person.field_location
+field_name: field_location
+entity_type: node
+bundle: person
+label: Location
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      location: location
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

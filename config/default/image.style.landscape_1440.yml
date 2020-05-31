@@ -1,0 +1,15 @@
+uuid: 9c3faa93-01bb-4ee8-9aa2-a6983bedd3ea
+langcode: en
+status: true
+dependencies: {  }
+name: landscape_1440
+label: 'Landscape 1440'
+effects:
+  c79c6f3b-a568-4ace-8fab-d90ed77ff9e7:
+    uuid: c79c6f3b-a568-4ace-8fab-d90ed77ff9e7
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1440
+      height: 808
+      anchor: center-center

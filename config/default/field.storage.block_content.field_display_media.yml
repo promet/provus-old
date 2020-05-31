@@ -1,0 +1,27 @@
+uuid: ab20f853-291b-41ff-b4b5-b103ad923e2a
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - options
+id: block_content.field_display_media
+field_name: field_display_media
+entity_type: block_content
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: teaser
+      label: Teaser
+    -
+      value: embed
+      label: Embed
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

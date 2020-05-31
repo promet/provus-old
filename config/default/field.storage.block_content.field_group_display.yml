@@ -1,0 +1,45 @@
+uuid: 3bb21273-2c42-4028-91ca-6511ac5edf01
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - options
+id: block_content.field_group_display
+field_name: field_group_display
+entity_type: block_content
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: carousel_3
+      label: 'Carousel - 3 Item'
+    -
+      value: carousel_multi
+      label: 'Carousel - Multi'
+    -
+      value: carousel_promo
+      label: 'Carousel - Promo Card'
+    -
+      value: featured_4
+      label: '4 Card Featured'
+    -
+      value: column
+      label: 'Column Row'
+    -
+      value: grid_2
+      label: 'Grid - 2'
+    -
+      value: grid_3
+      label: 'Grid - 3'
+    -
+      value: grid_4
+      label: 'Grid - 4'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

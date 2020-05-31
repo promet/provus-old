@@ -1,0 +1,20 @@
+uuid: 73baff6d-9120-4e48-ba96-c64941dc4c7a
+langcode: en
+status: true
+dependencies:
+  module:
+    - county_blocks
+  theme:
+    - countyoc
+id: nodepagetop
+theme: countyoc
+region: precontent
+weight: 0
+provider: null
+plugin: node_page_top
+settings:
+  id: node_page_top
+  label: 'Node Page Top'
+  provider: county_blocks
+  label_display: '0'
+visibility: {  }

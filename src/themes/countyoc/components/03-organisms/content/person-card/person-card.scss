@@ -1,0 +1,52 @@
+/* Event */
+.person-card {
+  &__inner {
+    @include wrapper;
+
+    max-width: 848px;
+  }
+
+  .person-card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px 0;
+    border-top: 1px solid $line-person-card;
+
+    &:last-child {
+      border-bottom: 1px solid $line-person-card;
+    }
+
+    @include medium {
+      flex-wrap: nowrap;
+    }
+
+    .content-left {
+      width: 100%;
+
+      @include medium {
+        max-width: 141px;
+      }
+    }
+
+    .content-center {
+      width: 100%;
+      margin-left: 0;
+
+      @include medium {
+        width: 100%;
+        margin-left: 54px;
+      }
+    }
+
+    .content-right {
+      width: 100%;
+      padding-top: 0;
+
+      @include medium {
+        width: auto;
+        padding-top: 45px;
+      }
+    }
+  }
+}

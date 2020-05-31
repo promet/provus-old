@@ -1,0 +1,4 @@
+link_url: 'https://github.com/countyoc-ds/countyoc-design-system'
+link_content: 'This is my link text'
+link_attributes:
+  'target': '_blank'
