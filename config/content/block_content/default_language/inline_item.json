@@ -1496,9 +1496,9 @@
             ],
             "field_body": [
                 {
-                    "value": "<p>Citizen Hotel, Metropolitan Terrace<br \/>\r\n926 J Street, Anaheim, CA 95814<\/p>\r\n",
+                    "value": "<p>Citizen Hotel, Metropolitan Terrace<br \/>\r\n926 J Street, Southport, CA 95814<\/p>\r\n",
                     "format": "basic_html",
-                    "processed": "<p>Citizen Hotel, Metropolitan Terrace<br \/>\n926 J Street, Anaheim, CA 95814<\/p>"
+                    "processed": "<p>Citizen Hotel, Metropolitan Terrace<br \/>\n926 J Street, Southport, CA 95814<\/p>"
                 }
             ],
             "field_date": [

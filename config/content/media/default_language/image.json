@@ -1118,7 +1118,7 @@
             ],
             "name": [
                 {
-                    "value": "card-image-cal-optima_1.png"
+                    "value": "card-library.png"
                 }
             ],
             "thumbnail": [
@@ -1130,7 +1130,7 @@
                     "height": 178,
                     "target_type": "file",
                     "target_uuid": "73a57c98-5f45-41b3-a8a6-7106dda5e412",
-                    "url": "http:\/\/oc-multi.docksal\/sites\/default\/files\/2020-03\/card-image-cal-optima_1.png"
+                    "url": "http:\/\/oc-multi.docksal\/sites\/default\/files\/2020-03\/card-library.png"
                 }
             ],
             "created": [
@@ -1171,7 +1171,7 @@
                     "height": 178,
                     "target_type": "file",
                     "target_uuid": "73a57c98-5f45-41b3-a8a6-7106dda5e412",
-                    "url": "http:\/\/oc-multi.docksal\/sites\/default\/files\/2020-03\/card-image-cal-optima_1.png"
+                    "url": "http:\/\/oc-multi.docksal\/sites\/default\/files\/2020-03\/card-library.png"
                 }
             ]
         },
@@ -1332,7 +1332,7 @@
             ],
             "name": [
                 {
-                    "value": "Laguna-Beach-California.jpg"
+                    "value": "card-image-board.png"
                 }
             ],
             "thumbnail": [
@@ -1344,7 +1344,7 @@
                     "height": 889,
                     "target_type": "file",
                     "target_uuid": "12a9defe-3e96-43e5-bd6f-3f1f6913264d",
-                    "url": "http:\/\/oc-multi.docksal\/sites\/default\/files\/2020-04\/Laguna-Beach-California.jpg"
+                    "url": "http:\/\/oc-multi.docksal\/sites\/default\/files\/2020-04\/card-image-board.png"
                 }
             ],
             "created": [
@@ -1385,7 +1385,7 @@
                     "height": 889,
                     "target_type": "file",
                     "target_uuid": "12a9defe-3e96-43e5-bd6f-3f1f6913264d",
-                    "url": "http:\/\/oc-multi.docksal\/sites\/default\/files\/2020-04\/Laguna-Beach-California.jpg"
+                    "url": "http:\/\/oc-multi.docksal\/sites\/default\/files\/2020-04\/card-image-board.png"
                 }
             ]
         },
@@ -1443,7 +1443,7 @@
             "thumbnail": [
                 {
                     "target_id": 17,
-                    "alt": "OC Animal Care",
+                    "alt": "Southport Animal Care",
                     "title": null,
                     "width": 300,
                     "height": 168,
@@ -1484,7 +1484,7 @@
             "field_media_image": [
                 {
                     "target_id": 17,
-                    "alt": "OC Animal Care",
+                    "alt": "Southport Animal Care",
                     "title": "",
                     "width": 300,
                     "height": 168,

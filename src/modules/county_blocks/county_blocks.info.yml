@@ -2,6 +2,7 @@ name: 'County Blocks'
 type: module
 description: 'Custom county blocks.'
 core: 8.x
+core_version_requirement: ^8 || ^9
 package: 'county'
 dependencies:
   - layout_builder

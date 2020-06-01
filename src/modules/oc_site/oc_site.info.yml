@@ -1,5 +1,6 @@
-name: 'OC Site'
+name: 'Custom Site'
 type: module
-description: 'Site config for OC.'
+description: 'Site config for Southport.'
 core: 8.x
-package: 'Orange County'
+core_version_requirement: ^8 || ^9
+package: 'Southport County'

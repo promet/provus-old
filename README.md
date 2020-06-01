@@ -1,5 +1,53 @@
 # Provus 
 
+This is a starter project for Drupal 8/9 projects that provides the following:
+
+* [Emusilfy](http://emulsify.io)-based theme with large number of [beautiful components](https://promet.github.io/ps_component)
+* Pre-configured Drupal blocks that integrate with the [beautiful components](https://promet.github.io/ps_component)
+* The following basic content types:
+  * Articles (News)
+  * Pages
+  * Events
+  * Locations
+  * People
+  * Landing page
+  
+This is meant as a starter to clone and build off of. It is not meant to be an upstream.
+
+This is a project of [Promet Source](http://prometsource.com). "Provus" is Old English for foresight which is [Promethean](https://en.wikipedia.org/wiki/Prometheus) trait.
+
+## Drag and Drop Landing Pages
+
+This project creates a starting point for re-usable blocks that can be used with Layout Builder for drag and drop page building.
+
+## Block Types
+
+The following block types are included:
+
+### Link Group
+
+This is the "swiss army knife" block that allows users to create lists of content either dynamically (through Views in the backend) or manually. The current user-interface:
+
+![image](https://user-images.githubusercontent.com/512243/83434225-0e031c80-a408-11ea-85b8-fcfe43dc850c.png)
+
+### Number Group
+
+A block to create a "By the Numbers" group:
+
+![image](https://user-images.githubusercontent.com/512243/83434448-8833a100-a408-11ea-8ed7-280de913c0bf.png)
+
+
+### Banner
+
+A block to create hero banners:
+
+![image](https://user-images.githubusercontent.com/512243/83434562-bc0ec680-a408-11ea-84eb-8b80e6bbc1b4.png)
+
+
+### Others
+
+There are others including media items, accordians and buttons.
+
 
 ## Installation
 
