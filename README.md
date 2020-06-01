@@ -14,6 +14,8 @@ This is a starter project for Drupal 8/9 projects that provides the following:
   
 This is meant as a starter to clone and build off of. It is not meant to be an upstream.
 
+This is a project of [Promet Source](http://prometsource.com). "Provus" is Old English for foresight which is [Promethean](https://en.wikipedia.org/wiki/Prometheus) trait.
+
 ## Drag and Drop Landing Pages
 
 This project creates a starting point for re-usable blocks that can be used with Layout Builder for drag and drop page building.
@@ -37,15 +39,14 @@ A block to create a "By the Numbers" group:
 
 ### Banner
 
+A block to create hero banners:
 
+![image](https://user-images.githubusercontent.com/512243/83434562-bc0ec680-a408-11ea-84eb-8b80e6bbc1b4.png)
 
-### Accordian
 
 ### Others
 
-There are others including media items and buttons.
-
-
+There are others including media items, accordians and buttons.
 
 
 ## Installation
