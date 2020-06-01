@@ -16,6 +16,16 @@ This is meant as a starter to clone and build off of. It is not meant to be an u
 
 This is a project of [Promet Source](http://prometsource.com). "Provus" is Old English for foresight which is [Promethean](https://en.wikipedia.org/wiki/Prometheus) trait.
 
+## Demo
+
+Coming soon.
+
+## Test Content
+
+![image](https://user-images.githubusercontent.com/512243/83435528-6fc48600-a40a-11ea-84e6-35fba2aadb99.png)
+
+This project is focused on government and higher-learning use cases though any site that needs to utilize similar components will benefit. There is currently test content that creates "Southport County", a fictional mid-sized US county. Test content for other use cases may be added.
+
 ## Drag and Drop Landing Pages
 
 This project creates a starting point for re-usable blocks that can be used with Layout Builder for drag and drop page building.
@@ -66,13 +76,18 @@ Most commands needed to run the project can be found by typing ``fin`` and viewi
 ```yml
 Custom commands:
   behat                    	Test behat
+  build-artifacts          	Builds sites files.
+  build-theme              	Builds theme dist files. Not currently necessary
+  import-content           	Imports current site content and menu
   init                     	Initialize stack and site (full reset)
   init-site                	Initialize/reinstall site
   pa11y                    	Test pa11y
-  php-cbf                   Runs phpcbf	
-  php-cs                    Runs phpcs	
+  php-cbf                  	Runs PHPCBF on modules
+  php-cs                   	Runs PHPCS on modules
   phpunit                  	Runs PHPUnit tests found in custom code
+  site-mode                	Site site mode
   storybook                	Run storybook tool locally
+  storybook-deploy         	Deploy storybook to the oc-design.prometdev.com site.
   test                     	Test site installation
   test-content             	Imports test content
   theme-lint               	lint theme js

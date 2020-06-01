@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+## Runs PHPCS on modules 
+##
+## Usage: fin php-cs 
+
 fin run phpcs \
     --standard="Drupal,DrupalPractice" -n \
     --extensions="php,module,inc,install,test,profile,theme" \
