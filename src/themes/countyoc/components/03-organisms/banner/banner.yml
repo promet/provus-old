@@ -11,9 +11,9 @@ settings:
 items:
   -
     active: true
-    image_src: 'https://live.staticflickr.com/4087/4984516027_e61d0d6506_h.jpg'
+    image_src: '/images/banner-2.jpg'
     image_alt: "This is the image's alt text"
   -
     active: null
-    image_src: 'https://live.staticflickr.com/8043/8140915107_f94a7dcfcd_o.jpg'
+    image_src: '/images/banner-1.jpg'
     image_alt: "This is the image's alt text"

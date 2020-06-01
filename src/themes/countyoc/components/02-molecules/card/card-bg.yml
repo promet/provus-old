@@ -1,7 +1,7 @@
 card__image__src: 'images/card-bg.png'
 card__image__alt: "This is the card image's alt text"
 card__image__output_image_tag: true
-card__heading: 'Open OC'
+card__heading: 'Open Southport'
 card__body: 'Go inside County finances with an interactive data tool.'
 card__link__text: 'View'
 card__link__url: '#'

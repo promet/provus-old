@@ -2,9 +2,9 @@ navigation:
   label: Navigation
   class: block-footernavigation-menu
   inline_menu_items:
-    - title: 'OCgov Home'
+    - title: 'Southport Home'
       url: '#'
-    - title: 'About the County'
+    - title: 'About'
       url: '#'
     - title: 'Departments'
       url: '#'
@@ -37,8 +37,6 @@ resources:
     - title: 'Federal Governmemnt'
       url: '#'
     - title: 'General Information'
-      url: '#'
-    - title: 'Orange County Cities'
       url: '#'
     - title: 'Related Government Agencies'
       url: '#'

@@ -6,7 +6,7 @@
   height: 107px;
 
   @include desktop {
-    height: 144px;
+    height: 160px;
   }
 
   &__pre-inner {
@@ -56,5 +56,17 @@
     .header__pre-inner {
       transform: none;
     }
+  }
+}
+
+.goog-te-gadget {
+  padding-top: 40px;
+}
+
+.toolbar-fixed {
+  .header {
+    &__pre-inner {
+      top: 79px;
+    } 
   }
 }

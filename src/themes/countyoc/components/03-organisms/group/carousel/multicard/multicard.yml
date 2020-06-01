@@ -2,10 +2,10 @@ multicard_heading: "Link Group Multicard Carousel"
 
 content:
   -
-    card__image__src: 'images/card-image-steps.png'
+    card__image__src: 'images/card-library.png'
     card__image__alt: "This is the card image's alt text"
     card__image__output_image_tag: true
-    card__heading: 'Cal Optima Recruitment 1'
+    card__heading: 'Board Recruitment 1'
     card__body: 'Lorem ipsum dolor sit amet'
     card__button__content: 'View'
     card__button__url: 'http://prometsource.com'
@@ -21,7 +21,7 @@ content:
     card__image__src: 'images/multi-1.png'
     card__image__alt: "This is the card image's alt text"
     card__image__output_image_tag: true
-    card__heading: 'Stimga Free OC 1 Lorem ipsum dolor'
+    card__heading: 'Library Opening 1 Lorem ipsum dolor'
     card__body: 'Lorem ipsum dolor sit amet'
     card__button__content: 'Read more'
     card__button__url: '#'
@@ -29,7 +29,7 @@ content:
     card__image__src: 'images/multi-2.png'
     card__image__alt: "This is the card image's alt text"
     card__image__output_image_tag: true
-    card__heading: 'Cal Optima Recruitment 2'
+    card__heading: 'Board Recruitment 2'
     card__body: 'Lorem ipsum dolor sit amet'
     card__button__content: 'Read more'
     card__button__url: '#'
@@ -42,18 +42,18 @@ content:
     card__button__content: 'Read more'
     card__button__url: '#'
   -
-    card__image__src: 'images/card-image-steps.png'
+    card__image__src: 'images/card-library.png'
     card__image__alt: "This is the card image's alt text"
     card__image__output_image_tag: true
-    card__heading: 'Stimga Free OC 2'
+    card__heading: 'Library Opening 2'
     card__body: 'Lorem ipsum dolor sit amet'
     card__button__content: 'Read more'
     card__button__url: '#'
   -
-    card__image__src: 'images/card-image-steps.png'
+    card__image__src: 'images/card-library.png'
     card__image__alt: "This is the card image's alt text"
     card__image__output_image_tag: true
-    card__heading: 'Cal Optima Recruitment 3'
+    card__heading: 'Board Recruitment 3'
     card__body: 'Lorem ipsum dolor sit amet'
     card__button__content: 'Read more'
     card__button__url: '#'
@@ -66,10 +66,10 @@ content:
     card__button__content: 'Read more'
     card__button__url: '#'
   -
-    card__image__src: 'images/card-image-steps.png'
+    card__image__src: 'images/card-library.png'
     card__image__alt: "This is the card image's alt text"
     card__image__output_image_tag: true
-    card__heading: 'Stimga Free OC 3'
+    card__heading: 'Library Opening 3'
     card__body: 'Lorem ipsum dolor sit amet'
     card__button__content: 'Read more'
     card__button__url: '#'

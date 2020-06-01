@@ -1,8 +1,8 @@
 label: Navigats!
 inline_menu_items:
-  - title: 'OCgov Home'
+  - title: 'Southport Home'
     url: '#'
-  - title: 'About the Conty'
+  - title: 'About'
     url: '#'
   - title: 'Departments'
     url: '#'

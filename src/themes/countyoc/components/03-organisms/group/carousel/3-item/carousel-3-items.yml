@@ -2,10 +2,10 @@ carousel_heading: "Link Group Carousel"
 
 content:
   -
-    card__image__src: 'images/card-image-cal-optima.png'
+    card__image__src: 'images/card-image-board.png'
     card__image__alt: "This is the card image's alt text"
     card__image__output_image_tag: true
-    card__heading: 'Cal Optima Recruitment 1'
+    card__heading: 'Board Recruitment 1'
     card__body: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim'
     card__link__text: 'Read more'
     card__link__url: '#'
@@ -18,18 +18,18 @@ content:
     card__link__text: 'Read more'
     card__link__url: '#'
   -
-    card__image__src: 'images/card-image-steps.png'
+    card__image__src: 'images/card-library.png'
     card__image__alt: "This is the card image's alt text"
     card__image__output_image_tag: true
-    card__heading: 'Stimga Free OC 1'
+    card__heading: 'Library Opening 1'
     card__body: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim'
     card__link__text: 'Read more'
     card__link__url: '#'
   -
-    card__image__src: 'images/card-image-cal-optima.png'
+    card__image__src: 'images/card-image-board.png'
     card__image__alt: "This is the card image's alt text"
     card__image__output_image_tag: true
-    card__heading: 'Cal Optima Recruitment 2'
+    card__heading: 'Board Recruitment 2'
     card__body: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim'
     card__link__text: 'Read more'
     card__link__url: '#'
@@ -42,18 +42,18 @@ content:
     card__link__text: 'Read more'
     card__link__url: '#'
   -
-    card__image__src: 'images/card-image-steps.png'
+    card__image__src: 'images/card-library.png'
     card__image__alt: "This is the card image's alt text"
     card__image__output_image_tag: true
-    card__heading: 'Stimga Free OC 2'
+    card__heading: 'Library Opening 2'
     card__body: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim'
     card__link__text: 'Read more'
     card__link__url: '#'
   -
-    card__image__src: 'images/card-image-cal-optima.png'
+    card__image__src: 'images/card-image-board.png'
     card__image__alt: "This is the card image's alt text"
     card__image__output_image_tag: true
-    card__heading: 'Cal Optima Recruitment 3'
+    card__heading: 'Board Recruitment 3'
     card__body: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim'
     card__link__text: 'Read more'
     card__link__url: '#'
@@ -66,10 +66,10 @@ content:
     card__link__text: 'Read more'
     card__link__url: '#'
   -
-    card__image__src: 'images/card-image-steps.png'
+    card__image__src: 'images/card-library.png'
     card__image__alt: "This is the card image's alt text"
     card__image__output_image_tag: true
-    card__heading: 'Stimga Free OC 3'
+    card__heading: 'Library Opening 3'
     card__body: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim'
     card__link__text: 'Read more'
     card__link__url: '#'
