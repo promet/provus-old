@@ -360,14 +360,14 @@
                         if (settings.gallery === true) {
                             pagers += '<li style="width:100%;' + property + ':' + thumbWidth + 'px;' + gutter + ':' + settings.thumbMargin + 'px"><a href="#"><img src="' + thumb + '" /></a></li>';
                         } else {
-                            pagers += '<li><a href="#">' + (i + 1) + '</a></li>';
+                            pagers += '<li><a href="#"><span class="visually-hidden">' + (i + 1) + '</span></a></li>';
                         }
                         if (settings.mode === 'slide') {
                             if ((v) >= w - elSize - settings.slideMargin) {
                                 i = i + 1;
                                 var minPgr = 2;
                                 if (settings.autoWidth) {
-                                    pagers += '<li><a href="#">' + (i + 1) + '</a></li>';
+                                    pagers += '<li><a href="#"><span class="visually-hidden">' + (i + 1) + '</span></a></li>';
                                     minPgr = 1;
                                 }
                                 if (i < minPgr) {

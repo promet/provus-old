@@ -19,7 +19,7 @@ items:
     value: 'primary-darker'
   - name: '#112e51'
     value: 'primary-darkest'
-  - name: '#DA3807'
+  - name: '#be2c00'
     value: 'ada-orange'
   - name: '#FD5809'
     value: 'accent-orange'
