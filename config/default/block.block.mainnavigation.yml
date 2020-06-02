@@ -28,6 +28,7 @@ settings:
   parent: 'main:'
   suggestion: sidebar
   label_type: active_item
+  label_link: false
 visibility:
   node_type:
     id: node_type

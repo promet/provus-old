@@ -8,11 +8,9 @@ dependencies:
     - field.field.node.county_article.field_file
     - field.field.node.county_article.field_media_image
     - field.field.node.county_article.field_publish_date
-    - field.field.node.county_article.field_sunset_date
     - field.field.node.county_article.field_type
     - node.type.county_article
   module:
-    - datetime
     - layout_builder
     - options
     - text
@@ -42,24 +40,6 @@ content:
       view_mode: landscape_small
       link: false
     third_party_settings: {  }
-  field_publish_date:
-    weight: 103
-    label: hidden
-    settings:
-      format_type: medium
-      timezone_override: ''
-    third_party_settings: {  }
-    type: datetime_default
-    region: content
-  field_sunset_date:
-    weight: 104
-    label: hidden
-    settings:
-      format_type: medium
-      timezone_override: ''
-    third_party_settings: {  }
-    type: datetime_default
-    region: content
   field_type:
     weight: 102
     label: hidden
@@ -74,5 +54,6 @@ content:
     third_party_settings: {  }
 hidden:
   field_file: true
+  field_publish_date: true
   langcode: true
   search_api_excerpt: true

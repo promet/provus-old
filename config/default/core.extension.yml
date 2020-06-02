@@ -34,7 +34,6 @@ module:
   filter: 0
   fullcalendar_view: 0
   google_analytics: 0
-  google_cse: 0
   help: 0
   history: 0
   image: 0
@@ -66,7 +65,6 @@ module:
   rdf: 0
   redirect: 0
   responsive_image: 0
-  search: 0
   search_api: 0
   search_api_solr: 0
   serialization: 0
@@ -79,6 +77,7 @@ module:
   token: 0
   toolbar: 0
   twig_tweak: 0
+  update: 0
   user: 0
   views_ui: 0
   webform: 0

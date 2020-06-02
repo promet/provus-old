@@ -3,17 +3,17 @@
         {
             "nid": [
                 {
-                    "value": 18
+                    "value": 13
                 }
             ],
             "uuid": [
                 {
-                    "value": "4b6e637a-1885-4c7f-9a75-17aa1e9f450b"
+                    "value": "d183fb26-c902-40f1-adfa-4408066b7fe1"
                 }
             ],
             "vid": [
                 {
-                    "value": 19
+                    "value": 13
                 }
             ],
             "langcode": [
@@ -36,10 +36,10 @@
             ],
             "revision_uid": [
                 {
-                    "target_id": 1,
+                    "target_id": 0,
                     "target_type": "user",
-                    "target_uuid": "a7519e3c-7dcb-4f53-a216-d14d4cfa3c10",
-                    "url": "\/user\/1"
+                    "target_uuid": "4d4524f6-f681-418f-9069-5d145c978455",
+                    "url": "\/user\/0"
                 }
             ],
             "revision_log": [],
@@ -50,10 +50,10 @@
             ],
             "uid": [
                 {
-                    "target_id": 1,
+                    "target_id": 0,
                     "target_type": "user",
-                    "target_uuid": "a7519e3c-7dcb-4f53-a216-d14d4cfa3c10",
-                    "url": "\/user\/1"
+                    "target_uuid": "4d4524f6-f681-418f-9069-5d145c978455",
+                    "url": "\/user\/0"
                 }
             ],
             "title": [
@@ -88,11 +88,15 @@
                     "value": true
                 }
             ],
-            "revision_translation_affected": [],
+            "revision_translation_affected": [
+                {
+                    "value": true
+                }
+            ],
             "path": [
                 {
                     "alias": "\/faq\/test-faq",
-                    "pid": 22,
+                    "pid": 19,
                     "langcode": "en"
                 }
             ],
@@ -106,10 +110,10 @@
             ],
             "field_faq_items": [
                 {
-                    "target_id": 48,
+                    "target_id": 9,
                     "target_type": "block_content",
                     "target_uuid": "13362ff9-f915-44c6-a4fa-70070488f83c",
-                    "url": "\/block\/48"
+                    "url": "\/block\/9"
                 }
             ]
         }

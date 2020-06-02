@@ -13,8 +13,7 @@ if [[ "${DEBUG}" != "" ]]; then
 fi
 
 fin php-cs
-fin phpunit
+#fin phpunit
 fin test-content default
 fin behat
-# Uncomment until we start themeing.
-# fin pa11y 
+fin pa11y 

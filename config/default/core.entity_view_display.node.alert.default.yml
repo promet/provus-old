@@ -5,11 +5,8 @@ dependencies:
   config:
     - field.field.node.alert.body
     - field.field.node.alert.field_alert_visibility
-    - field.field.node.alert.field_publish_date
-    - field.field.node.alert.field_sunset_date
     - node.type.alert
   module:
-    - datetime
     - text
     - user
 id: node.alert.default
@@ -23,24 +20,6 @@ content:
     weight: 1
     settings: {  }
     third_party_settings: {  }
-    region: content
-  field_publish_date:
-    weight: 2
-    label: above
-    settings:
-      format_type: medium
-      timezone_override: ''
-    third_party_settings: {  }
-    type: datetime_default
-    region: content
-  field_sunset_date:
-    weight: 3
-    label: above
-    settings:
-      format_type: medium
-      timezone_override: ''
-    third_party_settings: {  }
-    type: datetime_default
     region: content
   links:
     weight: 0

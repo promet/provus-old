@@ -8,7 +8,7 @@
             ],
             "uuid": [
                 {
-                    "value": "46ec7395-8795-49df-ac5d-6ac9a1c845e5"
+                    "value": "2b0f3a61-b8cf-434b-b96a-8487225d73ee"
                 }
             ],
             "vid": [
@@ -38,7 +38,7 @@
                 {
                     "target_id": 0,
                     "target_type": "user",
-                    "target_uuid": "264198e7-fcdf-4c69-a82d-c3c8ef37b0b0",
+                    "target_uuid": "4d4524f6-f681-418f-9069-5d145c978455",
                     "url": "\/user\/0"
                 }
             ],
@@ -52,7 +52,7 @@
                 {
                     "target_id": 0,
                     "target_type": "user",
-                    "target_uuid": "264198e7-fcdf-4c69-a82d-c3c8ef37b0b0",
+                    "target_uuid": "4d4524f6-f681-418f-9069-5d145c978455",
                     "url": "\/user\/0"
                 }
             ],
@@ -110,12 +110,7 @@
             ],
             "field_file": [],
             "field_media_image": [],
-            "field_publish_date": [
-                {
-                    "value": "2020-04-17"
-                }
-            ],
-            "field_sunset_date": [],
+            "field_publish_date": [],
             "field_type": [
                 {
                     "value": "press"
@@ -130,7 +125,7 @@
             ],
             "uuid": [
                 {
-                    "value": "f610f0f3-44b6-49e5-a726-77dd14a84085"
+                    "value": "b79f2994-0822-45db-918f-3b5494547876"
                 }
             ],
             "vid": [
@@ -160,7 +155,7 @@
                 {
                     "target_id": 0,
                     "target_type": "user",
-                    "target_uuid": "264198e7-fcdf-4c69-a82d-c3c8ef37b0b0",
+                    "target_uuid": "4d4524f6-f681-418f-9069-5d145c978455",
                     "url": "\/user\/0"
                 }
             ],
@@ -174,7 +169,7 @@
                 {
                     "target_id": 0,
                     "target_type": "user",
-                    "target_uuid": "264198e7-fcdf-4c69-a82d-c3c8ef37b0b0",
+                    "target_uuid": "4d4524f6-f681-418f-9069-5d145c978455",
                     "url": "\/user\/0"
                 }
             ],
@@ -232,12 +227,7 @@
             ],
             "field_file": [],
             "field_media_image": [],
-            "field_publish_date": [
-                {
-                    "value": "2020-04-14"
-                }
-            ],
-            "field_sunset_date": [],
+            "field_publish_date": [],
             "field_type": [
                 {
                     "value": "press"
@@ -252,7 +242,7 @@
             ],
             "uuid": [
                 {
-                    "value": "1f821a43-a6b6-4ec7-8644-8f3ab344d8a1"
+                    "value": "990a9001-44d5-4a7d-ab6f-a12e824e6099"
                 }
             ],
             "vid": [
@@ -282,7 +272,7 @@
                 {
                     "target_id": 0,
                     "target_type": "user",
-                    "target_uuid": "264198e7-fcdf-4c69-a82d-c3c8ef37b0b0",
+                    "target_uuid": "4d4524f6-f681-418f-9069-5d145c978455",
                     "url": "\/user\/0"
                 }
             ],
@@ -296,7 +286,7 @@
                 {
                     "target_id": 0,
                     "target_type": "user",
-                    "target_uuid": "264198e7-fcdf-4c69-a82d-c3c8ef37b0b0",
+                    "target_uuid": "4d4524f6-f681-418f-9069-5d145c978455",
                     "url": "\/user\/0"
                 }
             ],
@@ -354,12 +344,7 @@
             ],
             "field_file": [],
             "field_media_image": [],
-            "field_publish_date": [
-                {
-                    "value": "2020-04-09"
-                }
-            ],
-            "field_sunset_date": [],
+            "field_publish_date": [],
             "field_type": [
                 {
                     "value": "press"
@@ -374,7 +359,7 @@
             ],
             "uuid": [
                 {
-                    "value": "f9b8f1f2-4342-45ac-a30c-b61fd85e4c7c"
+                    "value": "43cf263c-e50e-405a-97a0-35624cf8bb49"
                 }
             ],
             "vid": [
@@ -404,7 +389,7 @@
                 {
                     "target_id": 0,
                     "target_type": "user",
-                    "target_uuid": "264198e7-fcdf-4c69-a82d-c3c8ef37b0b0",
+                    "target_uuid": "4d4524f6-f681-418f-9069-5d145c978455",
                     "url": "\/user\/0"
                 }
             ],
@@ -418,7 +403,7 @@
                 {
                     "target_id": 0,
                     "target_type": "user",
-                    "target_uuid": "264198e7-fcdf-4c69-a82d-c3c8ef37b0b0",
+                    "target_uuid": "4d4524f6-f681-418f-9069-5d145c978455",
                     "url": "\/user\/0"
                 }
             ],
@@ -476,12 +461,7 @@
             ],
             "field_file": [],
             "field_media_image": [],
-            "field_publish_date": [
-                {
-                    "value": "2020-04-22"
-                }
-            ],
-            "field_sunset_date": [],
+            "field_publish_date": [],
             "field_type": [
                 {
                     "value": "news"
@@ -496,7 +476,7 @@
             ],
             "uuid": [
                 {
-                    "value": "96ebe03c-2c6b-46fd-8650-ca9db638f38f"
+                    "value": "2e1bfc0d-5805-4d6d-bd2f-e3550acc9a0d"
                 }
             ],
             "vid": [
@@ -526,7 +506,7 @@
                 {
                     "target_id": 0,
                     "target_type": "user",
-                    "target_uuid": "264198e7-fcdf-4c69-a82d-c3c8ef37b0b0",
+                    "target_uuid": "4d4524f6-f681-418f-9069-5d145c978455",
                     "url": "\/user\/0"
                 }
             ],
@@ -540,7 +520,7 @@
                 {
                     "target_id": 0,
                     "target_type": "user",
-                    "target_uuid": "264198e7-fcdf-4c69-a82d-c3c8ef37b0b0",
+                    "target_uuid": "4d4524f6-f681-418f-9069-5d145c978455",
                     "url": "\/user\/0"
                 }
             ],
@@ -598,12 +578,7 @@
             ],
             "field_file": [],
             "field_media_image": [],
-            "field_publish_date": [
-                {
-                    "value": "2020-04-21"
-                }
-            ],
-            "field_sunset_date": [],
+            "field_publish_date": [],
             "field_type": [
                 {
                     "value": "news"
@@ -618,7 +593,7 @@
             ],
             "uuid": [
                 {
-                    "value": "08ba1de2-2eb9-47ab-b51e-14310ed63736"
+                    "value": "ce4a568a-1122-430a-a0f6-b4e456694e8b"
                 }
             ],
             "vid": [
@@ -648,7 +623,7 @@
                 {
                     "target_id": 0,
                     "target_type": "user",
-                    "target_uuid": "264198e7-fcdf-4c69-a82d-c3c8ef37b0b0",
+                    "target_uuid": "4d4524f6-f681-418f-9069-5d145c978455",
                     "url": "\/user\/0"
                 }
             ],
@@ -662,7 +637,7 @@
                 {
                     "target_id": 0,
                     "target_type": "user",
-                    "target_uuid": "264198e7-fcdf-4c69-a82d-c3c8ef37b0b0",
+                    "target_uuid": "4d4524f6-f681-418f-9069-5d145c978455",
                     "url": "\/user\/0"
                 }
             ],
@@ -720,12 +695,7 @@
             ],
             "field_file": [],
             "field_media_image": [],
-            "field_publish_date": [
-                {
-                    "value": "2020-04-21"
-                }
-            ],
-            "field_sunset_date": [],
+            "field_publish_date": [],
             "field_type": [
                 {
                     "value": "news"

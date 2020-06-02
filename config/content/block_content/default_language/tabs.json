@@ -3,7 +3,7 @@
         {
             "id": [
                 {
-                    "value": 43
+                    "value": 48
                 }
             ],
             "uuid": [
@@ -13,7 +13,7 @@
             ],
             "revision_id": [
                 {
-                    "value": 43
+                    "value": 48
                 }
             ],
             "langcode": [
@@ -73,16 +73,16 @@
             ],
             "field_tab_items": [
                 {
-                    "target_id": 39,
+                    "target_id": 44,
                     "target_type": "block_content",
                     "target_uuid": "3cc914d1-7adc-401f-81d3-9afd0be36db2",
-                    "url": "\/block\/39"
+                    "url": "\/block\/44"
                 },
                 {
-                    "target_id": 40,
+                    "target_id": 45,
                     "target_type": "block_content",
                     "target_uuid": "9bb1bf63-70e6-4ed9-8a89-dbc65b349199",
-                    "url": "\/block\/40"
+                    "url": "\/block\/45"
                 }
             ]
         }

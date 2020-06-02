@@ -7,7 +7,6 @@ dependencies:
     - field.field.node.county_article.field_file
     - field.field.node.county_article.field_media_image
     - field.field.node.county_article.field_publish_date
-    - field.field.node.county_article.field_sunset_date
     - field.field.node.county_article.field_type
     - node.type.county_article
   module:
@@ -51,13 +50,7 @@ content:
     third_party_settings: {  }
     region: content
   field_publish_date:
-    weight: 123
-    settings: {  }
-    third_party_settings: {  }
-    type: datetime_default
-    region: content
-  field_sunset_date:
-    weight: 124
+    weight: 128
     settings: {  }
     third_party_settings: {  }
     type: datetime_default

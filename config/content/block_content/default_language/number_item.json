@@ -3,7 +3,7 @@
         {
             "id": [
                 {
-                    "value": 1
+                    "value": 5
                 }
             ],
             "uuid": [
@@ -13,7 +13,7 @@
             ],
             "revision_id": [
                 {
-                    "value": 1
+                    "value": 5
                 }
             ],
             "langcode": [
@@ -47,7 +47,7 @@
             ],
             "info": [
                 {
-                    "value": "101M"
+                    "value": "101M Number Item"
                 }
             ],
             "changed": [
@@ -90,7 +90,7 @@
         {
             "id": [
                 {
-                    "value": 2
+                    "value": 6
                 }
             ],
             "uuid": [
@@ -100,7 +100,7 @@
             ],
             "revision_id": [
                 {
-                    "value": 2
+                    "value": 6
                 }
             ],
             "langcode": [
@@ -134,7 +134,7 @@
             ],
             "info": [
                 {
-                    "value": "500+"
+                    "value": "500+ Number Item"
                 }
             ],
             "changed": [
@@ -177,7 +177,7 @@
         {
             "id": [
                 {
-                    "value": 3
+                    "value": 7
                 }
             ],
             "uuid": [
@@ -187,7 +187,7 @@
             ],
             "revision_id": [
                 {
-                    "value": 3
+                    "value": 7
                 }
             ],
             "langcode": [
@@ -221,7 +221,7 @@
             ],
             "info": [
                 {
-                    "value": "12.4K"
+                    "value": "12.4K Number Item"
                 }
             ],
             "changed": [
@@ -264,7 +264,7 @@
         {
             "id": [
                 {
-                    "value": 4
+                    "value": 8
                 }
             ],
             "uuid": [
@@ -274,7 +274,7 @@
             ],
             "revision_id": [
                 {
-                    "value": 4
+                    "value": 8
                 }
             ],
             "langcode": [
@@ -308,7 +308,7 @@
             ],
             "info": [
                 {
-                    "value": "820"
+                    "value": "820 Number Item"
                 }
             ],
             "changed": [

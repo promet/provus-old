@@ -8,7 +8,7 @@
             ],
             "uuid": [
                 {
-                    "value": "8114da1d-fbd4-497b-94a6-0f3f9efede09"
+                    "value": "6ebbed83-042b-4b9a-ba1e-3aee8b4b535e"
                 }
             ],
             "vid": [
@@ -30,7 +30,7 @@
             ],
             "revision_created": [
                 {
-                    "value": "2020-05-13T14:29:04+00:00",
+                    "value": "2020-06-01T11:19:08+00:00",
                     "format": "Y-m-d\\TH:i:sP"
                 }
             ],
@@ -59,8 +59,8 @@
                     "width": 500,
                     "height": 256,
                     "target_type": "file",
-                    "target_uuid": "71be12a5-e76c-4582-aa4d-a8613b44b0d7",
-                    "url": "http:\/\/oc-multi.docksal\/sites\/default\/files\/2020-05\/pexels-photo-414171.jpeg"
+                    "target_uuid": "07b65b37-dee6-4768-8230-1e1d6cf1afb3",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2020-05\/pexels-photo-414171.jpeg"
                 }
             ],
             "created": [
@@ -100,8 +100,8 @@
                     "width": 500,
                     "height": 256,
                     "target_type": "file",
-                    "target_uuid": "71be12a5-e76c-4582-aa4d-a8613b44b0d7",
-                    "url": "http:\/\/oc-multi.docksal\/sites\/default\/files\/2020-05\/pexels-photo-414171.jpeg"
+                    "target_uuid": "07b65b37-dee6-4768-8230-1e1d6cf1afb3",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2020-05\/pexels-photo-414171.jpeg"
                 }
             ]
         },
@@ -113,7 +113,7 @@
             ],
             "uuid": [
                 {
-                    "value": "09c16559-f288-41e5-b4a4-84019f703a92"
+                    "value": "acf0a7d1-c3fd-49de-9fcb-7560a482534a"
                 }
             ],
             "vid": [
@@ -135,7 +135,7 @@
             ],
             "revision_created": [
                 {
-                    "value": "2020-05-13T14:29:04+00:00",
+                    "value": "2020-06-01T11:19:08+00:00",
                     "format": "Y-m-d\\TH:i:sP"
                 }
             ],
@@ -164,8 +164,8 @@
                     "width": 1200,
                     "height": 1815,
                     "target_type": "file",
-                    "target_uuid": "3c4381fe-7052-4bb3-a248-e75984877fb0",
-                    "url": "http:\/\/oc-multi.docksal\/sites\/default\/files\/2020-05\/1200px-Mona_Lisa-restored.jpg"
+                    "target_uuid": "7219b3d5-7e74-43b2-941c-21dafca36a5f",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2020-05\/1200px-Mona_Lisa-restored.jpg"
                 }
             ],
             "created": [
@@ -205,8 +205,8 @@
                     "width": 1200,
                     "height": 1815,
                     "target_type": "file",
-                    "target_uuid": "3c4381fe-7052-4bb3-a248-e75984877fb0",
-                    "url": "http:\/\/oc-multi.docksal\/sites\/default\/files\/2020-05\/1200px-Mona_Lisa-restored.jpg"
+                    "target_uuid": "7219b3d5-7e74-43b2-941c-21dafca36a5f",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2020-05\/1200px-Mona_Lisa-restored.jpg"
                 }
             ]
         },
@@ -218,7 +218,7 @@
             ],
             "uuid": [
                 {
-                    "value": "14996dea-c999-47d8-ae39-c82912e207e4"
+                    "value": "50e613c0-ee85-4192-ac0f-0f5869a7b5b8"
                 }
             ],
             "vid": [
@@ -240,7 +240,7 @@
             ],
             "revision_created": [
                 {
-                    "value": "2020-05-13T14:29:04+00:00",
+                    "value": "2020-06-01T11:19:08+00:00",
                     "format": "Y-m-d\\TH:i:sP"
                 }
             ],
@@ -269,8 +269,8 @@
                     "width": 262,
                     "height": 97,
                     "target_type": "file",
-                    "target_uuid": "1d417738-54b5-4332-b8d2-b4f7e463fc0e",
-                    "url": "http:\/\/oc-multi.docksal\/sites\/default\/files\/2020-04\/promo-0.png"
+                    "target_uuid": "b54ffafa-6c16-48ef-a786-fe2ec558427b",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2020-04\/promo-0.png"
                 }
             ],
             "created": [
@@ -310,8 +310,8 @@
                     "width": 262,
                     "height": 97,
                     "target_type": "file",
-                    "target_uuid": "1d417738-54b5-4332-b8d2-b4f7e463fc0e",
-                    "url": "http:\/\/oc-multi.docksal\/sites\/default\/files\/2020-04\/promo-0.png"
+                    "target_uuid": "b54ffafa-6c16-48ef-a786-fe2ec558427b",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2020-04\/promo-0.png"
                 }
             ]
         },
@@ -323,7 +323,7 @@
             ],
             "uuid": [
                 {
-                    "value": "dc3c6df2-b02f-432c-ac43-593057177c63"
+                    "value": "4e4e5983-c082-40eb-9d97-2f39eba565a2"
                 }
             ],
             "vid": [
@@ -345,7 +345,7 @@
             ],
             "revision_created": [
                 {
-                    "value": "2020-05-13T14:29:04+00:00",
+                    "value": "2020-06-01T11:19:08+00:00",
                     "format": "Y-m-d\\TH:i:sP"
                 }
             ],
@@ -374,8 +374,8 @@
                     "width": 262,
                     "height": 97,
                     "target_type": "file",
-                    "target_uuid": "356bbfaf-d11c-4103-bcf3-6c87dd75cf71",
-                    "url": "http:\/\/oc-multi.docksal\/sites\/default\/files\/2020-04\/promo-1.png"
+                    "target_uuid": "f85ac816-319f-42ca-a3c3-f8b72dadfbc7",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2020-04\/promo-1.png"
                 }
             ],
             "created": [
@@ -415,8 +415,8 @@
                     "width": 262,
                     "height": 97,
                     "target_type": "file",
-                    "target_uuid": "356bbfaf-d11c-4103-bcf3-6c87dd75cf71",
-                    "url": "http:\/\/oc-multi.docksal\/sites\/default\/files\/2020-04\/promo-1.png"
+                    "target_uuid": "f85ac816-319f-42ca-a3c3-f8b72dadfbc7",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2020-04\/promo-1.png"
                 }
             ]
         },
@@ -428,7 +428,7 @@
             ],
             "uuid": [
                 {
-                    "value": "28286793-b65c-44ba-884a-6b093c57c3d2"
+                    "value": "6f77901c-c9f6-4cde-a359-e1a6b25ecefb"
                 }
             ],
             "vid": [
@@ -450,7 +450,7 @@
             ],
             "revision_created": [
                 {
-                    "value": "2020-05-13T14:29:04+00:00",
+                    "value": "2020-06-01T11:19:08+00:00",
                     "format": "Y-m-d\\TH:i:sP"
                 }
             ],
@@ -479,8 +479,8 @@
                     "width": 262,
                     "height": 97,
                     "target_type": "file",
-                    "target_uuid": "2d55dae7-1007-435a-9625-3e0638ed9534",
-                    "url": "http:\/\/oc-multi.docksal\/sites\/default\/files\/2020-04\/promo-2.png"
+                    "target_uuid": "ba94a99b-12a2-48b7-b086-3e6e2fb2f840",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2020-04\/promo-2.png"
                 }
             ],
             "created": [
@@ -520,8 +520,8 @@
                     "width": 262,
                     "height": 97,
                     "target_type": "file",
-                    "target_uuid": "2d55dae7-1007-435a-9625-3e0638ed9534",
-                    "url": "http:\/\/oc-multi.docksal\/sites\/default\/files\/2020-04\/promo-2.png"
+                    "target_uuid": "ba94a99b-12a2-48b7-b086-3e6e2fb2f840",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2020-04\/promo-2.png"
                 }
             ]
         },
@@ -533,7 +533,7 @@
             ],
             "uuid": [
                 {
-                    "value": "66cdcc93-2c3e-4571-ac46-e22861cfefe4"
+                    "value": "ecf4920c-671d-494a-a2c7-5ab3a1d3deb1"
                 }
             ],
             "vid": [
@@ -555,7 +555,7 @@
             ],
             "revision_created": [
                 {
-                    "value": "2020-05-13T14:29:04+00:00",
+                    "value": "2020-06-01T11:19:08+00:00",
                     "format": "Y-m-d\\TH:i:sP"
                 }
             ],
@@ -584,8 +584,8 @@
                     "width": 262,
                     "height": 97,
                     "target_type": "file",
-                    "target_uuid": "3bb54da0-14b1-4970-933a-8449c83e397e",
-                    "url": "http:\/\/oc-multi.docksal\/sites\/default\/files\/2020-04\/promo-3.png"
+                    "target_uuid": "31c92d6b-a477-4db2-b177-8bf3a324320b",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2020-04\/promo-3.png"
                 }
             ],
             "created": [
@@ -625,8 +625,8 @@
                     "width": 262,
                     "height": 97,
                     "target_type": "file",
-                    "target_uuid": "3bb54da0-14b1-4970-933a-8449c83e397e",
-                    "url": "http:\/\/oc-multi.docksal\/sites\/default\/files\/2020-04\/promo-3.png"
+                    "target_uuid": "31c92d6b-a477-4db2-b177-8bf3a324320b",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2020-04\/promo-3.png"
                 }
             ]
         },
@@ -638,7 +638,7 @@
             ],
             "uuid": [
                 {
-                    "value": "bf9b9875-7589-43dd-bd9d-ad91c6806ff3"
+                    "value": "dfb30458-8f20-4598-9841-1e395e7e042b"
                 }
             ],
             "vid": [
@@ -660,7 +660,7 @@
             ],
             "revision_created": [
                 {
-                    "value": "2020-05-13T14:29:04+00:00",
+                    "value": "2020-06-01T11:19:08+00:00",
                     "format": "Y-m-d\\TH:i:sP"
                 }
             ],
@@ -690,11 +690,11 @@
                     "target_id": 8,
                     "alt": "test",
                     "title": null,
-                    "width": 1579,
-                    "height": 794,
+                    "width": 1900,
+                    "height": 1088,
                     "target_type": "file",
-                    "target_uuid": "d11f1b66-5efa-48b1-b242-9191a5447ebc",
-                    "url": "http:\/\/oc-multi.docksal\/sites\/default\/files\/2020-03\/8140915107_f94a7dcfcd_o.jpg"
+                    "target_uuid": "39912512-0eab-495d-b6e3-d890b3e27225",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2020-03\/8140915107_f94a7dcfcd_o.jpg"
                 }
             ],
             "created": [
@@ -731,11 +731,11 @@
                     "target_id": 8,
                     "alt": "test",
                     "title": "",
-                    "width": 1579,
-                    "height": 794,
+                    "width": 1900,
+                    "height": 1088,
                     "target_type": "file",
-                    "target_uuid": "d11f1b66-5efa-48b1-b242-9191a5447ebc",
-                    "url": "http:\/\/oc-multi.docksal\/sites\/default\/files\/2020-03\/8140915107_f94a7dcfcd_o.jpg"
+                    "target_uuid": "39912512-0eab-495d-b6e3-d890b3e27225",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2020-03\/8140915107_f94a7dcfcd_o.jpg"
                 }
             ]
         },
@@ -747,7 +747,7 @@
             ],
             "uuid": [
                 {
-                    "value": "659434c2-c254-425b-9a9d-0fe43cc65930"
+                    "value": "643c1636-1580-4e7d-b6d5-8c025ca83819"
                 }
             ],
             "vid": [
@@ -769,7 +769,7 @@
             ],
             "revision_created": [
                 {
-                    "value": "2020-05-13T14:29:04+00:00",
+                    "value": "2020-06-01T11:19:08+00:00",
                     "format": "Y-m-d\\TH:i:sP"
                 }
             ],
@@ -799,11 +799,11 @@
                     "target_id": 9,
                     "alt": "test",
                     "title": null,
-                    "width": 1579,
-                    "height": 794,
+                    "width": 1600,
+                    "height": 1067,
                     "target_type": "file",
-                    "target_uuid": "4aa704b4-fa9a-4951-83c3-463ac84b3d86",
-                    "url": "http:\/\/oc-multi.docksal\/sites\/default\/files\/2020-03\/4984516027_e61d0d6506_h.jpg"
+                    "target_uuid": "e32dc108-7830-4790-8b9f-d1e4a329d898",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2020-03\/4984516027_e61d0d6506_h.jpg"
                 }
             ],
             "created": [
@@ -840,11 +840,11 @@
                     "target_id": 9,
                     "alt": "test",
                     "title": "",
-                    "width": 1579,
-                    "height": 794,
+                    "width": 1600,
+                    "height": 1067,
                     "target_type": "file",
-                    "target_uuid": "4aa704b4-fa9a-4951-83c3-463ac84b3d86",
-                    "url": "http:\/\/oc-multi.docksal\/sites\/default\/files\/2020-03\/4984516027_e61d0d6506_h.jpg"
+                    "target_uuid": "e32dc108-7830-4790-8b9f-d1e4a329d898",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2020-03\/4984516027_e61d0d6506_h.jpg"
                 }
             ]
         },
@@ -856,7 +856,7 @@
             ],
             "uuid": [
                 {
-                    "value": "abfaf7d5-3f9c-4e50-a447-e92a5e5aed10"
+                    "value": "3a4ce3b1-cde7-4119-8f2b-7ee3edf4547d"
                 }
             ],
             "vid": [
@@ -878,7 +878,7 @@
             ],
             "revision_created": [
                 {
-                    "value": "2020-05-13T14:29:04+00:00",
+                    "value": "2020-06-01T11:19:08+00:00",
                     "format": "Y-m-d\\TH:i:sP"
                 }
             ],
@@ -911,8 +911,8 @@
                     "width": 300,
                     "height": 178,
                     "target_type": "file",
-                    "target_uuid": "fdd550b1-553e-433c-b885-99e87ec36c51",
-                    "url": "http:\/\/oc-multi.docksal\/sites\/default\/files\/2020-03\/card-image-steps_1.png"
+                    "target_uuid": "58264c8d-2356-4048-8155-d64d951ef0b1",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2020-03\/card-image-steps_1.png"
                 }
             ],
             "created": [
@@ -952,8 +952,8 @@
                     "width": 300,
                     "height": 178,
                     "target_type": "file",
-                    "target_uuid": "fdd550b1-553e-433c-b885-99e87ec36c51",
-                    "url": "http:\/\/oc-multi.docksal\/sites\/default\/files\/2020-03\/card-image-steps_1.png"
+                    "target_uuid": "58264c8d-2356-4048-8155-d64d951ef0b1",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2020-03\/card-image-steps_1.png"
                 }
             ]
         },
@@ -965,7 +965,7 @@
             ],
             "uuid": [
                 {
-                    "value": "e2d1cf6e-bed1-44af-81e9-e7b742355ccb"
+                    "value": "4cba4ee5-7878-4bc2-91ae-341300ca1639"
                 }
             ],
             "vid": [
@@ -987,7 +987,7 @@
             ],
             "revision_created": [
                 {
-                    "value": "2020-05-13T14:29:04+00:00",
+                    "value": "2020-06-01T11:19:08+00:00",
                     "format": "Y-m-d\\TH:i:sP"
                 }
             ],
@@ -1020,8 +1020,8 @@
                     "width": 300,
                     "height": 171,
                     "target_type": "file",
-                    "target_uuid": "8b61e2fb-1f33-4d8e-8f1b-9b0773a62c70",
-                    "url": "http:\/\/oc-multi.docksal\/sites\/default\/files\/2020-03\/card-image-lactation_1.png"
+                    "target_uuid": "4395d510-b3c6-4085-9870-54cb598b07ed",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2020-03\/card-image-lactation_1.png"
                 }
             ],
             "created": [
@@ -1061,8 +1061,8 @@
                     "width": 300,
                     "height": 171,
                     "target_type": "file",
-                    "target_uuid": "8b61e2fb-1f33-4d8e-8f1b-9b0773a62c70",
-                    "url": "http:\/\/oc-multi.docksal\/sites\/default\/files\/2020-03\/card-image-lactation_1.png"
+                    "target_uuid": "4395d510-b3c6-4085-9870-54cb598b07ed",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2020-03\/card-image-lactation_1.png"
                 }
             ]
         },
@@ -1074,7 +1074,7 @@
             ],
             "uuid": [
                 {
-                    "value": "80b69133-2e1b-4afc-9b1c-261a1954e174"
+                    "value": "a57c84f3-ac7f-4a40-a162-6b7470b506ef"
                 }
             ],
             "vid": [
@@ -1096,7 +1096,7 @@
             ],
             "revision_created": [
                 {
-                    "value": "2020-05-13T14:29:04+00:00",
+                    "value": "2020-06-01T11:19:08+00:00",
                     "format": "Y-m-d\\TH:i:sP"
                 }
             ],
@@ -1126,11 +1126,11 @@
                     "target_id": 12,
                     "alt": "test",
                     "title": null,
-                    "width": 298,
-                    "height": 178,
+                    "width": 900,
+                    "height": 601,
                     "target_type": "file",
-                    "target_uuid": "73a57c98-5f45-41b3-a8a6-7106dda5e412",
-                    "url": "http:\/\/oc-multi.docksal\/sites\/default\/files\/2020-03\/card-library.png"
+                    "target_uuid": "16d0e13e-3eae-4987-bd69-96a792861ad7",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2020-03\/card-library.png"
                 }
             ],
             "created": [
@@ -1167,11 +1167,11 @@
                     "target_id": 12,
                     "alt": "test",
                     "title": "",
-                    "width": 298,
-                    "height": 178,
+                    "width": 900,
+                    "height": 601,
                     "target_type": "file",
-                    "target_uuid": "73a57c98-5f45-41b3-a8a6-7106dda5e412",
-                    "url": "http:\/\/oc-multi.docksal\/sites\/default\/files\/2020-03\/card-library.png"
+                    "target_uuid": "16d0e13e-3eae-4987-bd69-96a792861ad7",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2020-03\/card-library.png"
                 }
             ]
         },
@@ -1183,7 +1183,7 @@
             ],
             "uuid": [
                 {
-                    "value": "0ad4f5fa-9660-4010-b5c3-b6cf2e375ad7"
+                    "value": "7b1db9ee-40c1-49a5-be38-0278fa5a9e66"
                 }
             ],
             "vid": [
@@ -1205,7 +1205,7 @@
             ],
             "revision_created": [
                 {
-                    "value": "2020-05-13T14:29:04+00:00",
+                    "value": "2020-06-01T11:19:08+00:00",
                     "format": "Y-m-d\\TH:i:sP"
                 }
             ],
@@ -1231,11 +1231,11 @@
                     "target_id": 15,
                     "alt": "Southport County California",
                     "title": null,
-                    "width": 404,
-                    "height": 404,
+                    "width": 200,
+                    "height": 167,
                     "target_type": "file",
-                    "target_uuid": "d6357286-8352-405e-a483-6556413af586",
-                    "url": "http:\/\/oc-multi.docksal\/sites\/default\/files\/2020-04\/logo-southport-banner.png"
+                    "target_uuid": "e78fcde4-2cae-4397-bdce-e543e83e2065",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2020-04\/logo-southport-banner.png"
                 }
             ],
             "created": [
@@ -1272,11 +1272,11 @@
                     "target_id": 15,
                     "alt": "Southport County California",
                     "title": "",
-                    "width": 404,
-                    "height": 404,
+                    "width": 200,
+                    "height": 167,
                     "target_type": "file",
-                    "target_uuid": "d6357286-8352-405e-a483-6556413af586",
-                    "url": "http:\/\/oc-multi.docksal\/sites\/default\/files\/2020-04\/logo-southport-banner.png"
+                    "target_uuid": "e78fcde4-2cae-4397-bdce-e543e83e2065",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2020-04\/logo-southport-banner.png"
                 }
             ]
         },
@@ -1288,7 +1288,7 @@
             ],
             "uuid": [
                 {
-                    "value": "f02d636b-dcd7-4709-a4c2-d3625b7c78ec"
+                    "value": "d5c6b56e-d137-436b-b1b7-740ee051e212"
                 }
             ],
             "vid": [
@@ -1310,7 +1310,7 @@
             ],
             "revision_created": [
                 {
-                    "value": "2020-05-13T14:29:04+00:00",
+                    "value": "2020-06-01T11:19:08+00:00",
                     "format": "Y-m-d\\TH:i:sP"
                 }
             ],
@@ -1340,11 +1340,11 @@
                     "target_id": 16,
                     "alt": "Laguna Beach California",
                     "title": null,
-                    "width": 1200,
-                    "height": 889,
+                    "width": 940,
+                    "height": 540,
                     "target_type": "file",
-                    "target_uuid": "12a9defe-3e96-43e5-bd6f-3f1f6913264d",
-                    "url": "http:\/\/oc-multi.docksal\/sites\/default\/files\/2020-04\/card-image-board.png"
+                    "target_uuid": "8df9eb01-a8ca-45e9-b080-706c194233af",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2020-04\/card-image-board.png"
                 }
             ],
             "created": [
@@ -1381,11 +1381,11 @@
                     "target_id": 16,
                     "alt": "Laguna Beach California",
                     "title": "",
-                    "width": 1200,
-                    "height": 889,
+                    "width": 940,
+                    "height": 540,
                     "target_type": "file",
-                    "target_uuid": "12a9defe-3e96-43e5-bd6f-3f1f6913264d",
-                    "url": "http:\/\/oc-multi.docksal\/sites\/default\/files\/2020-04\/card-image-board.png"
+                    "target_uuid": "8df9eb01-a8ca-45e9-b080-706c194233af",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2020-04\/card-image-board.png"
                 }
             ]
         },
@@ -1397,7 +1397,7 @@
             ],
             "uuid": [
                 {
-                    "value": "5461d254-d7b8-43ac-a1ea-ef5de1bd5285"
+                    "value": "a39af686-2edc-4076-a8c9-6b0834aee46e"
                 }
             ],
             "vid": [
@@ -1419,7 +1419,7 @@
             ],
             "revision_created": [
                 {
-                    "value": "2020-05-13T14:29:04+00:00",
+                    "value": "2020-06-01T11:19:08+00:00",
                     "format": "Y-m-d\\TH:i:sP"
                 }
             ],
@@ -1448,8 +1448,8 @@
                     "width": 300,
                     "height": 168,
                     "target_type": "file",
-                    "target_uuid": "82360b7b-0eba-4adc-a86d-2e1d6bb580a2",
-                    "url": "http:\/\/oc-multi.docksal\/sites\/default\/files\/2020-05\/ocanimalcare.jpeg"
+                    "target_uuid": "4197a2fb-cbce-43ba-b4ef-58477a4f3fd6",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2020-05\/ocanimalcare.jpeg"
                 }
             ],
             "created": [
@@ -1489,8 +1489,8 @@
                     "width": 300,
                     "height": 168,
                     "target_type": "file",
-                    "target_uuid": "82360b7b-0eba-4adc-a86d-2e1d6bb580a2",
-                    "url": "http:\/\/oc-multi.docksal\/sites\/default\/files\/2020-05\/ocanimalcare.jpeg"
+                    "target_uuid": "4197a2fb-cbce-43ba-b4ef-58477a4f3fd6",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2020-05\/ocanimalcare.jpeg"
                 }
             ]
         }

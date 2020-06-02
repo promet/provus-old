@@ -5,11 +5,8 @@ dependencies:
   config:
     - field.field.node.alert.body
     - field.field.node.alert.field_alert_visibility
-    - field.field.node.alert.field_publish_date
-    - field.field.node.alert.field_sunset_date
     - node.type.alert
   module:
-    - datetime
     - path
     - text
 id: node.alert.default
@@ -40,18 +37,6 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textarea
-    region: content
-  field_publish_date:
-    weight: 122
-    settings: {  }
-    third_party_settings: {  }
-    type: datetime_default
-    region: content
-  field_sunset_date:
-    weight: 123
-    settings: {  }
-    third_party_settings: {  }
-    type: datetime_default
     region: content
   langcode:
     type: language_select

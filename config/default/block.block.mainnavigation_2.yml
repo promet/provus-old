@@ -27,4 +27,5 @@ settings:
   parent: 'main:'
   suggestion: main
   label_type: block
+  label_link: false
 visibility: {  }
