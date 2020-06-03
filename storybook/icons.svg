@@ -98,6 +98,26 @@
             </g>
         </g>
     </g>
+</symbol><symbol viewBox="0 0 52 52" id="arrow-left-carousel">
+    <title>Arrow Left</title>
+    <defs>
+        <path d="M42,281 C54.1502645,281 64,290.849736 64,303 C64,315.150264 54.1502645,325 42,325 C29.8497355,325 20,315.150264 20,303 C20,290.849736 29.8497355,281 42,281 Z M42,284 C31.5065898,284 23,292.50659 23,303 C23,313.49341 31.5065898,322 42,322 C52.4934102,322 61,313.49341 61,303 C61,292.50659 52.4934102,284 42,284 Z M46.5,293 L48.978,295.478 L40.914,303.5 L48.978,311.564 L46.5,314 L36,303.5 L46.5,293 Z" id="arrow-left-carousel_path-1" />
+        <filter x="-13.6%" y="-13.6%" width="127.3%" height="127.3%" filterUnits="objectBoundingBox" id="arrow-left-carousel_filter-2">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="arrow-left-carousel_Blocks" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.5">
+        <g id="arrow-left-carousel_Home---Side-Nav-RD3" transform="translate(-458.000000, -8888.000000)" fill-rule="nonzero">
+            <g id="arrow-left-carousel_Image-Gallery" transform="translate(442.000000, 8611.000000)">
+                <g id="arrow-left-carousel_Arrow-Left">
+                    <use fill="black" fill-opacity="1" filter="url(#arrow-left-carousel_filter-2)" xlink:href="#arrow-left-carousel_path-1" />
+                    <use fill="#FFFFFF" xlink:href="#arrow-left-carousel_path-1" />
+                </g>
+            </g>
+        </g>
+    </g>
 </symbol><symbol viewBox="0 0 41 43" id="arrow-left-hover">
     <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
     <title>Chevron Left - Hover</title>
@@ -122,6 +142,26 @@
                 <g id="arrow-right_Chevron-Right" transform="translate(1399.000000, 279.000000)">
                     <rect id="arrow-right_Rectangle-Copy" fill="#FFFFFF" x="0" y="0" width="41" height="43" />
                     <polygon id="arrow-right_" fill="#9B9B9B" fill-rule="nonzero" points="19.32 28 24.32 23 19.32 18 18.14 19.18 21.98 23 18.14 26.82" />
+                </g>
+            </g>
+        </g>
+    </g>
+</symbol><symbol viewBox="0 0 52 52" id="arrow-right-carousel">
+    <title>Arrow Right</title>
+    <defs>
+        <path d="M807,281 C819.150264,281 829,290.849736 829,303 C829,315.150264 819.150264,325 807,325 C794.849736,325 785,315.150264 785,303 C785,290.849736 794.849736,281 807,281 Z M807,284 C796.50659,284 788,292.50659 788,303 C788,313.49341 796.50659,322 807,322 C817.49341,322 826,313.49341 826,303 C826,292.50659 817.49341,284 807,284 Z M804.472,292.38 L814.972,302.88 L804.472,313.38 L801.994,310.944 L810.058,302.88 L801.994,294.858 L804.472,292.38 Z" id="arrow-right-carousel_path-1" />
+        <filter x="-13.6%" y="-13.6%" width="127.3%" height="127.3%" filterUnits="objectBoundingBox" id="arrow-right-carousel_filter-2">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="arrow-right-carousel_Blocks" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.5">
+        <g id="arrow-right-carousel_Home---Side-Nav-RD3" transform="translate(-1223.000000, -8888.000000)" fill-rule="nonzero">
+            <g id="arrow-right-carousel_Image-Gallery" transform="translate(442.000000, 8611.000000)">
+                <g id="arrow-right-carousel_Arrow-Right">
+                    <use fill="black" fill-opacity="1" filter="url(#arrow-right-carousel_filter-2)" xlink:href="#arrow-right-carousel_path-1" />
+                    <use fill="#FFFFFF" xlink:href="#arrow-right-carousel_path-1" />
                 </g>
             </g>
         </g>
