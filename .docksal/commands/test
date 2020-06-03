@@ -14,6 +14,6 @@ fi
 
 fin php-cs
 #fin phpunit
-fin test-content default
+fin test-content
 fin behat
 fin pa11y 

@@ -1,15 +1,13 @@
 #!/bin/bash
 
 DEV_BRANCH="develop"
-ACQUIA_BUILD_BRANCH="acquia-develop"
+BUILD_BRANCH="build"
 CURRENT_BRANCH=`git name-rev --name-only HEAD`
 CURRENT_TAG=`git name-rev --tags --name-only $(git rev-parse HEAD)`
 
 prep ()
 {
-  ssh-keyscan -t rsa svn-23450.prod.hosting.acquia.com >> ~/.ssh/known_hosts 
-  git remote add acquia orangecounty@svn-23450.prod.hosting.acquia.com:orangecounty.git
-  git remote add oc https://${GH_TOKEN}@github.com/promet/oc-multi.git 
+  git remote add oc https://${GH_TOKEN}@github.com/promet/provus.git 
 }
 
 quiet_git() {
@@ -28,37 +26,32 @@ quiet_git() {
 add()
 {
   quiet_git add --force -A docroot vendor hooks scripts .docksal load.environment.php drush
-  quiet_git commit -m "Updates acquia develop"
+  quiet_git commit -m "Updates build"
 }
 
 build ()
 {
   ${PROJECT_ROOT}/scripts/bin/build-artifacts.sh
-  drush sites-prep-files-dirs
 }
 
 branch ()
 {
   prep
-  git checkout --orphan $ACQUIA_BUILD_BRANCH
   build
   add
-  echo "Pushing branch to acquia..."
-  git push --force acquia $ACQUIA_BUILD_BRANCH
-  echo "Pushing branch to github..."
-  git push --force oc $ACQUIA_BUILD_BRANCH
+  echo "Pushing branch to build..."
+  git push --force oc $BUILD_BRANCH
 }
 
 tag ()
 {
   prep
-  # git checkout --orphan $ACQUIA_BUILD_BRANCH
   git tag -d $CURRENT_TAG
   build
   add
-  echo "Pushing tag to acquia..."
+  echo "Updating tag ..."
   git tag $CURRENT_TAG
-  git push acquia $CURRENT_TAG
+  git push $CURRENT_TAG
 }
 
 if [ $CURRENT_TAG != "undefined" ]
