@@ -7,7 +7,7 @@ CURRENT_TAG=`git name-rev --tags --name-only $(git rev-parse HEAD)`
 
 prep ()
 {
-  git remote add oc https://${GH_TOKEN}@github.com/promet/provus.git 
+  git remote add github https://${GH_TOKEN}@github.com/promet/provus.git 
 }
 
 quiet_git() {
@@ -25,7 +25,7 @@ quiet_git() {
 
 add()
 {
-  quiet_git add --force -A docroot vendor hooks scripts .docksal load.environment.php drush
+  quiet_git add --force -A docroot vendor scripts .docksal load.environment.php drush
   quiet_git commit -m "Updates build"
 }
 
@@ -40,7 +40,7 @@ branch ()
   build
   add
   echo "Pushing branch to build..."
-  git push --force oc $BUILD_BRANCH
+  git push --force github $BUILD_BRANCH
 }
 
 tag ()
