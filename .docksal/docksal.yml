@@ -13,3 +13,7 @@ services:
     extends:
       file: ${HOME}/.docksal/stacks/services.yml
       service: solr
+
+  cli:
+    environment:
+      - GH_TOKEN
