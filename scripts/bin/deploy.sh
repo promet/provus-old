@@ -37,6 +37,7 @@ build ()
 branch ()
 {
   prep
+  git checkout --orphan $BUILD_BRANCH
   build
   add
   echo "Pushing branch to build..."
