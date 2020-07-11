@@ -1,1 +1,1 @@
-"use strict";(function(a){Drupal.behaviors.carousel={attach:function attach(){a("#imageGallery").once("#imageGallery").each(function(){a(this).lightSlider({gallery:!0,item:1,loop:!0,thumbItem:9,slideMargin:0,enableDrag:!1,currentPagerPosition:"left",keyPress:!0})})}}})(jQuery);
+"use strict";(function(a){Drupal.behaviors.carousel={attach:function attach(){a(".imageGallery").once().lightSlider({gallery:!0,item:1,loop:!0,thumbItem:9,slideMargin:0,enableDrag:!1,currentPagerPosition:"left",keyPress:!0})}}})(jQuery);
