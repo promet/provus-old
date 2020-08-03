@@ -7,6 +7,7 @@ module:
   big_pipe: 0
   block: 0
   block_content: 0
+  block_content_revision_ui: 0
   breakpoint: 0
   calendar_recurring_event: 0
   ckeditor: 0
@@ -16,6 +17,7 @@ module:
   config_filter: 0
   config_ignore: 0
   contact: 0
+  content_moderation: 0
   contextual: 0
   county_blocks: 0
   countyoc_layouts: 0
@@ -25,6 +27,7 @@ module:
   dynamic_page_cache: 0
   editor: 0
   emulsify_twig: 0
+  entity_reference_revisions: 0
   entity_staging: 0
   environment_indicator: 0
   facets: 0
@@ -82,6 +85,7 @@ module:
   views_ui: 0
   webform: 0
   webform_ui: 0
+  workflows: 0
   extlink: 1
   menu_link_content: 1
   views: 10

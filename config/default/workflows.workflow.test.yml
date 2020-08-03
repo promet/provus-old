@@ -1,0 +1,85 @@
+uuid: 9ee776e1-fe73-4d03-a546-199c9bef9303
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.accordion
+    - block_content.type.accordion_item
+    - block_content.type.banner
+    - block_content.type.button
+    - block_content.type.columns
+    - block_content.type.faq_item
+    - block_content.type.inline_item
+    - block_content.type.link_group
+    - block_content.type.media_item
+    - block_content.type.number_item
+    - block_content.type.number_list
+    - block_content.type.social_feed
+    - block_content.type.tabs
+    - block_content.type.text
+    - node.type.alert
+    - node.type.county_article
+    - node.type.county_page
+    - node.type.event
+    - node.type.faq
+    - node.type.landing_page
+    - node.type.location
+    - node.type.person
+  module:
+    - content_moderation
+id: test
+label: Test
+type: content_moderation
+type_settings:
+  states:
+    draft:
+      label: Draft
+      published: false
+      default_revision: false
+      weight: 0
+    published:
+      label: Published
+      published: true
+      default_revision: true
+      weight: 1
+  transitions:
+    create_new_draft:
+      label: 'Create New Draft'
+      to: draft
+      weight: 0
+      from:
+        - draft
+        - published
+    publish:
+      label: Publish
+      to: published
+      weight: 1
+      from:
+        - draft
+        - published
+  entity_types:
+    block_content:
+      - accordion
+      - accordion_item
+      - banner
+      - button
+      - columns
+      - faq_item
+      - inline_item
+      - link_group
+      - media_item
+      - number_item
+      - number_list
+      - social_feed
+      - tabs
+      - text
+    node:
+      - alert
+      - county_article
+      - county_page
+      - event
+      - faq
+      - landing_page
+      - location
+      - person
+  default_moderation_state: draft
