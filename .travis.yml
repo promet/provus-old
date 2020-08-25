@@ -14,4 +14,5 @@ script:
   - fin test
 
 after_success:
+  - fin update
   - fin deploy 
