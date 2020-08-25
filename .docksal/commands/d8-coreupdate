@@ -2,4 +2,6 @@
 
 if [[ "$branch" = "update" ]]; then
   echo "DUMMY: d8 core update placeholder"
+else
+  echo "DUMMY: Not in 'update branch'. d8-coreupdate NOT allowed."
 fi
