@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
 
-echo "DUMMY: d8 core update placeholder"
+if [[ "$branch" = "update" ]]; then
+  echo "DUMMY: d8 core update placeholder"
+fi
