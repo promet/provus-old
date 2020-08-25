@@ -4,6 +4,7 @@ language: minimal
 
 install:
   - curl -fsSL https://get.docksal.io | bash
+  - fin update
   - fin version
   - fin sysinfo
 
@@ -14,5 +15,4 @@ script:
   - fin test
 
 after_success:
-  - fin update
   - fin deploy 
