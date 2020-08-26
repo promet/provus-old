@@ -14,8 +14,6 @@ before_script:
 script:
   - fin test
   - fin d8-coreupdate
-    ## Run only 'd8-coreupdate' on branch 'update'
-    #~if: branch = update
 
 after_success:
   - fin deploy 
