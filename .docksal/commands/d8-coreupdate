@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-if [[ "$branch" = "update" ]]; then
-  echo "DUMMY: d8 core update placeholder"
+if [[ "$TRAVIS_EVENT_TYPE" = "cron" ]]; then
+  echo "PLACEHOLDER: Triggered via cron. Can run 'fin d8-coreupdate'."
 else
-  echo "DUMMY: Not in 'update branch'. d8-coreupdate NOT allowed."
+  echo "PLACEHOLDER: Not run from travis cron. 'fin d8-coreupdate' NOT allowed."
 fi
