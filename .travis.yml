@@ -13,7 +13,7 @@ before_script:
 
 script:
   - fin test
-  - fin d8-coreupdate
+  - fin drupal-coreupdate
 
 after_success:
   - fin deploy 
