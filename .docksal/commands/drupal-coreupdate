@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+## Updates Drupal Core when in TravisCI cron or from local.
+## Usage: fin drupal-coreupdate [--local]
+## Parameters:
+## --local Run from local environment.
+ 
+if [[ "$TRAVIS_EVENT_TYPE" = "cron" ]] || [[ "$1" = "--local" ]]; then
+  if [[ $(fin composer outdated "drupal/*"|grep -ic "^drupal/core") -eq 1 ]]; then
+     fin composer update drupal/core --with-dependencies
+     ## TODO: Create PR here against 'develop' core update done.
+  else
+     echo "No drupal core update detected."
+  fi
+else
+  echo "Incorrect tool usage. See 'fin help drupal-coreupdate'."
+fi
