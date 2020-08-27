@@ -1,6 +1,10 @@
 dist: bionic
 
 language: minimal
+notifications:
+  slack:
+    rooms:
+    - prometsourcegroup:${SLACK_TOKEN}#general
 
 install:
   - curl -fsSL https://get.docksal.io | bash
@@ -16,4 +20,4 @@ script:
   - fin drupal-coreupdate
 
 after_success:
-  - fin deploy 
+  - fin deploy
