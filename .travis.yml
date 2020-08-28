@@ -3,10 +3,10 @@ dist: bionic
 language: minimal
 
 install:
-  - curl -fsSL https://get.docksal.io | bash
-## Update 'fin update' fails from time to time
-## ==> curl: (51) SSL: no alternative certificate subject name matches target host name 'get.docksal.io'
-#  - fin update
+  ## Update 'get.docksal.io' curl fails from time to time. Added '-k' to ignore cert error.
+  ## ==> curl: (51) SSL: no alternative certificate subject name matches target host name 'get.docksal.io'
+  - curl -kfsSL https://get.docksal.io | bash
+  - fin update
   - fin version
   - fin sysinfo
 
