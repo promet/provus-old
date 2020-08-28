@@ -1,10 +1,6 @@
 dist: bionic
 
 language: minimal
-notifications:
-  slack:
-    rooms:
-    - prometsourcegroup:${SLACK_TOKEN}#provus
 
 install:
   - curl -fsSL https://get.docksal.io | bash
@@ -17,7 +13,20 @@ before_script:
 
 script:
   - fin test
-  - fin drupal-coreupdate
+  ## NOTE: temporarily add '--local' while debugging. 
+  ## Travis cron only run once daily so it's quite hard to debug.
+  - fin drupal-coreupdate --local
 
 after_success:
   - fin deploy
+
+notifications:
+  email:
+    recipients:
+      - sysadmin@prometsource.com
+      #- aaron@prometsource.com
+    on_success: always # default: change
+    on_failure: always # default: always
+  slack:
+    rooms:
+    - prometsourcegroup:${SLACK_TOKEN}#provus
