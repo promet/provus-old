@@ -4,7 +4,7 @@ language: minimal
 notifications:
   slack:
     rooms:
-    - prometsourcegroup:${SLACK_TOKEN}#general
+    - prometsourcegroup:${SLACK_TOKEN}#provus
 
 install:
   - curl -fsSL https://get.docksal.io | bash
