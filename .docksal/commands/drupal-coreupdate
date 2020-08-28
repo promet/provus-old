@@ -16,5 +16,5 @@ if [[ "$TRAVIS_EVENT_TYPE" = "cron" ]] || [[ "$1" = "--local" ]]; then
      echo "No drupal core update detected."
   fi
 else
-  echo "Core update skipped. See 'fin help drupal-coreupdate'."
+  echo "Drupal core update skipped. See 'fin help drupal-coreupdate'."
 fi
