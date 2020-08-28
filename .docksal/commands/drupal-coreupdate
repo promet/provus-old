@@ -8,6 +8,9 @@
 if [[ "$TRAVIS_EVENT_TYPE" = "cron" ]] || [[ "$1" = "--local" ]]; then
   if [[ $(fin composer outdated "drupal/*"|grep -ic "^drupal/core") -eq 1 ]]; then
      fin composer update drupal/core --with-dependencies
+     fin drush updb -y
+     fin drush cr -y
+     fin drush st
      ## TODO: Create PR here against 'develop' core update done.
   else
      echo "No drupal core update detected."
