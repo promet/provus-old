@@ -31,6 +31,6 @@ notifications:
     on_failure: always # default: always
   slack:
     rooms:
-      - prometsourcegroup:${SLACK_TOKEN}#provus
+      - prometsourcegroup:gkT5UWM1XrtT8C10FKx1jNMB#provus
     on_success: always # default: change
     on_failure: always # default: always
