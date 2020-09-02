@@ -8,9 +8,9 @@
 
 coreupdate_try() {
   if [[ $(fin composer outdated "drupal/*"|grep -ic "^drupal/core") -eq 1 ]]; then
-     fin composer update drupal/core --with-dependencies
-     fin drush updb -y
-     fin drush cr -y
+     fin composer update drupal/core --with-dependencies && \
+     fin drush updb -y                                   && \
+     fin drush cr -y                                     && \
      fin drush st
   else
      echo "No drupal core update detected."
