@@ -117,7 +117,7 @@
         },
         "patches": {
             "drupal/core": {
-                "Expose Layout Builder data to REST and JSON:API [#2942975]": "https://www.drupal.org/files/issues/2020-07-07/2942975-116.patch"
+                "Expose Layout Builder data to REST and JSON:API [#2942975]": "https://www.drupal.org/files/issues/2020-02-17/2942975-73.patch"
             },
             "drupal/config_ignore": {
                 "Support config ignore export [#2942975]": "https://www.drupal.org/files/issues/2020-01-11/support-for-export-2857247-44.patch"
