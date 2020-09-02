@@ -33,6 +33,6 @@ notifications:
   ##       However, it's a minor security risk. It can always be done later.
   slack:
     rooms:
-      - prometsourcegroup:gkT5UWM1XrtT8C10FKx1jNMB#provus
+      - prometsourcegroup:gkT5UWM1XrtT8C10FKx1jNMB#provus-notifications
     on_success: always # default: change
     on_failure: always # default: always
