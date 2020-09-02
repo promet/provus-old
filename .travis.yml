@@ -14,9 +14,9 @@ before_script:
   - fin init
 
 script:
-  - fin test
   ## NOTE: Travis cron only run once daily. To debug, temporarily add '--local' to 'fin drupal-coreupdate'.
   - fin drupal-coreupdate
+  - fin test
 
 after_success:
   - fin deploy
