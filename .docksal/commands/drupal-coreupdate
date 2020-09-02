@@ -1,20 +1,39 @@
 #!/usr/bin/env bash
 
 ## Updates Drupal Core when in TravisCI cron or from local.
-## Usage: fin drupal-coreupdate [--local]
+## Usage: fin drupal-coreupdate [try|sendpr] [--local]
 ## Parameters:
-## --local Run from local environment.
- 
-if [[ "$TRAVIS_EVENT_TYPE" = "cron" ]] || [[ "$1" = "--local" ]]; then
+## try|sendpr  Either try doing core update(default) or send PR
+## --local     Run from local environment.
+
+coreupdate_try() {
   if [[ $(fin composer outdated "drupal/*"|grep -ic "^drupal/core") -eq 1 ]]; then
      fin composer update drupal/core --with-dependencies
      fin drush updb -y
      fin drush cr -y
      fin drush st
-     ## TODO: Create PR here against 'develop' core update done.
   else
      echo "No drupal core update detected."
   fi
+}
+
+coreupdate_pr() {
+  ## TODO: Create PR here against 'develop' core update done.
+  echo "dummy: coreupdate send PR here"
+}
+
+if [[ "$TRAVIS_EVENT_TYPE" = "cron" ]] || [[ "$2" = "--local" ]]; then
+  case $1 in
+    try)
+      coreupdate_try
+    ;;
+    sendpr)
+      coreupdate_pr
+    ;;
+    *)
+      coreupdate_try
+    ;;
+  esac
 else
   echo "Drupal core update skipped. See 'fin help drupal-coreupdate'."
 fi
