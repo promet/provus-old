@@ -12,7 +12,6 @@ coreupdate_try() {
      fin drush updb -y                                   && \
      fin drush cr -y                                     && \
      fin drush st
-     exit 1   ## DEBUG: intentional failure added.
   else
      echo "No drupal core update detected."
   fi
