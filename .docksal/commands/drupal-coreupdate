@@ -20,6 +20,11 @@ coreupdate_try() {
 coreupdate_pr() {
   ## TODO: Create PR here against 'develop' core update done.
   echo "dummy: coreupdate send PR here"
+  echo '-------- INSPECTING WORKING COPY -------'
+  pwd
+  git status
+  git diff
+  echo '-------- // INSPECTING WORKING COPY -------'
 }
 
 if [[ "$TRAVIS_EVENT_TYPE" = "cron" ]] || [[ "$2" = "--local" ]]; then
