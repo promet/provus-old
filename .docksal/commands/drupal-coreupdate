@@ -18,9 +18,9 @@ coreupdate_try() {
 }
 
 coreupdate_pr() {
-  apt-get install pip3
-  pip3 install git-pull-request
-
+  #~apt-get install pip3
+  #~pip3 install git-pull-request
+  python3 -m pip3 install git-pull-request
   ## TODO: Create PR here against 'develop' core update done.
   echo "dummy: coreupdate send PR here"
   echo '-------- INSPECTING WORKING COPY -------'
