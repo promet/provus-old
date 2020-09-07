@@ -17,10 +17,25 @@ coreupdate_try() {
   fi
 }
 
+prep_drupalcoreupdate_branch() {
+  dcore_ver=$(drush st|grep "Drupal version"|cut -d':' -f2|sed 's/\ //g')
+  DRUPALCORE_BRANCH=$drupalcore_${dcore_ver}
+  cd ../
+  git clone https://${GH_TOKEN}@github.com/promet/provus.git $DRUPALCORE_BRANCH
+  cd $DRUPALCORE_BRANCH
+  git fetch
+  git checkout $DRUPALCORE_BRANCH
+  cp ../provus/composer.lock .
+  git add composer.lock
+  git commit -m"PTECH-1569: Drupal update to ${dcore_ver}"
+  git push -u origin $DRUPALCORE_BRANCH
+}
+
 coreupdate_pr() {
-  #~apt-get install pip3
-  #~pip3 install git-pull-request
-  python3 -m pip3 install git-pull-request
+  ## Prep PR source branch
+  ## TODO: Add checker to skip this if already pushed prior
+  prep_drupalcoreupdate_branch
+
   ## TODO: Create PR here against 'develop' core update done.
   echo "dummy: coreupdate send PR here"
   echo '-------- INSPECTING WORKING COPY -------'
