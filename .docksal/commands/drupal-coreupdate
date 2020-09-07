@@ -18,6 +18,8 @@ coreupdate_try() {
 }
 
 prep_drupalcoreupdate_branch() {
+echo '------ START: prep_drupalcoreupdate_branch() -----------'
+set -xv
   dcore_ver=$(fin drush st|grep "Drupal version"|cut -d':' -f2|sed 's/\ //g')
   DRUPALCORE_BRANCH=drupalcore_${dcore_ver}
   cd ../
@@ -29,6 +31,8 @@ prep_drupalcoreupdate_branch() {
   git add composer.lock
   git commit -m"PTECH-1569: Drupal update to ${dcore_ver}"
   git push -u origin $DRUPALCORE_BRANCH
+set +xv
+echo '------ // END: prep_drupalcoreupdate_branch() -----------'
 }
 
 coreupdate_pr() {
