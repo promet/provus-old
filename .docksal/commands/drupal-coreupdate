@@ -18,8 +18,8 @@ coreupdate_try() {
 }
 
 prep_drupalcoreupdate_branch() {
-  dcore_ver=$(drush st|grep "Drupal version"|cut -d':' -f2|sed 's/\ //g')
-  DRUPALCORE_BRANCH=$drupalcore_${dcore_ver}
+  dcore_ver=$(fin drush st|grep "Drupal version"|cut -d':' -f2|sed 's/\ //g')
+  DRUPALCORE_BRANCH=drupalcore_${dcore_ver}
   cd ../
   git clone https://${GH_TOKEN}@github.com/promet/provus.git $DRUPALCORE_BRANCH
   cd $DRUPALCORE_BRANCH
