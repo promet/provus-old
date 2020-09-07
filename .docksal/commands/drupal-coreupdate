@@ -20,13 +20,13 @@ coreupdate_try() {
 prep_drupalcoreupdate_branch() {
 echo '------ START: prep_drupalcoreupdate_branch() -----------'
 set -xv
-  dcore_ver=$(fin drush st|grep "Drupal version"|cut -d':' -f2|sed 's/\ //g')
+  dcore_ver=$(fin drush st|grep "Drupal version"|cut -d':' -f2|sed 's/\ //g'|sed 's/\r//g')
   DRUPALCORE_BRANCH=drupalcore_${dcore_ver}
   cd ../
   git clone https://${GH_TOKEN}@github.com/promet/provus.git $DRUPALCORE_BRANCH
   cd $DRUPALCORE_BRANCH
   git fetch
-  git checkout $DRUPALCORE_BRANCH
+  git checkout -b $DRUPALCORE_BRANCH
   cp ../provus/composer.lock .
   git add composer.lock
   git commit -m"PTECH-1569: Drupal update to ${dcore_ver}"
