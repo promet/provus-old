@@ -31,9 +31,6 @@ prep_drupalcoreupdate_branch() {
 }
 
 coreupdate_pr() {
-  pwd
-  git branch
-  git remote -v
   dcore_ver=$(fin drush st|grep "Drupal version"|cut -d':' -f2|sed 's/\ //g'|sed 's/\r//g')
   DRUPALCORE_BRANCH=drupalcore_${dcore_ver}
 
@@ -47,14 +44,11 @@ coreupdate_pr() {
      echo "[INFO] ${DRUPALCORE_BRANCH} already exist in remote repo."
   fi
 
-set -xv
   echo "[INFO] Creating PR now."
   curl -X POST -u "icasimpan:${GH_TOKEN}"                          \
        -H "Accept: application/vnd.github.v3+json"                 \
        https://api.github.com/repos/promet/provus/pulls            \
        -d '{"title":"Drupal core 8.9.5","head":"drupalcore_8.9.5","base":"develop"}'
-set +xv
-       -d '{"title":"Drupal core $dcore_ver","head":"${DRUPALCORE_BRANCH}","base":"develop"}'
 }
 
 if [[ "$TRAVIS_EVENT_TYPE" = "cron" ]] || [[ "$2" = "--local" ]]; then
