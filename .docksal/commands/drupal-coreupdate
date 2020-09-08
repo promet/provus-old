@@ -31,11 +31,13 @@ prep_drupalcoreupdate_branch() {
 }
 
 coreupdate_pr() {
+set -xv
   dcore_ver=$(fin drush st|grep "Drupal version"|cut -d':' -f2|sed 's/\ //g'|sed 's/\r//g')
   DRUPALCORE_BRANCH=drupalcore_${dcore_ver}
 
   git fetch
   PRBRANCH_EXIST=$(git branch -a | grep -c ${DRUPALCORE_BRANCH}$)
+set +xv
 
   ## Prep PR source branch
   if [[ $PRBRANCH_EXIST -eq 0 ]]; then
