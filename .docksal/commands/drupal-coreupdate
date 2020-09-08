@@ -32,6 +32,9 @@ prep_drupalcoreupdate_branch() {
 
 coreupdate_pr() {
 set -xv
+  pwd
+  git branch
+  git remote -v
   dcore_ver=$(fin drush st|grep "Drupal version"|cut -d':' -f2|sed 's/\ //g'|sed 's/\r//g')
   DRUPALCORE_BRANCH=drupalcore_${dcore_ver}
 
