@@ -40,7 +40,7 @@ set -xv
 
   git fetch
   PRBRANCH_EXIST=$(git ls-remote https://${GH_TOKEN}@github.com/promet/provus.git | grep -c ${DRUPALCORE_BRANCH}$)
-  #~PRBRANCH_EXIST=$(git branch -a | grep -c ${DRUPALCORE_BRANCH}$)
+  ##~PRBRANCH_EXIST=$(git branch -a | grep -c ${DRUPALCORE_BRANCH}$)
 set +xv
 
   ## Prep PR source branch
