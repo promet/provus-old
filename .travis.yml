@@ -15,7 +15,8 @@ before_script:
 
 script:
   ## NOTE: Travis cron only run once daily. To debug, temporarily add '--local' to 'fin drupal-coreupdate'.
-  - fin drupal-coreupdate try --local && fin test && fin drupal-coreupdate sendpr --local
+  ##       * Run 'try', 'test' and 'sendpr' this way so it stops once preceeding command fails for quick feedback.
+  - fin drupal-coreupdate try && fin test && fin drupal-coreupdate sendpr
 
 after_success:
   - fin deploy
