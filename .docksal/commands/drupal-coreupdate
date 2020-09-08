@@ -31,7 +31,6 @@ prep_drupalcoreupdate_branch() {
 }
 
 coreupdate_pr() {
-set -xv
   pwd
   git branch
   git remote -v
@@ -40,7 +39,6 @@ set -xv
 
   git fetch
   PRBRANCH_EXIST=$(git ls-remote https://${GH_TOKEN}@github.com/promet/provus.git | grep -c ${DRUPALCORE_BRANCH}$)
-  ##~PRBRANCH_EXIST=$(git branch -a | grep -c ${DRUPALCORE_BRANCH}$)
 
   ## Prep PR source branch
   if [[ $PRBRANCH_EXIST -eq 0 ]]; then
@@ -49,10 +47,11 @@ set -xv
      echo "[INFO] ${DRUPALCORE_BRANCH} already exist in remote repo."
   fi
 
+set -xv
   echo "[INFO] Creating PR now."
   curl -X POST -u "icasimpan:${GH_TOKEN}"                          \
        -H "Accept: application/vnd.github.v3+json"                 \
-       https://api.github.com/repos/promet/provus_git/pulls  \
+       https://api.github.com/repos/promet/provus_git/pulls        \
        -d '{"title":"Drupal core $dcore_ver","head":"${DRUPALCORE_BRANCH}","base":"develop"}'
 set +xv
 }
