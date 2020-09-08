@@ -52,7 +52,8 @@ set -xv
   curl -X POST -u "icasimpan:${GH_TOKEN}"                          \
        -H "Accept: application/vnd.github.v3+json"                 \
        https://api.github.com/repos/promet/provus_git/pulls        \
-       -d '{"title":"Drupal core $dcore_ver","head":"${DRUPALCORE_BRANCH}","base":"develop"}'
+#       -d '{"title":"Drupal core $dcore_ver","head":"${DRUPALCORE_BRANCH}","base":"develop"}'
+       -d '{"title":"Drupal core 8.9.5","head":"drupalcore_8.9.5","base":"develop"}'
 set +xv
 }
 
