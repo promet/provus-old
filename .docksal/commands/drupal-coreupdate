@@ -11,27 +11,14 @@ GH_REPO=github.com/promet/${REPO_NAME}.git
 
 coreupdate_try() {
   if [[ $(fin composer outdated "drupal/*"|grep -ic "^drupal/core") -eq 1 ]]; then
-     fin composer update drupal/core --with-dependencies && \
-     fin drush updb -y                                   && \
-     fin drush cr -y                                     && \
-     fin drush st
+    fin composer update drupal/core --with-dependencies && \
+    fin drush updb -y                                   && \
+    fin drush cr -y                                     && \
+    fin drush st
   else
-     echo "No drupal core update detected."
+    echo "No drupal core update detected."
   fi
 } ## END: coreupdate_try()
-
-prep_drupalcoreupdate_branch() {
-  cd ../
-  git clone https://${GH_TOKEN}@${GH_REPO} $DRUPALCORE_BRANCH
-  cd $DRUPALCORE_BRANCH
-  git fetch
-  git checkout -b $DRUPALCORE_BRANCH
-  cp ../${REPO_NAME}/composer.lock .
-  git add composer.lock
-  git commit -m"PTECH-1569: Drupal update to ${dcore_ver}"
-  git push -u origin $DRUPALCORE_BRANCH
-  cd ../${REPO_NAME}
-} ## END: prep_drupalcoreupdate_branch()
 
 coreupdate_pr() {
   dcore_ver=$(fin drush st|grep "Drupal version"|cut -d':' -f2|sed 's/\ //g'|sed 's/\r//g')
@@ -40,29 +27,56 @@ coreupdate_pr() {
   git fetch
   PRBRANCH_EXIST=$(git ls-remote https://${GH_TOKEN}@${GH_REPO} | grep -c ${DRUPALCORE_BRANCH}$)
 
-  ## Prep PR source branch
   if [[ $PRBRANCH_EXIST -eq 0 ]]; then
-     prep_drupalcoreupdate_branch
+
+    ## Attempt to create a PR source branch
+    ##
+    cd ../
+    git clone https://${GH_TOKEN}@${GH_REPO} $DRUPALCORE_BRANCH
+    cd $DRUPALCORE_BRANCH
+    git fetch
+    git checkout -b $DRUPALCORE_BRANCH
+    cp ../${REPO_NAME}/composer.lock .
+
+    ## However, make sure something changed. Otherwise,
+    ## ...do not send PR.
+    ## 
+    if [[ $(git status -s|wc -l|sed 's/\ //g') -ne 0 ]]; then
+        git add composer.lock
+        git commit -m"PTECH-1569: Drupal update to ${dcore_ver}"
+        git push -u origin $DRUPALCORE_BRANCH
+        cd ../${REPO_NAME}
+
+        PR_JSON=pr.json
+        ## Assemble the PR JSON file.
+        ##
+	cat > ${PR_JSON} <<- JSON_BLOCK
+	{
+	   "title": "Drupal core: ${dcore_ver}",
+	   "head" : "${DRUPALCORE_BRANCH}",
+	   "base" : "develop"
+	}
+	JSON_BLOCK
+
+        echo "[INFO] Creating PR now."
+        curl -X POST -u "icasimpan:${GH_TOKEN}"                          \
+             -H "Accept: application/vnd.github.v3+json"                 \
+             https://api.github.com/repos/promet/${REPO_NAME}/pulls      \
+             -d @${PR_JSON}
+    else
+      echo "[INFO] No detected changes to commit."
+    fi
+
+  ## Oops, seems like PR already done and waiting for review and merge.
+  ##
   else
      echo "[INFO] ${DRUPALCORE_BRANCH} already exist in remote repo."
+     echo "       PR creation for Drupal core update skipped."
+     echo
+     echo "       To override: delete the branch and rerun 'fin drupalcore-update'."
+     echo
   fi
 
-  PR_JSON=pr.json
-  ## Assemble the PR JSON file.
-  ##
-  cat > ${PR_JSON} << JSON_BLOCK
-   {
-    "title": "Drupal core: ${dcore_ver}",
-    "head" : "${DRUPALCORE_BRANCH}",
-    "base" : "develop"
-   }
-JSON_BLOCK
-
-  echo "[INFO] Creating PR now."
-  curl -X POST -u "icasimpan:${GH_TOKEN}"                          \
-       -H "Accept: application/vnd.github.v3+json"                 \
-       https://api.github.com/repos/promet/${REPO_NAME}/pulls      \
-       -d @${PR_JSON}
 } ## END: coreupdate_pr()
 
 if [[ "$TRAVIS_EVENT_TYPE" = "cron" ]] || [[ "$2" = "--local" ]]; then
