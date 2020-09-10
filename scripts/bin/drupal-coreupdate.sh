@@ -18,9 +18,7 @@ coreupdate_pr() {
   dcore_ver=$(drush st|grep 'Drupal version'|awk '{print $4}')
   DRUPALCORE_BRANCH=drupalcore_${dcore_ver}
 
-  git fetch
   PRBRANCH_EXIST=$(git ls-remote https://${GH_TOKEN}@${GH_REPO} | grep -c ${DRUPALCORE_BRANCH}$)
-
   if [[ $PRBRANCH_EXIST -eq 0 ]]; then
 
     ## Attempt to create a PR source branch
