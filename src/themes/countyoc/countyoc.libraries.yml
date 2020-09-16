@@ -2,6 +2,9 @@ global:
   css:
     theme:
       dist/style.css: {}
+  # Make sure bootstrap doesn't override our CSS.
+  dependencies:
+    - countyoc/bootstrap
 
 site-header:
   js:
@@ -14,6 +17,16 @@ site-footer:
 main-menu:
   js:
     dist/js/02-molecules/menus/main-menu/main-menu.js: {}
+
+sidebar-menu:
+  js:
+    dist/js/02-molecules/menus/sidebar-menu/sidebar-menu.js: {}
+
+share-this:
+  js:
+    dist/js/02-molecules/share/share-this/share-this.js: {}
+  dependencies:
+      - core/jquery
 
 tabs:
   js:
@@ -32,7 +45,7 @@ bootstrap:
     url: https://github.com/twbs/bootstrap/blob/v4-dev/LICENSE
     gpl-compatible: true
   js:
-    libraries/bootstrap/dist/js/bootstrap.min.js: { minified: true }
+    libraries/bootstrap/dist/js/bootstrap.bundle.min.js: { minified: true }
   css:
     theme:
       libraries/bootstrap/dist/css/bootstrap.min.css: { minified: true }
@@ -53,6 +66,12 @@ lightslider:
     - core/drupal
     - core/jquery
     - core/jquery.once
+
+carousel:
+  js:
+    dist/js/02-molecules/carousel/carousel.js: {}
+  dependencies:
+    - countyoc/lightslider
 
 carousel-3-item:
   js:
@@ -76,7 +95,7 @@ banner:
   js:
     dist/js/03-organisms/banner/banner.js: {}
   dependencies:
-    - countyoc/bootstrap
+    - countyoc/lightslider
 
 utility:
   js:
@@ -87,6 +106,9 @@ utility:
 navigation:
   js:
     dist/js/03-organisms/navigation/navigation.js: {}
+  dependencies:
+    - core/drupal
+    - core/drupalSettings
 
 browser-detect:
   js:
@@ -95,3 +117,7 @@ browser-detect:
     - core/drupal
     - core/jquery
     - core/jquery.once
+
+county-alerts:
+  js:
+    dist/js/03-organisms/county-alerts/county-alerts.js: {}

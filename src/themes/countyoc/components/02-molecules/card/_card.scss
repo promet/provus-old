@@ -96,19 +96,11 @@
       background-image: none;
       padding-right: 25px;
 
-      @include medium {
-        background-image: url("/images/icons/go-to-page.png");
-      }
-
       &:hover {
-        text-decoration: none;
         font-weight: 600;
         color: $primary;
         background-image: none;
-
-        @include medium {
-          background-image: url("/images/icons/go-to-page-hover.png");
-        }
+        text-decoration: underline;
       }
     }
 
@@ -150,8 +142,11 @@
 }
 
 /* Bordered Card */
-
 .card-bordered-link {
+  font-weight: normal;
+  display: block;
+  height: 100%;
+
   &:hover {
     text-decoration: none;
     font-weight: normal;
@@ -174,6 +169,7 @@
         -moz-transition: all 0.2s linear;
         -o-transition: all 0.2s linear;
         transition: all 0.2s linear;
+        width: 100%;
       }
 
       img,
@@ -186,6 +182,10 @@
       color: $primary;
       text-decoration: underline;
     }
+  }
+
+  svg.ext {
+    display: none;
   }
 }
 
@@ -345,12 +345,17 @@
         letter-spacing: 0;
         line-height: 1.5rem;
         display: none;
+        margin-bottom: 10px;
       }
 
       .button--bg {
         padding: 10px 25px;
         height: 40px;
         display: none;
+      }
+
+      a {
+        text-decoration: none;
       }
     }
 
@@ -359,7 +364,7 @@
       height: 6px;
       width: 121px;
       border-radius: 100px;
-      background-color: $ada-orange;
+      background-color: #da3807;
       margin: 0 auto;
       margin-top: 35px;
     }
@@ -416,11 +421,16 @@
     }
   }
 }
+.card-bg-link {
+  font-weight: normal;
+
+  svg.ext {
+    display: none;
+  }
+}
 
 /* Square Image */
 .square-img {
-  width: 100%;
-  max-width: 263px;
 
   &__gral {
     position: relative;
@@ -431,6 +441,9 @@
 
     .square-img__img {
       position: relative;
+      width: 100%;
+      max-width: 263px;
+      margin: 0 auto;
 
       img,
       picture {
@@ -470,6 +483,73 @@
         }
       }
     }
+
+    svg.ext {
+      display: none;
+    }
+  }
+}
+
+/* Circle Image */
+.circle-img {
+
+  &__gral {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    float: left;
+    text-decoration: none;
+
+    .circle-img__img {
+      position: relative;
+      width: 100%;
+      max-width: 263px;
+      margin: 0 auto;
+      border-radius: 50%;
+      overflow: hidden;
+
+      img,
+      picture {
+        margin-bottom: 0;
+      }
+    }
+
+    .circle-img__content {
+      text-align: center;
+
+      .circle-img__heading {
+        color: #041133 !important;
+        text-decoration: none !important;
+
+        @include heading-large($font-size: 1.25rem, $line-height: 1.75rem, $margin: 16px 0 0 0);
+      }
+    }
+
+    &:hover {
+      .circle-img__img {
+        .mask {
+          position: absolute;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          opacity: 0.8;
+          background-color: $primary;
+        }
+      }
+
+      .circle-img__content {
+        .circle-img__heading,
+        .circle-img__heading:hover {
+          color: $primary !important;
+          text-decoration: underline !important;
+          font-weight: 700 !important;
+        }
+      }
+    }
+
+    svg.ext {
+      display: none;
+    }
   }
 }
 
@@ -480,8 +560,6 @@
   margin-bottom: 30px;
 
   @include medium {
-    margin-bottom: 60px;
-
     &:nth-child(4),
     &:nth-child(5),
     &:nth-child(6) {
@@ -531,8 +609,6 @@
   margin-bottom: 30px;
 
   @include medium {
-    margin-bottom: 60px;
-
     &:nth-child(4),
     &:nth-child(5),
     &:nth-child(6) {
@@ -737,6 +813,7 @@
 .event-card__link {
   text-decoration: none;
   display: block;
+  font-weight: normal;
 
   @include medium {
     height: 100%;
@@ -744,6 +821,10 @@
 
   &:hover {
     text-decoration: none;
+  }
+
+  svg.ext {
+    display: none;
   }
 }
 
@@ -795,5 +876,155 @@
   picture {
     margin-bottom: 0;
     width: 100%;
+  }
+}
+
+/* Search Result Card */
+.search-result {
+  width: 100%;
+
+  &__item {
+    width: 100%;
+    margin-bottom: 40px;
+
+    p {
+      margin-bottom: 0;
+      color: $gray-medium;
+      font-family: $font-body;
+      font-size: 0.875rem;
+      letter-spacing: 0;
+      line-height: 1.5rem;
+    }
+
+    a {
+      color: $primary;
+      font-family: $font-heading;
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: 0;
+      line-height: 1.5rem;
+    }
+  }
+}
+
+/* Person Card */
+.person-card {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: 30px 0;
+  border-top: 1px solid $line-person-card;
+
+  &:last-child {
+    border-bottom: 1px solid $line-person-card;
+  }
+
+  .content-main {
+    position: relative;
+    width: calc(100% - (50px + 1rem));
+    margin-left: 1rem;
+
+    @include medium {
+      margin-left: 3rem;
+      width: calc(100% - (140px + 1rem));
+    }
+  }
+
+  .content-name-contact {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .content-contact {
+
+    @include large {
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: flex;
+    }
+
+    .person-info-phone,
+    .person-info-email {
+      display: flex;
+      margin-right: 2rem;
+
+      .material-icons {
+        font-size: 20px;
+        vertical-align: text-bottom;
+        margin-right: .5rem;
+      }
+    }
+  }
+
+    .content-img {
+      height: 50px;
+      width: 50px;
+      background-color: $person-initials-bg-blue;
+      color: $primary;
+      border-radius: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+
+      @include medium {
+        height: 140px;
+        width: 140px;
+      }
+
+      span {
+        position: absolute;
+        color: $primary;
+        font-family: $font-heading;
+        font-size: 1rem;
+        font-weight: 600;
+        letter-spacing: 1px;
+        line-height: 2.4375rem;
+
+        @include medium {
+          font-size: 2rem;
+        }
+      }
+
+      div, img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+      }
+    }
+}
+
+/* Event Card */
+.event-card-small__link {
+  max-width: 370px;
+  text-decoration: none;
+  display: block;
+  flex-grow: 1;
+  font-weight: normal;
+
+  @include medium {
+    height: 100%;
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+.event-card-small{
+  h2 {
+    font-size: 0.8rem;
+    line-height: 1rem;
+    // font-size: 14px;
+    font-weight: bold;
+  }
+
+  .event-card-small__date {
+    text-decoration: none;
+    display: block;
+    color: $red;
+    font-weight: bold;
+    font-size: 13px;
   }
 }

@@ -34,3 +34,7 @@ $sidebar-width: calc(100% - (#{$main-width} + #{$gutter}));
   grid-area: content;
   width: 100%;
 }
+
+.layout__region {
+  padding: 0 .5rem;
+}

@@ -35,61 +35,59 @@
  #}
 {% set card__base_class = 'card-bg' %}
 
-<div {{ bem(card__base_class, card__modifiers, card__blockname, card__extra_classes) }}>
-  <div class="card-bg__gral">
-    {# Image #}
-    <div class="card-bg__img">
-      <div class="mask"></div>
-      {% block card__img %}
-          {% block link_content %}
-            {% if card__image__src %}
-              {% include "@atoms/images/image/responsive-image.twig" with {
-                image_blockname: card__base_class,
-                output_image_tag: card__image__output_image_tag,
-                image_src: card__image__src,
-                image_alt: card__image__alt,
-              } %}
-            {% endif %}
-          {% endblock %}
-      {% endblock %}
-    </div>
-    {# Content #}
-    <div {{ bem('content', card__content__modifiers, card__base_class) }}>
-      {# Heading #}
-      {% if card__heading %}
-        {{ title_prefix }}
-        {% include "@atoms/text/headings/_heading.twig" with {
-          heading_base_class: card__heading__base_class|default('heading'),
-          heading_modifiers: card__heading__modifiers,
-          heading_blockname: card__base_class,
-          heading_level: 2,
-          heading: card__heading,
-        } %}
-        {{ title_suffix }}
-      {% endif %}
-      {# Line #}
-      <div class="line-bg"></div>
-      {# Body #}
-      {% block card__body %}
-        {% if card__body %}
-          <div {{ bem('body', [], card__base_class) }}>
-            {% include "@atoms/text/text/01-paragraph.twig" with {
-              paragraph_modifiers: card__body__modifiers,
-              paragraph_blockname: card__base_class,
-              paragraph_content: card__body,
-            } %}
-          </div>
+<a href="{{ card__button__url }}" class="card-bg-link">
+
+  <div {{ bem(card__base_class, card__modifiers, card__blockname, card__extra_classes) }}>
+    <div class="card-bg__gral">
+      {# Image #}
+      <div class="card-bg__img">
+        <div class="mask"></div>
+        {% block card__img %}
+            {% block link_content %}
+              {% if card__image__src %}
+                {% include "@atoms/images/image/responsive-image.twig" with {
+                  image_blockname: card__base_class,
+                  output_image_tag: card__image__output_image_tag,
+                  image_src: card__image__src,
+                  image_alt: card__image__alt,
+                } %}
+              {% endif %}
+            {% endblock %}
+        {% endblock %}
+      </div>
+      {# Content #}
+      <div {{ bem('content', card__content__modifiers, card__base_class) }}>
+        {# Heading #}
+        {% if card__heading %}
+          {{ title_prefix }}
+          {% include "@atoms/text/headings/_heading.twig" with {
+            heading_base_class: card__heading__base_class|default('heading'),
+            heading_modifiers: card__heading__modifiers,
+            heading_blockname: card__base_class,
+            heading_level: 2,
+            heading: card__heading,
+          } %}
+          {{ title_suffix }}
         {% endif %}
-      {% endblock %}
-      {# Button #}
-      {% include "@atoms/buttons/twig/button.twig" with {
-        button_base_class: card__button__base_class|default('button'),
-        button_modifiers: ['bg'],
-        button_content: card__button__content,
-        button_url: card__button__url,
-        button_url_attributes: card__button__url__attributes,
-      } %}
+        {# Line #}
+        <div class="line-bg"></div>
+        {# Body #}
+        {% block card__body %}
+          {% if card__body %}
+            <div {{ bem('body', [], card__base_class) }}>
+              {% include "@atoms/text/text/01-paragraph.twig" with {
+                paragraph_modifiers: card__body__modifiers,
+                paragraph_blockname: card__base_class,
+                paragraph_content: card__body,
+              } %}
+            </div>
+          {% endif %}
+        {% endblock %}
+        {# Button #}
+        <span class="button button--bg">{{ card__button__content }}</span>
+      </div>
+      <div class="line-bg-hover"></div>
     </div>
-    <div class="line-bg-hover"></div>
   </div>
-</div>
+
+</a>

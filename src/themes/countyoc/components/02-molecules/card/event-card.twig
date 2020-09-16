@@ -43,7 +43,7 @@
  #}
 {% set card__base_class = 'event-card' %}
 
-<a href="#" {{ bem('link', card__content__modifiers, card__base_class) }}>
+<a href="{{ card__link__url }}" {{ bem('link', card__content__modifiers, card__base_class) }}>
 
   <div {{ bem(card__base_class, card__modifiers, card__blockname, card__extra_classes) }}>
 
@@ -65,12 +65,9 @@
     <div {{ bem('content', card__content__modifiers, card__base_class) }}>
       {# Date #}
       {% if card__date %}
-        {% include "@atoms/text/text/01-paragraph.twig" with {
-          paragraph_base_class: card__date__base_class|default('date'),
-          paragraph_modifiers: card__date__modifiers,
-          paragraph_blockname: card__base_class,
-          paragraph_content: card__date,
-        } %}
+        <div {{ bem(card__date__base_class|default('date'), card__date__modifiers, card__base_class) }}>
+          {{ card__date }}
+        </div>
       {% endif %}
       {# Heading #}
       {% if card__heading %}

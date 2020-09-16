@@ -1,7 +1,7 @@
 $table-gray: #f8f8f8;
 $table-border: $gray;
 
-.table {
+table {
   border: 1px solid $table-border;
   border-radius: 4px;
   border-spacing: 0;
@@ -10,26 +10,38 @@ $table-border: $gray;
   width: 100%;
 }
 
-.table__heading-cell,
-.table__cell {
+th,
+td {
   border: none;
   border-bottom: 1px solid $table-border;
-  //border-right: 1px solid $table-border;
   padding: 1em;
+  vertical-align: top;
 
   &:last-child {
     border-right: none;
   }
+
+  &.percent-25 {
+    width: 25%;
+  }
+
+  &.percent-50 {
+    width: 50%;
+  }
+
+  &.percent-75 {
+    width: 75%;
+  }
 }
 
-.table__heading-cell {
+th {
   color: $black;
   font-weight: 700;
   padding: 1.2em;
   text-align: left;
 }
 
-.table__row {
+tr {
   &:nth-child(odd) {
     background-color: $white;
   }
@@ -66,6 +78,7 @@ $table-border: $gray;
   }
 }
 
+tfoot td,
 .table__footer-cell,
 .table__footer-cell:first-child {
   border-bottom: none;
@@ -80,15 +93,15 @@ $table-border: $gray;
   }
 
   th {
-    @extend .table__heading-cell;
+    @extend th;
   }
 
   td {
-    @extend .table__cell;
+    @extend td;
   }
 
   tr {
-    @extend .table__row;
+    @extend tr;
   }
 
   tfoot th {

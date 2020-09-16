@@ -4,6 +4,7 @@ import { useEffect } from '@storybook/client-api';
 import '../../02-molecules/menus/main-menu/main-menu';
 
 import articleTwig from './article.twig';
+import locationTwig from './location.twig';
 
 import mainMenuData from '../../02-molecules/menus/main-menu/main-menu.yml';
 import breadcrumbData from '../../02-molecules/menus/breadcrumbs/breadcrumbs.yml';
@@ -21,6 +22,24 @@ export const article = () => {
     <div
       dangerouslySetInnerHTML={{
         __html: articleTwig({
+          page_layout_modifier: 'contained',
+          ...mainMenuData,
+          ...breadcrumbData,
+          ...socialMenuData,
+          ...footerMenuData,
+          card__link__text: 'Click here',
+        }),
+      }}
+    />
+  );
+};
+
+export const location = () => {
+  useEffect(() => Drupal.attachBehaviors(), []);
+  return (
+    <div
+      dangerouslySetInnerHTML={{
+        __html: locationTwig({
           page_layout_modifier: 'contained',
           ...mainMenuData,
           ...breadcrumbData,

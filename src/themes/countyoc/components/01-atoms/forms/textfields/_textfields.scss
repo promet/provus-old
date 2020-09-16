@@ -20,6 +20,18 @@
   &.option {
     display: inline;
   }
+
+  &.form-required::after {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin: 0 0.3em;
+    content: "";
+    vertical-align: super;
+    background-image: url(/images/icons/required.svg);
+    background-repeat: no-repeat;
+    background-size: 6px 6px;
+  }
 }
 
 .form-item__textfield {
@@ -30,6 +42,7 @@
   max-width: 500px;
   width: 100%;
   color: $black;
+  outline: inherit;
 
   &:focus {
     border-color: $primary;
@@ -63,6 +76,7 @@ textarea.form-item__textfield {
 
 fieldset.form-fieldset {
   margin-bottom: 5.5em;
+  margin-top: 1em;
   padding: 1em 0 0;
   border-top: 1px solid $border-input-form;
   position: relative;

@@ -18,6 +18,21 @@
  *   - in_active_trail: TRUE if the link is in the active trail.
  */
 #}
+{{ attach_library('countyoc/sidebar-menu') }}
+
 {% include "@molecules/menus/_menu.twig" with {
-  menu_class: 'sidebar-menu',
+ menu_class: 'sidebar-menu',
 } %}
+
+<nav class="navbar mobile navbar-light bg-light" aria-label="mobile-sidebar-nav">
+  <button class="navbar-toggler menu-sidebar-mobile" type="button" data-toggle="collapse" data-target="#navbar-menu-sidebar" aria-controls="navbar-menu-sidebar" aria-expanded="false" aria-label="Toggle navigation">
+    {% trans %}Navigation Menu{% endtrans %}
+    <span class="material-icons">
+      keyboard_arrow_down
+    </span>
+  </button>
+  <div class="dropdown mobile collapse navbar-collapse sidebar-menu-mobile"" aria-labelledby="navbar-menu" id="navbar-menu-sidebar">
+  {% include "@molecules/menus/_menu.twig" with {
+    menu_class: 'sidebar-menu-mobile',
+  } %}
+</nav>

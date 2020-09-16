@@ -1,5 +1,5 @@
 page_layout_modifier: 'contained'
-grid_label: 'Default'
+grid_heading: 'Default'
 grid_cols: col3
 items:
   -

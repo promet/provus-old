@@ -1,6 +1,6 @@
 name: county-oc
 type: theme
-description: Theme based on <a href="http://emulsify.info">Emulsify</a>. 
+description: Theme based on <a href="http://emulsify.info">Emulsify</a>.
 base theme: stable
 core: 8.x
 
@@ -23,6 +23,7 @@ ckeditor_stylesheets:
   - dist/style.css
 
 regions:
+  preheader: 'Pre Header'
   header: Header
   precontent: 'Pre Content'
   content: Content  # the content region is required

@@ -1,4 +1,8 @@
 .share-this {
+  clear: both;
+  margin-bottom: $space-double;
+  padding-top: $space-double;
+
   h2.title {
     color: $title-content-top;
     font-size: 1rem;
@@ -18,6 +22,10 @@
 
     &__item {
       margin: 0 15px 0 0;
+
+      svg.ext {
+        display: none;
+      }
     }
 
     &__icon {

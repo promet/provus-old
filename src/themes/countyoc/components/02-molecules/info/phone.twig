@@ -48,12 +48,16 @@
   <div {{ bem('content', card__content__modifiers, card__base_class) }}>
 
     <div {{ bem('content-left', card__content__modifiers, card__base_class) }}>
-      <div class="ico-phone"><i class="material-icons">{{ icon__phone }}</i></div>
+      <div class="ico-phone"><span class="material-icons" aria-hidden="true">{{ icon__phone }}</span></div>
     </div>
     <div {{ bem('content-right', card__content__modifiers, card__base_class) }}>
       {# Heading #}
       <div {{ bem('heading', [], card__base_class) }}>
-        {{ card__heading__phone }} <span>{{ card__phone }}</span>
+        {{ card__heading__phone }}
+      </div>
+      {# Body #}
+      <div {{ bem('body', [], card__base_class) }}>
+        {{ card__phone }}
       </div>
     </div>
 

@@ -33,6 +33,12 @@
     &:nth-child(8) {
       margin: 0 0 0 0;
     }
+
+    a {
+      svg.ext {
+        display: none;
+      }
+    }
   }
 
   &__icon {
@@ -41,7 +47,7 @@
     height: 21px;
   }
 
-  .ico-social-footer{
+  .ico-social-footer {
     margin: 0;
 
     &.facebook {

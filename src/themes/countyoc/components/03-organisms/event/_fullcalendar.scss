@@ -136,4 +136,30 @@ body.path-events {
       }
     }
   }
+
+  table {
+    margin: auto;
+    background-color: transparent;
+    border-color: transparent;
+
+    tr{
+      &:nth-child(odd) {
+        background-color: inherit;
+      }
+
+      td:last-child {
+        border-right: 1px solid #ddd;
+      }
+    }
+
+    tbody {
+      tr:last-child {
+        th, td {
+          &:not(.fc-day-top) {
+            border-bottom: 1px solid #ddd;
+          }
+        }
+      }
+    }
+  }
 }

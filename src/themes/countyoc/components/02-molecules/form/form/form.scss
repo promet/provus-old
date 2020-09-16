@@ -17,14 +17,11 @@
   }
 
   .d-form-inputs {
-    display: flex;
-    flex-wrap: wrap;
-
-    @include medium {
-      flex-wrap: nowrap;
-    }
 
     .form-item {
+      padding: 5px 0;
+
+
       &:first-child {
         padding-right: 0;
         padding-left: 0;
@@ -38,11 +35,6 @@
       &:last-child {
         padding-left: 0;
         padding-right: 0;
-
-        @include medium {
-          padding-left: 15px;
-          padding-right: 0;
-        }
       }
     }
 
@@ -95,9 +87,18 @@
   }
 }
 
-.form--inline .form-item {
-  float: left;
-  margin-right: 0.5em;
+.form--inline {
+  display: table-cell;
+
+  .form-item__submit,
+  .form-item {
+    display: inline-block;
+    margin: 0 10px 20px 0;
+  }
+
+  .form-actions {
+    display: inline-block;
+  }
 }
 
 .container-inline div {

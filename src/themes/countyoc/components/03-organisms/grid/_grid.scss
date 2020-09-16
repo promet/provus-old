@@ -1,11 +1,14 @@
 .grid {
+  @include wrapper;
+
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 
   .grid__item {
     margin-bottom: $space-double;
 
-    @include large {
+    @include medium {
       margin: 0 2% $space-double 0;
     }
 
@@ -22,7 +25,11 @@
 
   &--col2 {
     .grid__item {
-      width: 49%;
+      width: 100%;
+
+      @include medium {
+        width: 49%;
+      }
 
       &:nth-of-type(2n+0) {
         margin-right: 0;
@@ -32,7 +39,11 @@
 
   &--col3 {
     .grid__item {
-      width: 32%;
+      width: 100%;
+
+      @include medium {
+        width: 32%;
+      }
 
       &:nth-of-type(3n+0) {
         margin-right: 0;
@@ -42,11 +53,43 @@
 
   &--col4 {
     .grid__item {
-      width: 23.5%;
+      width: 100%;
+
+      @include medium {
+        width: 23.5%;
+      }
 
       &:nth-of-type(4n+0) {
         margin-right: 0;
       }
     }
+  }
+}
+
+.grid-group-wrapper {
+  padding-top: $space-triple;
+  padding-bottom: $space-triple;
+
+  h2.title {
+    text-align: center;
+    color: $title-section;
+    font-family: $font-heading;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    line-height: 2.3125rem;
+    margin-bottom: 35px;
+    text-transform: uppercase;
+
+    @include medium {
+      font-size: 1.875rem;
+    }
+  }
+}
+
+.block-tabs {
+  .grid-group-wrapper {
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }

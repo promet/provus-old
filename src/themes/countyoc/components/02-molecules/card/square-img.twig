@@ -44,7 +44,7 @@
 {% set card__base_class = 'square-img' %}
 
 <div {{ bem(card__base_class, card__modifiers, card__blockname, card__extra_classes) }}>
-  <a href="#" class="square-img__gral">
+  <a href="{{ card__link__url }}" class="square-img__gral">
   {# Image #}
   <div class="square-img__img">
     {% block card__img %}

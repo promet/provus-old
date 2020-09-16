@@ -48,7 +48,7 @@
   <div {{ bem('content', card__content__modifiers, card__base_class) }}>
 
     <div {{ bem('content-left', card__content__modifiers, card__base_class) }}>
-      <div class="ico-location"><i class="material-icons">{{ icon__date__time }}</i></div>
+      <div class="ico-location"><span class="material-icons" aria-hidden="true">{{ icon__date__time }}</span></div>
     </div>
 
     <div {{ bem('content-right', card__content__modifiers, card__base_class) }}>
@@ -62,22 +62,19 @@
       {% block card__body__date__time %}
         {% if card__body__date__time %}
           <div {{ bem('body', [], card__base_class) }}>
-            {% include "@atoms/text/text/01-paragraph.twig" with {
-              paragraph_modifiers: card__body__modifiers,
-              paragraph_blockname: card__base_class,
-              paragraph_content: card__body__date__time,
-            } %}
+            {{ card__body__date__day }}<br />
+            {{ card__body__date__time }}
           </div>
         {% endif %}
       {% endblock %}
-      {# Link #}
+      {# Add to calendar links. #}
       {% if card__link__url__date__time %}
-        {% include "@atoms/links/link/link.twig" with {
-          "link_content": card__link__text__date__time,
-          "link_url": card__link__url__date__time,
-          "link_base_class": item_base_class|default(menu_class ~ 'info-location__link'),
-          "link_modifiers": card__link__modifiers,
-        } %}
+        {% include "@molecules/collapsible/collapsible.twig" with {
+          "header_title": card__link__text__date__time,
+          "key": 'add-to-calendar',
+          "items": card__link__calendar__items
+        }
+        %}
       {% endif %}
     </div>
 

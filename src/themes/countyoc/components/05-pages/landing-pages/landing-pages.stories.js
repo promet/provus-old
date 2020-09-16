@@ -19,6 +19,8 @@ import btn from '../../03-organisms/group/by-the-numbers/by-the-numbers.yml';
 import cr from '../../03-organisms/group/column-row/column-row.yml';
 import tabbed from '../../03-organisms/group/tabbed/tabbed.yml';
 
+bannerData.settings.search = true;
+
 const items = {
   c3,
   c4,

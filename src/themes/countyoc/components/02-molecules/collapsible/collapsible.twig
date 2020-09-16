@@ -1,0 +1,27 @@
+{{ attach_library('countyoc/bootstrap') }}
+
+{% set base_class = 'collapsible' %}
+
+<div {{ bem('','',base_class) }} id="collapsible-{{ key }}">
+  {# Content #}
+  <div {{ bem('header', '' ,base_class) }}>
+    <button {{ bem('header-btn', '' , base_class, ['btn', 'btn-link']) }}  type="button" data-toggle="collapse" data-target="#collapse-{{ key }}" aria-expanded="false" aria-controls="collapse-{{ key }}">
+      <span>{{header_title}}</span>
+    </button>
+    <div id="collapse-{{ key }}" class="collapse" aria-labelledby="heading-{{ key }}" data-parent="#collapsible-{{ key }}">
+      <div {{ bem('body', '' ,base_class) }}>
+        <ul>
+          {% for key, item in items %}
+            <li>
+              {% include "@atoms/links/link/link.twig" with {
+                "link_content": item.type_name,
+                "link_url": item.url,
+                "link_base_class": base_class ~ '__link',
+              } %}
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

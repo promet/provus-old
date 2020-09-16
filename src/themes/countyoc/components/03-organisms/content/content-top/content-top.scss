@@ -45,12 +45,19 @@
           flex-wrap: nowrap;
         }
 
-        .left,
+        .left {
+          width: 100%;
+
+          @include medium {
+            width: 35%;
+          }
+        }
+
         .right {
           width: 100%;
 
           @include medium {
-            width: 50%;
+            width: 65%;
           }
         }
       }

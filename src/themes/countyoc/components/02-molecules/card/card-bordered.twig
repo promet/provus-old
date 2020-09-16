@@ -76,12 +76,9 @@
         {% endif %}
         {# Date #}
         {% if card__date %}
-          {% include "@atoms/text/text/01-paragraph.twig" with {
-            paragraph_base_class: card__date__base_class|default('date'),
-            paragraph_modifiers: card__date__modifiers,
-            paragraph_blockname: card__base_class,
-            paragraph_content: card__date,
-          } %}
+          <div {{ bem(card__date__base_class|default('date'), card__date__modifiers, card__base_class) }}>
+            {{ card__date }}
+          </div>
         {% endif %}
         {# Body #}
         {% block card__body %}

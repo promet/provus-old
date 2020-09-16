@@ -6,6 +6,7 @@
     padding: 10px 15px;
     align-items: center;
     position: relative;
+    min-height: 70px;
 
     @include desktop {
       padding: 8px 40px;
@@ -14,15 +15,29 @@
 
   &__branding {
     order: 1;
+    align-self: flex-start;
 
-    .logo__image {
-      max-width: 44px;
-      margin-bottom: 0;
+    .logo-link {
+      display: flex;
+      align-items: center;
+      height: 50px;
+      margin-right: 10px;
 
       @include desktop {
-        max-width: 66px;
+        height: 60px;
+      }
+    }
+
+    .logo__image {
+      max-height: 44px;
+      margin-bottom: 0;
+      max-width: 200px;
+
+      @include desktop {
+        max-height: 66px;
         z-index: 999;
         position: relative;
+        max-width: 330px;
       }
     }
   }
@@ -36,6 +51,7 @@
       order: 3;
       position: initial;
       right: auto;
+      align-self: flex-start;
     }
 
     .ico-search {
@@ -44,7 +60,7 @@
     }
 
     .search__image {
-      margin-bottom: 0;
+      margin: 20px 0;
     }
   }
 
@@ -61,16 +77,13 @@
     .search__image {
       display: none;
       margin-bottom: 0;
-
-      @include desktop {
-        display: block;
-      }
     }
 
     .search-block-form {
       height: 100%;
       animation-name: openSearchBar;
       animation-duration: 1s;
+      overflow: visible;
     }
   }
 
@@ -109,7 +122,6 @@
     }
 
     nav {
-      height: 15px;
 
       @include desktop {
         height: 100%;
@@ -117,6 +129,12 @@
 
       .toggle-expand {
         padding: 0;
+        display: block;
+        line-height: 1;
+
+        @include desktop {
+          display: none;
+        }
       }
     }
   }

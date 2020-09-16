@@ -23,12 +23,30 @@
 }
 
 .carousel-promo-card-wrapper {
-  padding-top: 50px;
-  padding-bottom: 85px;
+  padding-top: $space-triple;
+  padding-bottom: $space-triple;
 
   @include medium {
     padding-top: 95px;
     padding-bottom: 60px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  h2.title {
+    text-align: center;
+    color: $title-section;
+    font-family: $font-heading;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    line-height: 2.3125rem;
+    margin-bottom: 35px;
+    text-transform: uppercase;
+
+    @include medium {
+      font-size: 1.875rem;
+    }
   }
 
   &__inner {
@@ -45,6 +63,7 @@
     width: 40px;
     justify-content: center;
     cursor: pointer;
+    padding-bottom: 66px;
 
     .carousel-control-prev-icon {
       margin-left: 0;
@@ -52,18 +71,31 @@
       background-position: left center;
       background-image: url("/images/icons/Chevron_left.svg");
     }
+
+    &:focus {
+      .carousel-control-prev-icon {
+        border: 2px solid $ada-blue;
+      }
+    }
   }
 
   .carousel-control-next {
     width: 40px;
     justify-content: center;
     cursor: pointer;
+    padding-bottom: 66px;
 
     .carousel-control-next-icon {
       margin-right: 0;
       background-repeat: no-repeat;
       background-position: right center;
       background-image: url("/images/icons/Chevron_right.svg");
+    }
+
+    &:focus {
+      .carousel-control-next-icon {
+        border: 2px solid $ada-blue;
+      }
     }
   }
 
@@ -96,6 +128,10 @@
 
       li {
         padding: 0;
+
+        &::before {
+          display: none;
+        }
       }
 
       li > a {

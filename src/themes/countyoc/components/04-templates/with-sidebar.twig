@@ -1,6 +1,12 @@
 {% set sidebar = true %}
 
 {% extends "@templates/_default.twig" %}
+  {% block page_precontent %}
+    {% include "@molecules/menus/breadcrumbs/breadcrumbs.twig" with { breadcrumb: [{url: '#', text: 'Home'}] } %}
+    {% include "@templates/placeholder/place-holder.twig" with {
+      "place_holder": "Pre Content",
+    } %}
+  {% endblock %}
   {% block page_content %}
     {% include "@templates/placeholder/place-holder.twig" with {
       "place_holder": "Primary Content",
@@ -9,5 +15,10 @@
   {% block page_sidebar %}
     {% include "@templates/placeholder/place-holder.twig" with {
       "place_holder": "Secondary Content",
+    } %}
+  {% endblock %}
+  {% block page_postcontent %}
+    {% include "@templates/placeholder/place-holder.twig" with {
+      "place_holder": "Post Content",
     } %}
   {% endblock %}

@@ -32,6 +32,7 @@
 {% embed "@organisms/grid/grid.twig" with {
   grid_type: display_content,
   grid_cols: 'col' ~ number,
+  grid_heading: label
 } %}
   {% block grid_content %}
     {{ title_prefix }}
@@ -42,6 +43,8 @@
       </div>
     {% endfor %}
   {% endblock %}
+  {% block linkcontent %}
+    {{ content }}
+  {% endblock %}
 {% endembed %}
-  {{ content }}
 </div>

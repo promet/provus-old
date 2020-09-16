@@ -27,10 +27,22 @@ body {
   word-wrap: normal;
 }
 
+.visually-hidden.focusable.skip-link:focus {
+  z-index: 101;
+  position: relative !important;
+}
+
 .center {
   display: flex;
   justify-content: center;
   margin: 20px 0 50px;
+}
+
+.block--section-bg-solid,
+.block--section-bg-gradient {
+  .field-link.center {
+    margin-bottom: 0;
+  }
 }
 
 .block--section-bg-solid {
@@ -47,14 +59,4 @@ body {
   }
 
   background: linear-gradient(180deg, $white 0%, $accent-sky 100%);
-}
-
-/* Fix for padding botton */
-.layout__region {
-  .block:last-child {
-    &.block--section-bg-solid,
-    &.block--section-bg-gradient {
-      margin-bottom: -75px;
-    }
-  }
 }

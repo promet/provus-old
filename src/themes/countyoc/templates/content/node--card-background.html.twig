@@ -72,8 +72,9 @@
 #}
 
 {% embed "@molecules/card/card-bg.twig" with {
-  card__heading: label|render|striptags|truncate(30, true),
-  card__link__url: url,
+  card__heading: label|render|striptags|convert_encoding('UTF-8', 'HTML-ENTITIES')|truncate(50, true),
+  card__button__content: label|render|striptags|convert_encoding('UTF-8', 'HTML-ENTITIES')|truncate(30, true),
+  card__button__url: url,
   card__date: date,
 } %}
   {% block card__img %}

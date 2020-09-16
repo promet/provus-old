@@ -1,4 +1,4 @@
-card__image__src: 'images/card-image-board.png'
+card__image__src: 'images/card-image-cal-optima.png'
 card__image__alt: "This is the card image's alt text"
 card__image__output_image_tag: true
 card__heading: 'Cal Optima Recruitment'

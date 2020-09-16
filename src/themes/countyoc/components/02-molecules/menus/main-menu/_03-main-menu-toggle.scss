@@ -32,12 +32,13 @@
 
 .toggle-expand__open {
   display: inline-block;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 22px 15px;
-  background-image: url("/images/icons/ico-hamburguer.png");
-  width: 22px;
-  height: 15px;
+
+  &::before {
+    @include material-icon;
+
+    content: '\e5d2';
+    font-size: 25px;
+  }
 
   .toggle-expand--open & {
     display: none;
@@ -46,15 +47,13 @@
 
 .toggle-expand__close {
   display: none;
-  text-align: center;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 16px 17px;
-  background-image: url("/images/icons/ico-hamburguer-close.png");
-  width: 16px;
-  height: 17px;
-  background-color: transparent;
-  margin-left: -18px;
+
+  &::before {
+    @include material-icon;
+
+    content: '\e14c';
+    font-size: 25px;
+  }
 
   .toggle-expand--open & {
     display: inline-block;

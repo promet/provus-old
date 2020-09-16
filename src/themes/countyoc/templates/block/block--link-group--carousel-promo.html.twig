@@ -30,8 +30,7 @@
 
 <div {{ bem('block', [group__base_class, section_style_class]) }}>
 {% embed "@organisms/group/carousel/promo-card/carousel-promo-card.twig" with {
-  grid_type: display_content,
-  grid_label: label,
+  promocard_heading: label,
 } %}
   {% block prefix %}
     {{ title_prefix }}
@@ -40,6 +39,8 @@
   {% block content %}
     {{ blocks }}
   {% endblock %}
+  {% block linkcontent %}
+    {{ content }}
+  {% endblock %}
 {% endembed %}
-  {{ content }}
 </div>

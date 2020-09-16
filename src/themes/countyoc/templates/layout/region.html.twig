@@ -1,0 +1,53 @@
+{#
+/**
+ * @file
+ * Theme override to display a region.
+ *
+ * Available variables:
+ * - content: The content for this region, typically blocks.
+ * - attributes: HTML attributes for the region <div>.
+ * - region: The name of the region variable as defined in the theme's
+ *   .info.yml file.
+ *
+ * @see template_preprocess_region()
+ */
+#}
+{% if content %}
+  {% if search %}
+    <div class="sidebar-menu">
+      <h1>{{ title }}</h1>
+      <h2>{{ region_title }}</h2>
+      {{ clear_filter }}
+      <div{{ attributes }}>
+        {{ content }}
+      </div>
+    </div>
+    <nav class="navbar mobile navbar-light bg-light" aria-label="mobile-search-facets">
+      <button class="navbar-toggler search-mobile" type="button" data-toggle="collapse" data-target="#navbar-search" aria-controls="navbar-search" aria-expanded="false" aria-label="Toggle navigation">
+        {% trans %}Filter Results{% endtrans %}
+        <span class="material-icons">
+          keyboard_arrow_down
+        </span>
+      </button>
+      <div class="dropdown mobile">
+        <div id="navbar-search" class="collapse navbar-collapse sidebar-menu-mobile" aria-labelledby="dropdownSidebarButton">
+          {{ clear_filter }}
+          <div{{ attributes }}>
+            {{ content }}
+          </div>
+        </div>
+      </div>
+    </nav>
+  {% else %}
+    {% if region_title %}
+      <h1>{{ title }}</h1>
+      <h2>{{ region_title }}</h2>
+    {% endif %}
+    {% if clear_filter %}
+      {{ clear_filter }}
+    {% endif %}
+    <div{{ attributes }}>
+      {{ content }}
+    </div>
+  {% endif %}
+{% endif %}

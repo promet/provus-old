@@ -8,6 +8,13 @@
     display: flex;
     flex-flow: column nowrap;
     flex-wrap: wrap;
+    padding-left: 0;
+    padding-right: 0;
+
+    @include small {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
 
     @include large {
       flex-direction: row;
@@ -33,7 +40,7 @@
         background: transparent;
         color: $gray-dark;
         font-family: $font-heading;
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         letter-spacing: 1px;
         line-height: 1.8125rem;
         border-radius: 0;
@@ -44,6 +51,10 @@
         align-items: center;
         text-transform: uppercase;
         font-weight: 500;
+
+        @include small {
+          font-size: 1.5rem;
+        }
 
         @include medium {
           padding: 20px 90px;
@@ -95,33 +106,8 @@
       flex-wrap: wrap;
       justify-content: space-between;
 
-      .grid__item {
-        margin-bottom: 30px;
-        flex: auto;
-
-        @include medium {
-          margin-bottom: 60px;
-          flex: 1 1 50%;
-
-          &:nth-child(4),
-          &:nth-child(5),
-          &:nth-child(6) {
-            margin-bottom: 0;
-          }
-        }
-
-        @include large {
-          min-width: auto;
-          flex: 1 1 30%;
-        }
-      }
-
       .block--grid {
         width: 100%;
-
-        .grid__item {
-          width: auto;
-        }
       }
     }
   }

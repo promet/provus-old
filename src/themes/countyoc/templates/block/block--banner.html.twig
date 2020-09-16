@@ -25,7 +25,11 @@
  * @see template_preprocess_block()
  */
 #}
+{% set search_settings = {"search": true, "search__button__text": "Search", "search__button__url": "#", "search_placeholder": "What are you looking for?"} %}
+
 <div {{ bem('block') }}>
+  {# title_suffix is needed for contextual links to appear when placing the block #}
+  {{ title_suffix }}
   {% block content %}
     {% embed "@organisms/banner/banner.twig" %}
       {% block image_items %}

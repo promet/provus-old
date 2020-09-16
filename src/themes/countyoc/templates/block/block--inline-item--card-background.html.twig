@@ -28,7 +28,7 @@
 
 <div {{ bem('block') }}>
 {% embed "@molecules/card/card-bg.twig" with {
-  card__heading: content.field_heading,
+  card__heading: content.field_heading|render|striptags|convert_encoding('UTF-8', 'HTML-ENTITIES')|truncate(50, true),
   card__button__content: content.field_link.0['#title'],
   card__button__url: content.field_link.0['#url'],
   card__date: content.field_date,

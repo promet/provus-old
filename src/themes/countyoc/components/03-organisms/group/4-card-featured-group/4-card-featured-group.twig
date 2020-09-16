@@ -2,7 +2,9 @@
 
 <div {{ bem(numbergroup__base_class) }}>
 
-  <h2 class="title">{{ title }}</h2>
+  {% if title %}
+    <h2 class="title">{{ title }}</h2>
+  {% endif %}
 
   <div {{ bem('inner', [], numbergroup__base_class) }}>
 

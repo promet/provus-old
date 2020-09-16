@@ -1,5 +1,28 @@
-<h2>Quick Links</h2>
+{% set quick_menu_items = [
+  {
+    "title": "Acceptable Use",
+    "url": "https://www.ocgov.com/contact/use"
+  },
+  {
+    "title": "Accessibility",
+    "url": "https://www.ocgov.com/contact/accessibility"
+  },
+  {
+    "title": "Contact the County",
+    "url": "https://www.ocgov.com/contact"
+  },
+  {
+    "title": "Disclaimer",
+    "url": "https://www.ocgov.com/contact/disclaimer"
+  },
+  {
+    "title": "Sitemap",
+    "url": "/contact/sitemap"
+  }
+]
+%}
+
 {% include "@molecules/menus/_menu.twig" with {
-  menu_class: 'quick-links-menu',
+  menu_class: 'inline-menu',
   items: quick_menu_items,
 } %}

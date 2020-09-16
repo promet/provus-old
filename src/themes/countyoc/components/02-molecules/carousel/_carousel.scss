@@ -6,8 +6,13 @@
     max-width: 945px;
     margin: 0 auto;
 
-    #imageGallery {
+    .imageGallery {
       .lslide {
+
+        &::before {
+          display: none;
+        }
+
         img  {
           width: 100%;
           height: 675px;
@@ -17,12 +22,16 @@
       }
     }
 
-    .lSPager.lSGallery {
+    .lSSlideOuter .lSPager.lSGallery {
       li {
 
         &.active,
         &:hover {
           border-radius: 0;
+        }
+
+        &::before {
+          display: none;
         }
 
         img {
@@ -32,6 +41,28 @@
           margin: 0;
         }
       }
+    }
+  }
+}
+
+.gallery.carousel {
+  .lSAction {
+    > .lSPrev {
+      background-repeat: no-repeat;
+      background-position: left center;
+      background-size: 49px 49px;
+      background-image: url("/images/icons/arrow-left-carousel.svg");
+      width: 49px;
+      height: 49px;
+    }
+
+    > .lSNext {
+      background-repeat: no-repeat;
+      background-position: right center;
+      background-size: 49px 49px;
+      background-image: url("/images/icons/arrow-right-carousel.svg");
+      width: 49px;
+      height: 49px;
     }
   }
 }

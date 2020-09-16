@@ -3,19 +3,25 @@
 
 <div {{ bem(multicard__base_class) }}>
 
-  <h2 class="title">{{ multicard_heading }}</h2>
+  {% if multicard_heading and not ischild %}
+    <h2 class="title">{{ multicard_heading }}</h2>
+  {% endif %}
 
   <div {{ bem('inner', [], multicard__base_class) }}>
     {% block prefix %}
     {% endblock %}
     <div class="multicard slide">
+      <a class="multicard-control-prev" role="button" data-slide="prev" tabindex="0">
+        <span class="multicard-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
       <!--Slides-->
-      <div class="multicard-inner" role="listbox" aria-label="multicardSlides">
+      <div class="multicard-inner">
         <div class="multicard-inner-wrapper">
           <div class="lightslider">
             {% block content %}
               {% for item in content %}
-                <div class="slide" role="option">
+                <div class="slide">
                   {% block card__bordered %}
                     {% include "@molecules/card/card-bg.twig" with
                       {
@@ -35,14 +41,13 @@
           </div>
         </div>
       </div>
-      <a class="multicard-control-prev" role="button" data-slide="prev">
-        <span class="multicard-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="multicard-control-next" role="button" data-slide="next">
+      <a class="multicard-control-next" role="button" data-slide="next" tabindex="0">
         <span class="multicard-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
       </a>
     </div>
   </div>
+  {% block linkcontent %}
+    <div class="field-link center"><a href="/" class="button button--secondary">Read More</a></div>
+  {% endblock %}
 </div>

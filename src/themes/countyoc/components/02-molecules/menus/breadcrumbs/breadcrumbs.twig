@@ -10,7 +10,7 @@
 {% set breadcrumb__base_class = 'breadcrumb' %}
 
 {% if breadcrumb %}
-  <nav role='navigation' aria-labelledby='system-breadcrumb'>
+  <nav aria-labelledby='system-breadcrumb'>
     <h2 {{ bem('visually-hidden') }} id='system-breadcrumb'>{{ 'Breadcrumb'|t }}</h2>
     <ol {{ bem(breadcrumb__base_class) }}>
     {% for item in breadcrumb %}

@@ -1,7 +1,8 @@
 import React from 'react';
 import { useEffect } from '@storybook/client-api';
 
-import filesStructure from './files.twig';
+import filesTableStructure from './files-table.twig';
+import filesListStructure from './files-list.twig';
 import filesData from './files.yml';
 
 /**
@@ -14,7 +15,18 @@ export const filesTable = () => {
   return (
     <div
       dangerouslySetInnerHTML={{
-        __html: filesStructure({ ...filesData }),
+        __html: filesTableStructure({ ...filesData }),
+      }}
+    />
+  );
+};
+
+export const filesList = () => {
+  useEffect(() => Drupal.attachBehaviors(), []);
+  return (
+    <div
+      dangerouslySetInnerHTML={{
+        __html: filesListStructure({ ...filesData }),
       }}
     />
   );

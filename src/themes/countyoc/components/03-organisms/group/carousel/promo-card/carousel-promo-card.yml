@@ -1,3 +1,5 @@
+promocard_heading: "Link Group Promo Card Carousel"
+
 content:
   -
     card__image__src: 'images/promo-0.png'

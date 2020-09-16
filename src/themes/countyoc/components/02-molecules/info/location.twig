@@ -48,7 +48,7 @@
   <div {{ bem('content', card__content__modifiers, card__base_class) }}>
 
     <div {{ bem('content-left', card__content__modifiers, card__base_class) }}>
-      <div class="ico-location"><i class="material-icons">{{ icon__location }}</i></div>
+      <div class="ico-location"><span class="material-icons" aria-hidden="true">{{ icon__location }}</span></div>
     </div>
 
     <div {{ bem('content-right', card__content__modifiers, card__base_class) }}>
@@ -70,11 +70,19 @@
           </div>
         {% endif %}
       {% endblock %}
-      {# Link #}
+      {# Links #}
       {% if card__link__url__location %}
         {% include "@atoms/links/link/link.twig" with {
           "link_content": card__link__text__location,
           "link_url": card__link__url__location,
+          "link_base_class": item_base_class|default(menu_class ~ 'info-location__link'),
+          "link_modifiers": card__link__modifiers,
+        } %}
+      {% endif %}
+      {% if card__link__url__directions %}
+        {% include "@atoms/links/link/link.twig" with {
+          "link_content": card__link__text__directions,
+          "link_url": card__link__url__directions,
           "link_base_class": item_base_class|default(menu_class ~ 'info-location__link'),
           "link_modifiers": card__link__modifiers,
         } %}

@@ -1,0 +1,16 @@
+{% set search__base_class = 'search-result' %}
+
+<div {{ bem('wrapper', card__content__modifiers, search__base_class) }}>
+  {% block content %}
+      <div {{ bem('item', card__content__modifiers, search__base_class) }}>
+        <p>{{ search__result__url }}</p>
+        {# Link #}
+        {% include "@atoms/links/link/link.twig" with {
+          "link_content": search__result__title,
+          "link_url": search__result__link,
+          "link_base_class": search__base_class|default(menu_class ~ 'title__link'),
+        } %}
+        <p>{{ search__result__body }}</p>
+      </div>
+    {% endblock %}
+</div>

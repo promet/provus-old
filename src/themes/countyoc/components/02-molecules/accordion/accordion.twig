@@ -1,5 +1,5 @@
 {{ attach_library('countyoc/bootstrap') }}
-<div class="accordion" id="accordionExample">
+<div class="accordion" id="accordion{{ id }}">
   {% for key, item in items %}
     {% include "@molecules/accordion/_accordion_item.twig" with {
       item_id: key,

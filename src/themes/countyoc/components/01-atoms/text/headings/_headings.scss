@@ -135,6 +135,12 @@ h6,
   @include heading-xs;
 }
 
+.main-sidebar h2,
+h2.sidebar__h2 {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
 /* TODO: BEM selectors should be applied to wysiwyg-created content */
 
 .text-long {

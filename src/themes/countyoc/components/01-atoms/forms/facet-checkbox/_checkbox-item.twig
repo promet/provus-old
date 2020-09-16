@@ -1,0 +1,13 @@
+<li class="form-item facet-item">
+  <input type="checkbox" class="facets-checkbox" {% if checkbox_item_checked %}checked="{{ checkbox_item_checked }}"{% endif %}>
+  <label class="form-item__label" for="checkbox{{ key }}">
+    <span class="facet-item__value">{{ checkbox_item_value }}</span>
+    <span class="facet-item__count">({{ checkbox_item_count }})</span>
+  </label>
+  <a href="{{ checkbox_url }}" class="visually-hidden">
+    <label for="checkbox{{ key }}">
+      <span class="facet-item__value">{{ checkbox_item_value }}</span>
+      <span class="facet-item__count">({{ checkbox_item_count }})</span>
+    </label>
+  </a>
+</li>

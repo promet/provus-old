@@ -1,11 +1,6 @@
 .files-table {
   margin-top: $space-double;
-
-  &__inner {
-    @include wrapper;
-
-    max-width: 944px;
-  }
+  margin-bottom: $space-double;
 
   h2.title {
     color: $title-content-top;
@@ -29,7 +24,7 @@
           font-weight: 400;
 
           &.views-field-filename {
-            padding: 0 20px;
+            padding-left: 20px;
           }
           &.views-field-filesize {
             text-align: right;
@@ -52,8 +47,11 @@
           &.views-field-filename {
             padding: 26px 20px;
             max-width: 722px;
-            display: flex;
             align-items: center;
+
+            &:hover {
+              color: $primary;
+            }
 
             &::before {
               @include material-icon;
@@ -74,21 +72,16 @@
               letter-spacing: 0;
               line-height: 1.625rem;
               font-weight: 400;
+              word-break: break-all;
 
               &:hover {
                 color: $primary;
                 font-weight: 400;
                 text-decoration: none;
               }
-            }
 
-            &:hover {
-              .material-icons {
-                color: $primary;
-              }
-
-              a {
-                color: $primary;
+              p {
+                display: inline;
               }
             }
           }
@@ -123,11 +116,108 @@
           }
         }
 
+        &.extension-mp3 {
+          td.views-field-filename::before {
+            content: '\e030';
+          }
+        }
+
         &:nth-child(2n+1) {
           background-color: $bg-table-files;
         }
       }
     }
+  }
+}
+
+.files-list {
+  margin-top: $space-double;
+  margin-bottom: $space-double;
+
+  h2.title {
+    color: $title-content-top;
+    font-size: 1.25rem;
+    letter-spacing: 0;
+    line-height: 1.75rem;
+    margin-bottom: 0;
+  }
+
+  &__content {
+    list-style: none;
+
+    li {
+      padding-left: 0 !important;
+
+      &::before {
+        display: none;
+      }
+
+      &.extension-pdf .filename::before {
+        content: '\e415';
+      }
+
+      &.extension-jpg .filename::before {
+        content: '\e3f4';
+      }
+
+      &.extension-mp3 .filename::before {
+        content: '\e030';
+      }
+    }
+  }
+
+  .filename {
+    white-space: nowrap;
+
+    &::before {
+      @include material-icon;
+
+      content: '\e873';
+      font-size: 20px;
+      margin-right: 5px;
+      display: inline-flex;
+      vertical-align: middle;
+    }
+
+    a {
+      color: $title-content-top;
+      font-family: $font-body;
+      font-size: 1rem;
+      letter-spacing: 0;
+      line-height: 1.625rem;
+      font-weight: 400;
+      display: inline-flex;
+      vertical-align: middle;
+      word-break: break-all;
+      width: calc(100% - 28px);
+      white-space: normal;
+
+      @include medium {
+        width: auto;
+      }
+
+      &:hover {
+        color: $primary;
+        font-weight: 400;
+        text-decoration: none;
+      }
+    }
+
+    &:hover {
+      color: $primary;
+    }
+
+  }
+
+  .filesize {
+    color: $gray-light;
+    font-family: $font-body;
+    font-size: 0.875rem;
+    letter-spacing: 0;
+    line-height: 1.875rem;
+    display: inline-flex;
+    vertical-align: middle;
+    margin-left: 10px;
   }
 
 }

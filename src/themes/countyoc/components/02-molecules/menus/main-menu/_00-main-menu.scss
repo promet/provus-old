@@ -5,64 +5,94 @@
   @include desktop {
     display: block;
 
-    > .main-menu > li {
-      height: 60px;
+    > .main-menu {
+      display: flex;
 
-      > ul {
-        position: fixed;
-        right: 0;
-        left: 0;
-        margin: 0 auto;
-        column-count: 5;
-        column-gap: 60px;
-        column-rule: 1px solid $border-utility;
-        padding: 20px 40px 45px 40px;
-        box-shadow: 0 9px 13px 0 rgba(69, 73, 91, 0.08);
+      > li {
+        height: 60px;
+        vertical-align: top;
 
-        &::before {
-          content: '-';
-          border-top: 1px solid $border-utility;
-          max-width: 1680px;
-          width: 100%;
-          display: block;
-          margin-left: -40px;
-          color: transparent;
-          text-indent: -9999px;
-          margin-top: -10px;
-          position: absolute;
+        svg.ext {
+          display: none;
         }
 
-        &.columns1 {
-          column-count: 1;
-          padding-right: calc(1440px - 280px);
-        }
+        > ul {
+          position: fixed;
+          right: 0;
+          left: 0;
+          margin: 0 auto;
+          column-count: 5;
+          column-gap: 60px;
+          column-rule: 1px solid $border-utility;
+          padding: 20px 40px 20px 40px;
+          box-shadow: 0 9px 13px 0 rgba(69, 73, 91, 0.08);
 
-        &.columns2 {
-          column-count: 2;
-          padding-right: calc(1440px - 560px);
-        }
+          &::before {
+            content: '-';
+            border-top: 1px solid $border-utility;
+            max-width: 1680px;
+            width: 100%;
+            display: block;
+            margin-left: -40px;
+            color: transparent;
+            text-indent: -9999px;
+            margin-top: -10px;
+            position: absolute;
+          }
 
-        &.columns3 {
-          column-count: 3;
-          padding-right: calc(1440px - 840px);
-        }
+          &.columns1 {
+            column-count: 1;
+            left: auto;
+            right: auto;
+            width: 20%;
+            min-width: 250px;
+          }
 
-        &.columns4 {
-          column-count: 4;
-          padding-right: calc(1440px - 1120px);
-        }
+          &.columns2 {
+            column-count: 2;
+            padding-right: calc(100vw - 560px);
+          }
 
-        li {
-          border: 0;
-          -webkit-column-break-inside: avoid; /* Chrome, Safari, Opera */
-          page-break-inside: avoid; /* Firefox */
-          break-inside: avoid; /* IE 10+ */
+          &.columns3 {
+            column-count: 3;
+            padding-right: calc(100vw - 840px);
+          }
+
+          &.columns4 {
+            column-count: 4;
+            padding-right: calc(100vw - 1120px);
+          }
+
+          li {
+            border: 0;
+            -webkit-column-break-inside: avoid; /* Chrome, Safari, Opera */
+            page-break-inside: avoid; /* Firefox */
+            break-inside: avoid; /* IE 10+ */
+          }
         }
       }
     }
 
     .main-menu--sub-2 {
       display: block;
+    }
+  }
+
+
+
+  @include xl {
+    > .main-menu > li > ul {
+      &.columns2 {
+        padding-right: calc(1440px - 560px);
+      }
+
+      &.columns3 {
+        padding-right: calc(1440px - 840px);
+      }
+
+      &.columns4 {
+        padding-right: calc(1440px - 1120px);
+      }
     }
   }
 
@@ -78,6 +108,8 @@
     margin: 0 auto;
     padding: 16px 15px;
     z-index: 999;
+    height:110vh;
+    min-height:110vh;
 
     .main-menu {
       border-bottom: 0;
@@ -106,11 +138,16 @@
         li.open {
           > a.main-menu__link--with-sub {
             color: $menu-hamburguer-item;
-            background-repeat: no-repeat;
-            background-position: left center;
-            background-size: 7px 10px;
-            background-image: url("/images/icons/ico-back-menu-mobile.png");
-            padding-left: 22px;
+
+            &::before {
+              @include material-icon;
+
+              content: '\e314';
+              font-size: 20px;
+              vertical-align: text-top;
+              margin-top: -1px;
+              color: $menu-hamburguer-item;
+            }
           }
 
           ul.main-menu--sub-open {
@@ -150,11 +187,16 @@
       text-decoration: none;
       font-weight: 600;
       color: $menu-hamburguer-item;
-      background-repeat: no-repeat;
-      background-position: left center;
-      background-size: 7px 10px;
-      background-image: url("/images/icons/ico-back-menu-mobile.png");
-      padding-left: 22px;
+
+      &::before {
+        @include material-icon;
+
+        content: '\e314';
+        font-size: 20px;
+        vertical-align: text-top;
+        margin-top: -1px;
+        color: $menu-hamburguer-item;
+      }
     }
 
     @include desktop {
@@ -225,7 +267,7 @@
   width: 100%;
   max-width: 1680px;
   border-top: 0;
-  margin-top: 0 !important;
+  margin-top: 0;
 
   @include desktop {
     display: none;

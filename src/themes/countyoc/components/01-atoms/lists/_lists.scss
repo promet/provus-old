@@ -10,13 +10,22 @@ ol {
 ul.ul,
 .main-content .node ul,
 .field-text-with-summary ul,
-.block-text ul {
+.block-text ul,
+.cke_editable ul {
   &:not(.contextual-links) {
     list-style: none;
 
-    li::before {
-      content: "•";
-      padding-right: 5px;
+    li {
+      padding-left: 17px;
+      position: relative;
+
+      &::before {
+        content: "•";
+        padding-right: 5px;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
     }
   }
 }
@@ -24,19 +33,27 @@ ul.ul,
 ol.ol,
 .main-content .node ol,
 .field-text-with-summary ol,
-.block-text ol {
+.block-text ol,
+.cke_editable ol {
   &:not(.contextual-links) {
     list-style: none;
     counter-reset: section;
     list-style-type: none;
 
-    li::before {
-      counter-increment: section;
-      content: counters(section, ".") " ";
-      display: inline-block;
-      text-align: right;
-      direction: rtl;
-      padding-right: 5px;
+    li {
+      padding-left: 27px;
+      position: relative;
+
+      &::before {
+        counter-increment: section;
+        content: counters(section, ".") ".";
+        display: inline-block;
+        text-align: right;
+        padding-right: 5px;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
     }
   }
 }

@@ -1,0 +1,31 @@
+{% set search_form_base_class = search_input_base_class|default('search-page-form') %}
+{% set search_input_icon = search_input_icon|default(true) %}
+
+{% set label = label|default('Search') %}
+{% set action = action|default('/search') %}
+{% set value = value|default('') %}
+{% set query = query|default('keys') %}
+
+<form class="{{ search_form_base_class}}" action="{{ url }}" method="get" accept-charset="UTF-8">
+  <div class="form-type-textfield">
+    {% if search_input_icon %}
+      <span class="material-icons" aria-hidden="true">search</span>
+    {% endif %}
+    <input title="{{ label }}" aria-label="{{ label }}" value="{{ value }}" class="form-search long form-text{%if search_input_icon %} icon{% endif %}" placeholder="{{ placeholder }}" type="search" id="edit-banner-keys" name="{{ query }}" size="15" maxlength="128" data-toggle="tooltip" data-original-title="{{ placeholder }}">
+    {{ form_actions }}
+  </div>
+  {% if params %}
+    {% for number, key in params %}
+      <input type="hidden" name="f[{{number}}]" value="{{ key }}" />
+    {% endfor %}
+  {% endif %}
+  <div class="{{ search_form_base_class}}__inner">
+    <div class="form-item">
+      {{ header }}
+    </div>
+    <div class="{{ search_form_base_class}}__sorts">
+      {{ sort_by }}
+      {{ sort_order }}
+    </div>
+  </div>
+</form>

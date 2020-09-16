@@ -13,3 +13,9 @@ $color-link--hover: $gray-light;
 .link {
   @include link;
 }
+
+// External links adjustment for the external icon.
+svg.ext {
+  vertical-align: baseline;
+  margin-left: 3px;
+}

@@ -5,6 +5,21 @@
       const breakpointLarge = 960;
       const marginBig = 160;
       const slider = $('.carousel-3-items .lightslider').once().lightSlider({
+        onSliderLoad: function maxHeightFunc(el) {
+          let maxHeight = 0;
+          const container = $(el);
+          const children = container.children();
+          children.each(function getMaxHeightFunc() {
+            const childHeight = $(this).height();
+            if (childHeight > maxHeight) {
+              maxHeight = childHeight;
+            }
+          });
+          container.height(maxHeight);
+          children.each(function getMaxHeightFunc() {
+            $(this).height(maxHeight);
+          });
+        },
         item: 3,
         loop: false,
         controls: false,
@@ -13,6 +28,7 @@
         enableDrag: false,
         easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
         speed: 600,
+        keyPress: true,
         responsive: [
           {
             breakpoint: breakpointLarge + marginBig,

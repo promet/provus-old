@@ -46,7 +46,7 @@
 <div {{ bem(card__base_class, card__modifiers, card__blockname, card__extra_classes) }}>
 
   {# Icon #}
-  <i class="material-icons md-48">{{ card__icon }}</i>
+  <span class="material-icons md-48" aria-hidden="true">{{ card__icon }}</span>
 
   {# Content #}
   <div {{ bem('content', card__content__modifiers, card__base_class) }}>

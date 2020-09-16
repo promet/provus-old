@@ -6,7 +6,9 @@
     <div class="content-top-wrapper">
       <div class="content-left">
         {% include "@molecules/info/date-time.twig" %}
-        {% include "@molecules/info/location.twig" %}
+        {% if card__body__location %}
+          {% include "@molecules/info/location.twig" %}
+        {% endif %}
         {% if filelink__on %}
           {% include "@molecules/info/filelink.twig" %}
         {% endif %}

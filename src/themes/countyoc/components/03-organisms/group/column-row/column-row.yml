@@ -10,7 +10,7 @@ content:
     card__image__output_image_tag: true
     card__heading: 'California’s Positive Outliers'
     card__date: 'Saturday, February 19, 2020'
-    card__body: 'Citizen Hotel, Metropolitan Terrace 926 J Street, Southport, CA 95814'
+    card__body: 'Citizen Hotel, Metropolitan Terrace 926 J Street, Anaheim, CA 95814'
     card__link__text: 'Read more'
     card__link__url: '#'
   -
@@ -20,7 +20,7 @@ content:
     card__image__output_image_tag: true
     card__heading: 'California’s Positive Outliers: Promising District Approaches for Achieving Educational Equity'
     card__date: 'Saturday, February 19, 2020'
-    card__body: 'Citizen Hotel, Metropolitan Terrace 926 J Street, Southport, CA 95814'
+    card__body: 'Citizen Hotel, Metropolitan Terrace 926 J Street, Anaheim, CA 95814'
     card__link__text: 'Read more'
     card__link__url: '#'
   -
@@ -30,6 +30,6 @@ content:
     card__image__output_image_tag: true
     card__heading: 'California’s Positive Outliers: Promising District Approaches'
     card__date: 'Saturday, February 19, 2020'
-    card__body: 'Citizen Hotel, Metropolitan Terrace 926 J Street, Southport, CA 95814'
+    card__body: 'Citizen Hotel, Metropolitan Terrace 926 J Street, Anaheim, CA 95814'
     card__link__text: 'Read more'
     card__link__url: '#'

@@ -11,7 +11,7 @@
     </div>
     <div {{ bem('navigation_menu', [], footer__base_class) }}>
       {% block footer__navigation_menu %}
-        <h2 class="{{navigation.class}}">{{navigation.label}}</h2>
+        <h2 tabindex="0">{{navigation.label}}</h2>
         {% include "@molecules/menus/inline/inline-menu.twig" with
           {
             inline_menu_items: navigation.inline_menu_items
@@ -21,17 +21,13 @@
     </div>
     <div {{ bem('quick_links_menu', [], footer__base_class) }}>
       {% block footer__quick_links_menu %}
-        <h2 class="{{quicklinks.class}}">{{quicklinks.label}}</h2>
-        {% include "@molecules/menus/inline/inline-menu.twig" with
-          {
-            inline_menu_items: quicklinks.inline_menu_items
-          }
-        %}
+        <h2 tabindex="0">Quick Links</h2>
+        {% include "@molecules/menus/quick-links-menu/quick-links-menu.twig" %}
       {% endblock %}
     </div>
     <div {{ bem('resources_menu', [], footer__base_class) }}>
       {% block footer__resources_menu %}
-        <h2 class="{{resources.class}}">{{resources.label}}</h2>
+        <h2 tabindex="0">{{resources.label}}</h2>
         {% include "@molecules/menus/inline/inline-menu.twig" with
           {
             inline_menu_items: resources.inline_menu_items
@@ -45,4 +41,5 @@
       {% endblock %}
     </div>
   </div>
+  {% include "@molecules/browser-popup/browser-popup.twig" %}
 </footer>

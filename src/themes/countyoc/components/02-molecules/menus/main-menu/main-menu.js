@@ -79,8 +79,8 @@
       $('#main-nav > .main-menu > .main-menu__item--with-sub > .main-menu__link--with-sub', context).click((e) => {
         if ($('#main-nav').hasClass('sub-2-open')) {
           e.preventDefault();
-          const menuItem = $('.main-menu--sub-1.main-menu--sub-open .main-menu__link--sub-1')[0];
-          const subMenu = menuItem.nextElementSibling.nextElementSibling;
+          const menuItem = $('.main-menu--sub-1.main-menu--sub-open .main-menu__item--sub-1.open .expand-sub--open')[0];
+          const subMenu = menuItem.nextElementSibling;
 
           menuItem.classList.remove('expand-sub--open');
           subMenu.classList.remove('main-menu--sub-open');
@@ -90,18 +90,33 @@
         }
       });
       const fixedMenu = () => {
-        const menu1stLevel = $('.main-nav > .main-menu > li.main-menu__item--with-sub > ul');
-        if ($(window).width() > 1024) {
-          const menuBottom = $(menu).offset().top + $(menu).outerHeight(true);
-          menu1stLevel.css({ top: menuBottom - $(window).scrollTop() });
-        } else {
-          menu1stLevel.css({ top: '' });
-        }
       };
 
       $(window).resize(fixedMenu);
       $(window).scroll(fixedMenu);
       $('.main-nav').mouseenter(fixedMenu);
+
+      let hoverTimeout;
+      $('.main-menu__item', context)
+        .mouseleave((e) => {
+          e.currentTarget.classList.remove('hover-menu');
+          clearTimeout(hoverTimeout);
+        })
+        .mouseenter((e) => {
+          hoverTimeout = setTimeout(() => e.currentTarget.classList.add('hover-menu'), 400);
+        });
+      $('.main-menu > .main-menu__item > .main-menu__link', context)
+        .focus((e) => {
+          e.currentTarget.parentNode.classList.add('hover-menu');
+        });
+      // The elements before and after the main-menu nav items.
+      $('.logo-link, .header__search a', context)
+        .focus(() => {
+          const hoveredItems = document.querySelectorAll('.hover-menu');
+          for (let i = 0; i < hoveredItems.length; i += 1) {
+            hoveredItems[i].classList.remove('hover-menu');
+          }
+        });
     },
   };
 })(jQuery);

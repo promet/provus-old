@@ -14,11 +14,25 @@
 #}
 {% embed "@organisms/site/site-header/site-header.twig" %}
   {% block header__navigation %}
-    {% embed "@organisms/navigation/navigation.twig" %}
-      {% block header__logo_top %}
-      {% endblock %}
+    {% embed "@organisms/navigation/navigation.twig" with {
+      logo_link__url: url('<front>'),
+      header__logo_alt: site_name ~ ' Logo -- Home',
+      header__logo_src: relative_logo_url
+    } %}
       {% block header__menu %}
         {{ elements.mainnavigation_2 }}
+      {% endblock %}
+      {% block header__search %}
+        {% if site_google_search %}
+          {{ elements.searchform }}
+        {% else %}
+          {% include "@molecules/form/search/search-bar.twig" with {
+            search_bar__action: search_action,
+            search_bar__keys: search_keys,
+            search_bar__placeholder_text: search_placeholder,
+            search_bar__options: search_options,
+          } %}
+        {% endif %}
       {% endblock %}
     {% endembed %}
   {% endblock %}

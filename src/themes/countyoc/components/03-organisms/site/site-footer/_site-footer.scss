@@ -15,6 +15,12 @@
       justify-content: space-between;
       text-align: left;
     }
+
+    a, h2 {
+      &:focus {
+        outline: 5px auto #7eb8ff;
+      }
+    }
   }
 
   h2 {

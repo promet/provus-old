@@ -12,6 +12,15 @@
 {% endif %}
 
 <div {{ bem('layout-container', layout_modifiers) }}>
+  {% block page_preheader %}
+    {#
+      Keyboard navigation/accessibility link to main content section in
+      page.html.twig.
+    #}
+    <a href="#main-content" class="visually-hidden focusable skip-link">
+      {{ 'Skip to main content'|t }}
+    </a>
+  {% endblock %}
   {% block page_header %}
     {% include "@organisms/site/site-header/site-header.twig" %}
   {% endblock %}
@@ -26,7 +35,7 @@
         {% block page_sidebar %}{% endblock %}
       </aside>
     {% endif %}
-    <main role="main" {{ bem(main_content_base_class, main_content_modifiers, main_content_blockname) }}>
+    <main {{ bem(main_content_base_class, main_content_modifiers, main_content_blockname) }}>
       {% block page_content %}{% endblock %}
     </main>
   </div>

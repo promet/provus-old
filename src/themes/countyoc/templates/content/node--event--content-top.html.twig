@@ -71,17 +71,22 @@
  */
 #}
 
+{# Prepare links for "add to calendar". #}
+{% set links = calendar_links(label|render|striptags , event_start_date, event_end_date, 0, content.body|render|striptags|trim, content.field_location|render|striptags|trim) %}
+
 {% embed "@organisms/content/content-top/content-top-event.twig" with {
   title: label,
   card__heading__date__time: 'Date and time',
-  card__body__date__time: content.field_start_date,
+  card__body__date__day: event_date_day_formatted,
+  card__body__date__time: event_date_time_formatted,
   card__link__text__date__time: 'Add to Calendar',
+  card__link__calendar__items: links,
   card__link__url__date__time: '#',
   icon__date__time: 'calendar_today',
   card__heading__location: 'Location',
-  card__body__location: content.field_location,
+  card__body__location: (multiple_locations == true) ? 'Multiple Locations'|trans : content.field_location|render,
   card__link__text__location: 'View Map',
-  card__link__url__location: '#',
+  card__link__url__location: location_map_url,
   icon__location: 'location_on',
   filelink__link__text: 'Event Files',
   filelink__link__url: '#block-views-block-related-files-block-1',

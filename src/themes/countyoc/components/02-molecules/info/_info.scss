@@ -54,6 +54,7 @@
   }
 
   &__link {
+    display: block;
     text-decoration: underline;
     color: $primary;
     font-family: $font-body;
@@ -73,10 +74,6 @@
   width: 100%;
   max-width: 263px;
   margin-bottom: 15px;
-
-  @include medium {
-    margin-bottom: 5px;
-  }
 
   &__content {
     display: flex;
@@ -107,17 +104,16 @@
     letter-spacing: 0;
     line-height: 1.0625rem;
     margin-bottom: 5px;
+  }
 
-    span {
-      text-decoration: underline;
-      color: $primary;
-      font-family: $font-body;
-      font-size: 0.875rem;
-      letter-spacing: 0;
-      line-height: 1.3125rem;
-      font-weight: normal;
-      margin-left: 15px;
-    }
+  &__body {
+    text-decoration: underline;
+    color: $primary;
+    font-family: $font-body;
+    font-size: 0.875rem;
+    letter-spacing: 0;
+    line-height: 1.3125rem;
+    font-weight: normal;
   }
 }
 
@@ -160,24 +156,23 @@
     letter-spacing: 0;
     line-height: 1.0625rem;
     margin-bottom: 5px;
+  }
 
-    span {
-      text-decoration: underline;
-      color: $primary;
-      font-family: $font-body;
-      font-size: 0.875rem;
-      letter-spacing: 0;
-      line-height: 1.3125rem;
-      font-weight: normal;
-      margin-left: 15px;
-    }
+  &__body {
+    text-decoration: underline;
+    color: $primary;
+    font-family: $font-body;
+    font-size: 0.875rem;
+    letter-spacing: 0;
+    line-height: 1.3125rem;
+    font-weight: normal;
+    word-break: break-all;
   }
 }
 
 /* Location Hours */
 .info-location-hours {
   width: 100%;
-  max-width: 260px;
   margin-bottom: 15px;
 
     @include medium {
@@ -224,7 +219,7 @@
     line-height: 1.5rem;
 
     .office-hours__item {
-      margin: 0;
+      margin: 0 0 7px 0;
 
       &-label {
         font-weight: normal;
@@ -281,7 +276,6 @@
     font-size: 0.875rem;
     letter-spacing: 0;
     line-height: 1.5rem;
-    max-width: 160px;
 
     p {
       margin: 0;

@@ -25,6 +25,6 @@
 
 <div {{ bem(card__base_class, card__modifiers, card__blockname, card__extra_classes) }}>
   <div {{ bem('wrapper', card__content__modifiers, card__base_class) }}>
-    <i class="material-icons">error</i> <span><strong>{{ title }}</strong> {{ description }}</span>
+    <span class="material-icons" aria-hidden="true">error</span> <span><span class="title">{{ title }}</span><span class="description">{{ description }}</span></span>
   </div>
 </div>

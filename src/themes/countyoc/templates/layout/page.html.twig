@@ -49,8 +49,23 @@
 {% endif %}
 
 {% extends "@templates/_default.twig" %}
+
+  {% block page_preheader %}
+    <div class="pre-header">
+      <aside aria-label="pre-header" class="pre-header__inner">
+        {#
+          Keyboard navigation/accessibility link to main content section in
+          page.html.twig.
+        #}
+        <a href="#main-content" class="visually-hidden focusable skip-link">
+          {{ 'Skip to main content'|t }}
+        </a>
+        {{ page.preheader }}
+      </aside>
+    </div>
+  {% endblock %}
+
   {% block page_header %}
-    {% include "@molecules/browser-popup/browser-popup.twig" %}
     {% if page.header %}
       {{ page.header }}
     {% endif %}
@@ -58,7 +73,11 @@
 
   {% block page_precontent %}
     {% if page.precontent %}
-      {{ page.precontent }}
+      <div class="pre-content">
+        <aside aria-label="pre-content" class="pre-content__inner">
+          {{ page.precontent }}
+        </aside>
+      </div>
     {% endif %}
   {% endblock %}
 
@@ -72,12 +91,21 @@
 
   {% block page_postcontent %}
     {% if page.postcontent %}
-      {{ page.postcontent }}
+      <div class="post-content">
+        <aside aria-label="post-content" class="post-content__inner">
+          {{ page.postcontent }}
+        </aside>
+      </div>
     {% endif %}
   {% endblock %}
 
   {% block page_footer %}
-    {% if page.footer %}
-      {{ page.footer }}
-    {% endif %}
+    {% embed "@organisms/site/site-footer/site-footer.twig" %}
+      {% block footer__navigation_menu %}
+        {{ page.footer.footernavigation }}
+      {% endblock %}
+      {% block footer__resources_menu %}
+        {{ page.footer.footerresources }}
+      {% endblock %}
+    {% endembed %}
   {% endblock %}

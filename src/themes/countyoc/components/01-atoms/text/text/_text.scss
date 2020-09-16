@@ -23,7 +23,8 @@ p,
 }
 
 a {
-  color: $primary;
+  color: $ada-blue;
+  font-weight: bold;
 
   &:hover {
     font-weight: bold;
@@ -37,12 +38,17 @@ blockquote,
   border-left: solid 6px $color-border;
   margin: 0;
   padding-left: 25px;
+  padding-right: 25px;
   color: $gray-dark;
   font-size: 2rem;
   font-weight: 300;
   letter-spacing: 0.7px;
   line-height: 3.25rem;
   text-shadow: 0 0 20px 0 $white;
+
+  @include medium {
+    padding-right: 0;
+  }
 }
 
 .hr {
@@ -67,15 +73,33 @@ blockquote,
   }
 }
 
-.field-publish-date {
-  margin-bottom: 2rem;
-  color: $gray-light;
-  font-size: .875rem;
+.block-text {
+  padding-top: $space-triple;
+  padding-bottom: $space-triple;
+  padding-left: 0;
+  padding-right: 0;
+
+  > h2.title {
+    text-align: center;
+    color: #21303e;
+    font-family: $font-heading;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    line-height: 2.3125rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+
+    @include medium {
+      font-size: 1.875rem;
+      margin-bottom: 50px;
+    }
+  }
 }
 
-.article-pre-title {
-  margin-bottom: 1rem;
-  color: $red;
-  text-transform: uppercase;
-  font-weight: bold;
+.block-columns,
+.block-tabs {
+  .block-text {
+    padding: 0;
+  }
 }

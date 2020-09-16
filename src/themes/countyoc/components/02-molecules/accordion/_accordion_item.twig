@@ -1,15 +1,16 @@
+
 <div class="card">
-  <div class="card-header" id="heading{{ key }}">
+  <div class="card-header" id="heading{{ id }}-{{ key }}">
     <h2 class="mb-0">
-      <button class="btn btn-link{% if key != 0 %} collapsed{% endif %}" type="button" data-toggle="collapse" data-target="#collapse{{ key }}" aria-expanded="{% if key == 0 %}true{% else %}false{% endif %}" aria-controls="collapse{{ key }}">
-        <span class="material-icons add">add</span>
-        <span class="material-icons remove">remove</span>
+      <button class="btn btn-link{% if ((openfirst == true) and (key != 0)) or (openfirst == false) %} collapsed{% endif %}" type="button" data-toggle="collapse" data-target="#collapse{{ id }}-{{ key }}" aria-expanded="{% if (openfirst == true) and (key == 0) %}true{% else %}false{% endif %}" aria-controls="collapse{{ id }}-{{ key }}">
+        <span class="material-icons add" aria-hidden="true">add</span>
+        <span class="material-icons remove" aria-hidden="true">remove</span>
         <span>{{ item_heading }}</span>
       </button>
     </h2>
   </div>
 
-  <div id="collapse{{ key }}" class="collapse{% if key == 0 %} show{% endif %}" aria-labelledby="heading{{ key }}" data-parent="#accordionExample">
+  <div id="collapse{{ id }}-{{ key }}" class="collapse{% if (openfirst == true) and (key == 0) %} show{% endif %}" aria-labelledby="heading{{ id }}-{{ key }}" data-parent="#accordion{{ id }}">
     <div class="card-body">
       {{ item_body }}
     </div>

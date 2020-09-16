@@ -28,6 +28,9 @@
 
 <div {{ bem('block') }}>
   {{ title_prefix }}
+  {% if label and not ischild %}
+    <h2{{ title_attributes.addClass('title') }}>{{ label }}</h2>
+  {% endif %}
   {{ title_suffix }}
   {% block content %}
     {{ content }}

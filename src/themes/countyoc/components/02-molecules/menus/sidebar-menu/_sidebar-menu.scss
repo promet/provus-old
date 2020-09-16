@@ -1,19 +1,53 @@
-.sidebar-menu {
+.navbar.mobile {
+  display: none;
+}
+
+@media (max-width: $large) {
+  .navbar.mobile {
+    display: block;
+    width: 100%;
+    padding: 0;
+
+    .dropdown .navbar-collapse.show {
+      padding: .5rem 1rem;
+    }
+  }
+  .sidebar-menu {
+    display: none;
+  }
+  .navbar button.search-mobile, .navbar button.menu-sidebar-mobile {
+    background-color: #F5FAFE;
+    border: 0;
+    color: black;
+    text-transform: uppercase;
+    font-family: $font-heading;
+    font-weight: 600;
+    font-size: .75rem;
+    line-height: 15px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.sidebar-menu, .sidebar-menu-mobile {
   @include list-reset;
 
   width: 100%;
   max-width: 100%;
 }
 
-.sidebar-menu__item {
+.sidebar-menu__item, .sidebar-menu-mobile__item {
   margin: 0;
   border-top: 1px solid $sidebar-border;
   
-  &.sidebar-menu__item--with-sub ul {
+  &.sidebar-menu__item--with-sub ul, &.sidebar-menu-mobile__item--with-sub ul {
     display: none;
   }
 
-  &.sidebar-menu__item--active {
+  &.sidebar-menu__item--active, &.sidebar-menu-mobile__item--active  {
     ul {
       display: block;
       padding-bottom: 15px;
@@ -25,6 +59,7 @@
           color: $black;
           font-family: $font-body;
           font-size: 0.9375rem;
+          font-weight: normal;
           letter-spacing: 0;
           line-height: 1.0625rem;
           text-decoration: none;
@@ -42,10 +77,11 @@
   }
 }
 
-.sidebar-menu__link {
+.sidebar-menu__link, .sidebar-menu-mobile__link  {
   color: $sidebar-menu-item;
   font-family: $font-body;
   font-size: 1rem;
+  font-weight: normal;
   letter-spacing: 0;
   line-height: 1.1875rem;
   text-decoration: none;
@@ -58,7 +94,7 @@
     font-weight: normal;
   }
 
-  &.sidebar-menu__link--active {
+  &.sidebar-menu__link--active, &.sidebar-menu-mobile__link--active {
     color: $primary;
     text-decoration: none;
     font-weight: bold;

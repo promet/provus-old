@@ -1,0 +1,10 @@
+post:
+  title: 'Test'
+  iframe: '<iframe width="560" height="315" src="https://www.youtube.com/embed/fTkMYqLZE4U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+  date: 'Aug 8, 2020 1:02 pm'
+  views: 230
+  channel:
+    id: 'UCeY0bbntWzzVIaj2z3QigXg'
+    name: 'NBC'
+    subscribers: '3.68M'
+    image: 'https://yt3.ggpht.com/a/AATXAJzjPejETKc2lrL43-9gFFWRL9WKwEmOIvtbWyait1c=s288-c-k-c0xffffffff-no-rj-mo'

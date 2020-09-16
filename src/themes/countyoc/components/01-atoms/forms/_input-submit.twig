@@ -10,4 +10,10 @@
  * @see template_preprocess_input()
  */
 #}
-<input{{ attributes.addClass('form-item__submit', 'button--secondary') }} />{{ children }}
+{%
+  set classes = [
+  'form-item__submit',
+  button_type,
+]
+%}
+<input{{ attributes.addClass(classes) }} />{{ children }}

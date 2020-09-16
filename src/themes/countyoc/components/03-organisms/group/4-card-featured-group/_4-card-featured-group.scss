@@ -55,6 +55,16 @@
         flex: 3 47%;
       }
 
+      .field-media-image {
+        .image {
+          width: 100%;
+
+          @include medium {
+            width: auto;
+          }
+        }
+      }
+
       .card-default__body {
         margin-bottom: 0;
 
@@ -90,9 +100,11 @@
 
     .content-right {
       flex: 3 100%;
+      padding-bottom: 0;
 
       @include medium {
         flex: 3 47%;
+        padding-bottom: 50px;
       }
 
       .card-mini-item {

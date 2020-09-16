@@ -44,7 +44,7 @@
 {% set card__base_class = 'number-group-item' %}
 
 <div {{ bem(card__base_class, card__modifiers, card__blockname, card__extra_classes) }}>
-  <i class="material-icons md-48">{{ icon }}</i>
+  <span class="material-icons md-48" aria-hidden="true">{{ icon }}</span>
   <h2>{{ heading }}</h2>
   <p>{{ body }}</p>
 </div>

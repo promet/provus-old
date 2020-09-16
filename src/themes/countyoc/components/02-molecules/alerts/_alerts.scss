@@ -1,15 +1,16 @@
 .alerts {
   display: block;
-  margin: 0;
+  margin: 0 0 2px 0;
   padding: 9px 17px;
   background-color: $red;
 
   &__wrapper {
     display: flex;
     flex-wrap: nowrap;
-    align-items: center;
+    align-items: flex-start;
 
-    i {
+    .material-icons {
+      margin-top: 8px;
       margin-right: 14px;
       color: $white;
     }
@@ -18,9 +19,45 @@
       color: $white;
       font-size: 0.875rem;
 
-      strong {
+      .title {
+        font-weight: bold;
         margin-right: 5px;
       }
+
+      .description {
+        p, div {
+          display: inline;
+          margin: 0;
+        }
+
+        a {
+          color: $white;
+        }
+      }
     }
+  }
+
+  &--template {
+    display: none;
+  }
+}
+
+.location-alerts {
+  background: $location-alert-bg;
+  border-left: 4px solid $location-alert-border;
+  box-shadow: 0 5px 5px -5px hsla(0, 0%, 0%, 0.3);
+  width: 100%;
+  overflow: hidden;
+  margin: 15px 0;
+
+  .icon__location-alerts {
+    float: left;
+    margin: 10px;
+  }
+  
+  .message__location-alerts {
+    margin: 10px;
+    float: left;
+    width: 90%;
   }
 }

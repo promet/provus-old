@@ -41,35 +41,35 @@
   dom_id ? 'js-view-dom-id-' ~ dom_id
 ]
 %}
-<div{{ attributes.addClass(classes) }}>
-  {{ title }}
+<div class="upcoming-events-view-wrapper">
+  <div{{ attributes.addClass(classes) }}>
+    {{ title }}
 
-  {% if header %}
-    <header>
-      {{ header }}
-    </header>
-  {% endif %}
+    {% if header %}
+      <header>
+        {{ header }}
+      </header>
+    {% endif %}
 
-  {{ exposed }}
-  {{ attachment_before }}
+    {{ exposed }}
+    {{ attachment_before }}
 
-  {% if rows -%}
-    <div class="column-row-wrapper">
+    {% if rows -%}
       {{ rows }}
-    </div>
-  {% elseif empty -%}
-    {{ empty }}
-  {% endif %}
-  {{ pager }}
+    {% elseif empty -%}
+      {{ empty }}
+    {% endif %}
+    {{ pager }}
 
-  {{ attachment_after }}
-  {{ more }}
+    {{ attachment_after }}
+    {{ more }}
+
+    {{ feed_icons }}
+  </div>
 
   {% if footer %}
     <footer>
       {{ footer }}
     </footer>
   {% endif %}
-
-  {{ feed_icons }}
 </div>

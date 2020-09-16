@@ -16,23 +16,11 @@
   "aria-label": 'button',
 } %}
 
-{% if button_url %}
-  <a
-    {{ bem(link_base_class, button_url_modifiers, button_url_blockname) }}
-    {% for attribute, value in button_url_attributes %}
-      {{ attribute }}="{{ value }}"
-    {% endfor %}
-    href="{{ button_url }}" aria-label="{{ button_content }}"
-  >
-{% endif %}
 <button {{ add_attributes(additional_attributes) }}>
   <span>
     {% block button_content %}
       {{ button_content }}
     {% endblock %}
   </span>
-  <i class = "material-icons">search</i>
+  <span class="material-icons" aria-hidden="true">search</span>
 </button>
-{% if button_url %}
-  </a>
-{% endif %}

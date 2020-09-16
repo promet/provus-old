@@ -1,10 +1,5 @@
 import React from 'react';
 import { useEffect } from '@storybook/client-api';
-import {
-  withKnobs,
-  text,
-  boolean,
-} from '@storybook/addon-knobs';
 
 import './banner';
 
@@ -15,15 +10,27 @@ import insideBannerData from './inside-banner.yml';
 
 export default {
   title: 'Organisms/Banner',
-  decorators: [withKnobs],
 };
 
 export const banner = () => {
   useEffect(() => Drupal.attachBehaviors(), []);
-  const search = boolean('Search bar', false);
-  const heading = text('Header', 'Welcome to Southport County');
-  bannerData.heading = heading;
-  bannerData.settings.search = search;
+  bannerData.settings.search = false;
+  return <div dangerouslySetInnerHTML={{ __html: bannerStructure(bannerData) }} />;
+};
+
+export const bannerWithSearch = () => {
+  useEffect(() => Drupal.attachBehaviors(), []);
+  bannerData.settings.search = true;
+  return <div dangerouslySetInnerHTML={{ __html: bannerStructure(bannerData) }} />;
+};
+
+export const bannerWithPic = () => {
+  useEffect(() => Drupal.attachBehaviors(), []);
+  bannerData.settings.search = false;
+  bannerData.settings.picture = true;
+  bannerData.logo_src = 'images/OOCR_Logo.png';
+  bannerData.heading = '';
+  bannerData.body = '';
   return <div dangerouslySetInnerHTML={{ __html: bannerStructure(bannerData) }} />;
 };
 

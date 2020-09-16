@@ -1,0 +1,30 @@
+{% embed "@organisms/group/column-row/column-row.twig" %}
+
+  {% block content %}
+    {% for item in items %}
+      <div class="column-row-item feed-item">
+        {% if type == 'youtube' %}
+          {% include "@molecules/feed-item/feed-item-youtube.twig" with {
+            post: item
+          }%}
+        {% else %}
+          {% if for_design %}
+            {% if type == 'twitter' %}
+              {% include "@molecules/feed-item/feed-item-twitter.twig" with {
+                post: item
+              }%}
+            {% endif %}
+            {% if type == 'facebook' %}
+              {% include "@molecules/feed-item/feed-item-facebook.twig" with {
+                post: item
+              }%}
+            {% endif %}
+          {% else %}
+            {{ item }}
+          {% endif %}
+        {% endif %}
+      </div>
+    {% endfor %}
+  {% endblock %}
+
+{% endembed %}

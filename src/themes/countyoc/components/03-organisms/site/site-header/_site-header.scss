@@ -1,12 +1,20 @@
+.pre-header {
+  position: relative;
+
+  ul {
+    margin: 0;
+  }
+}
+
 .header {
   background: $white;
-  z-index: 99;
+  z-index: 100;
   position: relative;
   width: 100%;
   height: 107px;
 
   @include desktop {
-    height: 160px;
+    height: 144px;
   }
 
   &__pre-inner {
@@ -56,17 +64,5 @@
     .header__pre-inner {
       transform: none;
     }
-  }
-}
-
-.goog-te-gadget {
-  padding-top: 40px;
-}
-
-.toolbar-fixed {
-  .header {
-    &__pre-inner {
-      top: 79px;
-    } 
   }
 }

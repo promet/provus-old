@@ -1,5 +1,5 @@
 @mixin button() {
-  background: $gray-dark;
+  background: linear-gradient(180deg, #00aadf 0%, #094894 100%);
   border: none;
   cursor: pointer;
   padding: 15px 25px;
@@ -18,7 +18,7 @@
   outline: 0;
 
   &:hover {
-    background: $gray-darker;
+    background: $primary-darker;
     text-decoration: none;
   }
 
@@ -27,7 +27,9 @@
   }
 
   &:focus {
-    border: 1px solid #166dea;
+    border: 2px solid $white;
+    box-shadow: 0 0 8px $ada-blue;
+    outline: 0;
   }
 
   &.disabled {
@@ -40,9 +42,37 @@
   }
 }
 
+@mixin button-primary() {
+  background: linear-gradient(180deg, #00aadf 0%, #094894 100%);
+  border: none;
+  color: $white;
+
+  &:hover {
+    background: $primary-darker;
+    text-decoration: none;
+  }
+
+  &:active {
+    background: #143b6a;
+  }
+
+  &:focus {
+    border: 2px solid $white;
+    box-shadow: 0 0 8px $ada-blue;
+    background: $primary-darker;
+    outline: 0;
+    color: $white;
+  }
+
+  &.disabled {
+    background: #e5e5e5;
+    color: $gray-light;
+  }
+}
+
 @mixin button-secondary() {
   background: transparent;
-  border: 2px solid $ada-orange;
+  border: 3px solid $ada-orange;
   color: $ada-orange;
   outline: 0;
 
@@ -59,8 +89,10 @@
 
   &:focus {
     background: $white;
-    border: 2px solid $ada-orange;
     color: $ada-orange;
+    border: 3px solid $ada-orange;
+    box-shadow: 0 0 8px $ada-blue;
+    outline: 0;
   }
 
   &.disabled {
@@ -98,6 +130,7 @@
     background-color: $opaque-half;
     color: $black;
     border: 2px solid $white;
+    box-shadow: 0 0 5px $ada-blue;
   }
 
   &.disabled {
@@ -115,6 +148,10 @@
     @include button-secondary;
   }
 
+  &--primary {
+    @include button-primary;
+  }
+
   &--bg {
     @include button;
     @include button-bg;
@@ -130,26 +167,29 @@
     }
 
     .button-clear {
-      display: flex;
-      flex-wrap: nowrap;
       align-items: center;
       border: 1px solid $border-clear-btn;
       background-color: $white;
       padding: 10px 10px 10px 20px;
+      position: relative;
 
-      span {
+      .text {
         color: $title-info;
         font-family: $font-body;
         font-size: 0.75rem;
         font-weight: 500;
         letter-spacing: 0;
         line-height: 0.9375rem;
-        margin-right: 24px;
+        text-align: center;
+        display: block;
       }
 
-      i {
-      color: $title-info;
-      font-size: 0.9375rem;
+      .material-icons {
+        color: $title-info;
+        font-size: 0.9375rem;
+        position: absolute;
+        right: 10px;
+        top: 10px;
       }
     }
   }

@@ -55,9 +55,9 @@
         {% if card__image__src %}
           {% include "@atoms/images/image/responsive-image.twig" with {
             image_blockname: card__base_class,
-            output_image_tag: card__image__output_image_tag,
-            image_src: card__image__src,
-            image_alt: card__image__alt,
+            output_image_tag: true,
+            image_src: 'images/card.png',
+            image_alt: 'Alt tag',
           } %}
         {% endif %}
       {% endblock %}
@@ -83,12 +83,9 @@
     {% endif %}
     {# Date #}
     {% if card__date %}
-      {% include "@atoms/text/text/01-paragraph.twig" with {
-        paragraph_base_class: card__date__base_class|default('date'),
-        paragraph_modifiers: card__date__modifiers,
-        paragraph_blockname: card__base_class,
-        paragraph_content: card__date,
-      } %}
+      <div {{ bem(card__date__base_class|default('date'), card__date__modifiers, card__base_class) }}>
+        {{ card__date }}
+      </div>
     {% endif %}
     {# Body #}
     {% block card__body %}

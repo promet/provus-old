@@ -5,7 +5,6 @@ import accordionStructure from './accordion.twig';
 
 import accordionData from './accordion.yml';
 
-
 /**
  * Storybook Definition.
  */

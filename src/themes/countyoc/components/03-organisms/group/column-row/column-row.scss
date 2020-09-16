@@ -36,10 +36,12 @@
       flex: auto;
       border: 0;
       margin-right: 0;
+      margin-bottom: $space-double;
 
       @include medium {
         flex: 1 1 0;
         margin-right: $space-onepointfive;
+        margin-bottom: 0;
       }
 
       &:last-child {
