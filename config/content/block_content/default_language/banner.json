@@ -13,7 +13,7 @@
             ],
             "revision_id": [
                 {
-                    "value": 51
+                    "value": 11
                 }
             ],
             "langcode": [
@@ -36,10 +36,10 @@
             ],
             "revision_user": [
                 {
-                    "target_id": 1,
+                    "target_id": 0,
                     "target_type": "user",
-                    "target_uuid": "b7db48a7-0ee6-475e-bd3f-d88e2075bc2e",
-                    "url": "\/user\/1"
+                    "target_uuid": "1136bc22-208d-4966-beb8-9a3dd3662a56",
+                    "url": "\/user\/0"
                 }
             ],
             "revision_log": [],
@@ -89,7 +89,7 @@
                 {
                     "target_id": 19,
                     "target_type": "media",
-                    "target_uuid": "bdd7252e-f980-4955-a6c2-926f9ac91f80",
+                    "target_uuid": "e0fd89fc-89f5-4ebc-bcdd-09c451fd199e",
                     "url": "\/media\/19\/edit"
                 }
             ],
@@ -97,13 +97,13 @@
                 {
                     "target_id": 17,
                     "target_type": "media",
-                    "target_uuid": "5077620d-8c3f-4929-9a91-90f13b1a5362",
+                    "target_uuid": "c02c072c-3afa-489b-8f35-bcea706c8317",
                     "url": "\/media\/17\/edit"
                 },
                 {
                     "target_id": 18,
                     "target_type": "media",
-                    "target_uuid": "679d4e4a-14f4-44a7-843f-2c0e00a36ed5",
+                    "target_uuid": "0add2390-c693-4d15-919b-0675dfe9052c",
                     "url": "\/media\/18\/edit"
                 }
             ],

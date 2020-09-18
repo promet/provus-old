@@ -3,17 +3,17 @@
         {
             "id": [
                 {
-                    "value": 12
+                    "value": 50
                 }
             ],
             "uuid": [
                 {
-                    "value": "525836ad-a1d3-463a-bad2-d7862d67b0cc"
+                    "value": "adc48b72-55e3-4718-b4a9-5512b979f77b"
                 }
             ],
             "revision_id": [
                 {
-                    "value": 12
+                    "value": 50
                 }
             ],
             "langcode": [
@@ -23,22 +23,18 @@
             ],
             "type": [
                 {
-                    "target_id": "media_item",
+                    "target_id": "person_list",
                     "target_type": "block_content_type",
-                    "target_uuid": "71785d18-cdf0-44f1-b757-75982c52058e"
+                    "target_uuid": "1827dbe1-8583-45e7-9c1d-c08ad490dfb2"
                 }
             ],
             "revision_created": [
                 {
-                    "value": "2020-04-14T19:36:45+00:00",
+                    "value": "2020-09-18T18:35:01+00:00",
                     "format": "Y-m-d\\TH:i:sP"
                 }
             ],
-            "revision_user": [
-                {
-                    "target_id": 64253346
-                }
-            ],
+            "revision_user": [],
             "revision_log": [],
             "status": [
                 {
@@ -47,18 +43,18 @@
             ],
             "info": [
                 {
-                    "value": "Media 1845035984"
+                    "value": "Staff"
                 }
             ],
             "changed": [
                 {
-                    "value": "2020-09-18T18:23:44+00:00",
+                    "value": "2020-09-18T18:35:01+00:00",
                     "format": "Y-m-d\\TH:i:sP"
                 }
             ],
             "reusable": [
                 {
-                    "value": true
+                    "value": false
                 }
             ],
             "default_langcode": [
@@ -71,19 +67,12 @@
                     "value": true
                 }
             ],
-            "field_display_media": [
+            "field_glossary": [
                 {
-                    "value": "teaser"
+                    "value": true
                 }
             ],
-            "field_media": [
-                {
-                    "target_id": 13,
-                    "target_type": "media",
-                    "target_uuid": "55bbb7ac-d250-47e0-8760-b8696e89780a",
-                    "url": "\/media\/13\/edit"
-                }
-            ]
+            "field_person_type": []
         }
     ]
 }
