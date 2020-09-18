@@ -1,0 +1,4 @@
+services:
+  county_blocks.youtube_feed:
+    class: Drupal\county_blocks\Services\YoutubeFeed
+    autowire: true

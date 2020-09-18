@@ -6,12 +6,11 @@ dependencies:
     - block_content.type.banner
     - field.field.block_content.banner.field_heading
     - field.field.block_content.banner.field_include_search
-    - field.field.block_content.banner.field_link
     - field.field.block_content.banner.field_logo_image
     - field.field.block_content.banner.field_media_image
+    - field.field.block_content.banner.field_person_picture
     - field.field.block_content.banner.field_subheading
   module:
-    - link
     - media_library
 id: block_content.banner.default
 targetEntityType: block_content
@@ -33,14 +32,6 @@ content:
     third_party_settings: {  }
     type: boolean_checkbox
     region: content
-  field_link:
-    weight: 4
-    settings:
-      placeholder_url: ''
-      placeholder_title: ''
-    third_party_settings: {  }
-    type: link_default
-    region: content
   field_logo_image:
     type: media_library_widget
     weight: 1
@@ -55,6 +46,13 @@ content:
     third_party_settings: {  }
     type: media_library_widget
     region: content
+  field_person_picture:
+    type: media_library_widget
+    weight: 26
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
   field_subheading:
     weight: 3
     settings:
@@ -64,5 +62,6 @@ content:
     type: string_textarea
     region: content
 hidden:
+  field_link: true
   info: true
   langcode: true

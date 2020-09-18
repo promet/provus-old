@@ -7,29 +7,29 @@ dependencies:
     - image.style.square_270
     - image.style.square_540
   theme:
-    - countyoc
+    - provus
 id: square_medium
 label: 'Square Medium'
 image_style_mappings:
   -
-    breakpoint_id: countyoc.desktop
+    breakpoint_id: provus.desktop
     multiplier: 1x
     image_mapping_type: image_style
     image_mapping: square_270
   -
-    breakpoint_id: countyoc.desktop
+    breakpoint_id: provus.desktop
     multiplier: 2x
     image_mapping_type: image_style
     image_mapping: square_540
   -
-    breakpoint_id: countyoc.mobile
+    breakpoint_id: provus.mobile
     multiplier: 1x
     image_mapping_type: image_style
     image_mapping: square_540
   -
-    breakpoint_id: countyoc.mobile
+    breakpoint_id: provus.mobile
     multiplier: 2x
     image_mapping_type: image_style
     image_mapping: square_1080
-breakpoint_group: countyoc
+breakpoint_group: provus
 fallback_image_style: square_270

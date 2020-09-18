@@ -1,0 +1,31 @@
+uuid: fb0a9add-3053-45bc-8b1b-1c1b2e682066
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.county-footer-navigation
+  module:
+    - menu_block
+  theme:
+    - provus
+id: footernavigation
+theme: provus
+region: footer
+weight: 0
+provider: null
+plugin: 'menu_block:county-footer-navigation'
+settings:
+  id: 'menu_block:county-footer-navigation'
+  label: Navigation
+  provider: menu_block
+  label_display: visible
+  follow: false
+  follow_parent: child
+  level: 1
+  depth: 0
+  expand: false
+  parent: 'county-footer-navigation:'
+  suggestion: county_footer_navigation
+  label_type: block
+  label_link: false
+visibility: {  }

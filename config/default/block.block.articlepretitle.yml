@@ -5,9 +5,9 @@ dependencies:
   module:
     - county_blocks
   theme:
-    - countyoc
+    - provus
 id: articlepretitle
-theme: countyoc
+theme: provus
 region: content
 weight: -9
 provider: null

@@ -17,7 +17,7 @@ site=$1
 SITE_DIRECTORY="default"
 DOCROOT_PATH="${PROJECT_ROOT}/${DOCROOT}"
 SRC_PATH="${PROJECT_ROOT}/src"
-THEME_PATH="${SRC_PATH}/themes/countyoc"
+THEME_PATH="${SRC_PATH}/themes/provus"
 SITEDIR_PATH="${DOCROOT_PATH}/sites/${SITE_DIRECTORY}"
 
 #-------------------------- END: Settings --------------------------------

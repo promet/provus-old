@@ -1,7 +1,0 @@
-oc_site.config_settings:
-  path: '/admin/config/oc/settings'
-  defaults:
-    _form: '\Drupal\oc_site\Form\OcSettingsForm'
-    _title: 'OC Site Configuration'
-  requirements:
-    _permission: 'administer site configuration'

@@ -5,6 +5,7 @@ dependencies:
   config:
     - block_content.type.accordion
     - field.field.block_content.accordion.field_accordion_items
+    - field.field.block_content.accordion.field_openfirst
 id: block_content.accordion.default
 targetEntityType: block_content
 bundle: accordion
@@ -20,5 +21,6 @@ content:
     type: entity_reference_entity_view
     region: content
 hidden:
+  field_openfirst: true
   langcode: true
   search_api_excerpt: true

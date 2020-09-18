@@ -5,11 +5,15 @@ dependencies:
   config:
     - core.entity_view_mode.node.text_link
     - field.field.node.person.body
+    - field.field.node.person.field_email
     - field.field.node.person.field_first_name
     - field.field.node.person.field_last_name
     - field.field.node.person.field_location
     - field.field.node.person.field_media_image
-    - field.field.node.person.field_middle_name
+    - field.field.node.person.field_person_type
+    - field.field.node.person.field_phone
+    - field.field.node.person.field_sort_order
+    - field.field.node.person.field_titles
     - node.type.person
   module:
     - layout_builder
@@ -44,11 +48,16 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  field_email: true
   field_first_name: true
   field_last_name: true
   field_location: true
   field_media_image: true
   field_middle_name: true
+  field_person_type: true
+  field_phone: true
+  field_sort_order: true
+  field_titles: true
   langcode: true
   links: true
   search_api_excerpt: true

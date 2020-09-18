@@ -1,0 +1,13 @@
+consumer_key: ''
+consumer_secret: ''
+access_token: ''
+access_token_secret: ''
+tweets_count: 3
+hashtag: true
+time_stamp: true
+time_format: d-M-Y
+time_ago: true
+trim_length: 280
+teaser_text: 'Read More'
+_core:
+  default_config_hash: 7ru7gBX0JTO8lVnN1yR6QrQlh-927uJvFdixCvAO27I

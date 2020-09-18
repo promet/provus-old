@@ -7,9 +7,9 @@ dependencies:
   module:
     - menu_block
   theme:
-    - countyoc
+    - provus
 id: mainnavigation_2
-theme: countyoc
+theme: provus
 region: header
 weight: -8
 provider: null

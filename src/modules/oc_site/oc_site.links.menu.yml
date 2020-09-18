@@ -1,5 +1,0 @@
-oc_site.config_settings:
-  title: 'OC Site Configuration'
-  description: 'Manage oc configuration'
-  parent: system.admin_config_system
-  route_name: oc_site.config_settings

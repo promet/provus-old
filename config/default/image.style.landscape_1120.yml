@@ -1,15 +1,17 @@
 uuid: 9f59bdff-8a2a-420d-ab54-5ad38d4c1e49
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - focal_point
 name: landscape_1120
 label: 'Landscape 1120'
 effects:
   febf9007-fb05-498b-875b-376262349a5f:
     uuid: febf9007-fb05-498b-875b-376262349a5f
-    id: image_scale_and_crop
+    id: focal_point_scale_and_crop
     weight: 1
     data:
       width: 1120
       height: 630
-      anchor: center-center
+      crop_type: focal_point

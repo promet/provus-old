@@ -1,0 +1,14 @@
+uuid: 0ef45223-ba3c-4cc5-8ea2-e43faed47d39
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.line_separator
+id: block_content.line_separator.default
+targetEntityType: block_content
+bundle: line_separator
+mode: default
+content: {  }
+hidden:
+  langcode: true
+  search_api_excerpt: true

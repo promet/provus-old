@@ -1,0 +1,34 @@
+uuid: 673d5964-fcca-4c3e-a010-0dadcc094785
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.files_list
+    - field.field.block_content.files_list.field_files_list_type
+    - field.field.block_content.files_list.field_media_files
+  module:
+    - options
+id: block_content.files_list.default
+targetEntityType: block_content
+bundle: files_list
+mode: default
+content:
+  field_files_list_type:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_media_files:
+    type: entity_reference_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

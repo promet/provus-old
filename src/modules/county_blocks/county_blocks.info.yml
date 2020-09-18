@@ -2,7 +2,13 @@ name: 'County Blocks'
 type: module
 description: 'Custom county blocks.'
 core: 8.x
-core_version_requirement: ^8 || ^9
 package: 'county'
+
+configure: county_blocks.admin
+
 dependencies:
+  - drupal:block
+  - drupal:node
+  - drupal:system
+  - drupal:text
   - layout_builder

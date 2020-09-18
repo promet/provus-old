@@ -3,17 +3,17 @@
         {
             "nid": [
                 {
-                    "value": 14
+                    "value": 16
                 }
             ],
             "uuid": [
                 {
-                    "value": "cf1d87a1-5d14-4043-864c-ee15ada350c8"
+                    "value": "95a1e630-c143-4dab-ae53-632c28a283aa"
                 }
             ],
             "vid": [
                 {
-                    "value": 14
+                    "value": 29
                 }
             ],
             "langcode": [
@@ -30,16 +30,16 @@
             ],
             "revision_timestamp": [
                 {
-                    "value": "2020-03-25T21:20:28+00:00",
+                    "value": "2020-09-18T14:57:48+00:00",
                     "format": "Y-m-d\\TH:i:sP"
                 }
             ],
             "revision_uid": [
                 {
-                    "target_id": 0,
+                    "target_id": 1,
                     "target_type": "user",
-                    "target_uuid": "4d4524f6-f681-418f-9069-5d145c978455",
-                    "url": "\/user\/0"
+                    "target_uuid": "b7db48a7-0ee6-475e-bd3f-d88e2075bc2e",
+                    "url": "\/user\/1"
                 }
             ],
             "revision_log": [],
@@ -52,7 +52,7 @@
                 {
                     "target_id": 0,
                     "target_type": "user",
-                    "target_uuid": "4d4524f6-f681-418f-9069-5d145c978455",
+                    "target_uuid": "cf24bc86-c86a-4c46-a0da-a76a72c3654b",
                     "url": "\/user\/0"
                 }
             ],
@@ -69,7 +69,7 @@
             ],
             "changed": [
                 {
-                    "value": "2020-03-25T21:20:28+00:00",
+                    "value": "2020-09-18T14:57:48+00:00",
                     "format": "Y-m-d\\TH:i:sP"
                 }
             ],
@@ -88,15 +88,11 @@
                     "value": true
                 }
             ],
-            "revision_translation_affected": [
-                {
-                    "value": true
-                }
-            ],
+            "revision_translation_affected": [],
             "path": [
                 {
-                    "alias": "\/landing-page\/home-page",
-                    "pid": 20,
+                    "alias": "\/home",
+                    "pid": 36,
                     "langcode": "en"
                 }
             ],
@@ -113,8 +109,8 @@
                                 ""
                             ]
                         },
-                        "components": {
-                            "7c6f4b27-f5f1-4a8d-bdca-5ddaf3283520": {
+                        "components": [
+                            {
                                 "uuid": "7c6f4b27-f5f1-4a8d-bdca-5ddaf3283520",
                                 "region": "content",
                                 "configuration": {
@@ -130,7 +126,7 @@
                                 "additional": [],
                                 "weight": 0
                             },
-                            "d0e54d97-c516-4dd2-a571-d40217586a98": {
+                            {
                                 "uuid": "d0e54d97-c516-4dd2-a571-d40217586a98",
                                 "region": "content",
                                 "configuration": {
@@ -146,7 +142,7 @@
                                 "additional": [],
                                 "weight": 2
                             },
-                            "3b9f47e9-c458-4386-b83e-d4d6b389428e": {
+                            {
                                 "uuid": "3b9f47e9-c458-4386-b83e-d4d6b389428e",
                                 "region": "content",
                                 "configuration": {
@@ -162,7 +158,7 @@
                                 "additional": [],
                                 "weight": 4
                             },
-                            "54c43b93-6842-4318-bf5b-9fea08529b47": {
+                            {
                                 "uuid": "54c43b93-6842-4318-bf5b-9fea08529b47",
                                 "region": "content",
                                 "configuration": {
@@ -178,12 +174,12 @@
                                 "additional": [],
                                 "weight": 6
                             },
-                            "bac76fb8-e7c1-48c4-85dd-b873d9eb09c0": {
+                            {
                                 "uuid": "bac76fb8-e7c1-48c4-85dd-b873d9eb09c0",
                                 "region": "content",
                                 "configuration": {
                                     "id": "block_content:e46b684d-14e7-44ad-9c8e-66b57e95144c",
-                                    "label": "By The Numbers",
+                                    "label": "Southport By The Numbers",
                                     "provider": "block_content",
                                     "label_display": "visible",
                                     "status": true,
@@ -194,7 +190,7 @@
                                 "additional": [],
                                 "weight": 7
                             },
-                            "e0939f57-4e27-46eb-a91e-60fcff66fe25": {
+                            {
                                 "uuid": "e0939f57-4e27-46eb-a91e-60fcff66fe25",
                                 "region": "content",
                                 "configuration": {
@@ -210,7 +206,7 @@
                                 "additional": [],
                                 "weight": 9
                             },
-                            "fca6a2ef-563c-48f0-8ffd-899039d930c1": {
+                            {
                                 "uuid": "fca6a2ef-563c-48f0-8ffd-899039d930c1",
                                 "region": "content",
                                 "configuration": {
@@ -226,7 +222,7 @@
                                 "additional": [],
                                 "weight": 8
                             }
-                        },
+                        ],
                         "third_party_settings": []
                     }
                 }
@@ -235,17 +231,17 @@
         {
             "nid": [
                 {
-                    "value": 15
+                    "value": 17
                 }
             ],
             "uuid": [
                 {
-                    "value": "72ca4815-486f-4ca6-b56f-86a06eb0a6da"
+                    "value": "0a1c83b2-463d-425c-8e7c-7daf9c65842d"
                 }
             ],
             "vid": [
                 {
-                    "value": 15
+                    "value": 17
                 }
             ],
             "langcode": [
@@ -262,7 +258,7 @@
             ],
             "revision_timestamp": [
                 {
-                    "value": "2020-05-06T12:00:03+00:00",
+                    "value": "2020-09-18T01:52:19+00:00",
                     "format": "Y-m-d\\TH:i:sP"
                 }
             ],
@@ -270,7 +266,7 @@
                 {
                     "target_id": 0,
                     "target_type": "user",
-                    "target_uuid": "4d4524f6-f681-418f-9069-5d145c978455",
+                    "target_uuid": "cf24bc86-c86a-4c46-a0da-a76a72c3654b",
                     "url": "\/user\/0"
                 }
             ],
@@ -284,7 +280,7 @@
                 {
                     "target_id": 0,
                     "target_type": "user",
-                    "target_uuid": "4d4524f6-f681-418f-9069-5d145c978455",
+                    "target_uuid": "cf24bc86-c86a-4c46-a0da-a76a72c3654b",
                     "url": "\/user\/0"
                 }
             ],
@@ -301,7 +297,7 @@
             ],
             "changed": [
                 {
-                    "value": "2020-05-06T12:00:03+00:00",
+                    "value": "2020-09-18T01:52:19+00:00",
                     "format": "Y-m-d\\TH:i:sP"
                 }
             ],
@@ -327,9 +323,9 @@
             ],
             "path": [
                 {
-                    "alias": "\/landing-page\/internal-page-blocks",
-                    "pid": 21,
-                    "langcode": "en"
+                    "alias": "",
+                    "pid": null,
+                    "langcode": null
                 }
             ],
             "body": [],
@@ -341,8 +337,8 @@
                         "layout_settings": {
                             "label": ""
                         },
-                        "components": {
-                            "a456de7f-9452-48a2-bd16-ec33c900d4a6": {
+                        "components": [
+                            {
                                 "uuid": "a456de7f-9452-48a2-bd16-ec33c900d4a6",
                                 "region": "content",
                                 "configuration": {
@@ -355,7 +351,7 @@
                                 "additional": [],
                                 "weight": 0
                             },
-                            "ab2a47e4-e023-4339-9b8b-bec013aa8134": {
+                            {
                                 "uuid": "ab2a47e4-e023-4339-9b8b-bec013aa8134",
                                 "region": "content",
                                 "configuration": {
@@ -374,7 +370,7 @@
                                 "additional": [],
                                 "weight": 1
                             },
-                            "c6172e76-054d-4b86-be1e-4da110236418": {
+                            {
                                 "uuid": "c6172e76-054d-4b86-be1e-4da110236418",
                                 "region": "content",
                                 "configuration": {
@@ -390,7 +386,7 @@
                                 "additional": [],
                                 "weight": 2
                             },
-                            "4faf4d9b-ae20-4b06-9b51-3ea5fdce14cb": {
+                            {
                                 "uuid": "4faf4d9b-ae20-4b06-9b51-3ea5fdce14cb",
                                 "region": "content",
                                 "configuration": {
@@ -406,7 +402,7 @@
                                 "additional": [],
                                 "weight": 3
                             },
-                            "441baf0a-7674-4910-a201-996207438cb1": {
+                            {
                                 "uuid": "441baf0a-7674-4910-a201-996207438cb1",
                                 "region": "content",
                                 "configuration": {
@@ -422,7 +418,7 @@
                                 "additional": [],
                                 "weight": 4
                             },
-                            "0431454a-929a-4c41-9065-3a56d11975ad": {
+                            {
                                 "uuid": "0431454a-929a-4c41-9065-3a56d11975ad",
                                 "region": "content",
                                 "configuration": {
@@ -438,7 +434,7 @@
                                 "additional": [],
                                 "weight": 5
                             },
-                            "5b1afb05-8e16-4f49-84cb-24337c50a8f2": {
+                            {
                                 "uuid": "5b1afb05-8e16-4f49-84cb-24337c50a8f2",
                                 "region": "content",
                                 "configuration": {
@@ -454,7 +450,7 @@
                                 "additional": [],
                                 "weight": 6
                             },
-                            "630e9852-eb0d-428d-8749-c45bbb98a874": {
+                            {
                                 "uuid": "630e9852-eb0d-428d-8749-c45bbb98a874",
                                 "region": "content",
                                 "configuration": {
@@ -470,7 +466,7 @@
                                 "additional": [],
                                 "weight": 7
                             },
-                            "f6cec32c-5579-45cf-af27-c494be5ed18a": {
+                            {
                                 "uuid": "f6cec32c-5579-45cf-af27-c494be5ed18a",
                                 "region": "content",
                                 "configuration": {
@@ -485,8 +481,24 @@
                                 },
                                 "additional": [],
                                 "weight": 8
+                            },
+                            {
+                                "uuid": "2a275c60-1d2e-436f-82c5-e1e37ded6588",
+                                "region": "content",
+                                "configuration": {
+                                    "id": "block_content:ea9b19ec-7b6d-4e73-b435-a1a91e281814",
+                                    "label": "Photo Gallery",
+                                    "provider": "block_content",
+                                    "label_display": "visible",
+                                    "status": true,
+                                    "info": "",
+                                    "view_mode": "full",
+                                    "context_mapping": []
+                                },
+                                "additional": [],
+                                "weight": 9
                             }
-                        },
+                        ],
                         "third_party_settings": []
                     }
                 }

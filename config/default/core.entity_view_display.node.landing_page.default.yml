@@ -23,7 +23,7 @@ third_party_settings:
         layout_settings:
           label: ''
         components:
-          ab2a47e4-e023-4339-9b8b-bec013aa8134:
+          -
             uuid: ab2a47e4-e023-4339-9b8b-bec013aa8134
             region: content
             configuration:
@@ -78,33 +78,35 @@ third_party_settings:
         'Chaos Tools': {  }
         'Content fields': {  }
         'County Blocks': {  }
-        'Custom block types':
-          - accordion
-          - banner
-          - columns
-          - link_group
-          - number_list
-          - social_feed
-          - tabs
-          - text
+        'Custom block types': {  }
+        'Custom blocks': {  }
         Devel: {  }
         Facets: {  }
         Forms: {  }
+        'Geofield Map': {  }
         Help: {  }
         'Inline blocks':
           - 'inline_block:accordion'
           - 'inline_block:banner'
           - 'inline_block:button'
           - 'inline_block:columns'
+          - 'inline_block:files_list'
+          - 'inline_block:line_separator'
           - 'inline_block:link_group'
           - 'inline_block:number_list'
+          - 'inline_block:person_list'
+          - 'inline_block:photo_gallery'
+          - 'inline_block:short_banner'
           - 'inline_block:social_feed'
           - 'inline_block:tabs'
           - 'inline_block:text'
         'Lists (Views)':
+          - 'views_block:map-block_1'
           - 'views_block:upcoming_events-block_1'
         Menus: {  }
+        'Purge UI': {  }
         Sitemap: {  }
+        'Social Feed': {  }
         System: {  }
         User: {  }
         Webform:
@@ -120,11 +122,15 @@ third_party_settings:
       - Devel
       - Facets
       - Forms
+      - 'Geofield Map'
       - Help
       - 'Inline blocks'
       - 'Lists (Views)'
       - Menus
+      - 'Purge UI'
+      - 'Simple Instagram Feed'
       - Sitemap
+      - 'Social Feed'
       - System
       - User
       - Webform

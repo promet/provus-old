@@ -8,29 +8,29 @@ dependencies:
     - image.style.landscape_720
     - image.style.landscape_900
   theme:
-    - countyoc
+    - provus
 id: landscape_large
 label: 'Landscape Large'
 image_style_mappings:
   -
-    breakpoint_id: countyoc.desktop
+    breakpoint_id: provus.desktop
     multiplier: 1x
     image_mapping_type: image_style
     image_mapping: landscape_720
   -
-    breakpoint_id: countyoc.desktop
+    breakpoint_id: provus.desktop
     multiplier: 2x
     image_mapping_type: image_style
     image_mapping: landscape_1440
   -
-    breakpoint_id: countyoc.mobile
+    breakpoint_id: provus.mobile
     multiplier: 1x
     image_mapping_type: image_style
     image_mapping: landscape_450
   -
-    breakpoint_id: countyoc.mobile
+    breakpoint_id: provus.mobile
     multiplier: 2x
     image_mapping_type: image_style
     image_mapping: landscape_900
-breakpoint_group: countyoc
+breakpoint_group: provus
 fallback_image_style: landscape_720

@@ -1,0 +1,10 @@
+uuid: bded66d6-c07c-4f0c-a7ef-2eef1fe50cc3
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.card_event_small
+label: 'Card Event Small'
+targetEntityType: node
+cache: true

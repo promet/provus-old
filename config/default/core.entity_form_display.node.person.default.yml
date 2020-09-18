@@ -4,15 +4,20 @@ status: true
 dependencies:
   config:
     - field.field.node.person.body
+    - field.field.node.person.field_email
     - field.field.node.person.field_first_name
     - field.field.node.person.field_last_name
     - field.field.node.person.field_location
     - field.field.node.person.field_media_image
-    - field.field.node.person.field_middle_name
+    - field.field.node.person.field_person_type
+    - field.field.node.person.field_phone
+    - field.field.node.person.field_sort_order
+    - field.field.node.person.field_titles
     - node.type.person
   module:
     - media_library
     - path
+    - telephone
     - text
 id: node.person.default
 targetEntityType: node
@@ -21,7 +26,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 10
+    weight: 12
     settings:
       rows: 9
       summary_rows: 3
@@ -31,12 +36,20 @@ content:
     region: content
   created:
     type: datetime_timestamp
-    weight: 2
+    weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_email:
+    weight: 14
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: email_default
+    region: content
   field_first_name:
-    weight: 7
+    weight: 8
     settings:
       size: 60
       placeholder: ''
@@ -52,7 +65,7 @@ content:
     type: string_textfield
     region: content
   field_location:
-    weight: 13
+    weight: 15
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -62,19 +75,39 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_media_image:
-    weight: 12
+    weight: 10
     settings:
       media_types: {  }
     third_party_settings: {  }
     type: media_library_widget
     region: content
-  field_middle_name:
-    weight: 8
+  field_person_type:
+    weight: 16
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_phone:
+    weight: 13
     settings:
-      size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
+    type: telephone_default
+    region: content
+  field_sort_order:
+    weight: 26
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_titles:
+    weight: 11
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
     region: content
   langcode:
     type: language_select
@@ -85,7 +118,7 @@ content:
     third_party_settings: {  }
   path:
     type: path
-    weight: 5
+    weight: 6
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -93,21 +126,21 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 3
+    weight: 4
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 6
+    weight: 7
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 4
+    weight: 5
     region: content
     third_party_settings: {  }
   title:
@@ -129,8 +162,9 @@ content:
     region: content
     third_party_settings: {  }
   url_redirects:
-    weight: 50
+    weight: 17
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
-hidden: {  }
+hidden:
+  field_middle_name: true

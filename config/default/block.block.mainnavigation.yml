@@ -7,10 +7,11 @@ dependencies:
   module:
     - menu_block
     - node
+    - system
   theme:
-    - countyoc
+    - provus
 id: mainnavigation
-theme: countyoc
+theme: provus
 region: sidebar
 weight: 0
 provider: null
@@ -30,13 +31,19 @@ settings:
   label_type: active_item
   label_link: false
 visibility:
+  request_path:
+    id: request_path
+    pages: "/news\r\n/press"
+    negate: false
+    context_mapping: {  }
   node_type:
     id: node_type
     bundles:
+      event: event
+      location: location
       county_article: county_article
       county_page: county_page
       faq: faq
-      location: location
     negate: false
     context_mapping:
       node: '@node.node_route_context:node'

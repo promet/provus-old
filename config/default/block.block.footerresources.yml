@@ -1,0 +1,31 @@
+uuid: 80eec384-7301-4255-a793-58fbc3fc1c90
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.county-footer-resources
+  module:
+    - menu_block
+  theme:
+    - provus
+id: footerresources
+theme: provus
+region: footer
+weight: 0
+provider: null
+plugin: 'menu_block:county-footer-resources'
+settings:
+  id: 'menu_block:county-footer-resources'
+  label: Resources
+  provider: menu_block
+  label_display: visible
+  follow: false
+  follow_parent: child
+  level: 1
+  depth: 0
+  expand: false
+  parent: 'county-footer-resources:'
+  suggestion: county_footer_resources
+  label_type: block
+  label_link: false
+visibility: {  }

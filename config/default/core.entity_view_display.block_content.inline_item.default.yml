@@ -31,8 +31,8 @@ content:
     weight: 5
     label: above
     settings:
-      format_type: medium
       timezone_override: ''
+      format_type: county_default
     third_party_settings: {  }
     type: datetime_default
     region: content

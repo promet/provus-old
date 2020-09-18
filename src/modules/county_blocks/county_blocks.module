@@ -5,29 +5,39 @@
  * Contains county_blocks.module.
  */
 
-use Drupal\Core\Routing\RouteMatchInterface;
-use Drupal\Core\Form\FormStateInterface;
-use Drupal\block\Entity\Block;
-use Drupal\Core\Session\AccountInterface;
-use Drupal\Core\Access\AccessResult;
-use Drupal\node\NodeInterface;
-use Drupal\Core\Entity\EntityInterface;
 use Drupal\block_content\Entity\BlockContent;
+use Drupal\block\Entity\Block;
+use Drupal\Component\Utility\Html;
+use Drupal\Core\Access\AccessResult;
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Session\AccountInterface;
+use Drupal\county_blocks\CountyBlocksHelper;
+use Drupal\node\NodeInterface;
+
+/**
+ * Implements hook_cron().
+ */
+function county_blocks_cron() {
+  CountyBlocksHelper::fetchAlerts();
+}
 
 /**
  * Implements hook_help().
  */
 function county_blocks_help($route_name, RouteMatchInterface $route_match) {
+  $x = [
+    '```php' => '<code>',
+    '```'    => '</code>',
+    "\n"     => "\n<br />",
+  ];
   switch ($route_name) {
-    // Main module help for the county_blocks module.
     case 'help.page.county_blocks':
-      $output = '';
-      $output .= '<h3>' . t('About') . '</h3>';
-      $output .= '<p>' . t('County blocks.') . '</p>';
-      return $output;
-
-    default:
+      $txt = file_get_contents(drupal_get_path('module', 'county_blocks') . '/README.md');
+      return str_replace(array_keys($x), array_values($x), Html::escape($txt));
   }
+  return '';
 }
 
 /**
@@ -74,7 +84,7 @@ function county_blocks_process_layoutbuilder_block(array $element, FormStateInte
 function county_blocks_process_tabs(array $form) {
   if (!empty($form['field_tab_items']['widget']['entities'][0])) {
     foreach ($form['field_tab_items']['widget']['entities'] as $delta => $subform) {
-      if (is_numeric($delta)) {
+      if (is_numeric($delta) && !empty($form['field_tab_items']['widget']['entities'][$delta]['form']['inline_entity_form'])) {
         $form['field_tab_items']['widget']['entities'][$delta]['form']['inline_entity_form']['#process'][] = 'county_blocks_process_layoutbuilder_block';
       }
     }
@@ -155,4 +165,24 @@ function county_blocks_block_access(Block $block, $operation, AccountInterface $
     }
   }
   return AccessResult::neutral();
+}
+
+/**
+ * Implements hook_theme().
+ */
+function county_blocks_theme($existing, $type, $theme, $path) {
+  return [
+    'county_blocks_social_links' => [
+      'template' => 'county-blocks--social-links',
+      'variables' => [
+        'data' => [],
+      ],
+    ],
+    'county_blocks_alert_block' => [
+      'template'  => 'county-blocks--alert-block',
+      'variables' => [
+        'data' => [],
+      ],
+    ],
+  ];
 }

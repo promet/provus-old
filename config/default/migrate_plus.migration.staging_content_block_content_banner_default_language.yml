@@ -1,0 +1,78 @@
+uuid: 128f7966-f410-4cd1-940d-fa97bac13a3f
+langcode: en
+status: true
+dependencies: {  }
+id: staging_content_block_content_banner_default_language
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - entity_staging
+migration_group: entity_staging
+label: 'Import Custom block Banner default_language'
+source:
+  plugin: entity_staging_json
+  input_path: /var/www/config/content/block_content/default_language/banner.json
+process:
+  uuid: uuid
+  langcode:
+    plugin: get
+    source: langcode
+    language: '@langcode'
+  type: type
+  revision_created:
+    plugin: callback
+    callable: strtotime
+    source: revision_created
+  revision_user: revision_user
+  revision_log: revision_log
+  status:
+    plugin: get
+    source: status
+    language: '@langcode'
+  info:
+    plugin: get
+    source: info
+    language: '@langcode'
+  changed:
+    plugin: callback
+    callable: strtotime
+    source: changed
+    language: '@langcode'
+  reusable: reusable
+  default_langcode:
+    plugin: get
+    source: default_langcode
+    language: '@langcode'
+  revision_default: revision_default
+  revision_translation_affected:
+    plugin: get
+    source: revision_translation_affected
+    language: '@langcode'
+  field_heading:
+    plugin: get
+    source: field_heading
+    language: '@langcode'
+  field_include_search: field_include_search
+  field_link:
+    plugin: get
+    source: field_link
+    language: '@langcode'
+  field_logo_image:
+    plugin: migration_lookup
+    migration: staging_content_media_image_default_language
+    source: field_logo_image
+  field_media_image:
+    plugin: migration_lookup
+    migration: staging_content_media_image_default_language
+    source: field_media_image
+    language: '@langcode'
+  field_person_picture:
+    plugin: migration_lookup
+    migration: staging_content_media_image_default_language
+    source: field_person_picture
+  field_subheading: field_subheading
+destination:
+  plugin: 'entity:block_content'
+migration_dependencies:
+  required: {  }

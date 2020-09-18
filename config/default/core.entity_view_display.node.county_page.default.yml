@@ -24,17 +24,7 @@ third_party_settings:
         layout_settings:
           label: ''
         components:
-          31751486-9272-4b3c-a47a-6de033eaee59:
-            uuid: 31751486-9272-4b3c-a47a-6de033eaee59
-            region: content
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'extra_field_block:node:county_page:links'
-            additional: {  }
-            weight: 0
-          0ebf7f53-c901-47ee-98b9-0ef5cb304f3c:
+          -
             uuid: 0ebf7f53-c901-47ee-98b9-0ef5cb304f3c
             region: content
             configuration:
@@ -49,38 +39,6 @@ third_party_settings:
                 third_party_settings: {  }
             additional: {  }
             weight: 1
-          17cb2123-27de-40f5-ae82-0a4edc58b2e9:
-            uuid: 17cb2123-27de-40f5-ae82-0a4edc58b2e9
-            region: content
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:node:county_page:field_media_image'
-              formatter:
-                label: above
-                settings:
-                  link: true
-                third_party_settings: {  }
-                type: entity_reference_label
-            additional: {  }
-            weight: 3
-          77220929-2b3e-4f3d-bdaa-7dd9cd6eeb0b:
-            uuid: 77220929-2b3e-4f3d-bdaa-7dd9cd6eeb0b
-            region: content
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:node:county_page:field_file'
-              formatter:
-                label: above
-                settings:
-                  link: true
-                third_party_settings: {  }
-                type: entity_reference_label
-            additional: {  }
-            weight: 4
         third_party_settings: {  }
   layout_builder_restrictions:
     entity_view_mode_restriction:
@@ -94,11 +52,41 @@ third_party_settings:
         User: {  }
         'User fields': {  }
         core: {  }
-      allowed_layouts:
-        - layout_onecol
-        - layout_2col_section
-        - layout_3col_section
-      whitelisted_blocks: {  }
+      allowed_layouts: {  }
+      whitelisted_blocks:
+        'Chaos Tools': {  }
+        'Content fields': {  }
+        'County Blocks': {  }
+        'Custom block types': {  }
+        Facets: {  }
+        Forms: {  }
+        'Geofield Map': {  }
+        Help: {  }
+        'Inline blocks':
+          - 'inline_block:accordion'
+          - 'inline_block:button'
+          - 'inline_block:columns'
+          - 'inline_block:files_list'
+          - 'inline_block:line_separator'
+          - 'inline_block:link_group'
+          - 'inline_block:number_list'
+          - 'inline_block:person_list'
+          - 'inline_block:photo_gallery'
+          - 'inline_block:short_banner'
+          - 'inline_block:social_feed'
+          - 'inline_block:tabs'
+          - 'inline_block:text'
+        'Lists (Views)':
+          - 'views_block:map-block_1'
+          - 'views_block:upcoming_events-block_1'
+        Menus: {  }
+        Sitemap: {  }
+        'Social Feed': {  }
+        System: {  }
+        User: {  }
+        Webform:
+          - webform_block
+        core: {  }
       blacklisted_blocks: {  }
     allowed_block_categories: {  }
 id: node.county_page.default

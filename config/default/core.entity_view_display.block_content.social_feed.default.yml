@@ -4,37 +4,21 @@ status: true
 dependencies:
   config:
     - block_content.type.social_feed
-    - field.field.block_content.social_feed.field_count
-    - field.field.block_content.social_feed.field_link
+    - field.field.block_content.social_feed.field_social_layout
     - field.field.block_content.social_feed.field_social_type
   module:
-    - link
     - options
 id: block_content.social_feed.default
 targetEntityType: block_content
 bundle: social_feed
 mode: default
 content:
-  field_count:
-    weight: 2
-    label: hidden
-    settings:
-      thousand_separator: ''
-      prefix_suffix: true
+  field_social_layout:
+    weight: 3
+    label: above
+    settings: {  }
     third_party_settings: {  }
-    type: number_integer
-    region: content
-  field_link:
-    weight: 1
-    label: hidden
-    settings:
-      trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: ''
-      target: ''
-    third_party_settings: {  }
-    type: link
+    type: list_default
     region: content
   field_social_type:
     weight: 0
@@ -44,5 +28,7 @@ content:
     type: list_default
     region: content
 hidden:
+  field_count: true
+  field_link: true
   langcode: true
   search_api_excerpt: true

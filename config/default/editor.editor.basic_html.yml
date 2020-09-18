@@ -23,12 +23,15 @@ settings:
           name: Linking
           items:
             - DrupalLink
+            - Linkit
             - DrupalUnlink
         -
           name: Lists
           items:
             - BulletedList
             - NumberedList
+            - Indent
+            - Outdent
         -
           name: Media
           items:
@@ -38,6 +41,7 @@ settings:
           name: 'Block Formatting'
           items:
             - Format
+            - Styles
             - Paste
             - PasteText
             - PasteFromWord
@@ -47,10 +51,12 @@ settings:
             - Table
             - Source
   plugins:
-    stylescombo:
-      styles: ''
     language:
       language_list: un
+    stylescombo:
+      styles: "td.percent-25|25 Percent TD\r\ntd.percent-50|50 Percent TD\r\ntd.percent-75|75 Percent TD\r\nth.percent-25|25 Percent TH\r\nth.percent-50|50 Percent TH\r\nth.percent-75|75 Percent TH"
+    linkit:
+      linkit_profile: wysiwyg
 image_upload:
   status: true
   scheme: public

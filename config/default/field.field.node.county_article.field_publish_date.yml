@@ -1,4 +1,4 @@
-uuid: 1b7a90df-e59a-4899-86bb-e7a3c54b5100
+uuid: 433aec73-2a88-454f-a72b-42034a2e6a73
 langcode: en
 status: true
 dependencies:
@@ -14,11 +14,8 @@ bundle: county_article
 label: 'Publish Date'
 description: ''
 required: false
-translatable: true
-default_value:
-  -
-    default_date_type: now
-    default_date: now
+translatable: false
+default_value: {  }
 default_value_callback: ''
 settings: {  }
 field_type: datetime

@@ -8,9 +8,9 @@ dependencies:
     - facets
     - system
   theme:
-    - countyoc
+    - provus
 id: type
-theme: countyoc
+theme: provus
 region: sidebar
 weight: 0
 provider: null

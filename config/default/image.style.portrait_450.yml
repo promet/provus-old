@@ -1,15 +1,17 @@
 uuid: 553c7f54-e4d6-4b5a-9346-da5e9cabde76
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - focal_point
 name: portrait_450
 label: 'Portrait 450'
 effects:
   5f0e8cd0-e7e7-4f67-927b-088e9094c106:
     uuid: 5f0e8cd0-e7e7-4f67-927b-088e9094c106
-    id: image_scale_and_crop
+    id: focal_point_scale_and_crop
     weight: 1
     data:
       width: 450
       height: 592
-      anchor: center-center
+      crop_type: focal_point

@@ -1,0 +1,65 @@
+uuid: b9fc4d74-466b-4f61-8731-94b85f7295dd
+langcode: en
+status: true
+dependencies: {  }
+id: staging_content_menu_link_content_menu_link_content_default_language
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - entity_staging
+migration_group: entity_staging
+label: 'Import Custom menu link Custom menu link default_language'
+source:
+  plugin: entity_staging_json
+  input_path: /var/www/config/content/menu_link_content/default_language/menu_link_content.json
+process:
+  langcode:
+    plugin: get
+    source: langcode
+    language: '@langcode'
+  bundle: bundle
+  revision_created:
+    plugin: callback
+    callable: strtotime
+    source: revision_created
+  revision_user: revision_user
+  revision_log_message: revision_log_message
+  enabled: enabled
+  title:
+    plugin: get
+    source: title
+    language: '@langcode'
+  description:
+    plugin: get
+    source: description
+    language: '@langcode'
+  menu_name: menu_name
+  link: link
+  external: external
+  rediscover: rediscover
+  weight: weight
+  expanded: expanded
+  parent:
+    plugin: entity_staging_menu_link_parent
+    source:
+      - parent
+      - '@menu_name'
+  changed:
+    plugin: callback
+    callable: strtotime
+    source: changed
+    language: '@langcode'
+  default_langcode:
+    plugin: get
+    source: default_langcode
+    language: '@langcode'
+  revision_default: revision_default
+  revision_translation_affected:
+    plugin: get
+    source: revision_translation_affected
+    language: '@langcode'
+destination:
+  plugin: 'entity:menu_link_content'
+migration_dependencies:
+  required: {  }

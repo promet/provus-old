@@ -12,7 +12,7 @@ field_name: field_icon
 entity_type: block_content
 bundle: inline_item
 label: Icon
-description: ''
+description: 'You can see what the full list of icons looks like here: <a href="https://material.io/resources/icons">https://material.io/resources/icons</a>'
 required: false
 translatable: true
 default_value: {  }

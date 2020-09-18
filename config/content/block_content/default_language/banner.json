@@ -13,7 +13,7 @@
             ],
             "revision_id": [
                 {
-                    "value": 11
+                    "value": 51
                 }
             ],
             "langcode": [
@@ -30,11 +30,18 @@
             ],
             "revision_created": [
                 {
-                    "value": "2020-03-15T21:19:22+00:00",
+                    "value": "2020-09-18T15:11:38+00:00",
                     "format": "Y-m-d\\TH:i:sP"
                 }
             ],
-            "revision_user": [],
+            "revision_user": [
+                {
+                    "target_id": 1,
+                    "target_type": "user",
+                    "target_uuid": "b7db48a7-0ee6-475e-bd3f-d88e2075bc2e",
+                    "url": "\/user\/1"
+                }
+            ],
             "revision_log": [],
             "status": [
                 {
@@ -48,7 +55,7 @@
             ],
             "changed": [
                 {
-                    "value": "2020-03-15T21:19:22+00:00",
+                    "value": "2020-09-18T15:11:38+00:00",
                     "format": "Y-m-d\\TH:i:sP"
                 }
             ],
@@ -80,26 +87,27 @@
             "field_link": [],
             "field_logo_image": [
                 {
-                    "target_id": 12,
+                    "target_id": 19,
                     "target_type": "media",
-                    "target_uuid": "7b1db9ee-40c1-49a5-be38-0278fa5a9e66",
-                    "url": "\/media\/12\/edit"
+                    "target_uuid": "bdd7252e-f980-4955-a6c2-926f9ac91f80",
+                    "url": "\/media\/19\/edit"
                 }
             ],
             "field_media_image": [
                 {
-                    "target_id": 8,
+                    "target_id": 17,
                     "target_type": "media",
-                    "target_uuid": "643c1636-1580-4e7d-b6d5-8c025ca83819",
-                    "url": "\/media\/8\/edit"
+                    "target_uuid": "5077620d-8c3f-4929-9a91-90f13b1a5362",
+                    "url": "\/media\/17\/edit"
                 },
                 {
-                    "target_id": 7,
+                    "target_id": 18,
                     "target_type": "media",
-                    "target_uuid": "dfb30458-8f20-4598-9841-1e395e7e042b",
-                    "url": "\/media\/7\/edit"
+                    "target_uuid": "679d4e4a-14f4-44a7-843f-2c0e00a36ed5",
+                    "url": "\/media\/18\/edit"
                 }
             ],
+            "field_person_picture": [],
             "field_subheading": [
                 {
                     "value": "Our County. Our Commitment."

@@ -6,29 +6,29 @@ dependencies:
     - image.style.landscape_280
     - image.style.landscape_560
   theme:
-    - countyoc
+    - provus
 id: landscape_xsmall
 label: 'Landscape XSmall'
 image_style_mappings:
   -
-    breakpoint_id: countyoc.desktop
+    breakpoint_id: provus.desktop
     multiplier: 1x
     image_mapping_type: image_style
     image_mapping: landscape_280
   -
-    breakpoint_id: countyoc.desktop
+    breakpoint_id: provus.desktop
     multiplier: 2x
     image_mapping_type: image_style
     image_mapping: landscape_560
   -
-    breakpoint_id: countyoc.mobile
+    breakpoint_id: provus.mobile
     multiplier: 1x
     image_mapping_type: image_style
     image_mapping: landscape_280
   -
-    breakpoint_id: countyoc.mobile
+    breakpoint_id: provus.mobile
     multiplier: 2x
     image_mapping_type: image_style
     image_mapping: landscape_560
-breakpoint_group: countyoc
+breakpoint_group: provus
 fallback_image_style: landscape_280

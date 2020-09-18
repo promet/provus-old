@@ -36,7 +36,7 @@ content:
       more_text: More
       more_class: more-link
       trim_options:
-        text: true
+        text: false
         trim_zero: false
       wrap_output: false
       more_link: false
@@ -51,7 +51,7 @@ content:
     label: hidden
     settings:
       timezone_override: ''
-      format_type: long
+      format_type: county_default
     third_party_settings: {  }
   field_heading:
     weight: 2

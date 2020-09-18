@@ -47,12 +47,12 @@
             ],
             "info": [
                 {
-                    "value": "Media 338313295"
+                    "value": "Media 776982662"
                 }
             ],
             "changed": [
                 {
-                    "value": "2020-06-01T11:19:08+00:00",
+                    "value": "2020-09-18T14:50:47+00:00",
                     "format": "Y-m-d\\TH:i:sP"
                 }
             ],
@@ -80,7 +80,7 @@
                 {
                     "target_id": 13,
                     "target_type": "media",
-                    "target_uuid": "d5c6b56e-d137-436b-b1b7-740ee051e212",
+                    "target_uuid": "9df8b3a8-7120-49fa-b3f9-57a9a89cf2c3",
                     "url": "\/media\/13\/edit"
                 }
             ]

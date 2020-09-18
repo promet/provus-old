@@ -1,15 +1,17 @@
 uuid: 9caa3d9b-8a40-4856-a61f-242e941d5869
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - focal_point
 name: landscape_360
 label: 'Landscape 360'
 effects:
-  d262bead-fa54-4b1a-a26c-3089a7d7e60d:
-    uuid: d262bead-fa54-4b1a-a26c-3089a7d7e60d
-    id: image_scale_and_crop
-    weight: 1
+  7f195b99-0749-4a7a-af02-5edf02191a74:
+    uuid: 7f195b99-0749-4a7a-af02-5edf02191a74
+    id: focal_point_scale_and_crop
+    weight: 2
     data:
       width: 360
       height: 202
-      anchor: center-center
+      crop_type: focal_point

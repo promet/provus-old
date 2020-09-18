@@ -1,0 +1,308 @@
+{
+    "node": [
+        {
+            "nid": [
+                {
+                    "value": 19
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "4fec6fbf-a461-4d70-9f23-efb21eee810c"
+                }
+            ],
+            "vid": [
+                {
+                    "value": 19
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "type": [
+                {
+                    "target_id": "person",
+                    "target_type": "node_type",
+                    "target_uuid": "b8a68b47-a23a-4d4d-8bff-9833bb328c4d"
+                }
+            ],
+            "revision_timestamp": [
+                {
+                    "value": "2020-09-18T02:01:13+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "revision_uid": [
+                {
+                    "target_id": 0,
+                    "target_type": "user",
+                    "target_uuid": "cf24bc86-c86a-4c46-a0da-a76a72c3654b",
+                    "url": "\/user\/0"
+                }
+            ],
+            "revision_log": [],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "uid": [
+                {
+                    "target_id": 0,
+                    "target_type": "user",
+                    "target_uuid": "cf24bc86-c86a-4c46-a0da-a76a72c3654b",
+                    "url": "\/user\/0"
+                }
+            ],
+            "title": [
+                {
+                    "value": "Aaron Couch"
+                }
+            ],
+            "created": [
+                {
+                    "value": "2020-09-18T01:54:49+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2020-09-18T02:01:13+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "promote": [
+                {
+                    "value": false
+                }
+            ],
+            "sticky": [
+                {
+                    "value": false
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": true
+                }
+            ],
+            "revision_translation_affected": [
+                {
+                    "value": true
+                }
+            ],
+            "path": [
+                {
+                    "alias": "\/people\/aaron-couch",
+                    "pid": 26,
+                    "langcode": "en"
+                }
+            ],
+            "body": [],
+            "field_email": [
+                {
+                    "value": "aaron.c@southport.gov"
+                }
+            ],
+            "field_first_name": [
+                {
+                    "value": "Aaron"
+                }
+            ],
+            "field_last_name": [
+                {
+                    "value": "Couch"
+                }
+            ],
+            "field_location": [
+                {
+                    "target_id": 18,
+                    "target_type": "node",
+                    "target_uuid": "f52b5710-4f9f-4b44-82ba-91e041885595",
+                    "url": "\/node\/18"
+                }
+            ],
+            "field_media_image": [
+                {
+                    "target_id": 15,
+                    "target_type": "media",
+                    "target_uuid": "b91d32b4-c91c-4a2d-b243-72ae05d7725c",
+                    "url": "\/media\/15\/edit"
+                }
+            ],
+            "field_middle_name": [],
+            "field_person_type": [],
+            "field_phone": [
+                {
+                    "value": "2152223333"
+                }
+            ],
+            "field_sort_order": [
+                {
+                    "value": 2
+                }
+            ],
+            "field_titles": [
+                {
+                    "value": "<p>Controller<\/p>\r\n",
+                    "format": "basic_html",
+                    "processed": "<p>Controller<\/p>"
+                }
+            ]
+        },
+        {
+            "nid": [
+                {
+                    "value": 20
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "09760d45-f8ba-4520-8a70-3f0712e7ff5e"
+                }
+            ],
+            "vid": [
+                {
+                    "value": 20
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "type": [
+                {
+                    "target_id": "person",
+                    "target_type": "node_type",
+                    "target_uuid": "b8a68b47-a23a-4d4d-8bff-9833bb328c4d"
+                }
+            ],
+            "revision_timestamp": [
+                {
+                    "value": "2020-09-18T02:01:22+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "revision_uid": [
+                {
+                    "target_id": 0,
+                    "target_type": "user",
+                    "target_uuid": "cf24bc86-c86a-4c46-a0da-a76a72c3654b",
+                    "url": "\/user\/0"
+                }
+            ],
+            "revision_log": [],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "uid": [
+                {
+                    "target_id": 0,
+                    "target_type": "user",
+                    "target_uuid": "cf24bc86-c86a-4c46-a0da-a76a72c3654b",
+                    "url": "\/user\/0"
+                }
+            ],
+            "title": [
+                {
+                    "value": "Jane Doe"
+                }
+            ],
+            "created": [
+                {
+                    "value": "2020-09-18T01:56:18+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2020-09-18T02:01:22+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "promote": [
+                {
+                    "value": false
+                }
+            ],
+            "sticky": [
+                {
+                    "value": false
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": true
+                }
+            ],
+            "revision_translation_affected": [
+                {
+                    "value": true
+                }
+            ],
+            "path": [
+                {
+                    "alias": "\/people\/jane-doe",
+                    "pid": 27,
+                    "langcode": "en"
+                }
+            ],
+            "body": [
+                {
+                    "value": "<p>Committed to change.<\/p>\r\n",
+                    "format": "basic_html",
+                    "processed": "<p>Committed to change.<\/p>",
+                    "summary": ""
+                }
+            ],
+            "field_email": [
+                {
+                    "value": "jane.doe@southport.gov"
+                }
+            ],
+            "field_first_name": [
+                {
+                    "value": "Jane"
+                }
+            ],
+            "field_last_name": [
+                {
+                    "value": "Doe"
+                }
+            ],
+            "field_location": [],
+            "field_media_image": [
+                {
+                    "target_id": 16,
+                    "target_type": "media",
+                    "target_uuid": "55b2156d-b872-4797-ae97-a9aa290da522",
+                    "url": "\/media\/16\/edit"
+                }
+            ],
+            "field_middle_name": [],
+            "field_person_type": [],
+            "field_phone": [
+                {
+                    "value": "2159782215"
+                }
+            ],
+            "field_sort_order": [
+                {
+                    "value": 1
+                }
+            ],
+            "field_titles": [
+                {
+                    "value": "<p>Board Supervisor<\/p>\r\n",
+                    "format": "basic_html",
+                    "processed": "<p>Board Supervisor<\/p>"
+                }
+            ]
+        }
+    ]
+}

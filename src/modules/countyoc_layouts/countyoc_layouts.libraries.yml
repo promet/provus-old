@@ -1,5 +1,0 @@
-countyoc_layouts:
-  version: VERSION
-  css:
-    theme:
-      css/style.css: {}

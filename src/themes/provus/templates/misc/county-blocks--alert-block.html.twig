@@ -1,0 +1,10 @@
+{# {{ attach_library('provus/county-alerts') }} #}
+
+<div class="county-blocks-alert-block-wrapper">
+  {% embed "@molecules/alerts/alerts.twig" with {
+    title: 'replace',
+    description: 'replace',
+    card__modifiers: ['template'],
+  } %}
+  {% endembed %}
+</div>

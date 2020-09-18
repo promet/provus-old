@@ -1,0 +1,53 @@
+{{ attach_library('provus/multicard') }}
+{% set multicard__base_class = 'multicard-wrapper' %}
+
+<div {{ bem(multicard__base_class) }}>
+
+  {% if multicard_heading and not ischild %}
+    <h2 class="title">{{ multicard_heading }}</h2>
+  {% endif %}
+
+  <div {{ bem('inner', [], multicard__base_class) }}>
+    {% block prefix %}
+    {% endblock %}
+    <div class="multicard slide">
+      <a class="multicard-control-prev" role="button" data-slide="prev" tabindex="0">
+        <span class="multicard-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <!--Slides-->
+      <div class="multicard-inner">
+        <div class="multicard-inner-wrapper">
+          <div class="lightslider">
+            {% block content %}
+              {% for item in content %}
+                <div class="slide">
+                  {% block card__bordered %}
+                    {% include "@molecules/card/card-bg.twig" with
+                      {
+                        card__image__src: item.card__image__src,
+                        card__image__alt: item.card__image__alt,
+                        card__image__output_image_tag: item.card__image__output_image_tag,
+                        card__heading: item.card__heading,
+                        card__body: item.card__body,
+                        card__button__content: item.card__button__content,
+                        card__button__url: item.card__button__url,
+                      }
+                    %}
+                  {% endblock %}
+                </div>
+              {% endfor %}
+            {% endblock %}
+          </div>
+        </div>
+      </div>
+      <a class="multicard-control-next" role="button" data-slide="next" tabindex="0">
+        <span class="multicard-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+  {% block linkcontent %}
+    <div class="field-link center"><a href="/" class="button button--secondary">Read More</a></div>
+  {% endblock %}
+</div>

@@ -1,4 +1,0 @@
-id: oc
-label: Orange County Migrations
-description: Default migration as well as potential custom migrations for individual OC sites.
-source_type: JSON files

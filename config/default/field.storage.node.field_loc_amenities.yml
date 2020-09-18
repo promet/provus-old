@@ -1,0 +1,225 @@
+uuid: 32571b19-dc0f-4a41-aa9e-df7490179e8a
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_loc_amenities
+field_name: field_loc_amenities
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Ampitheather
+      label: Ampitheather
+    -
+      value: Archery
+      label: Archery
+    -
+      value: 'Ball Fields'
+      label: 'Ball Fields'
+    -
+      value: Barbeques
+      label: Barbeques
+    -
+      value: 'Barbeques Fire Rings'
+      label: 'Barbeques Fire Rings'
+    -
+      value: 'Basketball Courts'
+      label: 'Basketball Courts'
+    -
+      value: 'Bike Rentals'
+      label: 'Bike Rentals'
+    -
+      value: 'Bike Trails'
+      label: 'Bike Trails'
+    -
+      value: 'Bird Watching'
+      label: 'Bird Watching'
+    -
+      value: 'Boarding Stables'
+      label: 'Boarding Stables'
+    -
+      value: 'Body Surfing'
+      label: 'Body Surfing'
+    -
+      value: Camping
+      label: Camping
+    -
+      value: 'Childrens Zoo'
+      label: 'Childrens Zoo'
+    -
+      value: Classroom
+      label: Classroom
+    -
+      value: 'Conference Center'
+      label: 'Conference Center'
+    -
+      value: 'Conference Rooms'
+      label: 'Conference Rooms'
+    -
+      value: Corral
+      label: Corral
+    -
+      value: 'Dogs Permitted on leashes'
+      label: 'Dogs Permitted on leashes'
+    -
+      value: 'Dump Station'
+      label: 'Dump Station'
+    -
+      value: 'Equestrian Camping'
+      label: 'Equestrian Camping'
+    -
+      value: 'Equestrian Center'
+      label: 'Equestrian Center'
+    -
+      value: 'Equestrian Trails'
+      label: 'Equestrian Trails'
+    -
+      value: 'Equipment Rental'
+      label: 'Equipment Rental'
+    -
+      value: 'Fire Rings'
+      label: 'Fire Rings'
+    -
+      value: Fishing
+      label: Fishing
+    -
+      value: 'Fishing Concession'
+      label: 'Fishing Concession'
+    -
+      value: 'Fitness Par Course'
+      label: 'Fitness Par Course'
+    -
+      value: 'Food Concessions'
+      label: 'Food Concessions'
+    -
+      value: Gazebo
+      label: Gazebo
+    -
+      value: 'Gift Shop'
+      label: 'Gift Shop'
+    -
+      value: 'Guest Dock'
+      label: 'Guest Dock'
+    -
+      value: 'Hiking Trails'
+      label: 'Hiking Trails'
+    -
+      value: 'Historic Dam'
+      label: 'Historic Dam'
+    -
+      value: 'Historic Windmill'
+      label: 'Historic Windmill'
+    -
+      value: 'Horseshoe Pits'
+      label: 'Horseshoe Pits'
+    -
+      value: 'Interpretive Programs'
+      label: 'Interpretive Programs'
+    -
+      value: 'Interpretive Programs Center'
+      label: 'Interpretive Programs Center'
+    -
+      value: Kayaking
+      label: Kayaking
+    -
+      value: 'Kite Flying Area'
+      label: 'Kite Flying Area'
+    -
+      value: 'Marine Fossils'
+      label: 'Marine Fossils'
+    -
+      value: 'Model Boats'
+      label: 'Model Boats'
+    -
+      value: 'Model Glider Area'
+      label: 'Model Glider Area'
+    -
+      value: 'Nature Center'
+      label: 'Nature Center'
+    -
+      value: 'Paddle Boarding'
+      label: 'Paddle Boarding'
+    -
+      value: 'Paddle Boat Rentals'
+      label: 'Paddle Boat Rentals'
+    -
+      value: 'Picnic Areas'
+      label: 'Picnic Areas'
+    -
+      value: 'Picnic areas (tables, restrooms)'
+      label: 'Picnic areas (tables, restrooms)'
+    -
+      value: 'Picnic shelters for reservation'
+      label: 'Picnic shelters for reservation'
+    -
+      value: 'Playground Tot Lot'
+      label: 'Playground Tot Lot'
+    -
+      value: Playgrounds
+      label: Playgrounds
+    -
+      value: 'Pony Rides'
+      label: 'Pony Rides'
+    -
+      value: 'Private Party Area'
+      label: 'Private Party Area'
+    -
+      value: 'Racquetball Courts'
+      label: 'Racquetball Courts'
+    -
+      value: Restrooms
+      label: Restrooms
+    -
+      value: 'RV Camping'
+      label: 'RV Camping'
+    -
+      value: 'Scenic overlook'
+      label: 'Scenic overlook'
+    -
+      value: Shelters
+      label: Shelters
+    -
+      value: Showers
+      label: Showers
+    -
+      value: 'Skim Boarding'
+      label: 'Skim Boarding'
+    -
+      value: 'Soccer Field'
+      label: 'Soccer Field'
+    -
+      value: 'Storytime Area'
+      label: 'Storytime Area'
+    -
+      value: Surfing
+      label: Surfing
+    -
+      value: Swimming
+      label: Swimming
+    -
+      value: 'Tennis Courts'
+      label: 'Tennis Courts'
+    -
+      value: 'Trail Sanitary Station'
+      label: 'Trail Sanitary Station'
+    -
+      value: 'Train Rides'
+      label: 'Train Rides'
+    -
+      value: 'Volleyball Courts'
+      label: 'Volleyball Courts'
+    -
+      value: 'Weddings Special Events'
+      label: 'Weddings Special Events'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

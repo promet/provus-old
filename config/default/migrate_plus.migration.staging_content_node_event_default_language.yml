@@ -1,0 +1,120 @@
+uuid: 33737a24-488b-4f8a-8e64-757f0c927920
+langcode: en
+status: true
+dependencies: {  }
+id: staging_content_node_event_default_language
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - entity_staging
+migration_group: entity_staging
+label: 'Import Content Event default_language'
+source:
+  plugin: entity_staging_json
+  input_path: /var/www/config/content/node/default_language/event.json
+process:
+  langcode:
+    plugin: get
+    source: langcode
+    language: '@langcode'
+  type: type
+  revision_timestamp:
+    plugin: callback
+    callable: strtotime
+    source: revision_timestamp
+  revision_uid: revision_uid
+  revision_log: revision_log
+  status:
+    plugin: get
+    source: status
+    language: '@langcode'
+  uid:
+    plugin: get
+    source: uid
+    language: '@langcode'
+  title:
+    plugin: get
+    source: title
+    language: '@langcode'
+  created:
+    plugin: callback
+    callable: strtotime
+    source: created
+    language: '@langcode'
+  changed:
+    plugin: callback
+    callable: strtotime
+    source: changed
+    language: '@langcode'
+  promote:
+    plugin: get
+    source: promote
+    language: '@langcode'
+  sticky:
+    plugin: get
+    source: sticky
+    language: '@langcode'
+  default_langcode:
+    plugin: get
+    source: default_langcode
+    language: '@langcode'
+  revision_default: revision_default
+  revision_translation_affected:
+    plugin: get
+    source: revision_translation_affected
+    language: '@langcode'
+  path:
+    plugin: get
+    source: path
+    language: '@langcode'
+  menu_link:
+    plugin: migration_lookup
+    migration: staging_content_menu_link_content_menu_link_content_default_language
+    source: menu_link
+    language: '@langcode'
+  body:
+    plugin: get
+    source: body
+    language: '@langcode'
+  field_end_date: field_end_date
+  field_event_type:
+    plugin: migration_lookup
+    migration: staging_content_taxonomy_term_event_type_default_language
+    source: field_event_type
+  field_file:
+    plugin: migration_lookup
+    migration: staging_content_media_document_default_language
+    source: field_file
+    language: '@langcode'
+  field_location:
+    plugin: migration_lookup
+    migration:
+      - staging_content_node_alert_default_language
+      - staging_content_node_county_article_default_language
+      - staging_content_node_county_page_default_language
+      - staging_content_node_event_default_language
+      - staging_content_node_faq_default_language
+      - staging_content_node_landing_page_default_language
+      - staging_content_node_location_default_language
+      - staging_content_node_person_default_language
+    source: field_location
+    language: '@langcode'
+  field_media_image:
+    plugin: migration_lookup
+    migration: staging_content_media_image_default_language
+    source: field_media_image
+    language: '@langcode'
+  field_monthly_event:
+    plugin: get
+    source: field_monthly_event
+    language: '@langcode'
+  field_start_date: field_start_date
+  field_weekly_event:
+    plugin: get
+    source: field_weekly_event
+    language: '@langcode'
+destination:
+  plugin: 'entity:node'
+migration_dependencies:
+  required: {  }

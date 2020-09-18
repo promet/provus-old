@@ -1,8 +1,0 @@
-name: 'County Layouts'
-type: module
-description: 'Custom layouts for layout builder.'
-core: 8.x
-core_version_requirement: ^8 || ^9
-package: 'countyoc'
-dependencies:
-  - layout_builder

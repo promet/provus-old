@@ -1,0 +1,28 @@
+uuid: 957525b1-f41f-4f00-b0ef-258bd5caa35c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.photo_gallery
+    - field.storage.block_content.field_gallery_photos
+    - media.type.image
+id: block_content.photo_gallery.field_gallery_photos
+field_name: field_gallery_photos
+entity_type: block_content
+bundle: photo_gallery
+label: Photos
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
