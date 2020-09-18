@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains provus_migrate.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function provus_migrate_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the provus_migrate module.
+    case 'help.page.provus_migrate':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Provus Migrate Example') . '</p>';
+      return $output;
+
+    default:
+  }
+}

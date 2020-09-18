@@ -1,0 +1,25 @@
+id: provus_json_example
+label: 'Provus JSON Example'
+migration_tags:
+  - Provus
+source:
+  plugin: url
+  data_fetcher_plugin: http
+  data_parser_plugin: json
+  urls:
+    - https://data.smcgov.org/api/views/xu2d-vtnr/rows.json?accessType=DOWNLOAD
+  # XPath-like selector. The slash (/) at the beginning is optional.
+  item_selector: /data
+  fields:
+    - name: title
+      label: "Title"
+      selector: [12]
+process:
+  - title
+destination:
+  plugin: 'entity:node'
+  default_bundle: location
+migration_dependencies:
+  required: []
+  optional: []
+
