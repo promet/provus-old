@@ -1,10 +1,10 @@
-gmap_api_key: AIzaSyAq_vzOPlM_KiHQpN0SoDsdFoEvx5s1vqY
+gmap_api_key: 
 gmap_api_localization: default
 theming:
   markers_location:
     security: 'public://'
     rel_path: geofieldmap_icons
-  additional_markers_location: modules/custom/oc_site/map_icons
+  additional_markers_location: themes/custom/provus/map_icons
   markers_extensions: 'gif png jpg jpeg'
   markers_filesize: '250 KB'
 geocoder:
