@@ -1,7 +1,7 @@
 #!/bin/bash
 
 DEV_BRANCH="develop"
-BUILD_BRANCH="build"
+REMOTE="master"
 CURRENT_BRANCH=`git name-rev --name-only HEAD`
 CURRENT_TAG=`git name-rev --tags --name-only $(git rev-parse HEAD)`
 
