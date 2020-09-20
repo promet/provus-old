@@ -149,20 +149,20 @@
             "drupal/core": "-p2"
         },
         "installer-paths": {
-            "docroot/core": ["type:drupal-core"],
-            "docroot/libraries/{$name}": ["type:drupal-library"],
-            "docroot/modules/contrib/{$name}": ["type:drupal-module"],
-            "docroot/profiles/contrib/{$name}": ["type:drupal-profile"],
-            "docroot/themes/contrib/{$name}": ["type:drupal-theme"],
+            "web/core": ["type:drupal-core"],
+            "web/libraries/{$name}": ["type:drupal-library"],
+            "web/modules/contrib/{$name}": ["type:drupal-module"],
+            "web/profiles/contrib/{$name}": ["type:drupal-profile"],
+            "web/themes/contrib/{$name}": ["type:drupal-theme"],
             "drush/Commands/{$name}": ["type:drupal-drush"]
         },
         "symlinks": {
-            "src/modules": "docroot/modules/custom",
-            "src/themes": "docroot/themes/custom",
-            "src/profiles": "docroot/profiles/custom",
-            "src/libraries": "docroot/libraries/custom",
-            "src/sites": "docroot/sites",
-            "docroot/themes/custom/countyoc/images": "docroot/images"
+            "src/modules": "web/modules/custom",
+            "src/themes": "web/themes/custom",
+            "src/profiles": "web/profiles/custom",
+            "src/libraries": "web/libraries/custom",
+            "src/sites": "web/sites",
+            "web/themes/custom/countyoc/images": "web/images"
         },
         "patches": {
             "drupal/core": {

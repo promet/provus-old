@@ -23,71 +23,71 @@
     <!-- Do not limit the amount of memory tests take to run. -->
     <ini name="memory_limit" value="-1"/>
     <!-- Example SIMPLETEST_BASE_URL value: http://localhost -->
-    <env name="SIMPLETEST_BASE_URL" value="http://docroot"/>
+    <env name="SIMPLETEST_BASE_URL" value="http://web"/>
     <!-- Example SIMPLETEST_DB value: mysql://username:password@localhost/databasename#table_prefix -->
     <env name="SIMPLETEST_DB" value="mysql://user:user@db/default"/>
-    <!-- Example BROWSERTEST_OUTPUT_DIRECTORY value: /path/to/docrootroot/sites/simpletest/browser_output -->
+    <!-- Example BROWSERTEST_OUTPUT_DIRECTORY value: /path/to/webroot/sites/simpletest/browser_output -->
     <env name="BROWSERTEST_OUTPUT_DIRECTORY" value=""/>
     <!-- To disable deprecation testing completely uncomment the next line. -->
     <!-- <env name="SYMFONY_DEPRECATIONS_HELPER" value="disabled"/> -->
     <!-- Example for changing the driver class for mink tests MINK_DRIVER_CLASS value: 'Drupal\FunctionalJavascriptTests\DrupalSelenium2Driver' -->
     <!-- Example for changing the driver args to mink tests MINK_DRIVER_ARGS value: '["http://127.0.0.1:8510"]' -->
     <!-- Example for changing the driver args to phantomjs tests MINK_DRIVER_ARGS_PHANTOMJS value: '["http://127.0.0.1:8510"]' -->
-    <!-- Example for changing the driver args to docrootdriver tests MINK_DRIVER_ARGS_WEBDRIVER value: '["firefox", null, "http://localhost:4444/wd/hub"]' -->
+    <!-- Example for changing the driver args to webdriver tests MINK_DRIVER_ARGS_WEBDRIVER value: '["firefox", null, "http://localhost:4444/wd/hub"]' -->
 
     <!-- ExistingSite test configurations. -->
-    <env name="DTT_BASE_URL" value="http://docroot"/>
+    <env name="DTT_BASE_URL" value="http://web"/>
     <!-- @todo We need a headless chrome container for JS tests to work out of the box. -->
     <env name="DTT_API_URL" value="http://headless:9222"/>
   </php>
   <testsuites>
     <testsuite name="unit">
-      <directory>./docroot/modules/custom/*/tests/src/Unit</directory>
-      <directory>./docroot/profiles/*/tests/src/Unit</directory>
-      <directory>./docroot/sites/*/modules/*/tests/src/Unit</directory>
+      <directory>./web/modules/custom/*/tests/src/Unit</directory>
+      <directory>./web/profiles/*/tests/src/Unit</directory>
+      <directory>./web/sites/*/modules/*/tests/src/Unit</directory>
       <!-- Exclude Core Drupal tests. -->
-      <exclude>./docroot/core</exclude>
-      <exclude>./docroot/modules/contrib</exclude>
+      <exclude>./web/core</exclude>
+      <exclude>./web/modules/contrib</exclude>
       <!-- Exclude Composer's vendor directory so we don't run tests there. -->
       <exclude>./vendor</exclude>
       <!-- Exclude pattern lab's vendor directory inside of themes. -->
       <exclude>./*/pattern-lab/vendor</exclude>
     </testsuite>
     <testsuite name="kernel">
-      <directory>./docroot/modules/custom/*/tests/src/Kernel</directory>
-      <directory>./docroot/profiles/*/tests/src/Kernel</directory>
-      <directory>./docroot/sites/*/modules/*/tests/src/Kernel</directory>
+      <directory>./web/modules/custom/*/tests/src/Kernel</directory>
+      <directory>./web/profiles/*/tests/src/Kernel</directory>
+      <directory>./web/sites/*/modules/*/tests/src/Kernel</directory>
       <!-- Exclude Drupal Kernal tests. -->
-      <exclude>./docroot/core</exclude>
-      <exclude>./docroot/modules/contrib</exclude>
+      <exclude>./web/core</exclude>
+      <exclude>./web/modules/contrib</exclude>
       <!-- Exclude pattern lab's vendor directory inside of themes. -->
       <exclude>./*/pattern-lab/vendor</exclude>
     </testsuite>
     <testsuite name="functional">
-      <directory>./docroot/modules/custom/*/tests/src/Functional</directory>
-      <directory>./docroot/profiles/*/tests/src/Functional</directory>
-      <directory>./docroot/sites/*/modules/*/tests/src/Functional</directory>
+      <directory>./web/modules/custom/*/tests/src/Functional</directory>
+      <directory>./web/profiles/*/tests/src/Functional</directory>
+      <directory>./web/sites/*/modules/*/tests/src/Functional</directory>
       <!-- Exclude Core Drupal Functional tests. -->
-      <exclude>./docroot/core</exclude>
-      <exclude>./docroot/modules/contrib</exclude>
+      <exclude>./web/core</exclude>
+      <exclude>./web/modules/contrib</exclude>
       <!-- Exclude pattern lab's vendor directory inside of themes. -->
       <exclude>./*/pattern-lab/vendor</exclude>
     </testsuite>
     <testsuite name="functional-javascript">
-      <directory>./docroot/modules/custom/*/tests/src/FunctionalJavascript</directory>
+      <directory>./web/modules/custom/*/tests/src/FunctionalJavascript</directory>
       <directory>./tests/src/ExistingSite</directory>
-      <exclude>./docroot/core</exclude>
-      <exclude>./docroot/core/vendor</exclude>
-      <exclude>./docroot/modules/contrib</exclude>
+      <exclude>./web/core</exclude>
+      <exclude>./web/core/vendor</exclude>
+      <exclude>./web/modules/contrib</exclude>
       <!-- Exclude pattern lab's vendor directory inside of themes. -->
       <exclude>./*/pattern-lab/vendor</exclude>
     </testsuite>
     <testsuite name="existing-site">
-      <directory>./docroot/modules/custom/*/tests/src/ExistingSite</directory>
+      <directory>./web/modules/custom/*/tests/src/ExistingSite</directory>
       <directory>./test/src/ExistingSite</directory>
       <!-- Exclude Core Drupal Functional tests. -->
-      <exclude>./docroot/core</exclude>
-      <exclude>./docroot/modules/contrib</exclude>
+      <exclude>./web/core</exclude>
+      <exclude>./web/modules/contrib</exclude>
       <!-- Exclude pattern lab's vendor directory inside of themes. -->
       <exclude>./src/themes/*/pattern-lab/vendor</exclude>
     </testsuite>
