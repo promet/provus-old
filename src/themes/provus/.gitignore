@@ -21,5 +21,4 @@ composer.lock
 /vendor/
 
 # Dist
-/dist
 /core

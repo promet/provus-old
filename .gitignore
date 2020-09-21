@@ -2,6 +2,7 @@
 /vendor/
 /docroot/
 /web/
+dist/
 
 # Ignore sensitive information
 /src/sites/*/settings.local.php
