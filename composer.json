@@ -124,7 +124,8 @@
     },
     "scripts": {
 	"build-assets": [
-            "@prepare-for-build"
+            "@prepare-for-build",
+            "composer install --optimize-autoloader --no-dev"	    
         ],
 	"prepare-for-build":"DrupalProject\\composer\\ScriptHandler::prepareForBuild",
         "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
