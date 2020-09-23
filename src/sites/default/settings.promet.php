@@ -34,12 +34,6 @@ elseif ($site_env == 'prometstg') {
   $config['environment_indicator.indicator']['name'] = 'Promet Staging';
   $config['config_split.config_split.stage']['status'] = TRUE;
 }
-// All Acquia envs.
-if ($acquia_env) {
-  if (file_exists('/var/www/site-php')) {
-    require '/var/www/site-php/orangecounty/orangecounty-settings.inc';
-  }
-}
 // Acquia dev environment (yellow background, black text)
 if ($acquia_env == 'dev') {
   $config['environment_indicator.indicator']['bg_color'] = '#FFFF00';
