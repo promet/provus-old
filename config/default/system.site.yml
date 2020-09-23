@@ -1,11 +1,11 @@
 uuid: 1aa3a078-6e7f-4336-b6d9-bec3b1e61561
-name: 'Drush Site-Install'
+name: 'Southport County'
 mail: admin@example.com
 slogan: ''
 page:
   403: ''
   404: ''
-  front: /home
+  front: /node/16
 admin_compact_mode: false
 weight_select_max: 100
 langcode: en
