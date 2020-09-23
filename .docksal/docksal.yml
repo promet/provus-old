@@ -16,4 +16,5 @@ services:
 
   cli:
     environment:
-      - GH_TOKEN
+      - IS_DOCKSAL_PROJECT 
+      - DRUPAL_HASH_SALT

@@ -260,4 +260,4 @@ tracker_settings:
 options:
   index_directly: true
   cron_limit: 50
-server: acquia_search_server
+server: solr

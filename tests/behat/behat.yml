@@ -13,7 +13,7 @@ default:
       blackbox: ~
       api_driver: drupal
       drupal:
-        drupal_root: docroot/
+        drupal_root: web/
       region_map:
         header: "#header"
         sidebar: "#sidebar-first"
