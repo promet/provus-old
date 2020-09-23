@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d98362cc369d861cb325d8ce7248a4fa",
+    "content-hash": "56fb8a014dda8ae9925d94a582466782",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -2305,6 +2305,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Composer Plugin for updating the Drupal scaffold files when using drupal/core",
+            "abandoned": "drupal/core-composer-scaffold",
             "time": "2019-03-30T10:41:38+00:00"
         },
         {
@@ -2689,9 +2690,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-1.1",
                     "datestamp": "1556870881",
@@ -2807,9 +2805,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-2.x": "2.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-2.2",
                     "datestamp": "1576528386",
@@ -3556,18 +3551,6 @@
                 {
                     "name": "See contributors",
                     "homepage": "https://www.drupal.org/node/3236/committers"
-                },
-                {
-                    "name": "pcambra",
-                    "homepage": "https://www.drupal.org/user/122101"
-                },
-                {
-                    "name": "salvis",
-                    "homepage": "https://www.drupal.org/user/82964"
-                },
-                {
-                    "name": "willzyx",
-                    "homepage": "https://www.drupal.org/user/1043862"
                 }
             ],
             "description": "Various blocks, pages, and functions for developers.",
@@ -3605,7 +3588,7 @@
             "extra": {
                 "drupal": {
                     "version": "8.x-2.3",
-                    "datestamp": "1600310561",
+                    "datestamp": "1600311980",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3750,15 +3733,12 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-1.0",
                     "datestamp": "1573841584",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Project has not opted into security advisory coverage!"
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 }
             },
@@ -3768,8 +3748,28 @@
             ],
             "authors": [
                 {
+                    "name": "Aaron Stanush",
+                    "homepage": "https://www.drupal.org/user/89718"
+                },
+                {
+                    "name": "bjlewis2",
+                    "homepage": "https://www.drupal.org/user/223774"
+                },
+                {
+                    "name": "ccjjmartin",
+                    "homepage": "https://www.drupal.org/user/3210801"
+                },
+                {
                     "name": "evanmwillhite",
                     "homepage": "https://www.drupal.org/user/562168"
+                },
+                {
+                    "name": "fk_bender",
+                    "homepage": "https://www.drupal.org/user/3539842"
+                },
+                {
+                    "name": "techninja",
+                    "homepage": "https://www.drupal.org/user/132895"
                 }
             ],
             "description": "BEM and Add Attributes Twig Extensions for Drupal",
@@ -3935,15 +3935,12 @@
                 "shasum": "ed0df10563161de24a3cc244a8a4c65d5f4823fa"
             },
             "require": {
-                "drupal/core": "*",
+                "drupal/core": "^8",
                 "drupal/migrate_plus": "~4.0",
                 "drupal/migrate_tools": "~4.0"
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-1.0-alpha1",
                     "datestamp": "1572257889",
@@ -3989,13 +3986,10 @@
                 "shasum": "c5e27581a10f446f7c88568279454f20f5910dc9"
             },
             "require": {
-                "drupal/core": "*"
+                "drupal/core": "^8"
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-3.x": "3.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-3.7",
                     "datestamp": "1568149685",
@@ -4017,6 +4011,10 @@
                 {
                     "name": "mrfelton",
                     "homepage": "https://www.drupal.org/user/305669"
+                },
+                {
+                    "name": "pratik_kamble",
+                    "homepage": "https://www.drupal.org/user/3204909"
                 }
             ],
             "description": "Adds a color indicator for the different environments.",
@@ -4720,7 +4718,7 @@
             "extra": {
                 "drupal": {
                     "version": "8.x-1.0-rc7",
-                    "datestamp": "1595545223",
+                    "datestamp": "1596396104",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "RC releases are not covered by Drupal security advisories."
@@ -4777,6 +4775,50 @@
             "homepage": "https://www.drupal.org/project/inline_entity_form",
             "support": {
                 "source": "https://git.drupalcode.org/project/inline_entity_form"
+            }
+        },
+        {
+            "name": "drupal/layout_builder_browser",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/layout_builder_browser.git",
+                "reference": "8.x-1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/layout_builder_browser-8.x-1.1.zip",
+                "reference": "8.x-1.1",
+                "shasum": "988764078918c7b69bb4be663ffcd7a734c4e02b"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.1",
+                    "datestamp": "1595413997",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "StryKaizer",
+                    "homepage": "https://www.drupal.org/user/462700"
+                }
+            ],
+            "description": "Layout builder browser improvements.",
+            "homepage": "https://www.drupal.org/project/layout_builder_browser",
+            "support": {
+                "source": "https://git.drupalcode.org/project/layout_builder_browser"
             }
         },
         {
@@ -5268,7 +5310,8 @@
             "homepage": "https://www.drupal.org/project/menu_block",
             "support": {
                 "source": "https://git.drupalcode.org/project/menu_block"
-            }
+            },
+            "time": "2020-06-08T05:22:10+00:00"
         },
         {
             "name": "drupal/menu_breadcrumb",
@@ -5349,13 +5392,10 @@
                 "shasum": "bbfdb1a8e617bc2ec1bc95fe196197aa58d663ec"
             },
             "require": {
-                "drupal/core": "*"
+                "drupal/core": "^8"
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-1.0",
                     "datestamp": "1556906881",
@@ -5492,16 +5532,12 @@
             ],
             "authors": [
                 {
-                    "name": "heddn",
-                    "homepage": "https://www.drupal.org/user/1463982"
+                    "name": "drupalspoons",
+                    "homepage": "https://www.drupal.org/user/3647684"
                 },
                 {
                     "name": "mikeryan",
                     "homepage": "https://www.drupal.org/user/4420"
-                },
-                {
-                    "name": "moshe weitzman",
-                    "homepage": "https://www.drupal.org/user/23"
                 }
             ],
             "description": "Tools to assist in developing and running migrations.",
@@ -5902,7 +5938,7 @@
             "extra": {
                 "drupal": {
                     "version": "8.x-1.5",
-                    "datestamp": "1590238566",
+                    "datestamp": "1592392104",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -6189,7 +6225,7 @@
             "extra": {
                 "drupal": {
                     "version": "8.x-1.7",
-                    "datestamp": "1587893588",
+                    "datestamp": "1589314266",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -13216,5 +13252,6 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
 }

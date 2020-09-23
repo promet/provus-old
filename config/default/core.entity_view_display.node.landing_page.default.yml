@@ -11,6 +11,7 @@ dependencies:
     - layout_builder
     - layout_builder_restrictions
     - layout_discovery
+    - layout_library
     - text
     - user
 third_party_settings:
@@ -78,8 +79,6 @@ third_party_settings:
         'Chaos Tools': {  }
         'Content fields': {  }
         'County Blocks': {  }
-        'Custom block types': {  }
-        'Custom blocks': {  }
         Devel: {  }
         Facets: {  }
         Forms: {  }
@@ -93,6 +92,7 @@ third_party_settings:
           - 'inline_block:files_list'
           - 'inline_block:line_separator'
           - 'inline_block:link_group'
+          - 'inline_block:media_item'
           - 'inline_block:number_list'
           - 'inline_block:person_list'
           - 'inline_block:photo_gallery'
@@ -104,8 +104,6 @@ third_party_settings:
           - 'views_block:map-block_1'
           - 'views_block:upcoming_events-block_1'
         Menus: {  }
-        'Purge UI': {  }
-        Sitemap: {  }
         'Social Feed': {  }
         System: {  }
         User: {  }
@@ -127,14 +125,14 @@ third_party_settings:
       - 'Inline blocks'
       - 'Lists (Views)'
       - Menus
-      - 'Purge UI'
       - 'Simple Instagram Feed'
-      - Sitemap
       - 'Social Feed'
       - System
       - User
       - Webform
       - core
+  layout_library:
+    enable: false
 id: node.landing_page.default
 targetEntityType: node
 bundle: landing_page
