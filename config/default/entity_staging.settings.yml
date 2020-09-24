@@ -6,24 +6,32 @@ entity_types:
       accordion: 1
       accordion_item: 1
       banner: 1
+      basic_block: 0
       button: 1
       columns: 1
       faq_item: 1
+      files_list: 1
       inline_item: 1
+      line_separator: 1
       link_group: 1
       media_item: 1
       number_item: 1
       number_list: 1
+      person_list: 1
+      photo_gallery: 1
+      short_banner: 1
       social_feed: 1
       tabs: 1
       text: 1
-  comment:
-    enable: 0
   contact_message:
     enable: 0
     bundles:
       feedback: 0
       personal: 0
+  crop:
+    enable: 0
+    bundles:
+      focal_point: 0
   file:
     enable: 1
   media:
@@ -46,6 +54,12 @@ entity_types:
       location: 1
       person: 1
   path_alias:
+    enable: 1
+  redirect:
+    enable: 0
+    bundles:
+      redirect: 0
+  search_api_task:
     enable: 0
   shortcut:
     enable: 0
@@ -56,6 +70,7 @@ entity_types:
     bundles:
       event_type: 1
       location_type: 1
+      person_type: 0
       tags: 1
   user:
     enable: 0

@@ -1,10 +1,10 @@
 country:
-  default: ''
+  default: US
 first_day: 0
 timezone:
-  default: UTC
+  default: America/Los_Angeles
   user:
-    configurable: true
+    configurable: false
     warn: false
     default: 0
 _core:

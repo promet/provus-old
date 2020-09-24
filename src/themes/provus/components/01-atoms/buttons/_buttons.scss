@@ -1,0 +1,196 @@
+@mixin button() {
+  background: linear-gradient(180deg, #00aadf 0%, #094894 100%);
+  border: none;
+  cursor: pointer;
+  padding: 15px 25px;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 25px;
+  color: $white;
+  font-family: $font-body;
+  font-size: 1rem;
+  line-height: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  min-width: 190px;
+  height: 50px;
+  outline: 0;
+
+  &:hover {
+    background: $primary-darker;
+    text-decoration: none;
+  }
+
+  &:active {
+    background: #143b6a;
+  }
+
+  &:focus {
+    border: 2px solid $white;
+    box-shadow: 0 0 8px $ada-blue;
+    outline: 0;
+  }
+
+  &.disabled {
+    background: #e5e5e5;
+    color: $gray-light;
+  }
+
+  .material-icons {
+    display: none;
+  }
+}
+
+@mixin button-primary() {
+  background: linear-gradient(180deg, #00aadf 0%, #094894 100%);
+  border: none;
+  color: $white;
+
+  &:hover {
+    background: $primary-darker;
+    text-decoration: none;
+  }
+
+  &:active {
+    background: #143b6a;
+  }
+
+  &:focus {
+    border: 2px solid $white;
+    box-shadow: 0 0 8px $ada-blue;
+    background: $primary-darker;
+    outline: 0;
+    color: $white;
+  }
+
+  &.disabled {
+    background: #e5e5e5;
+    color: $gray-light;
+  }
+}
+
+@mixin button-secondary() {
+  background: transparent;
+  border: 3px solid $ada-orange;
+  color: $ada-orange;
+  outline: 0;
+
+  &:hover {
+    background-color: $ada-orange;
+    color: $white;
+  }
+
+  &:active {
+    background-color: #a52803;
+    color: $white;
+    border: 2px solid #a52803;
+  }
+
+  &:focus {
+    background: $white;
+    color: $ada-orange;
+    border: 3px solid $ada-orange;
+    box-shadow: 0 0 8px $ada-blue;
+    outline: 0;
+  }
+
+  &.disabled {
+    border: 2px solid #e5e5e5;
+    color: $gray-light;
+    background: $white;
+  }
+
+  .material-icons {
+    display: none;
+  }
+}
+
+@mixin button-bg() {
+  background: $opaque;
+  border: 2px solid $white;
+  color: $white;
+  outline: 0;
+
+  &:hover {
+    background-color: $opaque-quarter;
+    color: $black;
+    border: 2px solid $white;
+    opacity: 0.8;
+  }
+
+  &:active {
+    background-color: #a1a1a1;
+    color: #555;
+    border: 2px solid $white;
+    opacity: 0.6;
+  }
+
+  &:focus {
+    background-color: $opaque-half;
+    color: $black;
+    border: 2px solid $white;
+    box-shadow: 0 0 5px $ada-blue;
+  }
+
+  &.disabled {
+    border: 2px solid $gray-light;
+    color: $gray-light;
+    background: $black;
+  }
+}
+
+.button {
+  @include button;
+
+  &--secondary {
+    @include button;
+    @include button-secondary;
+  }
+
+  &--primary {
+    @include button-primary;
+  }
+
+  &--bg {
+    @include button;
+    @include button-bg;
+  }
+}
+
+.d-button-clear {
+  a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    .button-clear {
+      align-items: center;
+      border: 1px solid $border-clear-btn;
+      background-color: $white;
+      padding: 10px 10px 10px 20px;
+      position: relative;
+
+      .text {
+        color: $title-info;
+        font-family: $font-body;
+        font-size: 0.75rem;
+        font-weight: 500;
+        letter-spacing: 0;
+        line-height: 0.9375rem;
+        text-align: center;
+        display: block;
+      }
+
+      .material-icons {
+        color: $title-info;
+        font-size: 0.9375rem;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+      }
+    }
+  }
+}

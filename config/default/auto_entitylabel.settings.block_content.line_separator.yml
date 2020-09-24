@@ -1,0 +1,6 @@
+status: 1
+pattern: 'line-separator-[random:number]'
+escape: false
+dependencies:
+  config:
+    - block_content.type.line_separator

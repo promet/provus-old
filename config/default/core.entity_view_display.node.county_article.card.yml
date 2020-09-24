@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.county_article.field_type
     - node.type.county_article
   module:
+    - datetime
     - layout_builder
     - smart_trim
     - user
@@ -51,9 +52,17 @@ content:
       view_mode: landscape_medium
       link: false
     third_party_settings: {  }
+  field_publish_date:
+    type: datetime_default
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: county_default
+    third_party_settings: {  }
 hidden:
   field_file: true
-  field_publish_date: true
   field_type: true
   langcode: true
   links: true

@@ -115,3 +115,9 @@ To "watch" the files update in real-time run storybook command below.
 To run Storybook ``fin storybook`` and click on the local network link:
 
 ![image](https://user-images.githubusercontent.com/512243/74872340-0ae99200-532b-11ea-9f67-2b4a4c68ea89.png)
+
+## Updating Config
+
+Run ``fin exec sed -i 's/provus/NEW_THEME/g' config/*`` to update config that points the the provus theme.
+
+Then ``mv config/default/provus.settings.yml config/default/NEW_THEME.settings.yml``

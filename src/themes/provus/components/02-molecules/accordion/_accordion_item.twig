@@ -1,0 +1,18 @@
+
+<div class="card">
+  <div class="card-header" id="heading{{ id }}-{{ key }}">
+    <h2 class="mb-0">
+      <button class="btn btn-link{% if ((openfirst == true) and (key != 0)) or (openfirst == false) %} collapsed{% endif %}" type="button" data-toggle="collapse" data-target="#collapse{{ id }}-{{ key }}" aria-expanded="{% if (openfirst == true) and (key == 0) %}true{% else %}false{% endif %}" aria-controls="collapse{{ id }}-{{ key }}">
+        <span class="material-icons add" aria-hidden="true">add</span>
+        <span class="material-icons remove" aria-hidden="true">remove</span>
+        <span>{{ item_heading }}</span>
+      </button>
+    </h2>
+  </div>
+
+  <div id="collapse{{ id }}-{{ key }}" class="collapse{% if (openfirst == true) and (key == 0) %} show{% endif %}" aria-labelledby="heading{{ id }}-{{ key }}" data-parent="#accordion{{ id }}">
+    <div class="card-body">
+      {{ item_body }}
+    </div>
+  </div>
+</div>

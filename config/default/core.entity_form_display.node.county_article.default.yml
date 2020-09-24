@@ -50,7 +50,7 @@ content:
     third_party_settings: {  }
     region: content
   field_publish_date:
-    weight: 128
+    weight: 123
     settings: {  }
     third_party_settings: {  }
     type: datetime_default

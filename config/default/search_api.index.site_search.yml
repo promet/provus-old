@@ -6,7 +6,11 @@ dependencies:
     - search_api_solr
     - node
     - search_api
+    - search_api_glossary
   config:
+    - field.storage.node.field_last_name
+    - field.storage.node.field_sort_order
+    - field.storage.node.field_person_type
     - search_api.server.solr
     - core.entity_view_mode.node.full
 third_party_settings:
@@ -60,6 +64,37 @@ field_settings:
     dependencies:
       module:
         - node
+  field_last_name:
+    label: 'Last Name'
+    datasource_id: 'entity:node'
+    property_path: field_last_name
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_last_name
+  field_person_type:
+    label: Type
+    datasource_id: 'entity:node'
+    property_path: field_person_type
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_person_type
+  field_sort_order:
+    label: 'Sort Order'
+    datasource_id: 'entity:node'
+    property_path: field_sort_order
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_sort_order
+  glossaryaz_field_last_name:
+    label: 'Glossary AZ - Content » Last Name'
+    property_path: glossaryaz_field_last_name
+    type: string
+    indexed_locked: true
+    type_locked: true
+    hidden: true
   langcode:
     label: Language
     datasource_id: 'entity:node'
@@ -142,14 +177,23 @@ processor_settings:
   content_access:
     weights:
       preprocess_query: -30
+  glossary:
+    glossarytable: 'a:1:{s:13:"glossarytable";a:7:{s:15:"field_last_name";a:2:{s:8:"glossary";s:1:"1";s:8:"grouping";a:3:{s:11:"grouping_09";s:11:"grouping_09";s:11:"grouping_az";i:0;s:14:"grouping_other";i:0;}}s:17:"field_person_type";a:2:{s:8:"grouping";a:3:{s:14:"grouping_other";s:14:"grouping_other";s:11:"grouping_az";i:0;s:11:"grouping_09";i:0;}s:8:"glossary";i:0;}s:8:"langcode";a:2:{s:8:"grouping";a:3:{s:14:"grouping_other";s:14:"grouping_other";s:11:"grouping_az";i:0;s:11:"grouping_09";i:0;}s:8:"glossary";i:0;}s:13:"rendered_item";a:2:{s:8:"grouping";a:3:{s:14:"grouping_other";s:14:"grouping_other";s:11:"grouping_az";i:0;s:11:"grouping_09";i:0;}s:8:"glossary";i:0;}s:5:"title";a:2:{s:8:"grouping";a:3:{s:14:"grouping_other";s:14:"grouping_other";s:11:"grouping_az";i:0;s:11:"grouping_09";i:0;}s:8:"glossary";i:0;}s:4:"type";a:2:{s:8:"grouping";a:3:{s:14:"grouping_other";s:14:"grouping_other";s:11:"grouping_az";i:0;s:11:"grouping_09";i:0;}s:8:"glossary";i:0;}s:3:"uid";a:2:{s:8:"grouping";a:3:{s:14:"grouping_other";s:14:"grouping_other";s:11:"grouping_az";i:0;s:11:"grouping_09";i:0;}s:8:"glossary";i:0;}}}'
+    field_enabled: 0
+    grouping_defaults:
+      grouping_other: grouping_other
+      grouping_az: 0
+      grouping_09: 0
+    weights:
+      preprocess_index: -20
   highlight:
     highlight: always
     highlight_partial: false
     excerpt: true
     excerpt_length: 256
     exclude_fields: {  }
-    prefix: '<strong>'
-    suffix: '</strong>'
+    prefix: '<mark>'
+    suffix: '</mark>'
     weights:
       postprocess_query: 0
   html_filter:
@@ -190,10 +234,30 @@ processor_settings:
       preprocess_query: -10
   language_with_fallback: {  }
   rendered_item: {  }
+  stemmer:
+    all_fields: false
+    fields:
+      - rendered_item
+    exceptions:
+      mexican: mexic
+      texan: texa
+    weights:
+      preprocess_index: 0
+      preprocess_query: 0
+  tokenizer:
+    all_fields: false
+    fields:
+      - rendered_item
+    spaces: ''
+    overlap_cjk: 1
+    minimum_word_size: '3'
+    weights:
+      preprocess_index: -6
+      preprocess_query: -6
 tracker_settings:
   default:
     indexing_order: fifo
 options:
-  index_directly: false
+  index_directly: true
   cron_limit: 50
 server: solr

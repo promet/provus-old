@@ -1,0 +1,50 @@
+{#
+ # Available variables:
+ # - teaser__base_class - base classname of the wrapper.
+ # - teaser__modifiers - array of modifiers to add to the base classname of the wrapper.
+ # - teaser__blockname - blockname prepended to the base classname of the wrapper(s) and each component.
+ #
+ # - teaser__heading - the content of the title component.
+ # - teaser__heading__link - (optional) the url the title should link to. Defaults to card__link__url.
+ # - teaser__heading__base_class - base classname of the title component. Defaults to "title".
+ # - teaser__heading__blockname - blockname to add to the base classname of the title - defaults to card__base_class.
+ # - teaser__heading__modifiers - array of modifiers to add to the base classname of the title.
+ # - teaser__heading__link_base_class - base class to add to the title link - defaults to 'title-link'.
+ #}
+{% set teaser__base_class = 'location-teaser' %}
+
+<article {{ bem(teaser__base_class) }}>
+
+  {# Heading #}
+  {% if teaser__heading %}
+    {{ title_prefix }}
+      <h2 class="location-teaser__heading notranslate">
+        <a href="{{ teaser__link__url }}" rel="bookmark" class="location-teaser__heading-link">{{ teaser__heading }}</a>
+      </h2>
+    {{ title_suffix }}
+  {% endif %}
+
+  <div {{ bem('content', [], teaser__base_class) }}>
+
+    {% block teaser__address %}
+      <p class="address" translate="no">
+        <span class="address-line1">{{ teaser__address__address1 }}</span><br>
+        <span class="locality">{{ teaser__address__city }}</span>, <span class="administrative-area">{{ teaser__address__state }}</span> <span class="postal-code">{{ teaser__address__zip }}</span><br>
+        <span class="country">United States</span>
+      </p>
+    {% endblock %}
+
+    {% if teaser__email|render or teaser__phone|render %}
+      <p class="email-phone">
+        {% if teaser__email|render %}
+          <span class="email"><span class="material-icons" aria-hidden="true">email</span>{{ teaser__email }}</span>
+        {% endif %}
+        {% if teaser__phone|render %}
+          <span class="phone"><span class="material-icons" aria-hidden="true">phone</span>{{ teaser__phone }}</span>
+        {% endif %}
+      </p>
+    {% endif %}
+
+  </div>
+
+</article>

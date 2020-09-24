@@ -1,0 +1,28 @@
+uuid: 90592556-317b-405c-940a-433f08d6c3eb
+langcode: en
+status: true
+dependencies: {  }
+id: design
+label: Design
+weight: null
+blocks:
+  -
+    block_id: 'inline_block:line_separator'
+    weight: 0
+    image_path: /themes/custom/provus/images/icons/material/remove.svg
+    image_alt: 'Line separator icon'
+  -
+    block_id: 'inline_block:columns'
+    weight: 0
+    image_path: /themes/custom/provus/images/icons/material/horizontal_distribute.svg
+    image_alt: 'Column icon'
+  -
+    block_id: 'inline_block:tabs'
+    weight: 0
+    image_path: /themes/custom/provus/images/icons/material/tab.svg
+    image_alt: 'Tab icon'
+  -
+    block_id: 'inline_block:button'
+    weight: 0
+    image_path: /themes/custom/provus/images/icons/material/indeterminate_check_box.svg
+    image_alt: 'Button icon'

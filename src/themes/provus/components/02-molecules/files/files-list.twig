@@ -1,0 +1,26 @@
+{% set fileslist__base_class = 'files-list' %}
+
+<div {{ bem(fileslist__base_class) }}>
+  <div {{ bem('inner', [], fileslist__base_class) }}>
+    {% if title %}
+      <h2 class="title">{{ title }}</h2>
+    {% endif %}
+    <ul {{ bem('content', [], fileslist__base_class) }}>
+      {% block content %}
+        {% for item in files %}
+          <li class="extension-{{ item.file__icon }}">
+              <span class="filename">
+                {% include "@atoms/links/link/link.twig" with {
+                  link_content: item.file__name,
+                  link_url: item.file__url,
+                } %}
+              </span>
+            <span class="filesize">
+                {{ item.file__size }}
+              </span>
+          </li>
+        {% endfor %}
+      {% endblock %}
+    </ul>
+  </div>
+</div>

@@ -3,17 +3,17 @@
         {
             "nid": [
                 {
-                    "value": 7
+                    "value": 18
                 }
             ],
             "uuid": [
                 {
-                    "value": "a45d46fc-b1c8-47e7-b50d-36b04da9a4e5"
+                    "value": "dd009a62-df5a-4b7d-bc32-d8ec6d12e093"
                 }
             ],
             "vid": [
                 {
-                    "value": 7
+                    "value": 18
                 }
             ],
             "langcode": [
@@ -30,7 +30,7 @@
             ],
             "revision_timestamp": [
                 {
-                    "value": "2020-05-08T13:24:19+00:00",
+                    "value": "2020-09-18T01:52:46+00:00",
                     "format": "Y-m-d\\TH:i:sP"
                 }
             ],
@@ -38,7 +38,7 @@
                 {
                     "target_id": 0,
                     "target_type": "user",
-                    "target_uuid": "4d4524f6-f681-418f-9069-5d145c978455",
+                    "target_uuid": "1136bc22-208d-4966-beb8-9a3dd3662a56",
                     "url": "\/user\/0"
                 }
             ],
@@ -52,7 +52,7 @@
                 {
                     "target_id": 0,
                     "target_type": "user",
-                    "target_uuid": "4d4524f6-f681-418f-9069-5d145c978455",
+                    "target_uuid": "1136bc22-208d-4966-beb8-9a3dd3662a56",
                     "url": "\/user\/0"
                 }
             ],
@@ -69,7 +69,7 @@
             ],
             "changed": [
                 {
-                    "value": "2020-05-08T13:24:19+00:00",
+                    "value": "2020-09-18T01:52:46+00:00",
                     "format": "Y-m-d\\TH:i:sP"
                 }
             ],
@@ -95,9 +95,9 @@
             ],
             "path": [
                 {
-                    "alias": "\/location\/southport-animal-care",
-                    "pid": 17,
-                    "langcode": "en"
+                    "alias": "",
+                    "pid": null,
+                    "langcode": null
                 }
             ],
             "body": [
@@ -118,7 +118,7 @@
                     "langcode": "",
                     "country_code": "US",
                     "administrative_area": "CA",
-                    "locality": "South Southport",
+                    "locality": "South Orange",
                     "dependent_locality": null,
                     "postal_code": "92868",
                     "sorting_code": null,
@@ -181,12 +181,32 @@
                     "comment": ""
                 }
             ],
+            "field_lat_long": [
+                {
+                    "value": "POINT(-117.888534 33.780589)",
+                    "geo_type": "Point",
+                    "lat": 33.780589,
+                    "lon": -117.888534,
+                    "left": -117.888534,
+                    "top": 33.780589,
+                    "right": -117.888534,
+                    "bottom": 33.780589,
+                    "geohash": "9qh0jms4nn1y",
+                    "latlon": "33.780589,-117.888534"
+                }
+            ],
             "field_location_type": [],
+            "field_loc_amenities": [],
+            "field_loc_type": [
+                {
+                    "value": "animal"
+                }
+            ],
             "field_media_image": [
                 {
                     "target_id": 14,
                     "target_type": "media",
-                    "target_uuid": "a39af686-2edc-4076-a8c9-6b0834aee46e",
+                    "target_uuid": "f2c883a6-2028-448f-a041-51557a3b3a22",
                     "url": "\/media\/14\/edit"
                 }
             ],

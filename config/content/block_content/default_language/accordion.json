@@ -41,10 +41,14 @@
                     "value": true
                 }
             ],
-            "info": [],
+            "info": [
+                {
+                    "value": "Accordion 2121577634"
+                }
+            ],
             "changed": [
                 {
-                    "value": "2020-05-11T15:09:32+00:00",
+                    "value": "2020-09-18T18:23:44+00:00",
                     "format": "Y-m-d\\TH:i:sP"
                 }
             ],
@@ -87,6 +91,11 @@
                     "target_type": "block_content",
                     "target_uuid": "17f62b02-0e2f-4aab-8660-be44367b8719",
                     "url": "\/block\/4"
+                }
+            ],
+            "field_openfirst": [
+                {
+                    "value": true
                 }
             ]
         }

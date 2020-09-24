@@ -1,15 +1,17 @@
 uuid: a8e5e114-fe36-46a1-8e8e-c5dd1fa01f27
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - focal_point
 name: landscape_280
 label: 'Landscape 280'
 effects:
   7046a2a5-b36d-4ebc-81bb-5752419a899e:
     uuid: 7046a2a5-b36d-4ebc-81bb-5752419a899e
-    id: image_scale_and_crop
+    id: focal_point_scale_and_crop
     weight: 1
     data:
       width: 280
       height: 158
-      anchor: center-center
+      crop_type: focal_point

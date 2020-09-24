@@ -20,7 +20,7 @@ third_party_settings:
         layout_settings:
           label: ''
         components:
-          a6c05b1e-d540-4834-9072-ca0072139d90:
+          -
             uuid: a6c05b1e-d540-4834-9072-ca0072139d90
             region: content
             configuration:

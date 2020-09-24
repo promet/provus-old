@@ -1,0 +1,21 @@
+uuid: 17e78136-c4a9-4d47-b3a9-5a1123bf3637
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_loc_amenities
+    - node.type.location
+  module:
+    - options
+id: node.location.field_loc_amenities
+field_name: field_loc_amenities
+entity_type: node
+bundle: location
+label: 'Location Amenities'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

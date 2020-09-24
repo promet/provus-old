@@ -7,7 +7,7 @@ dependencies:
     - image.style.thumbnail
     - media.type.image
   module:
-    - image
+    - focal_point
     - path
 _core:
   default_config_hash: WeM0d1VqhuyGELo4SRiDJfhDQSLqfKavISEbrnlcTaE
@@ -26,8 +26,10 @@ content:
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
+      preview_link: true
+      offsets: '50,50'
     third_party_settings: {  }
-    type: image_image
+    type: image_focal_point
     weight: 0
     region: content
   langcode:

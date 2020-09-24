@@ -12,14 +12,17 @@ type: list_string
 settings:
   allowed_values:
     -
-      value: count_page
+      value: county_page
       label: Page
     -
       value: landing_page
       label: 'Landing Page'
     -
-      value: county_article
-      label: Article
+      value: county_article-news
+      label: 'Article - News'
+    -
+      value: county_article-press
+      label: 'Article - Press'
     -
       value: event
       label: Event

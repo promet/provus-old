@@ -1,15 +1,17 @@
 uuid: 5b135923-961d-4d3a-a680-fc0f07359e68
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - focal_point
 name: square_1080
 label: 'Square 1080'
 effects:
   b77b6b42-98dd-44ba-94de-83c0ab1dd44a:
     uuid: b77b6b42-98dd-44ba-94de-83c0ab1dd44a
-    id: image_scale_and_crop
+    id: focal_point_scale_and_crop
     weight: 1
     data:
       width: 1080
       height: 1080
-      anchor: center-center
+      crop_type: focal_point

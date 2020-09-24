@@ -6,6 +6,7 @@ dependencies:
     - search_api.index.site_search
   module:
     - search_api
+    - user
 id: search
 label: Search
 module: views
@@ -21,8 +22,9 @@ display:
     position: 0
     display_options:
       access:
-        type: none
-        options: {  }
+        type: perm
+        options:
+          perm: 'access content'
       cache:
         type: tag
         options: {  }
@@ -35,7 +37,7 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Apply
+          submit_button: Search
           reset_button: false
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
@@ -43,12 +45,17 @@ display:
           sort_asc_label: Asc
           sort_desc_label: Desc
       pager:
-        type: mini
+        type: full
         options:
           items_per_page: 10
           offset: 0
           id: 0
           total_pages: null
+          tags:
+            previous: ‹‹
+            next: ››
+            first: '« First'
+            last: 'Last »'
           expose:
             items_per_page: false
             items_per_page_label: 'Items per page'
@@ -57,9 +64,7 @@ display:
             items_per_page_options_all_label: '- All -'
             offset: false
             offset_label: Offset
-          tags:
-            previous: ‹‹
-            next: ››
+          quantity: 9
       style:
         type: default
       row:
@@ -67,12 +72,12 @@ display:
         options:
           view_modes:
             'entity:node':
-              county_article: teaser
-              county_page: teaser
-              event: teaser
-              faq: teaser
-              location: teaser
-              person: teaser
+              county_article: search_result
+              county_page: search_result
+              event: search_result
+              faq: search_result
+              location: search_result
+              person: search_result
       fields: {  }
       filters:
         search_api_fulltext:
@@ -102,7 +107,11 @@ display:
               authenticated: authenticated
               anonymous: '0'
               administrator: '0'
-            placeholder: ''
+              content_editor: '0'
+              layout_editor: '0'
+              user_manager: '0'
+              site_builder: '0'
+            placeholder: 'Enter search terms'
           is_grouped: false
           group_info:
             label: ''
@@ -120,6 +129,18 @@ display:
           fields: {  }
           plugin_id: search_api_fulltext
       sorts:
+        search_api_relevance:
+          id: search_api_relevance
+          table: search_api_index_site_search
+          field: search_api_relevance
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: DESC
+          exposed: true
+          expose:
+            label: Relevance
+          plugin_id: search_api
         title:
           id: title
           table: search_api_index_site_search
@@ -154,7 +175,7 @@ display:
           group_type: group
           admin_label: ''
           empty: false
-          content: 'Displaying @start - @end of @total'
+          content: 'Showing: @start - @end of @total results'
           plugin_id: result
       footer: {  }
       empty:
@@ -181,6 +202,7 @@ display:
         - 'url.query_args:sort_by'
         - 'url.query_args:sort_order'
         - 'user.node_grants:view'
+        - user.permissions
       tags:
         - 'config:search_api.index.site_search'
   page_1:
@@ -192,9 +214,11 @@ display:
       display_extenders: {  }
       path: search
       cache:
-        type: none
+        type: search_api_tag
+        options: {  }
       defaults:
         cache: false
+      exposed_block: false
     cache_metadata:
       max-age: -1
       contexts:
@@ -204,5 +228,6 @@ display:
         - 'url.query_args:sort_by'
         - 'url.query_args:sort_order'
         - 'user.node_grants:view'
+        - user.permissions
       tags:
         - 'config:search_api.index.site_search'

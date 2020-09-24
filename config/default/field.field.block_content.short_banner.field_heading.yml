@@ -1,0 +1,19 @@
+uuid: 7b677780-6009-4df9-971e-35b0146ae63c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.short_banner
+    - field.storage.block_content.field_heading
+id: block_content.short_banner.field_heading
+field_name: field_heading
+entity_type: block_content
+bundle: short_banner
+label: Heading
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

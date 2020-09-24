@@ -1,0 +1,9 @@
+header_title: 'Click me to open'
+key: 'add-to-calendar'
+items:
+  - title: 'Link 1'
+    link: '#'
+  - title: 'Link 2'
+    link: '#'
+  - title: 'Link 3'
+    link: '#'

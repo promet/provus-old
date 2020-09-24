@@ -8,9 +8,9 @@ dependencies:
     - ctools
     - views
   theme:
-    - countyoc
+    - provus
 id: views_block__upcoming_events_block_1
-theme: countyoc
+theme: provus
 region: postcontent
 weight: 0
 provider: null

@@ -1,0 +1,25 @@
+.footer {
+  &__logo_footer {
+    .logo-img {
+      margin-bottom: 20px;
+
+      .logo__image {
+        margin: 0 auto;
+	background-color: #fff;
+	padding: 5px;
+      }
+    }
+
+    .logo-text {
+      text-align: center;
+
+      p {
+        margin-bottom: 0;
+      }
+
+      a {
+        color: $white;
+      }
+    }
+  }
+}

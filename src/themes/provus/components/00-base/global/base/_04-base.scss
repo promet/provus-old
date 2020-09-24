@@ -1,0 +1,62 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.main {
+  @include wrapper;
+
+  display: block; /* Fix for IE weirdness */
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+  word-wrap: normal;
+}
+
+.visually-hidden.focusable.skip-link:focus {
+  z-index: 101;
+  position: relative !important;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0 50px;
+}
+
+.block--section-bg-solid,
+.block--section-bg-gradient {
+  .field-link.center {
+    margin-bottom: 0;
+  }
+}
+
+.block--section-bg-solid {
+  &:not(.layout-builder-block) {
+    @include breakout;
+  }
+
+  background-color: $accent-sky;
+}
+
+.block--section-bg-gradient {
+  &:not(.layout-builder-block) {
+    @include breakout;
+  }
+
+  background: linear-gradient(180deg, $white 0%, $accent-sky 100%);
+}

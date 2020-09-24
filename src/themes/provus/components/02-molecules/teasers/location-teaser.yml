@@ -1,0 +1,8 @@
+teaser__heading: 'Aliso Viejo Library'
+teaser__link__url: '#'
+teaser__address__address1: '1 Journey'
+teaser__address__city: 'Aliso Viejo'
+teaser__address__state: 'CA'
+teaser__address__zip: '92656'
+teaser__email: '<a href="mailto:test@example.com">test@example.com</a>'
+teaser__phone: '<a href="tel:555-344-3333">555-344-3333</a>'

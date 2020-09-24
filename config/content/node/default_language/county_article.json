@@ -8,7 +8,7 @@
             ],
             "uuid": [
                 {
-                    "value": "2b0f3a61-b8cf-434b-b96a-8487225d73ee"
+                    "value": "32f776ad-846e-4918-aecb-e4770e998e5a"
                 }
             ],
             "vid": [
@@ -38,7 +38,7 @@
                 {
                     "target_id": 0,
                     "target_type": "user",
-                    "target_uuid": "4d4524f6-f681-418f-9069-5d145c978455",
+                    "target_uuid": "1136bc22-208d-4966-beb8-9a3dd3662a56",
                     "url": "\/user\/0"
                 }
             ],
@@ -52,7 +52,7 @@
                 {
                     "target_id": 0,
                     "target_type": "user",
-                    "target_uuid": "4d4524f6-f681-418f-9069-5d145c978455",
+                    "target_uuid": "1136bc22-208d-4966-beb8-9a3dd3662a56",
                     "url": "\/user\/0"
                 }
             ],
@@ -95,9 +95,9 @@
             ],
             "path": [
                 {
-                    "alias": "",
-                    "pid": null,
-                    "langcode": null
+                    "alias": "\/press\/covid-19-public-information-hotline-close-april-18",
+                    "pid": 17,
+                    "langcode": "en"
                 }
             ],
             "body": [
@@ -110,7 +110,11 @@
             ],
             "field_file": [],
             "field_media_image": [],
-            "field_publish_date": [],
+            "field_publish_date": [
+                {
+                    "value": "2020-04-17"
+                }
+            ],
             "field_type": [
                 {
                     "value": "press"
@@ -125,7 +129,7 @@
             ],
             "uuid": [
                 {
-                    "value": "b79f2994-0822-45db-918f-3b5494547876"
+                    "value": "16620bd0-5f1a-430c-9513-1ce846e68f46"
                 }
             ],
             "vid": [
@@ -155,7 +159,7 @@
                 {
                     "target_id": 0,
                     "target_type": "user",
-                    "target_uuid": "4d4524f6-f681-418f-9069-5d145c978455",
+                    "target_uuid": "1136bc22-208d-4966-beb8-9a3dd3662a56",
                     "url": "\/user\/0"
                 }
             ],
@@ -169,7 +173,7 @@
                 {
                     "target_id": 0,
                     "target_type": "user",
-                    "target_uuid": "4d4524f6-f681-418f-9069-5d145c978455",
+                    "target_uuid": "1136bc22-208d-4966-beb8-9a3dd3662a56",
                     "url": "\/user\/0"
                 }
             ],
@@ -212,9 +216,9 @@
             ],
             "path": [
                 {
-                    "alias": "",
-                    "pid": null,
-                    "langcode": null
+                    "alias": "\/press\/taxpayers-directly-affected-covid-19-will-have-penalties-cancelled",
+                    "pid": 18,
+                    "langcode": "en"
                 }
             ],
             "body": [
@@ -227,7 +231,11 @@
             ],
             "field_file": [],
             "field_media_image": [],
-            "field_publish_date": [],
+            "field_publish_date": [
+                {
+                    "value": "2020-04-14"
+                }
+            ],
             "field_type": [
                 {
                     "value": "press"
@@ -242,7 +250,7 @@
             ],
             "uuid": [
                 {
-                    "value": "990a9001-44d5-4a7d-ab6f-a12e824e6099"
+                    "value": "3efa1594-2920-4de1-b8d5-bce6992fc3ee"
                 }
             ],
             "vid": [
@@ -272,7 +280,7 @@
                 {
                     "target_id": 0,
                     "target_type": "user",
-                    "target_uuid": "4d4524f6-f681-418f-9069-5d145c978455",
+                    "target_uuid": "1136bc22-208d-4966-beb8-9a3dd3662a56",
                     "url": "\/user\/0"
                 }
             ],
@@ -286,7 +294,7 @@
                 {
                     "target_id": 0,
                     "target_type": "user",
-                    "target_uuid": "4d4524f6-f681-418f-9069-5d145c978455",
+                    "target_uuid": "1136bc22-208d-4966-beb8-9a3dd3662a56",
                     "url": "\/user\/0"
                 }
             ],
@@ -329,9 +337,9 @@
             ],
             "path": [
                 {
-                    "alias": "",
-                    "pid": null,
-                    "langcode": null
+                    "alias": "\/press\/property-taxes-due-friday-three-payment-options",
+                    "pid": 19,
+                    "langcode": "en"
                 }
             ],
             "body": [
@@ -344,7 +352,11 @@
             ],
             "field_file": [],
             "field_media_image": [],
-            "field_publish_date": [],
+            "field_publish_date": [
+                {
+                    "value": "2020-04-09"
+                }
+            ],
             "field_type": [
                 {
                     "value": "press"
@@ -359,7 +371,7 @@
             ],
             "uuid": [
                 {
-                    "value": "43cf263c-e50e-405a-97a0-35624cf8bb49"
+                    "value": "14cf6efe-c1e2-4fc9-a3bf-b32c5f78a50a"
                 }
             ],
             "vid": [
@@ -389,7 +401,7 @@
                 {
                     "target_id": 0,
                     "target_type": "user",
-                    "target_uuid": "4d4524f6-f681-418f-9069-5d145c978455",
+                    "target_uuid": "1136bc22-208d-4966-beb8-9a3dd3662a56",
                     "url": "\/user\/0"
                 }
             ],
@@ -403,7 +415,7 @@
                 {
                     "target_id": 0,
                     "target_type": "user",
-                    "target_uuid": "4d4524f6-f681-418f-9069-5d145c978455",
+                    "target_uuid": "1136bc22-208d-4966-beb8-9a3dd3662a56",
                     "url": "\/user\/0"
                 }
             ],
@@ -446,9 +458,9 @@
             ],
             "path": [
                 {
-                    "alias": "",
-                    "pid": null,
-                    "langcode": null
+                    "alias": "\/news\/certain-employees-some-essential-businesses-must-wear-face-coverings-effective-friday-april-24",
+                    "pid": 20,
+                    "langcode": "en"
                 }
             ],
             "body": [
@@ -461,7 +473,11 @@
             ],
             "field_file": [],
             "field_media_image": [],
-            "field_publish_date": [],
+            "field_publish_date": [
+                {
+                    "value": "2020-04-22"
+                }
+            ],
             "field_type": [
                 {
                     "value": "news"
@@ -476,7 +492,7 @@
             ],
             "uuid": [
                 {
-                    "value": "2e1bfc0d-5805-4d6d-bd2f-e3550acc9a0d"
+                    "value": "4449d0cc-5edb-400b-bed6-100b6b09ee33"
                 }
             ],
             "vid": [
@@ -498,7 +514,7 @@
             ],
             "revision_timestamp": [
                 {
-                    "value": "2020-04-23T06:21:51+00:00",
+                    "value": "2020-09-18T01:45:08+00:00",
                     "format": "Y-m-d\\TH:i:sP"
                 }
             ],
@@ -506,7 +522,7 @@
                 {
                     "target_id": 0,
                     "target_type": "user",
-                    "target_uuid": "4d4524f6-f681-418f-9069-5d145c978455",
+                    "target_uuid": "1136bc22-208d-4966-beb8-9a3dd3662a56",
                     "url": "\/user\/0"
                 }
             ],
@@ -520,7 +536,7 @@
                 {
                     "target_id": 0,
                     "target_type": "user",
-                    "target_uuid": "4d4524f6-f681-418f-9069-5d145c978455",
+                    "target_uuid": "1136bc22-208d-4966-beb8-9a3dd3662a56",
                     "url": "\/user\/0"
                 }
             ],
@@ -537,7 +553,7 @@
             ],
             "changed": [
                 {
-                    "value": "2020-04-23T06:21:51+00:00",
+                    "value": "2020-09-18T01:45:08+00:00",
                     "format": "Y-m-d\\TH:i:sP"
                 }
             ],
@@ -563,22 +579,26 @@
             ],
             "path": [
                 {
-                    "alias": "",
-                    "pid": null,
-                    "langcode": null
+                    "alias": "\/news\/southport-health-care-agency-announces-launch-southport-covid-19-testing-network",
+                    "pid": 21,
+                    "langcode": "en"
                 }
             ],
             "body": [
                 {
-                    "value": "<p>(Santa Ana, CA) -- The Southport Health Care Agency (HCA) is pleased to announce the launch of the Southport COVID-19 Testing Network, which offers COVID-19 testing starting Tuesday, April 21, 2020 to Southport County residents who meet the criteria detailed below.<\/p>\r\n\r\n<p>The Network coordinates and expands testing across Southport County to create a safety net for any community member who is experiencing COVID-19 symptoms but is unable to receive testing through a health care provider.<\/p>\r\n\r\n<p>\u201cWe have partnered with an initial set of community health centers who are performing FDA-approved PCR testing, the most reliable testing available to detect current infection,\u201d said Dr. Nichole Quick, County Health Officer. \u201cThe Southport Health Care Agency will continue to work diligently to expand this network by bringing more locations online in the days and weeks to come.\u201d<\/p>\r\n\r\n<p>The PCR test identifies if someone is currently infected from a sample taken with a swab. It is not a blood test, nor does it test for antibodies. Residents with symptoms of COVID-19, which generally include fever, cough, and shortness of breath, should first contact their medical provider to get guidance on testing and care. Individuals who are unable to be tested by their provider may schedule an appointment at any Network test site to receive a medical screening and test. Initial locations include:<\/p>\r\n\r\n<ul>\r\n\t<li>AltaMed Medical Group, Southport<\/li>\r\n\t<li>AltaMed Medical Group, Santa Ana\/Bristol<\/li>\r\n\t<li>Nhan Hoa Comprehensive Health Care Clinic, Garden Grove<\/li>\r\n\t<li>UCI Health, multiple locations<\/li>\r\n<\/ul>\r\n\r\n<p>A continually-updated list of test sites, with information on scheduling and the appointment process, can be found at&nbsp;<a href=\"http:\/\/www.ochealthinfo.com\/novelcoronavirus\">www.ochealthinfo.com\/novelcoronavirus<\/a>&nbsp;(click on COVID-19 Testing and Screening) or by calling the HCA\u2019s Health Referral Line at&nbsp;<a href=\"tel:1(800) 564-8448\">1(800) 564-8448<\/a>.&nbsp;<\/p>\r\n\r\n<p>\u201cBecause of continued challenges of obtaining testing supplies and personal protective equipment (PPE) for health care providers, testing may be restricted at times to high priority groups as defined by the Centers for Disease Control and Prevention (CDC),\u201d said Dr. Quick. \u201cResidents must make an appointment for testing to assure eligibility and availability of testing.\u201d<\/p>\r\n",
+                    "value": "<p>(Santa Ana, CA) -- The Southport Health Care Agency (HCA) is pleased to announce the launch of the Southport COVID-19 Testing Network, which offers COVID-19 testing starting Tuesday, April 21, 2020 to Southport County residents who meet the criteria detailed below.<\/p>\r\n\r\n<p>The Network coordinates and expands testing across Southport County to create a safety net for any community member who is experiencing COVID-19 symptoms but is unable to receive testing through a health care provider.<\/p>\r\n\r\n<p>\u201cWe have partnered with an initial set of community health centers who are performing FDA-approved PCR testing, the most reliable testing available to detect current infection,\u201d said Dr. Nichole Quick, County Health Officer. \u201cThe Southport Health Care Agency will continue to work diligently to expand this network by bringing more locations online in the days and weeks to come.\u201d<\/p>\r\n\r\n<p>The PCR test identifies if someone is currently infected from a sample taken with a swab. It is not a blood test, nor does it test for antibodies. Residents with symptoms of COVID-19, which generally include fever, cough, and shortness of breath, should first contact their medical provider to get guidance on testing and care. Individuals who are unable to be tested by their provider may schedule an appointment at any Network test site to receive a medical screening and test. Initial locations include:<\/p>\r\n\r\n<ul>\r\n\t<li>AltaMed Medical Group, Anaheim<\/li>\r\n\t<li>AltaMed Medical Group, Santa Ana\/Bristol<\/li>\r\n\t<li>Nhan Hoa Comprehensive Health Care Clinic, Garden Grove<\/li>\r\n\t<li>UCI Health, multiple locations<\/li>\r\n<\/ul>\r\n\r\n<p>A continually-updated list of test sites, with information on scheduling and the appointment process, can be found at&nbsp;<a href=\"http:\/\/www.ochealthinfo.com\/novelcoronavirus\">www.ochealthinfo.com\/novelcoronavirus<\/a>&nbsp;(click on COVID-19 Testing and Screening) or by calling the HCA\u2019s Health Referral Line at&nbsp;<a href=\"tel:1(800) 564-8448\">1(800) 564-8448<\/a>.&nbsp;<\/p>\r\n\r\n<p>\u201cBecause of continued challenges of obtaining testing supplies and personal protective equipment (PPE) for health care providers, testing may be restricted at times to high priority groups as defined by the Centers for Disease Control and Prevention (CDC),\u201d said Dr. Quick. \u201cResidents must make an appointment for testing to assure eligibility and availability of testing.\u201d<\/p>\r\n",
                     "format": "basic_html",
-                    "processed": "<p>(Santa Ana, CA) -- The Southport Health Care Agency (HCA) is pleased to announce the launch of the Southport COVID-19 Testing Network, which offers COVID-19 testing starting Tuesday, April 21, 2020 to Southport County residents who meet the criteria detailed below.<\/p>\n\n<p>The Network coordinates and expands testing across Southport County to create a safety net for any community member who is experiencing COVID-19 symptoms but is unable to receive testing through a health care provider.<\/p>\n\n<p>\u201cWe have partnered with an initial set of community health centers who are performing FDA-approved PCR testing, the most reliable testing available to detect current infection,\u201d said Dr. Nichole Quick, County Health Officer. \u201cThe Southport Health Care Agency will continue to work diligently to expand this network by bringing more locations online in the days and weeks to come.\u201d<\/p>\n\n<p>The PCR test identifies if someone is currently infected from a sample taken with a swab. It is not a blood test, nor does it test for antibodies. Residents with symptoms of COVID-19, which generally include fever, cough, and shortness of breath, should first contact their medical provider to get guidance on testing and care. Individuals who are unable to be tested by their provider may schedule an appointment at any Network test site to receive a medical screening and test. Initial locations include:<\/p>\n\n<ul><li>AltaMed Medical Group, Southport<\/li>\n\t<li>AltaMed Medical Group, Santa Ana\/Bristol<\/li>\n\t<li>Nhan Hoa Comprehensive Health Care Clinic, Garden Grove<\/li>\n\t<li>UCI Health, multiple locations<\/li>\n<\/ul><p>A continually-updated list of test sites, with information on scheduling and the appointment process, can be found at\u00a0<a href=\"http:\/\/www.ochealthinfo.com\/novelcoronavirus\">www.ochealthinfo.com\/novelcoronavirus<\/a>\u00a0(click on COVID-19 Testing and Screening) or by calling the HCA\u2019s Health Referral Line at\u00a0<a href=\"tel:1(800) 564-8448\">1(800) 564-8448<\/a>.\u00a0<\/p>\n\n<p>\u201cBecause of continued challenges of obtaining testing supplies and personal protective equipment (PPE) for health care providers, testing may be restricted at times to high priority groups as defined by the Centers for Disease Control and Prevention (CDC),\u201d said Dr. Quick. \u201cResidents must make an appointment for testing to assure eligibility and availability of testing.\u201d<\/p>",
+                    "processed": "<p>(Santa Ana, CA) -- The Southport Health Care Agency (HCA) is pleased to announce the launch of the Southport COVID-19 Testing Network, which offers COVID-19 testing starting Tuesday, April 21, 2020 to Southport County residents who meet the criteria detailed below.<\/p>\n\n<p>The Network coordinates and expands testing across Southport County to create a safety net for any community member who is experiencing COVID-19 symptoms but is unable to receive testing through a health care provider.<\/p>\n\n<p>\u201cWe have partnered with an initial set of community health centers who are performing FDA-approved PCR testing, the most reliable testing available to detect current infection,\u201d said Dr. Nichole Quick, County Health Officer. \u201cThe Southport Health Care Agency will continue to work diligently to expand this network by bringing more locations online in the days and weeks to come.\u201d<\/p>\n\n<p>The PCR test identifies if someone is currently infected from a sample taken with a swab. It is not a blood test, nor does it test for antibodies. Residents with symptoms of COVID-19, which generally include fever, cough, and shortness of breath, should first contact their medical provider to get guidance on testing and care. Individuals who are unable to be tested by their provider may schedule an appointment at any Network test site to receive a medical screening and test. Initial locations include:<\/p>\n\n<ul><li>AltaMed Medical Group, Anaheim<\/li>\n\t<li>AltaMed Medical Group, Santa Ana\/Bristol<\/li>\n\t<li>Nhan Hoa Comprehensive Health Care Clinic, Garden Grove<\/li>\n\t<li>UCI Health, multiple locations<\/li>\n<\/ul><p>A continually-updated list of test sites, with information on scheduling and the appointment process, can be found at\u00a0<a href=\"http:\/\/www.ochealthinfo.com\/novelcoronavirus\">www.ochealthinfo.com\/novelcoronavirus<\/a>\u00a0(click on COVID-19 Testing and Screening) or by calling the HCA\u2019s Health Referral Line at\u00a0<a href=\"tel:1(800) 564-8448\">1(800) 564-8448<\/a>.\u00a0<\/p>\n\n<p>\u201cBecause of continued challenges of obtaining testing supplies and personal protective equipment (PPE) for health care providers, testing may be restricted at times to high priority groups as defined by the Centers for Disease Control and Prevention (CDC),\u201d said Dr. Quick. \u201cResidents must make an appointment for testing to assure eligibility and availability of testing.\u201d<\/p>",
                     "summary": ""
                 }
             ],
             "field_file": [],
             "field_media_image": [],
-            "field_publish_date": [],
+            "field_publish_date": [
+                {
+                    "value": "2020-04-21"
+                }
+            ],
             "field_type": [
                 {
                     "value": "news"
@@ -593,7 +613,7 @@
             ],
             "uuid": [
                 {
-                    "value": "ce4a568a-1122-430a-a0f6-b4e456694e8b"
+                    "value": "090d4784-455b-4596-95c9-695233d994af"
                 }
             ],
             "vid": [
@@ -623,7 +643,7 @@
                 {
                     "target_id": 0,
                     "target_type": "user",
-                    "target_uuid": "4d4524f6-f681-418f-9069-5d145c978455",
+                    "target_uuid": "1136bc22-208d-4966-beb8-9a3dd3662a56",
                     "url": "\/user\/0"
                 }
             ],
@@ -637,7 +657,7 @@
                 {
                     "target_id": 0,
                     "target_type": "user",
-                    "target_uuid": "4d4524f6-f681-418f-9069-5d145c978455",
+                    "target_uuid": "1136bc22-208d-4966-beb8-9a3dd3662a56",
                     "url": "\/user\/0"
                 }
             ],
@@ -680,22 +700,26 @@
             ],
             "path": [
                 {
-                    "alias": "",
-                    "pid": null,
-                    "langcode": null
+                    "alias": "\/news\/john-wayne-airport-posts-march-2020-statistics",
+                    "pid": 22,
+                    "langcode": "en"
                 }
             ],
             "body": [
                 {
-                    "value": "<p><strong>SANTA ANA, Calif.<\/strong>&nbsp;- Airline passenger traffic at John Wayne Airport decreased in March 2020 as compared with March 2019.&nbsp;In March 2020, the Airport served 337,981 passengers, a decrease of 63.4% when compared with the March 2019 passenger traffic count of 923,403.&nbsp;<\/p>\r\n\r\n<p>Commercial aircraft operations decreased 27.7% and commuter aircraft operations increased 25.0% when compared with March 2019 levels.<\/p>\r\n\r\n<p>Total aircraft operations decreased in March 2020 as compared with the same month in 2019.&nbsp;In March 2020, there were 17,020 total aircraft operations (take-offs and landings), a 34.8% decrease compared to 26,107 total aircraft operations in March 2019.<\/p>\r\n\r\n<p>General aviation activity, which accounted for 64.0% of the total aircraft operations during March 2020, decreased 39.1% when compared with March 2019.<\/p>\r\n\r\n<p>The top three airlines in March 2020 based on passenger count were Southwest Airlines (111,365), American Airlines (61,774) and United Airlines (53,102).<\/p>\r\n\r\n<table>\r\n\t<caption>John Wayne Airport<br \/>\r\n\tMonthly Airport Statistics MARCH 2020<\/caption>\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td>&nbsp;<\/td>\r\n\t\t\t<th scope=\"col\">March<br \/>\r\n\t\t\t2020<\/th>\r\n\t\t\t<th scope=\"col\">March<br \/>\r\n\t\t\t2019<\/th>\r\n\t\t\t<th scope=\"col\">% Change<\/th>\r\n\t\t\t<th scope=\"col\">Year-To-Date<br \/>\r\n\t\t\t2020<\/th>\r\n\t\t\t<th scope=\"col\">Year-To-Date<br \/>\r\n\t\t\t2019<\/th>\r\n\t\t\t<th scope=\"col\">% Change<\/th>\r\n\t\t<\/tr>\r\n\t\t<tr>\r\n\t\t\t<th scope=\"row\">Total passengers<\/th>\r\n\t\t\t<td>337,981<\/td>\r\n\t\t\t<td>923,403<\/td>\r\n\t\t\t<td>-63.4%<\/td>\r\n\t\t\t<td>1,908,873<\/td>\r\n\t\t\t<td>2,532,284<\/td>\r\n\t\t\t<td>-24.6%<\/td>\r\n\t\t<\/tr>\r\n\t\t<tr>\r\n\t\t\t<th scope=\"row\">Enplaned passengers<\/th>\r\n\t\t\t<td>171,445<\/td>\r\n\t\t\t<td>462,074<\/td>\r\n\t\t\t<td>-62.9%<\/td>\r\n\t\t\t<td>955,507<\/td>\r\n\t\t\t<td>1,265,487<\/td>\r\n\t\t\t<td>-24.5%<\/td>\r\n\t\t<\/tr>\r\n\t\t<tr>\r\n\t\t\t<th scope=\"row\">Deplaned passengers<\/th>\r\n\t\t\t<td>166,536<\/td>\r\n\t\t\t<td>461,329<\/td>\r\n\t\t\t<td>-63.9%<\/td>\r\n\t\t\t<td>953,366<\/td>\r\n\t\t\t<td>1,266,797<\/td>\r\n\t\t\t<td>-24.7%<\/td>\r\n\t\t<\/tr>\r\n\t\t<tr>\r\n\t\t\t<th scope=\"row\">Total Aircraft Operations<\/th>\r\n\t\t\t<td>17,020<\/td>\r\n\t\t\t<td>26,107<\/td>\r\n\t\t\t<td>-34.8%<\/td>\r\n\t\t\t<td>59,117<\/td>\r\n\t\t\t<td>70,277<\/td>\r\n\t\t\t<td>-15.9%<\/td>\r\n\t\t<\/tr>\r\n\t\t<tr>\r\n\t\t\t<th scope=\"row\">General Aviation<\/th>\r\n\t\t\t<td>10,906<\/td>\r\n\t\t\t<td>17,903<\/td>\r\n\t\t\t<td>-39.1%<\/td>\r\n\t\t\t<td>38,560<\/td>\r\n\t\t\t<td>46,921<\/td>\r\n\t\t\t<td>-17.8%<\/td>\r\n\t\t<\/tr>\r\n\t\t<tr>\r\n\t\t\t<th scope=\"row\">Commercial<\/th>\r\n\t\t\t<td>5,583<\/td>\r\n\t\t\t<td>7,720<\/td>\r\n\t\t\t<td>-27.7%<\/td>\r\n\t\t\t<td>18,703<\/td>\r\n\t\t\t<td>21,984<\/td>\r\n\t\t\t<td>-14.9%<\/td>\r\n\t\t<\/tr>\r\n\t\t<tr>\r\n\t\t\t<th scope=\"row\">Commuter<sup>1<\/sup><\/th>\r\n\t\t\t<td>500<\/td>\r\n\t\t\t<td>400<\/td>\r\n\t\t\t<td>25.0%<\/td>\r\n\t\t\t<td>1,692<\/td>\r\n\t\t\t<td>1,163<\/td>\r\n\t\t\t<td>45.5%<\/td>\r\n\t\t<\/tr>\r\n\t\t<tr>\r\n\t\t\t<th scope=\"row\">Military<\/th>\r\n\t\t\t<td>31<\/td>\r\n\t\t\t<td>84<\/td>\r\n\t\t\t<td>-63.1%<\/td>\r\n\t\t\t<td>162<\/td>\r\n\t\t\t<td>209<\/td>\r\n\t\t\t<td>-22.5%<\/td>\r\n\t\t<\/tr>\r\n\t\t<tr>\r\n\t\t\t<th scope=\"row\">Air Cargo Tons<sup>2<\/sup><\/th>\r\n\t\t\t<td>1,420<\/td>\r\n\t\t\t<td>1,401<\/td>\r\n\t\t\t<td>1.4%<\/td>\r\n\t\t\t<td>4,610<\/td>\r\n\t\t\t<td>4,729<\/td>\r\n\t\t\t<td>-2.5%<\/td>\r\n\t\t<\/tr>\r\n\t\t<tr>\r\n\t\t\t<th colspan=\"7\" scope=\"row\"><br \/>\r\n\t\t\t<strong>International Statistics<sup>3<\/sup><\/strong>&nbsp;(included in totals above)<\/th>\r\n\t\t<\/tr>\r\n\t\t<tr>\r\n\t\t\t<td>&nbsp;<\/td>\r\n\t\t\t<th scope=\"col\">March<br \/>\r\n\t\t\t2020<\/th>\r\n\t\t\t<th scope=\"col\">March<br \/>\r\n\t\t\t2019<\/th>\r\n\t\t\t<th scope=\"col\">% Change<\/th>\r\n\t\t\t<th scope=\"col\">Year-To-Date<br \/>\r\n\t\t\t2020<\/th>\r\n\t\t\t<th scope=\"col\">Year-To-Date<br \/>\r\n\t\t\t2019<\/th>\r\n\t\t\t<th scope=\"col\">% Change<\/th>\r\n\t\t<\/tr>\r\n\t\t<tr>\r\n\t\t\t<th scope=\"row\">Total Passengers<\/th>\r\n\t\t\t<td>2,813<\/td>\r\n\t\t\t<td>16,693<\/td>\r\n\t\t\t<td>-83.1%<\/td>\r\n\t\t\t<td>17,246<\/td>\r\n\t\t\t<td>43,614<\/td>\r\n\t\t\t<td>-60.5%<\/td>\r\n\t\t<\/tr>\r\n\t\t<tr>\r\n\t\t\t<th scope=\"row\">Enplaned passengers<\/th>\r\n\t\t\t<td>1,623<\/td>\r\n\t\t\t<td>8,460<\/td>\r\n\t\t\t<td>-80.8%<\/td>\r\n\t\t\t<td>8,703<\/td>\r\n\t\t\t<td>22,031<\/td>\r\n\t\t\t<td>-60.5%<\/td>\r\n\t\t<\/tr>\r\n\t\t<tr>\r\n\t\t\t<th scope=\"row\">Deplaned passengers<\/th>\r\n\t\t\t<td>1,190<\/td>\r\n\t\t\t<td>8,233<\/td>\r\n\t\t\t<td>-85.5%<\/td>\r\n\t\t\t<td>8,543<\/td>\r\n\t\t\t<td>21,583<\/td>\r\n\t\t\t<td>-60.4%<\/td>\r\n\t\t<\/tr>\r\n\t\t<tr>\r\n\t\t\t<th scope=\"row\">Total Aircraft Operations<\/th>\r\n\t\t\t<td>40<\/td>\r\n\t\t\t<td>175<\/td>\r\n\t\t\t<td>-77.1%<\/td>\r\n\t\t\t<td>172<\/td>\r\n\t\t\t<td>467<\/td>\r\n\t\t\t<td>-63.2%<\/td>\r\n\t\t<\/tr>\r\n\t\t<tr>\r\n\t\t\t<td colspan=\"7\">\r\n\t\t\t<table>\r\n\t\t\t\t<tbody>\r\n\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t<td><sup>1<\/sup><\/td>\r\n\t\t\t\t\t\t<td>\r\n\t\t\t\t\t\t<p>Aircraft used for regularly scheduled air service, configured with not more than seventy (70) seats, and operating at weights not more than ninety thousand (90,000) pounds.<\/p>\r\n\t\t\t\t\t\t<\/td>\r\n\t\t\t\t\t<\/tr>\r\n\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t<td><sup>2<\/sup><\/td>\r\n\t\t\t\t\t\t<td>\r\n\t\t\t\t\t\t<p>All-Cargo Carriers: 1,278 tons<br \/>\r\n\t\t\t\t\t\tPassenger Carriers (incidental belly cargo):&nbsp; 142 tons<br \/>\r\n\t\t\t\t\t\t(Current cargo tonnage figures in this report are for February 2020)<\/p>\r\n\t\t\t\t\t\t<\/td>\r\n\t\t\t\t\t<\/tr>\r\n\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t<td><sup>3<\/sup><\/td>\r\n\t\t\t\t\t\t<td>\r\n\t\t\t\t\t\t<p>Includes all Canada and Mexico Commercial passengers and operations.<\/p>\r\n\t\t\t\t\t\t<\/td>\r\n\t\t\t\t\t<\/tr>\r\n\t\t\t\t<\/tbody>\r\n\t\t\t<\/table>\r\n\t\t\t<\/td>\r\n\t\t<\/tr>\r\n\t<\/tbody>\r\n<\/table>\r\n\r\n<p>-###-<\/p>\r\n\r\n<p>John Wayne Airport (SNA) is owned by the County of Southport and is operated as a self-supporting enterprise that receives no general fund tax revenue. The Airport serves more than 10 million passengers annually and reaches more than 20 nonstop destinations in the United States, Canada and Mexico. More information can be found at&nbsp;<a href=\"https:\/\/www.ocair.com\/\">www.ocair.com<\/a>. Like us on&nbsp;<a href=\"http:\/\/www.facebook.com\/JohnWayneAirport\" target=\"_blank\">facebook.com\/johnwayneairport<\/a>, or follow us on&nbsp;<a href=\"http:\/\/twitter.com\/johnwayneair\" target=\"_blank\">Twitter @johnwayneair<\/a>&nbsp;and&nbsp;<a href=\"http:\/\/instagram.com\/JohnWayneAir\" target=\"_blank\">Instagram&nbsp;@johnwayneair<\/a>.<\/p>\r\n\r\n<p>To receive John Wayne Airport news releases automatically, go to&nbsp;<a href=\"https:\/\/www.ocair.com\/\">www.ocair.com<\/a>&nbsp;and click&nbsp;<a href=\"https:\/\/www.ocair.com\/newsroom\/subscribe.aspx\">Subscribe<\/a>.<\/p>\r\n",
+                    "value": "<p><strong>SANTA ANA, Calif.<\/strong>&nbsp;- Airline passenger traffic at John Wayne Airport decreased in March 2020 as compared with March 2019.&nbsp;In March 2020, the Airport served 337,981 passengers, a decrease of 63.4% when compared with the March 2019 passenger traffic count of 923,403.&nbsp;<\/p>\r\n\r\n<p>Commercial aircraft operations decreased 27.7% and commuter aircraft operations increased 25.0% when compared with March 2019 levels.<\/p>\r\n\r\n<p>Total aircraft operations decreased in March 2020 as compared with the same month in 2019.&nbsp;In March 2020, there were 17,020 total aircraft operations (take-offs and landings), a 34.8% decrease compared to 26,107 total aircraft operations in March 2019.<\/p>\r\n\r\n<p>General aviation activity, which accounted for 64.0% of the total aircraft operations during March 2020, decreased 39.1% when compared with March 2019.<\/p>\r\n\r\n<p>The top three airlines in March 2020 based on passenger count were Southwest Airlines (111,365), American Airlines (61,774) and United Airlines (53,102).<\/p>\r\n\r\n<table>\r\n\t<caption>John Wayne Airport<br \/>\r\n\tMonthly Airport Statistics MARCH 2020<\/caption>\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td>&nbsp;<\/td>\r\n\t\t\t<th scope=\"col\">March<br \/>\r\n\t\t\t2020<\/th>\r\n\t\t\t<th scope=\"col\">March<br \/>\r\n\t\t\t2019<\/th>\r\n\t\t\t<th scope=\"col\">% Change<\/th>\r\n\t\t\t<th scope=\"col\">Year-To-Date<br \/>\r\n\t\t\t2020<\/th>\r\n\t\t\t<th scope=\"col\">Year-To-Date<br \/>\r\n\t\t\t2019<\/th>\r\n\t\t\t<th scope=\"col\">% Change<\/th>\r\n\t\t<\/tr>\r\n\t\t<tr>\r\n\t\t\t<th scope=\"row\">Total passengers<\/th>\r\n\t\t\t<td>337,981<\/td>\r\n\t\t\t<td>923,403<\/td>\r\n\t\t\t<td>-63.4%<\/td>\r\n\t\t\t<td>1,908,873<\/td>\r\n\t\t\t<td>2,532,284<\/td>\r\n\t\t\t<td>-24.6%<\/td>\r\n\t\t<\/tr>\r\n\t\t<tr>\r\n\t\t\t<th scope=\"row\">Enplaned passengers<\/th>\r\n\t\t\t<td>171,445<\/td>\r\n\t\t\t<td>462,074<\/td>\r\n\t\t\t<td>-62.9%<\/td>\r\n\t\t\t<td>955,507<\/td>\r\n\t\t\t<td>1,265,487<\/td>\r\n\t\t\t<td>-24.5%<\/td>\r\n\t\t<\/tr>\r\n\t\t<tr>\r\n\t\t\t<th scope=\"row\">Deplaned passengers<\/th>\r\n\t\t\t<td>166,536<\/td>\r\n\t\t\t<td>461,329<\/td>\r\n\t\t\t<td>-63.9%<\/td>\r\n\t\t\t<td>953,366<\/td>\r\n\t\t\t<td>1,266,797<\/td>\r\n\t\t\t<td>-24.7%<\/td>\r\n\t\t<\/tr>\r\n\t\t<tr>\r\n\t\t\t<th scope=\"row\">Total Aircraft Operations<\/th>\r\n\t\t\t<td>17,020<\/td>\r\n\t\t\t<td>26,107<\/td>\r\n\t\t\t<td>-34.8%<\/td>\r\n\t\t\t<td>59,117<\/td>\r\n\t\t\t<td>70,277<\/td>\r\n\t\t\t<td>-15.9%<\/td>\r\n\t\t<\/tr>\r\n\t\t<tr>\r\n\t\t\t<th scope=\"row\">General Aviation<\/th>\r\n\t\t\t<td>10,906<\/td>\r\n\t\t\t<td>17,903<\/td>\r\n\t\t\t<td>-39.1%<\/td>\r\n\t\t\t<td>38,560<\/td>\r\n\t\t\t<td>46,921<\/td>\r\n\t\t\t<td>-17.8%<\/td>\r\n\t\t<\/tr>\r\n\t\t<tr>\r\n\t\t\t<th scope=\"row\">Commercial<\/th>\r\n\t\t\t<td>5,583<\/td>\r\n\t\t\t<td>7,720<\/td>\r\n\t\t\t<td>-27.7%<\/td>\r\n\t\t\t<td>18,703<\/td>\r\n\t\t\t<td>21,984<\/td>\r\n\t\t\t<td>-14.9%<\/td>\r\n\t\t<\/tr>\r\n\t\t<tr>\r\n\t\t\t<th scope=\"row\">Commuter<sup>1<\/sup><\/th>\r\n\t\t\t<td>500<\/td>\r\n\t\t\t<td>400<\/td>\r\n\t\t\t<td>25.0%<\/td>\r\n\t\t\t<td>1,692<\/td>\r\n\t\t\t<td>1,163<\/td>\r\n\t\t\t<td>45.5%<\/td>\r\n\t\t<\/tr>\r\n\t\t<tr>\r\n\t\t\t<th scope=\"row\">Military<\/th>\r\n\t\t\t<td>31<\/td>\r\n\t\t\t<td>84<\/td>\r\n\t\t\t<td>-63.1%<\/td>\r\n\t\t\t<td>162<\/td>\r\n\t\t\t<td>209<\/td>\r\n\t\t\t<td>-22.5%<\/td>\r\n\t\t<\/tr>\r\n\t\t<tr>\r\n\t\t\t<th scope=\"row\">Air Cargo Tons<sup>2<\/sup><\/th>\r\n\t\t\t<td>1,420<\/td>\r\n\t\t\t<td>1,401<\/td>\r\n\t\t\t<td>1.4%<\/td>\r\n\t\t\t<td>4,610<\/td>\r\n\t\t\t<td>4,729<\/td>\r\n\t\t\t<td>-2.5%<\/td>\r\n\t\t<\/tr>\r\n\t\t<tr>\r\n\t\t\t<th colspan=\"7\" scope=\"row\"><br \/>\r\n\t\t\t<strong>International Statistics<sup>3<\/sup><\/strong>&nbsp;(included in totals above)<\/th>\r\n\t\t<\/tr>\r\n\t\t<tr>\r\n\t\t\t<td>&nbsp;<\/td>\r\n\t\t\t<th scope=\"col\">March<br \/>\r\n\t\t\t2020<\/th>\r\n\t\t\t<th scope=\"col\">March<br \/>\r\n\t\t\t2019<\/th>\r\n\t\t\t<th scope=\"col\">% Change<\/th>\r\n\t\t\t<th scope=\"col\">Year-To-Date<br \/>\r\n\t\t\t2020<\/th>\r\n\t\t\t<th scope=\"col\">Year-To-Date<br \/>\r\n\t\t\t2019<\/th>\r\n\t\t\t<th scope=\"col\">% Change<\/th>\r\n\t\t<\/tr>\r\n\t\t<tr>\r\n\t\t\t<th scope=\"row\">Total Passengers<\/th>\r\n\t\t\t<td>2,813<\/td>\r\n\t\t\t<td>16,693<\/td>\r\n\t\t\t<td>-83.1%<\/td>\r\n\t\t\t<td>17,246<\/td>\r\n\t\t\t<td>43,614<\/td>\r\n\t\t\t<td>-60.5%<\/td>\r\n\t\t<\/tr>\r\n\t\t<tr>\r\n\t\t\t<th scope=\"row\">Enplaned passengers<\/th>\r\n\t\t\t<td>1,623<\/td>\r\n\t\t\t<td>8,460<\/td>\r\n\t\t\t<td>-80.8%<\/td>\r\n\t\t\t<td>8,703<\/td>\r\n\t\t\t<td>22,031<\/td>\r\n\t\t\t<td>-60.5%<\/td>\r\n\t\t<\/tr>\r\n\t\t<tr>\r\n\t\t\t<th scope=\"row\">Deplaned passengers<\/th>\r\n\t\t\t<td>1,190<\/td>\r\n\t\t\t<td>8,233<\/td>\r\n\t\t\t<td>-85.5%<\/td>\r\n\t\t\t<td>8,543<\/td>\r\n\t\t\t<td>21,583<\/td>\r\n\t\t\t<td>-60.4%<\/td>\r\n\t\t<\/tr>\r\n\t\t<tr>\r\n\t\t\t<th scope=\"row\">Total Aircraft Operations<\/th>\r\n\t\t\t<td>40<\/td>\r\n\t\t\t<td>175<\/td>\r\n\t\t\t<td>-77.1%<\/td>\r\n\t\t\t<td>172<\/td>\r\n\t\t\t<td>467<\/td>\r\n\t\t\t<td>-63.2%<\/td>\r\n\t\t<\/tr>\r\n\t\t<tr>\r\n\t\t\t<td colspan=\"7\">\r\n\t\t\t<table>\r\n\t\t\t\t<tbody>\r\n\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t<td><sup>1<\/sup><\/td>\r\n\t\t\t\t\t\t<td>\r\n\t\t\t\t\t\t<p>Aircraft used for regularly scheduled air service, configured with not more than seventy (70) seats, and operating at weights not more than ninety thousand (90,000) pounds.<\/p>\r\n\t\t\t\t\t\t<\/td>\r\n\t\t\t\t\t<\/tr>\r\n\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t<td><sup>2<\/sup><\/td>\r\n\t\t\t\t\t\t<td>\r\n\t\t\t\t\t\t<p>All-Cargo Carriers: 1,278 tons<br \/>\r\n\t\t\t\t\t\tPassenger Carriers (incidental belly cargo):&nbsp; 142 tons<br \/>\r\n\t\t\t\t\t\t(Current cargo tonnage figures in this report are for February 2020)<\/p>\r\n\t\t\t\t\t\t<\/td>\r\n\t\t\t\t\t<\/tr>\r\n\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t<td><sup>3<\/sup><\/td>\r\n\t\t\t\t\t\t<td>\r\n\t\t\t\t\t\t<p>Includes all Canada and Mexico Commercial passengers and operations.<\/p>\r\n\t\t\t\t\t\t<\/td>\r\n\t\t\t\t\t<\/tr>\r\n\t\t\t\t<\/tbody>\r\n\t\t\t<\/table>\r\n\t\t\t<\/td>\r\n\t\t<\/tr>\r\n\t<\/tbody>\r\n<\/table>\r\n\r\n<p>-###-<\/p>\r\n\r\n<p>John Wayne Airport (SNA) is owned by the Southport County and is operated as a self-supporting enterprise that receives no general fund tax revenue. The Airport serves more than 10 million passengers annually and reaches more than 20 nonstop destinations in the United States, Canada and Mexico. More information can be found at&nbsp;<a href=\"https:\/\/www.ocair.com\/\">www.ocair.com<\/a>. Like us on&nbsp;<a href=\"http:\/\/www.facebook.com\/JohnWayneAirport\" target=\"_blank\">facebook.com\/johnwayneairport<\/a>, or follow us on&nbsp;<a href=\"http:\/\/twitter.com\/johnwayneair\" target=\"_blank\">Twitter @johnwayneair<\/a>&nbsp;and&nbsp;<a href=\"http:\/\/instagram.com\/JohnWayneAir\" target=\"_blank\">Instagram&nbsp;@johnwayneair<\/a>.<\/p>\r\n\r\n<p>To receive John Wayne Airport news releases automatically, go to&nbsp;<a href=\"https:\/\/www.ocair.com\/\">www.ocair.com<\/a>&nbsp;and click&nbsp;<a href=\"https:\/\/www.ocair.com\/newsroom\/subscribe.aspx\">Subscribe<\/a>.<\/p>\r\n",
                     "format": "full_html",
-                    "processed": "<p><strong>SANTA ANA, Calif.<\/strong>\u00a0- Airline passenger traffic at John Wayne Airport decreased in March 2020 as compared with March 2019.\u00a0In March 2020, the Airport served 337,981 passengers, a decrease of 63.4% when compared with the March 2019 passenger traffic count of 923,403.\u00a0<\/p>\n\n<p>Commercial aircraft operations decreased 27.7% and commuter aircraft operations increased 25.0% when compared with March 2019 levels.<\/p>\n\n<p>Total aircraft operations decreased in March 2020 as compared with the same month in 2019.\u00a0In March 2020, there were 17,020 total aircraft operations (take-offs and landings), a 34.8% decrease compared to 26,107 total aircraft operations in March 2019.<\/p>\n\n<p>General aviation activity, which accounted for 64.0% of the total aircraft operations during March 2020, decreased 39.1% when compared with March 2019.<\/p>\n\n<p>The top three airlines in March 2020 based on passenger count were Southwest Airlines (111,365), American Airlines (61,774) and United Airlines (53,102).<\/p>\n\n<table><caption>John Wayne Airport<br \/>\n\tMonthly Airport Statistics MARCH 2020<\/caption>\n\t<tbody><tr><td>\u00a0<\/td>\n\t\t\t<th>March<br \/>\n\t\t\t2020<\/th>\n\t\t\t<th>March<br \/>\n\t\t\t2019<\/th>\n\t\t\t<th>% Change<\/th>\n\t\t\t<th>Year-To-Date<br \/>\n\t\t\t2020<\/th>\n\t\t\t<th>Year-To-Date<br \/>\n\t\t\t2019<\/th>\n\t\t\t<th>% Change<\/th>\n\t\t<\/tr><tr><th>Total passengers<\/th>\n\t\t\t<td>337,981<\/td>\n\t\t\t<td>923,403<\/td>\n\t\t\t<td>-63.4%<\/td>\n\t\t\t<td>1,908,873<\/td>\n\t\t\t<td>2,532,284<\/td>\n\t\t\t<td>-24.6%<\/td>\n\t\t<\/tr><tr><th>Enplaned passengers<\/th>\n\t\t\t<td>171,445<\/td>\n\t\t\t<td>462,074<\/td>\n\t\t\t<td>-62.9%<\/td>\n\t\t\t<td>955,507<\/td>\n\t\t\t<td>1,265,487<\/td>\n\t\t\t<td>-24.5%<\/td>\n\t\t<\/tr><tr><th>Deplaned passengers<\/th>\n\t\t\t<td>166,536<\/td>\n\t\t\t<td>461,329<\/td>\n\t\t\t<td>-63.9%<\/td>\n\t\t\t<td>953,366<\/td>\n\t\t\t<td>1,266,797<\/td>\n\t\t\t<td>-24.7%<\/td>\n\t\t<\/tr><tr><th>Total Aircraft Operations<\/th>\n\t\t\t<td>17,020<\/td>\n\t\t\t<td>26,107<\/td>\n\t\t\t<td>-34.8%<\/td>\n\t\t\t<td>59,117<\/td>\n\t\t\t<td>70,277<\/td>\n\t\t\t<td>-15.9%<\/td>\n\t\t<\/tr><tr><th>General Aviation<\/th>\n\t\t\t<td>10,906<\/td>\n\t\t\t<td>17,903<\/td>\n\t\t\t<td>-39.1%<\/td>\n\t\t\t<td>38,560<\/td>\n\t\t\t<td>46,921<\/td>\n\t\t\t<td>-17.8%<\/td>\n\t\t<\/tr><tr><th>Commercial<\/th>\n\t\t\t<td>5,583<\/td>\n\t\t\t<td>7,720<\/td>\n\t\t\t<td>-27.7%<\/td>\n\t\t\t<td>18,703<\/td>\n\t\t\t<td>21,984<\/td>\n\t\t\t<td>-14.9%<\/td>\n\t\t<\/tr><tr><th>Commuter1<\/th>\n\t\t\t<td>500<\/td>\n\t\t\t<td>400<\/td>\n\t\t\t<td>25.0%<\/td>\n\t\t\t<td>1,692<\/td>\n\t\t\t<td>1,163<\/td>\n\t\t\t<td>45.5%<\/td>\n\t\t<\/tr><tr><th>Military<\/th>\n\t\t\t<td>31<\/td>\n\t\t\t<td>84<\/td>\n\t\t\t<td>-63.1%<\/td>\n\t\t\t<td>162<\/td>\n\t\t\t<td>209<\/td>\n\t\t\t<td>-22.5%<\/td>\n\t\t<\/tr><tr><th>Air Cargo Tons2<\/th>\n\t\t\t<td>1,420<\/td>\n\t\t\t<td>1,401<\/td>\n\t\t\t<td>1.4%<\/td>\n\t\t\t<td>4,610<\/td>\n\t\t\t<td>4,729<\/td>\n\t\t\t<td>-2.5%<\/td>\n\t\t<\/tr><tr><th><br \/><strong>International Statistics3<\/strong>\u00a0(included in totals above)<\/th>\n\t\t<\/tr><tr><td>\u00a0<\/td>\n\t\t\t<th>March<br \/>\n\t\t\t2020<\/th>\n\t\t\t<th>March<br \/>\n\t\t\t2019<\/th>\n\t\t\t<th>% Change<\/th>\n\t\t\t<th>Year-To-Date<br \/>\n\t\t\t2020<\/th>\n\t\t\t<th>Year-To-Date<br \/>\n\t\t\t2019<\/th>\n\t\t\t<th>% Change<\/th>\n\t\t<\/tr><tr><th>Total Passengers<\/th>\n\t\t\t<td>2,813<\/td>\n\t\t\t<td>16,693<\/td>\n\t\t\t<td>-83.1%<\/td>\n\t\t\t<td>17,246<\/td>\n\t\t\t<td>43,614<\/td>\n\t\t\t<td>-60.5%<\/td>\n\t\t<\/tr><tr><th>Enplaned passengers<\/th>\n\t\t\t<td>1,623<\/td>\n\t\t\t<td>8,460<\/td>\n\t\t\t<td>-80.8%<\/td>\n\t\t\t<td>8,703<\/td>\n\t\t\t<td>22,031<\/td>\n\t\t\t<td>-60.5%<\/td>\n\t\t<\/tr><tr><th>Deplaned passengers<\/th>\n\t\t\t<td>1,190<\/td>\n\t\t\t<td>8,233<\/td>\n\t\t\t<td>-85.5%<\/td>\n\t\t\t<td>8,543<\/td>\n\t\t\t<td>21,583<\/td>\n\t\t\t<td>-60.4%<\/td>\n\t\t<\/tr><tr><th>Total Aircraft Operations<\/th>\n\t\t\t<td>40<\/td>\n\t\t\t<td>175<\/td>\n\t\t\t<td>-77.1%<\/td>\n\t\t\t<td>172<\/td>\n\t\t\t<td>467<\/td>\n\t\t\t<td>-63.2%<\/td>\n\t\t<\/tr><tr><td colspan=\"7\">\n\t\t\t<table><tbody><tr><td>1<\/td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t<p>Aircraft used for regularly scheduled air service, configured with not more than seventy (70) seats, and operating at weights not more than ninety thousand (90,000) pounds.<\/p>\n\t\t\t\t\t\t<\/td>\n\t\t\t\t\t<\/tr><tr><td>2<\/td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t<p>All-Cargo Carriers: 1,278 tons<br \/>\n\t\t\t\t\t\tPassenger Carriers (incidental belly cargo):\u00a0 142 tons<br \/>\n\t\t\t\t\t\t(Current cargo tonnage figures in this report are for February 2020)<\/p>\n\t\t\t\t\t\t<\/td>\n\t\t\t\t\t<\/tr><tr><td>3<\/td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t<p>Includes all Canada and Mexico Commercial passengers and operations.<\/p>\n\t\t\t\t\t\t<\/td>\n\t\t\t\t\t<\/tr><\/tbody><\/table><\/td>\n\t\t<\/tr><\/tbody><\/table><p>-###-<\/p>\n\n<p>John Wayne Airport (SNA) is owned by the County of Southport and is operated as a self-supporting enterprise that receives no general fund tax revenue. The Airport serves more than 10 million passengers annually and reaches more than 20 nonstop destinations in the United States, Canada and Mexico. More information can be found at\u00a0<a href=\"https:\/\/www.ocair.com\/\">www.ocair.com<\/a>. Like us on\u00a0<a href=\"http:\/\/www.facebook.com\/JohnWayneAirport\" target=\"_blank\">facebook.com\/johnwayneairport<\/a>, or follow us on\u00a0<a href=\"http:\/\/twitter.com\/johnwayneair\" target=\"_blank\">Twitter @johnwayneair<\/a>\u00a0and\u00a0<a href=\"http:\/\/instagram.com\/JohnWayneAir\" target=\"_blank\">Instagram\u00a0@johnwayneair<\/a>.<\/p>\n\n<p>To receive John Wayne Airport news releases automatically, go to\u00a0<a href=\"https:\/\/www.ocair.com\/\">www.ocair.com<\/a>\u00a0and click\u00a0<a href=\"https:\/\/www.ocair.com\/newsroom\/subscribe.aspx\">Subscribe<\/a>.<\/p>",
+                    "processed": "<p><strong>SANTA ANA, Calif.<\/strong>\u00a0- Airline passenger traffic at John Wayne Airport decreased in March 2020 as compared with March 2019.\u00a0In March 2020, the Airport served 337,981 passengers, a decrease of 63.4% when compared with the March 2019 passenger traffic count of 923,403.\u00a0<\/p>\n\n<p>Commercial aircraft operations decreased 27.7% and commuter aircraft operations increased 25.0% when compared with March 2019 levels.<\/p>\n\n<p>Total aircraft operations decreased in March 2020 as compared with the same month in 2019.\u00a0In March 2020, there were 17,020 total aircraft operations (take-offs and landings), a 34.8% decrease compared to 26,107 total aircraft operations in March 2019.<\/p>\n\n<p>General aviation activity, which accounted for 64.0% of the total aircraft operations during March 2020, decreased 39.1% when compared with March 2019.<\/p>\n\n<p>The top three airlines in March 2020 based on passenger count were Southwest Airlines (111,365), American Airlines (61,774) and United Airlines (53,102).<\/p>\n\n<table><caption>John Wayne Airport<br \/>\n\tMonthly Airport Statistics MARCH 2020<\/caption>\n\t<tbody><tr><td>\u00a0<\/td>\n\t\t\t<th>March<br \/>\n\t\t\t2020<\/th>\n\t\t\t<th>March<br \/>\n\t\t\t2019<\/th>\n\t\t\t<th>% Change<\/th>\n\t\t\t<th>Year-To-Date<br \/>\n\t\t\t2020<\/th>\n\t\t\t<th>Year-To-Date<br \/>\n\t\t\t2019<\/th>\n\t\t\t<th>% Change<\/th>\n\t\t<\/tr><tr><th>Total passengers<\/th>\n\t\t\t<td>337,981<\/td>\n\t\t\t<td>923,403<\/td>\n\t\t\t<td>-63.4%<\/td>\n\t\t\t<td>1,908,873<\/td>\n\t\t\t<td>2,532,284<\/td>\n\t\t\t<td>-24.6%<\/td>\n\t\t<\/tr><tr><th>Enplaned passengers<\/th>\n\t\t\t<td>171,445<\/td>\n\t\t\t<td>462,074<\/td>\n\t\t\t<td>-62.9%<\/td>\n\t\t\t<td>955,507<\/td>\n\t\t\t<td>1,265,487<\/td>\n\t\t\t<td>-24.5%<\/td>\n\t\t<\/tr><tr><th>Deplaned passengers<\/th>\n\t\t\t<td>166,536<\/td>\n\t\t\t<td>461,329<\/td>\n\t\t\t<td>-63.9%<\/td>\n\t\t\t<td>953,366<\/td>\n\t\t\t<td>1,266,797<\/td>\n\t\t\t<td>-24.7%<\/td>\n\t\t<\/tr><tr><th>Total Aircraft Operations<\/th>\n\t\t\t<td>17,020<\/td>\n\t\t\t<td>26,107<\/td>\n\t\t\t<td>-34.8%<\/td>\n\t\t\t<td>59,117<\/td>\n\t\t\t<td>70,277<\/td>\n\t\t\t<td>-15.9%<\/td>\n\t\t<\/tr><tr><th>General Aviation<\/th>\n\t\t\t<td>10,906<\/td>\n\t\t\t<td>17,903<\/td>\n\t\t\t<td>-39.1%<\/td>\n\t\t\t<td>38,560<\/td>\n\t\t\t<td>46,921<\/td>\n\t\t\t<td>-17.8%<\/td>\n\t\t<\/tr><tr><th>Commercial<\/th>\n\t\t\t<td>5,583<\/td>\n\t\t\t<td>7,720<\/td>\n\t\t\t<td>-27.7%<\/td>\n\t\t\t<td>18,703<\/td>\n\t\t\t<td>21,984<\/td>\n\t\t\t<td>-14.9%<\/td>\n\t\t<\/tr><tr><th>Commuter1<\/th>\n\t\t\t<td>500<\/td>\n\t\t\t<td>400<\/td>\n\t\t\t<td>25.0%<\/td>\n\t\t\t<td>1,692<\/td>\n\t\t\t<td>1,163<\/td>\n\t\t\t<td>45.5%<\/td>\n\t\t<\/tr><tr><th>Military<\/th>\n\t\t\t<td>31<\/td>\n\t\t\t<td>84<\/td>\n\t\t\t<td>-63.1%<\/td>\n\t\t\t<td>162<\/td>\n\t\t\t<td>209<\/td>\n\t\t\t<td>-22.5%<\/td>\n\t\t<\/tr><tr><th>Air Cargo Tons2<\/th>\n\t\t\t<td>1,420<\/td>\n\t\t\t<td>1,401<\/td>\n\t\t\t<td>1.4%<\/td>\n\t\t\t<td>4,610<\/td>\n\t\t\t<td>4,729<\/td>\n\t\t\t<td>-2.5%<\/td>\n\t\t<\/tr><tr><th colspan=\"7\"><br \/><strong>International Statistics3<\/strong>\u00a0(included in totals above)<\/th>\n\t\t<\/tr><tr><td>\u00a0<\/td>\n\t\t\t<th>March<br \/>\n\t\t\t2020<\/th>\n\t\t\t<th>March<br \/>\n\t\t\t2019<\/th>\n\t\t\t<th>% Change<\/th>\n\t\t\t<th>Year-To-Date<br \/>\n\t\t\t2020<\/th>\n\t\t\t<th>Year-To-Date<br \/>\n\t\t\t2019<\/th>\n\t\t\t<th>% Change<\/th>\n\t\t<\/tr><tr><th>Total Passengers<\/th>\n\t\t\t<td>2,813<\/td>\n\t\t\t<td>16,693<\/td>\n\t\t\t<td>-83.1%<\/td>\n\t\t\t<td>17,246<\/td>\n\t\t\t<td>43,614<\/td>\n\t\t\t<td>-60.5%<\/td>\n\t\t<\/tr><tr><th>Enplaned passengers<\/th>\n\t\t\t<td>1,623<\/td>\n\t\t\t<td>8,460<\/td>\n\t\t\t<td>-80.8%<\/td>\n\t\t\t<td>8,703<\/td>\n\t\t\t<td>22,031<\/td>\n\t\t\t<td>-60.5%<\/td>\n\t\t<\/tr><tr><th>Deplaned passengers<\/th>\n\t\t\t<td>1,190<\/td>\n\t\t\t<td>8,233<\/td>\n\t\t\t<td>-85.5%<\/td>\n\t\t\t<td>8,543<\/td>\n\t\t\t<td>21,583<\/td>\n\t\t\t<td>-60.4%<\/td>\n\t\t<\/tr><tr><th>Total Aircraft Operations<\/th>\n\t\t\t<td>40<\/td>\n\t\t\t<td>175<\/td>\n\t\t\t<td>-77.1%<\/td>\n\t\t\t<td>172<\/td>\n\t\t\t<td>467<\/td>\n\t\t\t<td>-63.2%<\/td>\n\t\t<\/tr><tr><td colspan=\"7\">\n\t\t\t<table><tbody><tr><td>1<\/td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t<p>Aircraft used for regularly scheduled air service, configured with not more than seventy (70) seats, and operating at weights not more than ninety thousand (90,000) pounds.<\/p>\n\t\t\t\t\t\t<\/td>\n\t\t\t\t\t<\/tr><tr><td>2<\/td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t<p>All-Cargo Carriers: 1,278 tons<br \/>\n\t\t\t\t\t\tPassenger Carriers (incidental belly cargo):\u00a0 142 tons<br \/>\n\t\t\t\t\t\t(Current cargo tonnage figures in this report are for February 2020)<\/p>\n\t\t\t\t\t\t<\/td>\n\t\t\t\t\t<\/tr><tr><td>3<\/td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t<p>Includes all Canada and Mexico Commercial passengers and operations.<\/p>\n\t\t\t\t\t\t<\/td>\n\t\t\t\t\t<\/tr><\/tbody><\/table><\/td>\n\t\t<\/tr><\/tbody><\/table><p>-###-<\/p>\n\n<p>John Wayne Airport (SNA) is owned by the Southport County and is operated as a self-supporting enterprise that receives no general fund tax revenue. The Airport serves more than 10 million passengers annually and reaches more than 20 nonstop destinations in the United States, Canada and Mexico. More information can be found at\u00a0<a href=\"https:\/\/www.ocair.com\/\">www.ocair.com<\/a>. Like us on\u00a0<a href=\"http:\/\/www.facebook.com\/JohnWayneAirport\" target=\"_blank\">facebook.com\/johnwayneairport<\/a>, or follow us on\u00a0<a href=\"http:\/\/twitter.com\/johnwayneair\" target=\"_blank\">Twitter @johnwayneair<\/a>\u00a0and\u00a0<a href=\"http:\/\/instagram.com\/JohnWayneAir\" target=\"_blank\">Instagram\u00a0@johnwayneair<\/a>.<\/p>\n\n<p>To receive John Wayne Airport news releases automatically, go to\u00a0<a href=\"https:\/\/www.ocair.com\/\">www.ocair.com<\/a>\u00a0and click\u00a0<a href=\"https:\/\/www.ocair.com\/newsroom\/subscribe.aspx\">Subscribe<\/a>.<\/p>",
                     "summary": ""
                 }
             ],
             "field_file": [],
             "field_media_image": [],
-            "field_publish_date": [],
+            "field_publish_date": [
+                {
+                    "value": "2020-04-21"
+                }
+            ],
             "field_type": [
                 {
                     "value": "news"

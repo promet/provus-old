@@ -1,0 +1,250 @@
+.multicard {
+  width: 100%;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+
+  .card-bordered {
+    max-width: inherit;
+  }
+
+  @include big {
+    .button {
+      min-width: 170px;
+    }
+  }
+
+  @include xl {
+    .button {
+      min-width: 190px;
+    }
+  }
+}
+
+.multicard-inner {
+  padding: 0;
+  padding-bottom: 20px;
+
+  @include medium {
+    padding: 0;
+    padding-bottom: 0;
+  }
+
+  @include large {
+    padding: 0;
+    padding-bottom: 0;
+  }
+}
+
+.multicard-wrapper {
+  @include breakout;
+
+  padding-top: $space-triple;
+  padding-bottom: $space-triple;
+
+  .card-bg {
+    max-width: inherit;
+  }
+
+  h2.title {
+    text-align: center;
+    color: $title-section;
+    font-family: $font-heading;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    line-height: 2.3125rem;
+    margin-bottom: 0;
+    text-transform: uppercase;
+
+    @include medium {
+      font-size: 1.875rem;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    flex-flow: column nowrap;
+
+    @include large {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  .multicard-control-prev {
+    justify-content: center;
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+    left: 15px;
+    top: 95%;
+    height: 43px;
+    width: 41px;
+    background-color: $white;
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 41px 43px;
+    background-image: url("/images/icons/arrow-left.svg");
+
+    @include medium {
+      left: 0;
+      top: 90px;
+    }
+
+    .multicard-control-prev-icon {
+      display: none;
+    }
+
+    &:hover {
+      background-color: $bg-arrow;
+      background-image: url("/images/icons/arrow-left-hover.svg");
+    }
+  }
+
+  .multicard-control-next {
+    justify-content: center;
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 95%;
+    height: 43px;
+    width: 41px;
+    background-color: $white;
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-image: url("/images/icons/arrow-right.svg");
+
+    @include medium {
+      right: 0;
+      top: 90px;
+    }
+
+    .multicard-control-next-icon {
+      display: none;
+    }
+
+    &:hover {
+      background-color: $bg-arrow;
+      background-image: url("/images/icons/arrow-right-hover.svg");
+    }
+  }
+
+  .lSSlideWrapper {
+    padding: 0;
+
+    .lightSlider {
+      display: flex;
+      align-items: center;
+      min-height: 300px;
+
+      .lslide {
+        &:hover {
+          width: 370px !important;
+        }
+
+        .card-bg__img {
+          .field-media-image {
+            width: 100%;
+
+            img {
+              width: 100%;
+            }
+          }
+        }
+
+        @media (max-width: 480px) {
+          &.active {
+            .card-bg__img {
+              position: relative;
+              margin-top: 0;
+              box-shadow: 0 10px 18px rgba(121, 121, 121, 0.5);
+              min-height: 233px;
+
+              .mask {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                opacity: 0.8;
+                background-color: $primary;
+              }
+
+              img {
+                width: 100%;
+                height: 100%;
+                min-height: 233px;
+                object-fit: cover;
+              }
+            }
+
+            .card-bg__content {
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              top: 0;
+              padding: 40px 30px 30px 30px;
+              text-align: left;
+
+              .card-bg__heading {
+                color: $white !important;
+                text-decoration: none !important;
+                font-weight: 700 !important;
+                margin-top: 0 !important;
+              }
+
+              .card-bg__body {
+                width: 100%;
+              }
+
+              .card-bg__body,
+              .button--bg,
+              .line-bg {
+                display: block;
+              }
+            }
+
+            .line-bg-hover {
+              display: block;
+              margin-top: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .lSSlideOuter {
+    .lSPager.lSpg {
+      li {
+        padding: 0;
+      }
+
+      li > a {
+        width: 9px;
+        height: 9px;
+        border: 1px solid $ada-orange;
+        background: transparent;
+        border-radius: 100%;
+        box-sizing: content-box;
+        margin-right: 3px;
+        margin-left: 3px;
+      }
+
+      li:hover a,
+      li.active > a {
+        border: 1px solid $ada-orange;
+        background: $ada-orange;
+      }
+    }
+  }
+}
+
+.layout-builder-block .multicard-wrapper {
+  width: auto;
+  left: auto;
+}

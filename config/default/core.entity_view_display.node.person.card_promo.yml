@@ -5,11 +5,15 @@ dependencies:
   config:
     - core.entity_view_mode.node.card_promo
     - field.field.node.person.body
+    - field.field.node.person.field_email
     - field.field.node.person.field_first_name
     - field.field.node.person.field_last_name
     - field.field.node.person.field_location
     - field.field.node.person.field_media_image
-    - field.field.node.person.field_middle_name
+    - field.field.node.person.field_person_type
+    - field.field.node.person.field_phone
+    - field.field.node.person.field_sort_order
+    - field.field.node.person.field_titles
     - node.type.person
   module:
     - layout_builder
@@ -64,19 +68,17 @@ content:
     third_party_settings: {  }
     type: entity_reference_entity_view
     region: content
-  field_middle_name:
-    weight: 103
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
-    region: content
   links:
     weight: 100
     region: content
     settings: {  }
     third_party_settings: {  }
 hidden:
+  field_email: true
+  field_middle_name: true
+  field_person_type: true
+  field_phone: true
+  field_sort_order: true
+  field_titles: true
   langcode: true
   search_api_excerpt: true

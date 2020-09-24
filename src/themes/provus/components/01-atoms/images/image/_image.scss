@@ -1,0 +1,34 @@
+@mixin image {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+img,
+picture {
+  @include image;
+
+  &.Left_Image,
+  &.left_image {
+    float: left;
+    margin: 0 10px 10px 0;
+  }
+}
+
+figure {
+  margin: 0; /* override normalize */
+}
+
+article {
+  &.align-right img {
+    margin: 0 0 10px 10px;
+  }
+
+  &.align-left img {
+    margin: 0 10px 10px 0;
+  }
+}
+
+.figure__caption {
+  font-style: italic;
+}

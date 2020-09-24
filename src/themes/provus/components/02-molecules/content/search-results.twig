@@ -1,0 +1,19 @@
+{% set search__base_class = 'search-results' %}
+
+<div {{ bem(inside__base_class) }}>
+  <div {{ bem('wrapper', card__content__modifiers, search__base_class) }}>
+    {% block content %}
+      {% for item in content %}
+        <div {{ bem('item', card__content__modifiers, search__base_class) }}>
+          {# Link #}
+          {% include "@molecules/card/card-search.twig" with {
+            "search__result__title": item.search__result__title,
+            "search__result__url": item.search__result__url,
+            "search__result__link": item.search__result__link,
+            "search__result__body": item.search__result__body,
+          } %}
+        </div>
+        {% endfor %}
+      {% endblock %}
+  </div>
+</div>

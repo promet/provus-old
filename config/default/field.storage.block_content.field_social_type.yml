@@ -17,6 +17,9 @@ settings:
     -
       value: twitter
       label: Twitter
+    -
+      value: youtube
+      label: Youtube
   allowed_values_function: ''
 module: options
 locked: false

@@ -1,6 +1,0 @@
-name: 'Custom Sitemap'
-type: module
-description: 'Sitemap for your site.'
-core_version_requirement: ^8 || ^9
-core: 8.x
-package: 'County'

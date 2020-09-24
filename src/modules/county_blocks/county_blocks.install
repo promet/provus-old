@@ -1,0 +1,32 @@
+<?php
+
+/**
+ * @file
+ * Install, update, and uninstall functions for the County Blocks module.
+ */
+
+/**
+ * Implements hook_install().
+ */
+function county_blocks_install() {
+  drupal_flush_all_caches();
+}
+
+/**
+ * Install the alert configuration.
+ */
+function county_blocks_8001() {
+  $factory = \Drupal::configFactory();
+  $cfg = $factory->getEditable('county_blocks.config');
+  $cfg->set('view', 'site_alert');
+  $cfg->set('block', 'alert_site_block_1');
+  $cfg->save(TRUE);
+  drupal_flush_all_caches();
+}
+
+/**
+ * Implements hook_uninstall().
+ */
+function county_blocks_uninstall() {
+  drupal_flush_all_caches();
+}

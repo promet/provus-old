@@ -1,0 +1,39 @@
+#############################
+# Admin.
+#############################
+
+county_blocks.admin:
+  path: '/admin/config/county_blocks'
+  defaults:
+    _form: '\Drupal\county_blocks\Form\CountyBlocksAdminForm'
+    _title: 'County Blocks Settings'
+  options:
+    _admin_route: TRUE
+  requirements:
+    _permission: 'administer county_blocks'
+  weight: 10
+
+county_blocks.social_youtube_settings:
+  path: '/admin/config/socialfeed/youtube'
+  defaults:
+    _form: '\Drupal\county_blocks\Form\SocialYoutubeForm'
+    _title: 'Social Feed Youtube Settings'
+  requirements:
+    _permission: 'administer socialfeed'
+  options:
+    _admin_route: TRUE
+
+#############################
+# JSON controllers.
+#############################
+
+countyalert:
+  path: '/county-alert'
+  defaults:
+    _controller: '\Drupal\county_blocks\Controller\CountyBlocksJsonController::countyAlert'
+    _format: json
+    src: ''
+  requirements:
+    _permission: 'access content'
+  options:
+    no_cache: TRUE

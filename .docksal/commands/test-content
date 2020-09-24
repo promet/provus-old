@@ -6,4 +6,4 @@
 
 fin drush update-migration-config
 fin drush migrate:import --group=entity_staging
-fin drush config-set -y system.site page.front '/landing-page/home-page'
+fin drush config-set -y system.site page.front '/node/16'

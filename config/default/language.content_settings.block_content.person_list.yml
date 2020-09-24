@@ -1,0 +1,11 @@
+uuid: 48a06029-6e81-437f-b7b1-cbd26577f3cc
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.person_list
+id: block_content.person_list
+target_entity_type_id: block_content
+target_bundle: person_list
+default_langcode: site_default
+language_alterable: false

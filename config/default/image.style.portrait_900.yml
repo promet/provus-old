@@ -1,15 +1,17 @@
 uuid: d401ee58-801d-4960-bb47-963d6a2edda2
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - focal_point
 name: portrait_900
 label: 'Portrait 900'
 effects:
   6a655ea8-cb57-4bee-b1bd-666a401c055d:
     uuid: 6a655ea8-cb57-4bee-b1bd-666a401c055d
-    id: image_scale_and_crop
+    id: focal_point_scale_and_crop
     weight: 1
     data:
       width: 900
       height: 1180
-      anchor: center-center
+      crop_type: focal_point

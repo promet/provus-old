@@ -19,7 +19,7 @@ third_party_settings:
         layout_settings:
           label: ''
         components:
-          88e5785d-2588-454e-a8da-390cf80fa719:
+          -
             uuid: 88e5785d-2588-454e-a8da-390cf80fa719
             region: content
             configuration:
@@ -36,7 +36,7 @@ third_party_settings:
                 label: hidden
             additional: {  }
             weight: 0
-          da7f5c8d-282d-4aba-a1f1-80a58ea0ce04:
+          -
             uuid: da7f5c8d-282d-4aba-a1f1-80a58ea0ce04
             region: content
             configuration:

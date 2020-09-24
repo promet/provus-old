@@ -490,11 +490,7 @@
                 }
             ],
             "field_content_references": [],
-            "field_content_type": [
-                {
-                    "value": "county_article"
-                }
-            ],
+            "field_content_type": [],
             "field_count": [
                 {
                     "value": 3
@@ -552,13 +548,13 @@
             ],
             "revision_created": [
                 {
-                    "value": "2020-04-28T21:35:33+00:00",
+                    "value": "2020-05-21T21:42:12+00:00",
                     "format": "Y-m-d\\TH:i:sP"
                 }
             ],
             "revision_user": [
                 {
-                    "target_id": 2518
+                    "target_id": 4014
                 }
             ],
             "revision_log": [],
@@ -574,7 +570,7 @@
             ],
             "changed": [
                 {
-                    "value": "2020-04-28T21:35:33+00:00",
+                    "value": "2020-05-21T21:42:12+00:00",
                     "format": "Y-m-d\\TH:i:sP"
                 }
             ],
@@ -637,7 +633,7 @@
             ],
             "field_link": [
                 {
-                    "uri": "internal:\/",
+                    "uri": "internal:\/events",
                     "title": "View All Events",
                     "options": []
                 }

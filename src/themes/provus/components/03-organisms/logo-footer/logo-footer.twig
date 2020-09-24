@@ -1,0 +1,23 @@
+{% set footer__logo_src = directory ? '/' ~ directory ~ '/images/logo.png' : 'images/logo.png' %}
+
+<div class="logo-img">
+  {% block footer__branding %}
+    {% embed "@atoms/links/link/link.twig" with {
+      link_base_class: 'logo-link',
+      link_url: 'https://www.ocgov.com',
+    } %}
+      {% block link_content %}
+        {% include "@atoms/images/image/responsive-image.twig" with {
+          output_image_tag: true,
+          image_src: footer__logo_src,
+          image_alt: 'Logo',
+          responsive_image_blockname: 'logo',
+        } %}
+      {% endblock %}
+    {% endembed %}
+  {% endblock %}
+</div>
+<div class="logo-text">
+  <p>County Directory Assistance</p>
+  <p><a href="tel:+1-855-886-5400">855.886.5400</a></p>
+</div>

@@ -1,0 +1,93 @@
+.share-this {
+  clear: both;
+  margin-bottom: $space-double;
+  padding-top: $space-double;
+
+  h2.title {
+    color: $title-content-top;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 1.625rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+  }
+
+  .ul-share-this {
+    @include list-reset;
+
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+    &__item {
+      margin: 0 15px 0 0;
+
+      svg.ext {
+        display: none;
+      }
+    }
+
+    &__icon {
+      margin: 0;
+      max-width: 40px;
+      height: 40px;
+    }
+
+    .ico-share-footer {
+      margin: 0;
+
+      &.facebook {
+        background-repeat: no-repeat;
+        background-position: right center;
+        background-size: 40px 40px;
+        background-image: url("/images/icons/facebook-share-static.svg");
+        height: 40px;
+        width: 40px;
+
+        &:hover {
+          background-image: url("/images/icons/facebook-share-static-hover.svg");
+        }
+      }
+
+      &.twitter {
+        background-repeat: no-repeat;
+        background-position: right center;
+        background-size: 40px 40px;
+        background-image: url("/images/icons/twitter-share-static.svg");
+        height: 40px;
+        width: 40px;
+
+        &:hover {
+          background-image: url("/images/icons/twitter-share-static-hover.svg");
+        }
+      }
+
+      &.linkedin {
+        background-repeat: no-repeat;
+        background-position: right center;
+        background-size: 40px 40px;
+        background-image: url("/images/icons/linkedin-share-static.svg");
+        height: 40px;
+        width: 40px;
+
+        &:hover {
+          background-image: url("/images/icons/linkedin-share-static-hover.svg");
+        }
+      }
+
+      &.link {
+        background-repeat: no-repeat;
+        background-position: right center;
+        background-size: 40px 40px;
+        background-image: url("/images/icons/url-share-static.svg");
+        height: 40px;
+        width: 40px;
+
+        &:hover {
+          background-image: url("/images/icons/url-share-static-hover.svg");
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,6 @@
+search__button__text: 'Search'
+search__button__url: '#'
+label: Search
+action: /search
+query: keys
+placeholder: "What are you looking for?"

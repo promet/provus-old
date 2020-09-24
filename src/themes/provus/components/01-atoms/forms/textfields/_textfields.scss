@@ -1,0 +1,110 @@
+.form-item {
+  color: $text-input-form;
+  margin-bottom: 40px;
+
+  @include clearfix;
+}
+
+.form-item__label {
+  color: $black;
+  font-family: $font-body;
+  font-size: 1rem;
+  letter-spacing: 0;
+  line-height: 21px;
+  margin-bottom: 5px;
+
+  @include xs {
+    display: block;
+  }
+
+  &.option {
+    display: inline;
+  }
+
+  &.form-required::after {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin: 0 0.3em;
+    content: "";
+    vertical-align: super;
+    background-image: url(/images/icons/required.svg);
+    background-repeat: no-repeat;
+    background-size: 6px 6px;
+  }
+}
+
+.form-item__textfield {
+  border: 1px solid $border-input-form;
+  border-radius: 4px;
+  background-color: $white;
+  padding: 4px 30px;
+  max-width: 500px;
+  width: 100%;
+  color: $black;
+  outline: inherit;
+
+  &:focus {
+    border-color: $primary;
+  }
+
+  &::-webkit-input-placeholder {
+    color: $text-input-form;
+  }
+
+  &:-moz-placeholder {
+    color: $text-input-form;
+  }
+
+  &::-moz-placeholder {
+    color: $text-input-form;
+  }
+
+  &:-ms-input-placeholder {
+    color: $text-input-form;
+  }
+}
+
+textarea.form-item__textfield {
+  max-width: 100%;
+}
+
+.form-item__description {
+  margin-top: 0;
+  font-size: 0.75rem;
+}
+
+fieldset.form-fieldset {
+  margin-bottom: 5.5em;
+  margin-top: 1em;
+  padding: 1em 0 0;
+  border-top: 1px solid $border-input-form;
+  position: relative;
+  top: 3em;
+
+  legend {
+    color: $gray-light;
+    font-family: $font-body;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: absolute;
+    top: -2em;
+    left: 0;
+    line-height: 1em;
+    margin-bottom: 0;
+  }
+}
+
+.hasDatepicker {
+  display: inline;
+  border: 1px solid $border-input-form;
+  border-radius: 4px;
+  background-color: $white;
+  padding: 4px 30px;
+  color: $black;
+}
+
+.ui-datepicker-trigger {
+  display: inline;
+}

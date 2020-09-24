@@ -1,13 +1,41 @@
 {
-    "name": "promet/oc-multi",
-    "description": "County drupal site built for Orange County by Promet Source",
+    "name": "promet/provus",
+    "description": "Example site for Drupal",
     "type": "project",
     "license": "GPL-2.0-or-later",
     "repositories": [
-        {
-            "type": "composer",
-            "url": "https://packages.drupal.org/8"
+      {
+        "type": "composer",
+        "url": "https://packages.drupal.org/8"
+      },
+      {
+        "type":"package",
+        "package": {
+          "name": "meno/dropzone",
+          "version": "5.7",
+          "type": "drupal-library",
+          "dist": {
+            "url": "https://github.com/enyo/dropzone/archive/v5.7.0.zip",
+            "type": "zip"
+          }
         }
+      },
+      {
+        "type": "package",
+        "package": {
+          "name": "jsanahuja/jqueryinstagramfeed",
+          "version": "dev-master",
+          "type": "drupal-library",
+          "dist": {
+            "url": "https://github.com/jsanahuja/jquery.instagramFeed/archive/master.zip",
+            "type": "zip"
+          }
+        }
+      },
+      {
+        "type": "path",
+        "url": "src/modules/county_blocks"
+      }
     ],
     "require": {
         "composer/installers": "^1.2",
@@ -15,12 +43,15 @@
         "drupal-composer/drupal-scaffold": "^2.5",
         "drupal/address": "~1.0",
         "drupal/admin_toolbar_tools": "^2.0",
+        "drupal/antibot": "^1.4",
         "drupal/auto_entitylabel": "^3.0@beta",
+        "drupal/calendar_link": "^1.1",
         "drupal/components": "^1.1",
         "drupal/config_ignore": "^2.2",
         "drupal/console": "^1.0.2",
         "drupal/core": "^8.7.1",
         "drupal/devel": "^2.1",
+        "drupal/dropzonejs": "^2.1",
         "drupal/emulsify_twig": "^1.0",
         "drupal/entity": "~1.0-rc3",
         "drupal/entity_embed": "^1.0",
@@ -28,13 +59,21 @@
         "drupal/environment_indicator": "^3.7",
         "drupal/extlink": "^1.3",
         "drupal/facets": "^1.4",
+        "drupal/focal_point": "^1.4",
         "drupal/fullcalendar_view": "^2.6",
+        "drupal/geocoder": "^3.6",
+        "drupal/geofield": "^1.13",
+        "drupal/geofield_map": "^2.63",
         "drupal/google_analytics": "^3.0",
         "drupal/inline_entity_form": "^1.0",
+        "drupal/layout_builder_browser": "^1.1",
         "drupal/layout_builder_modal": "^1.0",
         "drupal/layout_builder_restrictions": "^2.5",
         "drupal/layout_builder_styles": "^1.0@beta",
         "drupal/layout_library": "^1.0",
+        "drupal/linkit": "^4.3",
+        "drupal/media_bulk_upload": "^1.0@alpha",
+        "drupal/memcache": "2.0",
         "drupal/menu_block": "1.x-dev",
         "drupal/menu_breadcrumb": "^1.12",
         "drupal/migrate_directory": "^1.0",
@@ -42,13 +81,21 @@
         "drupal/migrate_tools": "^4.5",
         "drupal/office_hours": "^1.2",
         "drupal/pathauto": "^1.6",
+        "drupal/pdfpreview": "^1.0",
         "drupal/redirect": "^1.6",
         "drupal/search_api": "^1.16",
+        "drupal/search_api_glossary": "^4.0",
         "drupal/search_api_solr": "^1.4",
+        "drupal/simple_instagram_feed": "^3.8",
         "drupal/smart_trim": "^1.2",
+        "drupal/socialfeed": "^1.0",
         "drupal/twig_tweak": "^2.5",
+        "drupal/view_unpublished": "^1.0@RC",
+        "drupal/viewsreference": "^1.4",
         "drupal/webform": "^5.9",
         "drush/drush": "^9.0.0",
+        "geocoder-php/google-maps-provider": "^4.4",
+        "jsanahuja/jqueryinstagramfeed": "dev-master",
         "kporras07/composer-symlinks": "dev-master",
         "symfony/event-dispatcher": "4.3.4 as 3.4.99",
         "vlucas/phpdotenv": "^2.4",
@@ -60,8 +107,7 @@
         "behat/behat": "3.3",
         "dmore/behat-chrome-extension": "^1.3",
         "drupal/drupal-extension": "^4.0",
-        "mglaman/drupal-check": "^1.1",
-        "weitzman/drupal-test-traits": "^1.3"
+        "mglaman/drupal-check": "^1.1"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -78,6 +124,11 @@
         "files": ["load.environment.php"]
     },
     "scripts": {
+	"build-assets": [
+            "@prepare-for-build",
+            "composer install --optimize-autoloader --no-dev"	    
+        ],
+	"prepare-for-build":"DrupalProject\\composer\\ScriptHandler::prepareForBuild",
         "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
         "remove-git-dirs": "DrupalProject\\composer\\ScriptHandler::removeGitDirectories",
         "project-scaffold": [
@@ -100,20 +151,20 @@
             "drupal/core": "-p2"
         },
         "installer-paths": {
-            "docroot/core": ["type:drupal-core"],
-            "docroot/libraries/{$name}": ["type:drupal-library"],
-            "docroot/modules/contrib/{$name}": ["type:drupal-module"],
-            "docroot/profiles/contrib/{$name}": ["type:drupal-profile"],
-            "docroot/themes/contrib/{$name}": ["type:drupal-theme"],
+            "web/core": ["type:drupal-core"],
+            "web/libraries/{$name}": ["type:drupal-library"],
+            "web/modules/contrib/{$name}": ["type:drupal-module"],
+            "web/profiles/contrib/{$name}": ["type:drupal-profile"],
+            "web/themes/contrib/{$name}": ["type:drupal-theme"],
             "drush/Commands/{$name}": ["type:drupal-drush"]
         },
         "symlinks": {
-            "src/modules": "docroot/modules/custom",
-            "src/themes": "docroot/themes/custom",
-            "src/profiles": "docroot/profiles/custom",
-            "src/libraries": "docroot/libraries/custom",
-            "src/sites": "docroot/sites",
-            "docroot/themes/custom/countyoc/images": "docroot/images"
+            "src/modules": "web/modules/custom",
+            "src/themes": "web/themes/custom",
+            "src/profiles": "web/profiles/custom",
+            "src/libraries": "web/libraries/custom",
+            "src/sites": "web/sites",
+            "web/themes/custom/countyoc/images": "web/images"
         },
         "patches": {
             "drupal/core": {

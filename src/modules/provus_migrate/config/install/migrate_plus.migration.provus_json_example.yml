@@ -1,0 +1,55 @@
+langcode: en
+status: true
+dependencies: {  }
+id: provus_json_example
+label: 'Provus JSON Example'
+migration_group: provus
+source:
+  plugin: url
+  data_fetcher_plugin: http
+  data_parser_plugin: json
+  urls:
+    - https://data.smcgov.org/api/views/xu2d-vtnr/rows.json?accessType=DOWNLOAD
+  # XPath-like selector. The slash (/) at the beginning is optional.
+  item_selector: /data
+  fields:
+    - name:  latlong 
+      label: "Lat/Long"
+      selector: '10'
+    - name: title
+      label: "Title"
+      selector: '11'
+    - name: address1 
+      label: "Address Line 1"
+      selector: '12'
+    - name:  city 
+      label: "City"
+      selector: '13'
+    - name:  zip 
+      label: "Zip"
+      selector: '14'
+    - name: id
+      label: "ID"
+      selector: '0'
+  ids:
+    id:
+      type: string
+process:
+  title: title
+  'field_lat_long/value': latlong
+  'field_address/country_code':
+    plugin: default_value
+    default_value: US
+  'field_address/administrative_area':
+    plugin: default_value
+    default_value: CA
+  'field_address/address_line1': address1
+  'field_address/postal_code': zip
+  'field_address/locality': city
+destination:
+  plugin: 'entity:node'
+  default_bundle: location
+migration_dependencies:
+  required: []
+  optional: []
+

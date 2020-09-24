@@ -50,7 +50,7 @@ content:
     label: hidden
     settings:
       timezone_override: ''
-      format_type: long
+      format_type: county_longer
     third_party_settings: {  }
     type: datetime_default
     region: content

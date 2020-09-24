@@ -1,0 +1,10 @@
+quality: 75
+size: 1024x1024
+path: pdfpreview
+filenames: human
+show_description: false
+tag: span
+fallback_formatter: file_default
+type: png
+_core:
+  default_config_hash: 1M6qm8vDi0_rcYzcfB8_zKi5Cppnih9tpTilSiGS1Ys

@@ -1,8 +1,0 @@
-#!/usr/bin/env bash
-
-## Imports current site content and menu 
-##
-## Usage: fin import-content 
-
-fin drush site-download $1 
-fin drush site-import $1 

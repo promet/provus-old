@@ -1,0 +1,26 @@
+<div class="youtube-container">
+  <div class="video">
+    {{ post.iframe }}
+  </div>
+  <div class="video-details">
+    <div class="title">{{ post.title }}</div>
+    <div class="date-views">
+      <span class="views">{{ post.views }} views</span>
+      <span class="date">{{ post.date }}</span>
+    </div>
+  </div>
+  <div class="channel">
+    <a class="channel-link" href="https://www.youtube.com/channel/{{ post.channel.id }}">
+      <span class="channel-image">
+        {% if (post.channel.image) %}
+          <img src="{{ post.channel.image }}" />
+        {% endif %}
+      </span>
+      <span class="channel-name-subscribers">
+        <span class="channel-name">{{ post.channel.name }}</span>
+        <span class="channel-subscribers">{{ post.channel.subscribers }} subscribers</span>
+      </span>
+    </a>
+    <a class="channel-subscribe button" href="https://www.youtube.com/channel/{{ post.channel.id }}?sub_confirmation=1">Subscribe</a>
+  </div>
+</div>

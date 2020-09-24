@@ -11,7 +11,9 @@ dependencies:
     - field.field.node.location.field_email
     - field.field.node.location.field_file
     - field.field.node.location.field_hours
-    - field.field.node.location.field_location_type
+    - field.field.node.location.field_lat_long
+    - field.field.node.location.field_loc_amenities
+    - field.field.node.location.field_loc_type
     - field.field.node.location.field_media_image
     - field.field.node.location.field_phone
     - node.type.location
@@ -44,6 +46,9 @@ hidden:
   field_email: true
   field_file: true
   field_hours: true
+  field_lat_long: true
+  field_loc_amenities: true
+  field_loc_type: true
   field_location_type: true
   field_phone: true
   langcode: true

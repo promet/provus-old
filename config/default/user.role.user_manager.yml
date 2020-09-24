@@ -14,4 +14,5 @@ permissions:
   - 'cancel account'
   - 'change own username'
   - 'select account cancellation method'
+  - 'use bulk_media_library bulk upload form'
   - 'view the administration theme'

@@ -1,0 +1,41 @@
+{% set filestable__base_class = 'files-table' %}
+
+<div {{ bem(filestable__base_class) }}>
+  <div {{ bem('inner', [], filestable__base_class) }}>
+    {% if title %}
+      <h2 class="title">{{ title }}</h2>
+    {% endif %}
+    <table>
+      <thead>
+        <tr>
+          <th id="view-filename-table-column" class="views-field views-field-filename" scope="col">File</th>
+          <th id="view-filesize-table-column" class="views-field views-field-filesize" scope="col">Size</th>
+          <th id="view-changed-table-column" class="views-field views-field-changed" scope="col">Last Modified</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        {% block content %}
+          {% for item in files %}
+            <tr class="extension-{{ item.file__icon }}">
+              <td headers="view-filename-table-column" class="views-field views-field-filename">
+                {% include "@atoms/links/link/link.twig" with {
+                  link_content: item.file__name,
+                  link_url: item.file__url,
+                } %}
+              </td>
+              <td headers="view-filesize-table-column" class="views-field views-field-filesize">
+                {{ item.file__size }}
+              </td>
+              <td headers="view-changed-table-column" class="views-field views-field-changed">
+                {{ item.file__changed }}
+              </td>
+            </tr>
+          {% endfor %}
+        {% endblock %}
+
+      </tbody>
+    </table>
+
+  </div>
+</div>

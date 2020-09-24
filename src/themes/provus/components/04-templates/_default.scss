@@ -1,0 +1,40 @@
+/*
+ * General Layout
+*/
+
+$gutter: $space-double;
+$main-width: 75%;
+$sidebar-width: calc(100% - (#{$main-width} + #{$gutter}));
+
+/*
+ * Layout Using CSS Grid (NO IE11 support)
+*/
+
+.main {
+  @include wrapper;
+
+  margin-bottom: 75px;
+
+  &--with-sidebar {
+    @include large {
+      display: grid;
+      grid-gap: $gutter;
+      grid-template-areas: "sidebar content";
+      grid-template-columns: #{$sidebar-width} $main-width;
+    }
+  }
+}
+
+.main-sidebar {
+  grid-area: sidebar;
+  margin-bottom: $space-double;
+}
+
+.main-content {
+  grid-area: content;
+  width: 100%;
+}
+
+.layout__region {
+  padding: 0 .5rem;
+}

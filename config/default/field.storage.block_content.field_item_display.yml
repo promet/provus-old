@@ -30,6 +30,9 @@ settings:
       value: square_image
       label: 'Card Square Image'
     -
+      value: card_circle_image
+      label: 'Card Circle Image'
+    -
       value: text_link
       label: 'Card Text Link'
     -

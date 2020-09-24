@@ -1,15 +1,17 @@
 uuid: aad6bd4e-ae00-452a-a1a8-70ce7a15be4b
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - focal_point
 name: square_135
 label: 'Square 135'
 effects:
   58c4a84f-7737-45e3-a536-5a301c36ec57:
     uuid: 58c4a84f-7737-45e3-a536-5a301c36ec57
-    id: image_scale_and_crop
+    id: focal_point_scale_and_crop
     weight: 1
     data:
       width: 135
       height: 135
-      anchor: center-center
+      crop_type: focal_point

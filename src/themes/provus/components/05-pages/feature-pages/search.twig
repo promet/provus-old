@@ -1,0 +1,68 @@
+{% embed "@templates/with-sidebar.twig" %}
+  {% block page_precontent %}
+    {% include "@molecules/menus/breadcrumbs/breadcrumbs.twig" with { breadcrumb: [{url: '#', text: 'Home'}, {url: '#', text: 'Search'}] } %}
+  {% endblock %}
+  {% block page_content %}
+    {% include "@molecules/form/search/search-form.twig" %}
+    {% block results_summary %}
+      <p>
+      Showing results 1 of 2
+      </p>
+    {% endblock %}
+    {% include "@molecules/content/search-results.twig" %}
+    {% block pager %}
+      {% include "@molecules/pager/pager.twig" with {
+        current: "1",
+        items: {
+          "pages":
+          {
+            "1":
+              {
+                "href": "#"
+              },
+            "2":
+              {
+                "href": "#"
+              },
+          },
+          "next": {
+            "href": "#"
+          }
+        },
+      }%}
+  {% endblock %}
+  {% endblock %}
+  {% block page_sidebar %}
+    <h1>Search</h1>
+    <h2>Filter Results</h2>
+    {% include "@atoms/buttons/twig/button-clear.twig" with { button_content: "Clear All Filters", button_url: "#" }%}
+    {% include "@atoms/forms/facet-checkbox/facet-checkbox.twig" with
+      {
+        "label": "by Type",
+        "checkboxes": [
+          {
+            "title": "Article",
+            "count": 6,
+            "checked": "checked"
+          },
+          {
+            "title": "Event",
+            "count": 5
+          },
+          {
+            "title": "Page",
+            "count": 4
+          },
+          {
+            "title": "FAQ",
+            "count": 1
+          },
+          {
+            "title": "Location",
+            "count": 1
+          }
+        ]
+      }
+    %}
+  {% endblock %}
+{% endembed %}

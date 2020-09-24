@@ -1,0 +1,352 @@
+.header {
+
+  &__utility {
+    border-bottom: 1px solid $border-utility;
+    display: flex;
+    justify-content: normal;
+    align-items: center;
+    padding: 6px 0;
+    position: relative;
+
+    @include desktop {
+      padding: 7px 40px;
+      justify-content: center;
+    }
+  }
+
+  &__logo-provus {
+    margin-left: 15px;
+
+    @include desktop {
+      margin-left: 0;
+    }
+
+    .logo__image {
+      max-width: 201px;
+      max-height: 30px;
+      margin-bottom: 0;
+
+      @include desktop {
+        max-height: none;
+      }
+    }
+  }
+
+  &__utilities {
+    display: flex;
+    position: absolute;
+    right: 90px;
+    order: 3;
+
+    @include medium {
+      right: 15px;
+    }
+
+    @include desktop {
+      right: 90px;
+    }
+  }
+
+  &__traslate {
+    height: 43px;
+    display: flex;
+
+    @include desktop {
+      height: 61px;
+    }
+
+    .goog-te-combo {
+      background: $primary-darker;
+      border: 0;
+      color: $white;
+      font-family: $font-body;
+      font-size: 0.875rem;
+      line-height: 1.0625rem;
+      text-transform: uppercase;
+      font-weight: 600;
+      padding: 0 20px;
+      max-width: 187px;
+    }
+  }
+
+  &__social-share {
+    align-items: center;
+    padding-left: 30px;
+    display: none;
+
+    @include medium {
+      display: flex;
+    }
+
+    a {
+      padding: 0 9px;
+
+      &:first-child {
+        padding-left: 0;
+      }
+
+      &:last-child {
+        padding-right: 0;
+      }
+
+      svg {
+        fill: $icon;
+
+        &:hover, &:focus {
+          fill: $primary-darker;
+        }
+      }
+    }
+
+    img.ico-facebook,
+    img.ico-twitter,
+    img.ico-instagram {
+      width: 21px;
+      height: 24px;
+    }
+
+    img.ico-youtube {
+      width: 24px;
+      height: 24px;
+    }
+
+    img {
+      margin-bottom: 0;
+    }
+  }
+
+  #google_translate_element {
+    .btn-translate {
+      display: flex;
+      flex-wrap: nowrap;
+      height: 43px;
+      border: 0;
+      align-items: center;
+      background: $primary-darker;
+      padding: 0 15px 0 20px;
+      color: $white;
+      cursor: pointer;
+
+      @include desktop {
+        height: 61px;
+      }
+
+      .ico-translate {
+        background-image: url("/images/icons/ico-translate.svg");
+        background-size: 29px 28px;
+        background-position: 0;
+        background-repeat: no-repeat;
+        width: 29px;
+        height: 28px;
+        margin-right: 5px;
+      }
+    }
+
+    .goog-te-gadget-simple {
+      display: flex;
+      flex-wrap: nowrap;
+      height: 43px;
+      border: 0;
+      align-items: center;
+      background: $primary-darker;
+      padding: 0 15px 0 20px;
+      color: $white;
+    }
+
+    @include desktop {
+      height: 61px;
+    }
+
+    .goog-te-menu-value {
+      display: flex;
+      text-decoration: none;
+
+      &:hover {
+        font-weight: normal;
+      }
+
+      img {
+        display: none;
+      }
+
+      span {
+        color: $white !important;
+        border-left: 0 !important;
+        font-size: 0.875rem;
+        line-height: 17px;
+        text-transform: uppercase;
+        font-family: $font-body;
+      }
+    }
+
+    .goog-te-gadget {
+      color: transparent;
+
+      > span {
+        display: none;
+      }
+    }
+
+    .goog-te-gadget .goog-te-combo {
+      margin: 0 !important;
+      height: 43px;
+      padding: 5px;
+      font-size: 14px;
+
+      @include desktop {
+        height: 61px;
+      }
+
+      option {
+        background-color: #122E51;
+        color: $white;
+        font-family: $font-body;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 1.17px;
+        line-height: 17px;
+      }
+    }
+  }
+
+  
+  &__navigation {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 10px 15px;
+    align-items: center;
+    position: relative;
+
+    @include desktop {
+      padding: 0px 40px;
+    }
+  }
+
+  &__branding {
+    order: 1;
+    align-self: flex-start;
+
+    .logo-link {
+      display: flex;
+      align-items: center;
+      height: 50px;
+      margin-right: 10px;
+
+      @include desktop {
+        height: 60px;
+      }
+    }
+
+    .logo__image {
+      max-height: 44px;
+      margin-bottom: 0;
+      max-width: 200px;
+
+      @include desktop {
+        max-height: 55px;
+        z-index: 999;
+        position: relative;
+        max-width: 330px;
+      }
+    }
+  }
+
+  &__search {
+    order: 2;
+    position: absolute;
+    right: 65px;
+    width: 30px;
+
+    @include desktop {
+      order: 3;
+      position: initial;
+      right: auto;
+      align-self: flex-start;
+    }
+
+    .ico-search {
+      width: 24px;
+      height: 25px;
+    }
+
+    .search__image {
+      margin: 20px 0;
+    }
+  }
+
+  .search-block-form {
+    height: 0;
+    overflow: hidden;
+  }
+
+  &.search-bar-open {
+    .header__search {
+      position: initial;
+    }
+
+    .search__image {
+      display: none;
+      margin-bottom: 0;
+    }
+
+    .search-block-form {
+      height: 100%;
+      animation-name: openSearchBar;
+      animation-duration: 1s;
+      overflow: visible;
+    }
+  }
+
+  &.search-bar-closed {
+    .search-block-form {
+      animation-name: closeSearchBar;
+      animation-duration: 0.5s;
+    }
+  }
+
+  @keyframes openSearchBar {
+    from {
+      height: 0;
+    }
+
+    to {
+      height: 100%;
+    }
+  }
+
+  @keyframes closeSearchBar {
+    from {
+      height: 100%;
+    }
+
+    to {
+      height: 0;
+    }
+  }
+
+  &__menu {
+    order: 3;
+
+    @include desktop {
+      order: 2;
+    }
+
+    nav {
+
+      @include desktop {
+        height: 100%;
+      }
+
+      .toggle-expand {
+        padding: 0;
+        display: block;
+        line-height: 1;
+
+        @include desktop {
+          display: none;
+        }
+      }
+    }
+  }
+}

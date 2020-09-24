@@ -8,29 +8,29 @@ dependencies:
     - image.style.portrait_450
     - image.style.portrait_900
   theme:
-    - countyoc
+    - provus
 id: hero_tall
 label: 'Hero Tall'
 image_style_mappings:
   -
-    breakpoint_id: countyoc.desktop
+    breakpoint_id: provus.desktop
     multiplier: 1x
     image_mapping_type: image_style
     image_mapping: hero_tall_1x
   -
-    breakpoint_id: countyoc.desktop
+    breakpoint_id: provus.desktop
     multiplier: 2x
     image_mapping_type: image_style
     image_mapping: hero_tall_2x
   -
-    breakpoint_id: countyoc.mobile
+    breakpoint_id: provus.mobile
     multiplier: 1x
     image_mapping_type: image_style
     image_mapping: portrait_450
   -
-    breakpoint_id: countyoc.mobile
+    breakpoint_id: provus.mobile
     multiplier: 2x
     image_mapping_type: image_style
     image_mapping: portrait_900
-breakpoint_group: countyoc
+breakpoint_group: provus
 fallback_image_style: hero_tall_1x

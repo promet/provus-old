@@ -8,9 +8,9 @@ dependencies:
     - ctools
     - views
   theme:
-    - countyoc
+    - provus
 id: views_block__related_files_block_1
-theme: countyoc
+theme: provus
 region: content
 weight: -3
 provider: null
@@ -27,6 +27,8 @@ visibility:
   'entity_bundle:node':
     id: 'entity_bundle:node'
     bundles:
+      county_article: county_article
+      county_page: county_page
       event: event
       location: location
     negate: false

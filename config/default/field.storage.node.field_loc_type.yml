@@ -1,0 +1,54 @@
+uuid: f6585880-ddb4-4312-956a-d9895ac6e7ff
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_loc_type
+field_name: field_loc_type
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: airport
+      label: Airport
+    -
+      value: animal
+      label: 'Animal Shelter'
+    -
+      value: beach
+      label: Beach
+    -
+      value: clinic
+      label: Clinic
+    -
+      value: detention
+      label: 'Detention Facility'
+    -
+      value: historical
+      label: 'Historical Site'
+    -
+      value: landfill
+      label: Landfill
+    -
+      value: library
+      label: Library
+    -
+      value: office
+      label: 'Office Building'
+    -
+      value: park
+      label: Park
+    -
+      value: zoo
+      label: Zoo
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
