@@ -3,7 +3,10 @@ dist: bionic
 language: minimal
 
 install:
-  - curl -fsSL https://get.docksal.io | bash
+  ## Update 'get.docksal.io' curl fails from time to time. Added '-k' to ignore cert error.
+  ## ==> curl: (51) SSL: no alternative certificate subject name matches target host name 'get.docksal.io'
+  - curl -kfsSL https://get.docksal.io | bash
+  - fin update
   - fin version
   - fin sysinfo
 
@@ -11,7 +14,24 @@ before_script:
   - fin init
 
 script:
-  - fin test
+  ## NOTE: Travis cron only run once daily. To debug, temporarily add '--local' to 'fin drupal-coreupdate'.
+  ##       * Run 'try', 'test' and 'sendpr' this way so it stops once preceeding command fails for quick feedback.
+  - fin drupal-coreupdate try && fin test && fin drupal-coreupdate sendpr
 
 after_success:
-  - fin deploy 
+  - fin deploy
+
+notifications:
+  email:
+    recipients:
+      - sysadmin@prometsource.com
+      - aaron@prometsource.com
+    on_success: always # default: change
+    on_failure: always # default: always
+  ## TODO: Need to encrypt the token as per https://docs.travis-ci.com/user/notifications/#configuring-slack-notifications
+  ##       However, it's a minor security risk. It can always be done later.
+  slack:
+    rooms:
+      - prometsourcegroup:gkT5UWM1XrtT8C10FKx1jNMB#provus-notifications
+    on_success: always # default: change
+    on_failure: always # default: always
