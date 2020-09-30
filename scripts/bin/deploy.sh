@@ -12,6 +12,11 @@ push (i)
   git push deploy $REMOTE 
 }
 
+add_remote()
+{
+  git remote add deploy $REMOTE_GIT_REPO
+}
+
 if [ $CURRENT_TAG != "undefined" ]
 then
   push($CURRENT_TAG)
