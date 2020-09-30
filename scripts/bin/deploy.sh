@@ -8,7 +8,7 @@ CURRENT_TAG=`git name-rev --tags --name-only $(git rev-parse HEAD)`
 push (i)
 {
   git add .
-  git commit -m "Build for $i"
+  git commit -m "Build for $1"
   git push deploy $REMOTE 
 }
 
