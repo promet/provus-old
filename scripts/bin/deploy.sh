@@ -9,7 +9,7 @@ push()
 {
   git add .
   git commit -m "Build for $1"
-  git push deploy $REMOTE 
+  git push deploy HEAD:$REMOTE --force
 }
 
 add_remote()
