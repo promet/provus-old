@@ -6,7 +6,7 @@ The following are steps to create a new site off of Provus.
 
 1. Clone Provus
 2. Remove .git folder ``rm -rf .git``
-3. Add new git remote ``git init; git commit -m "Initial commit"; git remote add origin [git url]``
+3. Add new git remote ``git init; git add -A .; git commit -m "Initial commit"; git remote add origin [git url]``
 
 
 ## Update to use "docroot" if desired
