@@ -3,7 +3,7 @@ This assumes you have Terminus already installed.
 
 1. Create new site on pantheon "newsite"
 2. Create an empty upstream: ``terminus site:upstream:set newsite empty``
-3. Clone provus or site already in git locally ``git clone git@github.com:promet/provus.git newsite"
+3. Clone provus or site already in git locally ``git clone git@github.com:promet/provus.git newsite"``
 4. Add pantheon remote to docksal.env ``REMOTE_GIT_REPO=ssh://////////``
 5. Build and push: ``fin deploy``
 6. Copy aliases to project: ``terminus aliases; cp ~/.drush/sites/newsite.site.yml drush/sites/.``
