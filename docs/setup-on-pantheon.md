@@ -1,4 +1,5 @@
 # Setting up on Pantheon
+This assumes you have Terminus already installed.
 
 1. Create new site on pantheon "newsite"
 2. Create an empty upstream: ``terminus site:upstream:set newsite empty``
