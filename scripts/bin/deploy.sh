@@ -11,7 +11,7 @@ auth_hosting()
  then
    TERMINUS_BIN=$PROJECT_ROOT/scripts/vendor/terminus
 
-   $TERMINUS_BIN auth:login --machine-token=$PANTHEON_TOKEN
+   $TERMINUS_BIN auth:login --machine-token=$SECRET_TERMINUS_TOKEN
  else
    ## TODO: Support Acquia soon...
    echo "ERROR: Unknown hosting. Supports Pantheon.io for now."
