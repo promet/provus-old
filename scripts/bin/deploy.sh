@@ -40,9 +40,9 @@ push()
   set_perms
   git add .
   git commit -m "Build for $1"
-  [[ "$HOST" == "pantheon"]] && pantheon_conn_switch git  ## Must be 'git mode' in Pantheon to commit.
+  [[ "$HOST" == "pantheon" ]] && pantheon_conn_switch git  ## Must be 'git mode' in Pantheon to commit.
   git push deploy HEAD:$REMOTE --force
-  [[ "$HOST" == "pantheon"]] && pantheon_conn_switch sftp ## Must be 'sftp mode' in Pantheon to install Drupal.
+  [[ "$HOST" == "pantheon" ]] && pantheon_conn_switch sftp ## Must be 'sftp mode' in Pantheon to install Drupal.
 }
 
 ## ==============
