@@ -18,3 +18,4 @@ services:
     environment:
       - IS_DOCKSAL_PROJECT 
       - DRUPAL_HASH_SALT
+      - REMOTE_GIT_REPO

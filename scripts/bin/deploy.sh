@@ -5,61 +5,55 @@ REMOTE="master"
 CURRENT_BRANCH=`git name-rev --name-only HEAD`
 CURRENT_TAG=`git name-rev --tags --name-only $(git rev-parse HEAD)`
 
-prep ()
+auth_hosting()
 {
-  git remote add github https://${GH_TOKEN}@github.com/promet/provus.git 
+ if [ "$HOST" == "pantheon" ]
+ then
+   TERMINUS_BIN=$PROJECT_ROOT/scripts/vendor/terminus
+
+   $TERMINUS_BIN auth:login --machine-token=$SECRET_TERMINUS_TOKEN
+ else
+   ## TODO: Support Acquia soon...
+   echo "ERROR: Unknown hosting. Supports Pantheon.io for now."
+   exit 1
+ fi
 }
 
-quiet_git() {
-  stdout=$(tempfile)
-  stderr=$(tempfile)
-
-  if ! git "$@" </dev/null >$stdout 2>$stderr; then
-      cat $stderr >&2
-      rm -f $stdout $stderr
-      exit 1
-  fi
-
-  rm -f $stdout $stderr
-}
-
-add()
+add_remote()
 {
-  quiet_git add --force -A docroot vendor scripts .docksal load.environment.php drush
-  quiet_git commit -m "Updates build"
+  git remote add deploy $REMOTE_GIT_REPO
 }
 
-build ()
+set_perms() {
+  chmod u+x config/content* -R
+  chmod u+x $DOCROOT/sites/default/files
+}
+
+pantheon_conn_switch()
 {
-  ${PROJECT_ROOT}/scripts/bin/build-artifacts.sh
+  $TERMINUS_BIN connection:set ${PANTHEON_SITE_NAME}.dev $1
 }
 
-branch ()
+push()
 {
-  prep
-  git checkout --orphan $BUILD_BRANCH
-  build
-  add
-  echo "Pushing branch to build..."
-  git push --force github $BUILD_BRANCH
+  add_remote
+  set_perms
+  git add .
+  git commit -m "Build for $1"
+  [[ "$HOST" == "pantheon" ]] && pantheon_conn_switch git  ## Must be 'git mode' in Pantheon to commit.
+  git push deploy HEAD:$REMOTE --force
+  [[ "$HOST" == "pantheon" ]] && pantheon_conn_switch sftp ## Must be 'sftp mode' in Pantheon to install Drupal.
 }
 
-tag ()
-{
-  prep
-  git tag -d $CURRENT_TAG
-  build
-  add
-  echo "Updating tag ..."
-  git tag $CURRENT_TAG
-  git push $CURRENT_TAG
-}
+## ==============
+## main() below.
+## ==============
 
+auth_hosting
 if [ $CURRENT_TAG != "undefined" ]
 then
-  tag
+  push $CURRENT_TAG
 elif [ $CURRENT_BRANCH == $DEV_BRANCH ]
 then
-  branch
+  push $CURRENT_BRANCH
 fi
-
