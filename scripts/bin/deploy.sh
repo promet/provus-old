@@ -31,7 +31,7 @@ set_perms() {
 
 pantheon_conn_switch()
 {
-  $TERMINUS_BIN connection:set ${PANTHEON_SITE_NAME}.dev $1
+  $TERMINUS_BIN connection:set ${HOSTING_SITE}.dev $1
 }
 
 push()
