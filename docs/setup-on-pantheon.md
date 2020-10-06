@@ -3,6 +3,7 @@ This assumes you have Terminus already installed.
 
 1. Create Pantheon Token using https://pantheon.io/docs/machine-tokens.
 2. Authenticate to Pantheon using the Token: ``terminus auth:login --machine-token=<token_here>``
+3. Add the token to ``docksal.env`` using ``SECRET_TERMINUS_TOKEN``
 3. Create new site on Pantheon with empty upstream ``terminus site:create <site_name> <readable_label> <empty>``
 ![empty_patheon_project](images/empty_pantheon_project.png)
 
