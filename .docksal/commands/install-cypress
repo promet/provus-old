@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+./scripts/bin/install-cypress.sh
