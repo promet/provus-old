@@ -124,11 +124,11 @@
         "files": ["load.environment.php"]
     },
     "scripts": {
-	"build-assets": [
+        "build-assets": [
             "@prepare-for-build",
-            "composer install --optimize-autoloader --no-dev"	    
+            "composer install --optimize-autoloader --no-dev"
         ],
-	"prepare-for-build":"DrupalProject\\composer\\ScriptHandler::prepareForBuild",
+        "prepare-for-build":"DrupalProject\\composer\\ScriptHandler::prepareForBuild",
         "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
         "remove-git-dirs": "DrupalProject\\composer\\ScriptHandler::removeGitDirectories",
         "project-scaffold": [
