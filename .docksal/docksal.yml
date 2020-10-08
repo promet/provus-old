@@ -23,6 +23,5 @@ services:
       - HOSTING_SITE
       - HOSTING_ENV
       - THEME_NAME
-      - REMOTE_GIT_REPO
       - UUID
 
