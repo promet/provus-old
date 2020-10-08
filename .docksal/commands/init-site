@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-#: exec_target = cli
-
 ## Initialize/reinstall site
 ##
 ## Usage: fin init-site
