@@ -1,3 +1,8 @@
+---
+layout: default
+title: Provus Developer Documentation
+---
+
 # Provus Documentation
 
 ## Table of Contents
