@@ -7,4 +7,5 @@ title: Provus Developer Documentation
 
 ## Table of Contents
 
+* [Block Types](block-types.md)
 
