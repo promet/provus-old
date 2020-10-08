@@ -16,4 +16,4 @@ fin php-cs
 #fin phpunit
 fin test-content
 fin behat
-fin pa11y 
+# fin pa11y 
