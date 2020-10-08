@@ -22,16 +22,5 @@ after_success:
   - fin deploy
 
 notifications:
-  email:
-    recipients:
-      - sysadmin@prometsource.com
-      - aaron@prometsource.com
-    on_success: always # default: change
-    on_failure: always # default: always
-  ## TODO: Need to encrypt the token as per https://docs.travis-ci.com/user/notifications/#configuring-slack-notifications
-  ##       However, it's a minor security risk. It can always be done later.
-  slack:
-    rooms:
-      - prometsourcegroup:gkT5UWM1XrtT8C10FKx1jNMB#provus-notifications
     on_success: always # default: change
     on_failure: always # default: always

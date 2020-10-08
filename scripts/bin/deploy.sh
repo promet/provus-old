@@ -7,7 +7,7 @@ CURRENT_TAG=`git name-rev --tags --name-only $(git rev-parse HEAD)`
 
 auth_hosting()
 {
- if [ "$HOST" == "pantheon" ]
+ if [ "$HOSTING_PLATFORM" == "pantheon" ]
  then
    TERMINUS_BIN=$PROJECT_ROOT/scripts/vendor/terminus
 
@@ -31,7 +31,7 @@ set_perms() {
 
 pantheon_conn_switch()
 {
-  $TERMINUS_BIN connection:set ${PANTHEON_SITE_NAME}.dev $1
+  $TERMINUS_BIN connection:set ${HOSTING_SITE}.dev $1
 }
 
 push()
@@ -40,9 +40,9 @@ push()
   set_perms
   git add .
   git commit -m "Build for $1"
-  [[ "$HOST" == "pantheon" ]] && pantheon_conn_switch git  ## Must be 'git mode' in Pantheon to commit.
+  [[ "$HOSTING_PLATFORM" == "pantheon" ]] && pantheon_conn_switch git  ## Must be 'git mode' in Pantheon to commit.
   git push deploy HEAD:$REMOTE --force
-  [[ "$HOST" == "pantheon" ]] && pantheon_conn_switch sftp ## Must be 'sftp mode' in Pantheon to install Drupal.
+  [[ "$HOSTING_PLATFORM" == "pantheon" ]] && pantheon_conn_switch sftp ## Must be 'sftp mode' in Pantheon to install Drupal.
 }
 
 ## ==============

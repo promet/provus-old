@@ -1,20 +1,20 @@
 #!/usr/bin/env bash
 
-## Deploy storybook to the oc-design.prometdev.com site. 
+## Deploy storybook by pushing to "storybook" branch. 
 ##
 ## Usage: fin init
 
 echo "Copying storybook"
-fin exec "cp -r ${PROJECTS_ROOT}${DOCROOT}/themes/custom/provus .; cd ${PROJECTS_ROOT}provus; yarn"
+fin exec "cp -r ${PROJECTS_ROOT}${DOCROOT}/themes/custom/${THEME_NAME} .; cd ${PROJECTS_ROOT}${THEME_NAME}; yarn"
 git checkout storybook
 git reset --hard origin/storybook
 git pull
 echo "Building storybook"
-fin exec "cd ${PROJECTS_ROOT}provus; yarn build-storybook -o ../storybook"
+fin exec "cd ${PROJECTS_ROOT}${THEME_NAME}; yarn build-storybook -o ../storybook"
 echo "Copying images"
-fin exec "rm -rf ${PROJECTS_ROOT}storybook/images; cp -r ${PROJECTS_ROOT}provus/images ${PROJECTS_ROOT}storybook/images"
+fin exec "rm -rf ${PROJECTS_ROOT}storybook/images; cp -r ${PROJECTS_ROOT}${THEME_NAME}/images ${PROJECTS_ROOT}storybook/images"
 echo "Removing artifact"
-fin exec "rm -rf ${PROJECTS_ROOT}provus"
+fin exec "rm -rf ${PROJECTS_ROOT}${THEME_NAME}"
 echo "Adding to git"
 git add storybook
 git commit -m "Updates storybook"

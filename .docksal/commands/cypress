@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+CYPRESS_BASE_URL=${PROJECT_URL}
+export CYPRESS_BASE_URL
+./scripts/bin/test-cypress.sh
