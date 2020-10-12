@@ -5,7 +5,7 @@
 ## Usage: fin php-cs 
 
 fin run phpcs \
-    --standard="Drupal,DrupalPractice" -n \
+    --standard="Drupal,DrupalPractice" \
     --extensions="php,module,inc,install,test,profile,theme" \
     --ignore="*.features.*,*.pages*.inc" \
     src/modules

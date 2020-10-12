@@ -19,8 +19,7 @@ class NewsletterSignup extends BlockBase {
    */
   public function build() {
 
-    $form = \Drupal::formBuilder()->getForm('Drupal\county_blocks\Form\NewsletterSignupForm');
-
+    $form = \Drupal::formBuilder()->getForm('Drupal\county_blocks\Form\NewsletterSignupForm'); // phpcs:ignore
     return $form;
 
   }

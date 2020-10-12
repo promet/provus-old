@@ -3,8 +3,6 @@
 namespace Drupal\county_blocks\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
-use Google_Client;
-use Google_Service_YouTube;
 
 /**
  * Provides Social Feed Youtube block content.
@@ -21,7 +19,7 @@ class SocialYoutubeBlock extends BlockBase {
    */
   public function build() {
 
-    $service = \Drupal::service('county_blocks.youtube_feed');
+    $service = \Drupal::service('county_blocks.youtube_feed'); // phpcs:ignore
     $items = $service->getYoutubePosts();
 
     $build = [

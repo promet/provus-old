@@ -5,6 +5,7 @@ namespace Drupal\county_blocks\Form;
 use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Config\ConfigFactoryInterface;
+use Drupal\Core\StringTranslation\StringTranslationTrait;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**
@@ -13,6 +14,7 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
  * @package Drupal\county_blocks\Form
  */
 class NewsletterSignupForm extends FormBase {
+  use StringTranslationTrait;
 
   /**
    * Configuration Factory.
@@ -67,10 +69,10 @@ class NewsletterSignupForm extends FormBase {
 
     $form['email'] = [
       '#type' => 'email',
-      '#title' => t('Your E-mail'),
+      '#title' => $this->t('Your E-mail'),
       '#required' => TRUE,
       '#title_display' => 'invisible',
-      '#attributes' => ['placeholder' => t('Your E-mail')],
+      '#attributes' => ['placeholder' => $this->t('Your E-mail')],
     ];
 
     $form['actions']['#type'] = 'actions';

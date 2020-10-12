@@ -23,7 +23,7 @@ class SocialLinksBlock extends BlockBase {
     $data = $this->formatLinks($this->getUrl(), $this->getPageTitle());
 
     $cache = ['contexts' => ['url']];
-    if ($node = \Drupal::routeMatch()->getParameter('node')) {
+    if ($node = \Drupal::routeMatch()->getParameter('node')) { // phpcs:ignore
       $cache['tags'] = $node->getCacheTags();
     }
 
@@ -35,7 +35,7 @@ class SocialLinksBlock extends BlockBase {
   }
 
   /**
-   * Returns full URL with http or https (as used by the request) including the domain.
+   * Returns full URL with http or https (as used by the request) with domain.
    */
   private function getUrl() {
     $url = Url::fromRoute('<current>', [], ["absolute" => TRUE])->toString();
@@ -49,9 +49,11 @@ class SocialLinksBlock extends BlockBase {
    * @link https://www.drupal.org/project/drupal/issues/2264043
    */
   private function getPageTitle() {
+    // phpcs:disable
     $request = \Drupal::request();
     $route_match = \Drupal::routeMatch();
     $title = \Drupal::service('title_resolver')->getTitle($request, $route_match->getRouteObject());
+    // phpcs:enable
     return $title;
   }
 
@@ -63,22 +65,22 @@ class SocialLinksBlock extends BlockBase {
     $facebook = [
       'title' => 'Share this page to Facebook',
       'url' => "https://www.facebook.com/sharer/sharer.php?kid_directed_site=0&u=$url&display=popup&ref=plugin&src=share_button",
-      'icon' => 'facebook'
+      'icon' => 'facebook',
     ];
     $twitter = [
       'title' => 'Share this page to Twitter',
       'url' => "http://twitter.com/share?text=$text&url=$url&hashtags=",
-      'icon' => 'twitter'
+      'icon' => 'twitter',
     ];
     $linkedin = [
       'title' => 'Share this page to Linkedin',
       'url' => "https://www.linkedin.com/sharing/share-offsite/?url=$url",
-      'icon' => 'linkedin'
+      'icon' => 'linkedin',
     ];
     $link = [
       'title' => 'Copy this page as a Link',
       'url' => "$url",
-      'icon' => 'link'
+      'icon' => 'link',
     ];
 
     return [$facebook, $twitter, $linkedin, $link];

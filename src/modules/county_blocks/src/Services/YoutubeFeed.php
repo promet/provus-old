@@ -2,6 +2,7 @@
 
 namespace Drupal\county_blocks\Services;
 
+use Drupal\Core\StringTranslation\StringTranslationTrait;
 use Google_Client;
 use Google_Service_YouTube;
 
@@ -9,6 +10,7 @@ use Google_Service_YouTube;
  * Class YoutubeFeed.
  */
 class YoutubeFeed {
+  use StringTranslationTrait;
 
   /**
    * Fetch youtube videos from a given channel.
@@ -80,7 +82,7 @@ class YoutubeFeed {
     }
     catch (\Exception $exception) {
       \Drupal::logger('county_blocks')
-        ->error(t('Exception: @exception', [
+        ->error($this->t('Exception: @exception', [
           '@exception' => $exception->getMessage(),
         ]));
     }

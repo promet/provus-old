@@ -5,11 +5,9 @@
  * Contains county_blocks.module.
  */
 
-use Drupal\block_content\Entity\BlockContent;
 use Drupal\block\Entity\Block;
 use Drupal\Component\Utility\Html;
 use Drupal\Core\Access\AccessResult;
-use Drupal\Core\Entity\EntityInterface;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Routing\RouteMatchInterface;
 use Drupal\Core\Session\AccountInterface;
@@ -45,19 +43,28 @@ function county_blocks_help($route_name, RouteMatchInterface $route_match) {
  */
 function county_blocks_form_alter(&$form, FormStateInterface $form_state, $form_id) {
   // Alter link group form on blocks editing page.
-  $form_ids_blockcontent = ['block_content_link_group_edit_form', 'block_content_link_group_form'];
+  $form_ids_blockcontent = [
+    'block_content_link_group_edit_form',
+    'block_content_link_group_form',
+  ];
   if (in_array($form_id, $form_ids_blockcontent)) {
     $form = county_blocks_alter_block($form);
   }
 
   // Alter tabs form on blocks editing page.
-  $form_ids_tabs = ['block_content_tabs_edit_form', 'block_content_tabs_edit_form'];
+  $form_ids_tabs = [
+    'block_content_tabs_edit_form',
+    'block_content_tabs_edit_form',
+  ];
   if (in_array($form_id, $form_ids_tabs)) {
     $form = county_blocks_process_tabs($form);
   }
 
   // Alter link group and tabs on layout builder forms.
-  $form_ids_layoutbuilder = ['layout_builder_update_block', 'layout_builder_add_block'];
+  $form_ids_layoutbuilder = [
+    'layout_builder_update_block',
+    'layout_builder_add_block',
+  ];
   if (in_array($form_id, $form_ids_layoutbuilder)) {
     $form['settings']['block_form']['#process'][] = 'county_blocks_process_layoutbuilder_block';
   }
@@ -113,23 +120,23 @@ function county_blocks_alter_block($element, $parents = []) {
   }
   $element['field_content_type']['#states'] = [
     'visible' => [
-      'select[name="' . $group_source_name . '"]' => ['value' => 'auto']
-    ]
+      'select[name="' . $group_source_name . '"]' => ['value' => 'auto'],
+    ],
   ];
   $element['field_count']['#states'] = [
     'visible' => [
-      'select[name="' . $group_source_name . '"]' => ['value' => 'auto']
-    ]
+      'select[name="' . $group_source_name . '"]' => ['value' => 'auto'],
+    ],
   ];
   $element['field_content_references']['#states'] = [
     'visible' => [
-      'select[name="' . $group_source_name . '"]' => ['value' => 'manual_content']
-    ]
+      'select[name="' . $group_source_name . '"]' => ['value' => 'manual_content'],
+    ],
   ];
   $element['field_block_items']['#states'] = [
     'visible' => [
-      'select[name="' . $group_source_name . '"]' => ['value' => 'manual_inline']
-    ]
+      'select[name="' . $group_source_name . '"]' => ['value' => 'manual_inline'],
+    ],
   ];
   $element['field_item_display']['#states'] = [
     'visible' => [
@@ -139,7 +146,7 @@ function county_blocks_alter_block($element, $parents = []) {
         ['value' => 'grid_3'],
         ['value' => 'grid_4'],
       ],
-    ]
+    ],
   ];
 
   return $element;
