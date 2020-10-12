@@ -2,6 +2,8 @@
 
 These are the block types that Provus includes.
 
+* [Accordion](#accordion)
+
 To add a block to the layout of your page, you simply click ‘Layout’, then decide which section you want to add the block to, and at the bottom of that section select ‘Add Block’.
 
 ![image](https://user-images.githubusercontent.com/512243/95464482-fe608b00-0947-11eb-9ebd-604803dbbd4b.png)
@@ -10,6 +12,7 @@ To add a block to the layout of your page, you simply click ‘Layout’, then d
 Blocks are organized by type:
 
 ![image](https://user-images.githubusercontent.com/512243/95464720-48e20780-0948-11eb-8654-23dfe54159b4.png)
+
 ![image](https://user-images.githubusercontent.com/512243/95464833-6911c680-0948-11eb-8997-b4e12d2c893e.png)
 
 This is a very brief description of each block type with a demonstration of the potential outcome:
