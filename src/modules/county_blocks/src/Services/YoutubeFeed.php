@@ -3,11 +3,13 @@
 namespace Drupal\county_blocks\Services;
 
 use Drupal\Core\StringTranslation\StringTranslationTrait;
+// phpcs:disable
 use Google_Client;
 use Google_Service_YouTube;
+// phpcs:enable
 
 /**
- * Class YoutubeFeed.
+ * Creates YoutubeFeed.
  */
 class YoutubeFeed {
   use StringTranslationTrait;
