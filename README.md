@@ -18,5 +18,8 @@ This is a project of [Promet Source](http://prometsource.com). "Provus" is Old E
 
 ## Demo
 
-http:// https://live-provus-playground.pantheonsite.io/
+https://live-provus-playground.pantheonsite.io/
 
+## Documentation
+
+https://promet.github.io/provus/
