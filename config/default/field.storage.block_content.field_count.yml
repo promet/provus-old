@@ -1,0 +1,20 @@
+uuid: f649e6fb-f5dc-4e34-9a8f-f932a88d20ef
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+id: block_content.field_count
+field_name: field_count
+entity_type: block_content
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

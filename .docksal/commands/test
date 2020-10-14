@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+## Test site installation
+##
+## Usage: fin test
+
+# Abort if anything fails
+set -e
+
+# Debug mode switch
+if [[ "${DEBUG}" != "" ]]; then
+    set -x
+fi
+
+fin cypress
+fin php-cs
+#fin phpunit
+fin test-content
+fin behat
+#fin pa11y 

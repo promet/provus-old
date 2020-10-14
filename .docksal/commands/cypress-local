@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+## Runs cypress the local environment which can be faster 
+
+CYPRESS_BASE_URL=${PROJECT_URL}
+export CYPRESS_BASE_URL
+bash ./scripts/bin/test-cypress.sh

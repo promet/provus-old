@@ -1,0 +1,36 @@
+{% set numbergroup__base_class = 'number-group' %}
+
+<div {{ bem(numbergroup__base_class) }}>
+
+  <div {{ bem('outer', [], numbergroup__base_class) }}>
+
+    <h2 class="title">{{ label }}</h2>
+
+    <div {{ bem('inner', [], numbergroup__base_class) }}>
+
+      {% block content %}
+        {% for item in content %}
+          <div class="number-group-item-wrapper">
+
+            {% block by__the__number %}
+              {% include "@molecules/card/by-the-number.twig" with
+                {
+                  image_src: item.image_src,
+                  image_alt: item.image_alt,
+                  image_output_image_tag: item.image__output_image_tag,
+                  icon: item.icon,
+                  heading: item.heading,
+                  body: item.body,
+                }
+              %}
+            {% endblock %}
+
+          </div>
+        {% endfor %}
+      {% endblock %}
+
+    </div>
+
+  </div>
+
+</div>

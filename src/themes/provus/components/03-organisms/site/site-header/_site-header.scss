@@ -1,0 +1,64 @@
+.pre-header {
+  position: relative;
+
+  ul {
+    margin: 0;
+  }
+}
+
+.header {
+  background: $white;
+  z-index: 100;
+  position: relative;
+  width: 100%;
+  min-height: 65px
+
+  &__pre-inner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: transform 0.4s;
+    background: $white;
+  }
+
+  &__inner {
+    width: 100%;
+    max-width: 1680px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 0 !important;
+    background: $white;
+
+    @include medium {
+      padding: 0 0 !important;
+    }
+  }
+
+  &.menu-mobile-open {
+    .header__search {
+      display: none;
+    }
+  }
+}
+
+.scroll-down {
+  .header {
+    .header__pre-inner {
+      transform: translate3d(0, -100%, 0);
+    }
+  }
+}
+
+.scroll-up {
+  .header {
+    .header__pre-inner {
+      transform: none;
+    }
+  }
+}

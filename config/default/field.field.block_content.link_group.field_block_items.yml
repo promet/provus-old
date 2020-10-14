@@ -1,0 +1,28 @@
+uuid: ddb35efd-07a6-4e6e-80bb-120ac0206b1e
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.inline_item
+    - block_content.type.link_group
+    - field.storage.block_content.field_block_items
+id: block_content.link_group.field_block_items
+field_name: field_block_items
+entity_type: block_content
+bundle: link_group
+label: 'Manual Inline Content'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:block_content'
+  handler_settings:
+    target_bundles:
+      inline_item: inline_item
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,8 @@
+uuid: 6c52429d-9593-4de6-b9bc-d4d7713a72bc
+langcode: en
+status: true
+dependencies: {  }
+id: short_banner
+label: 'Short Banner'
+revision: 1
+description: ''

@@ -1,0 +1,23 @@
+uuid: 63c3f66d-054c-4dda-ae4b-03f1ca21e98b
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.social_feed
+    - field.storage.block_content.field_count
+id: block_content.social_feed.field_count
+field_name: field_count
+entity_type: block_content
+bundle: social_feed
+label: Count
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -1,0 +1,10 @@
+{{ attach_library('provus/bootstrap') }}
+<div class="accordion" id="accordion{{ id }}">
+  {% for key, item in items %}
+    {% include "@molecules/accordion/_accordion_item.twig" with {
+      item_id: key,
+      item_heading: item.item_heading,
+      item_body: item.item_body,
+    } %}
+  {% endfor %}
+</div>

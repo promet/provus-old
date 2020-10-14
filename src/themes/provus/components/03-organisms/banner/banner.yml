@@ -1,0 +1,19 @@
+logo_src: 'images/southport-logo.png'
+logo_alt: "This is the image's alt text"
+heading: 'Welcome to Southport County'
+body: 'Let us serve you.'
+link_url: 'http://www.google.com'
+link_text: 'Read more'
+settings:
+  search: false
+  search__button__text: 'Search'
+  search__button__url: '#'
+items:
+  -
+    active: true
+    image_src: '/images/banner-2.jpg'
+    image_alt: "This is the image's alt text"
+  -
+    active: null
+    image_src: '/images/banner-1.jpg'
+    image_alt: "This is the image's alt text"

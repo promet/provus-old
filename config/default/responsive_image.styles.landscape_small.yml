@@ -1,0 +1,36 @@
+uuid: 1ea0a0d7-4dd7-41aa-aaaf-a43a87fd7737
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.landscape_360
+    - image.style.landscape_450
+    - image.style.landscape_720
+    - image.style.landscape_900
+  theme:
+    - provus
+id: landscape_small
+label: 'Landscape Small'
+image_style_mappings:
+  -
+    breakpoint_id: provus.desktop
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: landscape_360
+  -
+    breakpoint_id: provus.desktop
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: landscape_720
+  -
+    breakpoint_id: provus.mobile
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: landscape_450
+  -
+    breakpoint_id: provus.mobile
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: landscape_900
+breakpoint_group: provus
+fallback_image_style: landscape_360

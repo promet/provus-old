@@ -1,0 +1,102 @@
+{
+    "block_content": [
+        {
+            "id": [
+                {
+                    "value": 10
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "e46b684d-14e7-44ad-9c8e-66b57e95144c"
+                }
+            ],
+            "revision_id": [
+                {
+                    "value": 10
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "type": [
+                {
+                    "target_id": "number_list",
+                    "target_type": "block_content_type",
+                    "target_uuid": "12d174f6-6b39-4fea-a464-94cb793becf5"
+                }
+            ],
+            "revision_created": [
+                {
+                    "value": "2020-03-23T21:13:57+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "revision_user": [
+                {
+                    "target_id": 7231318
+                }
+            ],
+            "revision_log": [],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "info": [
+                {
+                    "value": "By The Numbers (Number Group)"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2020-03-23T21:13:57+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "reusable": [
+                {
+                    "value": true
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": true
+                }
+            ],
+            "revision_translation_affected": [
+                {
+                    "value": true
+                }
+            ],
+            "field_block_items": [
+                {
+                    "target_id": 5,
+                    "target_type": "block_content",
+                    "target_uuid": "230e4809-8a22-4a86-b88d-10d989b261b6",
+                    "url": "\/block\/5"
+                },
+                {
+                    "target_id": 6,
+                    "target_type": "block_content",
+                    "target_uuid": "0f24dc32-3f01-4769-b38d-1f3e0f85a618",
+                    "url": "\/block\/6"
+                },
+                {
+                    "target_id": 7,
+                    "target_type": "block_content",
+                    "target_uuid": "74e56da3-9b84-4a95-97b7-72d5cd3667cd",
+                    "url": "\/block\/7"
+                },
+                {
+                    "target_id": 8,
+                    "target_type": "block_content",
+                    "target_uuid": "9f3ab4de-58c4-4aaf-b16d-f00585f52740",
+                    "url": "\/block\/8"
+                }
+            ]
+        }
+    ]
+}

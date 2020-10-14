@@ -1,0 +1,10 @@
+uuid: 72e01720-1bbd-46f2-8eaa-12988b49240a
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+id: block_content.square_image
+label: 'Card Square Image'
+targetEntityType: block_content
+cache: true

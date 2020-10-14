@@ -1,0 +1,18 @@
+<form action="{{ search_bar__action }}" method="get" class="search-block-form" accept-charset="UTF-8">
+  <div class="form-item--radio">
+    {% for key, option in search_bar__options %}
+      <div class="js-form-item form-item">
+        <input type="radio" id="edit-search-bar-type-{{ option.value }}" name="search-bar-type" value="{{ option.value }}" class="form-radio"{% if key == 0 %} checked{% endif %}>
+        <label for="edit-search-bar-type-{{ option.value }}" class="option form-item__label">{{ option.title }}</label>
+      </div>
+    {% endfor %}
+  </div>
+  <div class="text-buttons">
+    <div class="form-item js-form-item form-type-search js-form-type-search form-item-keys js-form-item-keys form-no-label form-group">
+      <label for="edit-keys" class="visually-hidden">Search</label>
+      <input title="Search" aria-label="Search" class="form-search form-control" placeholder="{{ search_bar__placeholder_text }}" type="search" id="edit-keys" name="{{ search_bar__keys }}" value="" size="15" maxlength="128" data-toggle="tooltip" data-original-title="Enter the terms you wish to search for.">
+    </div>
+    <input type="reset" value="Reset">
+    <input class="button form-submit form-item__submit" type="submit" value="Search">
+  </div>
+</form>

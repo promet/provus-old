@@ -1,0 +1,67 @@
+uuid: db2e3bfb-b831-4345-bdb9-e8d15d7407d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+  module:
+    - ckeditor
+_core:
+  default_config_hash: AqlPmO16LvJI4D0Ih6u4GFQIzqr5OnLgAUSjcUGWk2g
+format: basic_html
+editor: ckeditor
+settings:
+  toolbar:
+    rows:
+      -
+        -
+          name: Formatting
+          items:
+            - Bold
+            - Italic
+        -
+          name: Linking
+          items:
+            - DrupalLink
+            - Linkit
+            - DrupalUnlink
+        -
+          name: Lists
+          items:
+            - BulletedList
+            - NumberedList
+            - Indent
+            - Outdent
+        -
+          name: Media
+          items:
+            - DrupalMediaLibrary
+            - Blockquote
+        -
+          name: 'Block Formatting'
+          items:
+            - Format
+            - Styles
+            - Paste
+            - PasteText
+            - PasteFromWord
+        -
+          name: Tools
+          items:
+            - Table
+            - Source
+  plugins:
+    language:
+      language_list: un
+    stylescombo:
+      styles: "td.percent-25|25 Percent TD\r\ntd.percent-50|50 Percent TD\r\ntd.percent-75|75 Percent TD\r\nth.percent-25|25 Percent TH\r\nth.percent-50|50 Percent TH\r\nth.percent-75|75 Percent TH"
+    linkit:
+      linkit_profile: wysiwyg
+image_upload:
+  status: true
+  scheme: public
+  directory: inline-images
+  max_size: ''
+  max_dimensions:
+    width: null
+    height: null

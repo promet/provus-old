@@ -1,0 +1,67 @@
+uuid: 3f073ad2-c8e4-4694-9bdc-398018dd4c94
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.text_link
+    - field.field.node.location.body
+    - field.field.node.location.field_accessible
+    - field.field.node.location.field_address
+    - field.field.node.location.field_alert
+    - field.field.node.location.field_email
+    - field.field.node.location.field_file
+    - field.field.node.location.field_hours
+    - field.field.node.location.field_lat_long
+    - field.field.node.location.field_loc_amenities
+    - field.field.node.location.field_loc_type
+    - field.field.node.location.field_media_image
+    - field.field.node.location.field_phone
+    - node.type.location
+  module:
+    - layout_builder
+    - smart_trim
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: node.location.text_link
+targetEntityType: node
+bundle: location
+mode: text_link
+content:
+  body:
+    label: hidden
+    type: smart_trim
+    weight: 0
+    settings:
+      trim_length: 100
+      trim_type: chars
+      trim_suffix: ...
+      wrap_class: trimmed
+      more_text: More
+      more_class: more-link
+      summary_handler: trim
+      trim_options:
+        text: true
+        trim_zero: false
+      wrap_output: false
+      more_link: false
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_accessible: true
+  field_address: true
+  field_alert: true
+  field_email: true
+  field_file: true
+  field_hours: true
+  field_lat_long: true
+  field_loc_amenities: true
+  field_loc_type: true
+  field_location_type: true
+  field_media_image: true
+  field_phone: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

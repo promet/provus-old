@@ -1,0 +1,30 @@
+uuid: 5ce6b552-b0ef-4d98-8f69-274e4cb43a6a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.social_feed
+    - field.field.block_content.social_feed.field_social_layout
+    - field.field.block_content.social_feed.field_social_type
+id: block_content.social_feed.default
+targetEntityType: block_content
+bundle: social_feed
+mode: default
+content:
+  field_social_layout:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_social_type:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+hidden:
+  field_count: true
+  field_link: true
+  info: true
+  langcode: true

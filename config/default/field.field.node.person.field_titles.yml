@@ -1,0 +1,21 @@
+uuid: 810968e8-d16f-4865-86cf-b615ea8e0fe0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_titles
+    - node.type.person
+  module:
+    - text
+id: node.person.field_titles
+field_name: field_titles
+entity_type: node
+bundle: person
+label: Titles
+description: "A flexible area that is meant for title type information like:\r\nBoard Chairwoman\r\nSupervisor, 2nd District\r\nThis field can include links\r\n\r\n"
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

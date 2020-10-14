@@ -1,0 +1,68 @@
+.block-social-feed {
+  > h2.title {
+    text-align: center;
+    color: #21303e;
+    font-family: $font-heading;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    line-height: 2.3125rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+
+    @include medium {
+      font-size: 1.875rem;
+      margin-bottom: 50px;
+    }
+  }
+}
+
+.block-simple-instagram-block {
+  padding-top: $space-triple;
+  padding-bottom: $space-triple;
+  padding-left: 0;
+  padding-right: 0;
+
+  > h2.title {
+    text-align: center;
+    color: #21303e;
+    font-family: $font-heading;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    line-height: 2.3125rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+
+    @include medium {
+      font-size: 1.875rem;
+      margin-bottom: 50px;
+    }
+  }
+
+  .instagram-feed {
+    max-height: 750px;
+    overflow: scroll;
+
+    .instagram_profile {
+      display: flex;
+      text-align: left !important;
+
+      p {
+        font-size: 1rem !important;
+        line-height: 1.25rem;
+      }
+
+      img {
+        width: 50px;
+        height: 50px;
+      }
+    }
+
+    .instagram_gallery {
+      a img {
+        margin-bottom: 1rem !important;
+      }
+    }
+  }
+}

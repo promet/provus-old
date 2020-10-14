@@ -1,0 +1,13 @@
+## For developing Provus itself, rename this file (docksal-local.yml.sample) to docksal-local.yml.
+## docksal-local.yml is in .gitignore so it will not be committed.
+##
+## Exposed cli environment variables needed:
+##  * HOST - Hosting environment name (e.g. 'pantheon')
+##  * PANTHEON_SITE_NAME - for pantheon sites
+version: "2.1"
+
+services:
+  cli:
+    environment:
+      - HOST
+      - PANTHEON_SITE_NAME

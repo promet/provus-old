@@ -1,0 +1,33 @@
+uuid: cb900a55-8860-4e5b-9488-d9def62180f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.accordion_item
+    - field.field.block_content.accordion_item.field_body
+    - field.field.block_content.accordion_item.field_heading
+  module:
+    - text
+id: block_content.accordion_item.default
+targetEntityType: block_content
+bundle: accordion_item
+mode: default
+content:
+  field_body:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_heading:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

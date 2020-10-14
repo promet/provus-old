@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+#: exec_target = cli
+
+## Run storybook tool locally 
+##
+## Usage: fin storybook 
+
+${PROJECT_ROOT}/scripts/bin/storybook.sh

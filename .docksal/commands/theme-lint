@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+## lint theme js
+##
+## Usage: fin lint-theme 
+
+fin exec ${HTML_ROOT}/scripts/bin/theme-lint.sh

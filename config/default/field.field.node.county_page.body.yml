@@ -1,0 +1,23 @@
+uuid: a814ea26-7a9a-4b7c-9f50-9d79ad5cf22a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.county_page
+  module:
+    - text
+id: node.county_page.body
+field_name: body
+entity_type: node
+bundle: county_page
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

@@ -1,0 +1,13 @@
+.page-node-type-location {
+  .field-loc-amenities {
+    margin-bottom: $space-double;
+
+    .field__label {
+      font-weight: bold;
+    }
+  }
+}
+
+.geofield-google-map {
+  margin-bottom: $space-double;
+}

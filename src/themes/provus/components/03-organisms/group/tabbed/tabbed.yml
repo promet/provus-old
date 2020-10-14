@@ -1,0 +1,105 @@
+title__tab__1: 'Popular Topics'
+title__tab__2: 'Resources'
+
+tabs:
+  - tab_text: 'Tab 1'
+    tab_content: 'Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.'
+  - tab_text: 'Tab 2'
+    tab_content: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.'
+  - tab_text: 'Tab 3'
+    tab_content: 'Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.'
+
+
+content:
+  -
+    active: true
+    card__image__src: 'images/icons/icons8-mouse-animal-100.png'
+    card__image__alt: "This is the card image's alt text"
+    card__image__output_image_tag: true
+    card__heading: 'Animal Control'
+    card__body: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ...'
+    card__link__text: 'Read more'
+    card__link__url: '#'
+  -
+    active: null
+    card__image__src: 'images/icons/icons8-spiral-bound-booklet-100.png'
+    card__image__alt: "This is the card image's alt text"
+    card__image__output_image_tag: true
+    card__heading: 'Board Agendas'
+    card__body: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ...'
+    card__link__text: 'Read more'
+    card__link__url: '#'
+  -
+    active: null
+    card__image__src: 'images/icons/icons8-video-playlist-100.png'
+    card__image__alt: "This is the card image's alt text"
+    card__image__output_image_tag: true
+    card__heading: 'Board Meetings no Demands'
+    card__body: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ...'
+    card__link__text: 'Read more'
+    card__link__url: '#'
+  -
+    active: null
+    card__image__src: 'images/icons/icons8-job-seeker-100.png'
+    card__image__alt: "This is the card image's alt text"
+    card__image__output_image_tag: true
+    card__heading: 'County Employment - Jobs'
+    card__body: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ...'
+    card__link__text: 'Read more'
+    card__link__url: '#'
+  -
+    active: null
+    card__image__src: 'images/icons/icons8-contract-100.png'
+    card__image__alt: "This is the card image's alt text"
+    card__image__output_image_tag: true
+    card__heading: 'Death Certificate'
+    card__body: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ...'
+    card__link__text: 'Read more'
+    card__link__url: '#'
+  -
+    active: null
+    card__image__src: 'images/icons/icons8-profile-100.png'
+    card__image__alt: "This is the card image's alt text"
+    card__image__output_image_tag: true
+    card__heading: 'Employee Compensations & Employment Contracts'
+    card__body: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ...'
+    card__link__text: 'Read more'
+    card__link__url: '#'
+
+content2:
+  -
+    active: true
+    card__heading: '2-1-1 Southport County'
+    card__body: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ...'
+    card__link__text: 'Read more'
+    card__link__url: '#'
+  -
+    active: null
+    card__heading: '2-1-2 Southport County'
+    card__body: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ...'
+    card__link__text: 'Read more'
+    card__link__url: '#'
+  -
+    active: null
+    card__heading: '2-1-3 Southport County'
+    card__body: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ...'
+    card__link__text: 'Read more'
+    card__link__url: '#'
+  -
+    active: null
+    card__heading: '2-1-4 Southport County'
+    card__body: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ...'
+    card__link__text: 'Read more'
+    card__link__url: '#'
+  -
+    active: null
+    card__heading: '2-1-5 Southport County'
+    card__body: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ...'
+    card__link__text: 'Read more'
+    card__link__url: '#'
+  -
+    active: null
+    card__heading: '2-1-6 Southport County'
+    card__body: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ...'
+    card__link__text: 'Read more'
+    card__link__url: '#'

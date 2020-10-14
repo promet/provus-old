@@ -1,0 +1,11 @@
+{#
+ # Available variables:
+ # - email__base_class - base classname of the wrapper.
+ # - email__email - email.
+ #}
+{% set email__base_class = 'person-info-email' %}
+
+<div {{ bem(email__base_class) }}>
+  <span class="ico-email"><span class="material-icons" aria-hidden="true">email</span></span>
+  <span>{{ email__email }}</span>
+</div>

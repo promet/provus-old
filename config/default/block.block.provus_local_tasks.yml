@@ -1,0 +1,22 @@
+uuid: 4475b4b6-cc84-4f12-9e1c-f3c2e93ea045
+langcode: en
+status: true
+dependencies:
+  theme:
+    - provus
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: provus_local_tasks
+theme: provus
+region: content
+weight: -7
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

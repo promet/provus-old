@@ -1,0 +1,8 @@
+uuid: 71785d18-cdf0-44f1-b757-75982c52058e
+langcode: en
+status: true
+dependencies: {  }
+id: media_item
+label: 'Media Item'
+revision: 1
+description: ''

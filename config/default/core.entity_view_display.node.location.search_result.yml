@@ -1,0 +1,75 @@
+uuid: 9dfe730f-0510-4974-b261-7e38adb88f28
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_result
+    - field.field.node.location.body
+    - field.field.node.location.field_accessible
+    - field.field.node.location.field_address
+    - field.field.node.location.field_alert
+    - field.field.node.location.field_email
+    - field.field.node.location.field_file
+    - field.field.node.location.field_hours
+    - field.field.node.location.field_media_image
+    - field.field.node.location.field_phone
+    - node.type.location
+  module:
+    - layout_builder
+    - layout_builder_restrictions
+    - smart_trim
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+  layout_builder_restrictions:
+    allowed_block_categories: {  }
+    entity_view_mode_restriction:
+      whitelisted_blocks: {  }
+      blacklisted_blocks: {  }
+      allowed_layouts: {  }
+id: node.location.search_result
+targetEntityType: node
+bundle: location
+mode: search_result
+content:
+  body:
+    label: hidden
+    type: smart_trim
+    weight: 1
+    settings:
+      trim_length: 50
+      trim_type: words
+      trim_suffix: ...
+      wrap_class: trimmed
+      more_text: More
+      more_class: more-link
+      summary_handler: full
+      trim_options:
+        text: true
+        trim_zero: false
+      wrap_output: false
+      more_link: false
+    third_party_settings: {  }
+    region: content
+  search_api_excerpt:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_accessible: true
+  field_address: true
+  field_alert: true
+  field_email: true
+  field_file: true
+  field_hours: true
+  field_lat_long: true
+  field_loc_amenities: true
+  field_loc_type: true
+  field_location_type: true
+  field_media_image: true
+  field_phone: true
+  langcode: true
+  links: true

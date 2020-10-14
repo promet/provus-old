@@ -1,0 +1,5 @@
+services:
+  county_blocks.commands:
+    class: \Drupal\county_blocks\Commands\CountyBlocksCommands
+    tags:
+      - { name: drush.command }

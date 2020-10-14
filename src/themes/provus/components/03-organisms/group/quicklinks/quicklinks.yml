@@ -1,0 +1,40 @@
+title: 'Quicklinks List'
+icons: false
+
+content:
+  -
+    active: true
+    card__heading: '2-1-1 Southport County'
+    card__body: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et ...'
+    card__link__text: 'Read more'
+    card__link__url: '#'
+  -
+    active: null
+    card__heading: '2-1-2 Southport County'
+    card__body: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et ...'
+    card__link__text: 'Read more'
+    card__link__url: '#'
+  -
+    active: null
+    card__heading: '2-1-3 Southport County'
+    card__body: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et ...'
+    card__link__text: 'Read more'
+    card__link__url: '#'
+  -
+    active: null
+    card__heading: '2-1-4 Southport County'
+    card__body: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et ...'
+    card__link__text: 'Read more'
+    card__link__url: '#'
+  -
+    active: null
+    card__heading: '2-1-5 Southport County'
+    card__body: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et ...'
+    card__link__text: 'Read more'
+    card__link__url: '#'
+  -
+    active: null
+    card__heading: '2-1-6 Southport County'
+    card__body: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et ...'
+    card__link__text: 'Read more'
+    card__link__url: '#'

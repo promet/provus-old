@@ -1,0 +1,75 @@
+carousel_heading: "Link Group Carousel"
+
+content:
+  -
+    card__image__src: 'images/card-image-board.png'
+    card__image__alt: "This is the card image's alt text"
+    card__image__output_image_tag: true
+    card__heading: 'Board Recruitment 1'
+    card__body: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim'
+    card__link__text: 'Read more'
+    card__link__url: '#'
+  -
+    card__image__src: 'images/card-image-lactation.png'
+    card__image__alt: "This is the card image's alt text"
+    card__image__output_image_tag: true
+    card__heading: 'Lactation Rooms 1'
+    card__body: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim'
+    card__link__text: 'Read more'
+    card__link__url: '#'
+  -
+    card__image__src: 'images/card-library.png'
+    card__image__alt: "This is the card image's alt text"
+    card__image__output_image_tag: true
+    card__heading: 'Library Opening 1'
+    card__body: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim'
+    card__link__text: 'Read more'
+    card__link__url: '#'
+  -
+    card__image__src: 'images/card-image-board.png'
+    card__image__alt: "This is the card image's alt text"
+    card__image__output_image_tag: true
+    card__heading: 'Board Recruitment 2'
+    card__body: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim'
+    card__link__text: 'Read more'
+    card__link__url: '#'
+  -
+    card__image__src: 'images/card-image-lactation.png'
+    card__image__alt: "This is the card image's alt text"
+    card__image__output_image_tag: true
+    card__heading: 'Lactation Rooms 2'
+    card__body: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim'
+    card__link__text: 'Read more'
+    card__link__url: '#'
+  -
+    card__image__src: 'images/card-library.png'
+    card__image__alt: "This is the card image's alt text"
+    card__image__output_image_tag: true
+    card__heading: 'Library Opening 2'
+    card__body: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim'
+    card__link__text: 'Read more'
+    card__link__url: '#'
+  -
+    card__image__src: 'images/card-image-board.png'
+    card__image__alt: "This is the card image's alt text"
+    card__image__output_image_tag: true
+    card__heading: 'Board Recruitment 3'
+    card__body: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim'
+    card__link__text: 'Read more'
+    card__link__url: '#'
+  -
+    card__image__src: 'images/card-image-lactation.png'
+    card__image__alt: "This is the card image's alt text"
+    card__image__output_image_tag: true
+    card__heading: 'Lactation Rooms 3'
+    card__body: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim'
+    card__link__text: 'Read more'
+    card__link__url: '#'
+  -
+    card__image__src: 'images/card-library.png'
+    card__image__alt: "This is the card image's alt text"
+    card__image__output_image_tag: true
+    card__heading: 'Library Opening 3'
+    card__body: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim'
+    card__link__text: 'Read more'
+    card__link__url: '#'

@@ -1,0 +1,43 @@
+title: 'News Featured'
+
+card__image__src: 'images/card.png'
+card__image__alt: "This is the card image's alt text"
+card__image__output_image_tag: true
+card__heading: 'Southport County Health Care Agency Provides Recommendations for COVID-19 Community Mitigation Strategies'
+card__date: 'February 14, 2020'
+card__body: 'Each election in Southport County, the Southport County Registrar of Voters invites members of the public to observe the election process. Election observers are permitted to observe Vote Centers operations, including opening and closing procedures, view all activities at the central counting site, view mail ballot and provisional ballot processing, and much more.'
+card__link__url: '#'
+card__button__text: 'View All News'
+card__button__url: '#'
+
+content:
+  -
+    active: true
+    card__image__src: 'images/card-mini.png'
+    card__image__alt: "This is the card image's alt text"
+    card__image__output_image_tag: true
+    card__heading: 'Dame Zandra Rhodes Brings Art and Fashion to Southport Aiport'
+    card__date: 'February 14, 2020'
+    card__link__text: 'Read more'
+    card__link__url: '#'
+    card__link__pdf: ''
+  -
+    active: null
+    card__image__src: 'images/card-mini2.png'
+    card__image__alt: "This is the card image's alt text"
+    card__image__output_image_tag: true
+    card__heading: 'County of Southport Premiers Opioid Misuse Prevention Campaign'
+    card__date: 'February 14, 2020'
+    card__link__text: 'Read more'
+    card__link__url: ''
+    card__link__pdf: '#'
+  -
+    active: null
+    card__image__src: 'images/card-mini3.png'
+    card__image__alt: "This is the card image's alt text"
+    card__image__output_image_tag: true
+    card__heading: 'County of Southport Social Services Agency Staff Honored with CDSS Human Trafficking Awareness Month Awards'
+    card__date: 'February 14, 2020'
+    card__link__text: 'Read more'
+    card__link__url: '#'
+    card__link__pdf: ''

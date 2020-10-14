@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+## Runs PHPCBF on modules 
+##
+## Usage: fin php-cbf 
+
+fin run phpcbf \
+    --standard="Drupal,DrupalPractice" \
+    --extensions="php,module,inc,install,test,profile,theme" \
+    --ignore="*.features.*,*.pages*.inc" \
+    src/modules
+

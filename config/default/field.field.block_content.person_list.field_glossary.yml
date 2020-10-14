@@ -1,0 +1,23 @@
+uuid: abd964c3-e84d-4a7d-a92a-c8331a050fa8
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.person_list
+    - field.storage.block_content.field_glossary
+id: block_content.person_list.field_glossary
+field_name: field_glossary
+entity_type: block_content
+bundle: person_list
+label: 'Show an A-Z Glossary'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

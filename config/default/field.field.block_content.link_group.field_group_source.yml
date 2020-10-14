@@ -1,0 +1,23 @@
+uuid: b2537de3-51fa-48f9-8958-9c2121d7c1fe
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.link_group
+    - field.storage.block_content.field_group_source
+  module:
+    - options
+id: block_content.link_group.field_group_source
+field_name: field_group_source
+entity_type: block_content
+bundle: link_group
+label: 'Content Source'
+description: "This is where the data comes from.  \r\nManual Inline means that you will create data that is stored inside of this block for each item.\r\nManual Content allows you to pick certain other entities in the system by their name (ex: an article or event).\r\nAutomatic Content allows you to select a certain type of content (article, event, etc) and pull the last [x] many of those entities from the system automatically."
+required: true
+translatable: false
+default_value:
+  -
+    value: manual_inline
+default_value_callback: ''
+settings: {  }
+field_type: list_string

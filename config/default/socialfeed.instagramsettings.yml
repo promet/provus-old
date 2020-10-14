@@ -1,0 +1,8 @@
+client_id: ''
+redirect_uri: ''
+access_token: ''
+picture_count: 3
+picture_resolution: low_resolution
+post_link: true
+_core:
+  default_config_hash: Gp5kkhcVH1xfhjhz4LAc5x4KG69A3bbMr_gzqknGfuo

@@ -1,0 +1,50 @@
+uuid: 80fbea85-c540-48d6-92f7-8ac3e6afb147
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.card_mini
+    - field.field.node.county_article.body
+    - field.field.node.county_article.field_file
+    - field.field.node.county_article.field_media_image
+    - field.field.node.county_article.field_publish_date
+    - field.field.node.county_article.field_type
+    - node.type.county_article
+  module:
+    - datetime
+    - layout_builder
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: node.county_article.card_mini
+targetEntityType: node
+bundle: county_article
+mode: card_mini
+content:
+  field_media_image:
+    type: entity_reference_entity_view
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      view_mode: square_small
+      link: false
+    third_party_settings: {  }
+  field_publish_date:
+    type: datetime_default
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: county_default
+    third_party_settings: {  }
+hidden:
+  body: true
+  field_file: true
+  field_type: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

@@ -1,0 +1,28 @@
+uuid: 56745377-6db5-4f66-8aeb-5d195d1a35a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.banner
+    - field.storage.block_content.field_person_picture
+    - media.type.image
+id: block_content.banner.field_person_picture
+field_name: field_person_picture
+entity_type: block_content
+bundle: banner
+label: 'Person Picture'
+description: 'Picture of the top part of a person with a transparent background. Must be a png to work well.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

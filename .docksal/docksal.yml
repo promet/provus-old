@@ -1,0 +1,26 @@
+version: "2.1"
+
+services:
+  pa11y:
+    hostname: pa11y
+    image: drydockcloud/ca-pa11y:0.1
+    command: tail -f /dev/null
+    volumes:
+      - ../tests/pa11y/wcag2-config.json:/home/node/app/wcag2-config.json
+
+  solr:
+    image: docksal/solr:4.x
+    extends:
+      file: ${HOME}/.docksal/stacks/services.yml
+      service: solr
+
+  cli:
+    environment:
+      - IS_DOCKSAL_PROJECT 
+      - DRUPAL_HASH_SALT
+      - REMOTE_GIT_REPO
+      - HOSTING_PLATFORM
+      - HOSTING_SITE
+      - HOSTING_ENV
+      - THEME_NAME
+      - UUID

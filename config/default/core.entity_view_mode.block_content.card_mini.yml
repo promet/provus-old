@@ -1,0 +1,10 @@
+uuid: a1d86809-780e-47d9-bd08-5bbd7a027617
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+id: block_content.card_mini
+label: 'Card Mini'
+targetEntityType: block_content
+cache: true

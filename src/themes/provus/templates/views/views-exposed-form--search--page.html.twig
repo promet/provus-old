@@ -1,0 +1,34 @@
+{#
+/**
+ * @file
+ * Theme override for a views exposed form.
+ *
+ * Available variables:
+ * - form: A render element representing the form.
+ *
+ * @see template_preprocess_views_exposed_form()
+ */
+#}
+{% if q is not empty %}
+  {#
+    This ensures that, if clean URLs are off, the 'q' is added first,
+    as a hidden form element, so that it shows up first in the POST URL.
+  #}
+{{ q }}
+{% endif %}
+<div class="search-page-form clearfix">
+
+  {% include "@molecules/form/search/search-banner.twig" with {
+    "search_input_icon": true,
+    "action": attribute(form, "#action"),
+    "placeholder": attribute(form.keys, "#attributes").placeholder,
+    "query": "keys",
+    "value": attribute(form.keys, "#value"),
+    "search__button__text": attribute(form.actions.submit, "#value")
+  } %}
+
+  <div class="form--inline">
+    {{ form.sort_by }}
+    {{ form.sort_order }}
+  </div>
+</div>

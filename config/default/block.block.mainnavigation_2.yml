@@ -1,0 +1,31 @@
+uuid: 26c8e908-8fb0-49f9-9195-7beb7c1bbeab
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - menu_block
+  theme:
+    - provus
+id: mainnavigation_2
+theme: provus
+region: header
+weight: -8
+provider: null
+plugin: 'menu_block:main'
+settings:
+  id: 'menu_block:main'
+  label: 'Main navigation'
+  provider: menu_block
+  label_display: '0'
+  follow: false
+  follow_parent: child
+  level: 1
+  depth: 0
+  expand: false
+  parent: 'main:'
+  suggestion: main
+  label_type: block
+  label_link: false
+visibility: {  }

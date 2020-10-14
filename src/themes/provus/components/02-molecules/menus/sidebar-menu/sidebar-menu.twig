@@ -1,0 +1,6 @@
+{{ attach_library('provus/sidebar-menu') }}
+
+{% include "@molecules/menus/_menu.twig" with {
+  menu_class: 'sidebar-menu',
+  items: sidebar_menu_items,
+} %}

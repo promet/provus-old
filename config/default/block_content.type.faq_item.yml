@@ -1,0 +1,8 @@
+uuid: 7498560a-151a-4733-b064-f3f351d5fa8e
+langcode: en
+status: true
+dependencies: {  }
+id: faq_item
+label: 'FAQ Item'
+revision: 0
+description: ''

@@ -1,0 +1,33 @@
+<div class="twitter-container">
+  <div class="tw-tweet-image">
+    {% if (post.entities.media[0].media_url) %}
+      <img src="{{ post.entities.media[0].media_url }}" />
+    {% endif %}
+  </div>
+
+  <div class="tw-details">
+    <div class="tw-user">
+      <a class="tw-user-link" href="https://twitter.com/{{ post.username }}">
+        <span class="tw-user-image">
+          {% if (post.user.profile_image_url) %}
+            <img src="{{ post.user.profile_image_url }}" />
+          {% endif %}
+        </span>
+        <span class="tw-user-name">
+          <span class="tw-user-name-full">{{ post.user.name }}</span>
+          <span class="tw-user-name-screen">@{{ post.username }}</span>
+        </span>
+      </a>
+    </div>
+
+    <div class="tw-tweet">{{ post.tweet }}</div>
+
+    {% if post.twitter_date %}
+      <div class="tw-date">{{ post.twitter_date }}</div>
+    {% endif %}
+
+    <div class="tw-link">
+      <a href="https://twitter.com/{{ post.username }}">See {{ post.user.name }}'s other tweets</a>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,24 @@
+uuid: 72e896ff-edb0-4a0a-aaa1-45e2cd4dcb22
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.site_alert
+  module:
+    - views
+  theme:
+    - provus
+id: views_block__site_alert_alert_site_block_1
+theme: provus
+region: preheader
+weight: -9
+provider: null
+plugin: 'views_block:site_alert-alert_site_block_1'
+settings:
+  id: 'views_block:site_alert-alert_site_block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility: {  }

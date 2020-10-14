@@ -1,0 +1,11 @@
+{% set header__base_class = 'header' %}
+
+<header {{ bem(header__base_class) }}>
+  <div {{ bem('inner', [], header__base_class) }}>
+
+    {% block header__utility %}
+      {% include "@organisms/utility/utility.twig" %}
+    {% endblock %}
+
+  </div>
+</header>

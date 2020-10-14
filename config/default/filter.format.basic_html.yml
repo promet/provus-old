@@ -1,0 +1,66 @@
+uuid: 960407ed-6e8b-434e-a961-85b938302877
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.file_text_link
+    - core.entity_view_mode.media.uncropped_medium
+    - core.entity_view_mode.media.uncropped_small
+  module:
+    - editor
+    - media
+_core:
+  default_config_hash: P8ddpAIKtawJDi5SzOwCzVnnNYqONewSTJ6Xn0dW_aQ
+name: 'Basic HTML'
+format: basic_html
+weight: 0
+filters:
+  filter_html:
+    id: filter_html
+    provider: filter
+    status: true
+    weight: -10
+    settings:
+      allowed_html: '<a href hreflang id title name target class> <em> <strong> <cite> <blockquote cite> <code> <ul type> <ol start type> <li> <dl> <dt> <dd> <h1 id class> <h2 id class> <h3 id class> <h4 id class> <h5 id class> <h6 id class> <p class> <br> <span> <img src alt height width data-entity-type data-entity-uuid data-align data-caption class> <table> <caption> <tbody> <thead> <tfoot> <th colspan width class> <td colspan width class> <tr rowspan class> <hr> <pre> <drupal-media data-entity-type data-entity-uuid data-align data-view-mode alt> <map> <iframe src width height frameborder allowfullscreen aria-hidden>'
+      filter_html_help: false
+      filter_html_nofollow: false
+  filter_align:
+    id: filter_align
+    provider: filter
+    status: true
+    weight: 7
+    settings: {  }
+  filter_caption:
+    id: filter_caption
+    provider: filter
+    status: true
+    weight: 8
+    settings: {  }
+  filter_html_image_secure:
+    id: filter_html_image_secure
+    provider: filter
+    status: true
+    weight: 9
+    settings: {  }
+  editor_file_reference:
+    id: editor_file_reference
+    provider: editor
+    status: true
+    weight: 11
+    settings: {  }
+  media_embed:
+    id: media_embed
+    provider: media
+    status: true
+    weight: 100
+    settings:
+      default_view_mode: default
+      allowed_view_modes:
+        default: default
+        file_text_link: file_text_link
+        uncropped_medium: uncropped_medium
+        uncropped_small: uncropped_small
+      allowed_media_types:
+        document: document
+        image: image
+        remote_video: remote_video

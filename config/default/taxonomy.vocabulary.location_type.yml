@@ -1,0 +1,8 @@
+uuid: 3ddda8be-211c-4138-acd3-893fceb4339e
+langcode: en
+status: true
+dependencies: {  }
+name: 'Location Type'
+vid: location_type
+description: 'Type of location, (ie park, recreation center).'
+weight: 0

@@ -1,0 +1,8 @@
+uuid: 5c30e8a6-1b6f-4fb8-9d40-54cca0b2c676
+langcode: en
+status: true
+dependencies: {  }
+id: line_separator
+label: 'Line Separator'
+revision: 0
+description: ''

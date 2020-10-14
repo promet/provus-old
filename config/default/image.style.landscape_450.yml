@@ -1,0 +1,17 @@
+uuid: e402849b-ef54-4583-b15d-a1aa5725ee81
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: landscape_450
+label: 'Landscape 450'
+effects:
+  a1bf3743-c4b0-4158-b3d0-f45f7d562700:
+    uuid: a1bf3743-c4b0-4158-b3d0-f45f7d562700
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 450
+      height: 252
+      crop_type: focal_point

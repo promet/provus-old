@@ -1,0 +1,25 @@
+#drupal-off-canvas summary,
+#drupal-off-canvas {
+  background-color: #FFF;
+  border: 0;
+}
+#drupal-off-canvas *,
+#drupal-off-canvas :not(div) {
+  color: #333;
+  background: #FFF;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "liberation sans", sans-serif;
+  
+  img {
+    float: left;
+    padding: 5px 10px 0 0;
+  }
+}
+.ui-dialog.ui-dialog-off-canvas
+.ui-dialog-titlebar {
+  background: #fff;
+  color: #333;
+}
+#drupal-off-canvas summary:hover,
+#drupal-off-canvas summary:focus {
+  color: #FFF;
+}

@@ -1,0 +1,6 @@
+card__image__src: 'images/square-img.png'
+card__image__alt: "This is the card image's alt text"
+card__image__output_image_tag: true
+card__heading: 'Biography'
+card__link__text: 'Read more'
+card__link__url: '#'

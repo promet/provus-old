@@ -1,0 +1,62 @@
+/* Toggle */
+.toggle-expand {
+  @include link;
+
+  @include desktop {
+    display: none;
+  }
+
+  display: inline-block;
+  padding: $space;
+  text-decoration: none;
+  width: 100%;
+}
+
+.toggle-expand__text {
+  font-size: 0.9rem;
+  font-weight: bold;
+  display: none;
+
+  .toggle-expand--open & {
+    color: $white;
+  }
+}
+
+/* SVG icon */
+.toggle-expand__icon {
+  height: 3rem;
+  width: 3rem;
+  margin: 0 auto;
+  display: none;
+}
+
+.toggle-expand__open {
+  display: inline-block;
+
+  &::before {
+    @include material-icon;
+
+    content: '\e5d2';
+    font-size: 25px;
+  }
+
+  .toggle-expand--open & {
+    display: none;
+  }
+}
+
+.toggle-expand__close {
+  display: none;
+
+  &::before {
+    @include material-icon;
+
+    content: '\e14c';
+    font-size: 25px;
+  }
+
+  .toggle-expand--open & {
+    display: inline-block;
+    background-color: transparent;
+  }
+}

@@ -1,0 +1,10 @@
+uuid: 8e1fb375-5c4f-4904-b285-15785531f9ee
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.uncropped_small
+label: 'Uncropped Small'
+targetEntityType: media
+cache: true

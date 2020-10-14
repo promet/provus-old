@@ -1,0 +1,168 @@
+uuid: 6303641a-7d56-4091-9241-8633816c7e71
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.location.body
+    - field.field.node.location.field_accessible
+    - field.field.node.location.field_address
+    - field.field.node.location.field_alert
+    - field.field.node.location.field_email
+    - field.field.node.location.field_file
+    - field.field.node.location.field_hours
+    - field.field.node.location.field_lat_long
+    - field.field.node.location.field_loc_amenities
+    - field.field.node.location.field_loc_type
+    - field.field.node.location.field_media_image
+    - field.field.node.location.field_phone
+    - node.type.location
+  module:
+    - geofield_map
+    - layout_builder
+    - layout_builder_restrictions
+    - options
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+  layout_builder_restrictions:
+    allowed_block_categories: {  }
+    entity_view_mode_restriction:
+      whitelisted_blocks: {  }
+      blacklisted_blocks: {  }
+      allowed_layouts: {  }
+id: node.location.default
+targetEntityType: node
+bundle: location
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_alert:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_lat_long:
+    weight: 3
+    label: hidden
+    settings:
+      map_dimensions:
+        width: 100%
+        height: 450px
+      map_empty:
+        empty_behaviour: '0'
+        empty_message: 'No Geofield Value entered for this field'
+      map_center:
+        lat: '42'
+        lon: '12.5'
+        center_force: 0
+        geocode: 'Find my location'
+      map_zoom_and_pan:
+        zoom:
+          initial: '11'
+          min: '1'
+          max: '22'
+          finer: '0'
+          force: 0
+        gestureHandling: auto
+        scrollwheel: '1'
+        draggable: '1'
+        map_reset_position: TOP_RIGHT
+        map_reset: 0
+      map_controls:
+        zoom_control: '1'
+        map_type_id: roadmap
+        map_type_control: '1'
+        map_type_control_options_type_ids:
+          roadmap: roadmap
+          satellite: satellite
+          hybrid: hybrid
+          terrain: terrain
+        scale_control: '1'
+        street_view_control: '1'
+        fullscreen_control: '1'
+        disable_default_ui: 0
+      map_marker_and_infowindow:
+        icon_image_mode: icon_file
+        icon_file_wrapper:
+          icon_file:
+            fids: ''
+            upload_button: Upload
+            remove_button: Remove
+            upload: ''
+            is_svg: false
+          image_style: geofield_map_default_icon_style
+        icon_image_path: ''
+        infowindow_field: title
+        view_mode: full
+        tooltip_field: title
+        multivalue_split: 0
+        force_open: 0
+      map_additional_options: ''
+      map_geometries_options: '{"strokeColor":"black","strokeOpacity":"0.8","strokeWeight":2,"fillColor":"blue","fillOpacity":"0.1","clickable":false}'
+      map_oms:
+        map_oms_control: '1'
+        map_oms_options: '{"markersWontMove":"true","markersWontHide":"true","basicFormatEvents":"true","nearbyDistance":3}'
+      custom_style_map:
+        custom_style_name: ''
+        custom_style_options: ''
+        custom_style_control: 0
+        custom_style_default: 0
+      map_markercluster:
+        markercluster_additional_options: '{"maxZoom":12,"gridSize":50}'
+        markercluster_control: 0
+      map_geocoder:
+        settings:
+          position: TOP_LEFT
+          input_size: '25'
+          providers:
+            googlemaps:
+              weight: '0'
+              checked: 0
+          min_terms: '4'
+          delay: '800'
+          zoom: '16'
+          options: ''
+          infowindow: 0
+        control: 0
+      map_additional_libraries:
+        places: 0
+        drawing: 0
+        geometry: 0
+        visualization: 0
+      map_lazy_load:
+        lazy_load: 0
+      gmap_api_key: ''
+    third_party_settings: {  }
+    type: geofield_google_map
+    region: content
+  field_loc_amenities:
+    type: list_default
+    weight: 2
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_accessible: true
+  field_address: true
+  field_email: true
+  field_file: true
+  field_hours: true
+  field_loc_type: true
+  field_location_type: true
+  field_media_image: true
+  field_phone: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

@@ -1,0 +1,78 @@
+{
+    "block_content": [
+        {
+            "id": [
+                {
+                    "value": 50
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "adc48b72-55e3-4718-b4a9-5512b979f77b"
+                }
+            ],
+            "revision_id": [
+                {
+                    "value": 50
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "type": [
+                {
+                    "target_id": "person_list",
+                    "target_type": "block_content_type",
+                    "target_uuid": "1827dbe1-8583-45e7-9c1d-c08ad490dfb2"
+                }
+            ],
+            "revision_created": [
+                {
+                    "value": "2020-09-18T18:35:01+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "revision_user": [],
+            "revision_log": [],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "info": [
+                {
+                    "value": "Staff"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2020-09-18T18:35:01+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "reusable": [
+                {
+                    "value": false
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": true
+                }
+            ],
+            "revision_translation_affected": [
+                {
+                    "value": true
+                }
+            ],
+            "field_glossary": [
+                {
+                    "value": true
+                }
+            ],
+            "field_person_type": []
+        }
+    ]
+}

@@ -1,0 +1,67 @@
+uuid: c2c14fa0-16c6-48b0-b182-4958f51965ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.card_promo
+    - field.field.node.county_page.body
+    - field.field.node.county_page.field_file
+    - field.field.node.county_page.field_media_image
+    - field.field.node.county_page.layout_builder__layout
+    - node.type.county_page
+  module:
+    - layout_builder
+    - layout_builder_restrictions
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+  layout_builder_restrictions:
+    entity_view_mode_restriction:
+      allowed_blocks:
+        'Content fields': {  }
+        Forms: {  }
+        Help: {  }
+        'Lists (Views)': {  }
+        Menus: {  }
+        System: {  }
+        User: {  }
+        'User fields': {  }
+        core: {  }
+      allowed_layouts:
+        - layout_onecol
+        - layout_2col_section
+        - layout_3col_section
+id: node.county_page.card_promo
+targetEntityType: node
+bundle: county_page
+mode: card_promo
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_media_image:
+    weight: 103
+    label: hidden
+    settings:
+      view_mode: landscape_small
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_file: true
+  langcode: true
+  layout_builder__layout: true
+  search_api_excerpt: true

@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+
+#: exec_target = cli
+
+## Site site mode 
+##
+## Usage: fin site-mode [$mode $site] 
+## Parameters:
+## $mode dev or prod 
+## $site default or 'ocpl' etc 
+
+mode=${1}
+site=${2}
+
+if [[ "$site" == "" ]]; then
+   site="default" 
+elif [[ "$site" == "ocgov" ]]; then
+   site="default" 
+fi
+
+${PROJECT_ROOT}/scripts/bin/site-mode.sh $mode $site

@@ -1,0 +1,40 @@
+uuid: 3247ce40-d6ce-45f6-ac27-0bfbeb734a5c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.link_group
+    - field.storage.block_content.field_content_references
+    - node.type.county_article
+    - node.type.county_page
+    - node.type.event
+    - node.type.faq
+    - node.type.landing_page
+    - node.type.location
+    - node.type.person
+id: block_content.link_group.field_content_references
+field_name: field_content_references
+entity_type: block_content
+bundle: link_group
+label: 'Manual Content References'
+description: 'Start typing the title of content in the site. '
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      county_article: county_article
+      event: event
+      faq: faq
+      landing_page: landing_page
+      location: location
+      county_page: county_page
+      person: person
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: county_article
+field_type: entity_reference

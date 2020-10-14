@@ -1,0 +1,5 @@
+card__heading__location: 'Location'
+card__body__location: '1 Civic Center Circle Brea, CA 92821'
+card__link__text__location: 'View Map'
+card__link__url__location: '#'
+icon__location: 'location_on'

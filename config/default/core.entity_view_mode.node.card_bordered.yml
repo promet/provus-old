@@ -1,0 +1,10 @@
+uuid: 22472186-e964-4b9b-876e-c8338a01f859
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.card_bordered
+label: 'Card Bordered'
+targetEntityType: node
+cache: true

@@ -1,0 +1,42 @@
+uuid: d67ee1f2-1184-40d8-b127-1c33f071efba
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.person_list
+    - field.field.block_content.person_list.field_glossary
+    - field.field.block_content.person_list.field_person_type
+id: block_content.person_list.default
+targetEntityType: block_content
+bundle: person_list
+mode: default
+content:
+  field_glossary:
+    weight: 27
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_person_type:
+    weight: 26
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+hidden: {  }

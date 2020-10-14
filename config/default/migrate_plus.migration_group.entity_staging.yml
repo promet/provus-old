@@ -1,0 +1,10 @@
+uuid: 7c40acf9-3399-420c-a3de-4fdc5cffa37d
+langcode: en
+status: true
+dependencies: {  }
+id: entity_staging
+label: entity_staging
+description: ''
+source_type: null
+module: null
+shared_configuration: null

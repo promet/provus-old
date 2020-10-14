@@ -1,0 +1,34 @@
+uuid: e1db3666-99f9-4739-b55a-198f388bc168
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.square_135
+    - image.style.square_270
+  theme:
+    - provus
+id: square_small
+label: 'Square Small'
+image_style_mappings:
+  -
+    breakpoint_id: provus.desktop
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: square_135
+  -
+    breakpoint_id: provus.desktop
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: square_270
+  -
+    breakpoint_id: provus.mobile
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: square_135
+  -
+    breakpoint_id: provus.mobile
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: square_270
+breakpoint_group: provus
+fallback_image_style: square_135

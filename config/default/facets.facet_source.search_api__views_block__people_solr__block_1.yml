@@ -1,0 +1,9 @@
+uuid: c4190635-d5a0-4767-80fc-8794701b3c72
+langcode: en
+status: true
+dependencies: {  }
+id: search_api__views_block__people_solr__block_1
+name: 'search_api:views_block__people_solr__block_1'
+filter_key: null
+url_processor: query_string
+breadcrumb: {  }

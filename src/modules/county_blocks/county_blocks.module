@@ -1,0 +1,195 @@
+<?php
+
+/**
+ * @file
+ * Contains county_blocks.module.
+ */
+
+use Drupal\block\Entity\Block;
+use Drupal\Component\Utility\Html;
+use Drupal\Core\Access\AccessResult;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Session\AccountInterface;
+use Drupal\county_blocks\CountyBlocksHelper;
+use Drupal\node\NodeInterface;
+
+/**
+ * Implements hook_cron().
+ */
+function county_blocks_cron() {
+  CountyBlocksHelper::fetchAlerts();
+}
+
+/**
+ * Implements hook_help().
+ */
+function county_blocks_help($route_name, RouteMatchInterface $route_match) {
+  $x = [
+    '```php' => '<code>',
+    '```'    => '</code>',
+    "\n"     => "\n<br />",
+  ];
+  switch ($route_name) {
+    case 'help.page.county_blocks':
+      $txt = file_get_contents(drupal_get_path('module', 'county_blocks') . '/README.md');
+      return str_replace(array_keys($x), array_values($x), Html::escape($txt));
+  }
+  return '';
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function county_blocks_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  // Alter link group form on blocks editing page.
+  $form_ids_blockcontent = [
+    'block_content_link_group_edit_form',
+    'block_content_link_group_form',
+  ];
+  if (in_array($form_id, $form_ids_blockcontent)) {
+    $form = county_blocks_alter_block($form);
+  }
+
+  // Alter tabs form on blocks editing page.
+  $form_ids_tabs = [
+    'block_content_tabs_edit_form',
+    'block_content_tabs_edit_form',
+  ];
+  if (in_array($form_id, $form_ids_tabs)) {
+    $form = county_blocks_process_tabs($form);
+  }
+
+  // Alter link group and tabs on layout builder forms.
+  $form_ids_layoutbuilder = [
+    'layout_builder_update_block',
+    'layout_builder_add_block',
+  ];
+  if (in_array($form_id, $form_ids_layoutbuilder)) {
+    $form['settings']['block_form']['#process'][] = 'county_blocks_process_layoutbuilder_block';
+  }
+}
+
+/**
+ * Process callback for custom block form.
+ */
+function county_blocks_process_layoutbuilder_block(array $element, FormStateInterface $form_state) {
+  if ((isset($element['#block']) && $element['#block']->bundle() == 'link_group') ||
+    (isset($element['#bundle']) && $element['#bundle'] == 'link_group')) {
+    $parents = !empty($element['#parents']) ? $element['#parents'] : [];
+    $element = county_blocks_alter_block($element, $parents);
+  }
+  if (isset($element['#block']) && $element['#block']->bundle() == 'tabs') {
+    $element = county_blocks_process_tabs($element);
+  }
+  return $element;
+}
+
+/**
+ * Process callback for custom block form.
+ */
+function county_blocks_process_tabs(array $form) {
+  if (!empty($form['field_tab_items']['widget']['entities'][0])) {
+    foreach ($form['field_tab_items']['widget']['entities'] as $delta => $subform) {
+      if (is_numeric($delta) && !empty($form['field_tab_items']['widget']['entities'][$delta]['form']['inline_entity_form'])) {
+        $form['field_tab_items']['widget']['entities'][$delta]['form']['inline_entity_form']['#process'][] = 'county_blocks_process_layoutbuilder_block';
+      }
+    }
+  }
+  if (!empty($form['field_tab_items']['widget']['form']['inline_entity_form'])) {
+    $form['field_tab_items']['widget']['form']['inline_entity_form']['#process'][] = 'county_blocks_process_layoutbuilder_block';
+  }
+  return $form;
+}
+
+/**
+ * Alter callback for custom block form.
+ */
+function county_blocks_alter_block($element, $parents = []) {
+  if (empty($parents)) {
+    $group_source_name = 'field_group_source';
+    $group_display_name = 'field_group_display';
+  }
+  else {
+    $parent_path = '';
+    foreach ($parents as $path) {
+      $parent_path .= (empty($parent_path)) ? $path : '[' . $path . ']';
+    }
+    $group_source_name = $parent_path . '[field_group_source]';
+    $group_display_name = $parent_path . '[field_group_display]';
+  }
+  $element['field_content_type']['#states'] = [
+    'visible' => [
+      'select[name="' . $group_source_name . '"]' => ['value' => 'auto'],
+    ],
+  ];
+  $element['field_count']['#states'] = [
+    'visible' => [
+      'select[name="' . $group_source_name . '"]' => ['value' => 'auto'],
+    ],
+  ];
+  $element['field_content_references']['#states'] = [
+    'visible' => [
+      'select[name="' . $group_source_name . '"]' => ['value' => 'manual_content'],
+    ],
+  ];
+  $element['field_block_items']['#states'] = [
+    'visible' => [
+      'select[name="' . $group_source_name . '"]' => ['value' => 'manual_inline'],
+    ],
+  ];
+  $element['field_item_display']['#states'] = [
+    'visible' => [
+      'select[name="' . $group_display_name . '"]' => [
+        ['value' => 'column'],
+        ['value' => 'grid_2'],
+        ['value' => 'grid_3'],
+        ['value' => 'grid_4'],
+      ],
+    ],
+  ];
+
+  return $element;
+}
+
+/**
+ * Implements hook_block_access().
+ *
+ * Hide the page title for some node types while still showing it
+ * on all other node types, and non-node pages.
+ */
+function county_blocks_block_access(Block $block, $operation, AccountInterface $account) {
+  $disallowedTypes = [
+    'event',
+    'location',
+  ];
+  if ($operation === 'view' && $block->getPluginId() == 'page_title_block') {
+    $node = \Drupal::routeMatch()->getParameter('node');
+    if ($node instanceof NodeInterface) {
+      if (in_array($node->bundle(), $disallowedTypes)) {
+        return AccessResult::forbidden();
+      }
+    }
+  }
+  return AccessResult::neutral();
+}
+
+/**
+ * Implements hook_theme().
+ */
+function county_blocks_theme($existing, $type, $theme, $path) {
+  return [
+    'county_blocks_social_links' => [
+      'template' => 'county-blocks--social-links',
+      'variables' => [
+        'data' => [],
+      ],
+    ],
+    'county_blocks_alert_block' => [
+      'template'  => 'county-blocks--alert-block',
+      'variables' => [
+        'data' => [],
+      ],
+    ],
+  ];
+}

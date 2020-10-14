@@ -1,0 +1,21 @@
+uuid: cd98d566-1d0a-4bc9-a93a-d408badfa6b8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_monthly_event
+    - node.type.event
+  module:
+    - options
+id: node.event.field_monthly_event
+field_name: field_monthly_event
+entity_type: node
+bundle: event
+label: 'Monthly Event'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

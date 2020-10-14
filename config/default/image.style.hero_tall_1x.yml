@@ -1,0 +1,17 @@
+uuid: 8051b054-daf9-49b6-b125-7b6cf7f97f0a
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: hero_tall_1x
+label: 'Hero Tall 1x'
+effects:
+  2ecdef96-00f6-4461-813d-06d5b56f0114:
+    uuid: 2ecdef96-00f6-4461-813d-06d5b56f0114
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1680
+      height: 592
+      crop_type: focal_point

@@ -1,0 +1,89 @@
+.lSSlideWrapper {
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+
+  .lSFade {
+    position: relative;
+  }
+
+  .lSSlide {
+    -webkit-transform: translate(0,0);
+    -ms-transform: translate(0,0);
+    transform: translate(0,0);
+    -webkit-transition: all 1s;
+    -webkit-transition-property: -webkit-transform,height;
+    -moz-transition-property: -moz-transform,height;
+    transition-property: transform,height;
+  }
+}
+.lSSlideWrapper.usingCss .lSFade>* {
+  -webkit-transition-timing-function: inherit !important;
+  transition-timing-function: inherit !important;
+  -webkit-transition-duration: inherit !important;
+  transition-duration: inherit !important;
+}
+.lightSlider {
+  overflow: hidden;
+  margin: 0;
+}
+.lSSlideOuter {
+  overflow: hidden;
+  user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+
+  .lSPager,
+  .lightSlider {
+    padding-left: 0;
+    list-style: none;
+  }
+
+  .lSPager.lSGallery {
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+  }
+
+  .lSPager.lSpg {
+    margin: 10px 0 0;
+    padding: 0;
+    text-align: center;
+
+    >li {
+      cursor: pointer;
+      display: inline-block;
+      padding: 0 5px;
+    }
+
+    >li a {
+      background-color: #222;
+      border-radius: 30px;
+      display: inline-block;
+      height: 8px;
+      overflow: hidden;
+      text-indent: -999em;
+      width: 8px;
+      position: relative;
+      z-index: 99;
+      -webkit-transition: all .5s linear 0s;
+      transition: all .5s linear 0s;
+    }
+
+    li.active a,
+    li:hover a {
+      background-color: #428bca;
+    }
+
+  }
+
+  .lightSlider > *,
+  .lSGallery li {
+    float: left;
+  }
+}

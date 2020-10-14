@@ -1,0 +1,117 @@
+{
+    "node": [
+        {
+            "nid": [
+                {
+                    "value": 15
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "7a9081d3-c561-482b-acd7-f9f651e13800"
+                }
+            ],
+            "vid": [
+                {
+                    "value": 28
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "type": [
+                {
+                    "target_id": "faq",
+                    "target_type": "node_type",
+                    "target_uuid": "1012edd6-9365-492d-8ae5-fb5f47c2964b"
+                }
+            ],
+            "revision_timestamp": [
+                {
+                    "value": "2020-09-18T18:32:01+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "revision_uid": [
+                {
+                    "target_id": 1,
+                    "target_type": "user",
+                    "target_uuid": "c1a6f42c-c9e4-4c8c-b630-8ce0a204f70b",
+                    "url": "\/user\/1"
+                }
+            ],
+            "revision_log": [],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "uid": [
+                {
+                    "target_id": 0,
+                    "target_type": "user",
+                    "target_uuid": "1136bc22-208d-4966-beb8-9a3dd3662a56",
+                    "url": "\/user\/0"
+                }
+            ],
+            "title": [
+                {
+                    "value": "Test FAQ"
+                }
+            ],
+            "created": [
+                {
+                    "value": "2020-05-11T15:07:06+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2020-09-18T18:32:01+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "promote": [
+                {
+                    "value": false
+                }
+            ],
+            "sticky": [
+                {
+                    "value": false
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": true
+                }
+            ],
+            "revision_translation_affected": [],
+            "path": [
+                {
+                    "alias": "\/faq",
+                    "pid": 27,
+                    "langcode": "en"
+                }
+            ],
+            "body": [
+                {
+                    "value": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Varius duis at consectetur lorem donec massa sapien faucibus et. Sit amet consectetur adipiscing elit.<\/p>\r\n",
+                    "format": "basic_html",
+                    "processed": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Varius duis at consectetur lorem donec massa sapien faucibus et. Sit amet consectetur adipiscing elit.<\/p>",
+                    "summary": ""
+                }
+            ],
+            "field_faq_items": [
+                {
+                    "target_id": 9,
+                    "target_type": "block_content",
+                    "target_uuid": "13362ff9-f915-44c6-a4fa-70070488f83c",
+                    "url": "\/block\/9"
+                }
+            ]
+        }
+    ]
+}
