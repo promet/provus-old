@@ -22,3 +22,6 @@ composer.lock
 
 # Dist
 /core
+
+# Add libraries dist
+!libraries/*/dist/

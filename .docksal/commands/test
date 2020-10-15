@@ -12,9 +12,9 @@ if [[ "${DEBUG}" != "" ]]; then
     set -x
 fi
 
-fin cypress
 fin php-cs
-#fin phpunit
 fin test-content
+fin cypress
+#fin phpunit
 fin behat
 #fin pa11y 

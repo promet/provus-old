@@ -164,7 +164,7 @@
             "src/profiles": "web/profiles/custom",
             "src/libraries": "web/libraries/custom",
             "src/sites": "web/sites",
-            "web/themes/custom/countyoc/images": "web/images"
+            "web/themes/custom/provus/images": "web/images"
         },
         "patches": {
             "drupal/core": {
