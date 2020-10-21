@@ -11,3 +11,4 @@ services:
     environment:
       - HOST
       - PANTHEON_SITE_NAME
+      - GH_TOKEN
