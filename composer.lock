@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "56fb8a014dda8ae9925d94a582466782",
+    "content-hash": "4951cc834da902ec643a2254938bf41c",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -2378,17 +2378,17 @@
         },
         {
             "name": "drupal/admin_toolbar",
-            "version": "2.3.0",
+            "version": "2.4.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/admin_toolbar.git",
-                "reference": "8.x-2.3"
+                "reference": "8.x-2.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/admin_toolbar-8.x-2.3.zip",
-                "reference": "8.x-2.3",
-                "shasum": "cf8ee1aa8adfc604db4394655e3ba4c423d5f24a"
+                "url": "https://ftp.drupal.org/files/projects/admin_toolbar-8.x-2.4.zip",
+                "reference": "8.x-2.4",
+                "shasum": "6240047b8d91ac78f98d861ba8282af971fa0b38"
             },
             "require": {
                 "drupal/core": "^8.8.0 || ^9.0"
@@ -2396,8 +2396,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.3",
-                    "datestamp": "1592535714",
+                    "version": "8.x-2.4",
+                    "datestamp": "1601999178",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2456,16 +2456,16 @@
         },
         {
             "name": "drupal/admin_toolbar_tools",
-            "version": "2.3.0",
+            "version": "2.4.0",
             "require": {
-                "drupal/admin_toolbar": "self.version",
+                "drupal/admin_toolbar": "*",
                 "drupal/core": "^8.8.0 || ^9.0"
             },
             "type": "metapackage",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.3",
-                    "datestamp": "1592535714",
+                    "version": "8.x-2.4",
+                    "datestamp": "1601999178",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2506,7 +2506,7 @@
                     "homepage": "https://www.drupal.org/user/370706"
                 }
             ],
-            "description": "Adds menu links to the Admin Toolbar.",
+            "description": "Adds menu links like Flush cache, Run cron, Run updates, and Logout under Drupal icon.",
             "homepage": "https://www.drupal.org/project/admin_toolbar",
             "support": {
                 "source": "https://git.drupalcode.org/project/admin_toolbar"
