@@ -4,6 +4,8 @@
 ## Exposed cli environment variables needed:
 ##  * HOST - Hosting environment name (e.g. 'pantheon')
 ##  * PANTHEON_SITE_NAME - for pantheon sites
+##  * GH_TOKEN - blocks reference git branch commit during PR for core-update
+##  * TRAVIS_EVENT_TYPE - needed  for travis cron run
 version: "2.1"
 
 services:
@@ -11,4 +13,5 @@ services:
     environment:
       - HOST
       - PANTHEON_SITE_NAME
+      - TRAVIS_EVENT_TYPE
       - GH_TOKEN
