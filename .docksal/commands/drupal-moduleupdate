@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+#: exec_target = cli
+
+## Updates Drupal modules when in TravisCI cron or from local.
+## Usage: fin drupal-moduleupdate [try|sendpr] [--local]
+## Parameters:
+## try|sendpr  Either try doing module update(default) or send PR
+## --local     Run from local environment.
+##
+## TODO: Streamline implementation with core update by merging the two.
+##       ...Perhaps call the core script as 'scripts/bin/drupal-update.sh'
+##       ...Only difference is there will be a parameter 'core' or 'module'
+##       ...prior to try or sendpr
+
+${PROJECT_ROOT}/scripts/bin/drupal-moduleupdate.sh $*
