@@ -57,7 +57,27 @@ update_try() {
   esac
 } ## END: update_try()
 
+#~ DEBUG TODO: stub/fake update_pr for debugging (start)
+
 update_pr() {
+  local update_type=$1                 ## either 'module' or 'core'
+  local update_branchname=$2
+  local raw_component_name_versions=$3 ## e.g. "drupal/core,8.9.6,8.9.7"
+                                       ##  col 1 => component name (drupal/core)
+                                       ##  col 2 => current version (8.9.6)
+                                       ##  col 3 => new version     (8.9.7)
+
+  local component_name=$(  echo $raw_component_name_versions | cut -d',' -f1)
+  local component_oldver=$(echo $raw_component_name_versions | cut -d',' -f2)
+  local component_newver=$(echo $raw_component_name_versions | cut -d',' -f3)
+
+  echo "* [debug - PR TITLE] PTECH-1569: Drupal ${update_type} update $component_name from ${component_oldver} to ${component_newver}"
+}
+
+#~ DEBUG TODO: stub/fake update_pr for debugging (end)
+
+#~ DEBUG TODO ** Use real 'update_pr()' below when finalizing behavior
+DISABLED__update_pr() {
   local update_type=$1                 ## either 'module' or 'core'
   local update_branchname=$2
   local raw_component_name_versions=$3 ## e.g. "drupal/core,8.9.6,8.9.7"
