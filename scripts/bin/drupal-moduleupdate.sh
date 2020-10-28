@@ -157,7 +157,7 @@ if [[ "$TRAVIS_EVENT_TYPE" = "cron" ]] || [[ "$1" = "--local" ]]; then
                                                       ## TODO: When core updating gets merged here, branch will use the same
                                                       ##       format
     # Try and do an update
-    update_try "$update_type" "${update_branch}" "${raw_component_name},${curr_ver},${new_ver}"
+    update_try "$update_type" "${update_branch}" "${raw_component_name}"
 
     # Process PR creation...if needed.
     ## NOTE for core: need to re-read the new drupal core version as it changes afte the "update_try"
@@ -169,7 +169,7 @@ if [[ "$TRAVIS_EVENT_TYPE" = "cron" ]] || [[ "$1" = "--local" ]]; then
        new_ver=$(echo $raw_component_name | cut -d',' -f2)
        update_branch="${core_name}-${new_ver}"
     fi
-    update_pr "$update_type" "$update_branch" "$raw_component_name"
+    update_pr "$update_type" "$update_branch" "${raw_component_name},${curr_ver},${new_ver}"
 
     ## ---- debugging below ----
     ## echo "UPDATE BRANCH: $update_branch"
