@@ -57,6 +57,46 @@ update_try() {
   esac
 } ## END: update_try()
 
+update_branch() {
+  local update_type=$1                 ## either 'module' or 'core'
+  local update_branchname=$2
+  local raw_component_name_versions=$3 ## e.g. "drupal/core,8.9.6,8.9.7"
+                                       ##  col 1 => component name (drupal/core)
+                                       ##  col 2 => current version (8.9.6)
+                                       ##  col 3 => new version     (8.9.7)
+
+  local component_name=$(  echo $raw_component_name_versions | cut -d',' -f1)
+  local component_oldver=$(echo $raw_component_name_versions | cut -d',' -f2)
+  local component_newver=$(echo $raw_component_name_versions | cut -d',' -f3)
+
+  local PRBRANCH_EXIST=$(git ls-remote https://${GH_TOKEN}@${GH_REPO} | grep -c ${update_branchname}$)
+  if [[ $PRBRANCH_EXIST -eq 0 ]]; then
+    ## Attempt to create a PR source branch
+    ##
+    local TMP_PRBRANCH=$(mktemp -d /tmp/d8pr-XXXX)
+    cd $TMP_PRBRANCH
+    git clone https://${GH_TOKEN}@${GH_REPO} $update_branchname
+    cd $update_branchname
+    git fetch
+    git checkout -b $update_branchname
+    cp ${PROJECT_ROOT}/composer.lock .
+
+    ## However, make sure something changed. Otherwise,
+    ## ...do not PUSH branch
+    ##
+    if [[ $(git status -s|wc -l|sed 's/\ //g') -ne 0 ]]; then
+        git add composer.lock
+        git commit -m"PTECH-1569: Drupal ${update_type} update $component_name from ${component_oldver} to ${component_newver}"
+        git push -u origin $update_branchname
+        cd ${PROJECT_ROOT}
+    else
+        echo "**** [WARNING - update_branch] Could be an issue. No changes detected for branch: ${update_branchname} ****"
+    fi
+  else
+    echo "******** [WARNING - update_branch] $update_branch already exist. Did not overwrite, need to be checked *********"
+  fi
+} ## END: update_branch()
+
 #~ DEBUG TODO: stub/fake update_pr for debugging (start)
 
 update_pr() {
@@ -94,14 +134,15 @@ DISABLED__update_pr() {
 
     ## Attempt to create a PR source branch
     ##
-    TMP_PRBRANCH=$(mktemp -d /tmp/d8pr-XXXX)
-    cd $TMP_PRBRANCH
-    git clone https://${GH_TOKEN}@${GH_REPO} $update_branchname
-    cd $update_branchname
-    git fetch
-    git checkout -b $update_branchname
-    cp ${PROJECT_ROOT}/composer.lock .
+#~    TMP_PRBRANCH=$(mktemp -d /tmp/d8pr-XXXX)
+#~    cd $TMP_PRBRANCH
+#~    git clone https://${GH_TOKEN}@${GH_REPO} $update_branchname
+#~    cd $update_branchname
+#~    git fetch
+#~    git checkout -b $update_branchname
+#~    cp ${PROJECT_ROOT}/composer.lock .
 
+    ## TODO: Review the "if block"...
     ## However, make sure something changed. Otherwise,
     ## ...do not send PR.
     ##
@@ -189,7 +230,8 @@ if [[ "$TRAVIS_EVENT_TYPE" = "cron" ]] || [[ "$1" = "--local" ]]; then
        new_ver=$(echo $raw_component_name | cut -d',' -f2)
        update_branch="${core_name}-${new_ver}"
     fi
-    update_pr "$update_type" "$update_branch" "${raw_component_name},${curr_ver},${new_ver}"
+    update_branch "$update_type" "$update_branch" "${raw_component_name},${curr_ver},${new_ver}"
+#~    update_pr "$update_type" "$update_branch" "${raw_component_name},${curr_ver},${new_ver}"
 
     ## ---- debugging below ----
     ## echo "UPDATE BRANCH: $update_branch"
