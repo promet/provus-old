@@ -7,6 +7,7 @@ echo $THEME_NAME
 cp -r src/themes/provus src/themes/${THEME_NAME}
 
 #2. Update theme filenames: 
+sudo apt-get update; sudo apt-get install rename
 rename "s/provus/${THEME_NAME}/" src/themes/${THEME_NAME}/*.*
 
 #3. Update theme strings: 
@@ -25,5 +26,5 @@ sed -i "s/provus/${THEME_NAME}/g" config/default/core.extension.yml
 sed -i "s/provus/${THEME_NAME}/g" config/default/responsive_image.styles.*.yml
 
 #7. Update composer.json
-sed -i "s/provus/${THEME_NAME}/g" composer.json 
+sed -i "s/provus/${THEME_NAME}/g" composer.*
 
