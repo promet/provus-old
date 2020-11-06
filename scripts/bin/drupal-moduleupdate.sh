@@ -169,7 +169,8 @@ if [[ "$TRAVIS_EVENT_TYPE" = "cron" ]] || [[ "$1" = "--local" ]]; then
        new_ver=$(echo $raw_component_name | cut -d',' -f2)
        update_branch="${core_name}-${new_ver}"
     fi
-    update_pr "$update_type" "$update_branch" "${raw_component_name},${curr_ver},${new_ver}"
+#~ DEBUGGING TODO: Disabled, we don't want this while troubleshooting...
+#~    update_pr "$update_type" "$update_branch" "${raw_component_name},${curr_ver},${new_ver}"
 
     ## ---- debugging below ----
     ## echo "UPDATE BRANCH: $update_branch"
