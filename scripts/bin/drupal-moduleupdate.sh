@@ -1,5 +1,7 @@
 #!/bin/bash
 
+## test trigger
+
 ## TODO: When this script is consolidated with bin/drupal-coreupdate.sh,
 ##       'update_type' variable becomes script parameter $1
 ##
