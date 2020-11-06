@@ -109,11 +109,12 @@ update_pr() {
         ##       * Authentication may be deprecated. Double-check in URL
         ##         https://developer.github.com/changes/2020-02-10-deprecating-auth-through-query-param
 
-        echo "[INFO] Creating PR now."
-        curl -X POST -u "icasimpan:${GH_TOKEN}"                          \
-             -H "Accept: application/vnd.github.v3+json"                 \
-             https://api.github.com/repos/promet/${REPO_NAME}/pulls      \
-             -d @${PR_JSON}
+#~ DEBUGGING TODO: Disable just the creation of PR
+#~        echo "[INFO] Creating PR now."
+#~        curl -X POST -u "icasimpan:${GH_TOKEN}"                          \
+#~             -H "Accept: application/vnd.github.v3+json"                 \
+#~             https://api.github.com/repos/promet/${REPO_NAME}/pulls      \
+#~             -d @${PR_JSON}
     else
       echo "[INFO] No detected changes to commit."
     fi
@@ -169,8 +170,7 @@ if [[ "$TRAVIS_EVENT_TYPE" = "cron" ]] || [[ "$1" = "--local" ]]; then
        new_ver=$(echo $raw_component_name | cut -d',' -f2)
        update_branch="${core_name}-${new_ver}"
     fi
-#~ DEBUGGING TODO: Disabled, we don't want this while troubleshooting...
-#~    update_pr "$update_type" "$update_branch" "${raw_component_name},${curr_ver},${new_ver}"
+    update_pr "$update_type" "$update_branch" "${raw_component_name},${curr_ver},${new_ver}"
 
     ## ---- debugging below ----
     ## echo "UPDATE BRANCH: $update_branch"
