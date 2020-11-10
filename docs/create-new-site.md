@@ -19,7 +19,7 @@ Out of the box Provus compiles to `web`. There are several places to change betw
 
 ## Update the theme
 
-If you want to use the Provus theme it should be [copy/pasted](https://en.wikipedia.org/wiki/Anti-pattern) to the new theme name. Config will also need to be updated:
+The following steps will [copy/paste](https://en.wikipedia.org/wiki/Anti-pattern) the existing Provus theme to a new theme for the site and update the necessayr config files:
 
 1. Ensure ``THEME_NAME`` is updated in ``.docksal/docksal.env``
 2. Ensure "web" directory does not exist locally (``rm -rf web``)
