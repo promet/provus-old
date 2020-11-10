@@ -1,8 +1,5 @@
 #!/bin/bash
 
-echo ${THEME_NAME}
-echo $THEME_NAME
-
 #1. Copy the theme
 cp -r src/themes/provus src/themes/${THEME_NAME}
 
@@ -11,7 +8,7 @@ sudo apt-get update; sudo apt-get install rename
 rename "s/provus/${THEME_NAME}/" src/themes/${THEME_NAME}/*.*
 
 #3. Update theme strings: 
-sed -i "s/provus/${THEME_NAME}/g" src/themes/${THEME_NAME}/*.*
+sed -i 's/provus/${THEME_NAME}/g' $(find src/themes/${THEME_NAME} -type f)
 
 #4. Update blocks 
 sed -i "s/provus/${THEME_NAME}/g" config/default/block.*.yml
@@ -27,4 +24,3 @@ sed -i "s/provus/${THEME_NAME}/g" config/default/responsive_image.styles.*.yml
 
 #7. Update composer.json
 sed -i "s/provus/${THEME_NAME}/g" composer.*
-
