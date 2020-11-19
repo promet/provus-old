@@ -66,7 +66,7 @@ object-assign
  *   http://opensource.org/licenses/GPL-2.0
  */
 
-/*! axe v3.5.3
+/*! axe v3.5.5
  * Copyright (c) 2020 Deque Systems, Inc.
  *
  * Your use of this Source Code Form is subject to the terms of the Mozilla Public
