@@ -6,53 +6,23 @@ $gray-dark: #1d2b36;
 $gray-darker: #333;
 $gray-medium: #556575;
 $black: black;
-// OC Colors.
-$ada-orange: #D53707;
-$ada-blue: #166dea;
-$accent-orange: #fd5809;
-$accent-orange-half: rgba(253, 88, 9, 0.5);
-$accent-sky: #f5fafe;
-$bg-arrow: #faebe0;
-$border-utility: #e5e5e5;
-$border-search: #1d1f24;
-$bullet-orange: #ba4c09;
-$bullet-blue-light: #e3f0ff;
-$light-blue: #e3f0ff;
-$line-gray: #cfd0cd;
-$menu-hamburguer-item: #1b396b;
-$menu-hamburguer-item-sub2: #617081;
-$opaque: rgba(0, 0, 0, 0);
-$opaque-half: rgba(255, 255, 255, 0.5);
-$opaque-quarter: rgba(255, 255, 255, 0.25);
+
+// Project Colors.
 $primary: #0071bc;
 $primary-half: rgba(0, 113, 188, 0.5);
 $primary-darker: #205493;
 $primary-darkest: #112e51;
-$title-section: #21303e;
-$title-info: #3a3a3a;
-$title-content-top: #041133;
-$line-person-card: #d2d5cd;
-$sidebar-menu-item: #292929;
-$sidebar-menu-item-hover: #297bc7;
-$sidebar-border: #e4e5ec;
-$bg-internal-page: #f3f5f9;
-$border-calendar: #ee9838;
-$bg-btn-today-calendar: #77838F;
-$bg-btn-calendar: #2c3f51;
-$bg-btn-active-calendar: #18232d;
-$bg-event-calendar: #3788d8;
-$bg-event-past-calendar: #8e8e8e;
-$bg-event-weekend-calendar: #f8f9fb;
-$border-input-form: #ccc;
-$text-input-form: #999;
-$bg-table-files: #f2f5f7;
-$border-accordion: #c2d1d9;
-$red: #d53707;
-$border-clear-btn: #e9e9e9;
-$location-alert-bg: #fef8db;
-$location-alert-border: #edb723;
-$person-initials-bg-blue: #ddf2ff;
-$icon: #00447c;
+$secondary: #166dea;
+$accent: #D53707;
+$accent-half: rgba(253, 88, 9, 0.5);
+$accent-secondary: #f5fafe;
+
+// General Colors.
+$error: #D53707;
+$success: $accent-half;
+$opaque: rgba(0, 0, 0, 0);
+$opaque-half: rgba(255, 255, 255, 0.5);
+$opaque-quarter: rgba(255, 255, 255, 0.25);
 
 // Styleguide
 .sg-colors {
@@ -109,16 +79,16 @@ $icon: #00447c;
     background-color: $primary-darkest;
   }
 
-  &--ada-orange {
-    background-color: $ada-orange;
+  &--secondary {
+    background-color: $secondary;
   }
 
-  &--accent-orange {
-    background-color: $accent-orange;
+  &--accent {
+    background-color: $accent;
   }
 
-  &--accent-sky {
-    background-color: $accent-sky;
+  &--accent-secondary {
+    background-color: $accent-secondary;
   }
 }
 

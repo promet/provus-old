@@ -91,7 +91,7 @@
         }
 
         &.error::before {
-          border: 1px solid $ada-orange;
+          border: 1px solid $accent;
           background-color: $white;
         }
 
@@ -360,7 +360,7 @@
 
       &:focus {
         outline: none;
-        box-shadow: 0 0 15px $ada-blue;
+        box-shadow: 0 0 15px $secondary;
       }
     }
   }

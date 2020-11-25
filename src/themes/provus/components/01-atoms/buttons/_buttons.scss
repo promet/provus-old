@@ -28,7 +28,7 @@
 
   &:focus {
     border: 2px solid $white;
-    box-shadow: 0 0 8px $ada-blue;
+    box-shadow: 0 0 8px $secondary;
     outline: 0;
   }
 
@@ -58,7 +58,7 @@
 
   &:focus {
     border: 2px solid $white;
-    box-shadow: 0 0 8px $ada-blue;
+    box-shadow: 0 0 8px $secondary;
     background: $primary-darker;
     outline: 0;
     color: $white;
@@ -72,12 +72,12 @@
 
 @mixin button-secondary() {
   background: transparent;
-  border: 3px solid $ada-orange;
-  color: $ada-orange;
+  border: 3px solid $accent;
+  color: $accent;
   outline: 0;
 
   &:hover {
-    background-color: $ada-orange;
+    background-color: $accent;
     color: $white;
   }
 
@@ -89,9 +89,9 @@
 
   &:focus {
     background: $white;
-    color: $ada-orange;
-    border: 3px solid $ada-orange;
-    box-shadow: 0 0 8px $ada-blue;
+    color: $accent;
+    border: 3px solid $accent;
+    box-shadow: 0 0 8px $secondary;
     outline: 0;
   }
 
@@ -130,7 +130,7 @@
     background-color: $opaque-half;
     color: $black;
     border: 2px solid $white;
-    box-shadow: 0 0 5px $ada-blue;
+    box-shadow: 0 0 5px $secondary;
   }
 
   &.disabled {

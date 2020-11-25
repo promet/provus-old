@@ -227,7 +227,7 @@
       li > a {
         width: 9px;
         height: 9px;
-        border: 1px solid $ada-orange;
+        border: 1px solid $accent;
         background: transparent;
         border-radius: 100%;
         box-sizing: content-box;
@@ -237,8 +237,8 @@
 
       li:hover a,
       li.active > a {
-        border: 1px solid $ada-orange;
-        background: $ada-orange;
+        border: 1px solid $accent;
+        background: $accent;
       }
     }
   }
