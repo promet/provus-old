@@ -1,22 +1,23 @@
 #!/bin/bash
 
 DEV_BRANCH="develop"
-REMOTE="master"
 CURRENT_BRANCH=`git name-rev --name-only HEAD`
 CURRENT_TAG=`git name-rev --tags --name-only $(git rev-parse HEAD)`
 
 auth_hosting()
 {
- if [ "$HOSTING_PLATFORM" == "pantheon" ]
- then
+  if [ "$HOSTING_PLATFORM" == "pantheon" ]
+  then
    TERMINUS_BIN=$PROJECT_ROOT/scripts/vendor/terminus
 
    $TERMINUS_BIN auth:login --machine-token=$SECRET_TERMINUS_TOKEN
- else
-   ## TODO: Support Acquia soon...
-   echo "ERROR: Unknown hosting. Supports Pantheon.io for now."
+  elif [ "$HOSTING_PLATFORM" == "acquia" ]
+  then
+   echo "Building for Acquia."
+  else
+   echo "ERROR: Unknown hosting. Supports Pantheon and Acquia for now."
    exit 1
- fi
+  fi
 }
 
 add_remote()
@@ -31,18 +32,22 @@ set_perms() {
 
 pantheon_conn_switch()
 {
-  $TERMINUS_BIN connection:set ${HOSTING_SITE}.dev $1
+  $TERMINUS_BIN connection:set ${PANTHEON_SITE_NAME}.dev $1
+}
+
+build()
+{
+  ${PROJECT_ROOT}/scripts/bin/build-artifacts.sh
 }
 
 push()
 {
   add_remote
+  build
   set_perms
   git add .
   git commit -m "Build for $1"
-  [[ "$HOSTING_PLATFORM" == "pantheon" ]] && pantheon_conn_switch git  ## Must be 'git mode' in Pantheon to commit.
-  git push deploy HEAD:$REMOTE --force
-  [[ "$HOSTING_PLATFORM" == "pantheon" ]] && pantheon_conn_switch sftp ## Must be 'sftp mode' in Pantheon to install Drupal.
+  git push deploy HEAD:$1 --force
 }
 
 ## ==============
@@ -55,5 +60,5 @@ then
   push $CURRENT_TAG
 elif [ $CURRENT_BRANCH == $DEV_BRANCH ]
 then
-  push $CURRENT_BRANCH
+  push $REMOTE_DEPLOY_BRANCH
 fi

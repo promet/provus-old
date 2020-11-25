@@ -18,9 +18,15 @@ services:
     environment:
       - IS_DOCKSAL_PROJECT 
       - DRUPAL_HASH_SALT
+      # Git repo for the host that will be pushed to with "fin deploy"
       - REMOTE_GIT_REPO
+      # Git branch that will be pushed to when develop updates.
+      - REMOTE_DEPLOY_BRANCH
+      # "pantheon" or "acquia"
       - HOSTING_PLATFORM
+      # Necessary for pantheon. The machine name of the account.
       - HOSTING_SITE
+      # Determines which environment "fin pull db/files" grabs from.
       - HOSTING_ENV
       - THEME_NAME
       - UUID
