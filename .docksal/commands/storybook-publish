@@ -1,0 +1,28 @@
+#!/bin/bash
+
+TMPDIR=$(mktemp -d /tmp/sbpub.XXXX)
+GIT_REPO="${GH_TOKEN}@github.com/${TRAVIS_REPO_SLUG}"
+
+## Get source "storybook"...
+##
+git clone --branch storybook https://${GIT_REPO} $TMPDIR/
+
+## Get only relevant parts...
+##
+wwwroot=$TMPDIR/storybook-www/docs/${STYLEGUIDE_PARTIAL_URL}
+mkdir -p $wwwroot
+rsync -avz $TMPDIR/storybook/* $wwwroot/
+
+## Optional: Swap index.html with encrypted version
+##
+
+## Push to "storybook-www" branch
+##
+cd $TMPDIR/storybook-www
+rm -rf ../.git
+git init
+git add . -A
+git commit -m"Updated storybook for publish"
+git checkout -b storybook-www
+git remote add origin https://${GIT_REPO}
+git push -u origin storybook-www -f

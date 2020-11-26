@@ -1,0 +1,15 @@
+## For developing Provus itself, rename this file (docksal-local.yml.sample) to docksal-local.yml.
+## docksal-local.yml is in .gitignore so it will not be committed.
+##
+## Exposed cli environment variables needed:
+##  * GH_TOKEN               - For pushing code back to github "storybook-publish" branch
+##  * TRAVIS_REPO_SLUG       - What repo to push to without hardcoding
+##  * STYLEGUIDE_PARTIAL_URL - Gibberish part of the URL 
+version: "2.1"
+
+services:
+  cli:
+    environment:
+      - GH_TOKEN
+      - TRAVIS_REPO_SLUG
+      - STYLEGUIDE_PARTIAL_URL
