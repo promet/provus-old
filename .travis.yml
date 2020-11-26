@@ -1,0 +1,21 @@
+dist: bionic
+
+language: minimal
+
+install:
+  ## Update 'get.docksal.io' curl fails from time to time. Added '-k' to ignore cert error.
+  ## ==> curl: (51) SSL: no alternative certificate subject name matches target host name 'get.docksal.io'
+  - curl -kfsSL https://get.docksal.io | bash
+  - fin update
+  - fin version
+  - fin sysinfo
+  - env | grep GH_TOKEN > .docksal/docksal-local.env
+  - env | grep TRAVIS_REPO_SLUG >> .docksal/docksal-local.env
+  - env | grep STYLEGUIDE_PARTIAL_URL >> .docksal/docksal-local.env
+  - cp .docksal/docksal-local.yml.sample .docksal/docksal-local.yml
+
+before_script:
+  - fin init
+
+script:
+  - fin storybook-publish
