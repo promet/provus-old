@@ -1,8 +1,0 @@
-#!/usr/bin/env bash
-
-## Builds theme dist files. Not currently necessary 
-##
-## Usage: fin build-theme 
-
-fin exec "cd /var/www/web/themes/custom/countyoc; yarn"
-fin exec "cd /var/www/web/themes/custom/countyoc; yarn build"

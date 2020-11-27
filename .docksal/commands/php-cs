@@ -1,7 +1,0 @@
-#!/usr/bin/env bash
-
-fin run phpcs \
-    --standard="Drupal,DrupalPractice" -n \
-    --extensions="php,module,inc,install,test,profile,theme" \
-    --ignore="*.features.*,*.pages*.inc" \
-    web/modules/custom
