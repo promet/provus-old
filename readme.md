@@ -36,11 +36,11 @@ Make sure travis has completely run.
 	```
 ## Populate real storybook
 
-At this point, storybook will be accessible from URL https://promet.github.io/<project>/<STYLEGUIDE_PARTIAL_URL> but with dummy content.
+At this point, storybook will be accessible from URL https://promet.github.io/<PROJECT_NAME>/<STYLEGUIDE_PARTIAL_URL> but with dummy content.
 
 1. Run the following from `develop` branch:
 
 	```
 	fin storybook-deploy
 	```
-It may take some time but once it's finished, real storybook/styleguide will be in the URL https://promet.github.io/<project>/<STYLEGUIDE_PARTIAL_URL>
+It may take some time but once it's finished, real storybook/styleguide will be in the URL https://promet.github.io/<PROJECT_NAME>/<STYLEGUIDE_PARTIAL_URL>
