@@ -27,6 +27,8 @@ script:
 
 after_success:
   # - fin deploy
+  # testing:
+  - fin storybook-deploy
 
 notifications:
     on_success: always # default: change
