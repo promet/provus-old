@@ -21,9 +21,10 @@ before_script:
 script:
   ## NOTE: Travis cron only run once daily. To debug, temporarily add '--local' to 'fin drupal-coreupdate'.
   ##       Concatenating 3 commands below seems to fail silently since Drupal 8.9.6. Same issue with 8.9.7.
-  - fin drupal-coreupdate try
-  - fin test
-  - fin drupal-coreupdate sendpr
+  #- fin drupal-coreupdate try
+  #- fin test
+  #- fin drupal-coreupdate sendpr
+  - echo "testing"
 
 after_success:
   # - fin deploy
