@@ -1,24 +1,9 @@
 #!/usr/bin/env bash
 
-## Deploy storybook by pushing to "storybook" branch. 
+#: exec_target = cli
+
+## Deploy docs by pushing to "storybook" branch. 
 ##
-## Usage: fin init
+## Usage: fin storybook-deploy
 
-STORYBOOK_BRANCH="storybook-www"
-
-echo "Copying storybook"
-fin exec "cp -r ${PROJECTS_ROOT}src/themes/custom/${THEME_NAME} .; cd ${PROJECTS_ROOT}${THEME_NAME}; yarn"
-git fetch --all
-git checkout ${STORYBOOK_BRANCH}
-git reset --hard origin/${STORYBOOK_BRANCH}
-git pull
-echo "Building storybook"
-fin exec "cd ${PROJECTS_ROOT}${THEME_NAME}; yarn build-storybook -o ../docs/${STORYBOOK_FOLDER}"
-echo "Copying images"
-fin exec "rm -rf ${PROJECTS_ROOT}docs/${STORYBOOK_FOLDER}/images; cp -r ${PROJECTS_ROOT}${THEME_NAME}/images ${PROJECTS_ROOT}docs/${STORYBOOK_FOLDER}/images"
-echo "Removing artifact"
-fin exec "rm -rf ${PROJECTS_ROOT}${THEME_NAME}"
-echo "Adding to git"
-git add docs
-git commit -m "Updates storybook"
-git push origin ${STORYBOOK_BRANCH}
+${PROJECT_ROOT}/scripts/bin/storybook-deploy.sh
