@@ -25,3 +25,4 @@ services:
       - THEME_NAME
       - UUID
       - COMPOSER_DEFAULT_VERSION
+      - STORYBOOK_FOLDER
