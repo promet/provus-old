@@ -26,15 +26,15 @@
 
         &.active {
           a {
-            border: 1px solid $light-blue;
-            background: $light-blue;
+            border: 1px solid $accent-secondary;
+            background: $accent-secondary;
           }
         }
 
         a {
           width: 9px;
           height: 9px;
-          border: 1px solid $light-blue;
+          border: 1px solid $accent-secondary;
           background: transparent;
           border-radius: 100%;
         }

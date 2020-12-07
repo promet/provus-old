@@ -4,7 +4,7 @@
 
   padding: $space-quintuple 0;
   margin-bottom: $space-quintuple;
-  background-color: $accent-sky;
+  background-color: $accent-secondary;
 
   &__inner {
     @include wrapper;
@@ -79,7 +79,7 @@
 
   padding: $space-quintuple 0;
   margin-bottom: $space-quintuple;
-  background-color: $accent-sky;
+  background-color: $accent-secondary;
 
   &__inner {
     @include wrapper;

@@ -62,10 +62,10 @@
       display: flex;
 
       &:hover, &:focus {
-        color: $ada-blue;
+        color: $secondary;
 
         .channel-name-subscribers .channel-name {
-          color: $ada-blue;
+          color: $secondary;
         }
       }
     }
@@ -89,7 +89,7 @@
         padding-bottom: 3px;
 
         &:hover, &:focus {
-          color: $ada-blue;
+          color: $secondary;
         }
       }
 
@@ -163,10 +163,10 @@
         display: flex;
 
         &:hover, &:focus {
-          color: $ada-blue;
+          color: $secondary;
 
           .tw-user-name .tw-user-name-full {
-            color: $ada-blue;
+            color: $secondary;
           }
         }
       }
@@ -190,7 +190,7 @@
           padding-bottom: 3px;
 
           &:hover, &:focus {
-            color: $ada-blue;
+            color: $secondary;
           }
         }
 
@@ -219,7 +219,7 @@
       font-weight: normal;
 
       &:hover, &:focus {
-        color: $ada-blue;
+        color: $secondary;
       }
 
       &::before {
