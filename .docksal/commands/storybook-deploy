@@ -12,9 +12,9 @@ git checkout storybook
 git reset --hard origin/${STORYBOOK_BRANCH}
 git pull
 echo "Building storybook"
-fin exec "cd ${PROJECTS_ROOT}${THEME_NAME}; yarn build-storybook -o ../storybook/${STORYBOOK_FOLDER}"
+fin exec "cd ${PROJECTS_ROOT}${THEME_NAME}; yarn build-storybook -o ../docs/${STORYBOOK_FOLDER}"
 echo "Copying images"
-fin exec "rm -rf ${PROJECTS_ROOT}storybook/images; cp -r ${PROJECTS_ROOT}${THEME_NAME}/images ${PROJECTS_ROOT}storybook/images"
+fin exec "rm -rf ${PROJECTS_ROOT}storybook/${STORYBOOK_FOLDER}/images; cp -r ${PROJECTS_ROOT}${THEME_NAME}/images ${PROJECTS_ROOT}docs/${STORYBOOK_FOLDER}/images"
 echo "Removing artifact"
 fin exec "rm -rf ${PROJECTS_ROOT}${THEME_NAME}"
 echo "Adding to git"
