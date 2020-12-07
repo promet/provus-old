@@ -7,8 +7,8 @@
 STORYBOOK_BRANCH="storybook-www"
 
 echo "Copying storybook"
-fin exec "cp -r ${PROJECTS_ROOT}${DOCROOT}/themes/custom/${THEME_NAME} .; cd ${PROJECTS_ROOT}${THEME_NAME}; yarn"
-git checkout storybook
+fin exec "cp -r ${PROJECTS_ROOT}src/themes/custom/${THEME_NAME} .; cd ${PROJECTS_ROOT}${THEME_NAME}; yarn"
+git checkout ${STORYBOOK_BRANCH}
 git reset --hard origin/${STORYBOOK_BRANCH}
 git pull
 echo "Building storybook"
