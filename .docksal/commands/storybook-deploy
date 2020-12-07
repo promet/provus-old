@@ -14,10 +14,10 @@ git pull
 echo "Building storybook"
 fin exec "cd ${PROJECTS_ROOT}${THEME_NAME}; yarn build-storybook -o ../docs/${STORYBOOK_FOLDER}"
 echo "Copying images"
-fin exec "rm -rf ${PROJECTS_ROOT}storybook/${STORYBOOK_FOLDER}/images; cp -r ${PROJECTS_ROOT}${THEME_NAME}/images ${PROJECTS_ROOT}docs/${STORYBOOK_FOLDER}/images"
+fin exec "rm -rf ${PROJECTS_ROOT}docs/${STORYBOOK_FOLDER}/images; cp -r ${PROJECTS_ROOT}${THEME_NAME}/images ${PROJECTS_ROOT}docs/${STORYBOOK_FOLDER}/images"
 echo "Removing artifact"
 fin exec "rm -rf ${PROJECTS_ROOT}${THEME_NAME}"
 echo "Adding to git"
-git add storybook
+git add docs
 git commit -m "Updates storybook"
 git push origin ${STORYBOOK_BRANCH}
