@@ -7,6 +7,7 @@ echo "Copying docs"
 cp -r ${PROJECT_ROOT}/src/themes/${THEME_NAME} ${PROJECT_ROOT}/${THEME_NAME}
 cd ${PROJECT_ROOT}/${THEME_NAME}
 yarn
+git fetch --all
 git checkout -b ${STORYBOOK_BRANCH} origin/${STORYBOOK_BRANCH}
 git reset --hard origin/${STORYBOOK_BRANCH}
 git pull
