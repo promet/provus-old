@@ -1,24 +1,35 @@
 #!/usr/bin/env bash
 # Deploys storybook.
 
+if [ -z "$TRAVIS_REPO_SLUG" ]
+then
+  echo "Must add TRAVIS_REPO_SLUG to docksal"
+  exit 1
+elif [ -z "$GH_TOKEN" ]
+then
+  echo "Must add GH_TOKEN to travis"
+  exit 1
+fi
+
 STORYBOOK_BRANCH="storybook-www"
 
-echo "Copying docs"
-cp -r ${PROJECT_ROOT}/src/themes/${THEME_NAME} ${PROJECT_ROOT}/${THEME_NAME}
-cd ${PROJECT_ROOT}/${THEME_NAME}
+TMPDIR=$(mktemp -d /tmp/sbpub.XXXX)
+GIT_REPO="${GH_TOKEN}@github.com/${TRAVIS_REPO_SLUG}"
+
+## Get source "storybook"...
+##
+git clone --branch ${STORYBOOK_BRANCH} https://${GIT_REPO} $TMPDIR
+
+cp -r ${PROJECT_ROOT}/src/themes/${THEME_NAME} $TMPDIR/${THEME_NAME}
+cd $TMPDIR/${THEME_NAME}
 yarn
-git fetch --all
-git checkout -b ${STORYBOOK_BRANCH} origin/${STORYBOOK_BRANCH}
-git reset --hard origin/${STORYBOOK_BRANCH}
-git pull
 echo "Building docs"
-yarn build-docs -o ../docs/${STORYBOOK_FOLDER}
+yarn build-storybook -o ../docs/${STORYBOOK_FOLDER}
 echo "Copying images"
-rm -rf ${PROJECT_ROOT}/docs/${STORYBOOK_FOLDER}/images
-cp -r ${PROJECT_ROOT}/${THEME_NAME}/images ${PROJECT_ROOT}/docs/${STORYBOOK_FOLDER}/images
-echo "Removing artifact"
-rm -rf ${PROJECT_ROOT}/${THEME_NAME}
+rm -rf $TMPDIR/docs/${STORYBOOK_FOLDER}/images
+cp -r ${PROJECT_ROOT}/${THEME_NAME}/images $TMPDIR/docs/${STORYBOOK_FOLDER}/images
 echo "Adding to git"
+cd $TMPDIR
 git add docs
 git commit -m "Updates storybook"
 git push origin ${STORYBOOK_BRANCH}

@@ -26,3 +26,5 @@ services:
       - UUID
       - COMPOSER_DEFAULT_VERSION
       - STORYBOOK_FOLDER
+      - TRAVIS_REPO_SLUG
+      - GH_TOKEN
