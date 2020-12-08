@@ -24,7 +24,7 @@ script:
   #- fin drupal-coreupdate try
   #- fin test
   #- fin drupal-coreupdate sendpr
-  - echo "testing"
+  - fail
 
 after_success:
   # - fin deploy
