@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="52px" height="52px" viewBox="0 0 52 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Arrow Left</title>
+    <defs>
+        <path d="M42,281 C54.1502645,281 64,290.849736 64,303 C64,315.150264 54.1502645,325 42,325 C29.8497355,325 20,315.150264 20,303 C20,290.849736 29.8497355,281 42,281 Z M42,284 C31.5065898,284 23,292.50659 23,303 C23,313.49341 31.5065898,322 42,322 C52.4934102,322 61,313.49341 61,303 C61,292.50659 52.4934102,284 42,284 Z M46.5,293 L48.978,295.478 L40.914,303.5 L48.978,311.564 L46.5,314 L36,303.5 L46.5,293 Z" id="path-1"></path>
+        <filter x="-13.6%" y="-13.6%" width="127.3%" height="127.3%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Blocks" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.5">
+        <g id="Home---Side-Nav-RD3" transform="translate(-458.000000, -8888.000000)" fill-rule="nonzero">
+            <g id="Image-Gallery" transform="translate(442.000000, 8611.000000)">
+                <g id="Arrow-Left">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#FFFFFF" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="68px" height="71px" viewBox="0 0 68 71" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>account_balance-24px</title>
+    <desc>Created with Sketch.</desc>
+    <g id="UI-Theme-Round-3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.699939546">
+        <g id="Home---RD-3-Resources" transform="translate(-506.000000, -2924.000000)">
+            <g id="Group-5" transform="translate(15.000000, 2812.000000)">
+                <g id="account_balance-24px" transform="translate(485.000000, 109.000000)">
+                    <rect id="Rectangle" x="0" y="0" width="80" height="80"></rect>
+                    <g id="Group" transform="translate(6.666667, 3.333333)" fill="#0071BC" fill-rule="nonzero" opacity="0.797200521">
+                        <rect id="Rectangle" x="6.66666667" y="30" width="10" height="23.3333333"></rect>
+                        <rect id="Rectangle" x="28.3333333" y="30" width="10" height="23.3333333"></rect>
+                        <rect id="Rectangle" x="0" y="60" width="66.6666667" height="10"></rect>
+                        <rect id="Rectangle" x="50" y="30" width="10" height="23.3333333"></rect>
+                        <polygon id="Path" points="33.3333333 0 0 16.6666667 0 23.3333333 66.6666667 23.3333333 66.6666667 16.6666667"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
