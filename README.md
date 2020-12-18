@@ -1,5 +1,3 @@
-# Provus 
-
 ![Provus Logo](https://user-images.githubusercontent.com/512243/102635812-d482cc00-4121-11eb-9bdc-7dad480403fd.png)
 
 
