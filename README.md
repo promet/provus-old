@@ -1,5 +1,8 @@
 # Provus 
 
+![Provus Logo](https://user-images.githubusercontent.com/512243/102635812-d482cc00-4121-11eb-9bdc-7dad480403fd.png)
+
+
 This is a starter project for Drupal 8/9 projects that provides the following:
 
 * [Emusilfy](http://emulsify.io)-based theme with large number of [beautiful components](https://promet.github.io/ps_component)
