@@ -44,7 +44,11 @@
 {% set card__base_class = 'circle-img' %}
 
 <div {{ bem(card__base_class, card__modifiers, card__blockname, card__extra_classes) }}>
-  <a href="{{ card__link__url }}" class="circle-img__gral">
+  {% if card__link__url %}
+    <a href="{{ card__link__url }}" class="circle-img__gral">
+  {% else %}
+    <span class="circle-img__gral">
+  {% endif %}
   {# Image #}
   <div class="circle-img__img">
     {% block card__img %}
@@ -74,5 +78,9 @@
       {{ title_suffix }}
     {% endif %}
   </div>
-  </a>
+  {% if card__link__url %}
+    </a>
+  {% else %}
+    </span>
+  {% endif %}
 </div>
