@@ -8,11 +8,8 @@ services:
     volumes:
       - ../tests/pa11y/wcag2-config.json:/home/node/app/wcag2-config.json
 
-  solr:
-    image: docksal/solr:4.x
-    extends:
-      file: ${HOME}/.docksal/stacks/services.yml
-      service: solr
+  db:
+    image: docksal/mysql:5.7
 
   cli:
     environment:

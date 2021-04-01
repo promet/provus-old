@@ -1,0 +1,9 @@
+name: 'Search API AZ Glossary'
+description: 'Creates a glossary fields (A B C ...) based on node titles and user names'
+core: 8.x
+core_version_requirement: ^8 || ^9
+package: Search
+type: module
+dependencies:
+  - search_api:search_api
+  - facets:facets
