@@ -1,0 +1,24 @@
+---
+---
+
+@import 'jekyll-theme-dinky';
+
+header {
+  background-color: #ffffff;
+  color: #000000;
+  
+  img {
+    max-width: 100%;
+    border: none;
+  }
+  
+  li {
+    background-color: #40348f;
+    border: none;
+    box-shadow: inset 0px 1px 1px 0 #40348f;
+    
+    &:hover {
+      background-color: #3dc4e5;
+    }
+  }
+}
