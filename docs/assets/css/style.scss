@@ -6,10 +6,12 @@
 header {
   background-color: #ffffff;
   color: #000000;
+  padding: 35px 30px;
   
   img {
     max-width: 100%;
     border: none;
+    margin: 10px 0;
   }
   
   li {
@@ -31,4 +33,8 @@ a {
   &:hover {
     color: #3dc4e5;
   }
+}
+
+body {
+  background-color: #FFF;
 }
