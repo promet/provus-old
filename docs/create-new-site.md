@@ -19,17 +19,9 @@ Out of the box Provus compiles to `web`. There are several places to change betw
 
 ## Update the theme
 
-If you want to use the Provus theme it should be [copy/pasted](https://en.wikipedia.org/wiki/Anti-pattern) to the new theme name. Config will also need to be updated:
+The following steps will [copy/paste](https://en.wikipedia.org/wiki/Anti-pattern) the existing Provus theme to a new theme for the site and update the necessayr config files:
 
-1. Copy the theme: ``mv src/themes/provus src/themes/newtheme`
-2. Update theme filenames: ``rename 's/provus/newtheme/' src/themes/newtheme/*.*``
-3. Update theme strings: ``sed -i 's/provus/newtheme/g' src/themes/newtheme/*.*``
-4. Update blocks ``sed -i 's/provus/newtheme/g' config/default/block.*.yml``
-5. Update default theme ``sed -i 's/provus/newtheme/g' config/default/theme.settings.yml; ``
-5. Add "newtheme" in theme section to ``config/default/core.extensions.yml``
-7. Update responsive images ``sed -i 's/provus/newtheme/g' config/default/responsive_image.styles.*.yml``
-8. Run config import ``fin drush cim -y``
-9. Unininstall the "provus" theme in ``/admin/appearance``
-10. Remove "provus" from ``config/default/core.extensions.yml`` or export config
-11. Delete old provus theme ``rm src/themes/provus``
-
+1. Ensure ``THEME_NAME`` is updated in ``.docksal/docksal.env``
+2. Ensure "web" directory does not exist locally (``rm -rf web``)
+3. Run ``fin new-site``
+4. Run ``fin init-site``
