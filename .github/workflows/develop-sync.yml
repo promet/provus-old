@@ -21,7 +21,7 @@ jobs:
           key: ${{ secrets.DRUPAL_ORG_SSH_KEY }}
           config: unnecessary
           known_hosts: unnecessary
-      - name: Sync dev branch to Drupal.org Project
+      - name: Sync develop branch to Drupal.org Project
         run: |
           git remote add drupal_org '${{ secrets.DRUPAL_REPO_URL }}'
           git push drupal_org ${{ steps.extract_branch.outputs.branch }}
