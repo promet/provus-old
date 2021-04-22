@@ -23,5 +23,5 @@ jobs:
           known_hosts: ${{ secrets.KNOWN_HOSTS }}
       - name: Sync develop branch to Drupal.org Project
         run: |
-          git remote add drupal_org 'https://git.drupalcode.org/project/drupal.git'
+          git remote add drupal_org '${{ secrets.DRUPAL_REPO_URL }}'
           git push drupal_org ${{ steps.extract_branch.outputs.branch }}
