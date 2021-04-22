@@ -24,3 +24,6 @@ See [Drag and Drop Content Management for Government](https://www.drupalgovcon.o
 * [Setup on Pantheon](setup-on-pantheon.md)
 * [Move to Production State](move-to-production-state.md)
 * [Create a new link group block](new-link-group-block.md)
+
+## Maintainer Documentation
+* [Auto-sync github with Drupal.org git](auto-sync-github-with-drupalorg-git.md)
