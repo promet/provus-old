@@ -11,7 +11,7 @@
       {
         "type":"package",
         "package": {
-          "name": "meno/dropzone",
+          "name": "enyo/dropzone",
           "version": "5.7",
           "type": "drupal-library",
           "dist": {
@@ -40,7 +40,6 @@
     "require": {
         "composer/installers": "^1.2",
         "cweagans/composer-patches": "^1.6.5",
-        "drupal-composer/drupal-scaffold": "^2.5",
         "drupal/address": "~1.0",
         "drupal/admin_toolbar_tools": "^2.0",
         "drupal/antibot": "^1.4",
@@ -49,7 +48,8 @@
         "drupal/components": "^1.1",
         "drupal/config_ignore": "^2.2",
         "drupal/console": "^1.0.2",
-        "drupal/core": "^8.7.1",
+        "drupal/core": "^8.9.1",
+        "drupal/core-composer-scaffold": "^8.9",
         "drupal/devel": "^2.1",
         "drupal/dropzonejs": "^2.1",
         "drupal/emulsify_twig": "^1.0",
@@ -96,6 +96,7 @@
         "drush/drush": "^9.0.0",
         "geocoder-php/google-maps-provider": "^4.4",
         "jsanahuja/jqueryinstagramfeed": "dev-master",
+        "enyo/dropzone": "5.7",
         "kporras07/composer-symlinks": "dev-master",
         "symfony/event-dispatcher": "4.3.4 as 3.4.99",
         "vlucas/phpdotenv": "^2.4",
@@ -146,6 +147,14 @@
         ]
     },
     "extra": {
+       "drupal-scaffold": {
+          "allowed-packages": [
+            "drupal/core"
+          ],
+          "locations": {
+            "web-root": "./web"
+          }
+        },
         "composer-exit-on-patch-failure": true,
         "patchLevel": {
             "drupal/core": "-p2"
