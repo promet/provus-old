@@ -8,11 +8,21 @@
   color: #333;
   background: #FFF;
   font-family: "Lucida Grande", "Lucida Sans Unicode", "liberation sans", sans-serif;
-  
+  display: block;
+
   img {
     float: left;
-    padding: 5px 10px 0 0;
+    padding: 0 10px 0 0;
   }
+
+  select[multiple] {
+    width: 100%;
+    overflow: auto;
+    padding: 10px;
+  }
+}
+#drupal-off-canvas a, #drupal-off-canvas .link {
+  cursor: pointer;
 }
 .ui-dialog.ui-dialog-off-canvas
 .ui-dialog-titlebar {
@@ -22,4 +32,89 @@
 #drupal-off-canvas summary:hover,
 #drupal-off-canvas summary:focus {
   color: #FFF;
+}
+.layout--twocol-section .layout__region--first,
+.layout--twocol-section .layout__region--second {
+	flex: 0 1 50%;
+	padding: 0;
+}
+.layout--twocol-section {
+  display: flex;
+  flex-wrap: wrap;
+
+  > .container {
+    padding: 0;
+
+    @include small {
+      padding: 0 15px;
+    }
+  }
+}
+
+.layout--twocol-section .layout__region {
+  flex: 0 1 100%;
+  padding-top: $space-double;
+}
+
+@media screen and (min-width: 40em) {
+
+  .layout--twocol-section:nth-of-type(even) {
+    .layout__region--first {
+      > div {
+        margin-right: 55px;
+        padding: 0;
+      }
+    }
+  }
+
+  .layout--twocol-section:nth-of-type(odd) {
+    .layout__region--second {
+      > div {
+        margin-left: 55px;
+        padding: 0;
+      }
+    }
+  }
+
+  .layout {
+    .container {
+      display: flex;
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+  .layout--twocol-section.layout--twocol-section--50-50 .layout__region--first,
+  .layout--twocol-section.layout--twocol-section--50-50 .layout__region--second {
+    flex: 0 1 50%;
+  }
+
+  .layout--twocol-section.layout--twocol-section--33-67 .layout__region--first,
+  .layout--twocol-section.layout--twocol-section--67-33 .layout__region--second {
+    flex: 0 1 33%;
+  }
+
+  .layout--twocol-section.layout--twocol-section--33-67 .layout__region--second,
+  .layout--twocol-section.layout--twocol-section--67-33 .layout__region--first {
+    flex: 0 1 67%;
+  }
+
+  .layout--twocol-section.layout--twocol-section--25-75 .layout__region--first,
+  .layout--twocol-section.layout--twocol-section--75-25 .layout__region--second {
+    flex: 0 1 25%;
+  }
+
+  .layout--twocol-section.layout--twocol-section--25-75 .layout__region--second,
+  .layout--twocol-section.layout--twocol-section--75-25 .layout__region--first {
+    flex: 0 1 75%;
+  }
+}
+
+#layout-builder-modal {
+  fieldset legend.h2 {
+    display: block;
+    position: relative;
+    top: auto;
+    color: $black;
+  }
 }

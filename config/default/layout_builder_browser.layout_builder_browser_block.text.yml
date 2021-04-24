@@ -7,5 +7,5 @@ block_id: 'inline_block:text'
 category: media
 label: Text
 weight: null
-image_path: /themes/custom/stvots/images/icons/material/notes.svg
+image_path: /themes/custom/provus/images/icons/material/notes.svg
 image_alt: 'Text icon'
