@@ -10,7 +10,6 @@ dependencies:
     - node.type.county_page
   module:
     - layout_builder
-    - layout_builder_restrictions
     - layout_discovery
     - text
     - user
@@ -40,55 +39,6 @@ third_party_settings:
             additional: {  }
             weight: 1
         third_party_settings: {  }
-  layout_builder_restrictions:
-    entity_view_mode_restriction:
-      allowed_blocks:
-        'Content fields': {  }
-        Forms: {  }
-        Help: {  }
-        'Lists (Views)': {  }
-        Menus: {  }
-        System: {  }
-        User: {  }
-        'User fields': {  }
-        core: {  }
-      allowed_layouts: {  }
-      whitelisted_blocks:
-        'Chaos Tools': {  }
-        'Content fields': {  }
-        'County Blocks': {  }
-        'Custom block types': {  }
-        Facets: {  }
-        Forms: {  }
-        'Geofield Map': {  }
-        Help: {  }
-        'Inline blocks':
-          - 'inline_block:accordion'
-          - 'inline_block:button'
-          - 'inline_block:columns'
-          - 'inline_block:files_list'
-          - 'inline_block:line_separator'
-          - 'inline_block:link_group'
-          - 'inline_block:number_list'
-          - 'inline_block:person_list'
-          - 'inline_block:photo_gallery'
-          - 'inline_block:short_banner'
-          - 'inline_block:social_feed'
-          - 'inline_block:tabs'
-          - 'inline_block:text'
-        'Lists (Views)':
-          - 'views_block:map-block_1'
-          - 'views_block:upcoming_events-block_1'
-        Menus: {  }
-        Sitemap: {  }
-        'Social Feed': {  }
-        System: {  }
-        User: {  }
-        Webform:
-          - webform_block
-        core: {  }
-      blacklisted_blocks: {  }
-    allowed_block_categories: {  }
 id: node.county_page.default
 targetEntityType: node
 bundle: county_page

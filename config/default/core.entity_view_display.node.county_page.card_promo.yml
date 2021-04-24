@@ -11,29 +11,12 @@ dependencies:
     - node.type.county_page
   module:
     - layout_builder
-    - layout_builder_restrictions
     - text
     - user
 third_party_settings:
   layout_builder:
     allow_custom: false
     enabled: false
-  layout_builder_restrictions:
-    entity_view_mode_restriction:
-      allowed_blocks:
-        'Content fields': {  }
-        Forms: {  }
-        Help: {  }
-        'Lists (Views)': {  }
-        Menus: {  }
-        System: {  }
-        User: {  }
-        'User fields': {  }
-        core: {  }
-      allowed_layouts:
-        - layout_onecol
-        - layout_2col_section
-        - layout_3col_section
 id: node.county_page.card_promo
 targetEntityType: node
 bundle: county_page

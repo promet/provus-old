@@ -13,13 +13,13 @@ dependencies:
     - field.field.node.location.field_lat_long
     - field.field.node.location.field_loc_amenities
     - field.field.node.location.field_loc_type
+    - field.field.node.location.field_location_type
     - field.field.node.location.field_media_image
     - field.field.node.location.field_phone
     - node.type.location
   module:
     - geofield_map
     - layout_builder
-    - layout_builder_restrictions
     - options
     - text
     - user
@@ -27,12 +27,6 @@ third_party_settings:
   layout_builder:
     allow_custom: false
     enabled: false
-  layout_builder_restrictions:
-    allowed_block_categories: {  }
-    entity_view_mode_restriction:
-      whitelisted_blocks: {  }
-      blacklisted_blocks: {  }
-      allowed_layouts: {  }
 id: node.location.default
 targetEntityType: node
 bundle: location
