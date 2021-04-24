@@ -5,14 +5,3 @@ dependencies: {  }
 id: media
 label: Media
 weight: null
-blocks:
-  -
-    block_id: 'inline_block:files_list'
-    weight: 0
-    image_path: /themes/custom/provus/images/icons/material/list.svg
-    image_alt: 'Create a list of files'
-  -
-    block_id: 'inline_block:media_item'
-    weight: 0
-    image_path: /themes/custom/provus/images/icons/material/perm_media.svg
-    image_alt: 'Media item icon'

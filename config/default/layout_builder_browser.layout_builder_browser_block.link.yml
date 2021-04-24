@@ -1,0 +1,11 @@
+uuid: be9a02f7-328a-4314-8b0d-ae2db21d50c4
+langcode: en
+status: true
+dependencies: {  }
+id: link
+block_id: 'inline_block:link_group'
+category: widgets
+label: 'Link Group'
+weight: null
+image_path: /themes/custom/provus/images/icons/material/burst_mode.svg
+image_alt: 'Link Group icon'

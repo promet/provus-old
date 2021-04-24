@@ -1,0 +1,11 @@
+uuid: 5945413e-9056-453f-a7ed-21993019c73c
+langcode: en
+status: true
+dependencies: {  }
+id: person_list
+block_id: 'inline_block:person_list'
+category: widgets
+label: 'Person List'
+weight: null
+image_path: /themes/custom/provus/images/icons/material/people.svg
+image_alt: 'Person List icon'

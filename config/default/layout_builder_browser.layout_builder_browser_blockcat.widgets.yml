@@ -5,34 +5,3 @@ dependencies: {  }
 id: widgets
 label: Widgets
 weight: null
-blocks:
-  -
-    block_id: 'inline_block:banner'
-    weight: 0
-    image_path: /themes/custom/provus/images/icons/material/photo_library.svg
-    image_alt: 'Banner icon'
-  -
-    block_id: 'inline_block:link_group'
-    weight: 0
-    image_path: /themes/custom/provus/images/icons/material/burst_mode.svg
-    image_alt: 'Link Group icon'
-  -
-    block_id: simple_instagram_block
-    weight: 0
-    image_path: /themes/custom/provus/images/icons/material/insert_photo.svg
-    image_alt: 'Instagram Icon'
-  -
-    block_id: webform_block
-    weight: 0
-    image_path: /themes/custom/provus/images/icons/material/dynamic_form.svg
-    image_alt: 'Webform Icon'
-  -
-    block_id: 'inline_block:number_list'
-    weight: 0
-    image_path: /themes/custom/provus/images/icons/material/exposure_plus_2.svg
-    image_alt: 'Number group icon'
-  -
-    block_id: 'inline_block:photo_gallery'
-    weight: 0
-    image_path: /themes/custom/provus/images/icons/material/filter.svg
-    image_alt: 'Photo Gallery icon'
