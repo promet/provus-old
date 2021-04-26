@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
+    - core.entity_view_mode.node.card_bordered
   module:
     - node
     - taxonomy
@@ -226,7 +226,8 @@ display:
       row:
         type: 'entity:node'
         options:
-          view_mode: teaser
+          relationship: none
+          view_mode: card_bordered
       header:
         entity_taxonomy_term:
           id: entity_taxonomy_term

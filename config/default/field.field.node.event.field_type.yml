@@ -1,26 +1,26 @@
-uuid: 2139609e-75bc-4cd7-8982-b62ee8ae366a
+uuid: 5f95ad57-4b0f-42e6-b1b1-6794bffd5fed
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_person_type
-    - node.type.person
-    - taxonomy.vocabulary.person_type
-id: node.person.field_person_type
-field_name: field_person_type
+    - field.storage.node.field_type
+    - node.type.event
+    - taxonomy.vocabulary.event_type
+id: node.event.field_type
+field_name: field_type
 entity_type: node
-bundle: person
+bundle: event
 label: Type
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'
   handler_settings:
     target_bundles:
-      person_type: person_type
+      event_type: event_type
     sort:
       field: name
       direction: asc

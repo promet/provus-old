@@ -3,6 +3,6 @@ langcode: en
 status: true
 dependencies: {  }
 id: county_default
-label: 'County Default'
+label: 'Provus Default'
 locked: false
 pattern: 'F j, Y'

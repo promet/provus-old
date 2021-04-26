@@ -7,16 +7,16 @@ dependencies:
 id: articles
 label: Articles
 type: 'canonical_entities:node'
-pattern: '/[node:field_type:value]/[node:title]'
+pattern: '/[node:field_type:entity:name]/[node:title]'
 selection_criteria:
-  b9418f0c-1d68-42d9-ad2c-fb2f881e61d0:
+  71bcf3df-3474-425a-854e-01e8cad47aab:
     id: node_type
     bundles:
-      county_article: county_article
+      provus_article: provus_article
     negate: false
     context_mapping:
       node: node
-    uuid: b9418f0c-1d68-42d9-ad2c-fb2f881e61d0
+    uuid: 71bcf3df-3474-425a-854e-01e8cad47aab
 selection_logic: and
 weight: -10
 relationships: {  }

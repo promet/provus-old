@@ -6,12 +6,12 @@ dependencies:
     - core.entity_view_mode.node.card_bordered
     - field.field.node.event.body
     - field.field.node.event.field_end_date
-    - field.field.node.event.field_event_type
     - field.field.node.event.field_file
     - field.field.node.event.field_location
     - field.field.node.event.field_media_image
     - field.field.node.event.field_monthly_event
     - field.field.node.event.field_start_date
+    - field.field.node.event.field_type
     - field.field.node.event.field_weekly_event
     - node.type.event
   module:
@@ -57,11 +57,11 @@ content:
     third_party_settings: {  }
 hidden:
   field_end_date: true
-  field_event_type: true
   field_file: true
   field_location: true
   field_monthly_event: true
   field_start_date: true
+  field_type: true
   field_weekly_event: true
   langcode: true
   links: true

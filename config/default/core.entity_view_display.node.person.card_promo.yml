@@ -10,10 +10,11 @@ dependencies:
     - field.field.node.person.field_last_name
     - field.field.node.person.field_location
     - field.field.node.person.field_media_image
-    - field.field.node.person.field_person_type
+    - field.field.node.person.field_middle_name
     - field.field.node.person.field_phone
     - field.field.node.person.field_sort_order
     - field.field.node.person.field_titles
+    - field.field.node.person.field_type
     - node.type.person
   module:
     - layout_builder
@@ -76,9 +77,9 @@ content:
 hidden:
   field_email: true
   field_middle_name: true
-  field_person_type: true
   field_phone: true
   field_sort_order: true
   field_titles: true
+  field_type: true
   langcode: true
   search_api_excerpt: true

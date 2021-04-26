@@ -1,17 +1,17 @@
-uuid: 28c1a9b3-fdb7-41cb-943c-94cd85c80997
+uuid: 5b182f43-8d67-4d6e-a768-c4ba4977f078
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_location_type
-    - node.type.location
-    - taxonomy.vocabulary.location_type
-id: node.location.field_location_type
-field_name: field_location_type
+    - field.storage.node.field_type
+    - node.type.provus_article
+    - taxonomy.vocabulary.article_type
+id: node.provus_article.field_type
+field_name: field_type
 entity_type: node
-bundle: location
+bundle: provus_article
 label: Type
-description: 'Type of location or facility.'
+description: ''
 required: false
 translatable: false
 default_value: {  }
@@ -20,7 +20,7 @@ settings:
   handler: 'default:taxonomy_term'
   handler_settings:
     target_bundles:
-      location_type: location_type
+      article_type: article_type
     sort:
       field: name
       direction: asc

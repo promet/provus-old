@@ -1,21 +1,29 @@
-uuid: 4438d452-7bfb-4f25-972b-e3fd54af6e3b
+uuid: 55ea8711-27d6-40c6-814e-ed5d970e3b1e
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_type
     - node.type.county_article
-  module:
-    - options
+    - taxonomy.vocabulary.article_type
 id: node.county_article.field_type
 field_name: field_type
 entity_type: node
 bundle: county_article
 label: Type
 description: ''
-required: true
-translatable: false
+required: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
-settings: {  }
-field_type: list_string
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      article_type: article_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

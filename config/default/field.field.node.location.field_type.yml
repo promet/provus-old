@@ -1,29 +1,29 @@
-uuid: 4b14d6a6-f9a9-4018-bed5-8cbb03996ff2
+uuid: a35ecbc5-9584-41ce-8847-a09391faa3f4
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_event_type
-    - node.type.event
-    - taxonomy.vocabulary.event_type
-id: node.event.field_event_type
-field_name: field_event_type
+    - field.storage.node.field_type
+    - node.type.location
+    - taxonomy.vocabulary.location_type
+id: node.location.field_type
+field_name: field_type
 entity_type: node
-bundle: event
+bundle: location
 label: Type
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'
   handler_settings:
     target_bundles:
-      event_type: event_type
+      location_type: location_type
     sort:
       field: name
       direction: asc
     auto_create: false
-    auto_create_bundle: event_type
+    auto_create_bundle: ''
 field_type: entity_reference

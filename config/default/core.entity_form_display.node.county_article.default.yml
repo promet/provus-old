@@ -56,10 +56,14 @@ content:
     type: datetime_default
     region: content
   field_type:
-    weight: 122
-    settings: {  }
+    weight: 128
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
-    type: options_select
+    type: entity_reference_autocomplete
     region: content
   langcode:
     type: language_select

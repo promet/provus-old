@@ -13,7 +13,6 @@ dependencies:
   module:
     - datetime
     - layout_builder
-    - options
     - text
     - user
 third_party_settings:
@@ -50,13 +49,6 @@ content:
     third_party_settings: {  }
     type: datetime_default
     region: content
-  field_type:
-    weight: 102
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    type: list_default
-    region: content
   links:
     weight: 100
     region: content
@@ -64,5 +56,6 @@ content:
     third_party_settings: {  }
 hidden:
   field_file: true
+  field_type: true
   langcode: true
   search_api_excerpt: true

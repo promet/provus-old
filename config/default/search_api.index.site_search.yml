@@ -10,8 +10,7 @@ dependencies:
   config:
     - field.storage.node.field_last_name
     - field.storage.node.field_sort_order
-    - field.storage.node.field_person_type
-    - search_api.server.solr
+    - search_api.server.database_server
     - core.entity_view_mode.node.full
 third_party_settings:
   search_api_solr:
@@ -72,14 +71,6 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_last_name
-  field_person_type:
-    label: Type
-    datasource_id: 'entity:node'
-    property_path: field_person_type
-    type: integer
-    dependencies:
-      config:
-        - field.storage.node.field_person_type
   field_sort_order:
     label: 'Sort Order'
     datasource_id: 'entity:node'
@@ -254,10 +245,11 @@ processor_settings:
     weights:
       preprocess_index: -6
       preprocess_query: -6
+    ignored: ._-
 tracker_settings:
   default:
     indexing_order: fifo
 options:
   index_directly: true
   cron_limit: 50
-server: solr
+server: database_server

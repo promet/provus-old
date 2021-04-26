@@ -1,0 +1,44 @@
+uuid: ecadcf44-a2c2-4480-a893-d7251294841e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_result
+    - field.field.node.provus_article.body
+    - field.field.node.provus_article.field_file
+    - field.field.node.provus_article.field_media_image
+    - field.field.node.provus_article.field_publish_date
+    - field.field.node.provus_article.field_type
+    - node.type.provus_article
+  module:
+    - layout_builder
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: node.provus_article.search_result
+targetEntityType: node
+bundle: provus_article
+mode: search_result
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  search_api_excerpt:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_file: true
+  field_media_image: true
+  field_publish_date: true
+  field_type: true
+  langcode: true
+  links: true
