@@ -1,0 +1,40 @@
+{{ attach_library('provus/bootstrap') }}
+
+{% set numbergroup__base_class = 'tabbed' %}
+
+<div {{ bem(numbergroup__base_class) }}>
+
+  <div {{ bem('inner', [], numbergroup__base_class) }}>
+
+    <ul class="nav nav-pills" id="pills-tab" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="pills-0-tab" data-toggle="pill" href="#pills-0" role="tab" aria-controls="pills-0" aria-selected="true">Popular Topics</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="pills-1-tab" data-toggle="pill" href="#pills-1" role="tab" aria-controls="pills-0" aria-selected="true">Resources</a>
+      </li>
+    </ul>
+
+    <div class="tab-content" id="pills-tabContent">
+      <div class="tab-pane fade show active" id="pills-0" role="tabpanel" aria-labelledby="pills-0-tab">
+        <div class="tabbed-wrapper">
+          {% include "@organisms/group/quicklinks/quicklinks.twig" with {
+            'title': '',
+            'content': topics.content,
+            }
+          %}
+        </div>
+      </div>
+      <div class="tab-pane fade" id="pills-1" role="tabpanel" aria-labelledby="pills-1-tab">
+        <div class="tabbed-wrapper">
+          {% include "@organisms/group/quicklinks/quicklinks.twig" with {
+            'title': '',
+            'icons': true,
+            'content': res.content,
+            }
+          %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

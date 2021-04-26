@@ -7,12 +7,10 @@
 #drupal-off-canvas :not(div) {
   color: #333;
   background: #FFF;
-  font-family: "Lucida Grande", "Lucida Sans Unicode", "liberation sans", sans-serif;
-  display: block;
 
   img {
     float: left;
-    padding: 0 10px 0 0;
+    padding: 5px 10px 0 0;
   }
 
   select[multiple] {
@@ -116,5 +114,15 @@
     position: relative;
     top: auto;
     color: $black;
+  }
+}
+
+.media-library-widget-modal {
+  button.i-dialog-titlebar-close {
+    width: 30px;
+    height: 30px;
+    border: 1px solid $gray;
+    border-radius: 5px;
+    top: 1em;
   }
 }

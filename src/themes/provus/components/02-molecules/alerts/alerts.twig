@@ -23,8 +23,8 @@
 #}
 {% set card__base_class = 'alerts' %}
 
-<div {{ bem(card__base_class, card__modifiers, card__blockname, card__extra_classes) }}>
-  <div {{ bem('wrapper', card__content__modifiers, card__base_class) }}>
+<div {{ bem(card__base_class, card__modifiers) }}>
+  <div {{ bem('wrapper', card__modifiers, card__base_class) }}>
     <span class="material-icons" aria-hidden="true">error</span> <span><span class="title">{{ title }}</span><span class="description">{{ description }}</span></span>
   </div>
 </div>

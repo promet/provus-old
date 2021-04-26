@@ -2,7 +2,7 @@
   display: block;
   margin: 0 0 2px 0;
   padding: 9px 17px;
-  background-color: $red;
+  background-color: $alert;
 
   &__wrapper {
     display: flex;
@@ -12,11 +12,11 @@
     .material-icons {
       margin-top: 8px;
       margin-right: 14px;
-      color: $white;
+      color: $black;
     }
 
     span {
-      color: $white;
+      color: $black;
       font-size: 0.875rem;
 
       .title {
@@ -31,7 +31,7 @@
         }
 
         a {
-          color: $white;
+          color: $black;
         }
       }
     }

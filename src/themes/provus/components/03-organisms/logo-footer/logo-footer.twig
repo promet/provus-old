@@ -1,10 +1,10 @@
-{% set footer__logo_src = directory ? '/' ~ directory ~ '/images/logo.png' : 'images/logo.png' %}
+{% set footer__logo_src = directory ? '/' ~ directory ~ '/images/logo-footer.png' : 'images/logo-footer.png' %}
 
 <div class="logo-img">
   {% block footer__branding %}
     {% embed "@atoms/links/link/link.twig" with {
       link_base_class: 'logo-link',
-      link_url: 'https://www.ocgov.com',
+      link_url: 'https://prometsource.com',
     } %}
       {% block link_content %}
         {% include "@atoms/images/image/responsive-image.twig" with {
@@ -18,6 +18,6 @@
   {% endblock %}
 </div>
 <div class="logo-text">
-  <p>County Directory Assistance</p>
-  <p><a href="tel:+1-855-886-5400">855.886.5400</a></p>
+  <p>Contact us for a demo</p>
+  <p><a href="tel:+1-773-525-8255">(773) 525-8255</a></p>
 </div>

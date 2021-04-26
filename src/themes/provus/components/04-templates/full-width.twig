@@ -4,13 +4,15 @@
       "place_holder": "Pre Content",
     } %}
   {% endblock %}
-  {% block page_content %}
-    {% include "@templates/placeholder/place-holder.twig" with {
-      "place_holder": "Primary Content",
-    } %}
-  {% endblock %}
-  {% block page_postcontent %}
-    {% include "@templates/placeholder/place-holder.twig" with {
-      "place_holder": "Post Content",
-    } %}
-  {% endblock %}
+  <div id="block-provus-content" class="block system-main-block">
+    {% block page_content %}
+      {% include "@templates/placeholder/place-holder.twig" with {
+        "place_holder": "Primary Content",
+      } %}
+    {% endblock %}
+    {% block page_postcontent %}
+      {% include "@templates/placeholder/place-holder.twig" with {
+        "place_holder": "Post Content",
+      } %}
+    {% endblock %}
+  </div>
