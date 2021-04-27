@@ -1,0 +1,228 @@
+<?php
+
+/**
+ * @file
+ * Contains provus_blocks.module.
+ */
+
+use Drupal\block\Entity\Block;
+use Drupal\Component\Utility\Html;
+use Drupal\Core\Access\AccessResult;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Session\AccountInterface;
+use Drupal\provus_blocks\ProvusBlocksHelper;
+use Drupal\node\NodeInterface;
+
+/**
+ * Implements hook_help().
+ */
+function provus_blocks_help($route_name, RouteMatchInterface $route_match) {
+  $x = [
+    '```php' => '<code>',
+    '```'    => '</code>',
+    "\n"     => "\n<br />",
+  ];
+  switch ($route_name) {
+    case 'help.page.provus_blocks':
+      $txt = file_get_contents(drupal_get_path('module', 'provus_blocks') . '/README.md');
+      return str_replace(array_keys($x), array_values($x), Html::escape($txt));
+  }
+  return '';
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function provus_blocks_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  // Alter link group form on blocks editing page.
+  $form_ids_blockcontent = [
+    'block_content_link_group_edit_form',
+    'block_content_link_group_form',
+  ];
+  if (in_array($form_id, $form_ids_blockcontent)) {
+    $form = provus_blocks_alter_block($form);
+  }
+
+  // Alter tabs form on blocks editing page.
+  $form_ids_tabs = [
+    'block_content_tabs_edit_form',
+    'block_content_tabs_edit_form',
+  ];
+  if (in_array($form_id, $form_ids_tabs)) {
+    $form = provus_blocks_process_tabs($form);
+  }
+
+  // Alter link group and tabs on layout builder forms.
+  $form_ids_layoutbuilder = [
+    'layout_builder_update_block',
+    'layout_builder_add_block',
+  ];
+  if (in_array($form_id, $form_ids_layoutbuilder)) {
+    $form['settings']['block_form']['#process'][] = 'provus_blocks_process_layoutbuilder_block';
+  }
+}
+
+/**
+ * Process callback for custom block form.
+ */
+function provus_blocks_process_layoutbuilder_block(array $element, FormStateInterface $form_state) {
+  if ((isset($element['#block']) && $element['#block']->bundle() == 'link_group') ||
+    (isset($element['#bundle']) && $element['#bundle'] == 'link_group')) {
+    $parents = !empty($element['#parents']) ? $element['#parents'] : [];
+    $element = provus_blocks_alter_block($element, $parents);
+  }
+  if (isset($element['#block']) && $element['#block']->bundle() == 'tabs') {
+    $element = provus_blocks_process_tabs($element);
+  }
+  return $element;
+}
+
+/**
+ * Process callback for custom block form.
+ */
+function provus_blocks_process_tabs(array $form) {
+  if (!empty($form['field_tab_items']['widget']['entities'][0])) {
+    foreach ($form['field_tab_items']['widget']['entities'] as $delta => $subform) {
+      if (is_numeric($delta) && !empty($form['field_tab_items']['widget']['entities'][$delta]['form']['inline_entity_form'])) {
+        $form['field_tab_items']['widget']['entities'][$delta]['form']['inline_entity_form']['#process'][] = 'provus_blocks_process_layoutbuilder_block';
+      }
+    }
+  }
+  if (!empty($form['field_tab_items']['widget']['form']['inline_entity_form'])) {
+    $form['field_tab_items']['widget']['form']['inline_entity_form']['#process'][] = 'provus_blocks_process_layoutbuilder_block';
+  }
+  return $form;
+}
+
+/**
+ * Alter callback for custom block form.
+ */
+function provus_blocks_alter_block($element, $parents = []) {
+  if (empty($parents)) {
+    $group_source_name = 'field_group_source';
+    $group_display_name = 'field_group_display';
+  }
+  else {
+    $parent_path = '';
+    foreach ($parents as $path) {
+      $parent_path .= (empty($parent_path)) ? $path : '[' . $path . ']';
+    }
+    $group_source_name = $parent_path . '[field_group_source]';
+    $group_display_name = $parent_path . '[field_group_display]';
+    $content_type_name = $parent_path . '[field_content_type]';
+  }
+  $element['field_content_type']['#states'] = [
+    'visible' => [
+      'select[name="' . $group_source_name . '"]' => ['value' => 'auto'],
+    ],
+  ];
+  $element['field_count']['#states'] = [
+    'visible' => [
+      'select[name="' . $group_source_name . '"]' => ['value' => 'auto'],
+    ],
+  ];
+  $element['field_automatic_sort']['#states'] = [
+    'visible' => [
+      'select[name="' . $group_source_name . '"]' => ['value' => 'auto'],
+    ],
+  ];
+  $element['field_automatic_sort']['#states'] = [
+    'visible' => [
+      'select[name="' . $group_source_name . '"]' => ['value' => 'auto'],
+    ],
+  ];
+  $element['field_automatic_offset']['#states'] = [
+    'visible' => [
+      'select[name="' . $group_source_name . '"]' => ['value' => 'auto'],
+    ],
+  ];
+  $element['field_automatic_pager']['#states'] = [
+    'visible' => [
+      'select[name="' . $group_source_name . '"]' => ['value' => 'auto'],
+    ],
+  ];
+  $element['field_content_references']['#states'] = [
+    'visible' => [
+      'select[name="' . $group_source_name . '"]' => ['value' => 'manual_content'],
+    ],
+  ];
+  $element['field_block_items']['#states'] = [
+    'visible' => [
+      'select[name="' . $group_source_name . '"]' => ['value' => 'manual_inline'],
+    ],
+  ];
+  $element['field_automatic_article_type']['#states'] = [
+    'visible' => [
+      'select[name="' . $content_type_name . '"]' => ['value' => 'provus_article'],
+      'select[name="' . $group_source_name . '"]' => ['value' => 'auto'],
+    ],
+  ];
+  $element['field_automatic_person_type']['#states'] = [
+    'visible' => [
+      'select[name="' . $content_type_name . ']' => ['value' => 'person'],
+      'select[name="' . $group_source_name . '"]' => ['value' => 'auto'],
+    ],
+  ];
+  $element['field_automatic_location_type']['#states'] = [
+    'visible' => [
+      'select[name="' . $content_type_name . '"]' => ['value' => 'location'],
+      'select[name="' . $group_source_name . '"]' => ['value' => 'auto'],
+    ],
+  ];
+  $element['field_automatic_event_type']['#states'] = [
+    'visible' => [
+      'select[name="' . $content_type_name . '"]' => ['value' => 'event'],
+      'select[name="' . $group_source_name . '"]' => ['value' => 'auto'],
+    ],
+  ];
+  $element['field_item_display']['#states'] = [
+    'visible' => [
+      ':input[name="' . $group_display_name . '"]' => [
+        ['value' => "column"],
+        ['value' => "grid_1"],
+        ['value' => "grid_2"],
+        ['value' => "grid_3"],
+        ['value' => "grid_4"],
+      ],
+    ],
+  ];
+
+  return $element;
+}
+
+/**
+ * Implements hook_block_access().
+ *
+ * Hide the page title for some node types while still showing it
+ * on all other node types, and non-node pages.
+ */
+function provus_blocks_block_access(Block $block, $operation, AccountInterface $account) {
+  $disallowedTypes = [
+    'event',
+    'location',
+  ];
+  if ($operation === 'view' && $block->getPluginId() == 'page_title_block') {
+    $node = \Drupal::routeMatch()->getParameter('node');
+    if ($node instanceof NodeInterface) {
+      if (in_array($node->bundle(), $disallowedTypes)) {
+        return AccessResult::forbidden();
+      }
+    }
+  }
+  return AccessResult::neutral();
+}
+
+/**
+ * Implements hook_theme().
+ */
+function provus_blocks_theme($existing, $type, $theme, $path) {
+  return [
+    'provus_blocks_social_links' => [
+      'template' => 'provus-blocks--social-links',
+      'variables' => [
+        'data' => [],
+      ],
+    ],
+  ];
+}

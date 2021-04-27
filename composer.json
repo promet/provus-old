@@ -11,6 +11,18 @@
       {
         "type":"package",
         "package": {
+          "name": "harvesthq/chosen",
+          "version": "1.8.7",
+          "type": "drupal-library",
+          "dist": {
+            "url": "https://github.com/harvesthq/chosen/releases/download/v1.8.7/chosen_v1.8.7.zip",
+            "type": "zip"
+          }
+        }
+      },
+      {
+        "type":"package",
+        "package": {
           "name": "enyo/dropzone",
           "version": "5.7",
           "type": "drupal-library",
@@ -34,7 +46,7 @@
       },
       {
         "type": "path",
-        "url": "src/modules/county_blocks"
+        "url": "src/modules/provus_blocks"
       }
     ],
     "require": {
@@ -45,6 +57,7 @@
         "drupal/antibot": "^1.4",
         "drupal/auto_entitylabel": "^3.0@beta",
         "drupal/calendar_link": "^1.1",
+        "drupal/chosen": "^3.0",
         "drupal/components": "^1.1",
         "drupal/config_ignore": "^2.2",
         "drupal/console": "^1.0.2",
@@ -94,10 +107,12 @@
         "drupal/viewsreference": "^1.4",
         "drupal/webform": "^5.9",
         "drush/drush": "^9.0.0",
-        "geocoder-php/google-maps-provider": "^4.4",
-        "jsanahuja/jqueryinstagramfeed": "dev-master",
         "enyo/dropzone": "5.7",
+        "geocoder-php/google-maps-provider": "^4.4",
+        "harvesthq/chosen": "^1.8",
+        "jsanahuja/jqueryinstagramfeed": "dev-master",
         "kporras07/composer-symlinks": "dev-master",
+        "oomphinc/composer-installers-extender": "^2.0",
         "symfony/event-dispatcher": "4.3.4 as 3.4.99",
         "vlucas/phpdotenv": "^2.4",
         "webflo/drupal-finder": "^1.0.0",
@@ -161,7 +176,9 @@
         },
         "installer-paths": {
             "web/core": ["type:drupal-core"],
-            "web/libraries/{$name}": ["type:drupal-library"],
+            "web/libraries/{$name}": [
+              "type:drupal-library"
+            ],
             "web/modules/contrib/{$name}": ["type:drupal-module"],
             "web/profiles/contrib/{$name}": ["type:drupal-profile"],
             "web/themes/contrib/{$name}": ["type:drupal-theme"],

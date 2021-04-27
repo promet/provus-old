@@ -9,7 +9,7 @@ dependencies:
 id: twitterblock
 theme: provus
 region: content
-weight: 0
+weight: -2
 provider: null
 plugin: twitter_post_block
 settings:

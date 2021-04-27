@@ -72,7 +72,7 @@ display:
         options:
           view_modes:
             'entity:node':
-              county_article: search_result
+              provus_article: search_result
               county_page: search_result
               event: search_result
               faq: search_result

@@ -1,0 +1,29 @@
+uuid: 910e577f-13ee-43ff-a0ee-b49590aed0c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.link_group
+    - field.storage.block_content.field_automatic_person_type
+    - taxonomy.vocabulary.person_type
+id: block_content.link_group.field_automatic_person_type
+field_name: field_automatic_person_type
+entity_type: block_content
+bundle: link_group
+label: 'Automatic Person Type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      person_type: person_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

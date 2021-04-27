@@ -1,31 +1,28 @@
-uuid: 5d2badca-6a90-4c7e-abc0-68df7736abd3
+uuid: c748b88e-fc13-4d1b-af96-f141cf8e794e
 langcode: en
 status: true
 dependencies:
   module:
     - block_content
     - options
-id: block_content.field_content_type
-field_name: field_content_type
+id: block_content.field_automatic_sort
+field_name: field_automatic_sort
 entity_type: block_content
 type: list_string
 settings:
   allowed_values:
     -
-      value: provus_page
-      label: Page
+      value: newest
+      label: Newest
     -
-      value: provus_article
-      label: Article
+      value: oldest
+      label: Oldest
     -
-      value: event
-      label: Event
+      value: post
+      label: 'Post Date (article type only)'
     -
-      value: location
-      label: Location
-    -
-      value: person
-      label: Person
+      value: title
+      label: Title
   allowed_values_function: ''
 module: options
 locked: false

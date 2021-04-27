@@ -1,9 +1,9 @@
-uuid: 73baff6d-9120-4e48-ba96-c64941dc4c7a
+uuid: 6defe75a-a204-494e-846e-ff9bb6c59ed3
 langcode: en
 status: true
 dependencies:
   module:
-    - county_blocks
+    - provus_blocks
   theme:
     - provus
 id: nodepagetop
@@ -15,6 +15,6 @@ plugin: node_page_top
 settings:
   id: node_page_top
   label: 'Node Page Top'
-  provider: county_blocks
-  label_display: '0'
+  provider: provus_blocks
+  label_display: visible
 visibility: {  }

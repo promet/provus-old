@@ -5,7 +5,6 @@ dependencies:
   config:
     - block_content.type.link_group
     - field.storage.block_content.field_content_references
-    - node.type.county_article
     - node.type.county_page
     - node.type.event
     - node.type.faq
@@ -26,7 +25,6 @@ settings:
   handler: 'default:node'
   handler_settings:
     target_bundles:
-      county_article: county_article
       event: event
       faq: faq
       landing_page: landing_page
@@ -36,5 +34,5 @@ settings:
     sort:
       field: _none
     auto_create: false
-    auto_create_bundle: county_article
+    auto_create_bundle: null
 field_type: entity_reference

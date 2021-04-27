@@ -838,7 +838,7 @@ function provus_preprocess_person_list(&$vars, $block) {
  */
 function provus_automatic_get_ids($content_type, $count) {
   // Do special processing for articles.
-  if (strpos($content_type, 'county_article-') === 0) {
+  if (strpos($content_type, 'provus_article-') === 0) {
     list($content_type, $type) = explode('-', $content_type);
   }
   $query = \Drupal::entityQuery('node')
