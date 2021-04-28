@@ -18,9 +18,6 @@ settings:
       value: oldest
       label: Oldest
     -
-      value: post
-      label: 'Post Date (article type only)'
-    -
       value: title
       label: Title
   allowed_values_function: ''

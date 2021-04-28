@@ -32,6 +32,86 @@ function provus_blocks_help($route_name, RouteMatchInterface $route_match) {
 }
 
 /**
+ * Implements hook_preprocess_field().
+ */
+function provus_blocks_preprocess_field(&$vars) {
+  // Make sure the referenced blocks run through theme later.
+  if ($vars['entity_type'] == 'block_content' && ($vars['field_name'] == 'field_tab_items' || $vars['field_name'] == 'field_block_items')) {
+    foreach ($vars['items'] as $key => $item) {
+      if (!empty($item['content']['#block_content'])) {
+        $vars['items'][$key]['block_uuid'] = 'block_content:' . $item['content']['#block_content']->uuid();
+        $vars['items'][$key]['block_title'] = $item['content']['#block_content']->label();
+      }
+    }
+  }
+  // Add button classes to field link fields.
+  if ($vars['field_name'] == 'field_link') {
+    foreach ($vars['items'] as $key => $item) {
+      if (!empty($item['content']['#url'])) {
+        $vars['items'][$key]['content']['#options'] = ['attributes' => ['class' => 'button button--secondary']];
+      }
+    }
+  }
+  // Accordion items.
+  if ($vars['field_name'] == 'field_accordion_items') {
+    $vars['id'] = rand(10000,100000);
+    foreach ($vars['items'] as $key => $item) {
+      if (!empty($item['content']['#block_content'])) {
+        $vars['items'][$key]['item_heading'] = $item['content']['#block_content']->get('field_heading')->view('default');
+        $vars['items'][$key]['item_body'] = $item['content']['#block_content']->get('field_body')->view('default');
+      }
+    }
+  }
+  // Carousel items Photo gallery.
+  if ($vars['field_name'] == 'field_gallery_photos') {
+    foreach ($vars['items'] as $key => $item) {
+      if (isset($item['content']['#media'])) {
+        $fid = $item['content']['#media']->getSource()->getSourceFieldValue($item['content']['#media']);
+        $file = File::load($fid);
+        $url_full = $file->url();
+        $style = ImageStyle::load('thumbnail');
+        $url_thumbnail = $style->buildUrl($file->getFileUri());
+        $vars['items'][$key]['image_thumb_src'] = $url_thumbnail;
+        $vars['items'][$key]['image_src'] = $url_full;
+        $vars['items'][$key]['image_alt'] = $item['content']['#media']->get('field_media_image')->first()->get('alt')->getString();
+      }
+    }
+  }
+  // Add field name to class.
+  $vars['attributes']['class'][] = Html::cleanCssIdentifier($vars['field_name']);
+}
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter().
+ */
+function provus_blocks_theme_suggestions_block_alter(&$suggestions, $vars) {
+  if (!empty($vars['elements']['content']['#block_content'])) {
+    $block = $vars['elements']['content']['#block_content'];
+    $block_type = $block->bundle();
+    $base_suggestion = 'block__' . $block_type;
+    $suggestions[] = $base_suggestion;
+    if (!empty($vars['elements']['content']['#view_mode'])) {
+      $suggestions[] = $base_suggestion . '__' . $vars['elements']['content']['#view_mode'];
+    }
+    switch ($block_type) {
+      case 'link_group':
+        // Get group display.
+        $group_display = $block->get('field_group_display')->getValue()[0]['value'];
+        $display_type = explode('_', $group_display);
+        $suggestions[] = $base_suggestion . '__' . $group_display;
+        $suggestions[] = $base_suggestion . '__' . $display_type[0];
+        break;
+
+      default:
+        break;
+    }
+
+  }
+  return $suggestions;
+}
+
+
+/**
  * Implements hook_form_FORM_ID_alter().
  */
 function provus_blocks_form_alter(&$form, FormStateInterface $form_state, $form_id) {
@@ -102,6 +182,8 @@ function provus_blocks_alter_block($element, $parents = []) {
   if (empty($parents)) {
     $group_source_name = 'field_group_source';
     $group_display_name = 'field_group_display';
+    $content_type_name = 'field_content_type';
+    $pager_name = 'field_automatic_pager[value]';
   }
   else {
     $parent_path = '';
@@ -111,6 +193,7 @@ function provus_blocks_alter_block($element, $parents = []) {
     $group_source_name = $parent_path . '[field_group_source]';
     $group_display_name = $parent_path . '[field_group_display]';
     $content_type_name = $parent_path . '[field_content_type]';
+    $pager_name = $parent_path . '[field_automatic_pager][value]';
   }
   $element['field_content_type']['#states'] = [
     'visible' => [
@@ -118,11 +201,6 @@ function provus_blocks_alter_block($element, $parents = []) {
     ],
   ];
   $element['field_count']['#states'] = [
-    'visible' => [
-      'select[name="' . $group_source_name . '"]' => ['value' => 'auto'],
-    ],
-  ];
-  $element['field_automatic_sort']['#states'] = [
     'visible' => [
       'select[name="' . $group_source_name . '"]' => ['value' => 'auto'],
     ],
@@ -140,6 +218,13 @@ function provus_blocks_alter_block($element, $parents = []) {
   $element['field_automatic_pager']['#states'] = [
     'visible' => [
       'select[name="' . $group_source_name . '"]' => ['value' => 'auto'],
+      ':input[name="' . $group_display_name . '"]' => [
+        ['value' => "column"],
+        ['value' => "grid_1"],
+        ['value' => "grid_2"],
+        ['value' => "grid_3"],
+        ['value' => "grid_4"],
+      ],
     ],
   ];
   $element['field_content_references']['#states'] = [
@@ -160,7 +245,7 @@ function provus_blocks_alter_block($element, $parents = []) {
   ];
   $element['field_automatic_person_type']['#states'] = [
     'visible' => [
-      'select[name="' . $content_type_name . ']' => ['value' => 'person'],
+      'select[name="' . $content_type_name . '"]' => ['value' => 'person'],
       'select[name="' . $group_source_name . '"]' => ['value' => 'auto'],
     ],
   ];
@@ -174,6 +259,19 @@ function provus_blocks_alter_block($element, $parents = []) {
     'visible' => [
       'select[name="' . $content_type_name . '"]' => ['value' => 'event'],
       'select[name="' . $group_source_name . '"]' => ['value' => 'auto'],
+    ],
+  ];
+  $element['field_automatic_number_per_page']['#states'] = [
+    'visible' => [
+      'input[name="' . $pager_name . '"]' => ['checked' => TRUE],
+      'select[name="' . $group_source_name . '"]' => ['value' => 'auto'],
+      ':input[name="' . $group_display_name . '"]' => [
+        ['value' => "column"],
+        ['value' => "grid_1"],
+        ['value' => "grid_2"],
+        ['value' => "grid_3"],
+        ['value' => "grid_4"],
+      ],
     ],
   ];
   $element['field_item_display']['#states'] = [
@@ -225,4 +323,433 @@ function provus_blocks_theme($existing, $type, $theme, $path) {
       ],
     ],
   ];
+}
+
+/**
+ * Preprocess function for link group.
+ */
+function _provus_blocks_preprocess_linkgroup(&$vars, $block) {
+  // Get source.
+  $group_source = $block->get('field_group_source')->getValue()[0]['value'];
+  // Get group display.
+  $group_display = $block->get('field_group_display')->getValue()[0]['value'];
+  $display_type = explode('_', $group_display);
+  $vars['number'] = !empty($display_type[1]) ? $display_type[1] : NULL;
+  // Get item display.
+  $item_display = $block->get('field_item_display')->getValue()[0]['value'];
+  // Override item display for certain group displays.
+  $item_display = _provus_blocks_override_item_display($group_display, $item_display);
+  $vars['display_content'] = $item_display;
+
+  // Get content and build blocks.
+  if (!empty($group_source)) {
+    switch ($group_source) {
+      case 'auto':
+        // Set cachetags to use node_list.
+        $cache_tags = $block->getCacheTags();
+        $cache_tags[] = 'node_list';
+        $vars['#cache']['tags'] = $cache_tags;
+        // Get content.
+        $view_builder = \Drupal::entityTypeManager()->getViewBuilder('node');
+        $storage = \Drupal::entityTypeManager()->getStorage('node');
+        $count = $block->get('field_count')->getValue()[0]['value'];
+        $content_type = $block->get('field_content_type')->getValue() ? $block->get('field_content_type')->getValue()[0]['value'] : NULL;
+        $sort_value = $block->get('field_automatic_sort')->getValue() ? $block->get('field_automatic_sort')->getValue()[0]['value'] : NULL;
+        $offset = $block->get('field_automatic_offset')->getValue() ? $block->get('field_automatic_offset')->getValue()[0]['value'] : 0;
+        if ($sort_value == 'title') {
+          $sort = $sort_value;
+        }
+        else {
+          $sort = $sort_value == 'oldest' ? 'ASC' : 'DESC';
+        }
+        $tid = NULL;
+        // Add pager.
+        $page = 0;
+        $pager = $block->get('field_automatic_pager')->getValue() ? $block->get('field_automatic_pager')->getValue()[0]['value'] : NULL;
+        if ($pager) {
+          $num_per_page = $block->get('field_automatic_number_per_page')->getValue() ? $block->get('field_automatic_number_per_page')->getValue()[0]['value'] : NULL;
+          $pager = \Drupal::service('pager.manager')
+            ->createPager($count, $num_per_page);
+          $page = $pager
+            ->getCurrentPage();
+          $vars['pager']['#type'] = 'pager';
+        }
+        switch ($content_type) {
+          case 'location':
+            $target_ids = $block->get('field_automatic_location_type')->getValue();
+            break;
+
+          case 'provus_article':
+            $target_ids = $block->get('field_automatic_article_type')->getValue();
+            break;
+
+          case 'event':
+            $target_ids = $block->get('field_automatic_event_type')->getValue();
+            break;
+
+          case 'person':
+            $target_ids = $block->get('field_automatic_person_type')->getValue();
+            break;
+        }
+        $tids = [];
+        foreach ($target_ids as $target) {
+          $tids[] = $target['target_id'];
+        }
+        if ($pager) {
+          $count = $num_per_page;
+        }
+        $id_array = provus_automatic_get_ids($content_type, $count, $sort, $tids, $offset, $page);
+        if (!empty($id_array)) {
+          foreach ($id_array as $key => $id) {
+            $item_display = ($group_display == 'featured_4' && $key <> 0) ? 'card_mini' : $item_display;
+            $entity = $storage->load($id);
+            if ($entity) {
+              $block_build = $view_builder->view($entity, $item_display);
+              if ($group_display == 'featured_4' && $key == 0) {
+                $vars['block_1'] = $block_build;
+              }
+              else {
+                $vars['blocks'][] = $block_build;
+              }
+            }
+          }
+        }
+        break;
+
+      case 'manual_content':
+        $view_builder = \Drupal::entityTypeManager()->getViewBuilder('node');
+        $storage = \Drupal::entityTypeManager()->getStorage('node');
+        $id_array = $block->get('field_content_references')->getValue();
+        if (!empty($id_array)) {
+          foreach ($id_array as $key => $id) {
+            $item_display = ($group_display == 'featured_4' && $key <> 0) ? 'card_mini' : $item_display;
+            $entity = $storage->load($id['target_id']);
+            if ($entity) {
+              $block_build = $view_builder->view($entity, $item_display);
+              if ($group_display == 'featured_4' && $key == 0) {
+                $vars['block_1'] = $block_build;
+              }
+              else {
+                $vars['blocks'][] = $block_build;
+              }
+            }
+          }
+        }
+        break;
+
+      case 'manual_inline':
+        $view_builder = \Drupal::entityTypeManager()->getViewBuilder('block_content');
+        $storage = \Drupal::entityTypeManager()->getStorage('block_content');
+        $id_array = $block->get('field_block_items')->getValue();
+        if (!empty($id_array)) {
+          foreach ($id_array as $key => $id) {
+            $item_display = ($group_display == 'featured_4' && $key <> 0) ? 'card_mini' : $item_display;
+            $entity = $storage->load($id['target_id']);
+            if (!empty($entity)) {
+              $block_build['content'] = $view_builder->view($entity, $item_display);
+              $block_build['content']['#view_mode'] = $item_display;
+              provus_get_block($block_build, $entity);
+              if ($group_display == 'featured_4' && $key == 0) {
+                $vars['block_1'] = $block_build;
+              }
+              else {
+                $vars['blocks'][] = $block_build;
+              }
+            }
+          }
+        }
+        break;
+    }
+  }
+}
+
+/**
+ * Preprocess function for social feed information.
+ */
+function provus_automatic_get_ids($content_type, $count, $sort = 'DESC', $tids = [], $offset = 0, $page = 0) {
+
+  // Do special processing for articles.
+  if (strpos($content_type, 'provus_article-') === 0) {
+    list($content_type, $type) = explode('-', $content_type);
+  }
+  $query = \Drupal::entityQuery('node')
+    ->condition('status', 1)
+    ->condition('type', $content_type);
+
+  if (!empty($tids)) {
+    $query->condition('field_type', $tids, 'IN');
+  }
+  if ($page > 0) {
+    $offset = ($count * $page) + $offset;
+  }
+  $query->range($offset, $count);
+  if ($sort == 'title') {
+    $query->sort('title', 'ASC');
+  }
+  else {
+    $query->sort('field_publish_date', $sort);
+    $query->sort('created', $sort);
+  }
+  $ids = $query->execute();
+  return array_values($ids);
+}
+
+
+/**
+ * Implements hook_preprocess_block().
+ */
+function provus_blocks_preprocess_block(&$vars) {
+  // Add plugin info into block class.
+  $vars['attributes']['class'][] = Html::cleanCssIdentifier($vars['plugin_id']);
+  // Check if block is child to determine title size.
+  $vars['ischild'] = !empty($vars['elements']['content']['#ischild']) ? TRUE : FALSE;
+  // Preprocess custom blocks.
+  if (!empty($vars['elements']['content']['#block_content'])) {
+    $block = $vars['elements']['content']['#block_content'];
+    $block_type = $block->bundle();
+    // Add block type to class.
+    $vars['attributes']['class'][] = Html::cleanCssIdentifier('block-' . $block_type);
+
+    if ($block_type == 'banner') {
+      _provus_blocks_preprocess_banner($vars, $block);
+    }
+    if ($block_type == 'short_banner') {
+      _provus_blocks_preprocess_short_banner($vars, $block);
+    }
+    elseif ($block_type == 'link_group') {
+      _provus_blocks_preprocess_linkgroup($vars, $block);
+    }
+    elseif ($block_type == 'tabs') {
+      _provus_blocks_preprocess_tabs($vars, $block);
+    }
+    elseif ($block_type == 'columns') {
+      _provus_blocks_preprocess_columns($vars, $block);
+    }
+    elseif ($block_type == 'social_feed') {
+      _provus_blocks_preprocess_social_feed($vars, $block);
+    }
+    elseif ($block_type == 'files_list') {
+      _provus_blocks_preprocess_fileslist($vars, $block);
+    }
+    elseif ($block_type == 'accordion') {
+      _provus_blocks_preprocess_accordion($vars, $block);
+    }
+    elseif ($block_type == 'person_list') {
+      _provus_blocks_preprocess_person_list($vars, $block);
+    }
+  }
+  // Add field type to class.
+  if (!empty($vars['elements']['content']['#field_type'])) {
+    $vars['attributes']['class'][] = Html::cleanCssIdentifier('field-' . $vars['elements']['content']['#field_type']);
+  }
+}
+
+/**
+ * Preprocess function for banner_inside.
+ */
+function _provus_blocks_preprocess_short_banner(&$vars, $block) {
+  // Get heading and body.
+  $vars['heading'] = $block->get('field_heading')->getString();
+  $vars['body'] = $block->get('field_subheading')->getString();
+
+  // Get background.
+  $background_image = $block->get('field_media_image')->referencedEntities();
+  if (!empty($background_image[0])) {
+    $background_image_fid = $background_image[0]->get('field_media_image')->target_id;
+    $background_image_file = File::load($background_image_fid);
+    $vars['image_src'] = $background_image_file->url();
+    $vars['image_alt'] = $background_image[0]->get('field_media_image')->alt;
+  }
+}
+
+/**
+ * Preprocess function for banner.
+ */
+function _provus_blocks_preprocess_banner(&$vars, $block) {
+  // Get heading and body.
+  $vars['heading'] = $block->get('field_heading')->getString();
+  $vars['body'] = $block->get('field_subheading')->getString();
+  // Get logo.
+  $logo_image = $block->get('field_logo_image')->referencedEntities();
+  if (!empty($logo_image[0])) {
+    $logo_fid = $logo_image[0]->get('field_media_image')->target_id;
+    $logo_file = File::load($logo_fid);
+    $vars['logo_src'] = $logo_file->url();
+    $vars['logo_alt'] = $logo_image[0]->get('field_media_image')->alt;
+  }
+  // Get person picture.
+  $person_picture = $block->get('field_person_picture')->referencedEntities();
+  if (!empty($person_picture[0])) {
+    $person_picture_fid = $person_picture[0]->get('field_media_image')->target_id;
+    $person_picture_file = File::load($person_picture_fid);
+    $vars['picture_src'] = $person_picture_file->url();
+    $vars['picture_alt'] = $person_picture[0]->get('field_media_image')->alt;
+    $vars['settings']['picture'] = TRUE;
+  }
+  // Get number of images.
+  $vars['items'] = $block->get('field_media_image')->referencedEntities();
+  // Get search.
+  $vars['settings']['search'] = $block->get('field_include_search')->getValue()[0]['value'];
+  $vars['settings']['search__button__text'] = t('Search');
+  $vars['settings']['search__button__url'] = '#';
+  $vars['settings']['search_placeholder'] = t('What are you looking for?');
+  $vars['search_input_icon'] = TRUE;
+}
+
+/**
+ * Preprocess function for tabs.
+ */
+function _provus_blocks_preprocess_tabs(&$vars, $block) {
+  $view_builder = \Drupal::entityTypeManager()->getViewBuilder('block_content');
+  $storage = \Drupal::entityTypeManager()->getStorage('block_content');
+  $id_array = $block->get('field_tab_items')->getValue();
+  if (!empty($id_array)) {
+    $vars['tabs'] = [];
+    foreach ($id_array as $key => $id) {
+      $entity = $storage->load($id['target_id']);
+      $block_build['content'] = $view_builder->view($entity);
+      provus_get_block($block_build, $entity);
+      $tab['tab_text'] = $entity->label();
+      $tab['tab_content'] = $block_build;
+      $vars['tabs'][] = $tab;
+    }
+    unset($vars['content']['field_tab_items']);
+  }
+}
+
+/**
+ * Preprocess function for columns.
+ */
+function _provus_blocks_preprocess_columns(&$vars, $block) {
+  $view_builder = \Drupal::entityTypeManager()->getViewBuilder('block_content');
+  $storage = \Drupal::entityTypeManager()->getStorage('block_content');
+  $id_array = $block->get('field_column_items')->getValue();
+  if (!empty($id_array)) {
+    $vars['blocks'] = [];
+    foreach ($id_array as $key => $id) {
+      $entity = $storage->load($id['target_id']);
+      $block_build['content'] = $view_builder->view($entity);
+      provus_get_block($block_build, $entity);
+      $vars['blocks'][] = $block_build;
+    }
+    unset($vars['content']['field_column_items']);
+  }
+}
+
+/**
+ * Preprocess function for files_list.
+ */
+function _provus_blocks_preprocess_fileslist(&$vars, $block) {
+  // Get files.
+  $vars['list_type'] = $block->get('field_files_list_type')->getValue()[0]['value'];
+  $items = [];
+  $media_items = $block->get('field_media_files')->referencedEntities();
+  if (!empty($media_items[0])) {
+    foreach ($media_items as $media_item) {
+      switch ($media_item->bundle()) {
+        case 'document':
+          $fieldname = 'field_media_document';
+          $icon = '';
+          break;
+        case 'image':
+          $fieldname = 'field_media_image';
+          $icon = 'jpg';
+          break;
+        case 'audio':
+          $fieldname = 'field_media_audio_file';
+          $icon = 'mp3';
+          break;
+      }
+      $media_files = $media_item->get($fieldname)->referencedEntities();
+      foreach ($media_files as $file) {
+        $label = $file->label();
+        $label = (strlen($label) > 50) ? substr($label, 0, 50) . '...' : $label;
+        $fileurl = $file->url();
+        $ext = pathinfo($fileurl, PATHINFO_EXTENSION);
+        $icon = ($ext == 'pdf') ? $ext : $icon;
+        $item = [];
+        $item['file__name'] = $label;
+        $item['file__url'] = $file->url();
+        $item['file__icon'] = $icon;
+        $item['file__size'] = format_size($file->getSize());
+        $item['file__changed'] = format_date($file->getChangedTime(), 'county_default');
+        $items[] = $item;
+      }
+    }
+  }
+  $vars['files'] = $items;
+}
+
+/**
+ * Preprocess function for accordion.
+ */
+function _provus_blocks_preprocess_accordion(&$vars, $block) {
+  $storage = \Drupal::entityTypeManager()->getStorage('block_content');
+  $vars['id'] = $block->uuid();
+  $vars['openfirst'] = $block->get('field_openfirst')->getValue()[0]['value'];
+  $id_array = $block->get('field_accordion_items')->getValue();
+  if (!empty($id_array)) {
+    foreach ($id_array as $key => $id) {
+      $entity = $storage->load($id['target_id']);
+      $vars['items'][$key]['item_heading'] = $entity->get('field_heading')->view('default');
+      $vars['items'][$key]['item_body'] = $entity->get('field_body')->view('default');
+    }
+  }
+}
+
+/**
+ * Preprocess function for person list.
+ */
+function _provus_blocks_preprocess_person_list(&$vars, $block) {
+  $type_value = $block->get('field_person_type')->getValue();
+  $type = (!empty($type_value[0])) ? $type_value[0]['target_id'] : '';
+  $vars['show_glossary'] = $block->get('field_glossary')->getValue()[0]['value'];
+  $view = Views::getView('people_solr');
+
+  if (is_object($view)) {
+    $view->setDisplay('block_1');
+    $view->setArguments([$type]);
+    $view->execute();
+
+    // Render the view
+    $vars['list_content'] = $view->render();
+  }
+
+  $facet = 'glossary_az_content_last_name';
+  $render = [];
+  $block_manager = \Drupal::service('plugin.manager.block');
+  $config = [];
+  $block_plugin = $block_manager->createInstance('facet_block' . PluginBase::DERIVATIVE_SEPARATOR . $facet, $config);
+  if ($block_plugin) {
+    $access_result = $block_plugin->access(\Drupal::currentUser());
+    if ($access_result) {
+      $render = $block_plugin->build();
+    }
+  }
+  if ($vars['show_glossary'] && count($render) > 0) {
+    $vars['glossary'] = ['render' => $render];
+  }
+}
+
+/**
+ * Set item display depending on group display.
+ */
+function _provus_blocks_override_item_display(string $group_display, string $item_display) {
+  switch ($group_display) {
+    case 'carousel_3':
+      return 'card_bordered';
+      break;
+    case 'carousel_multi':
+      return 'card_background';
+      break;
+    case 'carousel_promo':
+      return 'card_promo';
+      break;
+    case 'featured_4':
+      return 'card';
+      break;
+    default:
+      return $item_display;
+      break;
+  }
 }

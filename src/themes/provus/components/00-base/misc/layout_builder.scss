@@ -115,6 +115,20 @@
     top: auto;
     color: $black;
   }
+
+  select {
+    background: none;
+    font-size: 1rem;
+    margin: 0;
+    outline: none;
+    border: 1px solid #747474 !important;
+    border-radius: 4px;
+    background-color: #fff;
+    padding: 8px 10px;
+    max-width: 100%;
+    width: 100%;
+    color: #666;
+  }
 }
 
 .media-library-widget-modal {

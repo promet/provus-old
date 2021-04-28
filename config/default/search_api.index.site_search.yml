@@ -110,12 +110,12 @@ field_settings:
         anonymous: anonymous
       view_mode:
         'entity:node':
-          provus_article: full
           county_page: full
           event: full
           faq: full
           location: full
           person: full
+          provus_article: full
   status:
     label: status
     datasource_id: 'entity:node'

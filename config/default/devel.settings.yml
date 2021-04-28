@@ -3,4 +3,4 @@ raw_names: false
 error_handlers:
   - 0
 rebuild_theme: false
-devel_dumper: var_dumper
+devel_dumper: kint

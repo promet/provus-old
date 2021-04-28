@@ -49,7 +49,7 @@ content:
     region: content
     label: hidden
     settings:
-      view_mode: landscape_small
+      view_mode: landscape_medium
       link: false
     third_party_settings: {  }
   field_publish_date:

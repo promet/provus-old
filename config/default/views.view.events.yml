@@ -96,7 +96,6 @@ display:
             landing_page: '#3a87ad'
             location: '#3a87ad'
             person: '#3a87ad'
-            provus_article: '#3a87ad'
           business_start: '2021-04-25T08:00:00'
           business_end: '2021-04-25T18:00:00'
           excluding_dates: title

@@ -71,12 +71,12 @@ display:
         options:
           view_modes:
             'entity:node':
-              provus_article: default
               county_page: default
               event: default
               faq: default
               location: default
               person: teaser
+              provus_article: default
       fields:
         changed:
           table: search_api_index_site_search

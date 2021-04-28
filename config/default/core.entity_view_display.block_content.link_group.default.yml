@@ -7,6 +7,7 @@ dependencies:
     - field.field.block_content.link_group.field_automatic_article_type
     - field.field.block_content.link_group.field_automatic_event_type
     - field.field.block_content.link_group.field_automatic_location_type
+    - field.field.block_content.link_group.field_automatic_number_per_page
     - field.field.block_content.link_group.field_automatic_offset
     - field.field.block_content.link_group.field_automatic_pager
     - field.field.block_content.link_group.field_automatic_person_type
@@ -21,7 +22,6 @@ dependencies:
     - field.field.block_content.link_group.field_link
   module:
     - link
-    - options
 id: block_content.link_group.default
 targetEntityType: block_content
 bundle: link_group
@@ -43,48 +43,6 @@ content:
     third_party_settings: {  }
     type: entity_reference_label
     region: content
-  field_automatic_location_type:
-    weight: 7
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: content
-  field_automatic_offset:
-    weight: 3
-    label: above
-    settings:
-      thousand_separator: ''
-      prefix_suffix: true
-    third_party_settings: {  }
-    type: number_integer
-    region: content
-  field_automatic_pager:
-    weight: 8
-    label: above
-    settings:
-      format: default
-      format_custom_false: ''
-      format_custom_true: ''
-    third_party_settings: {  }
-    type: boolean
-    region: content
-  field_automatic_person_type:
-    weight: 6
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: content
-  field_automatic_sort:
-    weight: 4
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: list_default
-    region: content
   field_link:
     weight: 0
     label: hidden
@@ -98,6 +56,12 @@ content:
     type: link
     region: content
 hidden:
+  field_automatic_location_type: true
+  field_automatic_number_per_page: true
+  field_automatic_offset: true
+  field_automatic_pager: true
+  field_automatic_person_type: true
+  field_automatic_sort: true
   field_block_items: true
   field_content_references: true
   field_content_type: true

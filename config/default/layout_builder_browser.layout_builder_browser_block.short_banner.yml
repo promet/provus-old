@@ -6,6 +6,6 @@ id: short_banner
 block_id: 'inline_block:short_banner'
 category: widgets
 label: 'Short Banner'
-weight: null
+weight: -2
 image_path: /themes/custom/provus/images/icons/material/photo_library.svg
 image_alt: 'Short banner icon'
