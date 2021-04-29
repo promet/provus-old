@@ -3,6 +3,9 @@
   background-color: #FFF;
   border: 0;
 }
+.dialog-off-canvas-main-canvas {
+  padding-right: none !important;
+}
 #drupal-off-canvas *,
 #drupal-off-canvas :not(div) {
   color: #333;

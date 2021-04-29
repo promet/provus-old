@@ -36,9 +36,45 @@ function provus_theme_suggestions_container_alter(&$suggestions, $vars) {
 }
 
 /**
+ * Implements hook_theme_suggestions_HOOK_alter().
+ */
+function provus_theme_suggestions_block_alter(&$suggestions, $vars) {
+  if (!empty($vars['elements']['content']['#block_content'])) {
+    $block = $vars['elements']['content']['#block_content'];
+    $block_type = $block->bundle();
+    $base_suggestion = 'block__' . $block_type;
+    $suggestions[] = $base_suggestion;
+    if (!empty($vars['elements']['content']['#view_mode'])) {
+      $suggestions[] = $base_suggestion . '__' . $vars['elements']['content']['#view_mode'];
+    }
+    switch ($block_type) {
+      case 'link_group':
+        // Get group display.
+        $group_display = $block->get('field_group_display')->getValue()[0]['value'];
+        $display_type = explode('_', $group_display);
+        $suggestions[] = $base_suggestion . '__' . $group_display;
+        $suggestions[] = $base_suggestion . '__' . $display_type[0];
+        break;
+
+      default:
+        break;
+    }
+
+  }
+  return $suggestions;
+}
+
+/**
  * Implements hook_preprocess_HOOK().
  */
 function provus_preprocess_page_title(&$variables) {
+  $node = \Drupal::routeMatch()->getParameter('node');
+  if ($node instanceof \Drupal\node\NodeInterface) {
+    // Remove title from landing pages.
+    if ($node->getType() == 'landing_page') {
+      $variables['title'] = '';
+    }
+  }
   if (_provus_current_path() == 'search') {
     $variables['title'] = '';
   }
@@ -57,6 +93,153 @@ function provus_form_search_block_form_alter(&$form, FormStateInterface $form_st
       'value' => 'Reset',
     ],
   ];
+}
+
+/**
+ * Implements hook_preprocess_block().
+ */
+function provus_preprocess_block(&$vars) {
+  // Add plugin info into block class.
+  $vars['attributes']['class'][] = Html::cleanCssIdentifier($vars['plugin_id']);
+  // Check if block is child to determine title size.
+  $vars['ischild'] = !empty($vars['elements']['content']['#ischild']) ? TRUE : FALSE;
+  // Preprocess custom blocks.
+  if (!empty($vars['elements']['content']['#block_content'])) {
+    $block = $vars['elements']['content']['#block_content'];
+    $block_type = $block->bundle();
+    // Add block type to class.
+    $vars['attributes']['class'][] = Html::cleanCssIdentifier('block-' . $block_type);
+
+    if ($block_type == 'banner') {
+      provus_preprocess_banner($vars, $block);
+    }
+    if ($block_type == 'provus_banner') {
+      provus_preprocess_provus_banner($vars, $block);
+    }
+    if ($block_type == 'short_banner') {
+      provus_preprocess_short_banner($vars, $block);
+    }
+    elseif ($block_type == 'link_group') {
+      provus_preprocess_linkgroup($vars, $block);
+    }
+    elseif ($block_type == 'tabs') {
+      provus_preprocess_tabs($vars, $block);
+    }
+    elseif ($block_type == 'columns') {
+      provus_preprocess_columns($vars, $block);
+    }
+    elseif ($block_type == 'social_feed') {
+      provus_preprocess_social_feed($vars, $block);
+    }
+    elseif ($block_type == 'files_list') {
+      provus_preprocess_fileslist($vars, $block);
+    }
+    elseif ($block_type == 'accordion') {
+      provus_preprocess_accordion($vars, $block);
+    }
+    elseif ($block_type == 'person_list') {
+      provus_preprocess_person_list($vars, $block);
+    }
+    if ($block_type == 'navigation_bar') {
+      $vars['nav_items'] = provus_preprocess_navigation_bar_test($vars, $block);
+    }
+  }
+  // Add field type to class.
+  if (!empty($vars['elements']['content']['#field_type'])) {
+    $vars['attributes']['class'][] = Html::cleanCssIdentifier('field-' . $vars['elements']['content']['#field_type']);
+  }
+}
+
+/**
+ * Preprocess function for homepage navigation bar block.
+ */
+function provus_preprocess_navigation_bar_test($vars, $block) {
+  $nav_items = [];
+
+  $first_icon = 'images/registrar.png';
+  $second_icon = 'images/campus-tours.png';
+  $third_icon = 'images/chapel.png';
+  $fourth_icon = 'images/heart.png';
+  $fifth_icon = 'images/news.png';
+  $first_icon_flag = FALSE;
+  $second_icon_flag = FALSE;
+  $third_icon_flag = FALSE;
+  $fourth_icon_flag = FALSE;
+  $fifth_icon_flag = FALSE;
+
+  if (isset($block->get('field_first_navigation_icon')->target_id)) {
+    $fid = $block->get('field_first_navigation_icon')->target_id;
+    $file = File::load($fid);
+    $first_icon = $file->url();
+    $first_icon_flag = TRUE;
+  }
+  if (isset($block->get('field_second_navigation_icon')->target_id)) {
+    $fid = $block->get('field_second_navigation_icon')->target_id;
+    $file = File::load($fid);
+    $second_icon = $file->url();
+    $second_icon_flag = TRUE;
+  }
+  if (isset($block->get('field_third_navigation_icon')->target_id)) {
+    $fid = $block->get('field_third_navigation_icon')->target_id;
+    $file = File::load($fid);
+    $third_icon = $file->url();
+    $third_icon_flag = TRUE;
+  }
+  if (isset($block->get('field_fourth_navigation_icon')->target_id)) {
+    $fid = $block->get('field_fourth_navigation_icon')->target_id;
+    $file = File::load($fid);
+    $fourth_icon = $file->url();
+    $fourth_icon_flag = TRUE;
+  }
+  if (isset($block->get('field_fifth_navigation_icon')->target_id)) {
+    $fid = $block->get('field_fifth_navigation_icon')->target_id;
+    $file = File::load($fid);
+    $fifth_icon = $file->url();
+    $fifth_icon_flag = TRUE;
+  }
+
+  if ($block->get('field_first_navigation_link')->first()) {
+    $nav_items[] = [
+      'navbar__link' => $block->get('field_first_navigation_link')->first()->getUrl()->toString(),
+      'navbar__text' => $block->get('field_first_navigation_link')->first()->title,
+      'navbar__icon' => $first_icon,
+      'navbar__has_icon' => $first_icon_flag,
+    ];
+  }
+  if ($block->get('field_second_navigation_link')->first()) {
+    $nav_items[] = [
+      'navbar__link' => $block->get('field_second_navigation_link')->first()->getUrl()->toString(),
+      'navbar__text' => $block->get('field_second_navigation_link')->first()->title,
+      'navbar__icon' => $second_icon,
+      'navbar__has_icon' => $second_icon_flag,
+    ];
+  }
+  if ($block->get('field_third_navigation_link')->first()) {
+    $nav_items[] = [
+      'navbar__link' => $block->get('field_third_navigation_link')->first()->getUrl()->toString(),
+      'navbar__text' => $block->get('field_third_navigation_link')->first()->title,
+      'navbar__icon' => $third_icon,
+      'navbar__has_icon' => $third_icon_flag,
+    ];
+  }
+  if ($block->get('field_fourth_navigation_link')->first()) {
+    $nav_items[] = [
+      'navbar__link' => $block->get('field_fourth_navigation_link')->first()->getUrl()->toString(),
+      'navbar__text' => $block->get('field_fourth_navigation_link')->first()->title,
+      'navbar__icon' => $fourth_icon,
+      'navbar__has_icon' => $fourth_icon_flag,
+    ];
+  }
+  if ($block->get('field_fifth_navigation_link')->first()) {
+    $nav_items[] = [
+      'navbar__link' => $block->get('field_fifth_navigation_link')->first()->getUrl()->toString(),
+      'navbar__text' => $block->get('field_fifth_navigation_link')->first()->title,
+      'navbar__icon' => $fifth_icon,
+      'navbar__has_icon' => $fifth_icon_flag,
+    ];
+  }
+
+  return $nav_items;
 }
 
 /**
@@ -92,9 +275,9 @@ function provus_preprocess_node(&$vars) {
   // Update date vars so we can properly show the add to calendar for recurring events.
   if ($vars['node']->getType() == 'event') {
     $start_date = new DateTime($vars['node']->field_start_date->getString(), new DateTimeZone('UTC'));
-    $start_date->setTimezone(new DateTimeZone('America/Los_Angeles'));
+    $start_date->setTimezone(new DateTimeZone('America/New_York'));
     $end_date = new DateTime($vars['node']->field_end_date->getString(), new DateTimeZone('UTC'));
-    $end_date->setTimezone(new DateTimeZone('America/Los_Angeles'));
+    $end_date->setTimezone(new DateTimeZone('America/New_York'));
 
     // Prepare for updates if recurring.
     $weekly_value = $vars['node']->field_weekly_event->getValue();
@@ -103,19 +286,19 @@ function provus_preprocess_node(&$vars) {
     $monthly = isset($monthly_value[0]['value']) ? $monthly_value[0]['value'] : FALSE;
     // Updates both start_date and end_date before updating vars.
     _provus_get_next_event_date($start_date, $end_date, $weekly, $monthly);
-    
+
     $vars['event_start_date'] = $start_date;
     $vars['event_end_date'] = $end_date;
     if ($weekly || $monthly || ($start_date->format('D, F j, Y') == $end_date->format('D, F j, Y'))) {
       // For weekly, monthly, and same day events, display start and end times
       // together and separate line as day.
       $vars['event_date_day_formatted'] = $start_date->format('D, F j, Y');
-      $vars['event_date_time_formatted'] = $start_date->format('g:i a') . ' - ' . $end_date->format('g:i a') . ' PST';
+      $vars['event_date_time_formatted'] = $start_date->format('g:i a') . ' - ' . $end_date->format('g:i a') . ' EST';
     }
     else {
       // For a multiday event, display both start and end dates separately.
       $vars['event_date_day_formatted'] = $start_date->format('D, F j, Y g:i a') . ' thru';
-      $vars['event_date_time_formatted'] = $end_date->format('D, F j, Y g:i a') . ' PST';
+      $vars['event_date_time_formatted'] = $end_date->format('D, F j, Y g:i a') . ' EST';
     }
 
     // Get referenced location node if available.
@@ -178,7 +361,7 @@ function provus_preprocess_node(&$vars) {
  */
 function _provus_get_next_event_date(&$start_date, &$end_date, $weekly_day, $monthly_day) {
   $today = new DateTime();
-  $today->setTimezone(new DateTimeZone('America/Los_Angeles'));
+  $today->setTimezone(new DateTimeZone('America/New_York'));
 
   if ($weekly_day !== FALSE) {
     $weekday_names = [
@@ -238,6 +421,56 @@ function _provus_check_event_is_in_range(DateTime $date, DateTime $event_start_d
     return $date;
   }
   return $event_end_date;
+}
+
+/**
+ * Implements hook_preprocess_field().
+ */
+function provus_preprocess_field(&$vars) {
+  // Make sure the referenced blocks run through theme later.
+  if ($vars['entity_type'] == 'block_content' && ($vars['field_name'] == 'field_tab_items' || $vars['field_name'] == 'field_block_items')) {
+    foreach ($vars['items'] as $key => $item) {
+      if (!empty($item['content']['#block_content'])) {
+        $vars['items'][$key]['block_uuid'] = 'block_content:' . $item['content']['#block_content']->uuid();
+        $vars['items'][$key]['block_title'] = $item['content']['#block_content']->label();
+      }
+    }
+  }
+  // Add button classes to field link fields.
+  if ($vars['field_name'] == 'field_link') {
+    foreach ($vars['items'] as $key => $item) {
+      if (!empty($item['content']['#url'])) {
+        $vars['items'][$key]['content']['#options'] = ['attributes' => ['class' => 'button button--primary']];
+      }
+    }
+  }
+  // Accordion items.
+  if ($vars['field_name'] == 'field_accordion_items') {
+    $vars['id'] = rand(10000,100000);
+    foreach ($vars['items'] as $key => $item) {
+      if (!empty($item['content']['#block_content'])) {
+        $vars['items'][$key]['item_heading'] = $item['content']['#block_content']->get('field_heading')->view('default');
+        $vars['items'][$key]['item_body'] = $item['content']['#block_content']->get('field_body')->view('default');
+      }
+    }
+  }
+  // Carousel items Photo gallery.
+  if ($vars['field_name'] == 'field_gallery_photos') {
+    foreach ($vars['items'] as $key => $item) {
+      if (isset($item['content']['#media'])) {
+        $fid = $item['content']['#media']->getSource()->getSourceFieldValue($item['content']['#media']);
+        $file = File::load($fid);
+        $url_full = $file->url();
+        $style = ImageStyle::load('thumbnail');
+        $url_thumbnail = $style->buildUrl($file->getFileUri());
+        $vars['items'][$key]['image_thumb_src'] = $url_thumbnail;
+        $vars['items'][$key]['image_src'] = $url_full;
+        $vars['items'][$key]['image_alt'] = $item['content']['#media']->get('field_media_image')->first()->get('alt')->getString();
+      }
+    }
+  }
+  // Add field name to class.
+  $vars['attributes']['class'][] = Html::cleanCssIdentifier($vars['field_name']);
 }
 
 /**
@@ -330,6 +563,458 @@ function provus_preprocess_input(&$vars) {
 }
 
 /**
+ * Preprocess function for banner_inside.
+ */
+function provus_preprocess_short_banner(&$vars, $block) {
+  // Get heading and body.
+  $vars['heading'] = $block->get('field_heading')->getString();
+  $vars['body'] = $block->get('field_subheading')->getString();
+
+  // Get background.
+  $background_image = $block->get('field_media_image')->referencedEntities();
+  if (!empty($background_image[0])) {
+    $background_image_fid = $background_image[0]->get('field_media_image')->target_id;
+    $background_image_file = File::load($background_image_fid);
+    $vars['image_src'] = $background_image_file->url();
+    $vars['image_alt'] = $background_image[0]->get('field_media_image')->alt;
+  }
+}
+
+/**
+ * Preprocess function for banner.
+ */
+function provus_preprocess_banner(&$vars, $block) {
+  // Get heading and body.
+  $vars['heading'] = $block->get('field_heading')->getString();
+  $vars['body'] = $block->get('field_subheading')->getString();
+  // Get more link.
+  $vars['more_link'] = $block->get('field_link')->getString();
+  // Get logo.
+  $logo_image = $block->get('field_logo_image')->referencedEntities();
+  if (!empty($logo_image[0])) {
+    $logo_fid = $logo_image[0]->get('field_media_image')->target_id;
+    $logo_file = File::load($logo_fid);
+    $vars['logo_src'] = $logo_file->url();
+    $vars['logo_alt'] = $logo_image[0]->get('field_media_image')->alt;
+  }
+  // Get person picture.
+  $person_picture = $block->get('field_person_picture')->referencedEntities();
+  if (!empty($person_picture[0])) {
+    $person_picture_fid = $person_picture[0]->get('field_media_image')->target_id;
+    $person_picture_file = File::load($person_picture_fid);
+    $vars['picture_src'] = $person_picture_file->url();
+    $vars['picture_alt'] = $person_picture[0]->get('field_media_image')->alt;
+    $vars['settings']['picture'] = TRUE;
+  }
+  // Get number of images.
+  $vars['items'] = $block->get('field_media_image')->referencedEntities();
+  // Get search.
+  $vars['settings']['search'] = $block->get('field_include_search')->getValue()[0]['value'];
+  $vars['settings']['search__button__text'] = t('Search');
+  $vars['settings']['search__button__url'] = '#';
+  $vars['settings']['search_placeholder'] = t('What are you looking for?');
+  $vars['search_input_icon'] = TRUE;
+}
+
+/**
+ * Preprocess function for provus_banner.
+ */
+function provus_preprocess_provus_banner(&$vars, $block) {
+
+  // Get number of items.
+  $items = [];
+  foreach ($block->get('field_block_items')->referencedEntities() as $block_item) {
+    $item = [];
+    $item['image_src'] = file_create_url($block_item->field_media->entity->field_media_image->entity->getFileUri());
+    $item['image_alt'] = $block_item->field_media->entity->alt;
+    $item['heading'] = $block_item->field_heading->value;
+    $item['more_link'] = $block_item->field_link->first()->getUrl()->toString();
+    $items[] = $item;
+  }
+
+  $vars['items'] = $items;
+}
+
+/**
+ * Preprocess function for link group.
+ */
+function provus_preprocess_linkgroup(&$vars, $block) {
+  // Get source.
+  $group_source = $block->get('field_group_source')->getValue()[0]['value'];
+  // Get group display.
+  $group_display = $block->get('field_group_display')->getValue()[0]['value'];
+  $display_type = explode('_', $group_display);
+  $vars['number'] = !empty($display_type[1]) ? $display_type[1] : NULL;
+  // Get item display.
+  $item_display = $block->get('field_item_display')->getValue()[0]['value'];
+  // Override item display for certain group displays.
+  $item_display = provus_override_item_display($group_display, $item_display);
+  $vars['display_content'] = $item_display;
+
+  // Get content and build blocks.
+  if (!empty($group_source)) {
+    switch ($group_source) {
+      case 'auto':
+        // Set cachetags to use node_list.
+        $cache_tags = $block->getCacheTags();
+        $cache_tags[] = 'node_list';
+        $vars['#cache']['tags'] = $cache_tags;
+        // Get content.
+        $view_builder = \Drupal::entityTypeManager()->getViewBuilder('node');
+        $storage = \Drupal::entityTypeManager()->getStorage('node');
+        $count = $block->get('field_count')->getValue()[0]['value'];
+        $content_type = $block->get('field_content_type')->getValue() ? $block->get('field_content_type')->getValue()[0]['value'] : NULL;
+        $sort_value = $block->get('field_automatic_sort')->getValue() ? $block->get('field_automatic_sort')->getValue()[0]['value'] : NULL;
+        $offset = $block->get('field_automatic_offset')->getValue() ? $block->get('field_automatic_offset')->getValue()[0]['value'] : 0;
+        $sort = $sort_value == 'oldest' ? 'ASC' : 'DESC';
+        $tid = NULL;
+        switch ($content_type) {
+          case 'county_article':
+            $target_ids = $block->get('field_automatic_article_type')->getValue();
+            break;
+
+          case 'event':
+            $target_ids = $block->get('field_automatic_event_type')->getValue();
+            break;
+
+          case 'person':
+            $target_ids = $block->get('field_automatic_person_type')->getValue();
+            break;
+        }
+        $tids = [];
+        if (isset($target_ids)) {
+          foreach ($target_ids as $target) {
+            $tids[] = isset($target['target_id']) ? $target['target_id'] : '';
+          }
+        }
+        $id_array = provus_automatic_get_ids($content_type, $count, $sort, $tids, $offset);
+        if (!empty($id_array)) {
+          foreach ($id_array as $key => $id) {
+            $item_display = ($group_display == 'featured_4' && $key <> 0) ? 'card_mini' : $item_display;
+            $entity = $storage->load($id);
+            if ($entity) {
+              $block_build = $view_builder->view($entity, $item_display);
+              if ($group_display == 'featured_4' && $key == 0) {
+                $vars['block_1'] = $block_build;
+              }
+              else {
+                $vars['blocks'][] = $block_build;
+              }
+            }
+          }
+        }
+        break;
+
+      case 'manual_content':
+        $view_builder = \Drupal::entityTypeManager()->getViewBuilder('node');
+        $storage = \Drupal::entityTypeManager()->getStorage('node');
+        $id_array = $block->get('field_content_references')->getValue();
+        if (!empty($id_array)) {
+          foreach ($id_array as $key => $id) {
+            $item_display = ($group_display == 'featured_4' && $key <> 0) ? 'card_mini' : $item_display;
+            $entity = $storage->load($id['target_id']);
+            if ($entity) {
+              $block_build = $view_builder->view($entity, $item_display);
+              if ($group_display == 'featured_4' && $key == 0) {
+                $vars['block_1'] = $block_build;
+              }
+              else {
+                $vars['blocks'][] = $block_build;
+              }
+            }
+          }
+        }
+        break;
+
+      case 'manual_inline':
+        $view_builder = \Drupal::entityTypeManager()->getViewBuilder('block_content');
+        $storage = \Drupal::entityTypeManager()->getStorage('block_content');
+        $id_array = $block->get('field_block_items')->getValue();
+        if (!empty($id_array)) {
+          foreach ($id_array as $key => $id) {
+            $item_display = ($group_display == 'featured_4' && $key <> 0) ? 'card_mini' : $item_display;
+            $entity = $storage->load($id['target_id']);
+            if (!empty($entity)) {
+              $block_build['content'] = $view_builder->view($entity, $item_display);
+              $block_build['content']['#view_mode'] = $item_display;
+              provus_get_block($block_build, $entity);
+              if ($group_display == 'featured_4' && $key == 0) {
+                $vars['block_1'] = $block_build;
+              }
+              else {
+                $vars['blocks'][] = $block_build;
+              }
+            }
+          }
+        }
+        break;
+    }
+  }
+}
+
+/**
+ * Preprocess function for social feed information.
+ */
+function provus_preprocess_social_feed(&$vars, $block) {
+  $vars['type'] = $block->get('field_social_type')->getValue()[0]['value'];
+  $layout = $block->get('field_social_layout')->getValue()[0]['value'];
+
+  if ($vars['type'] == 'facebook') {
+    $items = [];
+    $config = \Drupal::config('socialfeed.facebooksettings');
+
+    try {
+      $facebook = \Drupal::service('socialfeed.facebook')->createInstance($config->get('app_id'), $config->get('secret_key'), $config->get('user_token'), $config->get('page_name'), NULL);
+
+      // Get all posts.
+      $posts = $facebook->getPosts(
+        $config->get('page_name'),
+        TRUE,
+        $config->get('no_feeds')
+      );
+
+      if (is_array($posts) && !empty($posts)) {
+        $posts = ($layout == 'single') ? array_slice($posts, 0, 1) : array_slice($posts, 0, 3);
+        foreach ($posts as $post) {
+          if ($post['status_type'] = !NULL) {
+            $items[] = [
+              '#theme' => [
+                'socialfeed_facebook_post__' . $post['status_type'],
+                'socialfeed_facebook_post',
+              ],
+              '#post' => $post,
+              '#cache' => [
+                // Cache for 1 hour.
+                'max-age' => 60 * 60,
+                'cache tags' => $config->getCacheTags(),
+                'context' => $config->getCacheContexts(),
+              ],
+            ];
+          }
+        }
+      }
+    }
+    catch (\Exception $exception) {
+      \Drupal::logger('socialfeed')
+        ->error($this->t('Exception: @exception', [
+          '@exception' => $exception->getMessage(),
+        ]));
+    }
+
+    $vars['items'] = $items;
+  }
+  elseif ($vars['type'] == 'twitter') {
+    $items = [];
+    $config = \Drupal::config('socialfeed.twittersettings');
+    $twitter = \Drupal::service('socialfeed.twitter')->createInstance($config->get('consumer_key'), $config->get('consumer_secret'), $config->get('access_token'), $config->get('access_token_secret'));
+
+    $tweets_count = $config->get('tweets_count');
+    $posts = $twitter->getPosts($tweets_count);
+
+    if (is_array($posts) && !empty($posts)) {
+      $posts = ($layout == 'single') ? array_slice($posts, 0, 1) : array_slice($posts, 0, 3);
+
+      foreach ($posts as $post) {
+        $items[] = [
+          '#theme' => 'socialfeed_twitter_post',
+          '#post' => $post,
+          '#cache' => [
+            // Cache for 1 hour.
+            'max-age' => 60 * 60,
+            'cache tags' => $config->getCacheTags(),
+            'context' => $config->getCacheContexts(),
+          ],
+        ];
+      }
+    }
+
+    $vars['items'] = $items;
+  }
+  elseif ($vars['type'] == 'youtube') {
+    $service = \Drupal::service('county_blocks.youtube_feed');
+    $total = ($layout == 'single') ? 1 : 3;
+    $items = $service->getYoutubePosts($total);
+    $vars['items'] = $items;
+  }
+}
+
+/**
+ * Preprocess function for tabs.
+ */
+function provus_preprocess_tabs(&$vars, $block) {
+  $view_builder = \Drupal::entityTypeManager()->getViewBuilder('block_content');
+  $storage = \Drupal::entityTypeManager()->getStorage('block_content');
+  $id_array = $block->get('field_tab_items')->getValue();
+  if (!empty($id_array)) {
+    $vars['tabs'] = [];
+    foreach ($id_array as $key => $id) {
+      $entity = $storage->load($id['target_id']);
+      $block_build['content'] = $view_builder->view($entity);
+      provus_get_block($block_build, $entity);
+      $tab['tab_text'] = $entity->label();
+      $tab['tab_content'] = $block_build;
+      $vars['tabs'][] = $tab;
+    }
+    unset($vars['content']['field_tab_items']);
+  }
+}
+
+/**
+ * Preprocess function for columns.
+ */
+function provus_preprocess_columns(&$vars, $block) {
+  $view_builder = \Drupal::entityTypeManager()->getViewBuilder('block_content');
+  $storage = \Drupal::entityTypeManager()->getStorage('block_content');
+  $id_array = $block->get('field_column_items')->getValue();
+  if (!empty($id_array)) {
+    $vars['blocks'] = [];
+    foreach ($id_array as $key => $id) {
+      $entity = $storage->load($id['target_id']);
+      $block_build['content'] = $view_builder->view($entity);
+      provus_get_block($block_build, $entity);
+      $vars['blocks'][] = $block_build;
+    }
+    unset($vars['content']['field_column_items']);
+  }
+}
+
+/**
+ * Preprocess function for files_list.
+ */
+function provus_preprocess_fileslist(&$vars, $block) {
+  // Get files.
+  $vars['list_type'] = $block->get('field_files_list_type')->getValue()[0]['value'];
+  $items = [];
+  $media_items = $block->get('field_media_files')->referencedEntities();
+  if (!empty($media_items[0])) {
+    foreach ($media_items as $media_item) {
+      switch ($media_item->bundle()) {
+        case 'document':
+          $fieldname = 'field_media_document';
+          $icon = '';
+          break;
+        case 'image':
+          $fieldname = 'field_media_image';
+          $icon = 'jpg';
+          break;
+        case 'audio':
+          $fieldname = 'field_media_audio_file';
+          $icon = 'mp3';
+          break;
+      }
+      $media_files = $media_item->get($fieldname)->referencedEntities();
+      foreach ($media_files as $file) {
+        $label = $file->label();
+        $label = (strlen($label) > 50) ? substr($label, 0, 50) . '...' : $label;
+        $fileurl = $file->url();
+        $ext = pathinfo($fileurl, PATHINFO_EXTENSION);
+        $icon = ($ext == 'pdf') ? $ext : $icon;
+        $item = [];
+        $item['file__name'] = $label;
+        $item['file__url'] = $file->url();
+        $item['file__icon'] = $icon;
+        $item['file__size'] = format_size($file->getSize());
+        $item['file__changed'] = format_date($file->getChangedTime(), 'county_default');
+        $items[] = $item;
+      }
+    }
+  }
+  $vars['files'] = $items;
+}
+
+/**
+ * Preprocess function for accordion.
+ */
+function provus_preprocess_accordion(&$vars, $block) {
+  $storage = \Drupal::entityTypeManager()->getStorage('block_content');
+  $vars['id'] = $block->uuid();
+  $vars['openfirst'] = $block->get('field_openfirst')->getValue()[0]['value'];
+  $id_array = $block->get('field_accordion_items')->getValue();
+  if (!empty($id_array)) {
+    foreach ($id_array as $key => $id) {
+      $entity = $storage->load($id['target_id']);
+      $vars['items'][$key]['item_heading'] = $entity->get('field_heading')->view('default');
+      $vars['items'][$key]['item_body'] = $entity->get('field_body')->view('default');
+    }
+  }
+}
+
+/**
+ * Preprocess function for person list.
+ */
+function provus_preprocess_person_list(&$vars, $block) {
+  $type_value = $block->get('field_person_type')->getValue();
+  $type = (!empty($type_value[0])) ? $type_value[0]['target_id'] : '';
+  $vars['show_glossary'] = $block->get('field_glossary')->getValue()[0]['value'];
+  $view = Views::getView('people_solr');
+
+  if (is_object($view)) {
+    $view->setDisplay('block_1');
+    if ($type) {
+      $view->setArguments([$type]);
+    }
+    $view->execute();
+
+    // Render the view
+    $vars['list_content'] = $view->render();
+  }
+
+  $facet = 'glossary_az_content_last_name';
+  $render = [];
+  $block_manager = \Drupal::service('plugin.manager.block');
+  $config = [];
+  $block_plugin = $block_manager->createInstance('facet_block' . PluginBase::DERIVATIVE_SEPARATOR . $facet, $config);
+  if ($block_plugin) {
+    $access_result = $block_plugin->access(\Drupal::currentUser());
+    if ($access_result) {
+      $render = $block_plugin->build();
+    }
+  }
+  if ($vars['show_glossary'] && count($render) > 0) {
+    $vars['glossary'] = ['render' => $render];
+  }
+}
+
+/**
+ * Query for automatic src option.
+ *
+ * @param string $content_type
+ *   The node bundle.
+ * @param int $count
+ *   The number of items to get.
+ */
+function provus_automatic_get_ids($content_type, $count, $sort = 'DESC', $tids = [], $offset = 0) {
+  // Do special processing for articles.
+  if (strpos($content_type, 'county_article-') === 0) {
+    list($content_type, $type) = explode('-', $content_type);
+  }
+  $query = \Drupal::entityQuery('node')
+    ->condition('status', 1)
+    ->condition('type', $content_type);
+
+  if (!empty($tids)) {
+    switch ($content_type) {
+      case 'county_article':
+        $query->condition('field_type', $tids, 'IN');
+        break;
+
+      case 'event':
+        $query->condition('field_event_type', $tids, 'IN');
+        break;
+
+      case 'person':
+        $query->condition('field_person_type', $tids, 'IN');
+        break;
+    }
+  }
+  $query->range($offset, $count);
+  $query->sort('field_publish_date', $sort);
+  $query->sort('created', $sort);
+  $ids = $query->execute();
+  return array_values($ids);
+}
+
+/**
  * Get block build.
  */
 function provus_get_block(&$block_build, $entity) {
@@ -351,6 +1036,31 @@ function provus_get_block(&$block_build, $entity) {
     '#derivative_plugin_id' => $entity->uuid(),
   ];
   $block_build['content']['#ischild'] = TRUE;
+}
+
+/**
+ * Set item display depending on group display.
+ */
+function provus_override_item_display(string $group_display, string $item_display) {
+  switch ($group_display) {
+    case 'card_box':
+      return 'card_box';
+    case 'carousel_3':
+      return 'card_bordered';
+      break;
+    case 'carousel_multi':
+      return 'card_background';
+      break;
+    case 'carousel_promo':
+      return 'card_promo';
+      break;
+    case 'featured_4':
+      return 'card';
+      break;
+    default:
+      return $item_display;
+      break;
+  }
 }
 
 /**
@@ -397,7 +1107,6 @@ function provus_preprocess_region(array &$vars) {
 
   if ($vars['region'] == 'sidebar') {
     if (_provus_current_path() == 'search') {
-      $vars['search'] = TRUE;
       $vars['title'] = t('Search');
       $vars['region_title'] = t('Filter Results');
       $url = Url::fromRoute('<current>', []);
@@ -443,7 +1152,9 @@ function provus_form_views_exposed_form_alter(&$form) {
  */
 function provus_preprocess_menu(&$vars) {
   // Adjust main menu so that it respects 'expanded' config set on the item.
-  if ($vars['menu_name'] == 'main' && !empty($vars['menu_block_configuration']) && $vars['menu_block_configuration']['expand'] == FALSE) {
+  if ($vars['menu_name'] == 'main'
+    && isset($vars['menu_block_configuration']['expand'])
+    && $vars['menu_block_configuration']['expand'] == FALSE) {
     foreach ($vars['items'] as $id => $item) {
       $vars['items'][$id] = _provus_mainmenu_set_expanded($item, $id);
       if (!empty($vars['items'][$id]['below'])) {
@@ -475,4 +1186,13 @@ function _provus_mainmenu_set_expanded($item, $id) {
     }
   }
   return $item;
+}
+
+/**
+ * Implements template_preprocess_page().
+ *
+ * Sets the current path into a variable.
+ */
+function provus_preprocess_page(array &$vars) {
+  $vars['current_path'] = _provus_current_path();
 }
