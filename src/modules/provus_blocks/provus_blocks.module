@@ -8,20 +8,12 @@
 use Drupal\block\Entity\Block;
 use Drupal\Component\Utility\Html;
 use Drupal\Core\Access\AccessResult;
-use Drupal\Core\Block\BlockPluginInterface;
-use Drupal\Core\Render\Element;
 use Drupal\Core\Form\FormStateInterface;
-use Drupal\Core\Plugin\PluginBase;
 use Drupal\Core\Routing\RouteMatchInterface;
 use Drupal\Core\Session\AccountInterface;
-use Drupal\Core\Template\Attribute;
-use Drupal\Core\Url;
-use Drupal\Component\Utility\UrlHelper;
 use Drupal\file\Entity\File;
 use Drupal\image\Entity\ImageStyle;
-use Drupal\provus_blocks\ProvusBlocksHelper;
 use Drupal\node\NodeInterface;
-use Drupal\views\Views;
 
 /**
  * Implements hook_help().
@@ -63,7 +55,7 @@ function provus_blocks_preprocess_field(&$vars) {
   }
   // Accordion items.
   if ($vars['field_name'] == 'field_accordion_items') {
-    $vars['id'] = rand(10000,100000);
+    $vars['id'] = rand(10000, 100000);
     foreach ($vars['items'] as $key => $item) {
       if (!empty($item['content']['#block_content'])) {
         $vars['items'][$key]['item_heading'] = $item['content']['#block_content']->get('field_heading')->view('default');
@@ -118,7 +110,6 @@ function provus_blocks_theme_suggestions_block_alter(&$suggestions, $vars) {
   }
   return $suggestions;
 }
-
 
 /**
  * Implements hook_form_FORM_ID_alter().
@@ -333,4 +324,3 @@ function provus_blocks_theme($existing, $type, $theme, $path) {
     ],
   ];
 }
-
