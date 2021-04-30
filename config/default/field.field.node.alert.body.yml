@@ -11,8 +11,8 @@ id: node.alert.body
 field_name: body
 entity_type: node
 bundle: alert
-label: Description
-description: ''
+label: 'Alert message'
+description: 'Will appear after the title on the alert.'
 required: false
 translatable: true
 default_value: {  }

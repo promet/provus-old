@@ -6,6 +6,6 @@ id: person_list
 block_id: 'inline_block:person_list'
 category: widgets
 label: 'Person List'
-weight: null
+weight: -4
 image_path: /themes/custom/provus/images/icons/material/people.svg
 image_alt: 'Person List icon'

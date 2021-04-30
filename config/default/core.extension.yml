@@ -11,6 +11,9 @@ module:
   breakpoint: 0
   calendar_link: 0
   calendar_recurring_event: 0
+  chosen: 0
+  chosen_field: 0
+  chosen_lib: 0
   ckeditor: 0
   color: 0
   components: 0
@@ -18,10 +21,10 @@ module:
   config_filter: 0
   contact: 0
   contextual: 0
-  county_blocks: 0
   crop: 0
   ctools: 0
   datetime: 0
+  dblog: 0
   devel: 0
   dropzonejs: 0
   dynamic_page_cache: 0
@@ -77,12 +80,14 @@ module:
   path_alias: 0
   pathauto: 0
   pdfpreview: 0
+  provus_blocks: 0
   quickedit: 0
   rdf: 0
   redirect: 0
   redirect_404: 0
   responsive_image: 0
   search_api: 0
+  search_api_db: 0
   search_api_glossary: 0
   search_api_solr: 0
   serialization: 0

@@ -17,6 +17,7 @@ import carousel3Data from './carousel/3-item/carousel-3-items.yml';
 import fourCardFeaturedGroupStructure from './4-card-featured-group/4-card-featured-group.twig';
 import fourCardFeaturedGroupData from './4-card-featured-group/4-card-featured-group.yml';
 import tabbedStructure from './tabbed/tabbed.twig';
+import tabbedQuicklinkStructure from './tabbed/tabbed_quicklist.twig';
 import tabbedData from './tabbed/tabbed.yml';
 import columnRowStructure from './column-row/column-row.twig';
 import columnRowData from './column-row/column-row.yml';
@@ -76,6 +77,12 @@ export const quicklinksListIcons = () => {
 export const tabbedList = () => {
   useEffect(() => Drupal.attachBehaviors(), []);
   return <div dangerouslySetInnerHTML={{ __html: tabbedStructure(tabbedData) }} />;
+};
+
+export const tabbedQuicklinkList = () => {
+  useEffect(() => Drupal.attachBehaviors(), []);
+  const tQs = { topics: quicklinksData, res: quicklinksDataIcons };
+  return <div dangerouslySetInnerHTML={{ __html: tabbedQuicklinkStructure(tQs) }} />;
 };
 
 export const columnRow = () => {

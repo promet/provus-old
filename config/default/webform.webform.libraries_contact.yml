@@ -180,6 +180,7 @@ handlers:
   email:
     id: email
     label: 'Fountain Valley Library - Email'
+    notes: ''
     handler_id: email
     status: true
     conditions:
@@ -219,6 +220,7 @@ handlers:
   fountain_valley_library_email:
     id: email
     label: 'Aliso Viejo Library - Email'
+    notes: ''
     handler_id: fountain_valley_library_email
     status: true
     conditions:

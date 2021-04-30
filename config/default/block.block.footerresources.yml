@@ -23,9 +23,10 @@ settings:
   follow_parent: child
   level: 1
   depth: 0
-  expand: false
+  expand_all_items: false
   parent: 'county-footer-resources:'
   suggestion: county_footer_resources
   label_type: block
   label_link: false
+  expand: false
 visibility: {  }

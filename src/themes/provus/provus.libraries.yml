@@ -118,6 +118,3 @@ browser-detect:
     - core/jquery
     - core/jquery.once
 
-county-alerts:
-  js:
-    dist/js/03-organisms/county-alerts/county-alerts.js: {}

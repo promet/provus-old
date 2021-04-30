@@ -12,7 +12,7 @@ dependencies:
 id: views_block__upcoming_events_block_2
 theme: provus
 region: content
-weight: 0
+weight: -1
 provider: null
 plugin: 'views_block:upcoming_events-block_2'
 settings:

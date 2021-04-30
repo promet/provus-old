@@ -3,6 +3,6 @@ langcode: en
 status: true
 dependencies: {  }
 id: county_longer
-label: 'County Longer'
+label: 'Provus Longer'
 locked: false
 pattern: 'l, F j, Y'

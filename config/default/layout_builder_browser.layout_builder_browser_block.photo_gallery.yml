@@ -6,6 +6,6 @@ id: photo_gallery
 block_id: 'inline_block:photo_gallery'
 category: widgets
 label: 'Photo Gallery'
-weight: null
+weight: -3
 image_path: /themes/custom/provus/images/icons/material/filter.svg
 image_alt: 'Photo gallery icon'

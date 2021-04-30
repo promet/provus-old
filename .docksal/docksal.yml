@@ -24,4 +24,3 @@ services:
       - HOSTING_ENV
       - THEME_NAME
       - UUID
-      - COMPOSER_DEFAULT_VERSION

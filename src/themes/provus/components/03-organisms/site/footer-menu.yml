@@ -2,7 +2,7 @@ navigation:
   label: Navigation
   class: block-footernavigation-menu
   inline_menu_items:
-    - title: 'Southport Home'
+    - title: 'Home'
       url: '#'
     - title: 'About'
       url: '#'
@@ -32,16 +32,16 @@ resources:
   label: Resources
   class: block-footerresources-menu
   inline_menu_items:
-    - title: 'Chambers of Commerce'
+    - title: 'Open Data'
       url: '#'
-    - title: 'Federal Governmemnt'
+    - title: 'Programs'
       url: '#'
     - title: 'General Information'
       url: '#'
-    - title: 'Related Government Agencies'
+    - title: 'Related Agencies'
       url: '#'
-    - title: 'State Government'
+    - title: 'Contact'
       url: '#'
-    - title: 'Visitor Bureaus'
+    - title: 'Sitemap'
       url: '#'
 

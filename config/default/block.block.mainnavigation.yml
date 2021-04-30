@@ -25,11 +25,12 @@ settings:
   follow_parent: active
   level: 1
   depth: 2
-  expand: true
+  expand_all_items: false
   parent: 'main:'
   suggestion: sidebar
   label_type: active_item
   label_link: false
+  expand: true
 visibility:
   request_path:
     id: request_path
@@ -41,7 +42,7 @@ visibility:
     bundles:
       event: event
       location: location
-      county_article: county_article
+      provus_article: provus_article
       county_page: county_page
       faq: faq
     negate: false

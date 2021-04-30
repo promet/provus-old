@@ -39,8 +39,8 @@
 .multicard-wrapper {
   @include breakout;
 
-  padding-top: $space-triple;
-  padding-bottom: $space-triple;
+  padding-top: $space-double;
+  padding-bottom: $space-double;
 
   .card-bg {
     max-width: inherit;

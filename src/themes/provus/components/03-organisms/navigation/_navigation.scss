@@ -22,8 +22,8 @@
     }
 
     .logo__image {
-      max-width: 201px;
-      max-height: 30px;
+      max-width: 181px;
+      max-height: 38px;
       margin-bottom: 0;
 
       @include desktop {
@@ -52,11 +52,11 @@
     display: flex;
 
     @include desktop {
-      height: 61px;
+      height: 69px;
     }
 
     .goog-te-combo {
-      background: $primary-darker;
+      background: $primary;
       border: 0;
       color: $white;
       font-family: $font-body;
@@ -122,13 +122,13 @@
       height: 43px;
       border: 0;
       align-items: center;
-      background: $primary-darker;
+      background: $primary;
       padding: 0 15px 0 20px;
       color: $white;
       cursor: pointer;
 
       @include desktop {
-        height: 61px;
+        height: 67px;
       }
 
       .ico-translate {
@@ -154,7 +154,7 @@
     }
 
     @include desktop {
-      height: 61px;
+      height: 67px;
     }
 
     .goog-te-menu-value {
@@ -194,7 +194,7 @@
       font-size: 14px;
 
       @include desktop {
-        height: 61px;
+        height: 67px;
       }
 
       option {
@@ -244,10 +244,10 @@
       max-width: 200px;
 
       @include desktop {
-        max-height: 55px;
         z-index: 999;
         position: relative;
-        max-width: 330px;
+        max-width: 181px;
+        max-height: 38px;
       }
     }
   }

@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
+    - core.entity_view_mode.node.card_bordered
   module:
     - node
     - taxonomy
@@ -219,14 +219,14 @@ display:
       style:
         type: default
         options:
-          grouping: {  }
-          row_class: ''
-          default_row_class: true
+          row_class: grid__item
+          default_row_class: false
           uses_fields: false
       row:
         type: 'entity:node'
         options:
-          view_mode: teaser
+          relationship: none
+          view_mode: card_bordered
       header:
         entity_taxonomy_term:
           id: entity_taxonomy_term
@@ -248,6 +248,7 @@ display:
       display_extenders: {  }
       link_url: ''
       link_display: page_1
+      css_class: 'grid grid--col3'
     cache_metadata:
       contexts:
         - 'languages:language_interface'

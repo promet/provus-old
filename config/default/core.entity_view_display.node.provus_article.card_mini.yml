@@ -1,0 +1,50 @@
+uuid: d9f53835-8e27-43a0-9990-462f4be47556
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.card_mini
+    - field.field.node.provus_article.body
+    - field.field.node.provus_article.field_file
+    - field.field.node.provus_article.field_media_image
+    - field.field.node.provus_article.field_publish_date
+    - field.field.node.provus_article.field_type
+    - node.type.provus_article
+  module:
+    - datetime
+    - layout_builder
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: node.provus_article.card_mini
+targetEntityType: node
+bundle: provus_article
+mode: card_mini
+content:
+  field_media_image:
+    type: entity_reference_entity_view
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      view_mode: landscape_small
+      link: false
+    third_party_settings: {  }
+  field_publish_date:
+    type: datetime_default
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: county_default
+    third_party_settings: {  }
+hidden:
+  body: true
+  field_file: true
+  field_type: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

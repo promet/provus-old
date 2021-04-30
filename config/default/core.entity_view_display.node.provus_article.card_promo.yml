@@ -1,0 +1,73 @@
+uuid: ae1da5ac-803b-444e-96a8-ee51b2421cb0
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.card_promo
+    - field.field.node.provus_article.body
+    - field.field.node.provus_article.field_file
+    - field.field.node.provus_article.field_media_image
+    - field.field.node.provus_article.field_publish_date
+    - field.field.node.provus_article.field_type
+    - node.type.provus_article
+  module:
+    - datetime
+    - layout_builder
+    - smart_trim
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: node.provus_article.card_promo
+targetEntityType: node
+bundle: provus_article
+mode: card_promo
+content:
+  body:
+    label: hidden
+    type: smart_trim
+    weight: 3
+    settings:
+      trim_length: 300
+      trim_type: chars
+      trim_suffix: ...
+      wrap_class: trimmed
+      more_text: More
+      more_class: more-link
+      summary_handler: full
+      trim_options:
+        text: true
+        trim_zero: false
+      wrap_output: false
+      more_link: false
+    third_party_settings: {  }
+    region: content
+  field_media_image:
+    type: entity_reference_entity_view
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      view_mode: landscape_small
+      link: false
+    third_party_settings: {  }
+  field_publish_date:
+    type: datetime_default
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: county_default
+    third_party_settings: {  }
+  links:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_file: true
+  field_type: true
+  langcode: true
+  search_api_excerpt: true

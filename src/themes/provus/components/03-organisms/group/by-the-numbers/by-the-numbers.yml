@@ -1,23 +1,23 @@
-label: 'OC by the numbers'
+label: 'by the numbers'
 
 content:
   -
     active: true
-    icon: 'supervisor_account'
+    icon: 'account_balance_wallet'
     heading: '101M'
     body: 'Lorem Ipsum'
     link_text: 'Read more about this card'
     link_url: '#'
   -
     active: null
-    icon: 'account_balance'
+    icon: 'add_box'
     heading: '500+'
     body: 'Lorem Ipsum'
     link_text: 'Read more about this card'
     link_url: '#'
   -
     active: null
-    icon: 'directions_boat'
+    icon: 'add_alarm'
     heading: '12.4K'
     body: 'Lorem Ipsum'
     link_text: 'Read more about this card'

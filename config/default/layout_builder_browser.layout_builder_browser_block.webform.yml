@@ -6,6 +6,6 @@ id: webform
 block_id: webform_block
 category: widgets
 label: Webform
-weight: null
+weight: -1
 image_path: /themes/custom/provus/images/icons/material/dynamic_form.svg
 image_alt: 'Webform icon'
