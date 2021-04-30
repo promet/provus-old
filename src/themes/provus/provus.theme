@@ -667,9 +667,30 @@ function provus_preprocess_linkgroup(&$vars, $block) {
         $sort_value = $block->get('field_automatic_sort')->getValue() ? $block->get('field_automatic_sort')->getValue()[0]['value'] : NULL;
         $offset = $block->get('field_automatic_offset')->getValue() ? $block->get('field_automatic_offset')->getValue()[0]['value'] : 0;
         $sort = $sort_value == 'oldest' ? 'ASC' : 'DESC';
+        if ($sort_value == 'title') {
+          $sort = $sort_value;
+        }
+        else {
+          $sort = $sort_value == 'oldest' ? 'ASC' : 'DESC';
+        }
         $tid = NULL;
+        // Add pager.
+        $page = 0;
+        $pager = $block->get('field_automatic_pager')->getValue() ? $block->get('field_automatic_pager')->getValue()[0]['value'] : NULL;
+        if ($pager) {
+          $num_per_page = $block->get('field_automatic_number_per_page')->getValue() ? $block->get('field_automatic_number_per_page')->getValue()[0]['value'] : NULL;
+          $pager = \Drupal::service('pager.manager')
+            ->createPager($count, $num_per_page);
+          $page = $pager
+            ->getCurrentPage();
+          $vars['pager']['#type'] = 'pager';
+        }
         switch ($content_type) {
-          case 'county_article':
+          case 'location':
+            $target_ids = $block->get('field_automatic_location_type')->getValue();
+            break;
+
+          case 'provus_article':
             $target_ids = $block->get('field_automatic_article_type')->getValue();
             break;
 
@@ -682,12 +703,13 @@ function provus_preprocess_linkgroup(&$vars, $block) {
             break;
         }
         $tids = [];
-        if (isset($target_ids)) {
-          foreach ($target_ids as $target) {
-            $tids[] = isset($target['target_id']) ? $target['target_id'] : '';
-          }
+        foreach ($target_ids as $target) {
+          $tids[] = $target['target_id'];
         }
-        $id_array = provus_automatic_get_ids($content_type, $count, $sort, $tids, $offset);
+        if ($pager) {
+          $count = $num_per_page;
+        }
+        $id_array = provus_automatic_get_ids($content_type, $count, $sort, $tids, $offset, $page);
         if (!empty($id_array)) {
           foreach ($id_array as $key => $id) {
             $item_display = ($group_display == 'featured_4' && $key <> 0) ? 'card_mini' : $item_display;
@@ -983,33 +1005,28 @@ function provus_preprocess_person_list(&$vars, $block) {
  * @param int $count
  *   The number of items to get.
  */
-function provus_automatic_get_ids($content_type, $count, $sort = 'DESC', $tids = [], $offset = 0) {
-  // Do special processing for articles.
-  if (strpos($content_type, 'county_article-') === 0) {
-    list($content_type, $type) = explode('-', $content_type);
-  }
+/**
+ * Preprocess function for social feed information.
+ */
+function provus_automatic_get_ids($content_type, $count, $sort = 'DESC', $tids = [], $offset = 0, $page = 0) {
   $query = \Drupal::entityQuery('node')
     ->condition('status', 1)
     ->condition('type', $content_type);
 
   if (!empty($tids)) {
-    switch ($content_type) {
-      case 'county_article':
-        $query->condition('field_type', $tids, 'IN');
-        break;
-
-      case 'event':
-        $query->condition('field_event_type', $tids, 'IN');
-        break;
-
-      case 'person':
-        $query->condition('field_person_type', $tids, 'IN');
-        break;
-    }
+    $query->condition('field_type', $tids, 'IN');
+  }
+  if ($page > 0) {
+    $offset = ($count * $page) + $offset;
   }
   $query->range($offset, $count);
-  $query->sort('field_publish_date', $sort);
-  $query->sort('created', $sort);
+  if ($sort == 'title') {
+    $query->sort('title', 'ASC');
+  }
+  else {
+    $query->sort('field_publish_date', $sort);
+    $query->sort('created', $sort);
+  }
   $ids = $query->execute();
   return array_values($ids);
 }
