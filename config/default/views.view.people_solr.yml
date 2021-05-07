@@ -71,7 +71,7 @@ display:
         options:
           view_modes:
             'entity:node':
-              county_page: default
+              provus_page: default
               event: default
               faq: default
               location: default

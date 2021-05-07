@@ -110,7 +110,7 @@ field_settings:
         anonymous: anonymous
       view_mode:
         'entity:node':
-          county_page: full
+          provus_page: full
           event: full
           faq: full
           location: full

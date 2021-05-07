@@ -23,7 +23,7 @@
             ],
             "type": [
                 {
-                    "target_id": "county_article",
+                    "target_id": "provus_article",
                     "target_type": "node_type",
                     "target_uuid": "cce08b6f-a444-443f-913e-876906ae2a36"
                 }
@@ -144,7 +144,7 @@
             ],
             "type": [
                 {
-                    "target_id": "county_article",
+                    "target_id": "provus_article",
                     "target_type": "node_type",
                     "target_uuid": "cce08b6f-a444-443f-913e-876906ae2a36"
                 }
@@ -265,7 +265,7 @@
             ],
             "type": [
                 {
-                    "target_id": "county_article",
+                    "target_id": "provus_article",
                     "target_type": "node_type",
                     "target_uuid": "cce08b6f-a444-443f-913e-876906ae2a36"
                 }
@@ -386,7 +386,7 @@
             ],
             "type": [
                 {
-                    "target_id": "county_article",
+                    "target_id": "provus_article",
                     "target_type": "node_type",
                     "target_uuid": "cce08b6f-a444-443f-913e-876906ae2a36"
                 }
@@ -507,7 +507,7 @@
             ],
             "type": [
                 {
-                    "target_id": "county_article",
+                    "target_id": "provus_article",
                     "target_type": "node_type",
                     "target_uuid": "cce08b6f-a444-443f-913e-876906ae2a36"
                 }
@@ -628,7 +628,7 @@
             ],
             "type": [
                 {
-                    "target_id": "county_article",
+                    "target_id": "provus_article",
                     "target_type": "node_type",
                     "target_uuid": "cce08b6f-a444-443f-913e-876906ae2a36"
                 }

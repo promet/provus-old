@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - system.menu.county-footer-resources
+    - system.menu.provus-footer-resources
   module:
     - menu_block
   theme:
@@ -13,9 +13,9 @@ theme: provus
 region: footer
 weight: 0
 provider: null
-plugin: 'menu_block:county-footer-resources'
+plugin: 'menu_block:provus-footer-resources'
 settings:
-  id: 'menu_block:county-footer-resources'
+  id: 'menu_block:provus-footer-resources'
   label: Resources
   provider: menu_block
   label_display: visible
@@ -24,8 +24,8 @@ settings:
   level: 1
   depth: 0
   expand_all_items: false
-  parent: 'county-footer-resources:'
-  suggestion: county_footer_resources
+  parent: 'provus-footer-resources:'
+  suggestion: provus_footer_resources
   label_type: block
   label_link: false
   expand: false

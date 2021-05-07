@@ -28,7 +28,7 @@ visibility:
     id: 'entity_bundle:node'
     bundles:
       provus_article: provus_article
-      county_page: county_page
+      provus_page: provus_page
       event: event
       location: location
     negate: false

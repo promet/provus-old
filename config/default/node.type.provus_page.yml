@@ -10,7 +10,7 @@ third_party_settings:
       - main
     parent: 'main:'
 name: Page
-type: county_page
+type: provus_page
 description: "Use pages for your static content, such as an 'About us' page.\t\r\n"
 help: ''
 new_revision: true

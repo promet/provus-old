@@ -1,14 +1,14 @@
-uuid: 14f6395e-f65f-42fe-955b-e88603c4cfab
+uuid: fe63a65f-ab88-46cd-80f7-acd8ef3af65e
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.text_link
-    - field.field.node.county_page.body
-    - field.field.node.county_page.field_file
-    - field.field.node.county_page.field_media_image
-    - field.field.node.county_page.layout_builder__layout
-    - node.type.county_page
+    - core.entity_view_mode.node.search_result
+    - field.field.node.provus_page.body
+    - field.field.node.provus_page.field_file
+    - field.field.node.provus_page.field_media_image
+    - field.field.node.provus_page.layout_builder__layout
+    - node.type.provus_page
   module:
     - layout_builder
     - smart_trim
@@ -17,23 +17,23 @@ third_party_settings:
   layout_builder:
     allow_custom: false
     enabled: false
-id: node.county_page.text_link
+id: node.provus_page.search_result
 targetEntityType: node
-bundle: county_page
-mode: text_link
+bundle: provus_page
+mode: search_result
 content:
   body:
     label: hidden
     type: smart_trim
-    weight: 0
+    weight: 1
     settings:
-      trim_length: 100
-      trim_type: chars
+      trim_length: 50
+      trim_type: words
       trim_suffix: ...
       wrap_class: trimmed
       more_text: More
       more_class: more-link
-      summary_handler: trim
+      summary_handler: full
       trim_options:
         text: true
         trim_zero: false
@@ -41,10 +41,14 @@ content:
       more_link: false
     third_party_settings: {  }
     region: content
+  search_api_excerpt:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   field_file: true
   field_media_image: true
   langcode: true
   layout_builder__layout: true
   links: true
-  search_api_excerpt: true

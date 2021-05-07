@@ -251,14 +251,14 @@ function provus_preprocess_node(&$vars) {
   // Format default date with specific format.
   switch ($vars['view_mode']) {
     case 'card_event':
-      $date_format = 'county_longer';
+      $date_format = 'provus_longer';
       break;
     case 'search_result':
       $vars['content']['search_result'] = _provus_search_result($vars);
-      $date_format = 'county_default';
+      $date_format = 'provus_default';
       break;
     default:
-      $date_format = 'county_default';
+      $date_format = 'provus_default';
       break;
   }
   $vars['date'] = format_date($vars['node']->getCreatedTime(), $date_format);
@@ -853,7 +853,7 @@ function provus_preprocess_social_feed(&$vars, $block) {
     $vars['items'] = $items;
   }
   elseif ($vars['type'] == 'youtube') {
-    $service = \Drupal::service('county_blocks.youtube_feed');
+    $service = \Drupal::service('provus_blocks.youtube_feed');
     $total = ($layout == 'single') ? 1 : 3;
     $items = $service->getYoutubePosts($total);
     $vars['items'] = $items;
@@ -936,7 +936,7 @@ function provus_preprocess_fileslist(&$vars, $block) {
         $item['file__url'] = $file->url();
         $item['file__icon'] = $icon;
         $item['file__size'] = format_size($file->getSize());
-        $item['file__changed'] = format_date($file->getChangedTime(), 'county_default');
+        $item['file__changed'] = format_date($file->getChangedTime(), 'provus_default');
         $items[] = $item;
       }
     }

@@ -3,11 +3,11 @@ langcode: en
 status: true
 dependencies:
   config:
-    - node.type.county_page
-id: node.county_page.promote
+    - node.type.provus_page
+id: node.provus_page.promote
 field_name: promote
 entity_type: node
-bundle: county_page
+bundle: provus_page
 label: 'Promoted to front page'
 description: ''
 required: false

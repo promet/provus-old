@@ -43,7 +43,7 @@ content:
     label: hidden
     settings:
       timezone_override: ''
-      format_type: county_longer
+      format_type: provus_longer
     third_party_settings: {  }
 hidden:
   body: true

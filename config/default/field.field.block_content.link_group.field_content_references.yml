@@ -5,7 +5,7 @@ dependencies:
   config:
     - block_content.type.link_group
     - field.storage.block_content.field_content_references
-    - node.type.county_page
+    - node.type.provus_page
     - node.type.event
     - node.type.faq
     - node.type.landing_page
@@ -29,7 +29,7 @@ settings:
       faq: faq
       landing_page: landing_page
       location: location
-      county_page: county_page
+      provus_page: provus_page
       person: person
     sort:
       field: _none

@@ -1,16 +1,16 @@
-uuid: e78f77b8-129c-4133-90c3-18f92d1ab4ea
+uuid: 5bca644f-86da-4c95-a1c3-91b220330542
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_file
-    - media.type.document
-    - node.type.county_page
-id: node.county_page.field_file
-field_name: field_file
+    - field.storage.node.field_media_image
+    - media.type.image
+    - node.type.provus_page
+id: node.provus_page.field_media_image
+field_name: field_media_image
 entity_type: node
-bundle: county_page
-label: File
+bundle: provus_page
+label: Image
 description: ''
 required: false
 translatable: true
@@ -20,7 +20,7 @@ settings:
   handler: 'default:media'
   handler_settings:
     target_bundles:
-      document: document
+      image: image
     sort:
       field: _none
     auto_create: false

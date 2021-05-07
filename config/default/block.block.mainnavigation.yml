@@ -43,7 +43,7 @@ visibility:
       event: event
       location: location
       provus_article: provus_article
-      county_page: county_page
+      provus_page: provus_page
       faq: faq
     negate: false
     context_mapping:

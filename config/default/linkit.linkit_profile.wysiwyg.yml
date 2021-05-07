@@ -18,7 +18,7 @@ matchers:
       result_description: ''
       bundles:
         provus_article: provus_article
-        county_page: county_page
+        provus_page: provus_page
         event: event
         faq: faq
         landing_page: landing_page

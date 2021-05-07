@@ -682,7 +682,7 @@
             ],
             "name": [
                 {
-                    "value": "orange-county-courthouse11_2.jpg"
+                    "value": "orange-provus-courthouse11_2.jpg"
                 }
             ],
             "thumbnail": [
@@ -694,7 +694,7 @@
                     "height": 794,
                     "target_type": "file",
                     "target_uuid": "9f87b49c-07da-42cf-a6e0-5d5489fed989",
-                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2020-03\/orange-county-courthouse11_2.jpg"
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2020-03\/orange-provus-courthouse11_2.jpg"
                 }
             ],
             "created": [
@@ -735,7 +735,7 @@
                     "height": 794,
                     "target_type": "file",
                     "target_uuid": "9f87b49c-07da-42cf-a6e0-5d5489fed989",
-                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2020-03\/orange-county-courthouse11_2.jpg"
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2020-03\/orange-provus-courthouse11_2.jpg"
                 }
             ]
         },
@@ -1869,7 +1869,7 @@
             ],
             "name": [
                 {
-                    "value": "southport-county-courthouse11_2.jpg"
+                    "value": "southport-provus-courthouse11_2.jpg"
                 }
             ],
             "thumbnail": [
@@ -1881,7 +1881,7 @@
                     "height": 1067,
                     "target_type": "file",
                     "target_uuid": "c6baad05-c72e-40f1-9264-c192898aca47",
-                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2020-09\/southport-county-courthouse11_2.jpg"
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2020-09\/southport-provus-courthouse11_2.jpg"
                 }
             ],
             "created": [
@@ -1922,7 +1922,7 @@
                     "height": 1067,
                     "target_type": "file",
                     "target_uuid": "c6baad05-c72e-40f1-9264-c192898aca47",
-                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2020-09\/southport-county-courthouse11_2.jpg"
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2020-09\/southport-provus-courthouse11_2.jpg"
                 }
             ]
         },

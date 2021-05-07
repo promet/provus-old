@@ -1,14 +1,14 @@
-uuid: 94b7aa83-1f72-488c-bda7-20c3ec680999
+uuid: e677589d-6858-4cb4-a0ae-6527e7bb164a
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.card
-    - field.field.node.county_page.body
-    - field.field.node.county_page.field_file
-    - field.field.node.county_page.field_media_image
-    - field.field.node.county_page.layout_builder__layout
-    - node.type.county_page
+    - core.entity_view_mode.node.card_bordered
+    - field.field.node.provus_page.body
+    - field.field.node.provus_page.field_file
+    - field.field.node.provus_page.field_media_image
+    - field.field.node.provus_page.layout_builder__layout
+    - node.type.provus_page
   module:
     - layout_builder
     - smart_trim
@@ -17,17 +17,17 @@ third_party_settings:
   layout_builder:
     allow_custom: false
     enabled: false
-id: node.county_page.card
+id: node.provus_page.card_bordered
 targetEntityType: node
-bundle: county_page
-mode: card
+bundle: provus_page
+mode: card_bordered
 content:
   body:
     label: hidden
     type: smart_trim
     weight: 0
     settings:
-      trim_length: 300
+      trim_length: 180
       trim_type: chars
       trim_suffix: ...
       wrap_class: trimmed
@@ -47,7 +47,7 @@ content:
     region: content
     label: hidden
     settings:
-      view_mode: landscape_medium
+      view_mode: landscape_small
       link: false
     third_party_settings: {  }
 hidden:

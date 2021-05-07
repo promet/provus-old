@@ -90,7 +90,7 @@ display:
           color_bundle:
             alert: '#3a87ad'
             provus_article: '#3a87ad'
-            county_page: '#3a87ad'
+            provus_page: '#3a87ad'
             event: '#3b87ae'
             faq: '#3a87ad'
             landing_page: '#3a87ad'

@@ -47,7 +47,7 @@ entity_types:
     bundles:
       alert: 1
       provus_article: 1
-      county_page: 1
+      provus_page: 1
       event: 1
       faq: 1
       landing_page: 1
