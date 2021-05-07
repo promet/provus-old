@@ -1,0 +1,265 @@
+{
+    "taxonomy_term": [
+        {
+            "tid": [
+                {
+                    "value": 1
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "e0007ae8-646a-49c3-88d3-c72541723512"
+                }
+            ],
+            "revision_id": [
+                {
+                    "value": 1
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "vid": [
+                {
+                    "target_id": "article_type",
+                    "target_type": "taxonomy_vocabulary",
+                    "target_uuid": "c7ef66c5-ac27-4132-a25a-f5714f052e08"
+                }
+            ],
+            "revision_created": [
+                {
+                    "value": "2021-04-28T00:37:32+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "revision_user": [],
+            "revision_log_message": [],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "name": [
+                {
+                    "value": "News"
+                }
+            ],
+            "description": [
+                {
+                    "value": null,
+                    "format": null,
+                    "processed": ""
+                }
+            ],
+            "weight": [
+                {
+                    "value": 0
+                }
+            ],
+            "parent": [
+                {
+                    "target_id": null
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2021-04-28T00:37:32+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": true
+                }
+            ],
+            "revision_translation_affected": [
+                {
+                    "value": true
+                }
+            ],
+            "path": [
+                {
+                    "alias": "\/news",
+                    "pid": 17,
+                    "langcode": "en"
+                }
+            ]
+        },
+        {
+            "tid": [
+                {
+                    "value": 2
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "f0203f26-3ed5-4291-8111-4a704de2a484"
+                }
+            ],
+            "revision_id": [
+                {
+                    "value": 2
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "vid": [
+                {
+                    "target_id": "article_type",
+                    "target_type": "taxonomy_vocabulary",
+                    "target_uuid": "c7ef66c5-ac27-4132-a25a-f5714f052e08"
+                }
+            ],
+            "revision_created": [
+                {
+                    "value": "2021-04-28T00:37:39+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "revision_user": [],
+            "revision_log_message": [],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "name": [
+                {
+                    "value": "Press Release"
+                }
+            ],
+            "description": [
+                {
+                    "value": null,
+                    "format": null,
+                    "processed": ""
+                }
+            ],
+            "weight": [
+                {
+                    "value": 0
+                }
+            ],
+            "parent": [
+                {
+                    "target_id": null
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2021-04-28T00:37:39+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": true
+                }
+            ],
+            "revision_translation_affected": [
+                {
+                    "value": true
+                }
+            ],
+            "path": [
+                {
+                    "alias": "\/press-release",
+                    "pid": 18,
+                    "langcode": "en"
+                }
+            ]
+        },
+        {
+            "tid": [
+                {
+                    "value": 3
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "3f41bdf6-062c-4773-89f7-55343cc88cfe"
+                }
+            ],
+            "revision_id": [
+                {
+                    "value": 3
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "vid": [
+                {
+                    "target_id": "article_type",
+                    "target_type": "taxonomy_vocabulary",
+                    "target_uuid": "c7ef66c5-ac27-4132-a25a-f5714f052e08"
+                }
+            ],
+            "revision_created": [
+                {
+                    "value": "2021-04-28T00:37:48+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "revision_user": [],
+            "revision_log_message": [],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "name": [
+                {
+                    "value": "Blog"
+                }
+            ],
+            "description": [
+                {
+                    "value": null,
+                    "format": null,
+                    "processed": ""
+                }
+            ],
+            "weight": [
+                {
+                    "value": 0
+                }
+            ],
+            "parent": [
+                {
+                    "target_id": null
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2021-04-28T00:37:48+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": true
+                }
+            ],
+            "revision_translation_affected": [
+                {
+                    "value": true
+                }
+            ],
+            "path": [
+                {
+                    "alias": "\/blog",
+                    "pid": 19,
+                    "langcode": "en"
+                }
+            ]
+        }
+    ]
+}

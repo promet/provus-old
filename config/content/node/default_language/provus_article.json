@@ -3,254 +3,12 @@
         {
             "nid": [
                 {
-                    "value": 1
-                }
-            ],
-            "uuid": [
-                {
-                    "value": "32f776ad-846e-4918-aecb-e4770e998e5a"
-                }
-            ],
-            "vid": [
-                {
-                    "value": 1
-                }
-            ],
-            "langcode": [
-                {
-                    "value": "en"
-                }
-            ],
-            "type": [
-                {
-                    "target_id": "provus_article",
-                    "target_type": "node_type",
-                    "target_uuid": "cce08b6f-a444-443f-913e-876906ae2a36"
-                }
-            ],
-            "revision_timestamp": [
-                {
-                    "value": "2020-04-23T06:06:31+00:00",
-                    "format": "Y-m-d\\TH:i:sP"
-                }
-            ],
-            "revision_uid": [
-                {
-                    "target_id": 0,
-                    "target_type": "user",
-                    "target_uuid": "1136bc22-208d-4966-beb8-9a3dd3662a56",
-                    "url": "\/user\/0"
-                }
-            ],
-            "revision_log": [],
-            "status": [
-                {
-                    "value": true
-                }
-            ],
-            "uid": [
-                {
-                    "target_id": 0,
-                    "target_type": "user",
-                    "target_uuid": "1136bc22-208d-4966-beb8-9a3dd3662a56",
-                    "url": "\/user\/0"
-                }
-            ],
-            "title": [
-                {
-                    "value": "COVID-19 Public Information Hotline to Close April 18"
-                }
-            ],
-            "created": [
-                {
-                    "value": "2020-04-23T06:00:55+00:00",
-                    "format": "Y-m-d\\TH:i:sP"
-                }
-            ],
-            "changed": [
-                {
-                    "value": "2020-04-23T06:06:31+00:00",
-                    "format": "Y-m-d\\TH:i:sP"
-                }
-            ],
-            "promote": [
-                {
-                    "value": true
-                }
-            ],
-            "sticky": [
-                {
-                    "value": false
-                }
-            ],
-            "default_langcode": [
-                {
-                    "value": true
-                }
-            ],
-            "revision_translation_affected": [
-                {
-                    "value": true
-                }
-            ],
-            "path": [
-                {
-                    "alias": "\/press\/covid-19-public-information-hotline-close-april-18",
-                    "pid": 17,
-                    "langcode": "en"
-                }
-            ],
-            "body": [
-                {
-                    "value": "<p>Effective Saturday, April 18, the Southport County COVID-19 Public Information Hotline will refer callers to the Southport Health Care Agency Health Referral Line.<\/p>\r\n\r\n<p>Residents can continue to call 1(833)426-6411 for inquiries related to novel coronavirus (COVID-19) in Southport County, California.<\/p>\r\n\r\n<p>Through the hotline, callers can be connected to the following resources:<\/p>\r\n\r\n<ul>\r\n\t<li>Southport County Health Care Agency \u2013 Health Referral Line, Behavioral Health Resources<\/li>\r\n\t<li>Southport County Social Services Agency \u2013 Public Assistance Benefits<\/li>\r\n\t<li>Southport County Office on Aging \u2013 Resources for Seniors<\/li>\r\n\t<li>Southport County District Attorney\u2019s Office \u2013 Scams, Price Gouging<\/li>\r\n\t<li>Small Business Recovery<\/li>\r\n\t<li>2-1-1 Southport County<\/li>\r\n<\/ul>\r\n\r\n<p>Residents who have questions about COVID-19 can contact the Southport County COVID-19 Hotline at any time, but individual hotline hours will vary.<\/p>\r\n\r\n<p>The Southport County Health Care Agency website at <a href=\"www.ochealthinfo.com\/novelcoronavirus\">www.ochealthinfo.com\/novelcoronavirus<\/a> has information that is regularly updated regarding the status of COVID-19 in Southport County.<\/p>\r\n\r\n<p>For information about COVID-19 in the state of California, visit their website at <a href=\"covid19.ca.gov\">covid19.ca.gov<\/a>.<\/p>\r\n\r\n<p>The Southport County COVID-19 Hotline can be reached at 1(833)426-6411.<\/p>\r\n",
-                    "format": "basic_html",
-                    "processed": "<p>Effective Saturday, April 18, the Southport County COVID-19 Public Information Hotline will refer callers to the Southport Health Care Agency Health Referral Line.<\/p>\n\n<p>Residents can continue to call 1(833)426-6411 for inquiries related to novel coronavirus (COVID-19) in Southport County, California.<\/p>\n\n<p>Through the hotline, callers can be connected to the following resources:<\/p>\n\n<ul><li>Southport County Health Care Agency \u2013 Health Referral Line, Behavioral Health Resources<\/li>\n\t<li>Southport County Social Services Agency \u2013 Public Assistance Benefits<\/li>\n\t<li>Southport County Office on Aging \u2013 Resources for Seniors<\/li>\n\t<li>Southport County District Attorney\u2019s Office \u2013 Scams, Price Gouging<\/li>\n\t<li>Small Business Recovery<\/li>\n\t<li>2-1-1 Southport County<\/li>\n<\/ul><p>Residents who have questions about COVID-19 can contact the Southport County COVID-19 Hotline at any time, but individual hotline hours will vary.<\/p>\n\n<p>The Southport County Health Care Agency website at <a href=\"www.ochealthinfo.com\/novelcoronavirus\">www.ochealthinfo.com\/novelcoronavirus<\/a> has information that is regularly updated regarding the status of COVID-19 in Southport County.<\/p>\n\n<p>For information about COVID-19 in the state of California, visit their website at <a href=\"covid19.ca.gov\">covid19.ca.gov<\/a>.<\/p>\n\n<p>The Southport County COVID-19 Hotline can be reached at 1(833)426-6411.<\/p>",
-                    "summary": ""
-                }
-            ],
-            "field_file": [],
-            "field_media_image": [],
-            "field_publish_date": [
-                {
-                    "value": "2020-04-17"
-                }
-            ],
-            "field_type": [
-                {
-                    "value": "press"
-                }
-            ]
-        },
-        {
-            "nid": [
-                {
                     "value": 2
                 }
             ],
             "uuid": [
                 {
-                    "value": "16620bd0-5f1a-430c-9513-1ce846e68f46"
-                }
-            ],
-            "vid": [
-                {
-                    "value": 2
-                }
-            ],
-            "langcode": [
-                {
-                    "value": "en"
-                }
-            ],
-            "type": [
-                {
-                    "target_id": "provus_article",
-                    "target_type": "node_type",
-                    "target_uuid": "cce08b6f-a444-443f-913e-876906ae2a36"
-                }
-            ],
-            "revision_timestamp": [
-                {
-                    "value": "2020-04-23T06:13:59+00:00",
-                    "format": "Y-m-d\\TH:i:sP"
-                }
-            ],
-            "revision_uid": [
-                {
-                    "target_id": 0,
-                    "target_type": "user",
-                    "target_uuid": "1136bc22-208d-4966-beb8-9a3dd3662a56",
-                    "url": "\/user\/0"
-                }
-            ],
-            "revision_log": [],
-            "status": [
-                {
-                    "value": true
-                }
-            ],
-            "uid": [
-                {
-                    "target_id": 0,
-                    "target_type": "user",
-                    "target_uuid": "1136bc22-208d-4966-beb8-9a3dd3662a56",
-                    "url": "\/user\/0"
-                }
-            ],
-            "title": [
-                {
-                    "value": "Taxpayers Directly Affected by COVID-19 Will Have Penalties Cancelled"
-                }
-            ],
-            "created": [
-                {
-                    "value": "2020-04-23T06:11:49+00:00",
-                    "format": "Y-m-d\\TH:i:sP"
-                }
-            ],
-            "changed": [
-                {
-                    "value": "2020-04-23T06:13:59+00:00",
-                    "format": "Y-m-d\\TH:i:sP"
-                }
-            ],
-            "promote": [
-                {
-                    "value": true
-                }
-            ],
-            "sticky": [
-                {
-                    "value": false
-                }
-            ],
-            "default_langcode": [
-                {
-                    "value": true
-                }
-            ],
-            "revision_translation_affected": [
-                {
-                    "value": true
-                }
-            ],
-            "path": [
-                {
-                    "alias": "\/press\/taxpayers-directly-affected-covid-19-will-have-penalties-cancelled",
-                    "pid": 18,
-                    "langcode": "en"
-                }
-            ],
-            "body": [
-                {
-                    "value": "<p><em><strong>Penalty Cancellation Request Form and Payment Must Be Received Between April 11 and June 30<\/strong><\/em><\/p>\r\n\r\n<p>SANTA ANA \u2013 The Southport County Treasurer is now accepting penalty cancellation requests for taxpayers who have been directly impacted by COVID-19.<\/p>\r\n\r\n<p>COVID-19 has had a devastating impact on the taxpayers here in Southport County, in the United States and all over the world. We want to be as compassionate and generous as possible,\u201d said Treasurer Shari Freidenrich. \u201cWe will be cancelling penalties for those homeowners, small businesses and other property owners that have been directly affected by COVID-19.\u201d<\/p>\r\n\r\n<p>If you have been directly impacted by COVID-19 and did not pay your property taxes by April 10, you should complete the COVID-19 Penalty Cancellation Request Form. Although we were not able to change the payment deadline set by state law, we are now able to extend the time for you to submit and pay the base property taxes. You will need to submit the COVID-19 Penalty Cancellation Request form and pay the base tax amount (without penalties and costs) so that it is received between April 11 and June 30, 2020.<\/p>\r\n\r\n<p>Examples of direct impacts due to COVID-19 include: illness, hospitalization, quarantine, loss of employment or business closures. Examples of documentation include hospitalization records, doctor\u2019s notes, employment notifications due to a business closure, layoff notices, rent receipt postponement notices\/waivers, CA EDD Unemployment Insurance claim letters, etc. As these requests will be reviewed on a case-by-case basis, we encourage you to apply and provide your specific circumstances to be considered. See COVID-19 FAQs at ttc.ocgov.com\/proptax\/infofaq\/penalties.<\/p>\r\n\r\n<p>\u201cDuring these unprecedented times, it is important that you know we understand the current economic hardships you directly experienced due to COVID-19 and are doing our part to help by cancelling penalties. We want to thank taxpayers who timely paid their second installment taxes,\u201d said Treasurer Freidenrich. \u201cMany of the services being provided during this emergency are paid for using property tax dollars, including those of first responders.\u201d<\/p>\r\n\r\n<p>Our customer service center is available to assist taxpayers from 9 a.m. to 5 p.m. at (714) 834-3411 or you can email ttcinfo@ttc.ocgov.com. Our website at ttc.ocgov.com also has a lot of information on property taxes.<\/p>\r\n",
-                    "format": "basic_html",
-                    "processed": "<p><em><strong>Penalty Cancellation Request Form and Payment Must Be Received Between April 11 and June 30<\/strong><\/em><\/p>\n\n<p>SANTA ANA \u2013 The Southport County Treasurer is now accepting penalty cancellation requests for taxpayers who have been directly impacted by COVID-19.<\/p>\n\n<p>COVID-19 has had a devastating impact on the taxpayers here in Southport County, in the United States and all over the world. We want to be as compassionate and generous as possible,\u201d said Treasurer Shari Freidenrich. \u201cWe will be cancelling penalties for those homeowners, small businesses and other property owners that have been directly affected by COVID-19.\u201d<\/p>\n\n<p>If you have been directly impacted by COVID-19 and did not pay your property taxes by April 10, you should complete the COVID-19 Penalty Cancellation Request Form. Although we were not able to change the payment deadline set by state law, we are now able to extend the time for you to submit and pay the base property taxes. You will need to submit the COVID-19 Penalty Cancellation Request form and pay the base tax amount (without penalties and costs) so that it is received between April 11 and June 30, 2020.<\/p>\n\n<p>Examples of direct impacts due to COVID-19 include: illness, hospitalization, quarantine, loss of employment or business closures. Examples of documentation include hospitalization records, doctor\u2019s notes, employment notifications due to a business closure, layoff notices, rent receipt postponement notices\/waivers, CA EDD Unemployment Insurance claim letters, etc. As these requests will be reviewed on a case-by-case basis, we encourage you to apply and provide your specific circumstances to be considered. See COVID-19 FAQs at ttc.ocgov.com\/proptax\/infofaq\/penalties.<\/p>\n\n<p>\u201cDuring these unprecedented times, it is important that you know we understand the current economic hardships you directly experienced due to COVID-19 and are doing our part to help by cancelling penalties. We want to thank taxpayers who timely paid their second installment taxes,\u201d said Treasurer Freidenrich. \u201cMany of the services being provided during this emergency are paid for using property tax dollars, including those of first responders.\u201d<\/p>\n\n<p>Our customer service center is available to assist taxpayers from 9 a.m. to 5 p.m. at (714) 834-3411 or you can email ttcinfo@ttc.ocgov.com. Our website at ttc.ocgov.com also has a lot of information on property taxes.<\/p>",
-                    "summary": ""
-                }
-            ],
-            "field_file": [],
-            "field_media_image": [],
-            "field_publish_date": [
-                {
-                    "value": "2020-04-14"
-                }
-            ],
-            "field_type": [
-                {
-                    "value": "press"
-                }
-            ]
-        },
-        {
-            "nid": [
-                {
-                    "value": 3
-                }
-            ],
-            "uuid": [
-                {
-                    "value": "3efa1594-2920-4de1-b8d5-bce6992fc3ee"
+                    "value": "00af6666-e621-4301-8d16-15a3e8d5db16"
                 }
             ],
             "vid": [
@@ -267,21 +25,21 @@
                 {
                     "target_id": "provus_article",
                     "target_type": "node_type",
-                    "target_uuid": "cce08b6f-a444-443f-913e-876906ae2a36"
+                    "target_uuid": "465c6ad5-a778-4617-9f76-6fd9876b1aa0"
                 }
             ],
             "revision_timestamp": [
                 {
-                    "value": "2020-04-23T06:19:47+00:00",
+                    "value": "2021-04-28T00:38:02+00:00",
                     "format": "Y-m-d\\TH:i:sP"
                 }
             ],
             "revision_uid": [
                 {
-                    "target_id": 0,
+                    "target_id": 1,
                     "target_type": "user",
-                    "target_uuid": "1136bc22-208d-4966-beb8-9a3dd3662a56",
-                    "url": "\/user\/0"
+                    "target_uuid": "6361368e-0ae3-4a16-b792-05cf28408fc4",
+                    "url": "\/user\/1"
                 }
             ],
             "revision_log": [],
@@ -292,32 +50,32 @@
             ],
             "uid": [
                 {
-                    "target_id": 0,
+                    "target_id": 1,
                     "target_type": "user",
-                    "target_uuid": "1136bc22-208d-4966-beb8-9a3dd3662a56",
-                    "url": "\/user\/0"
+                    "target_uuid": "6361368e-0ae3-4a16-b792-05cf28408fc4",
+                    "url": "\/user\/1"
                 }
             ],
             "title": [
                 {
-                    "value": "Property Taxes Due Friday \u2013 Three Payment Options"
+                    "value": "6 steps to make sure the website you're designing is accessiblity compliant"
                 }
             ],
             "created": [
                 {
-                    "value": "2020-04-23T06:14:04+00:00",
+                    "value": "2021-04-28T00:19:37+00:00",
                     "format": "Y-m-d\\TH:i:sP"
                 }
             ],
             "changed": [
                 {
-                    "value": "2020-04-23T06:19:47+00:00",
+                    "value": "2021-04-28T00:38:02+00:00",
                     "format": "Y-m-d\\TH:i:sP"
                 }
             ],
             "promote": [
                 {
-                    "value": true
+                    "value": false
                 }
             ],
             "sticky": [
@@ -337,162 +95,51 @@
             ],
             "path": [
                 {
-                    "alias": "\/press\/property-taxes-due-friday-three-payment-options",
-                    "pid": 19,
-                    "langcode": "en"
-                }
-            ],
-            "body": [
-                {
-                    "value": "<p><strong><em>Pay Now, Request Penalty Cancellation due to COVID-19, or Sign up for a 5-Year Payment Plan<\/em><\/strong><\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>SANTA ANA \u2013 The Southport County Treasurer has payment options for all taxpayers during this unprecedented medical emergency. We encourage all taxpayers who can, to pay by tomorrow as that is the last timely payment date. The easiest way is to Stay Home, Stay Safe and Pay Online with our easy to use website at <a href=\"ocgov.com\/octaxbill\">ocgov.com\/octaxbill<\/a> (secure once on payment page). We offer payment by eCheck (bank account) at no cost or by credit or debit card (2.29 percent service fee applies). You can pay up until midnight on April 10 and receive same day credit (eCheck will clear your bank in 2-3 days) and an emailed or printed receipt. Another 24\/7 payment option, if you can pay, is to pay online by midnight at ocgov.com\/octaxbill by credit\/debit card (2.29 percent service fee), or using our IVR payment option at 714-834-3411 by credit\/debit card (2.29 percent service fee).<\/p>\r\n\r\n<p>If payment is not received by April 10, then a 10 percent penalty and a $23 fee will be added to your property tax amount. In addition if you don\u2019t pay by July 1, 2020, the law requires that interest at 1.5 percent monthly (18 percent annually) be charged. To pay after April 10, you have two remaining options:<\/p>\r\n\r\n<ol>\r\n\t<li>After April 10, if you are a homeowner, small business or other property owner with significant demonstrated economic hardship due to COVID-19, you can request a penalty cancellation as soon as you are able to make the base property tax amount (without penalties and costs). All requests will be reviewed on a case-by-case basis. You will need to complete and sign the form, include a check, provide third party and other supporting documentation justifying the request and mail these items to the address on the form.<\/li>\r\n\t<li>After July 1, if you do not meet the criteria above for significant economic hardship due to COVID-19, you can sign up for our 5-Year Payment Plan. This program requires a 20 percent deposit of the amount of the property taxes due plus a set-up fee of $25, and then requires annual payments of 20 percent by April 10 of each year. Interest is charged at 1.5 percent per month (18 percent annually). There is no prepayment penalty, and taxpayers can make payments online anytime to reduce the outstanding balance providing payment flexibility for the taxpayer. Taxpayers can complete the form and mail it in after June 30. We mail a reminder to the taxpayers to pay by April 10, and the plan requires that all property taxes on the parcel are paid as required.<\/li>\r\n<\/ol>\r\n\r\n<p>\u201cI want to do all I can to help property owners make their tax payments during these unprecedented times. I know that the property tax payment is one of the single largest expenditures a homeowner may make in a year,\u201d said Treasurer Shari Freidenrich. \u201cWe are here to help our taxpayers during these challenging times.\u201d<\/p>\r\n\r\n<p>Our customer service center is available to assist taxpayers from 9 a.m. to 5 p.m. at (714) 834-3411 or you can email <a href=\"mailto:ttcinfo@ttc.ocgov.com\">ttcinfo@ttc.ocgov.com<\/a>. Our website at ttc.ocgov.com also has a lot of information on property taxes.<\/p>\r\n",
-                    "format": "basic_html",
-                    "processed": "<p><strong><em>Pay Now, Request Penalty Cancellation due to COVID-19, or Sign up for a 5-Year Payment Plan<\/em><\/strong><\/p>\n\n<p>\u00a0<\/p>\n\n<p>SANTA ANA \u2013 The Southport County Treasurer has payment options for all taxpayers during this unprecedented medical emergency. We encourage all taxpayers who can, to pay by tomorrow as that is the last timely payment date. The easiest way is to Stay Home, Stay Safe and Pay Online with our easy to use website at <a href=\"ocgov.com\/octaxbill\">ocgov.com\/octaxbill<\/a> (secure once on payment page). We offer payment by eCheck (bank account) at no cost or by credit or debit card (2.29 percent service fee applies). You can pay up until midnight on April 10 and receive same day credit (eCheck will clear your bank in 2-3 days) and an emailed or printed receipt. Another 24\/7 payment option, if you can pay, is to pay online by midnight at ocgov.com\/octaxbill by credit\/debit card (2.29 percent service fee), or using our IVR payment option at 714-834-3411 by credit\/debit card (2.29 percent service fee).<\/p>\n\n<p>If payment is not received by April 10, then a 10 percent penalty and a $23 fee will be added to your property tax amount. In addition if you don\u2019t pay by July 1, 2020, the law requires that interest at 1.5 percent monthly (18 percent annually) be charged. To pay after April 10, you have two remaining options:<\/p>\n\n<ol><li>After April 10, if you are a homeowner, small business or other property owner with significant demonstrated economic hardship due to COVID-19, you can request a penalty cancellation as soon as you are able to make the base property tax amount (without penalties and costs). All requests will be reviewed on a case-by-case basis. You will need to complete and sign the form, include a check, provide third party and other supporting documentation justifying the request and mail these items to the address on the form.<\/li>\n\t<li>After July 1, if you do not meet the criteria above for significant economic hardship due to COVID-19, you can sign up for our 5-Year Payment Plan. This program requires a 20 percent deposit of the amount of the property taxes due plus a set-up fee of $25, and then requires annual payments of 20 percent by April 10 of each year. Interest is charged at 1.5 percent per month (18 percent annually). There is no prepayment penalty, and taxpayers can make payments online anytime to reduce the outstanding balance providing payment flexibility for the taxpayer. Taxpayers can complete the form and mail it in after June 30. We mail a reminder to the taxpayers to pay by April 10, and the plan requires that all property taxes on the parcel are paid as required.<\/li>\n<\/ol><p>\u201cI want to do all I can to help property owners make their tax payments during these unprecedented times. I know that the property tax payment is one of the single largest expenditures a homeowner may make in a year,\u201d said Treasurer Shari Freidenrich. \u201cWe are here to help our taxpayers during these challenging times.\u201d<\/p>\n\n<p>Our customer service center is available to assist taxpayers from 9 a.m. to 5 p.m. at (714) 834-3411 or you can email <a href=\"mailto:ttcinfo@ttc.ocgov.com\">ttcinfo@ttc.ocgov.com<\/a>. Our website at ttc.ocgov.com also has a lot of information on property taxes.<\/p>",
-                    "summary": ""
-                }
-            ],
-            "field_file": [],
-            "field_media_image": [],
-            "field_publish_date": [
-                {
-                    "value": "2020-04-09"
-                }
-            ],
-            "field_type": [
-                {
-                    "value": "press"
-                }
-            ]
-        },
-        {
-            "nid": [
-                {
-                    "value": 4
-                }
-            ],
-            "uuid": [
-                {
-                    "value": "14cf6efe-c1e2-4fc9-a3bf-b32c5f78a50a"
-                }
-            ],
-            "vid": [
-                {
-                    "value": 4
-                }
-            ],
-            "langcode": [
-                {
-                    "value": "en"
-                }
-            ],
-            "type": [
-                {
-                    "target_id": "provus_article",
-                    "target_type": "node_type",
-                    "target_uuid": "cce08b6f-a444-443f-913e-876906ae2a36"
-                }
-            ],
-            "revision_timestamp": [
-                {
-                    "value": "2020-04-23T06:20:41+00:00",
-                    "format": "Y-m-d\\TH:i:sP"
-                }
-            ],
-            "revision_uid": [
-                {
-                    "target_id": 0,
-                    "target_type": "user",
-                    "target_uuid": "1136bc22-208d-4966-beb8-9a3dd3662a56",
-                    "url": "\/user\/0"
-                }
-            ],
-            "revision_log": [],
-            "status": [
-                {
-                    "value": true
-                }
-            ],
-            "uid": [
-                {
-                    "target_id": 0,
-                    "target_type": "user",
-                    "target_uuid": "1136bc22-208d-4966-beb8-9a3dd3662a56",
-                    "url": "\/user\/0"
-                }
-            ],
-            "title": [
-                {
-                    "value": "Certain Employees at Some Essential Businesses Must Wear Face Coverings Effective Friday, April 24"
-                }
-            ],
-            "created": [
-                {
-                    "value": "2020-04-23T06:19:57+00:00",
-                    "format": "Y-m-d\\TH:i:sP"
-                }
-            ],
-            "changed": [
-                {
-                    "value": "2020-04-23T06:20:41+00:00",
-                    "format": "Y-m-d\\TH:i:sP"
-                }
-            ],
-            "promote": [
-                {
-                    "value": true
-                }
-            ],
-            "sticky": [
-                {
-                    "value": false
-                }
-            ],
-            "default_langcode": [
-                {
-                    "value": true
-                }
-            ],
-            "revision_translation_affected": [
-                {
-                    "value": true
-                }
-            ],
-            "path": [
-                {
-                    "alias": "\/news\/certain-employees-some-essential-businesses-must-wear-face-coverings-effective-friday-april-24",
+                    "alias": "\/news\/6-steps-make-sure-website-youre-designing-accessiblity-compliant",
                     "pid": 20,
                     "langcode": "en"
                 }
             ],
             "body": [
                 {
-                    "value": "<p>(Santa Ana, CA) --&nbsp;Effective at 12 a.m. on Friday, April 24, 2020, all employees of any grocery store, pharmacy\/drug store, convenience store, gas station, restaurant, food preparation establishment, or retail store in Southport County who may have contact with the public must wear a cloth face covering while at work.<\/p>\r\n\r\n<p>The Southport County Board of Supervisors today approved the directive from Vice Chairman Andrew Do, First District Supervisor, pursuant to&nbsp;<a href=\"https:\/\/leginfo.legislature.ca.gov\/faces\/printCodeSectionWindow.xhtml?lawCode=GOV&amp;sectionNum=8634.&amp;op_statues=1970&amp;op_chapter=1454\">Government Code section 8634<\/a>&nbsp;that will apply countywide.<\/p>\r\n\r\n<p>\u201cMy directive is in line with face coverings&nbsp;<a href=\"https:\/\/www.cdph.ca.gov\/Programs\/CID\/DCDC\/Pages\/Face-Coverings-Guidance.aspx\">guidance<\/a>&nbsp;issued by the California Department of Public Health on April 1, 2020, and is intended to help slow the spread of COVID-19 by those who are asymptomatic. It is a strong step in the right direction,\u201d said Vice Chairman Do.<\/p>\r\n\r\n<p>Employees must comply with this regulation for the health and safety of all in the community as it is enforceable by law enforcement per&nbsp;<a href=\"http:\/\/leginfo.legislature.ca.gov\/faces\/printCodeSectionWindow.xhtml?lawCode=GOV&amp;sectionNum=8665.&amp;op_statues=1983&amp;op_chapter=1092&amp;op_section=131\">Government Code&nbsp;section 8665<\/a>.<\/p>\r\n\r\n<p>Though the regulation issued by the Board today does not apply to customers, County Health Officer Dr. Nichole Quick continues to strongly encourage residents to wear face coverings while engaged in essential activities outside the home. \u201cResidents can make their own face coverings at home from a variety of materials and should refrain from purchasing personal protective equipment that is critical and in short supply for our healthcare workers, such as N95 and surgical masks,\u201d said Dr. Quick.<\/p>\r\n\r\n<p>If a city has a more restrictive rule regarding face coverings, the more restrictive rule will apply to their jurisdiction.<\/p>\r\n\r\n<p>For more information about COVID-19, please visit&nbsp;<a href=\"https:\/\/gcc01.safelinks.protection.outlook.com\/?url=http%253A%252F%252Fwww.ochealthinfo.com%252Fnovelcoronavirus&amp;data=02%257C01%257Cmolly.nichelson%2540ocgov.com%257C47e34f9d95a4465b70f808d7e65c0cfd%257Ce4449a56cd3d40baae3225a63deaab3b%257C0%257C0%257C637231155358867094&amp;sdata=YlAMVk8YqO4L6wJe8duHjZ7R4ihgBGgwZ2LtuVgXIoI%253D&amp;reserved=0\">www.ochealthinfo.com\/novelcoronavirus<\/a>.&nbsp;<\/p>\r\n",
+                    "value": "<p>Each election in Orange County, the Orange County Registrar of Voters invites members of the public to observe the election process. Election observers are permitted to observe Vote Centers operations, including opening and closing procedures, view all activities at the central counting site, view mail ballot and provisional ballot processing, and much more.<\/p>\r\n",
                     "format": "basic_html",
-                    "processed": "<p>(Santa Ana, CA) --\u00a0Effective at 12 a.m. on Friday, April 24, 2020, all employees of any grocery store, pharmacy\/drug store, convenience store, gas station, restaurant, food preparation establishment, or retail store in Southport County who may have contact with the public must wear a cloth face covering while at work.<\/p>\n\n<p>The Southport County Board of Supervisors today approved the directive from Vice Chairman Andrew Do, First District Supervisor, pursuant to\u00a0<a href=\"https:\/\/leginfo.legislature.ca.gov\/faces\/printCodeSectionWindow.xhtml?lawCode=GOV&amp;sectionNum=8634.&amp;op_statues=1970&amp;op_chapter=1454\">Government Code section 8634<\/a>\u00a0that will apply countywide.<\/p>\n\n<p>\u201cMy directive is in line with face coverings\u00a0<a href=\"https:\/\/www.cdph.ca.gov\/Programs\/CID\/DCDC\/Pages\/Face-Coverings-Guidance.aspx\">guidance<\/a>\u00a0issued by the California Department of Public Health on April 1, 2020, and is intended to help slow the spread of COVID-19 by those who are asymptomatic. It is a strong step in the right direction,\u201d said Vice Chairman Do.<\/p>\n\n<p>Employees must comply with this regulation for the health and safety of all in the community as it is enforceable by law enforcement per\u00a0<a href=\"http:\/\/leginfo.legislature.ca.gov\/faces\/printCodeSectionWindow.xhtml?lawCode=GOV&amp;sectionNum=8665.&amp;op_statues=1983&amp;op_chapter=1092&amp;op_section=131\">Government Code\u00a0section 8665<\/a>.<\/p>\n\n<p>Though the regulation issued by the Board today does not apply to customers, County Health Officer Dr. Nichole Quick continues to strongly encourage residents to wear face coverings while engaged in essential activities outside the home. \u201cResidents can make their own face coverings at home from a variety of materials and should refrain from purchasing personal protective equipment that is critical and in short supply for our healthcare workers, such as N95 and surgical masks,\u201d said Dr. Quick.<\/p>\n\n<p>If a city has a more restrictive rule regarding face coverings, the more restrictive rule will apply to their jurisdiction.<\/p>\n\n<p>For more information about COVID-19, please visit\u00a0<a href=\"https:\/\/gcc01.safelinks.protection.outlook.com\/?url=http%253A%252F%252Fwww.ochealthinfo.com%252Fnovelcoronavirus&amp;data=02%257C01%257Cmolly.nichelson%2540ocgov.com%257C47e34f9d95a4465b70f808d7e65c0cfd%257Ce4449a56cd3d40baae3225a63deaab3b%257C0%257C0%257C637231155358867094&amp;sdata=YlAMVk8YqO4L6wJe8duHjZ7R4ihgBGgwZ2LtuVgXIoI%253D&amp;reserved=0\">www.ochealthinfo.com\/novelcoronavirus<\/a>.\u00a0<\/p>",
+                    "processed": "<p>Each election in Orange County, the Orange County Registrar of Voters invites members of the public to observe the election process. Election observers are permitted to observe Vote Centers operations, including opening and closing procedures, view all activities at the central counting site, view mail ballot and provisional ballot processing, and much more.<\/p>",
                     "summary": ""
                 }
             ],
             "field_file": [],
-            "field_media_image": [],
+            "field_media_image": [
+                {
+                    "target_id": 1,
+                    "target_type": "media",
+                    "target_uuid": "684b0d83-0cf7-4b1c-94e8-b09649f798f8",
+                    "url": "\/media\/1\/edit"
+                }
+            ],
             "field_publish_date": [
                 {
-                    "value": "2020-04-22"
+                    "value": "2021-06-18"
                 }
             ],
             "field_type": [
                 {
-                    "value": "news"
+                    "target_id": 1,
+                    "target_type": "taxonomy_term",
+                    "target_uuid": "e0007ae8-646a-49c3-88d3-c72541723512",
+                    "url": "\/news"
                 }
             ]
         },
         {
             "nid": [
                 {
-                    "value": 5
+                    "value": 3
                 }
             ],
             "uuid": [
                 {
-                    "value": "4449d0cc-5edb-400b-bed6-100b6b09ee33"
+                    "value": "0eae0f04-8935-43b2-9f31-dfe3d51738f7"
                 }
             ],
             "vid": [
@@ -509,21 +156,21 @@
                 {
                     "target_id": "provus_article",
                     "target_type": "node_type",
-                    "target_uuid": "cce08b6f-a444-443f-913e-876906ae2a36"
+                    "target_uuid": "465c6ad5-a778-4617-9f76-6fd9876b1aa0"
                 }
             ],
             "revision_timestamp": [
                 {
-                    "value": "2020-09-18T01:45:08+00:00",
+                    "value": "2021-04-28T00:42:29+00:00",
                     "format": "Y-m-d\\TH:i:sP"
                 }
             ],
             "revision_uid": [
                 {
-                    "target_id": 0,
+                    "target_id": 1,
                     "target_type": "user",
-                    "target_uuid": "1136bc22-208d-4966-beb8-9a3dd3662a56",
-                    "url": "\/user\/0"
+                    "target_uuid": "6361368e-0ae3-4a16-b792-05cf28408fc4",
+                    "url": "\/user\/1"
                 }
             ],
             "revision_log": [],
@@ -534,32 +181,32 @@
             ],
             "uid": [
                 {
-                    "target_id": 0,
+                    "target_id": 1,
                     "target_type": "user",
-                    "target_uuid": "1136bc22-208d-4966-beb8-9a3dd3662a56",
-                    "url": "\/user\/0"
+                    "target_uuid": "6361368e-0ae3-4a16-b792-05cf28408fc4",
+                    "url": "\/user\/1"
                 }
             ],
             "title": [
                 {
-                    "value": "Southport Health Care Agency Announces Launch of the  Southport COVID-19 Testing Network"
+                    "value": "Meet Provus, Promet's Solution to Creating Better Content Editor Experiences"
                 }
             ],
             "created": [
                 {
-                    "value": "2020-04-23T06:20:47+00:00",
+                    "value": "2021-04-28T00:41:05+00:00",
                     "format": "Y-m-d\\TH:i:sP"
                 }
             ],
             "changed": [
                 {
-                    "value": "2020-09-18T01:45:08+00:00",
+                    "value": "2021-04-28T00:42:29+00:00",
                     "format": "Y-m-d\\TH:i:sP"
                 }
             ],
             "promote": [
                 {
-                    "value": true
+                    "value": false
                 }
             ],
             "sticky": [
@@ -579,150 +226,432 @@
             ],
             "path": [
                 {
-                    "alias": "\/news\/southport-health-care-agency-announces-launch-southport-covid-19-testing-network",
-                    "pid": 21,
-                    "langcode": "en"
-                }
-            ],
-            "body": [
-                {
-                    "value": "<p>(Santa Ana, CA) -- The Southport Health Care Agency (HCA) is pleased to announce the launch of the Southport COVID-19 Testing Network, which offers COVID-19 testing starting Tuesday, April 21, 2020 to Southport County residents who meet the criteria detailed below.<\/p>\r\n\r\n<p>The Network coordinates and expands testing across Southport County to create a safety net for any community member who is experiencing COVID-19 symptoms but is unable to receive testing through a health care provider.<\/p>\r\n\r\n<p>\u201cWe have partnered with an initial set of community health centers who are performing FDA-approved PCR testing, the most reliable testing available to detect current infection,\u201d said Dr. Nichole Quick, County Health Officer. \u201cThe Southport Health Care Agency will continue to work diligently to expand this network by bringing more locations online in the days and weeks to come.\u201d<\/p>\r\n\r\n<p>The PCR test identifies if someone is currently infected from a sample taken with a swab. It is not a blood test, nor does it test for antibodies. Residents with symptoms of COVID-19, which generally include fever, cough, and shortness of breath, should first contact their medical provider to get guidance on testing and care. Individuals who are unable to be tested by their provider may schedule an appointment at any Network test site to receive a medical screening and test. Initial locations include:<\/p>\r\n\r\n<ul>\r\n\t<li>AltaMed Medical Group, Anaheim<\/li>\r\n\t<li>AltaMed Medical Group, Santa Ana\/Bristol<\/li>\r\n\t<li>Nhan Hoa Comprehensive Health Care Clinic, Garden Grove<\/li>\r\n\t<li>UCI Health, multiple locations<\/li>\r\n<\/ul>\r\n\r\n<p>A continually-updated list of test sites, with information on scheduling and the appointment process, can be found at&nbsp;<a href=\"http:\/\/www.ochealthinfo.com\/novelcoronavirus\">www.ochealthinfo.com\/novelcoronavirus<\/a>&nbsp;(click on COVID-19 Testing and Screening) or by calling the HCA\u2019s Health Referral Line at&nbsp;<a href=\"tel:1(800) 564-8448\">1(800) 564-8448<\/a>.&nbsp;<\/p>\r\n\r\n<p>\u201cBecause of continued challenges of obtaining testing supplies and personal protective equipment (PPE) for health care providers, testing may be restricted at times to high priority groups as defined by the Centers for Disease Control and Prevention (CDC),\u201d said Dr. Quick. \u201cResidents must make an appointment for testing to assure eligibility and availability of testing.\u201d<\/p>\r\n",
-                    "format": "basic_html",
-                    "processed": "<p>(Santa Ana, CA) -- The Southport Health Care Agency (HCA) is pleased to announce the launch of the Southport COVID-19 Testing Network, which offers COVID-19 testing starting Tuesday, April 21, 2020 to Southport County residents who meet the criteria detailed below.<\/p>\n\n<p>The Network coordinates and expands testing across Southport County to create a safety net for any community member who is experiencing COVID-19 symptoms but is unable to receive testing through a health care provider.<\/p>\n\n<p>\u201cWe have partnered with an initial set of community health centers who are performing FDA-approved PCR testing, the most reliable testing available to detect current infection,\u201d said Dr. Nichole Quick, County Health Officer. \u201cThe Southport Health Care Agency will continue to work diligently to expand this network by bringing more locations online in the days and weeks to come.\u201d<\/p>\n\n<p>The PCR test identifies if someone is currently infected from a sample taken with a swab. It is not a blood test, nor does it test for antibodies. Residents with symptoms of COVID-19, which generally include fever, cough, and shortness of breath, should first contact their medical provider to get guidance on testing and care. Individuals who are unable to be tested by their provider may schedule an appointment at any Network test site to receive a medical screening and test. Initial locations include:<\/p>\n\n<ul><li>AltaMed Medical Group, Anaheim<\/li>\n\t<li>AltaMed Medical Group, Santa Ana\/Bristol<\/li>\n\t<li>Nhan Hoa Comprehensive Health Care Clinic, Garden Grove<\/li>\n\t<li>UCI Health, multiple locations<\/li>\n<\/ul><p>A continually-updated list of test sites, with information on scheduling and the appointment process, can be found at\u00a0<a href=\"http:\/\/www.ochealthinfo.com\/novelcoronavirus\">www.ochealthinfo.com\/novelcoronavirus<\/a>\u00a0(click on COVID-19 Testing and Screening) or by calling the HCA\u2019s Health Referral Line at\u00a0<a href=\"tel:1(800) 564-8448\">1(800) 564-8448<\/a>.\u00a0<\/p>\n\n<p>\u201cBecause of continued challenges of obtaining testing supplies and personal protective equipment (PPE) for health care providers, testing may be restricted at times to high priority groups as defined by the Centers for Disease Control and Prevention (CDC),\u201d said Dr. Quick. \u201cResidents must make an appointment for testing to assure eligibility and availability of testing.\u201d<\/p>",
-                    "summary": ""
-                }
-            ],
-            "field_file": [],
-            "field_media_image": [],
-            "field_publish_date": [
-                {
-                    "value": "2020-04-21"
-                }
-            ],
-            "field_type": [
-                {
-                    "value": "news"
-                }
-            ]
-        },
-        {
-            "nid": [
-                {
-                    "value": 6
-                }
-            ],
-            "uuid": [
-                {
-                    "value": "090d4784-455b-4596-95c9-695233d994af"
-                }
-            ],
-            "vid": [
-                {
-                    "value": 6
-                }
-            ],
-            "langcode": [
-                {
-                    "value": "en"
-                }
-            ],
-            "type": [
-                {
-                    "target_id": "provus_article",
-                    "target_type": "node_type",
-                    "target_uuid": "cce08b6f-a444-443f-913e-876906ae2a36"
-                }
-            ],
-            "revision_timestamp": [
-                {
-                    "value": "2020-04-23T06:28:19+00:00",
-                    "format": "Y-m-d\\TH:i:sP"
-                }
-            ],
-            "revision_uid": [
-                {
-                    "target_id": 0,
-                    "target_type": "user",
-                    "target_uuid": "1136bc22-208d-4966-beb8-9a3dd3662a56",
-                    "url": "\/user\/0"
-                }
-            ],
-            "revision_log": [],
-            "status": [
-                {
-                    "value": true
-                }
-            ],
-            "uid": [
-                {
-                    "target_id": 0,
-                    "target_type": "user",
-                    "target_uuid": "1136bc22-208d-4966-beb8-9a3dd3662a56",
-                    "url": "\/user\/0"
-                }
-            ],
-            "title": [
-                {
-                    "value": "John Wayne Airport Posts March 2020 Statistics"
-                }
-            ],
-            "created": [
-                {
-                    "value": "2020-04-23T06:21:59+00:00",
-                    "format": "Y-m-d\\TH:i:sP"
-                }
-            ],
-            "changed": [
-                {
-                    "value": "2020-04-23T06:28:19+00:00",
-                    "format": "Y-m-d\\TH:i:sP"
-                }
-            ],
-            "promote": [
-                {
-                    "value": true
-                }
-            ],
-            "sticky": [
-                {
-                    "value": false
-                }
-            ],
-            "default_langcode": [
-                {
-                    "value": true
-                }
-            ],
-            "revision_translation_affected": [
-                {
-                    "value": true
-                }
-            ],
-            "path": [
-                {
-                    "alias": "\/news\/john-wayne-airport-posts-march-2020-statistics",
+                    "alias": "\/news\/meet-provus-promets-solution-creating-better-content-editor-experiences",
                     "pid": 22,
                     "langcode": "en"
                 }
             ],
             "body": [
                 {
-                    "value": "<p><strong>SANTA ANA, Calif.<\/strong>&nbsp;- Airline passenger traffic at John Wayne Airport decreased in March 2020 as compared with March 2019.&nbsp;In March 2020, the Airport served 337,981 passengers, a decrease of 63.4% when compared with the March 2019 passenger traffic count of 923,403.&nbsp;<\/p>\r\n\r\n<p>Commercial aircraft operations decreased 27.7% and commuter aircraft operations increased 25.0% when compared with March 2019 levels.<\/p>\r\n\r\n<p>Total aircraft operations decreased in March 2020 as compared with the same month in 2019.&nbsp;In March 2020, there were 17,020 total aircraft operations (take-offs and landings), a 34.8% decrease compared to 26,107 total aircraft operations in March 2019.<\/p>\r\n\r\n<p>General aviation activity, which accounted for 64.0% of the total aircraft operations during March 2020, decreased 39.1% when compared with March 2019.<\/p>\r\n\r\n<p>The top three airlines in March 2020 based on passenger count were Southwest Airlines (111,365), American Airlines (61,774) and United Airlines (53,102).<\/p>\r\n\r\n<table>\r\n\t<caption>John Wayne Airport<br \/>\r\n\tMonthly Airport Statistics MARCH 2020<\/caption>\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td>&nbsp;<\/td>\r\n\t\t\t<th scope=\"col\">March<br \/>\r\n\t\t\t2020<\/th>\r\n\t\t\t<th scope=\"col\">March<br \/>\r\n\t\t\t2019<\/th>\r\n\t\t\t<th scope=\"col\">% Change<\/th>\r\n\t\t\t<th scope=\"col\">Year-To-Date<br \/>\r\n\t\t\t2020<\/th>\r\n\t\t\t<th scope=\"col\">Year-To-Date<br \/>\r\n\t\t\t2019<\/th>\r\n\t\t\t<th scope=\"col\">% Change<\/th>\r\n\t\t<\/tr>\r\n\t\t<tr>\r\n\t\t\t<th scope=\"row\">Total passengers<\/th>\r\n\t\t\t<td>337,981<\/td>\r\n\t\t\t<td>923,403<\/td>\r\n\t\t\t<td>-63.4%<\/td>\r\n\t\t\t<td>1,908,873<\/td>\r\n\t\t\t<td>2,532,284<\/td>\r\n\t\t\t<td>-24.6%<\/td>\r\n\t\t<\/tr>\r\n\t\t<tr>\r\n\t\t\t<th scope=\"row\">Enplaned passengers<\/th>\r\n\t\t\t<td>171,445<\/td>\r\n\t\t\t<td>462,074<\/td>\r\n\t\t\t<td>-62.9%<\/td>\r\n\t\t\t<td>955,507<\/td>\r\n\t\t\t<td>1,265,487<\/td>\r\n\t\t\t<td>-24.5%<\/td>\r\n\t\t<\/tr>\r\n\t\t<tr>\r\n\t\t\t<th scope=\"row\">Deplaned passengers<\/th>\r\n\t\t\t<td>166,536<\/td>\r\n\t\t\t<td>461,329<\/td>\r\n\t\t\t<td>-63.9%<\/td>\r\n\t\t\t<td>953,366<\/td>\r\n\t\t\t<td>1,266,797<\/td>\r\n\t\t\t<td>-24.7%<\/td>\r\n\t\t<\/tr>\r\n\t\t<tr>\r\n\t\t\t<th scope=\"row\">Total Aircraft Operations<\/th>\r\n\t\t\t<td>17,020<\/td>\r\n\t\t\t<td>26,107<\/td>\r\n\t\t\t<td>-34.8%<\/td>\r\n\t\t\t<td>59,117<\/td>\r\n\t\t\t<td>70,277<\/td>\r\n\t\t\t<td>-15.9%<\/td>\r\n\t\t<\/tr>\r\n\t\t<tr>\r\n\t\t\t<th scope=\"row\">General Aviation<\/th>\r\n\t\t\t<td>10,906<\/td>\r\n\t\t\t<td>17,903<\/td>\r\n\t\t\t<td>-39.1%<\/td>\r\n\t\t\t<td>38,560<\/td>\r\n\t\t\t<td>46,921<\/td>\r\n\t\t\t<td>-17.8%<\/td>\r\n\t\t<\/tr>\r\n\t\t<tr>\r\n\t\t\t<th scope=\"row\">Commercial<\/th>\r\n\t\t\t<td>5,583<\/td>\r\n\t\t\t<td>7,720<\/td>\r\n\t\t\t<td>-27.7%<\/td>\r\n\t\t\t<td>18,703<\/td>\r\n\t\t\t<td>21,984<\/td>\r\n\t\t\t<td>-14.9%<\/td>\r\n\t\t<\/tr>\r\n\t\t<tr>\r\n\t\t\t<th scope=\"row\">Commuter<sup>1<\/sup><\/th>\r\n\t\t\t<td>500<\/td>\r\n\t\t\t<td>400<\/td>\r\n\t\t\t<td>25.0%<\/td>\r\n\t\t\t<td>1,692<\/td>\r\n\t\t\t<td>1,163<\/td>\r\n\t\t\t<td>45.5%<\/td>\r\n\t\t<\/tr>\r\n\t\t<tr>\r\n\t\t\t<th scope=\"row\">Military<\/th>\r\n\t\t\t<td>31<\/td>\r\n\t\t\t<td>84<\/td>\r\n\t\t\t<td>-63.1%<\/td>\r\n\t\t\t<td>162<\/td>\r\n\t\t\t<td>209<\/td>\r\n\t\t\t<td>-22.5%<\/td>\r\n\t\t<\/tr>\r\n\t\t<tr>\r\n\t\t\t<th scope=\"row\">Air Cargo Tons<sup>2<\/sup><\/th>\r\n\t\t\t<td>1,420<\/td>\r\n\t\t\t<td>1,401<\/td>\r\n\t\t\t<td>1.4%<\/td>\r\n\t\t\t<td>4,610<\/td>\r\n\t\t\t<td>4,729<\/td>\r\n\t\t\t<td>-2.5%<\/td>\r\n\t\t<\/tr>\r\n\t\t<tr>\r\n\t\t\t<th colspan=\"7\" scope=\"row\"><br \/>\r\n\t\t\t<strong>International Statistics<sup>3<\/sup><\/strong>&nbsp;(included in totals above)<\/th>\r\n\t\t<\/tr>\r\n\t\t<tr>\r\n\t\t\t<td>&nbsp;<\/td>\r\n\t\t\t<th scope=\"col\">March<br \/>\r\n\t\t\t2020<\/th>\r\n\t\t\t<th scope=\"col\">March<br \/>\r\n\t\t\t2019<\/th>\r\n\t\t\t<th scope=\"col\">% Change<\/th>\r\n\t\t\t<th scope=\"col\">Year-To-Date<br \/>\r\n\t\t\t2020<\/th>\r\n\t\t\t<th scope=\"col\">Year-To-Date<br \/>\r\n\t\t\t2019<\/th>\r\n\t\t\t<th scope=\"col\">% Change<\/th>\r\n\t\t<\/tr>\r\n\t\t<tr>\r\n\t\t\t<th scope=\"row\">Total Passengers<\/th>\r\n\t\t\t<td>2,813<\/td>\r\n\t\t\t<td>16,693<\/td>\r\n\t\t\t<td>-83.1%<\/td>\r\n\t\t\t<td>17,246<\/td>\r\n\t\t\t<td>43,614<\/td>\r\n\t\t\t<td>-60.5%<\/td>\r\n\t\t<\/tr>\r\n\t\t<tr>\r\n\t\t\t<th scope=\"row\">Enplaned passengers<\/th>\r\n\t\t\t<td>1,623<\/td>\r\n\t\t\t<td>8,460<\/td>\r\n\t\t\t<td>-80.8%<\/td>\r\n\t\t\t<td>8,703<\/td>\r\n\t\t\t<td>22,031<\/td>\r\n\t\t\t<td>-60.5%<\/td>\r\n\t\t<\/tr>\r\n\t\t<tr>\r\n\t\t\t<th scope=\"row\">Deplaned passengers<\/th>\r\n\t\t\t<td>1,190<\/td>\r\n\t\t\t<td>8,233<\/td>\r\n\t\t\t<td>-85.5%<\/td>\r\n\t\t\t<td>8,543<\/td>\r\n\t\t\t<td>21,583<\/td>\r\n\t\t\t<td>-60.4%<\/td>\r\n\t\t<\/tr>\r\n\t\t<tr>\r\n\t\t\t<th scope=\"row\">Total Aircraft Operations<\/th>\r\n\t\t\t<td>40<\/td>\r\n\t\t\t<td>175<\/td>\r\n\t\t\t<td>-77.1%<\/td>\r\n\t\t\t<td>172<\/td>\r\n\t\t\t<td>467<\/td>\r\n\t\t\t<td>-63.2%<\/td>\r\n\t\t<\/tr>\r\n\t\t<tr>\r\n\t\t\t<td colspan=\"7\">\r\n\t\t\t<table>\r\n\t\t\t\t<tbody>\r\n\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t<td><sup>1<\/sup><\/td>\r\n\t\t\t\t\t\t<td>\r\n\t\t\t\t\t\t<p>Aircraft used for regularly scheduled air service, configured with not more than seventy (70) seats, and operating at weights not more than ninety thousand (90,000) pounds.<\/p>\r\n\t\t\t\t\t\t<\/td>\r\n\t\t\t\t\t<\/tr>\r\n\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t<td><sup>2<\/sup><\/td>\r\n\t\t\t\t\t\t<td>\r\n\t\t\t\t\t\t<p>All-Cargo Carriers: 1,278 tons<br \/>\r\n\t\t\t\t\t\tPassenger Carriers (incidental belly cargo):&nbsp; 142 tons<br \/>\r\n\t\t\t\t\t\t(Current cargo tonnage figures in this report are for February 2020)<\/p>\r\n\t\t\t\t\t\t<\/td>\r\n\t\t\t\t\t<\/tr>\r\n\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t<td><sup>3<\/sup><\/td>\r\n\t\t\t\t\t\t<td>\r\n\t\t\t\t\t\t<p>Includes all Canada and Mexico Commercial passengers and operations.<\/p>\r\n\t\t\t\t\t\t<\/td>\r\n\t\t\t\t\t<\/tr>\r\n\t\t\t\t<\/tbody>\r\n\t\t\t<\/table>\r\n\t\t\t<\/td>\r\n\t\t<\/tr>\r\n\t<\/tbody>\r\n<\/table>\r\n\r\n<p>-###-<\/p>\r\n\r\n<p>John Wayne Airport (SNA) is owned by the Southport County and is operated as a self-supporting enterprise that receives no general fund tax revenue. The Airport serves more than 10 million passengers annually and reaches more than 20 nonstop destinations in the United States, Canada and Mexico. More information can be found at&nbsp;<a href=\"https:\/\/www.ocair.com\/\">www.ocair.com<\/a>. Like us on&nbsp;<a href=\"http:\/\/www.facebook.com\/JohnWayneAirport\" target=\"_blank\">facebook.com\/johnwayneairport<\/a>, or follow us on&nbsp;<a href=\"http:\/\/twitter.com\/johnwayneair\" target=\"_blank\">Twitter @johnwayneair<\/a>&nbsp;and&nbsp;<a href=\"http:\/\/instagram.com\/JohnWayneAir\" target=\"_blank\">Instagram&nbsp;@johnwayneair<\/a>.<\/p>\r\n\r\n<p>To receive John Wayne Airport news releases automatically, go to&nbsp;<a href=\"https:\/\/www.ocair.com\/\">www.ocair.com<\/a>&nbsp;and click&nbsp;<a href=\"https:\/\/www.ocair.com\/newsroom\/subscribe.aspx\">Subscribe<\/a>.<\/p>\r\n",
-                    "format": "full_html",
-                    "processed": "<p><strong>SANTA ANA, Calif.<\/strong>\u00a0- Airline passenger traffic at John Wayne Airport decreased in March 2020 as compared with March 2019.\u00a0In March 2020, the Airport served 337,981 passengers, a decrease of 63.4% when compared with the March 2019 passenger traffic count of 923,403.\u00a0<\/p>\n\n<p>Commercial aircraft operations decreased 27.7% and commuter aircraft operations increased 25.0% when compared with March 2019 levels.<\/p>\n\n<p>Total aircraft operations decreased in March 2020 as compared with the same month in 2019.\u00a0In March 2020, there were 17,020 total aircraft operations (take-offs and landings), a 34.8% decrease compared to 26,107 total aircraft operations in March 2019.<\/p>\n\n<p>General aviation activity, which accounted for 64.0% of the total aircraft operations during March 2020, decreased 39.1% when compared with March 2019.<\/p>\n\n<p>The top three airlines in March 2020 based on passenger count were Southwest Airlines (111,365), American Airlines (61,774) and United Airlines (53,102).<\/p>\n\n<table><caption>John Wayne Airport<br \/>\n\tMonthly Airport Statistics MARCH 2020<\/caption>\n\t<tbody><tr><td>\u00a0<\/td>\n\t\t\t<th>March<br \/>\n\t\t\t2020<\/th>\n\t\t\t<th>March<br \/>\n\t\t\t2019<\/th>\n\t\t\t<th>% Change<\/th>\n\t\t\t<th>Year-To-Date<br \/>\n\t\t\t2020<\/th>\n\t\t\t<th>Year-To-Date<br \/>\n\t\t\t2019<\/th>\n\t\t\t<th>% Change<\/th>\n\t\t<\/tr><tr><th>Total passengers<\/th>\n\t\t\t<td>337,981<\/td>\n\t\t\t<td>923,403<\/td>\n\t\t\t<td>-63.4%<\/td>\n\t\t\t<td>1,908,873<\/td>\n\t\t\t<td>2,532,284<\/td>\n\t\t\t<td>-24.6%<\/td>\n\t\t<\/tr><tr><th>Enplaned passengers<\/th>\n\t\t\t<td>171,445<\/td>\n\t\t\t<td>462,074<\/td>\n\t\t\t<td>-62.9%<\/td>\n\t\t\t<td>955,507<\/td>\n\t\t\t<td>1,265,487<\/td>\n\t\t\t<td>-24.5%<\/td>\n\t\t<\/tr><tr><th>Deplaned passengers<\/th>\n\t\t\t<td>166,536<\/td>\n\t\t\t<td>461,329<\/td>\n\t\t\t<td>-63.9%<\/td>\n\t\t\t<td>953,366<\/td>\n\t\t\t<td>1,266,797<\/td>\n\t\t\t<td>-24.7%<\/td>\n\t\t<\/tr><tr><th>Total Aircraft Operations<\/th>\n\t\t\t<td>17,020<\/td>\n\t\t\t<td>26,107<\/td>\n\t\t\t<td>-34.8%<\/td>\n\t\t\t<td>59,117<\/td>\n\t\t\t<td>70,277<\/td>\n\t\t\t<td>-15.9%<\/td>\n\t\t<\/tr><tr><th>General Aviation<\/th>\n\t\t\t<td>10,906<\/td>\n\t\t\t<td>17,903<\/td>\n\t\t\t<td>-39.1%<\/td>\n\t\t\t<td>38,560<\/td>\n\t\t\t<td>46,921<\/td>\n\t\t\t<td>-17.8%<\/td>\n\t\t<\/tr><tr><th>Commercial<\/th>\n\t\t\t<td>5,583<\/td>\n\t\t\t<td>7,720<\/td>\n\t\t\t<td>-27.7%<\/td>\n\t\t\t<td>18,703<\/td>\n\t\t\t<td>21,984<\/td>\n\t\t\t<td>-14.9%<\/td>\n\t\t<\/tr><tr><th>Commuter1<\/th>\n\t\t\t<td>500<\/td>\n\t\t\t<td>400<\/td>\n\t\t\t<td>25.0%<\/td>\n\t\t\t<td>1,692<\/td>\n\t\t\t<td>1,163<\/td>\n\t\t\t<td>45.5%<\/td>\n\t\t<\/tr><tr><th>Military<\/th>\n\t\t\t<td>31<\/td>\n\t\t\t<td>84<\/td>\n\t\t\t<td>-63.1%<\/td>\n\t\t\t<td>162<\/td>\n\t\t\t<td>209<\/td>\n\t\t\t<td>-22.5%<\/td>\n\t\t<\/tr><tr><th>Air Cargo Tons2<\/th>\n\t\t\t<td>1,420<\/td>\n\t\t\t<td>1,401<\/td>\n\t\t\t<td>1.4%<\/td>\n\t\t\t<td>4,610<\/td>\n\t\t\t<td>4,729<\/td>\n\t\t\t<td>-2.5%<\/td>\n\t\t<\/tr><tr><th colspan=\"7\"><br \/><strong>International Statistics3<\/strong>\u00a0(included in totals above)<\/th>\n\t\t<\/tr><tr><td>\u00a0<\/td>\n\t\t\t<th>March<br \/>\n\t\t\t2020<\/th>\n\t\t\t<th>March<br \/>\n\t\t\t2019<\/th>\n\t\t\t<th>% Change<\/th>\n\t\t\t<th>Year-To-Date<br \/>\n\t\t\t2020<\/th>\n\t\t\t<th>Year-To-Date<br \/>\n\t\t\t2019<\/th>\n\t\t\t<th>% Change<\/th>\n\t\t<\/tr><tr><th>Total Passengers<\/th>\n\t\t\t<td>2,813<\/td>\n\t\t\t<td>16,693<\/td>\n\t\t\t<td>-83.1%<\/td>\n\t\t\t<td>17,246<\/td>\n\t\t\t<td>43,614<\/td>\n\t\t\t<td>-60.5%<\/td>\n\t\t<\/tr><tr><th>Enplaned passengers<\/th>\n\t\t\t<td>1,623<\/td>\n\t\t\t<td>8,460<\/td>\n\t\t\t<td>-80.8%<\/td>\n\t\t\t<td>8,703<\/td>\n\t\t\t<td>22,031<\/td>\n\t\t\t<td>-60.5%<\/td>\n\t\t<\/tr><tr><th>Deplaned passengers<\/th>\n\t\t\t<td>1,190<\/td>\n\t\t\t<td>8,233<\/td>\n\t\t\t<td>-85.5%<\/td>\n\t\t\t<td>8,543<\/td>\n\t\t\t<td>21,583<\/td>\n\t\t\t<td>-60.4%<\/td>\n\t\t<\/tr><tr><th>Total Aircraft Operations<\/th>\n\t\t\t<td>40<\/td>\n\t\t\t<td>175<\/td>\n\t\t\t<td>-77.1%<\/td>\n\t\t\t<td>172<\/td>\n\t\t\t<td>467<\/td>\n\t\t\t<td>-63.2%<\/td>\n\t\t<\/tr><tr><td colspan=\"7\">\n\t\t\t<table><tbody><tr><td>1<\/td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t<p>Aircraft used for regularly scheduled air service, configured with not more than seventy (70) seats, and operating at weights not more than ninety thousand (90,000) pounds.<\/p>\n\t\t\t\t\t\t<\/td>\n\t\t\t\t\t<\/tr><tr><td>2<\/td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t<p>All-Cargo Carriers: 1,278 tons<br \/>\n\t\t\t\t\t\tPassenger Carriers (incidental belly cargo):\u00a0 142 tons<br \/>\n\t\t\t\t\t\t(Current cargo tonnage figures in this report are for February 2020)<\/p>\n\t\t\t\t\t\t<\/td>\n\t\t\t\t\t<\/tr><tr><td>3<\/td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t<p>Includes all Canada and Mexico Commercial passengers and operations.<\/p>\n\t\t\t\t\t\t<\/td>\n\t\t\t\t\t<\/tr><\/tbody><\/table><\/td>\n\t\t<\/tr><\/tbody><\/table><p>-###-<\/p>\n\n<p>John Wayne Airport (SNA) is owned by the Southport County and is operated as a self-supporting enterprise that receives no general fund tax revenue. The Airport serves more than 10 million passengers annually and reaches more than 20 nonstop destinations in the United States, Canada and Mexico. More information can be found at\u00a0<a href=\"https:\/\/www.ocair.com\/\">www.ocair.com<\/a>. Like us on\u00a0<a href=\"http:\/\/www.facebook.com\/JohnWayneAirport\" target=\"_blank\">facebook.com\/johnwayneairport<\/a>, or follow us on\u00a0<a href=\"http:\/\/twitter.com\/johnwayneair\" target=\"_blank\">Twitter @johnwayneair<\/a>\u00a0and\u00a0<a href=\"http:\/\/instagram.com\/JohnWayneAir\" target=\"_blank\">Instagram\u00a0@johnwayneair<\/a>.<\/p>\n\n<p>To receive John Wayne Airport news releases automatically, go to\u00a0<a href=\"https:\/\/www.ocair.com\/\">www.ocair.com<\/a>\u00a0and click\u00a0<a href=\"https:\/\/www.ocair.com\/newsroom\/subscribe.aspx\">Subscribe<\/a>.<\/p>",
+                    "value": "<p>Committed to empowering fast-moving marketing teams and content editors with the ability to easily edit, revise, and change their sites as needed, Promet Source has developed Provus, a drag-and-drop site building tool. Provus provides a foundation for DIY design and creativity without the need for IT or a web designer while ensuring pages stay within defined brand standards for greater design flexibility and site governance.<\/p>\r\n",
+                    "format": "basic_html",
+                    "processed": "<p>Committed to empowering fast-moving marketing teams and content editors with the ability to easily edit, revise, and change their sites as needed, Promet Source has developed Provus, a drag-and-drop site building tool. Provus provides a foundation for DIY design and creativity without the need for IT or a web designer while ensuring pages stay within defined brand standards for greater design flexibility and site governance.<\/p>",
                     "summary": ""
                 }
             ],
             "field_file": [],
-            "field_media_image": [],
+            "field_media_image": [
+                {
+                    "target_id": 2,
+                    "target_type": "media",
+                    "target_uuid": "1060214c-53f1-4ffe-bd0f-0ff028af33b7",
+                    "url": "\/media\/2\/edit"
+                }
+            ],
             "field_publish_date": [
                 {
-                    "value": "2020-04-21"
+                    "value": "2021-05-07"
                 }
             ],
             "field_type": [
                 {
-                    "value": "news"
+                    "target_id": 1,
+                    "target_type": "taxonomy_term",
+                    "target_uuid": "e0007ae8-646a-49c3-88d3-c72541723512",
+                    "url": "\/news"
+                }
+            ]
+        },
+        {
+            "nid": [
+                {
+                    "value": 4
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "66af5b07-2dcc-4a13-a6c9-9e2747401540"
+                }
+            ],
+            "vid": [
+                {
+                    "value": 9
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "type": [
+                {
+                    "target_id": "provus_article",
+                    "target_type": "node_type",
+                    "target_uuid": "465c6ad5-a778-4617-9f76-6fd9876b1aa0"
+                }
+            ],
+            "revision_timestamp": [
+                {
+                    "value": "2021-04-28T00:47:31+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "revision_uid": [
+                {
+                    "target_id": 1,
+                    "target_type": "user",
+                    "target_uuid": "6361368e-0ae3-4a16-b792-05cf28408fc4",
+                    "url": "\/user\/1"
+                }
+            ],
+            "revision_log": [],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "uid": [
+                {
+                    "target_id": 1,
+                    "target_type": "user",
+                    "target_uuid": "6361368e-0ae3-4a16-b792-05cf28408fc4",
+                    "url": "\/user\/1"
+                }
+            ],
+            "title": [
+                {
+                    "value": "We offer services that support your mission"
+                }
+            ],
+            "created": [
+                {
+                    "value": "2021-04-28T00:44:28+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2021-04-28T00:47:31+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "promote": [
+                {
+                    "value": false
+                }
+            ],
+            "sticky": [
+                {
+                    "value": false
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": true
+                }
+            ],
+            "revision_translation_affected": [
+                {
+                    "value": true
+                }
+            ],
+            "path": [
+                {
+                    "alias": "\/news\/we-offer-services-support-your-mission",
+                    "pid": 26,
+                    "langcode": "en"
+                }
+            ],
+            "body": [
+                {
+                    "value": "<p>Promet Source revolves around customer satisfaction and providing dynamic solutions returning, real measurable results. We don\u2019t just work for our clients, we work with our clients as a seamless extension of their team. Our core focus is to inspire with our strategy and deliver groundbreaking results with our approach.<\/p>\r\n",
+                    "format": "basic_html",
+                    "processed": "<p>Promet Source revolves around customer satisfaction and providing dynamic solutions returning, real measurable results. We don\u2019t just work for our clients, we work with our clients as a seamless extension of their team. Our core focus is to inspire with our strategy and deliver groundbreaking results with our approach.<\/p>",
+                    "summary": ""
+                }
+            ],
+            "field_file": [],
+            "field_media_image": [
+                {
+                    "target_id": 3,
+                    "target_type": "media",
+                    "target_uuid": "b4dd3ff3-2b50-4c31-833b-6d8fdac81acd",
+                    "url": "\/media\/3\/edit"
+                }
+            ],
+            "field_publish_date": [
+                {
+                    "value": "2021-05-06"
+                }
+            ],
+            "field_type": [
+                {
+                    "target_id": 1,
+                    "target_type": "taxonomy_term",
+                    "target_uuid": "e0007ae8-646a-49c3-88d3-c72541723512",
+                    "url": "\/news"
+                }
+            ]
+        },
+        {
+            "nid": [
+                {
+                    "value": 5
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "34e44bed-888e-4631-9d16-998f8d074dc0"
+                }
+            ],
+            "vid": [
+                {
+                    "value": 8
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "type": [
+                {
+                    "target_id": "provus_article",
+                    "target_type": "node_type",
+                    "target_uuid": "465c6ad5-a778-4617-9f76-6fd9876b1aa0"
+                }
+            ],
+            "revision_timestamp": [
+                {
+                    "value": "2021-04-28T00:47:03+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "revision_uid": [
+                {
+                    "target_id": 1,
+                    "target_type": "user",
+                    "target_uuid": "6361368e-0ae3-4a16-b792-05cf28408fc4",
+                    "url": "\/user\/1"
+                }
+            ],
+            "revision_log": [],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "uid": [
+                {
+                    "target_id": 1,
+                    "target_type": "user",
+                    "target_uuid": "6361368e-0ae3-4a16-b792-05cf28408fc4",
+                    "url": "\/user\/1"
+                }
+            ],
+            "title": [
+                {
+                    "value": "How to Acheive Great UX in 8 Steps"
+                }
+            ],
+            "created": [
+                {
+                    "value": "2021-04-28T00:45:41+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2021-04-28T00:47:03+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "promote": [
+                {
+                    "value": false
+                }
+            ],
+            "sticky": [
+                {
+                    "value": false
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": true
+                }
+            ],
+            "revision_translation_affected": [
+                {
+                    "value": true
+                }
+            ],
+            "path": [
+                {
+                    "alias": "\/news\/how-acheive-great-ux-8-steps",
+                    "pid": 25,
+                    "langcode": "en"
+                }
+            ],
+            "body": [
+                {
+                    "value": "<p>Those of us in the web design and development world are sometimes asked to explain what UX is all about. The truth is, there is not one, static definition. There many dimensions to UX or User Experience, and it\u2019s a discipline that can be viewed from many angles.&nbsp;<br \/>\r\nThe goal of great UX design, whether applied to digital or physical products, is simply optimizing usability and every aspect of the experience with a product or service from the perspective of the end user or the customer. On some level this sounds obvious. For whom else, or based on what else, would products or digital experiences be designed? In the real world, however, the answer can be all over the map with designs that incorporate the preferences of other designers, developers, company leadership, professional peers, awards committee judges, or the styles and presuppositions of designers themselves.&nbsp;<\/p>\r\n",
+                    "format": "basic_html",
+                    "processed": "<p>Those of us in the web design and development world are sometimes asked to explain what UX is all about. The truth is, there is not one, static definition. There many dimensions to UX or User Experience, and it\u2019s a discipline that can be viewed from many angles.\u00a0<br \/>\nThe goal of great UX design, whether applied to digital or physical products, is simply optimizing usability and every aspect of the experience with a product or service from the perspective of the end user or the customer. On some level this sounds obvious. For whom else, or based on what else, would products or digital experiences be designed? In the real world, however, the answer can be all over the map with designs that incorporate the preferences of other designers, developers, company leadership, professional peers, awards committee judges, or the styles and presuppositions of designers themselves.\u00a0<\/p>",
+                    "summary": ""
+                }
+            ],
+            "field_file": [],
+            "field_media_image": [
+                {
+                    "target_id": 4,
+                    "target_type": "media",
+                    "target_uuid": "6a430489-fc7b-4831-8048-5ec046dc1b6f",
+                    "url": "\/media\/4\/edit"
+                }
+            ],
+            "field_publish_date": [
+                {
+                    "value": "2021-05-08"
+                }
+            ],
+            "field_type": [
+                {
+                    "target_id": 1,
+                    "target_type": "taxonomy_term",
+                    "target_uuid": "e0007ae8-646a-49c3-88d3-c72541723512",
+                    "url": "\/news"
+                }
+            ]
+        },
+        {
+            "nid": [
+                {
+                    "value": 20
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "7f71b6c6-62d5-417d-b329-e8048ed1114b"
+                }
+            ],
+            "vid": [
+                {
+                    "value": 65
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "type": [
+                {
+                    "target_id": "provus_article",
+                    "target_type": "node_type",
+                    "target_uuid": "465c6ad5-a778-4617-9f76-6fd9876b1aa0"
+                }
+            ],
+            "revision_timestamp": [
+                {
+                    "value": "2021-05-05T20:56:13+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "revision_uid": [
+                {
+                    "target_id": 1,
+                    "target_type": "user",
+                    "target_uuid": "6361368e-0ae3-4a16-b792-05cf28408fc4",
+                    "url": "\/user\/1"
+                }
+            ],
+            "revision_log": [],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "uid": [
+                {
+                    "target_id": 1,
+                    "target_type": "user",
+                    "target_uuid": "6361368e-0ae3-4a16-b792-05cf28408fc4",
+                    "url": "\/user\/1"
+                }
+            ],
+            "title": [
+                {
+                    "value": "Test Blog Post"
+                }
+            ],
+            "created": [
+                {
+                    "value": "2021-05-05T20:55:11+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2021-05-05T20:56:13+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "promote": [
+                {
+                    "value": false
+                }
+            ],
+            "sticky": [
+                {
+                    "value": false
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": true
+                }
+            ],
+            "revision_translation_affected": [
+                {
+                    "value": true
+                }
+            ],
+            "path": [
+                {
+                    "alias": "\/blog\/test-blog-post",
+                    "pid": 47,
+                    "langcode": "en"
+                }
+            ],
+            "body": [
+                {
+                    "value": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae sapien accumsan, feugiat sem eu, iaculis eros. Nullam in dolor ac tellus lobortis malesuada. Nullam nunc est, maximus in faucibus vitae, iaculis quis urna. Donec sollicitudin nisl at mi pulvinar bibendum. Proin sem libero, iaculis iaculis risus iaculis, viverra ullamcorper risus. Suspendisse blandit, lorem sed iaculis rutrum, est metus posuere arcu, at suscipit ligula eros lacinia est. Vestibulum euismod magna non nunc laoreet, id posuere tellus imperdiet. Suspendisse ornare in dui sed faucibus.<\/p>\r\n\r\n<p>Quisque vehicula eros eu pretium faucibus. Curabitur dapibus ante nec felis vestibulum, sed facilisis metus dictum. Vivamus in ligula sagittis, euismod risus at, porta lorem. Aliquam scelerisque augue purus, et ultrices libero sollicitudin ac. In feugiat orci sit amet tellus euismod pharetra. Nam eu placerat odio. Suspendisse dapibus est et nulla porttitor lacinia. Sed blandit aliquam sodales. Mauris porttitor, eros nec sodales mattis, tortor eros vehicula velit, in pretium metus nisi vitae lacus. Nulla malesuada id diam et pellentesque. Quisque quam mi, congue quis quam maximus, malesuada molestie eros.<\/p>\r\n\r\n<p>Proin vel nisl egestas, congue tellus quis, condimentum mi. Duis a interdum velit. Praesent aliquet mollis purus vel ornare. Etiam ultrices sapien vel fringilla cursus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla faucibus lobortis porttitor. Cras venenatis ultrices arcu porta ornare. Nunc lobortis dui et nulla ornare, nec vehicula justo venenatis. Etiam a enim at dui tempus sollicitudin. Ut ut pulvinar lacus, in condimentum enim. Quisque erat orci, pharetra nec aliquam non, sodales sed ligula. Fusce dapibus massa et nisl porttitor, in tincidunt eros fermentum.<\/p>\r\n",
+                    "format": "basic_html",
+                    "processed": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae sapien accumsan, feugiat sem eu, iaculis eros. Nullam in dolor ac tellus lobortis malesuada. Nullam nunc est, maximus in faucibus vitae, iaculis quis urna. Donec sollicitudin nisl at mi pulvinar bibendum. Proin sem libero, iaculis iaculis risus iaculis, viverra ullamcorper risus. Suspendisse blandit, lorem sed iaculis rutrum, est metus posuere arcu, at suscipit ligula eros lacinia est. Vestibulum euismod magna non nunc laoreet, id posuere tellus imperdiet. Suspendisse ornare in dui sed faucibus.<\/p>\n\n<p>Quisque vehicula eros eu pretium faucibus. Curabitur dapibus ante nec felis vestibulum, sed facilisis metus dictum. Vivamus in ligula sagittis, euismod risus at, porta lorem. Aliquam scelerisque augue purus, et ultrices libero sollicitudin ac. In feugiat orci sit amet tellus euismod pharetra. Nam eu placerat odio. Suspendisse dapibus est et nulla porttitor lacinia. Sed blandit aliquam sodales. Mauris porttitor, eros nec sodales mattis, tortor eros vehicula velit, in pretium metus nisi vitae lacus. Nulla malesuada id diam et pellentesque. Quisque quam mi, congue quis quam maximus, malesuada molestie eros.<\/p>\n\n<p>Proin vel nisl egestas, congue tellus quis, condimentum mi. Duis a interdum velit. Praesent aliquet mollis purus vel ornare. Etiam ultrices sapien vel fringilla cursus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla faucibus lobortis porttitor. Cras venenatis ultrices arcu porta ornare. Nunc lobortis dui et nulla ornare, nec vehicula justo venenatis. Etiam a enim at dui tempus sollicitudin. Ut ut pulvinar lacus, in condimentum enim. Quisque erat orci, pharetra nec aliquam non, sodales sed ligula. Fusce dapibus massa et nisl porttitor, in tincidunt eros fermentum.<\/p>",
+                    "summary": ""
+                }
+            ],
+            "field_file": [],
+            "field_media_image": [
+                {
+                    "target_id": 12,
+                    "target_type": "media",
+                    "target_uuid": "a473e0f2-1d10-418b-8d63-b6de53e0d3df",
+                    "url": "\/media\/12\/edit"
+                }
+            ],
+            "field_publish_date": [
+                {
+                    "value": "2021-05-05"
+                }
+            ],
+            "field_type": [
+                {
+                    "target_id": 3,
+                    "target_type": "taxonomy_term",
+                    "target_uuid": "3f41bdf6-062c-4773-89f7-55343cc88cfe",
+                    "url": "\/blog"
                 }
             ]
         }
