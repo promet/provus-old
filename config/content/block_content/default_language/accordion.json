@@ -3,7 +3,7 @@
         {
             "id": [
                 {
-                    "value": 5
+                    "value": 8
                 }
             ],
             "uuid": [
@@ -13,7 +13,7 @@
             ],
             "revision_id": [
                 {
-                    "value": 17
+                    "value": 8
                 }
             ],
             "langcode": [
@@ -43,7 +43,7 @@
             ],
             "info": [
                 {
-                    "value": "Accordion 1789007472"
+                    "value": "Accordion 1772201289"
                 }
             ],
             "changed": [
@@ -69,22 +69,22 @@
             ],
             "field_accordion_items": [
                 {
-                    "target_id": 2,
+                    "target_id": 1,
                     "target_type": "block_content",
                     "target_uuid": "cea30c7a-d9c1-4c6c-b589-8473ce8cd69b",
+                    "url": "\/block\/1"
+                },
+                {
+                    "target_id": 2,
+                    "target_type": "block_content",
+                    "target_uuid": "5c28ab2c-5ad6-4d56-98fd-c83aded1a7b4",
                     "url": "\/block\/2"
                 },
                 {
                     "target_id": 3,
                     "target_type": "block_content",
-                    "target_uuid": "5c28ab2c-5ad6-4d56-98fd-c83aded1a7b4",
-                    "url": "\/block\/3"
-                },
-                {
-                    "target_id": 4,
-                    "target_type": "block_content",
                     "target_uuid": "e17af228-b3f4-4c2a-9381-5619415eb30a",
-                    "url": "\/block\/4"
+                    "url": "\/block\/3"
                 }
             ],
             "field_openfirst": [

@@ -16,5 +16,5 @@ settings:
   id: node_page_top
   label: 'Node Page Top'
   provider: provus_blocks
-  label_display: visible
+  label_display: '0'
 visibility: {  }

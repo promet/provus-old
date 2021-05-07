@@ -1,0 +1,89 @@
+uuid: 7d50b704-9ab0-4088-bf09-bd540c94939d
+langcode: en
+status: true
+dependencies: {  }
+id: staging_content_node_landing_page_default_language
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - entity_staging
+migration_group: entity_staging
+label: 'Import Content Landing Page default_language'
+source:
+  plugin: entity_staging_json
+  input_path: /var/www/config/content/node/default_language/landing_page.json
+process:
+  langcode:
+    plugin: get
+    source: langcode
+    language: '@langcode'
+  type: type
+  revision_timestamp:
+    plugin: callback
+    callable: strtotime
+    source: revision_timestamp
+  revision_uid: revision_uid
+  revision_log: revision_log
+  status:
+    plugin: get
+    source: status
+    language: '@langcode'
+  uid:
+    plugin: get
+    source: uid
+    language: '@langcode'
+  title:
+    plugin: get
+    source: title
+    language: '@langcode'
+  created:
+    plugin: callback
+    callable: strtotime
+    source: created
+    language: '@langcode'
+  changed:
+    plugin: callback
+    callable: strtotime
+    source: changed
+    language: '@langcode'
+  promote:
+    plugin: get
+    source: promote
+    language: '@langcode'
+  sticky:
+    plugin: get
+    source: sticky
+    language: '@langcode'
+  default_langcode:
+    plugin: get
+    source: default_langcode
+    language: '@langcode'
+  revision_default: revision_default
+  revision_translation_affected:
+    plugin: get
+    source: revision_translation_affected
+    language: '@langcode'
+  path:
+    plugin: get
+    source: path
+    language: '@langcode'
+  menu_link:
+    plugin: migration_lookup
+    migration: staging_content_menu_link_content_menu_link_content_default_language
+    source: menu_link
+    language: '@langcode'
+  body:
+    plugin: get
+    source: body
+    language: '@langcode'
+  field_media_image:
+    plugin: migration_lookup
+    migration: staging_content_media_image_default_language
+    source: field_media_image
+    language: '@langcode'
+  layout_builder__layout: layout_builder__layout
+destination:
+  plugin: 'entity:node'
+migration_dependencies:
+  required: {  }

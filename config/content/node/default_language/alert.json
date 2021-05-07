@@ -3,17 +3,17 @@
         {
             "nid": [
                 {
-                    "value": 19
+                    "value": 1
                 }
             ],
             "uuid": [
                 {
-                    "value": "273915df-6a24-4999-9fad-61164fd7e6ed"
+                    "value": "3bec2ea2-d76c-461f-a647-4b600688a16d"
                 }
             ],
             "vid": [
                 {
-                    "value": 64
+                    "value": 1
                 }
             ],
             "langcode": [
@@ -36,10 +36,10 @@
             ],
             "revision_uid": [
                 {
-                    "target_id": 1,
+                    "target_id": 0,
                     "target_type": "user",
-                    "target_uuid": "6361368e-0ae3-4a16-b792-05cf28408fc4",
-                    "url": "\/user\/1"
+                    "target_uuid": "5c6b6524-2976-4be7-a0b6-daaa2bcd6e29",
+                    "url": "\/user\/0"
                 }
             ],
             "revision_log": [],
@@ -50,10 +50,10 @@
             ],
             "uid": [
                 {
-                    "target_id": 1,
+                    "target_id": 0,
                     "target_type": "user",
-                    "target_uuid": "6361368e-0ae3-4a16-b792-05cf28408fc4",
-                    "url": "\/user\/1"
+                    "target_uuid": "5c6b6524-2976-4be7-a0b6-daaa2bcd6e29",
+                    "url": "\/user\/0"
                 }
             ],
             "title": [

@@ -3,7 +3,7 @@
         {
             "id": [
                 {
-                    "value": 17
+                    "value": 9
                 }
             ],
             "uuid": [
@@ -13,7 +13,7 @@
             ],
             "revision_id": [
                 {
-                    "value": 29
+                    "value": 9
                 }
             ],
             "langcode": [
@@ -69,22 +69,22 @@
             ],
             "field_block_items": [
                 {
-                    "target_id": 13,
+                    "target_id": 5,
                     "target_type": "block_content",
                     "target_uuid": "413e7de4-806c-48d7-9f84-4dcf5d55a249",
-                    "url": "\/block\/13"
+                    "url": "\/block\/5"
                 },
                 {
-                    "target_id": 14,
+                    "target_id": 6,
                     "target_type": "block_content",
                     "target_uuid": "a1236f8a-b32d-45c0-b18c-967d81970fa2",
-                    "url": "\/block\/14"
+                    "url": "\/block\/6"
                 },
                 {
-                    "target_id": 15,
+                    "target_id": 7,
                     "target_type": "block_content",
                     "target_uuid": "31a2942f-c472-4257-b5ff-d2508b9b8b95",
-                    "url": "\/block\/15"
+                    "url": "\/block\/7"
                 }
             ]
         }
