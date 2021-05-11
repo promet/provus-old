@@ -61,7 +61,7 @@
         "drupal/components": "^1.1",
         "drupal/config_ignore": "^2.2",
         "drupal/console": "^1.0.2",
-        "drupal/core": "^8.9.1",
+        "drupal/core": "^8.9.15",
         "drupal/core-composer-scaffold": "^8.9",
         "drupal/devel": "^2.1",
         "drupal/dropzonejs": "^2.1",
@@ -105,6 +105,7 @@
         "drupal/twig_tweak": "^2.5",
         "drupal/view_unpublished": "^1.0@RC",
         "drupal/viewsreference": "^1.4",
+        "drupal/vocabulary_condition": "^1.0",
         "drupal/webform": "^5.9",
         "drush/drush": "^9.0.0",
         "enyo/dropzone": "5.7",
@@ -194,8 +195,8 @@
         },
         "patches": {
             "drupal/core": {
-                "Expose Layout Builder data to REST and JSON:API [#2942975]": "https://www.drupal.org/files/issues/2020-07-07/2942975-116.patch",
-                "Off-canvas style resets": "https://www.drupal.org/files/issues/2021-01-06/off-canvas-style-resets-2958588-13.patch"
+                "Block visibility has wrong logic [923934]": "https://www.drupal.org/files/issues/2020-02-11/block_visibility_has_wrong_logic-923934-14-reroll-32-drupal-8.8.2.patch",
+                "Expose Layout Builder data to REST and JSON:API [#2942975]": "https://www.drupal.org/files/issues/2020-07-07/2942975-116.patch"
             },
             "drupal/config_ignore": {
                 "Support config ignore export [#2942975]": "https://www.drupal.org/files/issues/2020-01-11/support-for-export-2857247-44.patch"

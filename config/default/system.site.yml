@@ -1,11 +1,11 @@
 uuid: 1aa3a078-6e7f-4336-b6d9-bec3b1e61561
-name: 'Provus Demo'
+name: 'Drush Site-Install'
 mail: admin@example.com
 slogan: ''
 page:
   403: ''
   404: ''
-  front: /node/4
+  front: /user/login
 admin_compact_mode: false
 weight_select_max: 100
 langcode: en

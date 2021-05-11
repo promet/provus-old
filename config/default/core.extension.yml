@@ -23,6 +23,7 @@ module:
   contextual: 0
   crop: 0
   ctools: 0
+  ctools_block: 0
   datetime: 0
   dblog: 0
   devel: 0
@@ -91,6 +92,7 @@ module:
   search_api_glossary: 0
   search_api_solr: 0
   serialization: 0
+  settings_tray: 0
   shortcut: 0
   simple_instagram_feed: 0
   smart_trim: 0
@@ -108,6 +110,7 @@ module:
   view_unpublished: 0
   views_ui: 0
   viewsreference: 0
+  vocabulary_condition: 0
   webform: 0
   webform_ui: 0
   extlink: 1
