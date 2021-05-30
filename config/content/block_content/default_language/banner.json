@@ -1,0 +1,112 @@
+{
+    "block_content": [
+        {
+            "id": [
+                {
+                    "value": 1
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "a61f3cc0-0c20-40d4-a504-524f5fd2c629"
+                }
+            ],
+            "revision_id": [
+                {
+                    "value": 1
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "type": [
+                {
+                    "target_id": "banner",
+                    "target_type": "block_content_type",
+                    "target_uuid": "84bf6a77-909c-405a-a770-249b14c37b10"
+                }
+            ],
+            "revision_created": [
+                {
+                    "value": "2021-05-30T15:31:06+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "revision_user": [
+                {
+                    "target_id": 1,
+                    "target_type": "user",
+                    "target_uuid": "f98a3401-7eb7-48db-bdd7-b1c0d8d04103",
+                    "url": "\/user\/1"
+                }
+            ],
+            "revision_log": [],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "info": [
+                {
+                    "value": "Welcome to Provus"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2021-05-30T15:31:06+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "reusable": [
+                {
+                    "value": true
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": true
+                }
+            ],
+            "revision_translation_affected": [
+                {
+                    "value": true
+                }
+            ],
+            "field_heading": [
+                {
+                    "value": "Welcome to Provus"
+                }
+            ],
+            "field_include_search": [
+                {
+                    "value": true
+                }
+            ],
+            "field_link": [],
+            "field_logo_image": [
+                {
+                    "target_id": 2,
+                    "target_type": "media",
+                    "target_uuid": "9a714e3a-4c56-4a50-9b93-40019ccfa7dc",
+                    "url": "\/media\/2\/edit"
+                }
+            ],
+            "field_media_image": [
+                {
+                    "target_id": 1,
+                    "target_type": "media",
+                    "target_uuid": "bf20bbdf-9205-4857-8685-14d387c2374e",
+                    "url": "\/media\/1\/edit"
+                }
+            ],
+            "field_person_picture": [],
+            "field_subheading": [
+                {
+                    "value": "Content editing re-imagined"
+                }
+            ]
+        }
+    ]
+}

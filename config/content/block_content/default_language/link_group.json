@@ -1,0 +1,139 @@
+{
+    "block_content": [
+        {
+            "id": [
+                {
+                    "value": 5
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "425955f7-3fda-4ecf-b2ed-7f066864bc84"
+                }
+            ],
+            "revision_id": [
+                {
+                    "value": 5
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "type": [
+                {
+                    "target_id": "link_group",
+                    "target_type": "block_content_type",
+                    "target_uuid": "3cab7a2a-267b-4264-955b-1698ff79c9b3"
+                }
+            ],
+            "revision_created": [
+                {
+                    "value": "2021-05-30T15:18:52+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "revision_user": [],
+            "revision_log": [],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "info": [
+                {
+                    "value": "Provus Link Groups"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2021-05-30T15:18:52+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "reusable": [
+                {
+                    "value": false
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": true
+                }
+            ],
+            "revision_translation_affected": [
+                {
+                    "value": true
+                }
+            ],
+            "field_automatic_article_type": [],
+            "field_automatic_event_type": [],
+            "field_automatic_location_type": [],
+            "field_automatic_number_per_page": [
+                {
+                    "value": 10
+                }
+            ],
+            "field_automatic_offset": [
+                {
+                    "value": 0
+                }
+            ],
+            "field_automatic_pager": [
+                {
+                    "value": false
+                }
+            ],
+            "field_automatic_person_type": [],
+            "field_automatic_sort": [
+                {
+                    "value": "newest"
+                }
+            ],
+            "field_block_items": [
+                {
+                    "target_id": 2,
+                    "target_type": "block_content",
+                    "target_uuid": "3e5c43bb-a6fe-4982-baf6-82de0077e81e",
+                    "url": "\/block\/2"
+                },
+                {
+                    "target_id": 3,
+                    "target_type": "block_content",
+                    "target_uuid": "2f52206f-a92a-4d5a-b57e-4fe319cedd8c",
+                    "url": "\/block\/3"
+                },
+                {
+                    "target_id": 4,
+                    "target_type": "block_content",
+                    "target_uuid": "2f86d1cf-90c1-4293-bf59-d0a48592e1b5",
+                    "url": "\/block\/4"
+                }
+            ],
+            "field_content_references": [],
+            "field_content_type": [],
+            "field_count": [
+                {
+                    "value": 3
+                }
+            ],
+            "field_group_display": [
+                {
+                    "value": "carousel_3"
+                }
+            ],
+            "field_group_source": [
+                {
+                    "value": "manual_inline"
+                }
+            ],
+            "field_item_display": [
+                {
+                    "value": "card"
+                }
+            ],
+            "field_link": []
+        }
+    ]
+}

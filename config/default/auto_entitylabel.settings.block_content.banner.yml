@@ -1,0 +1,9 @@
+status: 2
+pattern: '[block_content:field_heading:value]'
+escape: false
+preserve_titles: false
+save: 0
+chunk: '50'
+dependencies:
+  config:
+    - block_content.type.banner

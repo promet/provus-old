@@ -1,0 +1,544 @@
+{
+    "media": [
+        {
+            "mid": [
+                {
+                    "value": 1
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "bf20bbdf-9205-4857-8685-14d387c2374e"
+                }
+            ],
+            "vid": [
+                {
+                    "value": 1
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "bundle": [
+                {
+                    "target_id": "image",
+                    "target_type": "media_type",
+                    "target_uuid": "5e386cd2-796e-4c60-9bcb-a2c197d21122"
+                }
+            ],
+            "revision_created": [
+                {
+                    "value": "2021-05-30T15:21:21+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "revision_user": [],
+            "revision_log_message": [],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "uid": [
+                {
+                    "target_id": 0,
+                    "target_type": "user",
+                    "target_uuid": "726bb45c-b191-4f17-9d17-8cd88175d2fe",
+                    "url": "\/user\/0"
+                }
+            ],
+            "name": [
+                {
+                    "value": "Hero Photo.png"
+                }
+            ],
+            "thumbnail": [
+                {
+                    "target_id": 1,
+                    "alt": "image of mountains at dusk",
+                    "title": null,
+                    "width": 2880,
+                    "height": 1184,
+                    "target_type": "file",
+                    "target_uuid": "bbbc3f95-3714-470f-97b3-8d2d03ac56be",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2021-05\/Hero%20Photo_0.png"
+                }
+            ],
+            "created": [
+                {
+                    "value": "2021-05-30T15:15:18+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2021-05-30T15:15:18+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": true
+                }
+            ],
+            "revision_translation_affected": [
+                {
+                    "value": true
+                }
+            ],
+            "path": [
+                {
+                    "alias": "",
+                    "pid": null,
+                    "langcode": null
+                }
+            ],
+            "field_media_image": [
+                {
+                    "target_id": 1,
+                    "alt": "image of mountains at dusk",
+                    "title": "",
+                    "width": 2880,
+                    "height": 1184,
+                    "target_type": "file",
+                    "target_uuid": "bbbc3f95-3714-470f-97b3-8d2d03ac56be",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2021-05\/Hero%20Photo_0.png"
+                }
+            ]
+        },
+        {
+            "mid": [
+                {
+                    "value": 2
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "9a714e3a-4c56-4a50-9b93-40019ccfa7dc"
+                }
+            ],
+            "vid": [
+                {
+                    "value": 2
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "bundle": [
+                {
+                    "target_id": "image",
+                    "target_type": "media_type",
+                    "target_uuid": "5e386cd2-796e-4c60-9bcb-a2c197d21122"
+                }
+            ],
+            "revision_created": [
+                {
+                    "value": "2021-05-30T15:21:21+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "revision_user": [],
+            "revision_log_message": [],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "uid": [
+                {
+                    "target_id": 0,
+                    "target_type": "user",
+                    "target_uuid": "726bb45c-b191-4f17-9d17-8cd88175d2fe",
+                    "url": "\/user\/0"
+                }
+            ],
+            "name": [
+                {
+                    "value": "Logo.png"
+                }
+            ],
+            "thumbnail": [
+                {
+                    "target_id": 2,
+                    "alt": "promet source logo",
+                    "title": null,
+                    "width": 332,
+                    "height": 332,
+                    "target_type": "file",
+                    "target_uuid": "0710b40f-8407-45d4-bc78-7bd2bcc0ad07",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2021-05\/Logo_0.png"
+                }
+            ],
+            "created": [
+                {
+                    "value": "2021-05-30T15:15:39+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2021-05-30T15:15:39+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": true
+                }
+            ],
+            "revision_translation_affected": [
+                {
+                    "value": true
+                }
+            ],
+            "path": [
+                {
+                    "alias": "",
+                    "pid": null,
+                    "langcode": null
+                }
+            ],
+            "field_media_image": [
+                {
+                    "target_id": 2,
+                    "alt": "promet source logo",
+                    "title": "",
+                    "width": 332,
+                    "height": 332,
+                    "target_type": "file",
+                    "target_uuid": "0710b40f-8407-45d4-bc78-7bd2bcc0ad07",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2021-05\/Logo_0.png"
+                }
+            ]
+        },
+        {
+            "mid": [
+                {
+                    "value": 3
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "2c85ed5b-653f-436f-8a2b-3e3972279277"
+                }
+            ],
+            "vid": [
+                {
+                    "value": 3
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "bundle": [
+                {
+                    "target_id": "image",
+                    "target_type": "media_type",
+                    "target_uuid": "5e386cd2-796e-4c60-9bcb-a2c197d21122"
+                }
+            ],
+            "revision_created": [
+                {
+                    "value": "2021-05-30T15:21:21+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "revision_user": [],
+            "revision_log_message": [],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "uid": [
+                {
+                    "target_id": 0,
+                    "target_type": "user",
+                    "target_uuid": "726bb45c-b191-4f17-9d17-8cd88175d2fe",
+                    "url": "\/user\/0"
+                }
+            ],
+            "name": [
+                {
+                    "value": "Image 1.png"
+                }
+            ],
+            "thumbnail": [
+                {
+                    "target_id": 3,
+                    "alt": "white male happily paying",
+                    "title": null,
+                    "width": 299,
+                    "height": 174,
+                    "target_type": "file",
+                    "target_uuid": "77c9329e-eb42-4146-a333-b65323854698",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2021-05\/Image%201_0.png"
+                }
+            ],
+            "created": [
+                {
+                    "value": "2021-05-30T15:17:18+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2021-05-30T15:17:18+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": true
+                }
+            ],
+            "revision_translation_affected": [
+                {
+                    "value": true
+                }
+            ],
+            "path": [
+                {
+                    "alias": "",
+                    "pid": null,
+                    "langcode": null
+                }
+            ],
+            "field_media_image": [
+                {
+                    "target_id": 3,
+                    "alt": "white male happily paying",
+                    "title": "",
+                    "width": 299,
+                    "height": 174,
+                    "target_type": "file",
+                    "target_uuid": "77c9329e-eb42-4146-a333-b65323854698",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2021-05\/Image%201_0.png"
+                }
+            ]
+        },
+        {
+            "mid": [
+                {
+                    "value": 4
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "7596e2be-13ee-4135-8d3a-2f2160c96abd"
+                }
+            ],
+            "vid": [
+                {
+                    "value": 4
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "bundle": [
+                {
+                    "target_id": "image",
+                    "target_type": "media_type",
+                    "target_uuid": "5e386cd2-796e-4c60-9bcb-a2c197d21122"
+                }
+            ],
+            "revision_created": [
+                {
+                    "value": "2021-05-30T15:21:21+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "revision_user": [],
+            "revision_log_message": [],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "uid": [
+                {
+                    "target_id": 0,
+                    "target_type": "user",
+                    "target_uuid": "726bb45c-b191-4f17-9d17-8cd88175d2fe",
+                    "url": "\/user\/0"
+                }
+            ],
+            "name": [
+                {
+                    "value": "Image 2.png"
+                }
+            ],
+            "thumbnail": [
+                {
+                    "target_id": 4,
+                    "alt": "eager puppy",
+                    "title": null,
+                    "width": 299,
+                    "height": 174,
+                    "target_type": "file",
+                    "target_uuid": "8cde76c8-29f7-4203-80cf-f782bd451cae",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2021-05\/Image%202_0.png"
+                }
+            ],
+            "created": [
+                {
+                    "value": "2021-05-30T15:18:05+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2021-05-30T15:18:05+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": true
+                }
+            ],
+            "revision_translation_affected": [
+                {
+                    "value": true
+                }
+            ],
+            "path": [
+                {
+                    "alias": "",
+                    "pid": null,
+                    "langcode": null
+                }
+            ],
+            "field_media_image": [
+                {
+                    "target_id": 4,
+                    "alt": "eager puppy",
+                    "title": "",
+                    "width": 299,
+                    "height": 174,
+                    "target_type": "file",
+                    "target_uuid": "8cde76c8-29f7-4203-80cf-f782bd451cae",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2021-05\/Image%202_0.png"
+                }
+            ]
+        },
+        {
+            "mid": [
+                {
+                    "value": 5
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "82b4fee6-4747-4684-9d85-039dd6eab8ba"
+                }
+            ],
+            "vid": [
+                {
+                    "value": 5
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "bundle": [
+                {
+                    "target_id": "image",
+                    "target_type": "media_type",
+                    "target_uuid": "5e386cd2-796e-4c60-9bcb-a2c197d21122"
+                }
+            ],
+            "revision_created": [
+                {
+                    "value": "2021-05-30T15:21:21+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "revision_user": [],
+            "revision_log_message": [],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "uid": [
+                {
+                    "target_id": 0,
+                    "target_type": "user",
+                    "target_uuid": "726bb45c-b191-4f17-9d17-8cd88175d2fe",
+                    "url": "\/user\/0"
+                }
+            ],
+            "name": [
+                {
+                    "value": "Image 3.png"
+                }
+            ],
+            "thumbnail": [
+                {
+                    "target_id": 5,
+                    "alt": "lava field",
+                    "title": null,
+                    "width": 299,
+                    "height": 174,
+                    "target_type": "file",
+                    "target_uuid": "4d7c0c64-330c-4068-a4e1-534f14d9df4b",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2021-05\/Image%203_0.png"
+                }
+            ],
+            "created": [
+                {
+                    "value": "2021-05-30T15:18:42+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2021-05-30T15:18:42+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": true
+                }
+            ],
+            "revision_translation_affected": [
+                {
+                    "value": true
+                }
+            ],
+            "path": [
+                {
+                    "alias": "",
+                    "pid": null,
+                    "langcode": null
+                }
+            ],
+            "field_media_image": [
+                {
+                    "target_id": 5,
+                    "alt": "lava field",
+                    "title": "",
+                    "width": 299,
+                    "height": 174,
+                    "target_type": "file",
+                    "target_uuid": "4d7c0c64-330c-4068-a4e1-534f14d9df4b",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2021-05\/Image%203_0.png"
+                }
+            ]
+        }
+    ]
+}

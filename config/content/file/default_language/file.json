@@ -1,0 +1,319 @@
+{
+    "file": [
+        {
+            "fid": [
+                {
+                    "value": 1
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "bbbc3f95-3714-470f-97b3-8d2d03ac56be"
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "uid": [
+                {
+                    "target_id": 0,
+                    "target_type": "user",
+                    "target_uuid": "726bb45c-b191-4f17-9d17-8cd88175d2fe",
+                    "url": "\/user\/0"
+                }
+            ],
+            "filename": [
+                {
+                    "value": "Hero Photo.png"
+                }
+            ],
+            "uri": [
+                {
+                    "value": "public:\/\/2021-05\/Hero Photo_0.png",
+                    "url": "\/sites\/default\/files\/2021-05\/Hero%20Photo_0.png"
+                }
+            ],
+            "filemime": [
+                {
+                    "value": "image\/png"
+                }
+            ],
+            "filesize": [
+                {
+                    "value": 6033925
+                }
+            ],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "created": [
+                {
+                    "value": "2021-05-30T15:15:18+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2021-05-30T15:15:30+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ]
+        },
+        {
+            "fid": [
+                {
+                    "value": 2
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "0710b40f-8407-45d4-bc78-7bd2bcc0ad07"
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "uid": [
+                {
+                    "target_id": 0,
+                    "target_type": "user",
+                    "target_uuid": "726bb45c-b191-4f17-9d17-8cd88175d2fe",
+                    "url": "\/user\/0"
+                }
+            ],
+            "filename": [
+                {
+                    "value": "Logo.png"
+                }
+            ],
+            "uri": [
+                {
+                    "value": "public:\/\/2021-05\/Logo_0.png",
+                    "url": "\/sites\/default\/files\/2021-05\/Logo_0.png"
+                }
+            ],
+            "filemime": [
+                {
+                    "value": "image\/png"
+                }
+            ],
+            "filesize": [
+                {
+                    "value": 36502
+                }
+            ],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "created": [
+                {
+                    "value": "2021-05-30T15:15:39+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2021-05-30T15:15:45+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ]
+        },
+        {
+            "fid": [
+                {
+                    "value": 3
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "77c9329e-eb42-4146-a333-b65323854698"
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "uid": [
+                {
+                    "target_id": 0,
+                    "target_type": "user",
+                    "target_uuid": "726bb45c-b191-4f17-9d17-8cd88175d2fe",
+                    "url": "\/user\/0"
+                }
+            ],
+            "filename": [
+                {
+                    "value": "Image 1.png"
+                }
+            ],
+            "uri": [
+                {
+                    "value": "public:\/\/2021-05\/Image 1_0.png",
+                    "url": "\/sites\/default\/files\/2021-05\/Image%201_0.png"
+                }
+            ],
+            "filemime": [
+                {
+                    "value": "image\/png"
+                }
+            ],
+            "filesize": [
+                {
+                    "value": 96717
+                }
+            ],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "created": [
+                {
+                    "value": "2021-05-30T15:17:18+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2021-05-30T15:17:35+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ]
+        },
+        {
+            "fid": [
+                {
+                    "value": 4
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "8cde76c8-29f7-4203-80cf-f782bd451cae"
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "uid": [
+                {
+                    "target_id": 0,
+                    "target_type": "user",
+                    "target_uuid": "726bb45c-b191-4f17-9d17-8cd88175d2fe",
+                    "url": "\/user\/0"
+                }
+            ],
+            "filename": [
+                {
+                    "value": "Image 2.png"
+                }
+            ],
+            "uri": [
+                {
+                    "value": "public:\/\/2021-05\/Image 2_0.png",
+                    "url": "\/sites\/default\/files\/2021-05\/Image%202_0.png"
+                }
+            ],
+            "filemime": [
+                {
+                    "value": "image\/png"
+                }
+            ],
+            "filesize": [
+                {
+                    "value": 95492
+                }
+            ],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "created": [
+                {
+                    "value": "2021-05-30T15:18:05+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2021-05-30T15:18:10+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ]
+        },
+        {
+            "fid": [
+                {
+                    "value": 5
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "4d7c0c64-330c-4068-a4e1-534f14d9df4b"
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "uid": [
+                {
+                    "target_id": 0,
+                    "target_type": "user",
+                    "target_uuid": "726bb45c-b191-4f17-9d17-8cd88175d2fe",
+                    "url": "\/user\/0"
+                }
+            ],
+            "filename": [
+                {
+                    "value": "Image 3.png"
+                }
+            ],
+            "uri": [
+                {
+                    "value": "public:\/\/2021-05\/Image 3_0.png",
+                    "url": "\/sites\/default\/files\/2021-05\/Image%203_0.png"
+                }
+            ],
+            "filemime": [
+                {
+                    "value": "image\/png"
+                }
+            ],
+            "filesize": [
+                {
+                    "value": 116455
+                }
+            ],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "created": [
+                {
+                    "value": "2021-05-30T15:18:42+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2021-05-30T15:18:49+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ]
+        }
+    ]
+}
