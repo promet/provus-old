@@ -1,0 +1,111 @@
+{
+    "media": {
+        "074eb4e5-707c-4352-aea9-c55871522a73": {
+            "mid": [
+                {
+                    "value": 29
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "074eb4e5-707c-4352-aea9-c55871522a73"
+                }
+            ],
+            "vid": [
+                {
+                    "value": 35
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "bundle": [
+                {
+                    "target_id": "document",
+                    "target_type": "media_type",
+                    "target_uuid": "7f212518-1ff8-4030-92d5-ae3e9f03d10c"
+                }
+            ],
+            "revision_created": [
+                {
+                    "value": "2021-05-28T14:01:37+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "revision_user": [
+                {
+                    "target_id": 1,
+                    "target_type": "user",
+                    "target_uuid": "6361368e-0ae3-4a16-b792-05cf28408fc4",
+                    "url": "\/user\/1"
+                }
+            ],
+            "revision_log_message": [],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "uid": [
+                {
+                    "target_id": 1,
+                    "target_type": "user",
+                    "target_uuid": "6361368e-0ae3-4a16-b792-05cf28408fc4",
+                    "url": "\/user\/1"
+                }
+            ],
+            "name": [
+                {
+                    "value": "SOTU2_Final_Web.pdf"
+                }
+            ],
+            "thumbnail": [
+                {
+                    "target_id": 30,
+                    "alt": "",
+                    "title": null,
+                    "width": 180,
+                    "height": 180,
+                    "target_type": "file",
+                    "target_uuid": "f08f0894-9081-474f-a9a7-ac683d32b90e",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/media-icons\/generic\/generic.png"
+                }
+            ],
+            "created": [
+                {
+                    "value": "2021-05-28T14:01:25+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2021-05-28T14:01:37+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": true
+                }
+            ],
+            "revision_translation_affected": [
+                {
+                    "value": true
+                }
+            ],
+            "path": [],
+            "field_media_document": [
+                {
+                    "target_id": 29,
+                    "display": true,
+                    "description": "",
+                    "target_type": "file",
+                    "target_uuid": "0035cfdb-3285-4e5f-a375-c7ffea47fda6",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2021-05\/SOTU2_Final_Web.pdf"
+                }
+            ]
+        }
+    }
+}

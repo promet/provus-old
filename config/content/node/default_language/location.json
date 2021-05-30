@@ -1,0 +1,174 @@
+{
+    "node": {
+        "e7daa217-578f-4eeb-80ed-a0745693064e": {
+            "nid": [
+                {
+                    "value": 21
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "e7daa217-578f-4eeb-80ed-a0745693064e"
+                }
+            ],
+            "vid": [
+                {
+                    "value": 82
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "type": [
+                {
+                    "target_id": "location",
+                    "target_type": "node_type",
+                    "target_uuid": "41d8e351-ce9c-4353-804d-8c4beb5ef9a9"
+                }
+            ],
+            "revision_timestamp": [
+                {
+                    "value": "2021-05-20T14:42:24+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "revision_uid": [
+                {
+                    "target_id": 1,
+                    "target_type": "user",
+                    "target_uuid": "6361368e-0ae3-4a16-b792-05cf28408fc4",
+                    "url": "\/user\/1"
+                }
+            ],
+            "revision_log": [],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "uid": [
+                {
+                    "target_id": 1,
+                    "target_type": "user",
+                    "target_uuid": "6361368e-0ae3-4a16-b792-05cf28408fc4",
+                    "url": "\/user\/1"
+                }
+            ],
+            "title": [
+                {
+                    "value": "Promet Chicago Office"
+                }
+            ],
+            "created": [
+                {
+                    "value": "2021-05-20T14:28:39+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2021-05-20T14:42:24+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "promote": [
+                {
+                    "value": true
+                }
+            ],
+            "sticky": [
+                {
+                    "value": false
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": true
+                }
+            ],
+            "revision_translation_affected": [],
+            "path": [],
+            "body": [],
+            "field_accessible": [
+                {
+                    "value": true
+                }
+            ],
+            "field_address": [
+                {
+                    "langcode": "",
+                    "country_code": "US",
+                    "administrative_area": "IL",
+                    "locality": "Chicago",
+                    "dependent_locality": null,
+                    "postal_code": "60640",
+                    "sorting_code": null,
+                    "address_line1": "4809 N. Ravenswood Ave., Suite 126",
+                    "address_line2": "",
+                    "organization": null,
+                    "given_name": null,
+                    "additional_name": null,
+                    "family_name": null
+                }
+            ],
+            "field_alert": [],
+            "field_email": [],
+            "field_file": [],
+            "field_hours": [
+                {
+                    "day": 1,
+                    "starthours": 900,
+                    "endhours": 1700,
+                    "comment": ""
+                },
+                {
+                    "day": 2,
+                    "starthours": 900,
+                    "endhours": 1700,
+                    "comment": ""
+                },
+                {
+                    "day": 3,
+                    "starthours": 900,
+                    "endhours": 1700,
+                    "comment": ""
+                },
+                {
+                    "day": 4,
+                    "starthours": 900,
+                    "endhours": 1700,
+                    "comment": ""
+                },
+                {
+                    "day": 5,
+                    "starthours": 900,
+                    "endhours": 1700,
+                    "comment": ""
+                }
+            ],
+            "field_lat_long": [
+                {
+                    "value": "POINT(-87.673752 41.969372)",
+                    "geo_type": "Point",
+                    "lat": 41.969372,
+                    "lon": -87.673752,
+                    "left": -87.673752,
+                    "top": 41.969372,
+                    "right": -87.673752,
+                    "bottom": 41.969372,
+                    "geohash": "dp3wubmcm9bp",
+                    "latlon": "41.969372,-87.673752"
+                }
+            ],
+            "field_media_image": [],
+            "field_phone": [
+                {
+                    "value": "(773) 525-8255"
+                }
+            ],
+            "field_type": []
+        }
+    }
+}

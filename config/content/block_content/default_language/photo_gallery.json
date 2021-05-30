@@ -1,0 +1,192 @@
+{
+    "block_content": {
+        "857313bd-f201-4ac3-b23b-e5e686cb967a": {
+            "id": [
+                {
+                    "value": 33
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "857313bd-f201-4ac3-b23b-e5e686cb967a"
+                }
+            ],
+            "revision_id": [
+                {
+                    "value": 50
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "type": [
+                {
+                    "target_id": "photo_gallery",
+                    "target_type": "block_content_type",
+                    "target_uuid": "e7efe1a5-c48a-4871-a98a-9c2e1af56028"
+                }
+            ],
+            "revision_created": [
+                {
+                    "value": "2021-04-29T15:54:39+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "revision_user": [],
+            "revision_log": [],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "info": [
+                {
+                    "value": "Staff Fun"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2021-04-29T15:54:39+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "reusable": [
+                {
+                    "value": false
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": true
+                }
+            ],
+            "revision_translation_affected": [
+                {
+                    "value": true
+                }
+            ],
+            "field_gallery_photos": [
+                {
+                    "target_id": 17,
+                    "target_type": "media",
+                    "target_uuid": "72e6fbd6-7cab-4ac2-8585-1684c6ce9427",
+                    "url": "\/media\/17\/edit"
+                },
+                {
+                    "target_id": 16,
+                    "target_type": "media",
+                    "target_uuid": "de7594c9-a008-4e34-8ec4-66f22cd8bf91",
+                    "url": "\/media\/16\/edit"
+                },
+                {
+                    "target_id": 15,
+                    "target_type": "media",
+                    "target_uuid": "4b6f31c6-aa8d-461a-b9aa-3158e5d3afa6",
+                    "url": "\/media\/15\/edit"
+                },
+                {
+                    "target_id": 14,
+                    "target_type": "media",
+                    "target_uuid": "12b4b28c-5951-4308-8d5b-65063db77e4c",
+                    "url": "\/media\/14\/edit"
+                }
+            ]
+        },
+        "b5b712a0-53d1-438f-80d0-0d2906d3528f": {
+            "id": [
+                {
+                    "value": 29
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "b5b712a0-53d1-438f-80d0-0d2906d3528f"
+                }
+            ],
+            "revision_id": [
+                {
+                    "value": 46
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "type": [
+                {
+                    "target_id": "photo_gallery",
+                    "target_type": "block_content_type",
+                    "target_uuid": "e7efe1a5-c48a-4871-a98a-9c2e1af56028"
+                }
+            ],
+            "revision_created": [
+                {
+                    "value": "2021-04-29T15:33:03+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "revision_user": [],
+            "revision_log": [],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "info": [
+                {
+                    "value": "test"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2021-04-29T15:33:03+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "reusable": [
+                {
+                    "value": false
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": true
+                }
+            ],
+            "revision_translation_affected": [
+                {
+                    "value": true
+                }
+            ],
+            "field_gallery_photos": [
+                {
+                    "target_id": 17,
+                    "target_type": "media",
+                    "target_uuid": "72e6fbd6-7cab-4ac2-8585-1684c6ce9427",
+                    "url": "\/media\/17\/edit"
+                },
+                {
+                    "target_id": 16,
+                    "target_type": "media",
+                    "target_uuid": "de7594c9-a008-4e34-8ec4-66f22cd8bf91",
+                    "url": "\/media\/16\/edit"
+                },
+                {
+                    "target_id": 15,
+                    "target_type": "media",
+                    "target_uuid": "4b6f31c6-aa8d-461a-b9aa-3158e5d3afa6",
+                    "url": "\/media\/15\/edit"
+                },
+                {
+                    "target_id": 14,
+                    "target_type": "media",
+                    "target_uuid": "12b4b28c-5951-4308-8d5b-65063db77e4c",
+                    "url": "\/media\/14\/edit"
+                }
+            ]
+        }
+    }
+}

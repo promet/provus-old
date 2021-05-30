@@ -703,8 +703,10 @@ function provus_preprocess_linkgroup(&$vars, $block) {
             break;
         }
         $tids = [];
-        foreach ($target_ids as $target) {
-          $tids[] = $target['target_id'];
+        if (isset($target_ids)) {
+          foreach ($target_ids as $target) {
+            $tids[] = $target['target_id'];
+          }
         }
         if ($pager) {
           $count = $num_per_page;

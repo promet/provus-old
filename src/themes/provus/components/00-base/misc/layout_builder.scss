@@ -4,7 +4,7 @@
   border: 0;
 }
 .dialog-off-canvas-main-canvas {
-  padding-right: none !important;
+  padding-right: inherit !important;
 }
 #drupal-off-canvas *,
 #drupal-off-canvas :not(div) {

@@ -1,0 +1,133 @@
+{
+    "block_content": {
+        "1ea5079d-41be-4ee7-b62f-ee04150d8856": {
+            "id": [
+                {
+                    "value": 5
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "1ea5079d-41be-4ee7-b62f-ee04150d8856"
+                }
+            ],
+            "revision_id": [
+                {
+                    "value": 17
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "type": [
+                {
+                    "target_id": "accordion",
+                    "target_type": "block_content_type",
+                    "target_uuid": "93fe1960-3994-4c28-9dd9-4477af287bee"
+                }
+            ],
+            "revision_created": [
+                {
+                    "value": "2021-04-29T13:50:35+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "revision_user": [],
+            "revision_log": [],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "info": [
+                {
+                    "value": "Accordion 810408641"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2021-05-19T20:33:51+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "reusable": [
+                {
+                    "value": true
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": true
+                }
+            ],
+            "revision_translation_affected": [
+                {
+                    "value": true
+                }
+            ],
+            "field_accordion_items": [
+                {
+                    "target_id": 2,
+                    "target_type": "block_content",
+                    "target_uuid": "cea30c7a-d9c1-4c6c-b589-8473ce8cd69b",
+                    "url": "\/block\/2"
+                },
+                {
+                    "target_id": 3,
+                    "target_type": "block_content",
+                    "target_uuid": "5c28ab2c-5ad6-4d56-98fd-c83aded1a7b4",
+                    "url": "\/block\/3"
+                },
+                {
+                    "target_id": 4,
+                    "target_type": "block_content",
+                    "target_uuid": "e17af228-b3f4-4c2a-9381-5619415eb30a",
+                    "url": "\/block\/4"
+                },
+                {
+                    "target_id": 41,
+                    "target_type": "block_content",
+                    "target_uuid": "a6263c8b-61ae-4e03-974c-7896175d8adc",
+                    "url": "\/block\/41"
+                },
+                {
+                    "target_id": 42,
+                    "target_type": "block_content",
+                    "target_uuid": "19d95de8-f1f9-4b04-b589-bd77feaccd1d",
+                    "url": "\/block\/42"
+                },
+                {
+                    "target_id": 43,
+                    "target_type": "block_content",
+                    "target_uuid": "6baed88c-1212-4174-9bf3-b2d2b0c4f214",
+                    "url": "\/block\/43"
+                },
+                {
+                    "target_id": 44,
+                    "target_type": "block_content",
+                    "target_uuid": "ac9fdea4-6187-4eea-95aa-b20246850553",
+                    "url": "\/block\/44"
+                },
+                {
+                    "target_id": 45,
+                    "target_type": "block_content",
+                    "target_uuid": "5226a773-9cd0-4c3a-88e9-aceb12e8854b",
+                    "url": "\/block\/45"
+                },
+                {
+                    "target_id": 46,
+                    "target_type": "block_content",
+                    "target_uuid": "3f244b59-4a2c-4870-8d5a-d22729a5687c",
+                    "url": "\/block\/46"
+                }
+            ],
+            "field_openfirst": [
+                {
+                    "value": true
+                }
+            ]
+        }
+    }
+}

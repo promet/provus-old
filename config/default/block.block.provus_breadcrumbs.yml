@@ -3,7 +3,9 @@ langcode: en
 status: true
 dependencies:
   module:
+    - node
     - system
+    - vocabulary_condition
   theme:
     - provus
 _core:
@@ -20,8 +22,31 @@ settings:
   provider: system
   label_display: '0'
 visibility:
-  request_path:
-    id: request_path
-    pages: '<front>'
-    negate: true
+  vocabulary:
+    id: vocabulary
+    bundles:
+      article_type: article_type
+      event_type: event_type
+      location_type: location_type
+      person_type: person_type
+      tags: tags
+    negate: false
+    context_mapping:
+      taxonomy_term: '@taxonomy_term.taxonomy_term_route_context:taxonomy_term'
+  node_type:
+    id: node_type
+    bundles:
+      event: event
+      faq: faq
+      location: location
+      person: person
+      provus_article: provus_article
+      provus_page: provus_page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  and_or:
+    id: and_or
+    all: or
+    negate: false
     context_mapping: {  }

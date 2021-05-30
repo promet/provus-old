@@ -1,0 +1,1233 @@
+{
+    "node": {
+        "00af6666-e621-4301-8d16-15a3e8d5db16": {
+            "nid": [
+                {
+                    "value": 2
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "00af6666-e621-4301-8d16-15a3e8d5db16"
+                }
+            ],
+            "vid": [
+                {
+                    "value": 96
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "type": [
+                {
+                    "target_id": "provus_article",
+                    "target_type": "node_type",
+                    "target_uuid": "465c6ad5-a778-4617-9f76-6fd9876b1aa0"
+                }
+            ],
+            "revision_timestamp": [
+                {
+                    "value": "2021-05-20T16:47:17+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "revision_uid": [
+                {
+                    "target_id": 5,
+                    "target_type": "user",
+                    "target_uuid": "955a74e2-9dbd-4873-9260-5e190467823b",
+                    "url": "\/user\/5"
+                }
+            ],
+            "revision_log": [],
+            "status": [
+                {
+                    "value": false
+                }
+            ],
+            "uid": [
+                {
+                    "target_id": 1,
+                    "target_type": "user",
+                    "target_uuid": "6361368e-0ae3-4a16-b792-05cf28408fc4",
+                    "url": "\/user\/1"
+                }
+            ],
+            "title": [
+                {
+                    "value": "6 steps to make sure the website you're designing is accessiblity compliant"
+                }
+            ],
+            "created": [
+                {
+                    "value": "2021-04-28T00:19:37+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2021-05-20T16:47:17+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "promote": [
+                {
+                    "value": false
+                }
+            ],
+            "sticky": [
+                {
+                    "value": false
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": true
+                }
+            ],
+            "revision_translation_affected": [
+                {
+                    "value": true
+                }
+            ],
+            "path": [],
+            "body": [
+                {
+                    "value": "<p>Conversations about web accessibility too often miss the bigger picture and the paramount importance of broadening our perspectives for the digital age. For this reason, it\u2019s extremely important to understand, before getting into the weeds of compliance, that there are multiple facets of digital accessibility. Standard expectations such as images with alternative text for those who are visually impaired or video captioning for those who are hearing impaired account for only a small segment of what\u2019s involved in making a site accessible.<\/p>\r\n",
+                    "format": "basic_html",
+                    "processed": "<p>Conversations about web accessibility too often miss the bigger picture and the paramount importance of broadening our perspectives for the digital age. For this reason, it\u2019s extremely important to understand, before getting into the weeds of compliance, that there are multiple facets of digital accessibility. Standard expectations such as images with alternative text for those who are visually impaired or video captioning for those who are hearing impaired account for only a small segment of what\u2019s involved in making a site accessible.<\/p>",
+                    "summary": ""
+                }
+            ],
+            "field_file": [],
+            "field_media_image": [
+                {
+                    "target_id": 1,
+                    "target_type": "media",
+                    "target_uuid": "684b0d83-0cf7-4b1c-94e8-b09649f798f8",
+                    "url": "\/media\/1\/edit"
+                }
+            ],
+            "field_publish_date": [
+                {
+                    "value": "2021-06-18"
+                }
+            ],
+            "field_type": [
+                {
+                    "target_id": 1,
+                    "target_type": "taxonomy_term",
+                    "target_uuid": "e0007ae8-646a-49c3-88d3-c72541723512",
+                    "url": "\/news"
+                }
+            ]
+        },
+        "0eae0f04-8935-43b2-9f31-dfe3d51738f7": {
+            "nid": [
+                {
+                    "value": 3
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "0eae0f04-8935-43b2-9f31-dfe3d51738f7"
+                }
+            ],
+            "vid": [
+                {
+                    "value": 5
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "type": [
+                {
+                    "target_id": "provus_article",
+                    "target_type": "node_type",
+                    "target_uuid": "465c6ad5-a778-4617-9f76-6fd9876b1aa0"
+                }
+            ],
+            "revision_timestamp": [
+                {
+                    "value": "2021-04-28T00:42:29+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "revision_uid": [
+                {
+                    "target_id": 1,
+                    "target_type": "user",
+                    "target_uuid": "6361368e-0ae3-4a16-b792-05cf28408fc4",
+                    "url": "\/user\/1"
+                }
+            ],
+            "revision_log": [],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "uid": [
+                {
+                    "target_id": 1,
+                    "target_type": "user",
+                    "target_uuid": "6361368e-0ae3-4a16-b792-05cf28408fc4",
+                    "url": "\/user\/1"
+                }
+            ],
+            "title": [
+                {
+                    "value": "Meet Provus, Promet's Solution to Creating Better Content Editor Experiences"
+                }
+            ],
+            "created": [
+                {
+                    "value": "2021-04-28T00:41:05+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2021-04-28T00:42:29+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "promote": [
+                {
+                    "value": false
+                }
+            ],
+            "sticky": [
+                {
+                    "value": false
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": true
+                }
+            ],
+            "revision_translation_affected": [
+                {
+                    "value": true
+                }
+            ],
+            "path": [],
+            "body": [
+                {
+                    "value": "<p>Committed to empowering fast-moving marketing teams and content editors with the ability to easily edit, revise, and change their sites as needed, Promet Source has developed Provus, a drag-and-drop site building tool. Provus provides a foundation for DIY design and creativity without the need for IT or a web designer while ensuring pages stay within defined brand standards for greater design flexibility and site governance.<\/p>\r\n",
+                    "format": "basic_html",
+                    "processed": "<p>Committed to empowering fast-moving marketing teams and content editors with the ability to easily edit, revise, and change their sites as needed, Promet Source has developed Provus, a drag-and-drop site building tool. Provus provides a foundation for DIY design and creativity without the need for IT or a web designer while ensuring pages stay within defined brand standards for greater design flexibility and site governance.<\/p>",
+                    "summary": ""
+                }
+            ],
+            "field_file": [],
+            "field_media_image": [
+                {
+                    "target_id": 2,
+                    "target_type": "media",
+                    "target_uuid": "1060214c-53f1-4ffe-bd0f-0ff028af33b7",
+                    "url": "\/media\/2\/edit"
+                }
+            ],
+            "field_publish_date": [
+                {
+                    "value": "2021-05-07"
+                }
+            ],
+            "field_type": [
+                {
+                    "target_id": 1,
+                    "target_type": "taxonomy_term",
+                    "target_uuid": "e0007ae8-646a-49c3-88d3-c72541723512",
+                    "url": "\/news"
+                }
+            ]
+        },
+        "34e44bed-888e-4631-9d16-998f8d074dc0": {
+            "nid": [
+                {
+                    "value": 5
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "34e44bed-888e-4631-9d16-998f8d074dc0"
+                }
+            ],
+            "vid": [
+                {
+                    "value": 8
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "type": [
+                {
+                    "target_id": "provus_article",
+                    "target_type": "node_type",
+                    "target_uuid": "465c6ad5-a778-4617-9f76-6fd9876b1aa0"
+                }
+            ],
+            "revision_timestamp": [
+                {
+                    "value": "2021-04-28T00:47:03+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "revision_uid": [
+                {
+                    "target_id": 1,
+                    "target_type": "user",
+                    "target_uuid": "6361368e-0ae3-4a16-b792-05cf28408fc4",
+                    "url": "\/user\/1"
+                }
+            ],
+            "revision_log": [],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "uid": [
+                {
+                    "target_id": 1,
+                    "target_type": "user",
+                    "target_uuid": "6361368e-0ae3-4a16-b792-05cf28408fc4",
+                    "url": "\/user\/1"
+                }
+            ],
+            "title": [
+                {
+                    "value": "How to Acheive Great UX in 8 Steps"
+                }
+            ],
+            "created": [
+                {
+                    "value": "2021-04-28T00:45:41+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2021-04-28T00:47:03+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "promote": [
+                {
+                    "value": false
+                }
+            ],
+            "sticky": [
+                {
+                    "value": false
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": true
+                }
+            ],
+            "revision_translation_affected": [
+                {
+                    "value": true
+                }
+            ],
+            "path": [],
+            "body": [
+                {
+                    "value": "<p>Those of us in the web design and development world are sometimes asked to explain what UX is all about. The truth is, there is not one, static definition. There many dimensions to UX or User Experience, and it\u2019s a discipline that can be viewed from many angles.&nbsp;<br \/>\r\nThe goal of great UX design, whether applied to digital or physical products, is simply optimizing usability and every aspect of the experience with a product or service from the perspective of the end user or the customer. On some level this sounds obvious. For whom else, or based on what else, would products or digital experiences be designed? In the real world, however, the answer can be all over the map with designs that incorporate the preferences of other designers, developers, company leadership, professional peers, awards committee judges, or the styles and presuppositions of designers themselves.&nbsp;<\/p>\r\n",
+                    "format": "basic_html",
+                    "processed": "<p>Those of us in the web design and development world are sometimes asked to explain what UX is all about. The truth is, there is not one, static definition. There many dimensions to UX or User Experience, and it\u2019s a discipline that can be viewed from many angles.\u00a0<br \/>\nThe goal of great UX design, whether applied to digital or physical products, is simply optimizing usability and every aspect of the experience with a product or service from the perspective of the end user or the customer. On some level this sounds obvious. For whom else, or based on what else, would products or digital experiences be designed? In the real world, however, the answer can be all over the map with designs that incorporate the preferences of other designers, developers, company leadership, professional peers, awards committee judges, or the styles and presuppositions of designers themselves.\u00a0<\/p>",
+                    "summary": ""
+                }
+            ],
+            "field_file": [],
+            "field_media_image": [
+                {
+                    "target_id": 4,
+                    "target_type": "media",
+                    "target_uuid": "6a430489-fc7b-4831-8048-5ec046dc1b6f",
+                    "url": "\/media\/4\/edit"
+                }
+            ],
+            "field_publish_date": [
+                {
+                    "value": "2021-05-08"
+                }
+            ],
+            "field_type": [
+                {
+                    "target_id": 1,
+                    "target_type": "taxonomy_term",
+                    "target_uuid": "e0007ae8-646a-49c3-88d3-c72541723512",
+                    "url": "\/news"
+                }
+            ]
+        },
+        "451019c4-e400-4286-994c-05f4204a6be0": {
+            "nid": [
+                {
+                    "value": 24
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "451019c4-e400-4286-994c-05f4204a6be0"
+                }
+            ],
+            "vid": [
+                {
+                    "value": 102
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "type": [
+                {
+                    "target_id": "provus_article",
+                    "target_type": "node_type",
+                    "target_uuid": "465c6ad5-a778-4617-9f76-6fd9876b1aa0"
+                }
+            ],
+            "revision_timestamp": [
+                {
+                    "value": "2021-05-20T16:55:41+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "revision_uid": [
+                {
+                    "target_id": 5,
+                    "target_type": "user",
+                    "target_uuid": "955a74e2-9dbd-4873-9260-5e190467823b",
+                    "url": "\/user\/5"
+                }
+            ],
+            "revision_log": [],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "uid": [
+                {
+                    "target_id": 5,
+                    "target_type": "user",
+                    "target_uuid": "955a74e2-9dbd-4873-9260-5e190467823b",
+                    "url": "\/user\/5"
+                }
+            ],
+            "title": [
+                {
+                    "value": "Drupal Enabled Drag and Drop Content Management"
+                }
+            ],
+            "created": [
+                {
+                    "value": "2021-05-20T16:34:41+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2021-05-20T16:55:41+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "promote": [
+                {
+                    "value": false
+                }
+            ],
+            "sticky": [
+                {
+                    "value": false
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": true
+                }
+            ],
+            "revision_translation_affected": [
+                {
+                    "value": true
+                }
+            ],
+            "path": [],
+            "body": [
+                {
+                    "value": "<p>Until recently, content management systems essentially fell into one of two camps:<\/p>\r\n\r\n<ul>\r\n\t<li>Intuitive, easy-to-create and manage SAAS solutions, such as WIX and Squarespace, or<\/li>\r\n\t<li>Flexible and scalable solutions, such as Drupal, for websites with complex data models and a depth of content. &nbsp;<\/li>\r\n<\/ul>\r\n\r\n<p>Quantum leaps in functionality that leverage component-based web design systems have broken down the wall between these two camps. This gap can now be bridged within Drupal, allowing for drag and drop content management capabilities.&nbsp;<\/p>\r\n\r\n<p>Promet\u2019s strategy for achieving this&nbsp;<a href=\"https:\/\/www.prometsource.com\/services\/ui-design\">new&nbsp;UI and content management paradigm<\/a>&nbsp;incorporates two open-source solutions: Emulsify, a component-driven Drupal theme, and&nbsp;<a href=\"https:\/\/www.prometsource.com\/FAQ\/Provus\">Provus<\/a>, our Drupal kickstart that packages commonly used features into reusable components for a drag-and-drop editing experience.&nbsp;<\/p>\r\n\r\n<p>During&nbsp;<a href=\"https:\/\/www.drupalgovcon.org\/\">Drupal GovCon<\/a>&nbsp;last month,&nbsp;<a href=\"https:\/\/www.prometsource.com\/team\/aaron-couch\">Aaron Couch<\/a>&nbsp;and I delivered a presentation on Drag and Drop Content Management Systems for Government Websites. The types of requirements that we addressed during this presentation are, of course, not unique to government agencies.&nbsp;<\/p>\r\n\r\n<p>Key among them:&nbsp;<\/p>\r\n\r\n<ul>\r\n\t<li>Improve digital services across the board,&nbsp;<\/li>\r\n\t<li>Push more transactions and interactions online for purposes of reducing costs and ensuring agility,<\/li>\r\n\t<li>Meet increasingly high expectations among citizens and customers,<\/li>\r\n\t<li>Communicate changes quickly, and&nbsp;<\/li>\r\n\t<li>Enhance efficiencies by leveraging the potential of \u201cCreate Once Publish Everywhere\u201d (COPE).&nbsp;<\/li>\r\n<\/ul>\r\n\r\n<h3>&nbsp;<\/h3>\r\n\r\n<h3>Foundations of Component-Based Theming<\/h3>\r\n\r\n<p>This new world of drag-and-drop possibilities is built upon the realization that despite differences in content modeling, the pages of most websites consist of various combinations of the same \u201cthings\u201d -- media galleries, lists of content, cards, search, maps, and social media.&nbsp; We call these things \u201ccomponents.\u201d<\/p>\r\n\r\n<p>With Promet's new approach to component-driven theming, new potential has emerged for customizable content models that are built with easily \u201cthemable\u201d and reusable components, that are then stored in a library that serves as an efficient starting point for projects.&nbsp;<br \/>\r\n&nbsp;<\/p>\r\n\r\n<h3>Fueled by Emulsify, Layout Builder, and Provus<\/h3>\r\n\r\n<p>While there are a&nbsp;<a href=\"https:\/\/github.com\/aleksip\/component-based-theming#drupal-themes-and-design-systems-with-drupal-integration\">number of component-based themes for Drupal<\/a>, we\u2019ve singled out the&nbsp;<a href=\"https:\/\/www.prometsource.com\/services\/ui-design\">Emulsify\u00ae design system<\/a>&nbsp;as a Drupal starter theme that gives us a huge lift in building reusable components. Emulsify functions as an example of&nbsp;<a href=\"https:\/\/www.prometsource.com\/blog\/what-atomic-web-design\">Atomic Design<\/a>, which refers to a methodology for envisioning the site as a collection of components, based on graduated building blocks from Atoms, to Molecules, to Organisms, to Templates, to Pages.&nbsp;<\/p>\r\n\r\n<p>This capability combines both a starter component library and&nbsp;<a href=\"https:\/\/storybook.js.org\/\">Storybook<\/a>, which is a tool for building user interface components and supports both Twig and React. Storybook can be turned on from within the Emulsify theme, resulting in a highly efficient new workflow for projects. For more on Storybook, check out a recent Drupal GovCon presentation entitled,&nbsp;<a href=\"https:\/\/www.drupalgovcon.org\/2020\/program\/sessions\/component-driven-theming-storybook\">Component Driven Theming with Storybook<\/a>, that Promet\u2019s Aaron Couch participated in, along with Emulsify contributors&nbsp;<a href=\"https:\/\/www.fourkitchens.com\/team\/brian-lewis\/\">Brian Lewis<\/a>&nbsp;and&nbsp;<a href=\"https:\/\/www.fourkitchens.com\/team\/evan-willhite\/\">Evan Willhite<\/a>.<\/p>\r\n\r\n<p><a href=\"https:\/\/www.drupal.org\/docs\/8\/core\/modules\/layout-builder\">Drupal Layout Builder<\/a>&nbsp;is a drag-and-drop page-building tool in Drupal Core that allows content editors to build out sections of the site. Layout Builder can be implemented as a no-code, site-building tool that retains the features of Drupal, such as flexible content model, revisioning, and custom user permissions and workflows.&nbsp;<\/p>\r\n\r\n<p>Developed by Promet, Provus provides a kickstart to Drupal site building, packaging commonly used features such as calendaring, FAQs, people, news, and blogs with a drag-and-drop content editing experience. Provus also offers a large array of site-building components like galleries, maps, content lists that can be added and arranged by non-technical users, enabling non-technical users to build and edit a site within an inherently flexible content model. Provus is open source and we welcome the Drupal community\u2019s contributions to the project.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<h3>Beyond Traditional Drupal Theming<\/h3>\r\n\r\n<p>Having identified that component-based theming tools are key to next-level efficiencies in website building, our next step was to single out an optimal approach for delivering reusable components.&nbsp;<\/p>\r\n\r\n<p>Traditional Drupal theming includes css and javascript selectors that are intertwined with their context, connecting them to the backend implementation. The result of this \u201ctheme for the page,\u201d approach is assets that can\u2019t be reused across projects.&nbsp;<\/p>\r\n\r\n<p>With a component-based approach, however, selectors are isolated and can be reused.&nbsp;<\/p>\r\n\r\n<p>Let\u2019s take an example of creating front-end assets for a typical carousel component. In the example below, the assets are tied to the Drupal implementation and combined with other elements. They are not only tied to a paragraph, but the specific name of that paragraph. Reusing this is difficult if there are any changes to the data model. We've identified that a flexible data model is what we want to build.<\/p>\r\n\r\n<h4>Traditional Drupal Theming<\/h4>\r\n\r\n<p><img alt=\"Traditional Drupal Theming\" data-entity-type=\"file\" data-entity-uuid=\"3fcf7792-8a9f-4f4b-8282-ab37c233c79d\" height=\"195\" src=\"https:\/\/www.prometsource.com\/sites\/default\/files\/inline-images\/snip2.1.JPG\" width=\"552\" \/><\/p>\r\n\r\n<p><img alt=\"Traditional Drupal Theming\" data-entity-type=\"file\" data-entity-uuid=\"aaf298dc-1f89-43b0-9eaa-0ffb9069856e\" src=\"https:\/\/www.prometsource.com\/sites\/default\/files\/inline-images\/snip%202.2.JPG\" \/><\/p>\r\n\r\n<h3>&nbsp;<\/h3>\r\n\r\n<h3>Component-Based Solution<\/h3>\r\n\r\n<p>With a component-based approach, on the other hand, all of the assets including the js, css, and template are grouped together. As indicated below, the selectors only reference the elements in the template, so they are isolated within a coherent whole.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p><img alt=\"component based solution\" data-entity-type=\"file\" data-entity-uuid=\"8d59a79e-1763-4d03-9799-9d4be576dcf4\" src=\"https:\/\/www.prometsource.com\/sites\/default\/files\/inline-images\/snip3.JPG\" \/><\/p>\r\n\r\n<p>Making component-based theming work in Drupal, can simply be a matter of embedding. We are able to leverage Twig\u2019s ability to embed or include templates to render the component. If the backend implementation changes or we want to move it to another project the component itself is not changed.&nbsp;<\/p>\r\n\r\n<p>Below is an example of embedding the previous component. In this case, changing the block type or backend implementation simply requires embedding the same component.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p><img alt=\"Component based solution in Drupal\" data-entity-type=\"file\" data-entity-uuid=\"dcfadb1d-5ed5-4f0e-add6-78ea61737554\" src=\"https:\/\/www.prometsource.com\/sites\/default\/files\/inline-images\/Snip4.JPG\" \/><\/p>\r\n\r\n<p>Drag-and-Drop Content Management Systems represent a new level of advantages and possibilities for development teams, and even more so for clients. At Promet Source, we\u2019re excited about the approach to component-based theming that we\u2019ve developed, and looking forward to the conversations and amazing new solutions that lie ahead for clients.&nbsp;<\/p>\r\n\r\n<p>Interested in learning more about the potential for drag-and-drop content management systems and what this can mean for you?&nbsp;<a href=\"https:\/\/www.prometsource.com\/contact\">Contact us<\/a>&nbsp;today.<\/p>\r\n",
+                    "format": "basic_html",
+                    "processed": "<p>Until recently, content management systems essentially fell into one of two camps:<\/p>\n\n<ul><li>Intuitive, easy-to-create and manage SAAS solutions, such as WIX and Squarespace, or<\/li>\n\t<li>Flexible and scalable solutions, such as Drupal, for websites with complex data models and a depth of content. \u00a0<\/li>\n<\/ul><p>Quantum leaps in functionality that leverage component-based web design systems have broken down the wall between these two camps. This gap can now be bridged within Drupal, allowing for drag and drop content management capabilities.\u00a0<\/p>\n\n<p>Promet\u2019s strategy for achieving this\u00a0<a href=\"https:\/\/www.prometsource.com\/services\/ui-design\">new\u00a0UI and content management paradigm<\/a>\u00a0incorporates two open-source solutions: Emulsify, a component-driven Drupal theme, and\u00a0<a href=\"https:\/\/www.prometsource.com\/FAQ\/Provus\">Provus<\/a>, our Drupal kickstart that packages commonly used features into reusable components for a drag-and-drop editing experience.\u00a0<\/p>\n\n<p>During\u00a0<a href=\"https:\/\/www.drupalgovcon.org\/\">Drupal GovCon<\/a>\u00a0last month,\u00a0<a href=\"https:\/\/www.prometsource.com\/team\/aaron-couch\">Aaron Couch<\/a>\u00a0and I delivered a presentation on Drag and Drop Content Management Systems for Government Websites. The types of requirements that we addressed during this presentation are, of course, not unique to government agencies.\u00a0<\/p>\n\n<p>Key among them:\u00a0<\/p>\n\n<ul><li>Improve digital services across the board,\u00a0<\/li>\n\t<li>Push more transactions and interactions online for purposes of reducing costs and ensuring agility,<\/li>\n\t<li>Meet increasingly high expectations among citizens and customers,<\/li>\n\t<li>Communicate changes quickly, and\u00a0<\/li>\n\t<li>Enhance efficiencies by leveraging the potential of \u201cCreate Once Publish Everywhere\u201d (COPE).\u00a0<\/li>\n<\/ul><h3>\u00a0<\/h3>\n\n<h3>Foundations of Component-Based Theming<\/h3>\n\n<p>This new world of drag-and-drop possibilities is built upon the realization that despite differences in content modeling, the pages of most websites consist of various combinations of the same \u201cthings\u201d -- media galleries, lists of content, cards, search, maps, and social media.\u00a0 We call these things \u201ccomponents.\u201d<\/p>\n\n<p>With Promet's new approach to component-driven theming, new potential has emerged for customizable content models that are built with easily \u201cthemable\u201d and reusable components, that are then stored in a library that serves as an efficient starting point for projects.\u00a0<br \/>\n\u00a0<\/p>\n\n<h3>Fueled by Emulsify, Layout Builder, and Provus<\/h3>\n\n<p>While there are a\u00a0<a href=\"https:\/\/github.com\/aleksip\/component-based-theming#drupal-themes-and-design-systems-with-drupal-integration\">number of component-based themes for Drupal<\/a>, we\u2019ve singled out the\u00a0<a href=\"https:\/\/www.prometsource.com\/services\/ui-design\">Emulsify\u00ae design system<\/a>\u00a0as a Drupal starter theme that gives us a huge lift in building reusable components. Emulsify functions as an example of\u00a0<a href=\"https:\/\/www.prometsource.com\/blog\/what-atomic-web-design\">Atomic Design<\/a>, which refers to a methodology for envisioning the site as a collection of components, based on graduated building blocks from Atoms, to Molecules, to Organisms, to Templates, to Pages.\u00a0<\/p>\n\n<p>This capability combines both a starter component library and\u00a0<a href=\"https:\/\/storybook.js.org\/\">Storybook<\/a>, which is a tool for building user interface components and supports both Twig and React. Storybook can be turned on from within the Emulsify theme, resulting in a highly efficient new workflow for projects. For more on Storybook, check out a recent Drupal GovCon presentation entitled,\u00a0<a href=\"https:\/\/www.drupalgovcon.org\/2020\/program\/sessions\/component-driven-theming-storybook\">Component Driven Theming with Storybook<\/a>, that Promet\u2019s Aaron Couch participated in, along with Emulsify contributors\u00a0<a href=\"https:\/\/www.fourkitchens.com\/team\/brian-lewis\/\">Brian Lewis<\/a>\u00a0and\u00a0<a href=\"https:\/\/www.fourkitchens.com\/team\/evan-willhite\/\">Evan Willhite<\/a>.<\/p>\n\n<p><a href=\"https:\/\/www.drupal.org\/docs\/8\/core\/modules\/layout-builder\">Drupal Layout Builder<\/a>\u00a0is a drag-and-drop page-building tool in Drupal Core that allows content editors to build out sections of the site. Layout Builder can be implemented as a no-code, site-building tool that retains the features of Drupal, such as flexible content model, revisioning, and custom user permissions and workflows.\u00a0<\/p>\n\n<p>Developed by Promet, Provus provides a kickstart to Drupal site building, packaging commonly used features such as calendaring, FAQs, people, news, and blogs with a drag-and-drop content editing experience. Provus also offers a large array of site-building components like galleries, maps, content lists that can be added and arranged by non-technical users, enabling non-technical users to build and edit a site within an inherently flexible content model. Provus is open source and we welcome the Drupal community\u2019s contributions to the project.<\/p>\n\n<p>\u00a0<\/p>\n\n<h3>Beyond Traditional Drupal Theming<\/h3>\n\n<p>Having identified that component-based theming tools are key to next-level efficiencies in website building, our next step was to single out an optimal approach for delivering reusable components.\u00a0<\/p>\n\n<p>Traditional Drupal theming includes css and javascript selectors that are intertwined with their context, connecting them to the backend implementation. The result of this \u201ctheme for the page,\u201d approach is assets that can\u2019t be reused across projects.\u00a0<\/p>\n\n<p>With a component-based approach, however, selectors are isolated and can be reused.\u00a0<\/p>\n\n<p>Let\u2019s take an example of creating front-end assets for a typical carousel component. In the example below, the assets are tied to the Drupal implementation and combined with other elements. They are not only tied to a paragraph, but the specific name of that paragraph. Reusing this is difficult if there are any changes to the data model. We've identified that a flexible data model is what we want to build.<\/p>\n\n<h4>Traditional Drupal Theming<\/h4>\n\n<p><img alt=\"Image removed.\" data-entity-type=\"file\" data-entity-uuid=\"3fcf7792-8a9f-4f4b-8282-ab37c233c79d\" height=\"16\" src=\"\/core\/misc\/icons\/e32700\/error.svg\" width=\"16\" title=\"This image has been removed. For security reasons, only images from the local domain are allowed.\" class=\"filter-image-invalid\" \/><\/p>\n\n<p><img alt=\"Image removed.\" data-entity-type=\"file\" data-entity-uuid=\"aaf298dc-1f89-43b0-9eaa-0ffb9069856e\" src=\"\/core\/misc\/icons\/e32700\/error.svg\" title=\"This image has been removed. For security reasons, only images from the local domain are allowed.\" height=\"16\" width=\"16\" class=\"filter-image-invalid\" \/><\/p>\n\n<h3>\u00a0<\/h3>\n\n<h3>Component-Based Solution<\/h3>\n\n<p>With a component-based approach, on the other hand, all of the assets including the js, css, and template are grouped together. As indicated below, the selectors only reference the elements in the template, so they are isolated within a coherent whole.<\/p>\n\n<p>\u00a0<\/p>\n\n<p><img alt=\"Image removed.\" data-entity-type=\"file\" data-entity-uuid=\"8d59a79e-1763-4d03-9799-9d4be576dcf4\" src=\"\/core\/misc\/icons\/e32700\/error.svg\" title=\"This image has been removed. For security reasons, only images from the local domain are allowed.\" height=\"16\" width=\"16\" class=\"filter-image-invalid\" \/><\/p>\n\n<p>Making component-based theming work in Drupal, can simply be a matter of embedding. We are able to leverage Twig\u2019s ability to embed or include templates to render the component. If the backend implementation changes or we want to move it to another project the component itself is not changed.\u00a0<\/p>\n\n<p>Below is an example of embedding the previous component. In this case, changing the block type or backend implementation simply requires embedding the same component.<\/p>\n\n<p>\u00a0<\/p>\n\n<p><img alt=\"Image removed.\" data-entity-type=\"file\" data-entity-uuid=\"dcfadb1d-5ed5-4f0e-add6-78ea61737554\" src=\"\/core\/misc\/icons\/e32700\/error.svg\" title=\"This image has been removed. For security reasons, only images from the local domain are allowed.\" height=\"16\" width=\"16\" class=\"filter-image-invalid\" \/><\/p>\n\n<p>Drag-and-Drop Content Management Systems represent a new level of advantages and possibilities for development teams, and even more so for clients. At Promet Source, we\u2019re excited about the approach to component-based theming that we\u2019ve developed, and looking forward to the conversations and amazing new solutions that lie ahead for clients.\u00a0<\/p>\n\n<p>Interested in learning more about the potential for drag-and-drop content management systems and what this can mean for you?\u00a0<a href=\"https:\/\/www.prometsource.com\/contact\">Contact us<\/a>\u00a0today.<\/p>",
+                    "summary": ""
+                }
+            ],
+            "field_file": [],
+            "field_media_image": [
+                {
+                    "target_id": 23,
+                    "target_type": "media",
+                    "target_uuid": "21e6ffb6-7f86-4663-8f4d-487b116f3b16",
+                    "url": "\/media\/23\/edit"
+                }
+            ],
+            "field_publish_date": [
+                {
+                    "value": "2021-05-19"
+                }
+            ],
+            "field_type": [
+                {
+                    "target_id": 1,
+                    "target_type": "taxonomy_term",
+                    "target_uuid": "e0007ae8-646a-49c3-88d3-c72541723512",
+                    "url": "\/news"
+                }
+            ]
+        },
+        "66af5b07-2dcc-4a13-a6c9-9e2747401540": {
+            "nid": [
+                {
+                    "value": 4
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "66af5b07-2dcc-4a13-a6c9-9e2747401540"
+                }
+            ],
+            "vid": [
+                {
+                    "value": 9
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "type": [
+                {
+                    "target_id": "provus_article",
+                    "target_type": "node_type",
+                    "target_uuid": "465c6ad5-a778-4617-9f76-6fd9876b1aa0"
+                }
+            ],
+            "revision_timestamp": [
+                {
+                    "value": "2021-04-28T00:47:31+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "revision_uid": [
+                {
+                    "target_id": 1,
+                    "target_type": "user",
+                    "target_uuid": "6361368e-0ae3-4a16-b792-05cf28408fc4",
+                    "url": "\/user\/1"
+                }
+            ],
+            "revision_log": [],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "uid": [
+                {
+                    "target_id": 1,
+                    "target_type": "user",
+                    "target_uuid": "6361368e-0ae3-4a16-b792-05cf28408fc4",
+                    "url": "\/user\/1"
+                }
+            ],
+            "title": [
+                {
+                    "value": "We offer services that support your mission"
+                }
+            ],
+            "created": [
+                {
+                    "value": "2021-04-28T00:44:28+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2021-04-28T00:47:31+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "promote": [
+                {
+                    "value": false
+                }
+            ],
+            "sticky": [
+                {
+                    "value": false
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": true
+                }
+            ],
+            "revision_translation_affected": [
+                {
+                    "value": true
+                }
+            ],
+            "path": [],
+            "body": [
+                {
+                    "value": "<p>Promet Source revolves around customer satisfaction and providing dynamic solutions returning, real measurable results. We don\u2019t just work for our clients, we work with our clients as a seamless extension of their team. Our core focus is to inspire with our strategy and deliver groundbreaking results with our approach.<\/p>\r\n",
+                    "format": "basic_html",
+                    "processed": "<p>Promet Source revolves around customer satisfaction and providing dynamic solutions returning, real measurable results. We don\u2019t just work for our clients, we work with our clients as a seamless extension of their team. Our core focus is to inspire with our strategy and deliver groundbreaking results with our approach.<\/p>",
+                    "summary": ""
+                }
+            ],
+            "field_file": [],
+            "field_media_image": [
+                {
+                    "target_id": 3,
+                    "target_type": "media",
+                    "target_uuid": "b4dd3ff3-2b50-4c31-833b-6d8fdac81acd",
+                    "url": "\/media\/3\/edit"
+                }
+            ],
+            "field_publish_date": [
+                {
+                    "value": "2021-05-06"
+                }
+            ],
+            "field_type": [
+                {
+                    "target_id": 1,
+                    "target_type": "taxonomy_term",
+                    "target_uuid": "e0007ae8-646a-49c3-88d3-c72541723512",
+                    "url": "\/news"
+                }
+            ]
+        },
+        "7f71b6c6-62d5-417d-b329-e8048ed1114b": {
+            "nid": [
+                {
+                    "value": 20
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "7f71b6c6-62d5-417d-b329-e8048ed1114b"
+                }
+            ],
+            "vid": [
+                {
+                    "value": 65
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "type": [
+                {
+                    "target_id": "provus_article",
+                    "target_type": "node_type",
+                    "target_uuid": "465c6ad5-a778-4617-9f76-6fd9876b1aa0"
+                }
+            ],
+            "revision_timestamp": [
+                {
+                    "value": "2021-05-05T20:56:13+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "revision_uid": [
+                {
+                    "target_id": 1,
+                    "target_type": "user",
+                    "target_uuid": "6361368e-0ae3-4a16-b792-05cf28408fc4",
+                    "url": "\/user\/1"
+                }
+            ],
+            "revision_log": [],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "uid": [
+                {
+                    "target_id": 1,
+                    "target_type": "user",
+                    "target_uuid": "6361368e-0ae3-4a16-b792-05cf28408fc4",
+                    "url": "\/user\/1"
+                }
+            ],
+            "title": [
+                {
+                    "value": "Test Blog Post"
+                }
+            ],
+            "created": [
+                {
+                    "value": "2021-05-05T20:55:11+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2021-05-05T20:56:13+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "promote": [
+                {
+                    "value": false
+                }
+            ],
+            "sticky": [
+                {
+                    "value": false
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": true
+                }
+            ],
+            "revision_translation_affected": [
+                {
+                    "value": true
+                }
+            ],
+            "path": [],
+            "body": [
+                {
+                    "value": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae sapien accumsan, feugiat sem eu, iaculis eros. Nullam in dolor ac tellus lobortis malesuada. Nullam nunc est, maximus in faucibus vitae, iaculis quis urna. Donec sollicitudin nisl at mi pulvinar bibendum. Proin sem libero, iaculis iaculis risus iaculis, viverra ullamcorper risus. Suspendisse blandit, lorem sed iaculis rutrum, est metus posuere arcu, at suscipit ligula eros lacinia est. Vestibulum euismod magna non nunc laoreet, id posuere tellus imperdiet. Suspendisse ornare in dui sed faucibus.<\/p>\r\n\r\n<p>Quisque vehicula eros eu pretium faucibus. Curabitur dapibus ante nec felis vestibulum, sed facilisis metus dictum. Vivamus in ligula sagittis, euismod risus at, porta lorem. Aliquam scelerisque augue purus, et ultrices libero sollicitudin ac. In feugiat orci sit amet tellus euismod pharetra. Nam eu placerat odio. Suspendisse dapibus est et nulla porttitor lacinia. Sed blandit aliquam sodales. Mauris porttitor, eros nec sodales mattis, tortor eros vehicula velit, in pretium metus nisi vitae lacus. Nulla malesuada id diam et pellentesque. Quisque quam mi, congue quis quam maximus, malesuada molestie eros.<\/p>\r\n\r\n<p>Proin vel nisl egestas, congue tellus quis, condimentum mi. Duis a interdum velit. Praesent aliquet mollis purus vel ornare. Etiam ultrices sapien vel fringilla cursus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla faucibus lobortis porttitor. Cras venenatis ultrices arcu porta ornare. Nunc lobortis dui et nulla ornare, nec vehicula justo venenatis. Etiam a enim at dui tempus sollicitudin. Ut ut pulvinar lacus, in condimentum enim. Quisque erat orci, pharetra nec aliquam non, sodales sed ligula. Fusce dapibus massa et nisl porttitor, in tincidunt eros fermentum.<\/p>\r\n",
+                    "format": "basic_html",
+                    "processed": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae sapien accumsan, feugiat sem eu, iaculis eros. Nullam in dolor ac tellus lobortis malesuada. Nullam nunc est, maximus in faucibus vitae, iaculis quis urna. Donec sollicitudin nisl at mi pulvinar bibendum. Proin sem libero, iaculis iaculis risus iaculis, viverra ullamcorper risus. Suspendisse blandit, lorem sed iaculis rutrum, est metus posuere arcu, at suscipit ligula eros lacinia est. Vestibulum euismod magna non nunc laoreet, id posuere tellus imperdiet. Suspendisse ornare in dui sed faucibus.<\/p>\n\n<p>Quisque vehicula eros eu pretium faucibus. Curabitur dapibus ante nec felis vestibulum, sed facilisis metus dictum. Vivamus in ligula sagittis, euismod risus at, porta lorem. Aliquam scelerisque augue purus, et ultrices libero sollicitudin ac. In feugiat orci sit amet tellus euismod pharetra. Nam eu placerat odio. Suspendisse dapibus est et nulla porttitor lacinia. Sed blandit aliquam sodales. Mauris porttitor, eros nec sodales mattis, tortor eros vehicula velit, in pretium metus nisi vitae lacus. Nulla malesuada id diam et pellentesque. Quisque quam mi, congue quis quam maximus, malesuada molestie eros.<\/p>\n\n<p>Proin vel nisl egestas, congue tellus quis, condimentum mi. Duis a interdum velit. Praesent aliquet mollis purus vel ornare. Etiam ultrices sapien vel fringilla cursus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla faucibus lobortis porttitor. Cras venenatis ultrices arcu porta ornare. Nunc lobortis dui et nulla ornare, nec vehicula justo venenatis. Etiam a enim at dui tempus sollicitudin. Ut ut pulvinar lacus, in condimentum enim. Quisque erat orci, pharetra nec aliquam non, sodales sed ligula. Fusce dapibus massa et nisl porttitor, in tincidunt eros fermentum.<\/p>",
+                    "summary": ""
+                }
+            ],
+            "field_file": [],
+            "field_media_image": [
+                {
+                    "target_id": 12,
+                    "target_type": "media",
+                    "target_uuid": "a473e0f2-1d10-418b-8d63-b6de53e0d3df",
+                    "url": "\/media\/12\/edit"
+                }
+            ],
+            "field_publish_date": [
+                {
+                    "value": "2021-05-05"
+                }
+            ],
+            "field_type": [
+                {
+                    "target_id": 3,
+                    "target_type": "taxonomy_term",
+                    "target_uuid": "3f41bdf6-062c-4773-89f7-55343cc88cfe",
+                    "url": "\/blog"
+                }
+            ]
+        },
+        "8090adb1-f432-4ad8-ad3d-a1a42eb9f9b5": {
+            "nid": [
+                {
+                    "value": 6
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "8090adb1-f432-4ad8-ad3d-a1a42eb9f9b5"
+                }
+            ],
+            "vid": [
+                {
+                    "value": 19
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "type": [
+                {
+                    "target_id": "provus_article",
+                    "target_type": "node_type",
+                    "target_uuid": "465c6ad5-a778-4617-9f76-6fd9876b1aa0"
+                }
+            ],
+            "revision_timestamp": [
+                {
+                    "value": "2021-04-28T03:09:51+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "revision_uid": [
+                {
+                    "target_id": 1,
+                    "target_type": "user",
+                    "target_uuid": "6361368e-0ae3-4a16-b792-05cf28408fc4",
+                    "url": "\/user\/1"
+                }
+            ],
+            "revision_log": [],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "uid": [
+                {
+                    "target_id": 1,
+                    "target_type": "user",
+                    "target_uuid": "6361368e-0ae3-4a16-b792-05cf28408fc4",
+                    "url": "\/user\/1"
+                }
+            ],
+            "title": [
+                {
+                    "value": "AAAAAA"
+                }
+            ],
+            "created": [
+                {
+                    "value": "2021-04-28T03:09:40+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2021-04-28T03:09:51+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "promote": [
+                {
+                    "value": false
+                }
+            ],
+            "sticky": [
+                {
+                    "value": false
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": true
+                }
+            ],
+            "revision_translation_affected": [
+                {
+                    "value": true
+                }
+            ],
+            "path": [],
+            "body": [],
+            "field_file": [],
+            "field_media_image": [],
+            "field_publish_date": [
+                {
+                    "value": "2021-04-29"
+                }
+            ],
+            "field_type": []
+        },
+        "89a29d0f-8aca-4dfc-9d83-aa590b295a38": {
+            "nid": [
+                {
+                    "value": 25
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "89a29d0f-8aca-4dfc-9d83-aa590b295a38"
+                }
+            ],
+            "vid": [
+                {
+                    "value": 101
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "type": [
+                {
+                    "target_id": "provus_article",
+                    "target_type": "node_type",
+                    "target_uuid": "465c6ad5-a778-4617-9f76-6fd9876b1aa0"
+                }
+            ],
+            "revision_timestamp": [
+                {
+                    "value": "2021-05-20T16:54:51+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "revision_uid": [
+                {
+                    "target_id": 5,
+                    "target_type": "user",
+                    "target_uuid": "955a74e2-9dbd-4873-9260-5e190467823b",
+                    "url": "\/user\/5"
+                }
+            ],
+            "revision_log": [],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "uid": [
+                {
+                    "target_id": 5,
+                    "target_type": "user",
+                    "target_uuid": "955a74e2-9dbd-4873-9260-5e190467823b",
+                    "url": "\/user\/5"
+                }
+            ],
+            "title": [
+                {
+                    "value": "Advantages of Component-Based Web Design Systems"
+                }
+            ],
+            "created": [
+                {
+                    "value": "2021-05-20T16:35:46+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2021-05-20T16:54:51+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "promote": [
+                {
+                    "value": false
+                }
+            ],
+            "sticky": [
+                {
+                    "value": false
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": true
+                }
+            ],
+            "revision_translation_affected": [
+                {
+                    "value": true
+                }
+            ],
+            "path": [],
+            "body": [
+                {
+                    "value": "<p>In the evolving world of web design and development, component-based design systems represent a revolutionary leap -- a previously missing link that replaces an environment of siloed functions and time-consuming complexities with high velocity capabilities that fuel flexibility, consistency, and collaboration.<\/p>\r\n\r\n<p><a href=\"https:\/\/www.prometsource.com\/services\/ui-design\">Component-based design systems<\/a>&nbsp;produce inherent efficiencies for designers and developers, and solve the challenges associated with duplication and inconsistency in applying themes, while driving the development of better quality, reusable components. &nbsp;Clients gain the benefit of better brand management resulting from a&nbsp;<a href=\"https:\/\/www.prometsource.com\/FAQ\/Provus\">simplified content editor experience<\/a>&nbsp;that allows for bending as necessary, without breaking brand guidelines or page structures.&nbsp;<\/p>\r\n\r\n<p>As a thought leader on how humans interact with technology, Promet Source has enthusiastically pursued component-based design systems from the standpoint of both:&nbsp;<\/p>\r\n\r\n<ul>\r\n\t<li>Innovative design patterns that optimize UX and spark engagement, and&nbsp;<\/li>\r\n\t<li>Streamlined and simplified content editor experiences that allow for a wide range of page possibilities.<\/li>\r\n<\/ul>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<h3>Powerful Partnership<\/h3>\r\n\r\n<p>As dedicated open source advocates, Promet has adopted Emulsify\u00ae as a tool to help us better organize, share, and reuse our custom design systems. Promet serves as both a user and&nbsp;<a href=\"https:\/\/github.com\/emulsify-ds\/documentation\">contributor<\/a>&nbsp;to its support and success.&nbsp;<\/p>\r\n\r\n<p>Emulsify is an open-source tool for creating design systems as a series of components that can be duplicated and easily manipulated within a set of clear guidelines for designers and developers. Promet is currently leveraging Emulsify on complex web development projects for government, healthcare, and higher education clients.<br \/>\r\n&nbsp;<\/p>\r\n\r\n<h3>Advantages of Emulsify for Web Design Systems:<\/h3>\r\n\r\n<ul>\r\n\t<li>Integration with a starter library of Drupal-ready components with&nbsp;<a href=\"https:\/\/storybook.js.org\/\">Storybook<\/a>,<\/li>\r\n\t<li>Portability across other CMS platforms and applications,<\/li>\r\n\t<li>Open source, and<\/li>\r\n\t<li>Compatibility with both WordPress and Drupal.<\/li>\r\n<\/ul>\r\n\r\n<p>As Aaron Couch, director of technology solutions for Promet Source, recently pointed out:&nbsp;<\/p>\r\n\r\n<blockquote>\r\n<p><br \/>\r\nEmulsify has changed the way we deliver front-end experiences, making our work higher quality, more efficient to deliver, and more accessible, while creating a better user experience for our clients.<\/p>\r\n<\/blockquote>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p><img alt=\"Animated components moving into design\" data-entity-type=\"file\" data-entity-uuid=\"a6a6bc16-49e4-474a-84c0-c4cbab12cae2\" src=\"https:\/\/www.prometsource.com\/sites\/default\/files\/inline-images\/38_Atomic_Design_Animation.gif\" \/><\/p>\r\n\r\n<p>Component-based design systems allow for pattern flexibility within regions of a website.<\/p>\r\n\r\n<h3>&nbsp;<\/h3>\r\n\r\n<h3>AKA \"Atomic Design\"&nbsp;<\/h3>\r\n\r\n<p>While metaphors for helping to explain component-based design systems abound, \u201c<a href=\"https:\/\/bradfrost.com\/blog\/post\/atomic-web-design\/\">Atomic Design<\/a>\u201d (and a book with the same title) authored by Brad Frost) is the one that has gained the most traction and has entered into the lexicon of component-based web design.&nbsp;<\/p>\r\n\r\n<p><a href=\"https:\/\/www.prometsource.com\/blog\/what-atomic-design\">Atomic design<\/a>&nbsp;looks at a website\u2019s user interface as the collection of five factors that roll up into each other:<\/p>\r\n\r\n<ul>\r\n\t<li>Atoms,<\/li>\r\n\t<li>Molecules,<\/li>\r\n\t<li>Organisms,<\/li>\r\n\t<li>Templates, and&nbsp;<\/li>\r\n\t<li>Pages.<br \/>\r\n\t&nbsp;<\/li>\r\n<\/ul>\r\n\r\n<h3><a href=\"https:\/\/drupal.prometsource.com\/subscribe\/\"><img alt=\"Subscribe to Promet Insights\" data-entity-type=\"file\" data-entity-uuid=\"293a3168-ab70-4abe-b1a9-8bdf182b5855\" src=\"https:\/\/www.prometsource.com\/sites\/default\/files\/inline-images\/Promo_Banners_Stay_in_Touch%21_4.png\" \/><\/a><\/h3>\r\n\r\n<h3>Exponential Impact<\/h3>\r\n\r\n<p>Component-based design makes front-end web development up to four times faster. This translates into happier clients and the freeing up of resources to focus on fine tuning and providing greater functionality.&nbsp;<\/p>\r\n\r\n<p>For the content creator and editor, component-based web design provides the ability to edit and revise pages to fit evolving needs and new priorities.&nbsp;<\/p>\r\n\r\n<p>The new world of \u201cdrag and drop\u201d content management is soon to set a new standard in which previous limitations will quickly come to be viewed as &nbsp;unacceptable. Low code\/no code web design is the future.<\/p>\r\n\r\n<p>The four key advantages of Promet\u2019s adoption of the open based tool for creating web design systems powered by&nbsp;<a href=\"https:\/\/docs.emulsify.info\/\">Emulsify<\/a>\u00ae:<\/p>\r\n\r\n<ul>\r\n\t<li>Design systems that can flex, bend, and scale within and among complex web designs,<\/li>\r\n\t<li>Powerful new possibilities resulting from enhanced consistency, flexibility, re-usability and velocity for front-end development,<\/li>\r\n\t<li>Elimination of painstaking QA processes in favor of proven patterns and high-quality built-ins that get designers, developers on the same page, and<\/li>\r\n\t<li>Assurance that non-technical content editors can make multiple changes to a web page without breaking layouts or straying from brand guidelines.&nbsp;<\/li>\r\n<\/ul>\r\n\r\n<p>Need help creating a Drupal design system for your complex website?&nbsp;<a href=\"https:\/\/www.prometsource.com\/contact\">Contact us today<\/a>.<\/p>\r\n",
+                    "format": "basic_html",
+                    "processed": "<p>In the evolving world of web design and development, component-based design systems represent a revolutionary leap -- a previously missing link that replaces an environment of siloed functions and time-consuming complexities with high velocity capabilities that fuel flexibility, consistency, and collaboration.<\/p>\n\n<p><a href=\"https:\/\/www.prometsource.com\/services\/ui-design\">Component-based design systems<\/a>\u00a0produce inherent efficiencies for designers and developers, and solve the challenges associated with duplication and inconsistency in applying themes, while driving the development of better quality, reusable components. \u00a0Clients gain the benefit of better brand management resulting from a\u00a0<a href=\"https:\/\/www.prometsource.com\/FAQ\/Provus\">simplified content editor experience<\/a>\u00a0that allows for bending as necessary, without breaking brand guidelines or page structures.\u00a0<\/p>\n\n<p>As a thought leader on how humans interact with technology, Promet Source has enthusiastically pursued component-based design systems from the standpoint of both:\u00a0<\/p>\n\n<ul><li>Innovative design patterns that optimize UX and spark engagement, and\u00a0<\/li>\n\t<li>Streamlined and simplified content editor experiences that allow for a wide range of page possibilities.<\/li>\n<\/ul><p>\u00a0<\/p>\n\n<h3>Powerful Partnership<\/h3>\n\n<p>As dedicated open source advocates, Promet has adopted Emulsify\u00ae as a tool to help us better organize, share, and reuse our custom design systems. Promet serves as both a user and\u00a0<a href=\"https:\/\/github.com\/emulsify-ds\/documentation\">contributor<\/a>\u00a0to its support and success.\u00a0<\/p>\n\n<p>Emulsify is an open-source tool for creating design systems as a series of components that can be duplicated and easily manipulated within a set of clear guidelines for designers and developers. Promet is currently leveraging Emulsify on complex web development projects for government, healthcare, and higher education clients.<br \/>\n\u00a0<\/p>\n\n<h3>Advantages of Emulsify for Web Design Systems:<\/h3>\n\n<ul><li>Integration with a starter library of Drupal-ready components with\u00a0<a href=\"https:\/\/storybook.js.org\/\">Storybook<\/a>,<\/li>\n\t<li>Portability across other CMS platforms and applications,<\/li>\n\t<li>Open source, and<\/li>\n\t<li>Compatibility with both WordPress and Drupal.<\/li>\n<\/ul><p>As Aaron Couch, director of technology solutions for Promet Source, recently pointed out:\u00a0<\/p>\n\n<blockquote>\n<p><br \/>\nEmulsify has changed the way we deliver front-end experiences, making our work higher quality, more efficient to deliver, and more accessible, while creating a better user experience for our clients.<\/p>\n<\/blockquote>\n\n<p>\u00a0<\/p>\n\n<p><img alt=\"Image removed.\" data-entity-type=\"file\" data-entity-uuid=\"a6a6bc16-49e4-474a-84c0-c4cbab12cae2\" src=\"\/core\/misc\/icons\/e32700\/error.svg\" title=\"This image has been removed. For security reasons, only images from the local domain are allowed.\" height=\"16\" width=\"16\" class=\"filter-image-invalid\" \/><\/p>\n\n<p>Component-based design systems allow for pattern flexibility within regions of a website.<\/p>\n\n<h3>\u00a0<\/h3>\n\n<h3>AKA \"Atomic Design\"\u00a0<\/h3>\n\n<p>While metaphors for helping to explain component-based design systems abound, \u201c<a href=\"https:\/\/bradfrost.com\/blog\/post\/atomic-web-design\/\">Atomic Design<\/a>\u201d (and a book with the same title) authored by Brad Frost) is the one that has gained the most traction and has entered into the lexicon of component-based web design.\u00a0<\/p>\n\n<p><a href=\"https:\/\/www.prometsource.com\/blog\/what-atomic-design\">Atomic design<\/a>\u00a0looks at a website\u2019s user interface as the collection of five factors that roll up into each other:<\/p>\n\n<ul><li>Atoms,<\/li>\n\t<li>Molecules,<\/li>\n\t<li>Organisms,<\/li>\n\t<li>Templates, and\u00a0<\/li>\n\t<li>Pages.<br \/>\n\t\u00a0<\/li>\n<\/ul><h3><a href=\"https:\/\/drupal.prometsource.com\/subscribe\/\"><img alt=\"Image removed.\" data-entity-type=\"file\" data-entity-uuid=\"293a3168-ab70-4abe-b1a9-8bdf182b5855\" src=\"\/core\/misc\/icons\/e32700\/error.svg\" title=\"This image has been removed. For security reasons, only images from the local domain are allowed.\" height=\"16\" width=\"16\" class=\"filter-image-invalid\" \/><\/a><\/h3>\n\n<h3>Exponential Impact<\/h3>\n\n<p>Component-based design makes front-end web development up to four times faster. This translates into happier clients and the freeing up of resources to focus on fine tuning and providing greater functionality.\u00a0<\/p>\n\n<p>For the content creator and editor, component-based web design provides the ability to edit and revise pages to fit evolving needs and new priorities.\u00a0<\/p>\n\n<p>The new world of \u201cdrag and drop\u201d content management is soon to set a new standard in which previous limitations will quickly come to be viewed as \u00a0unacceptable. Low code\/no code web design is the future.<\/p>\n\n<p>The four key advantages of Promet\u2019s adoption of the open based tool for creating web design systems powered by\u00a0<a href=\"https:\/\/docs.emulsify.info\/\">Emulsify<\/a>\u00ae:<\/p>\n\n<ul><li>Design systems that can flex, bend, and scale within and among complex web designs,<\/li>\n\t<li>Powerful new possibilities resulting from enhanced consistency, flexibility, re-usability and velocity for front-end development,<\/li>\n\t<li>Elimination of painstaking QA processes in favor of proven patterns and high-quality built-ins that get designers, developers on the same page, and<\/li>\n\t<li>Assurance that non-technical content editors can make multiple changes to a web page without breaking layouts or straying from brand guidelines.\u00a0<\/li>\n<\/ul><p>Need help creating a Drupal design system for your complex website?\u00a0<a href=\"https:\/\/www.prometsource.com\/contact\">Contact us today<\/a>.<\/p>",
+                    "summary": ""
+                }
+            ],
+            "field_file": [],
+            "field_media_image": [
+                {
+                    "target_id": 24,
+                    "target_type": "media",
+                    "target_uuid": "1150466a-66c7-41d6-a442-b5748e0ba9c4",
+                    "url": "\/media\/24\/edit"
+                }
+            ],
+            "field_publish_date": [
+                {
+                    "value": "2021-05-18"
+                }
+            ],
+            "field_type": [
+                {
+                    "target_id": 1,
+                    "target_type": "taxonomy_term",
+                    "target_uuid": "e0007ae8-646a-49c3-88d3-c72541723512",
+                    "url": "\/news"
+                }
+            ]
+        },
+        "d6eb7c65-bb68-4901-b548-005cb8049b7d": {
+            "nid": [
+                {
+                    "value": 23
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "d6eb7c65-bb68-4901-b548-005cb8049b7d"
+                }
+            ],
+            "vid": [
+                {
+                    "value": 94
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "type": [
+                {
+                    "target_id": "provus_article",
+                    "target_type": "node_type",
+                    "target_uuid": "465c6ad5-a778-4617-9f76-6fd9876b1aa0"
+                }
+            ],
+            "revision_timestamp": [
+                {
+                    "value": "2021-05-20T16:44:56+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "revision_uid": [
+                {
+                    "target_id": 5,
+                    "target_type": "user",
+                    "target_uuid": "955a74e2-9dbd-4873-9260-5e190467823b",
+                    "url": "\/user\/5"
+                }
+            ],
+            "revision_log": [],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "uid": [
+                {
+                    "target_id": 5,
+                    "target_type": "user",
+                    "target_uuid": "955a74e2-9dbd-4873-9260-5e190467823b",
+                    "url": "\/user\/5"
+                }
+            ],
+            "title": [
+                {
+                    "value": "New Normal for 2021: Drag & Drop Drupal Content Editing"
+                }
+            ],
+            "created": [
+                {
+                    "value": "2021-05-20T16:29:11+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2021-05-20T16:44:56+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "promote": [
+                {
+                    "value": false
+                }
+            ],
+            "sticky": [
+                {
+                    "value": false
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": true
+                }
+            ],
+            "revision_translation_affected": [
+                {
+                    "value": true
+                }
+            ],
+            "path": [],
+            "body": [
+                {
+                    "value": "<p>2020 was hard.<\/p>\r\n\r\n<p>At Promet Source, we\u2019re planning for and counting on 2021 being easier and better in many ways.<\/p>\r\n\r\n<p>We realized last year that there actually was something we could do to raise the bar for 2021 and make life easier and better for everyone who manages a Drupal website.&nbsp;<\/p>\r\n\r\n<p>We developed Provus.<br \/>\r\n&nbsp;<\/p>\r\n\r\n<h3>What is Provus?<\/h3>\r\n\r\n<p>The brainchild of&nbsp;<a href=\"https:\/\/www.prometsource.com\/team\/aaron-couch\">Aaron Couch<\/a>, Promet\u2019s Lead Solutions Architect, Provus is Promet\u2019s newly launched Drupal platform. Utilizing&nbsp;<a href=\"https:\/\/www.prometsource.com\/blog\/what-atomic-web-design\">Atomic Design<\/a>&nbsp;principles, Provus combines the latest drag-and-drop page building tools in Drupal with a curated library of design components, enabling content editors to easily layer designs, add functionality, and rearrange layouts. &nbsp;<\/p>\r\n\r\n<p>An essential differentiator from other drag-and-drop tools is the degree to which Provus empowers content creators, while at the same time adhering to an organization\u2019s brand guidelines to ensure consistency and aesthetic alignment.&nbsp;<\/p>\r\n\r\n<p>From a development perspective, Provus is allowing for vast new efficiencies as we work toward eliminating the wall that had previously existed between easy-to-create and manage SAAS solutions, and scalable Drupal solutions, for websites that have complex data models and a depth of content.<br \/>\r\n&nbsp;<\/p>\r\n\r\n<h3>New Perspectives and Possibilities<\/h3>\r\n\r\n<p>Provus was inspired by the realization that nearly every website consists of various combinations of roughly 15-20 types of features or patterns. By organizing a library of high-quality components that can be repurposed for low-code, no-code site building, we create a foundation for:<\/p>\r\n\r\n<ul>\r\n\t<li>Easier content editing capabilities with drag and drop functionality<\/li>\r\n\t<li>Greater design flexibility within defined brand standards<\/li>\r\n\t<li>Streamlined development using Drupal\u2019s proven content models<\/li>\r\n<\/ul>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<h4>The Provus Technology Stack<\/h4>\r\n\r\n<p><img alt=\"Provus Technology Stack\" data-entity-type=\"file\" data-entity-uuid=\"13b79ec0-f653-4900-95fd-36fad96e187b\" src=\"https:\/\/www.prometsource.com\/sites\/default\/files\/inline-images\/Provus%20Tech%20Stack%20%282%29.png\" \/><\/p>\r\n\r\n<p><em>&nbsp;Promet\u2019s Open Source Provus starter kit for component-based Drupal sites is based on Atomic Design principles using Emulsify as the base theme and leveraging Storybook to create a library from which the newly themed components are mapped into Drupal Layout Builder for a flexible, dynamic, drag-and-drop CMS.&nbsp;<\/em><\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<h3>Provus in Action<\/h3>\r\n\r\n<p>Traditional Drupal theming includes CSS and JavaScript selectors that are intertwined with their context, connecting them to the backend implementation. The result of this \u201ctheme for the page,\u201d approach is that assets that can\u2019t be repurposed across projects.<br \/>\r\nHaving identified that component-based theming tools are key to next-level efficiencies in website building, our next step was to single out an optimal approach for delivering reusable components.&nbsp;<\/p>\r\n\r\n<p>Promet\u2019s strategy for achieving this new&nbsp;<a href=\"https:\/\/www.prometsource.com\/services\/ui-design\">UI and content management paradigm<\/a>&nbsp;incorporates the&nbsp;<a href=\"https:\/\/www.emulsify.info\/\">Emulsify\u00ae design system<\/a>, which is a component-driven Drupal theme and gives us a huge lift in building repurposable&nbsp;components. Emulsify functions as both a starter component library with Storybook, which contains the Atomic Design library and is a tool for building user interface components.&nbsp;<a href=\"https:\/\/storybook.js.org\/\">Storybook<\/a>&nbsp;can be turned on from within the Emulsify theme, resulting in a highly efficient new workflow.<br \/>\r\n&nbsp;<br \/>\r\nWith Provus, components built using JavaScript and CSS are curated int o a library. If the backend implementation changes or we want to move it to another project, the component itself is not changed, allowing us to efficiently redesign and reuse it.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<h3>What Sets Provus Apart?<\/h3>\r\n\r\n<p>Content editor empowerment, combined with the robust guidance and governance are key factors fueling the success of Provus. More specifically:<\/p>\r\n\r\n<ul>\r\n\t<li>Self-adjusting features within components create a foundation for both readability and ADA accessibility, by ensuring, for example, adequate contrast between fonts and background colors.&nbsp;<\/li>\r\n\t<li>Design governance offers the assurance that content editor empowerment does not translate into mismatched, crowded, or sub-par page designs. Customization options are presented within an expertly calibrated design framework for ensuring the highest quality designs and user experiences on all devices, without breaking layouts or straying from an organization\u2019s brand guidelines.&nbsp;<\/li>\r\n\t<li>Content editors are able to seamlessly edit components and change patterns within the view mode, eliminating time-consuming processes of reentering content and switching back and forth between edit and publish modes.<\/li>\r\n<\/ul>\r\n\r\n<p>As a thought leader on how humans interact with technology, Promet Source has enthusiastically pursued component-based design systems for their potential to drive high velocity capabilities that drive consistency and collaboration.&nbsp;<\/p>\r\n\r\n<p>While Provus provides for game-changing advantages on multiple levels, we\u2019re most excited about the amazing new capabilities that we are now able to offer our clients. In blending a formal design system that ensures brand consistency across the site with the flexibility of drag-and-drop site building tools within Drupal core, we are reducing the cost of ownership and empowering clients with a site that\u2019s designed to flex and expand to fit evolving needs and new priorities.&nbsp;<\/p>\r\n\r\n<p>Interested in&nbsp;<a href=\"https:\/\/www.prometsource.com\/provus\">learning more about Provus<\/a>&nbsp;or seeing a&nbsp;<a href=\"https:\/\/drupal.prometsource.com\/request-provus-demo\/\">demo of Provus in action<\/a>?&nbsp;<a href=\"https:\/\/www.prometsource.com\/contact\">Let us&nbsp;know<\/a>&nbsp;how we can help and we'll be in touch!<\/p>\r\n",
+                    "format": "basic_html",
+                    "processed": "<p>2020 was hard.<\/p>\n\n<p>At Promet Source, we\u2019re planning for and counting on 2021 being easier and better in many ways.<\/p>\n\n<p>We realized last year that there actually was something we could do to raise the bar for 2021 and make life easier and better for everyone who manages a Drupal website.\u00a0<\/p>\n\n<p>We developed Provus.<br \/>\n\u00a0<\/p>\n\n<h3>What is Provus?<\/h3>\n\n<p>The brainchild of\u00a0<a href=\"https:\/\/www.prometsource.com\/team\/aaron-couch\">Aaron Couch<\/a>, Promet\u2019s Lead Solutions Architect, Provus is Promet\u2019s newly launched Drupal platform. Utilizing\u00a0<a href=\"https:\/\/www.prometsource.com\/blog\/what-atomic-web-design\">Atomic Design<\/a>\u00a0principles, Provus combines the latest drag-and-drop page building tools in Drupal with a curated library of design components, enabling content editors to easily layer designs, add functionality, and rearrange layouts. \u00a0<\/p>\n\n<p>An essential differentiator from other drag-and-drop tools is the degree to which Provus empowers content creators, while at the same time adhering to an organization\u2019s brand guidelines to ensure consistency and aesthetic alignment.\u00a0<\/p>\n\n<p>From a development perspective, Provus is allowing for vast new efficiencies as we work toward eliminating the wall that had previously existed between easy-to-create and manage SAAS solutions, and scalable Drupal solutions, for websites that have complex data models and a depth of content.<br \/>\n\u00a0<\/p>\n\n<h3>New Perspectives and Possibilities<\/h3>\n\n<p>Provus was inspired by the realization that nearly every website consists of various combinations of roughly 15-20 types of features or patterns. By organizing a library of high-quality components that can be repurposed for low-code, no-code site building, we create a foundation for:<\/p>\n\n<ul><li>Easier content editing capabilities with drag and drop functionality<\/li>\n\t<li>Greater design flexibility within defined brand standards<\/li>\n\t<li>Streamlined development using Drupal\u2019s proven content models<\/li>\n<\/ul><p>\u00a0<\/p>\n\n<h4>The Provus Technology Stack<\/h4>\n\n<p><img alt=\"Image removed.\" data-entity-type=\"file\" data-entity-uuid=\"13b79ec0-f653-4900-95fd-36fad96e187b\" src=\"\/core\/misc\/icons\/e32700\/error.svg\" title=\"This image has been removed. For security reasons, only images from the local domain are allowed.\" height=\"16\" width=\"16\" class=\"filter-image-invalid\" \/><\/p>\n\n<p><em>\u00a0Promet\u2019s Open Source Provus starter kit for component-based Drupal sites is based on Atomic Design principles using Emulsify as the base theme and leveraging Storybook to create a library from which the newly themed components are mapped into Drupal Layout Builder for a flexible, dynamic, drag-and-drop CMS.\u00a0<\/em><\/p>\n\n<p>\u00a0<\/p>\n\n<h3>Provus in Action<\/h3>\n\n<p>Traditional Drupal theming includes CSS and JavaScript selectors that are intertwined with their context, connecting them to the backend implementation. The result of this \u201ctheme for the page,\u201d approach is that assets that can\u2019t be repurposed across projects.<br \/>\nHaving identified that component-based theming tools are key to next-level efficiencies in website building, our next step was to single out an optimal approach for delivering reusable components.\u00a0<\/p>\n\n<p>Promet\u2019s strategy for achieving this new\u00a0<a href=\"https:\/\/www.prometsource.com\/services\/ui-design\">UI and content management paradigm<\/a>\u00a0incorporates the\u00a0<a href=\"https:\/\/www.emulsify.info\/\">Emulsify\u00ae design system<\/a>, which is a component-driven Drupal theme and gives us a huge lift in building repurposable\u00a0components. Emulsify functions as both a starter component library with Storybook, which contains the Atomic Design library and is a tool for building user interface components.\u00a0<a href=\"https:\/\/storybook.js.org\/\">Storybook<\/a>\u00a0can be turned on from within the Emulsify theme, resulting in a highly efficient new workflow.<br \/>\n\u00a0<br \/>\nWith Provus, components built using JavaScript and CSS are curated int o a library. If the backend implementation changes or we want to move it to another project, the component itself is not changed, allowing us to efficiently redesign and reuse it.<\/p>\n\n<p>\u00a0<\/p>\n\n<h3>What Sets Provus Apart?<\/h3>\n\n<p>Content editor empowerment, combined with the robust guidance and governance are key factors fueling the success of Provus. More specifically:<\/p>\n\n<ul><li>Self-adjusting features within components create a foundation for both readability and ADA accessibility, by ensuring, for example, adequate contrast between fonts and background colors.\u00a0<\/li>\n\t<li>Design governance offers the assurance that content editor empowerment does not translate into mismatched, crowded, or sub-par page designs. Customization options are presented within an expertly calibrated design framework for ensuring the highest quality designs and user experiences on all devices, without breaking layouts or straying from an organization\u2019s brand guidelines.\u00a0<\/li>\n\t<li>Content editors are able to seamlessly edit components and change patterns within the view mode, eliminating time-consuming processes of reentering content and switching back and forth between edit and publish modes.<\/li>\n<\/ul><p>As a thought leader on how humans interact with technology, Promet Source has enthusiastically pursued component-based design systems for their potential to drive high velocity capabilities that drive consistency and collaboration.\u00a0<\/p>\n\n<p>While Provus provides for game-changing advantages on multiple levels, we\u2019re most excited about the amazing new capabilities that we are now able to offer our clients. In blending a formal design system that ensures brand consistency across the site with the flexibility of drag-and-drop site building tools within Drupal core, we are reducing the cost of ownership and empowering clients with a site that\u2019s designed to flex and expand to fit evolving needs and new priorities.\u00a0<\/p>\n\n<p>Interested in\u00a0<a href=\"https:\/\/www.prometsource.com\/provus\">learning more about Provus<\/a>\u00a0or seeing a\u00a0<a href=\"https:\/\/drupal.prometsource.com\/request-provus-demo\/\">demo of Provus in action<\/a>?\u00a0<a href=\"https:\/\/www.prometsource.com\/contact\">Let us\u00a0know<\/a>\u00a0how we can help and we'll be in touch!<\/p>",
+                    "summary": ""
+                }
+            ],
+            "field_file": [],
+            "field_media_image": [
+                {
+                    "target_id": 21,
+                    "target_type": "media",
+                    "target_uuid": "c340ea09-dd80-4f70-8583-b3480416d1bd",
+                    "url": "\/media\/21\/edit"
+                }
+            ],
+            "field_publish_date": [
+                {
+                    "value": "2021-05-20"
+                }
+            ],
+            "field_type": [
+                {
+                    "target_id": 1,
+                    "target_type": "taxonomy_term",
+                    "target_uuid": "e0007ae8-646a-49c3-88d3-c72541723512",
+                    "url": "\/news"
+                }
+            ]
+        },
+        "e9e2a3a6-1808-42b1-8bbb-4bbc43c21ead": {
+            "nid": [
+                {
+                    "value": 26
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "e9e2a3a6-1808-42b1-8bbb-4bbc43c21ead"
+                }
+            ],
+            "vid": [
+                {
+                    "value": 100
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "type": [
+                {
+                    "target_id": "provus_article",
+                    "target_type": "node_type",
+                    "target_uuid": "465c6ad5-a778-4617-9f76-6fd9876b1aa0"
+                }
+            ],
+            "revision_timestamp": [
+                {
+                    "value": "2021-05-20T16:54:14+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "revision_uid": [
+                {
+                    "target_id": 5,
+                    "target_type": "user",
+                    "target_uuid": "955a74e2-9dbd-4873-9260-5e190467823b",
+                    "url": "\/user\/5"
+                }
+            ],
+            "revision_log": [],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "uid": [
+                {
+                    "target_id": 5,
+                    "target_type": "user",
+                    "target_uuid": "955a74e2-9dbd-4873-9260-5e190467823b",
+                    "url": "\/user\/5"
+                }
+            ],
+            "title": [
+                {
+                    "value": "What is Atomic Web Design?"
+                }
+            ],
+            "created": [
+                {
+                    "value": "2021-05-20T16:48:27+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2021-05-20T16:54:14+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "promote": [
+                {
+                    "value": false
+                }
+            ],
+            "sticky": [
+                {
+                    "value": false
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": true
+                }
+            ],
+            "revision_translation_affected": [
+                {
+                    "value": true
+                }
+            ],
+            "path": [],
+            "body": [
+                {
+                    "value": "<p>Often, the most effective means of managing complexity is a laser-sharp focus on simplification -- breaking down a project into its smallest component parts and visualizing incremental &nbsp;steps toward completion beginning with the smallest building blocks.&nbsp;<br \/>\r\n&nbsp;<br \/>\r\nThat\u2019s exactly what Brad Frost has achieved in coining the concept of&nbsp;<a href=\"https:\/\/bradfrost.com\/blog\/post\/atomic-web-design\/\">Atomic Design<\/a>, and authoring a book by the same name.&nbsp; In clarifying the new capabilities of component-based web design systems, the vocabulary of Atomic Design has gained traction, and entered into the working lexicon of web designers and developers. &nbsp;<br \/>\r\n&nbsp;<br \/>\r\nAs Frost explains:<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<blockquote>\r\n<p>Atomic design is not a linear process, but rather a mental model to help us think of our user interfaces as both a cohesive whole and a collection of parts at the same time.&nbsp;<\/p>\r\n<\/blockquote>\r\n\r\n<h3>&nbsp;<\/h3>\r\n\r\n<h3>From Atoms to Pages<\/h3>\r\n\r\n<p><a href=\"https:\/\/www.prometsource.com\/services\/ui-design\">Atomic design<\/a>&nbsp;considers a website\u2019s user interface as the collection of five factors that roll up into each other:<\/p>\r\n\r\n<ul>\r\n\t<li>Atoms,<\/li>\r\n\t<li>Molecules,<\/li>\r\n\t<li>Organisms,<\/li>\r\n\t<li>Templates, and&nbsp;<\/li>\r\n\t<li>Pages.<\/li>\r\n<\/ul>\r\n\r\n<h4>1. Atoms<\/h4>\r\n\r\n<p>The essential elements, such as HTML tags, form labels, and buttons, as well as color palettes and fonts -- essentially all of the factors that designers typically define as a reference point for developers when creating a website\u2019s style guide.&nbsp;<br \/>\r\n&nbsp;<\/p>\r\n\r\n<h4>2. Molecules<\/h4>\r\n\r\n<p>Chemically speaking, molecules consist of atoms bonded together. Within Atomic Design a molecule make up distinct building blocks and refer to design specifications for functional, reusable combinations of atoms, such as a keyword search bar with a search button.&nbsp;<br \/>\r\n&nbsp;<\/p>\r\n\r\n<h4>3. Organisms<\/h4>\r\n\r\n<p>Combinations of molecular building blocks form organisms that form distinct sections of a user interface. This is where the design begins to take shape with the creation of reusable components such as a footer consisting of a logo, social media icons, a call to action link, and other branding elements.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<h4>4.&nbsp; Templates<\/h4>\r\n\r\n<p>Groups of organisms arranged together form a template. The game-changing factor within component-based design is the inherent flexibility of the templated layout, allowing for a wide range of options such as switching out an image for a text block, and previewing responsive layouts for various devices.&nbsp;<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<h4>5. Pages<\/h4>\r\n\r\n<p>Pages refer to specific representations of templates that take shape beyond a theoretical example and come to life as a real-world view of what the user will see and experience on the site. It is at the page stage where texting and review concerning the totality of the design system tends to occur and adjustments are made.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>Need help creating an Atomic Design system for your organization\u2019s website that allows for greater flexibility that maintains brand consistency?&nbsp;<a href=\"https:\/\/www.prometsource.com\/contact\">Get in touch<\/a>!<\/p>\r\n",
+                    "format": "basic_html",
+                    "processed": "<p>Often, the most effective means of managing complexity is a laser-sharp focus on simplification -- breaking down a project into its smallest component parts and visualizing incremental \u00a0steps toward completion beginning with the smallest building blocks.\u00a0<br \/>\n\u00a0<br \/>\nThat\u2019s exactly what Brad Frost has achieved in coining the concept of\u00a0<a href=\"https:\/\/bradfrost.com\/blog\/post\/atomic-web-design\/\">Atomic Design<\/a>, and authoring a book by the same name.\u00a0 In clarifying the new capabilities of component-based web design systems, the vocabulary of Atomic Design has gained traction, and entered into the working lexicon of web designers and developers. \u00a0<br \/>\n\u00a0<br \/>\nAs Frost explains:<\/p>\n\n<p>\u00a0<\/p>\n\n<blockquote>\n<p>Atomic design is not a linear process, but rather a mental model to help us think of our user interfaces as both a cohesive whole and a collection of parts at the same time.\u00a0<\/p>\n<\/blockquote>\n\n<h3>\u00a0<\/h3>\n\n<h3>From Atoms to Pages<\/h3>\n\n<p><a href=\"https:\/\/www.prometsource.com\/services\/ui-design\">Atomic design<\/a>\u00a0considers a website\u2019s user interface as the collection of five factors that roll up into each other:<\/p>\n\n<ul><li>Atoms,<\/li>\n\t<li>Molecules,<\/li>\n\t<li>Organisms,<\/li>\n\t<li>Templates, and\u00a0<\/li>\n\t<li>Pages.<\/li>\n<\/ul><h4>1. Atoms<\/h4>\n\n<p>The essential elements, such as HTML tags, form labels, and buttons, as well as color palettes and fonts -- essentially all of the factors that designers typically define as a reference point for developers when creating a website\u2019s style guide.\u00a0<br \/>\n\u00a0<\/p>\n\n<h4>2. Molecules<\/h4>\n\n<p>Chemically speaking, molecules consist of atoms bonded together. Within Atomic Design a molecule make up distinct building blocks and refer to design specifications for functional, reusable combinations of atoms, such as a keyword search bar with a search button.\u00a0<br \/>\n\u00a0<\/p>\n\n<h4>3. Organisms<\/h4>\n\n<p>Combinations of molecular building blocks form organisms that form distinct sections of a user interface. This is where the design begins to take shape with the creation of reusable components such as a footer consisting of a logo, social media icons, a call to action link, and other branding elements.<\/p>\n\n<p>\u00a0<\/p>\n\n<h4>4.\u00a0 Templates<\/h4>\n\n<p>Groups of organisms arranged together form a template. The game-changing factor within component-based design is the inherent flexibility of the templated layout, allowing for a wide range of options such as switching out an image for a text block, and previewing responsive layouts for various devices.\u00a0<\/p>\n\n<p>\u00a0<\/p>\n\n<h4>5. Pages<\/h4>\n\n<p>Pages refer to specific representations of templates that take shape beyond a theoretical example and come to life as a real-world view of what the user will see and experience on the site. It is at the page stage where texting and review concerning the totality of the design system tends to occur and adjustments are made.<\/p>\n\n<p>\u00a0<\/p>\n\n<p>Need help creating an Atomic Design system for your organization\u2019s website that allows for greater flexibility that maintains brand consistency?\u00a0<a href=\"https:\/\/www.prometsource.com\/contact\">Get in touch<\/a>!<\/p>",
+                    "summary": ""
+                }
+            ],
+            "field_file": [],
+            "field_media_image": [
+                {
+                    "target_id": 25,
+                    "target_type": "media",
+                    "target_uuid": "57679afb-63c8-4d06-b3a5-b9e4f2bd1187",
+                    "url": "\/media\/25\/edit"
+                }
+            ],
+            "field_publish_date": [
+                {
+                    "value": "2021-05-17"
+                }
+            ],
+            "field_type": [
+                {
+                    "target_id": 1,
+                    "target_type": "taxonomy_term",
+                    "target_uuid": "e0007ae8-646a-49c3-88d3-c72541723512",
+                    "url": "\/news"
+                }
+            ]
+        }
+    }
+}

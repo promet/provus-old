@@ -1,19 +1,19 @@
 {
-    "media": [
-        {
+    "media": {
+        "01855a77-0cfe-4cd1-8571-6751b1637161": {
             "mid": [
                 {
-                    "value": 1
+                    "value": 7
                 }
             ],
             "uuid": [
                 {
-                    "value": "bf20bbdf-9205-4857-8685-14d387c2374e"
+                    "value": "01855a77-0cfe-4cd1-8571-6751b1637161"
                 }
             ],
             "vid": [
                 {
-                    "value": 1
+                    "value": 7
                 }
             ],
             "langcode": [
@@ -30,7 +30,7 @@
             ],
             "revision_created": [
                 {
-                    "value": "2021-05-30T15:21:21+00:00",
+                    "value": "2021-04-29T14:10:37+00:00",
                     "format": "Y-m-d\\TH:i:sP"
                 }
             ],
@@ -42,227 +42,11 @@
                 }
             ],
             "uid": [
-                {
-                    "target_id": 0,
-                    "target_type": "user",
-                    "target_uuid": "726bb45c-b191-4f17-9d17-8cd88175d2fe",
-                    "url": "\/user\/0"
-                }
-            ],
-            "name": [
-                {
-                    "value": "Hero Photo.png"
-                }
-            ],
-            "thumbnail": [
                 {
                     "target_id": 1,
-                    "alt": "image of mountains at dusk",
-                    "title": null,
-                    "width": 2880,
-                    "height": 1184,
-                    "target_type": "file",
-                    "target_uuid": "bbbc3f95-3714-470f-97b3-8d2d03ac56be",
-                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2021-05\/Hero%20Photo_0.png"
-                }
-            ],
-            "created": [
-                {
-                    "value": "2021-05-30T15:15:18+00:00",
-                    "format": "Y-m-d\\TH:i:sP"
-                }
-            ],
-            "changed": [
-                {
-                    "value": "2021-05-30T15:15:18+00:00",
-                    "format": "Y-m-d\\TH:i:sP"
-                }
-            ],
-            "default_langcode": [
-                {
-                    "value": true
-                }
-            ],
-            "revision_translation_affected": [
-                {
-                    "value": true
-                }
-            ],
-            "path": [
-                {
-                    "alias": "",
-                    "pid": null,
-                    "langcode": null
-                }
-            ],
-            "field_media_image": [
-                {
-                    "target_id": 1,
-                    "alt": "image of mountains at dusk",
-                    "title": "",
-                    "width": 2880,
-                    "height": 1184,
-                    "target_type": "file",
-                    "target_uuid": "bbbc3f95-3714-470f-97b3-8d2d03ac56be",
-                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2021-05\/Hero%20Photo_0.png"
-                }
-            ]
-        },
-        {
-            "mid": [
-                {
-                    "value": 2
-                }
-            ],
-            "uuid": [
-                {
-                    "value": "9a714e3a-4c56-4a50-9b93-40019ccfa7dc"
-                }
-            ],
-            "vid": [
-                {
-                    "value": 2
-                }
-            ],
-            "langcode": [
-                {
-                    "value": "en"
-                }
-            ],
-            "bundle": [
-                {
-                    "target_id": "image",
-                    "target_type": "media_type",
-                    "target_uuid": "5e386cd2-796e-4c60-9bcb-a2c197d21122"
-                }
-            ],
-            "revision_created": [
-                {
-                    "value": "2021-05-30T15:21:21+00:00",
-                    "format": "Y-m-d\\TH:i:sP"
-                }
-            ],
-            "revision_user": [],
-            "revision_log_message": [],
-            "status": [
-                {
-                    "value": true
-                }
-            ],
-            "uid": [
-                {
-                    "target_id": 0,
                     "target_type": "user",
-                    "target_uuid": "726bb45c-b191-4f17-9d17-8cd88175d2fe",
-                    "url": "\/user\/0"
-                }
-            ],
-            "name": [
-                {
-                    "value": "Logo.png"
-                }
-            ],
-            "thumbnail": [
-                {
-                    "target_id": 2,
-                    "alt": "promet source logo",
-                    "title": null,
-                    "width": 332,
-                    "height": 332,
-                    "target_type": "file",
-                    "target_uuid": "0710b40f-8407-45d4-bc78-7bd2bcc0ad07",
-                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2021-05\/Logo_0.png"
-                }
-            ],
-            "created": [
-                {
-                    "value": "2021-05-30T15:15:39+00:00",
-                    "format": "Y-m-d\\TH:i:sP"
-                }
-            ],
-            "changed": [
-                {
-                    "value": "2021-05-30T15:15:39+00:00",
-                    "format": "Y-m-d\\TH:i:sP"
-                }
-            ],
-            "default_langcode": [
-                {
-                    "value": true
-                }
-            ],
-            "revision_translation_affected": [
-                {
-                    "value": true
-                }
-            ],
-            "path": [
-                {
-                    "alias": "",
-                    "pid": null,
-                    "langcode": null
-                }
-            ],
-            "field_media_image": [
-                {
-                    "target_id": 2,
-                    "alt": "promet source logo",
-                    "title": "",
-                    "width": 332,
-                    "height": 332,
-                    "target_type": "file",
-                    "target_uuid": "0710b40f-8407-45d4-bc78-7bd2bcc0ad07",
-                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2021-05\/Logo_0.png"
-                }
-            ]
-        },
-        {
-            "mid": [
-                {
-                    "value": 3
-                }
-            ],
-            "uuid": [
-                {
-                    "value": "2c85ed5b-653f-436f-8a2b-3e3972279277"
-                }
-            ],
-            "vid": [
-                {
-                    "value": 3
-                }
-            ],
-            "langcode": [
-                {
-                    "value": "en"
-                }
-            ],
-            "bundle": [
-                {
-                    "target_id": "image",
-                    "target_type": "media_type",
-                    "target_uuid": "5e386cd2-796e-4c60-9bcb-a2c197d21122"
-                }
-            ],
-            "revision_created": [
-                {
-                    "value": "2021-05-30T15:21:21+00:00",
-                    "format": "Y-m-d\\TH:i:sP"
-                }
-            ],
-            "revision_user": [],
-            "revision_log_message": [],
-            "status": [
-                {
-                    "value": true
-                }
-            ],
-            "uid": [
-                {
-                    "target_id": 0,
-                    "target_type": "user",
-                    "target_uuid": "726bb45c-b191-4f17-9d17-8cd88175d2fe",
-                    "url": "\/user\/0"
+                    "target_uuid": "6361368e-0ae3-4a16-b792-05cf28408fc4",
+                    "url": "\/user\/1"
                 }
             ],
             "name": [
@@ -272,25 +56,25 @@
             ],
             "thumbnail": [
                 {
-                    "target_id": 3,
-                    "alt": "white male happily paying",
+                    "target_id": 7,
+                    "alt": "person paying with phone",
                     "title": null,
                     "width": 299,
                     "height": 174,
                     "target_type": "file",
-                    "target_uuid": "77c9329e-eb42-4146-a333-b65323854698",
-                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2021-05\/Image%201_0.png"
+                    "target_uuid": "035a7966-95d2-4710-b5f7-3a310fe21614",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2021-04\/Image%201.png"
                 }
             ],
             "created": [
                 {
-                    "value": "2021-05-30T15:17:18+00:00",
+                    "value": "2021-04-29T14:10:24+00:00",
                     "format": "Y-m-d\\TH:i:sP"
                 }
             ],
             "changed": [
                 {
-                    "value": "2021-05-30T15:17:18+00:00",
+                    "value": "2021-04-29T14:10:24+00:00",
                     "format": "Y-m-d\\TH:i:sP"
                 }
             ],
@@ -304,40 +88,34 @@
                     "value": true
                 }
             ],
-            "path": [
-                {
-                    "alias": "",
-                    "pid": null,
-                    "langcode": null
-                }
-            ],
+            "path": [],
             "field_media_image": [
                 {
-                    "target_id": 3,
-                    "alt": "white male happily paying",
+                    "target_id": 7,
+                    "alt": "person paying with phone",
                     "title": "",
                     "width": 299,
                     "height": 174,
                     "target_type": "file",
-                    "target_uuid": "77c9329e-eb42-4146-a333-b65323854698",
-                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2021-05\/Image%201_0.png"
+                    "target_uuid": "035a7966-95d2-4710-b5f7-3a310fe21614",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2021-04\/Image%201.png"
                 }
             ]
         },
-        {
+        "08fbe199-c2de-4715-9f56-9ba9d6c88807": {
             "mid": [
                 {
-                    "value": 4
+                    "value": 26
                 }
             ],
             "uuid": [
                 {
-                    "value": "7596e2be-13ee-4135-8d3a-2f2160c96abd"
+                    "value": "08fbe199-c2de-4715-9f56-9ba9d6c88807"
                 }
             ],
             "vid": [
                 {
-                    "value": 4
+                    "value": 30
                 }
             ],
             "langcode": [
@@ -354,11 +132,18 @@
             ],
             "revision_created": [
                 {
-                    "value": "2021-05-30T15:21:21+00:00",
+                    "value": "2021-05-20T18:20:41+00:00",
                     "format": "Y-m-d\\TH:i:sP"
                 }
             ],
-            "revision_user": [],
+            "revision_user": [
+                {
+                    "target_id": 5,
+                    "target_type": "user",
+                    "target_uuid": "955a74e2-9dbd-4873-9260-5e190467823b",
+                    "url": "\/user\/5"
+                }
+            ],
             "revision_log_message": [],
             "status": [
                 {
@@ -367,38 +152,38 @@
             ],
             "uid": [
                 {
-                    "target_id": 0,
+                    "target_id": 5,
                     "target_type": "user",
-                    "target_uuid": "726bb45c-b191-4f17-9d17-8cd88175d2fe",
-                    "url": "\/user\/0"
+                    "target_uuid": "955a74e2-9dbd-4873-9260-5e190467823b",
+                    "url": "\/user\/5"
                 }
             ],
             "name": [
                 {
-                    "value": "Image 2.png"
+                    "value": "Mindy_2018_color.jpg"
                 }
             ],
             "thumbnail": [
                 {
-                    "target_id": 4,
-                    "alt": "eager puppy",
+                    "target_id": 26,
+                    "alt": "Mindy League",
                     "title": null,
-                    "width": 299,
-                    "height": 174,
+                    "width": 1762,
+                    "height": 1976,
                     "target_type": "file",
-                    "target_uuid": "8cde76c8-29f7-4203-80cf-f782bd451cae",
-                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2021-05\/Image%202_0.png"
+                    "target_uuid": "4b895d48-4d1f-4fa5-ba75-9e01a4773a62",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2021-05\/Mindy_2018_color.jpg"
                 }
             ],
             "created": [
                 {
-                    "value": "2021-05-30T15:18:05+00:00",
+                    "value": "2021-05-20T18:16:01+00:00",
                     "format": "Y-m-d\\TH:i:sP"
                 }
             ],
             "changed": [
                 {
-                    "value": "2021-05-30T15:18:05+00:00",
+                    "value": "2021-05-20T18:20:41+00:00",
                     "format": "Y-m-d\\TH:i:sP"
                 }
             ],
@@ -407,45 +192,35 @@
                     "value": true
                 }
             ],
-            "revision_translation_affected": [
-                {
-                    "value": true
-                }
-            ],
-            "path": [
-                {
-                    "alias": "",
-                    "pid": null,
-                    "langcode": null
-                }
-            ],
+            "revision_translation_affected": [],
+            "path": [],
             "field_media_image": [
                 {
-                    "target_id": 4,
-                    "alt": "eager puppy",
+                    "target_id": 26,
+                    "alt": "Mindy League",
                     "title": "",
-                    "width": 299,
-                    "height": 174,
+                    "width": 1762,
+                    "height": 1976,
                     "target_type": "file",
-                    "target_uuid": "8cde76c8-29f7-4203-80cf-f782bd451cae",
-                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2021-05\/Image%202_0.png"
+                    "target_uuid": "4b895d48-4d1f-4fa5-ba75-9e01a4773a62",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2021-05\/Mindy_2018_color.jpg"
                 }
             ]
         },
-        {
+        "0b1b3cb0-ac3c-4a5e-a0bb-b8d7e84623d1": {
             "mid": [
                 {
-                    "value": 5
+                    "value": 9
                 }
             ],
             "uuid": [
                 {
-                    "value": "82b4fee6-4747-4684-9d85-039dd6eab8ba"
+                    "value": "0b1b3cb0-ac3c-4a5e-a0bb-b8d7e84623d1"
                 }
             ],
             "vid": [
                 {
-                    "value": 5
+                    "value": 9
                 }
             ],
             "langcode": [
@@ -462,7 +237,7 @@
             ],
             "revision_created": [
                 {
-                    "value": "2021-05-30T15:21:21+00:00",
+                    "value": "2021-04-29T14:12:14+00:00",
                     "format": "Y-m-d\\TH:i:sP"
                 }
             ],
@@ -475,10 +250,10 @@
             ],
             "uid": [
                 {
-                    "target_id": 0,
+                    "target_id": 1,
                     "target_type": "user",
-                    "target_uuid": "726bb45c-b191-4f17-9d17-8cd88175d2fe",
-                    "url": "\/user\/0"
+                    "target_uuid": "6361368e-0ae3-4a16-b792-05cf28408fc4",
+                    "url": "\/user\/1"
                 }
             ],
             "name": [
@@ -488,25 +263,25 @@
             ],
             "thumbnail": [
                 {
-                    "target_id": 5,
-                    "alt": "lava field",
+                    "target_id": 9,
+                    "alt": "lava closeup",
                     "title": null,
                     "width": 299,
                     "height": 174,
                     "target_type": "file",
-                    "target_uuid": "4d7c0c64-330c-4068-a4e1-534f14d9df4b",
-                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2021-05\/Image%203_0.png"
+                    "target_uuid": "94b9111b-bc01-4ca3-a633-ad467aa5e63f",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2021-04\/Image%203.png"
                 }
             ],
             "created": [
                 {
-                    "value": "2021-05-30T15:18:42+00:00",
+                    "value": "2021-04-29T14:12:05+00:00",
                     "format": "Y-m-d\\TH:i:sP"
                 }
             ],
             "changed": [
                 {
-                    "value": "2021-05-30T15:18:42+00:00",
+                    "value": "2021-04-29T14:12:05+00:00",
                     "format": "Y-m-d\\TH:i:sP"
                 }
             ],
@@ -520,25 +295,2496 @@
                     "value": true
                 }
             ],
-            "path": [
-                {
-                    "alias": "",
-                    "pid": null,
-                    "langcode": null
-                }
-            ],
+            "path": [],
             "field_media_image": [
                 {
-                    "target_id": 5,
-                    "alt": "lava field",
+                    "target_id": 9,
+                    "alt": "lava closeup",
                     "title": "",
                     "width": 299,
                     "height": 174,
                     "target_type": "file",
-                    "target_uuid": "4d7c0c64-330c-4068-a4e1-534f14d9df4b",
-                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2021-05\/Image%203_0.png"
+                    "target_uuid": "94b9111b-bc01-4ca3-a633-ad467aa5e63f",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2021-04\/Image%203.png"
+                }
+            ]
+        },
+        "1060214c-53f1-4ffe-bd0f-0ff028af33b7": {
+            "mid": [
+                {
+                    "value": 2
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "1060214c-53f1-4ffe-bd0f-0ff028af33b7"
+                }
+            ],
+            "vid": [
+                {
+                    "value": 2
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "bundle": [
+                {
+                    "target_id": "image",
+                    "target_type": "media_type",
+                    "target_uuid": "5e386cd2-796e-4c60-9bcb-a2c197d21122"
+                }
+            ],
+            "revision_created": [
+                {
+                    "value": "2021-04-28T00:41:46+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "revision_user": [],
+            "revision_log_message": [],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "uid": [
+                {
+                    "target_id": 1,
+                    "target_type": "user",
+                    "target_uuid": "6361368e-0ae3-4a16-b792-05cf28408fc4",
+                    "url": "\/user\/1"
+                }
+            ],
+            "name": [
+                {
+                    "value": "Article Photo 2.png"
+                }
+            ],
+            "thumbnail": [
+                {
+                    "target_id": 2,
+                    "alt": "white person hand touching laptop",
+                    "title": null,
+                    "width": 272,
+                    "height": 272,
+                    "target_type": "file",
+                    "target_uuid": "1603e318-8855-4263-bebf-e1fec307618f",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2021-04\/Article%20Photo%202.png"
+                }
+            ],
+            "created": [
+                {
+                    "value": "2021-04-28T00:41:28+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2021-04-28T00:41:28+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": true
+                }
+            ],
+            "revision_translation_affected": [
+                {
+                    "value": true
+                }
+            ],
+            "path": [],
+            "field_media_image": [
+                {
+                    "target_id": 2,
+                    "alt": "white person hand touching laptop",
+                    "title": "",
+                    "width": 272,
+                    "height": 272,
+                    "target_type": "file",
+                    "target_uuid": "1603e318-8855-4263-bebf-e1fec307618f",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2021-04\/Article%20Photo%202.png"
+                }
+            ]
+        },
+        "1150466a-66c7-41d6-a442-b5748e0ba9c4": {
+            "mid": [
+                {
+                    "value": 24
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "1150466a-66c7-41d6-a442-b5748e0ba9c4"
+                }
+            ],
+            "vid": [
+                {
+                    "value": 32
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "bundle": [
+                {
+                    "target_id": "image",
+                    "target_type": "media_type",
+                    "target_uuid": "5e386cd2-796e-4c60-9bcb-a2c197d21122"
+                }
+            ],
+            "revision_created": [
+                {
+                    "value": "2021-05-20T19:48:55+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "revision_user": [
+                {
+                    "target_id": 5,
+                    "target_type": "user",
+                    "target_uuid": "955a74e2-9dbd-4873-9260-5e190467823b",
+                    "url": "\/user\/5"
+                }
+            ],
+            "revision_log_message": [],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "uid": [
+                {
+                    "target_id": 5,
+                    "target_type": "user",
+                    "target_uuid": "955a74e2-9dbd-4873-9260-5e190467823b",
+                    "url": "\/user\/5"
+                }
+            ],
+            "name": [
+                {
+                    "value": "38_Atomic_Design_Animation (5)_0.gif"
+                }
+            ],
+            "thumbnail": [
+                {
+                    "target_id": 24,
+                    "alt": "computer screen",
+                    "title": null,
+                    "width": 2500,
+                    "height": 1314,
+                    "target_type": "file",
+                    "target_uuid": "a7082e8d-8fa6-463d-97ad-11fcc1c3c40f",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2021-05\/38_Atomic_Design_Animation%20%285%29_0.gif"
+                }
+            ],
+            "created": [
+                {
+                    "value": "2021-05-20T16:45:31+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2021-05-20T19:48:55+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": true
+                }
+            ],
+            "revision_translation_affected": [],
+            "path": [],
+            "field_media_image": [
+                {
+                    "target_id": 24,
+                    "alt": "computer screen",
+                    "title": "",
+                    "width": 2500,
+                    "height": 1314,
+                    "target_type": "file",
+                    "target_uuid": "a7082e8d-8fa6-463d-97ad-11fcc1c3c40f",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2021-05\/38_Atomic_Design_Animation%20%285%29_0.gif"
+                }
+            ]
+        },
+        "12b4b28c-5951-4308-8d5b-65063db77e4c": {
+            "mid": [
+                {
+                    "value": 14
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "12b4b28c-5951-4308-8d5b-65063db77e4c"
+                }
+            ],
+            "vid": [
+                {
+                    "value": 14
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "bundle": [
+                {
+                    "target_id": "image",
+                    "target_type": "media_type",
+                    "target_uuid": "5e386cd2-796e-4c60-9bcb-a2c197d21122"
+                }
+            ],
+            "revision_created": [
+                {
+                    "value": "2021-04-29T14:40:28+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "revision_user": [],
+            "revision_log_message": [],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "uid": [
+                {
+                    "target_id": 1,
+                    "target_type": "user",
+                    "target_uuid": "6361368e-0ae3-4a16-b792-05cf28408fc4",
+                    "url": "\/user\/1"
+                }
+            ],
+            "name": [
+                {
+                    "value": "Carousel 5.png"
+                }
+            ],
+            "thumbnail": [
+                {
+                    "target_id": 14,
+                    "alt": "top of mountain",
+                    "title": null,
+                    "width": 384,
+                    "height": 340,
+                    "target_type": "file",
+                    "target_uuid": "6eeb30d1-bee9-484e-9d13-70963970d924",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2021-04\/Carousel%205.png"
+                }
+            ],
+            "created": [
+                {
+                    "value": "2021-04-29T14:40:20+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2021-04-29T14:40:20+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": true
+                }
+            ],
+            "revision_translation_affected": [
+                {
+                    "value": true
+                }
+            ],
+            "path": [],
+            "field_media_image": [
+                {
+                    "target_id": 14,
+                    "alt": "top of mountain",
+                    "title": "",
+                    "width": 384,
+                    "height": 340,
+                    "target_type": "file",
+                    "target_uuid": "6eeb30d1-bee9-484e-9d13-70963970d924",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2021-04\/Carousel%205.png"
+                }
+            ]
+        },
+        "21e6ffb6-7f86-4663-8f4d-487b116f3b16": {
+            "mid": [
+                {
+                    "value": 23
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "21e6ffb6-7f86-4663-8f4d-487b116f3b16"
+                }
+            ],
+            "vid": [
+                {
+                    "value": 23
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "bundle": [
+                {
+                    "target_id": "image",
+                    "target_type": "media_type",
+                    "target_uuid": "5e386cd2-796e-4c60-9bcb-a2c197d21122"
+                }
+            ],
+            "revision_created": [
+                {
+                    "value": "2021-05-20T16:43:48+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "revision_user": [
+                {
+                    "target_id": 5,
+                    "target_type": "user",
+                    "target_uuid": "955a74e2-9dbd-4873-9260-5e190467823b",
+                    "url": "\/user\/5"
+                }
+            ],
+            "revision_log_message": [],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "uid": [
+                {
+                    "target_id": 5,
+                    "target_type": "user",
+                    "target_uuid": "955a74e2-9dbd-4873-9260-5e190467823b",
+                    "url": "\/user\/5"
+                }
+            ],
+            "name": [
+                {
+                    "value": "41_drag_drop_post_1 (1).png"
+                }
+            ],
+            "thumbnail": [
+                {
+                    "target_id": 23,
+                    "alt": "Drag and drop ",
+                    "title": null,
+                    "width": 2500,
+                    "height": 1314,
+                    "target_type": "file",
+                    "target_uuid": "0bf44024-df10-4d5e-8f18-7124a88dba25",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2021-05\/41_drag_drop_post_1%20%281%29.png"
+                }
+            ],
+            "created": [
+                {
+                    "value": "2021-05-20T16:43:31+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2021-05-20T16:43:48+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": true
+                }
+            ],
+            "revision_translation_affected": [
+                {
+                    "value": true
+                }
+            ],
+            "path": [],
+            "field_media_image": [
+                {
+                    "target_id": 23,
+                    "alt": "Drag and drop ",
+                    "title": "",
+                    "width": 2500,
+                    "height": 1314,
+                    "target_type": "file",
+                    "target_uuid": "0bf44024-df10-4d5e-8f18-7124a88dba25",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2021-05\/41_drag_drop_post_1%20%281%29.png"
+                }
+            ]
+        },
+        "411b4089-8dcc-4279-a520-24322f8704ff": {
+            "mid": [
+                {
+                    "value": 19
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "411b4089-8dcc-4279-a520-24322f8704ff"
+                }
+            ],
+            "vid": [
+                {
+                    "value": 19
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "bundle": [
+                {
+                    "target_id": "image",
+                    "target_type": "media_type",
+                    "target_uuid": "5e386cd2-796e-4c60-9bcb-a2c197d21122"
+                }
+            ],
+            "revision_created": [
+                {
+                    "value": "2021-04-29T15:04:34+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "revision_user": [],
+            "revision_log_message": [],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "uid": [
+                {
+                    "target_id": 1,
+                    "target_type": "user",
+                    "target_uuid": "6361368e-0ae3-4a16-b792-05cf28408fc4",
+                    "url": "\/user\/1"
+                }
+            ],
+            "name": [
+                {
+                    "value": "jane-doe.png"
+                }
+            ],
+            "thumbnail": [
+                {
+                    "target_id": 19,
+                    "alt": "pic of woman",
+                    "title": null,
+                    "width": 859,
+                    "height": 885,
+                    "target_type": "file",
+                    "target_uuid": "3dc3821b-c05a-40eb-8653-d46d94d39cb8",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2021-04\/jane-doe.png"
+                }
+            ],
+            "created": [
+                {
+                    "value": "2021-04-29T15:04:23+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2021-04-29T15:04:23+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": true
+                }
+            ],
+            "revision_translation_affected": [
+                {
+                    "value": true
+                }
+            ],
+            "path": [],
+            "field_media_image": [
+                {
+                    "target_id": 19,
+                    "alt": "pic of woman",
+                    "title": "",
+                    "width": 859,
+                    "height": 885,
+                    "target_type": "file",
+                    "target_uuid": "3dc3821b-c05a-40eb-8653-d46d94d39cb8",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2021-04\/jane-doe.png"
+                }
+            ]
+        },
+        "41d8b5e9-da8f-47ff-81d1-e21ae15e6a76": {
+            "mid": [
+                {
+                    "value": 10
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "41d8b5e9-da8f-47ff-81d1-e21ae15e6a76"
+                }
+            ],
+            "vid": [
+                {
+                    "value": 10
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "bundle": [
+                {
+                    "target_id": "image",
+                    "target_type": "media_type",
+                    "target_uuid": "5e386cd2-796e-4c60-9bcb-a2c197d21122"
+                }
+            ],
+            "revision_created": [
+                {
+                    "value": "2021-04-29T14:35:22+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "revision_user": [],
+            "revision_log_message": [],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "uid": [
+                {
+                    "target_id": 1,
+                    "target_type": "user",
+                    "target_uuid": "6361368e-0ae3-4a16-b792-05cf28408fc4",
+                    "url": "\/user\/1"
+                }
+            ],
+            "name": [
+                {
+                    "value": "Carousel 1.png"
+                }
+            ],
+            "thumbnail": [
+                {
+                    "target_id": 10,
+                    "alt": "hands on an accounting machine",
+                    "title": null,
+                    "width": 516,
+                    "height": 340,
+                    "target_type": "file",
+                    "target_uuid": "dd4b193f-3ac7-4f2b-bf2a-ffaa73dab0a8",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2021-04\/Carousel%201.png"
+                }
+            ],
+            "created": [
+                {
+                    "value": "2021-04-29T14:35:00+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2021-04-29T14:35:00+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": true
+                }
+            ],
+            "revision_translation_affected": [
+                {
+                    "value": true
+                }
+            ],
+            "path": [],
+            "field_media_image": [
+                {
+                    "target_id": 10,
+                    "alt": "hands on an accounting machine",
+                    "title": "",
+                    "width": 516,
+                    "height": 340,
+                    "target_type": "file",
+                    "target_uuid": "dd4b193f-3ac7-4f2b-bf2a-ffaa73dab0a8",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2021-04\/Carousel%201.png"
+                }
+            ]
+        },
+        "4b6f31c6-aa8d-461a-b9aa-3158e5d3afa6": {
+            "mid": [
+                {
+                    "value": 15
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "4b6f31c6-aa8d-461a-b9aa-3158e5d3afa6"
+                }
+            ],
+            "vid": [
+                {
+                    "value": 15
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "bundle": [
+                {
+                    "target_id": "image",
+                    "target_type": "media_type",
+                    "target_uuid": "5e386cd2-796e-4c60-9bcb-a2c197d21122"
+                }
+            ],
+            "revision_created": [
+                {
+                    "value": "2021-04-29T14:42:57+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "revision_user": [],
+            "revision_log_message": [],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "uid": [
+                {
+                    "target_id": 1,
+                    "target_type": "user",
+                    "target_uuid": "6361368e-0ae3-4a16-b792-05cf28408fc4",
+                    "url": "\/user\/1"
+                }
+            ],
+            "name": [
+                {
+                    "value": "Event Photo 1.png"
+                }
+            ],
+            "thumbnail": [
+                {
+                    "target_id": 15,
+                    "alt": "holding a plant",
+                    "title": null,
+                    "width": 720,
+                    "height": 404,
+                    "target_type": "file",
+                    "target_uuid": "58056222-aaf3-4ae9-b32f-abd7d4da1f5b",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2021-04\/Event%20Photo%201.png"
+                }
+            ],
+            "created": [
+                {
+                    "value": "2021-04-29T14:42:50+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2021-04-29T14:42:50+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": true
+                }
+            ],
+            "revision_translation_affected": [
+                {
+                    "value": true
+                }
+            ],
+            "path": [],
+            "field_media_image": [
+                {
+                    "target_id": 15,
+                    "alt": "holding a plant",
+                    "title": "",
+                    "width": 720,
+                    "height": 404,
+                    "target_type": "file",
+                    "target_uuid": "58056222-aaf3-4ae9-b32f-abd7d4da1f5b",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2021-04\/Event%20Photo%201.png"
+                }
+            ]
+        },
+        "57679afb-63c8-4d06-b3a5-b9e4f2bd1187": {
+            "mid": [
+                {
+                    "value": 25
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "57679afb-63c8-4d06-b3a5-b9e4f2bd1187"
+                }
+            ],
+            "vid": [
+                {
+                    "value": 31
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "bundle": [
+                {
+                    "target_id": "image",
+                    "target_type": "media_type",
+                    "target_uuid": "5e386cd2-796e-4c60-9bcb-a2c197d21122"
+                }
+            ],
+            "revision_created": [
+                {
+                    "value": "2021-05-20T19:48:39+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "revision_user": [
+                {
+                    "target_id": 5,
+                    "target_type": "user",
+                    "target_uuid": "955a74e2-9dbd-4873-9260-5e190467823b",
+                    "url": "\/user\/5"
+                }
+            ],
+            "revision_log_message": [],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "uid": [
+                {
+                    "target_id": 5,
+                    "target_type": "user",
+                    "target_uuid": "955a74e2-9dbd-4873-9260-5e190467823b",
+                    "url": "\/user\/5"
+                }
+            ],
+            "name": [
+                {
+                    "value": "38_atomic_design_1.png"
+                }
+            ],
+            "thumbnail": [
+                {
+                    "target_id": 25,
+                    "alt": "Atomic design components",
+                    "title": null,
+                    "width": 2500,
+                    "height": 1314,
+                    "target_type": "file",
+                    "target_uuid": "d00c2a0a-dc27-4c50-860f-47b753437e5a",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2021-05\/38_atomic_design_1.png"
+                }
+            ],
+            "created": [
+                {
+                    "value": "2021-05-20T16:49:49+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2021-05-20T19:48:39+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": true
+                }
+            ],
+            "revision_translation_affected": [],
+            "path": [],
+            "field_media_image": [
+                {
+                    "target_id": 25,
+                    "alt": "Atomic design components",
+                    "title": "",
+                    "width": 2500,
+                    "height": 1314,
+                    "target_type": "file",
+                    "target_uuid": "d00c2a0a-dc27-4c50-860f-47b753437e5a",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2021-05\/38_atomic_design_1.png"
+                }
+            ]
+        },
+        "684b0d83-0cf7-4b1c-94e8-b09649f798f8": {
+            "mid": [
+                {
+                    "value": 1
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "684b0d83-0cf7-4b1c-94e8-b09649f798f8"
+                }
+            ],
+            "vid": [
+                {
+                    "value": 1
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "bundle": [
+                {
+                    "target_id": "image",
+                    "target_type": "media_type",
+                    "target_uuid": "5e386cd2-796e-4c60-9bcb-a2c197d21122"
+                }
+            ],
+            "revision_created": [
+                {
+                    "value": "2021-04-28T00:37:11+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "revision_user": [],
+            "revision_log_message": [],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "uid": [
+                {
+                    "target_id": 1,
+                    "target_type": "user",
+                    "target_uuid": "6361368e-0ae3-4a16-b792-05cf28408fc4",
+                    "url": "\/user\/1"
+                }
+            ],
+            "name": [
+                {
+                    "value": "Article Photo 1.png"
+                }
+            ],
+            "thumbnail": [
+                {
+                    "target_id": 1,
+                    "alt": "Group celebrating",
+                    "title": null,
+                    "width": 1062,
+                    "height": 596,
+                    "target_type": "file",
+                    "target_uuid": "e3d553f3-28f5-4c43-b1ea-edd0a1be1d26",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2021-04\/Article%20Photo%201.png"
+                }
+            ],
+            "created": [
+                {
+                    "value": "2021-04-28T00:37:02+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2021-04-28T00:37:02+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": true
+                }
+            ],
+            "revision_translation_affected": [
+                {
+                    "value": true
+                }
+            ],
+            "path": [],
+            "field_media_image": [
+                {
+                    "target_id": 1,
+                    "alt": "Group celebrating",
+                    "title": "",
+                    "width": 1062,
+                    "height": 596,
+                    "target_type": "file",
+                    "target_uuid": "e3d553f3-28f5-4c43-b1ea-edd0a1be1d26",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2021-04\/Article%20Photo%201.png"
+                }
+            ]
+        },
+        "6a430489-fc7b-4831-8048-5ec046dc1b6f": {
+            "mid": [
+                {
+                    "value": 4
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "6a430489-fc7b-4831-8048-5ec046dc1b6f"
+                }
+            ],
+            "vid": [
+                {
+                    "value": 4
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "bundle": [
+                {
+                    "target_id": "image",
+                    "target_type": "media_type",
+                    "target_uuid": "5e386cd2-796e-4c60-9bcb-a2c197d21122"
+                }
+            ],
+            "revision_created": [
+                {
+                    "value": "2021-04-28T00:46:04+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "revision_user": [],
+            "revision_log_message": [],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "uid": [
+                {
+                    "target_id": 1,
+                    "target_type": "user",
+                    "target_uuid": "6361368e-0ae3-4a16-b792-05cf28408fc4",
+                    "url": "\/user\/1"
+                }
+            ],
+            "name": [
+                {
+                    "value": "Article Photo 4.png"
+                }
+            ],
+            "thumbnail": [
+                {
+                    "target_id": 4,
+                    "alt": "person touching tablet",
+                    "title": null,
+                    "width": 272,
+                    "height": 272,
+                    "target_type": "file",
+                    "target_uuid": "361f7c03-2226-4faf-b251-5b14d85f4bdc",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2021-04\/Article%20Photo%204.png"
+                }
+            ],
+            "created": [
+                {
+                    "value": "2021-04-28T00:45:55+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2021-04-28T00:45:55+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": true
+                }
+            ],
+            "revision_translation_affected": [
+                {
+                    "value": true
+                }
+            ],
+            "path": [],
+            "field_media_image": [
+                {
+                    "target_id": 4,
+                    "alt": "person touching tablet",
+                    "title": "",
+                    "width": 272,
+                    "height": 272,
+                    "target_type": "file",
+                    "target_uuid": "361f7c03-2226-4faf-b251-5b14d85f4bdc",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2021-04\/Article%20Photo%204.png"
+                }
+            ]
+        },
+        "6df27a3e-4dc2-40c8-83c9-64d9948431cd": {
+            "mid": [
+                {
+                    "value": 11
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "6df27a3e-4dc2-40c8-83c9-64d9948431cd"
+                }
+            ],
+            "vid": [
+                {
+                    "value": 11
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "bundle": [
+                {
+                    "target_id": "image",
+                    "target_type": "media_type",
+                    "target_uuid": "5e386cd2-796e-4c60-9bcb-a2c197d21122"
+                }
+            ],
+            "revision_created": [
+                {
+                    "value": "2021-04-29T14:36:05+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "revision_user": [],
+            "revision_log_message": [],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "uid": [
+                {
+                    "target_id": 1,
+                    "target_type": "user",
+                    "target_uuid": "6361368e-0ae3-4a16-b792-05cf28408fc4",
+                    "url": "\/user\/1"
+                }
+            ],
+            "name": [
+                {
+                    "value": "Carousel 2.png"
+                }
+            ],
+            "thumbnail": [
+                {
+                    "target_id": 11,
+                    "alt": "diploma throwing at graduation",
+                    "title": null,
+                    "width": 816,
+                    "height": 562,
+                    "target_type": "file",
+                    "target_uuid": "e8190fb7-1d85-4396-bcb3-458d20719c09",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2021-04\/Carousel%202.png"
+                }
+            ],
+            "created": [
+                {
+                    "value": "2021-04-29T14:35:54+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2021-04-29T14:35:54+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": true
+                }
+            ],
+            "revision_translation_affected": [
+                {
+                    "value": true
+                }
+            ],
+            "path": [],
+            "field_media_image": [
+                {
+                    "target_id": 11,
+                    "alt": "diploma throwing at graduation",
+                    "title": "",
+                    "width": 816,
+                    "height": 562,
+                    "target_type": "file",
+                    "target_uuid": "e8190fb7-1d85-4396-bcb3-458d20719c09",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2021-04\/Carousel%202.png"
+                }
+            ]
+        },
+        "72e6fbd6-7cab-4ac2-8585-1684c6ce9427": {
+            "mid": [
+                {
+                    "value": 17
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "72e6fbd6-7cab-4ac2-8585-1684c6ce9427"
+                }
+            ],
+            "vid": [
+                {
+                    "value": 17
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "bundle": [
+                {
+                    "target_id": "image",
+                    "target_type": "media_type",
+                    "target_uuid": "5e386cd2-796e-4c60-9bcb-a2c197d21122"
+                }
+            ],
+            "revision_created": [
+                {
+                    "value": "2021-04-29T14:52:14+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "revision_user": [],
+            "revision_log_message": [],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "uid": [
+                {
+                    "target_id": 1,
+                    "target_type": "user",
+                    "target_uuid": "6361368e-0ae3-4a16-b792-05cf28408fc4",
+                    "url": "\/user\/1"
+                }
+            ],
+            "name": [
+                {
+                    "value": "Event Photo 3.png"
+                }
+            ],
+            "thumbnail": [
+                {
+                    "target_id": 17,
+                    "alt": "woman smiling",
+                    "title": null,
+                    "width": 720,
+                    "height": 404,
+                    "target_type": "file",
+                    "target_uuid": "d317723f-9733-4b54-b870-95d02a2cb980",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2021-04\/Event%20Photo%203.png"
+                }
+            ],
+            "created": [
+                {
+                    "value": "2021-04-29T14:52:07+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2021-04-29T14:52:07+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": true
+                }
+            ],
+            "revision_translation_affected": [
+                {
+                    "value": true
+                }
+            ],
+            "path": [],
+            "field_media_image": [
+                {
+                    "target_id": 17,
+                    "alt": "woman smiling",
+                    "title": "",
+                    "width": 720,
+                    "height": 404,
+                    "target_type": "file",
+                    "target_uuid": "d317723f-9733-4b54-b870-95d02a2cb980",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2021-04\/Event%20Photo%203.png"
+                }
+            ]
+        },
+        "8f674f4c-d939-4211-a1cd-af7134e18b61": {
+            "mid": [
+                {
+                    "value": 22
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "8f674f4c-d939-4211-a1cd-af7134e18b61"
+                }
+            ],
+            "vid": [
+                {
+                    "value": 33
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "bundle": [
+                {
+                    "target_id": "image",
+                    "target_type": "media_type",
+                    "target_uuid": "5e386cd2-796e-4c60-9bcb-a2c197d21122"
+                }
+            ],
+            "revision_created": [
+                {
+                    "value": "2021-05-20T19:49:09+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "revision_user": [
+                {
+                    "target_id": 5,
+                    "target_type": "user",
+                    "target_uuid": "955a74e2-9dbd-4873-9260-5e190467823b",
+                    "url": "\/user\/5"
+                }
+            ],
+            "revision_log_message": [],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "uid": [
+                {
+                    "target_id": 5,
+                    "target_type": "user",
+                    "target_uuid": "955a74e2-9dbd-4873-9260-5e190467823b",
+                    "url": "\/user\/5"
+                }
+            ],
+            "name": [
+                {
+                    "value": "38_Atomic_Design_Animation (5).gif"
+                }
+            ],
+            "thumbnail": [
+                {
+                    "target_id": 22,
+                    "alt": "computer screen",
+                    "title": null,
+                    "width": 2500,
+                    "height": 1314,
+                    "target_type": "file",
+                    "target_uuid": "007331d0-da36-4858-9c99-4cc2e62d7525",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2021-05\/38_Atomic_Design_Animation%20%285%29.gif"
+                }
+            ],
+            "created": [
+                {
+                    "value": "2021-05-20T16:42:44+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2021-05-20T19:49:09+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": true
+                }
+            ],
+            "revision_translation_affected": [],
+            "path": [],
+            "field_media_image": [
+                {
+                    "target_id": 22,
+                    "alt": "computer screen",
+                    "title": "",
+                    "width": 2500,
+                    "height": 1314,
+                    "target_type": "file",
+                    "target_uuid": "007331d0-da36-4858-9c99-4cc2e62d7525",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2021-05\/38_Atomic_Design_Animation%20%285%29.gif"
+                }
+            ]
+        },
+        "900768e9-5af0-4a38-be8c-65d23c8b6c15": {
+            "mid": [
+                {
+                    "value": 27
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "900768e9-5af0-4a38-be8c-65d23c8b6c15"
+                }
+            ],
+            "vid": [
+                {
+                    "value": 29
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "bundle": [
+                {
+                    "target_id": "image",
+                    "target_type": "media_type",
+                    "target_uuid": "5e386cd2-796e-4c60-9bcb-a2c197d21122"
+                }
+            ],
+            "revision_created": [
+                {
+                    "value": "2021-05-20T18:20:22+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "revision_user": [
+                {
+                    "target_id": 5,
+                    "target_type": "user",
+                    "target_uuid": "955a74e2-9dbd-4873-9260-5e190467823b",
+                    "url": "\/user\/5"
+                }
+            ],
+            "revision_log_message": [],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "uid": [
+                {
+                    "target_id": 5,
+                    "target_type": "user",
+                    "target_uuid": "955a74e2-9dbd-4873-9260-5e190467823b",
+                    "url": "\/user\/5"
+                }
+            ],
+            "name": [
+                {
+                    "value": "andy_3.jpg"
+                }
+            ],
+            "thumbnail": [
+                {
+                    "target_id": 27,
+                    "alt": "Andrew Kucharski",
+                    "title": null,
+                    "width": 245,
+                    "height": 320,
+                    "target_type": "file",
+                    "target_uuid": "3fcd85c9-fcdb-4730-b2f7-2c617ff992e8",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2021-05\/andy_3.jpg"
+                }
+            ],
+            "created": [
+                {
+                    "value": "2021-05-20T18:16:41+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2021-05-20T18:20:22+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": true
+                }
+            ],
+            "revision_translation_affected": [],
+            "path": [],
+            "field_media_image": [
+                {
+                    "target_id": 27,
+                    "alt": "Andrew Kucharski",
+                    "title": "",
+                    "width": 245,
+                    "height": 320,
+                    "target_type": "file",
+                    "target_uuid": "3fcd85c9-fcdb-4730-b2f7-2c617ff992e8",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2021-05\/andy_3.jpg"
+                }
+            ]
+        },
+        "9dad683e-74d6-453a-a518-a1c191d27d34": {
+            "mid": [
+                {
+                    "value": 18
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "9dad683e-74d6-453a-a518-a1c191d27d34"
+                }
+            ],
+            "vid": [
+                {
+                    "value": 18
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "bundle": [
+                {
+                    "target_id": "image",
+                    "target_type": "media_type",
+                    "target_uuid": "5e386cd2-796e-4c60-9bcb-a2c197d21122"
+                }
+            ],
+            "revision_created": [
+                {
+                    "value": "2021-04-29T15:03:40+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "revision_user": [],
+            "revision_log_message": [],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "uid": [
+                {
+                    "target_id": 1,
+                    "target_type": "user",
+                    "target_uuid": "6361368e-0ae3-4a16-b792-05cf28408fc4",
+                    "url": "\/user\/1"
+                }
+            ],
+            "name": [
+                {
+                    "value": "me5.jpg"
+                }
+            ],
+            "thumbnail": [
+                {
+                    "target_id": 18,
+                    "alt": "pic of white bald male",
+                    "title": null,
+                    "width": 1974,
+                    "height": 2048,
+                    "target_type": "file",
+                    "target_uuid": "ed0372a1-0d14-4170-b49a-b2f8383b117f",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2021-04\/me5.jpg"
+                }
+            ],
+            "created": [
+                {
+                    "value": "2021-04-29T15:03:30+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2021-04-29T15:03:30+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": true
+                }
+            ],
+            "revision_translation_affected": [
+                {
+                    "value": true
+                }
+            ],
+            "path": [],
+            "field_media_image": [
+                {
+                    "target_id": 18,
+                    "alt": "pic of white bald male",
+                    "title": "",
+                    "width": 1974,
+                    "height": 2048,
+                    "target_type": "file",
+                    "target_uuid": "ed0372a1-0d14-4170-b49a-b2f8383b117f",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2021-04\/me5.jpg"
+                }
+            ]
+        },
+        "9e559cb0-4e97-4c80-af18-2017446c2e56": {
+            "mid": [
+                {
+                    "value": 28
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "9e559cb0-4e97-4c80-af18-2017446c2e56"
+                }
+            ],
+            "vid": [
+                {
+                    "value": 28
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "bundle": [
+                {
+                    "target_id": "image",
+                    "target_type": "media_type",
+                    "target_uuid": "5e386cd2-796e-4c60-9bcb-a2c197d21122"
+                }
+            ],
+            "revision_created": [
+                {
+                    "value": "2021-05-20T18:17:27+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "revision_user": [
+                {
+                    "target_id": 5,
+                    "target_type": "user",
+                    "target_uuid": "955a74e2-9dbd-4873-9260-5e190467823b",
+                    "url": "\/user\/5"
+                }
+            ],
+            "revision_log_message": [],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "uid": [
+                {
+                    "target_id": 5,
+                    "target_type": "user",
+                    "target_uuid": "955a74e2-9dbd-4873-9260-5e190467823b",
+                    "url": "\/user\/5"
+                }
+            ],
+            "name": [
+                {
+                    "value": "Pam2.jpg"
+                }
+            ],
+            "thumbnail": [
+                {
+                    "target_id": 28,
+                    "alt": "Pam Ross",
+                    "title": null,
+                    "width": 574,
+                    "height": 573,
+                    "target_type": "file",
+                    "target_uuid": "294cfe9d-24ed-4af3-ba14-fb1272214757",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2021-05\/Pam2.jpg"
+                }
+            ],
+            "created": [
+                {
+                    "value": "2021-05-20T18:17:12+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2021-05-20T18:17:27+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": true
+                }
+            ],
+            "revision_translation_affected": [
+                {
+                    "value": true
+                }
+            ],
+            "path": [],
+            "field_media_image": [
+                {
+                    "target_id": 28,
+                    "alt": "Pam Ross",
+                    "title": "",
+                    "width": 574,
+                    "height": 573,
+                    "target_type": "file",
+                    "target_uuid": "294cfe9d-24ed-4af3-ba14-fb1272214757",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2021-05\/Pam2.jpg"
+                }
+            ]
+        },
+        "a473e0f2-1d10-418b-8d63-b6de53e0d3df": {
+            "mid": [
+                {
+                    "value": 12
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "a473e0f2-1d10-418b-8d63-b6de53e0d3df"
+                }
+            ],
+            "vid": [
+                {
+                    "value": 12
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "bundle": [
+                {
+                    "target_id": "image",
+                    "target_type": "media_type",
+                    "target_uuid": "5e386cd2-796e-4c60-9bcb-a2c197d21122"
+                }
+            ],
+            "revision_created": [
+                {
+                    "value": "2021-04-29T14:38:36+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "revision_user": [],
+            "revision_log_message": [],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "uid": [
+                {
+                    "target_id": 1,
+                    "target_type": "user",
+                    "target_uuid": "6361368e-0ae3-4a16-b792-05cf28408fc4",
+                    "url": "\/user\/1"
+                }
+            ],
+            "name": [
+                {
+                    "value": "Carousel 3.png"
+                }
+            ],
+            "thumbnail": [
+                {
+                    "target_id": 12,
+                    "alt": "typing at a laptop",
+                    "title": null,
+                    "width": 516,
+                    "height": 340,
+                    "target_type": "file",
+                    "target_uuid": "e24512a0-a20a-4abd-ac19-fd087193107c",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2021-04\/Carousel%203.png"
+                }
+            ],
+            "created": [
+                {
+                    "value": "2021-04-29T14:38:27+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2021-04-29T14:38:27+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": true
+                }
+            ],
+            "revision_translation_affected": [
+                {
+                    "value": true
+                }
+            ],
+            "path": [],
+            "field_media_image": [
+                {
+                    "target_id": 12,
+                    "alt": "typing at a laptop",
+                    "title": "",
+                    "width": 516,
+                    "height": 340,
+                    "target_type": "file",
+                    "target_uuid": "e24512a0-a20a-4abd-ac19-fd087193107c",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2021-04\/Carousel%203.png"
+                }
+            ]
+        },
+        "a670be1f-0c61-467c-81df-550d29a1bd00": {
+            "mid": [
+                {
+                    "value": 13
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "a670be1f-0c61-467c-81df-550d29a1bd00"
+                }
+            ],
+            "vid": [
+                {
+                    "value": 13
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "bundle": [
+                {
+                    "target_id": "image",
+                    "target_type": "media_type",
+                    "target_uuid": "5e386cd2-796e-4c60-9bcb-a2c197d21122"
+                }
+            ],
+            "revision_created": [
+                {
+                    "value": "2021-04-29T14:39:52+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "revision_user": [],
+            "revision_log_message": [],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "uid": [
+                {
+                    "target_id": 1,
+                    "target_type": "user",
+                    "target_uuid": "6361368e-0ae3-4a16-b792-05cf28408fc4",
+                    "url": "\/user\/1"
+                }
+            ],
+            "name": [
+                {
+                    "value": "Carousel 4.png"
+                }
+            ],
+            "thumbnail": [
+                {
+                    "target_id": 13,
+                    "alt": "empty stadium seats",
+                    "title": null,
+                    "width": 516,
+                    "height": 340,
+                    "target_type": "file",
+                    "target_uuid": "d927d0e8-d324-4399-abe1-6b2248780b89",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2021-04\/Carousel%204.png"
+                }
+            ],
+            "created": [
+                {
+                    "value": "2021-04-29T14:39:46+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2021-04-29T14:39:46+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": true
+                }
+            ],
+            "revision_translation_affected": [
+                {
+                    "value": true
+                }
+            ],
+            "path": [],
+            "field_media_image": [
+                {
+                    "target_id": 13,
+                    "alt": "empty stadium seats",
+                    "title": "",
+                    "width": 516,
+                    "height": 340,
+                    "target_type": "file",
+                    "target_uuid": "d927d0e8-d324-4399-abe1-6b2248780b89",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2021-04\/Carousel%204.png"
+                }
+            ]
+        },
+        "aaf8f0f1-4862-4b68-8f67-cc3b9519a4f5": {
+            "mid": [
+                {
+                    "value": 6
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "aaf8f0f1-4862-4b68-8f67-cc3b9519a4f5"
+                }
+            ],
+            "vid": [
+                {
+                    "value": 6
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "bundle": [
+                {
+                    "target_id": "image",
+                    "target_type": "media_type",
+                    "target_uuid": "5e386cd2-796e-4c60-9bcb-a2c197d21122"
+                }
+            ],
+            "revision_created": [
+                {
+                    "value": "2021-04-29T13:58:47+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "revision_user": [],
+            "revision_log_message": [],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "uid": [
+                {
+                    "target_id": 1,
+                    "target_type": "user",
+                    "target_uuid": "6361368e-0ae3-4a16-b792-05cf28408fc4",
+                    "url": "\/user\/1"
+                }
+            ],
+            "name": [
+                {
+                    "value": "Logo.png"
+                }
+            ],
+            "thumbnail": [
+                {
+                    "target_id": 6,
+                    "alt": "promet logo",
+                    "title": null,
+                    "width": 332,
+                    "height": 332,
+                    "target_type": "file",
+                    "target_uuid": "9927260c-75a1-46d4-8107-24780ea3f84c",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2021-04\/Logo.png"
+                }
+            ],
+            "created": [
+                {
+                    "value": "2021-04-29T13:58:40+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2021-04-29T13:58:40+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": true
+                }
+            ],
+            "revision_translation_affected": [
+                {
+                    "value": true
+                }
+            ],
+            "path": [],
+            "field_media_image": [
+                {
+                    "target_id": 6,
+                    "alt": "promet logo",
+                    "title": "",
+                    "width": 332,
+                    "height": 332,
+                    "target_type": "file",
+                    "target_uuid": "9927260c-75a1-46d4-8107-24780ea3f84c",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2021-04\/Logo.png"
+                }
+            ]
+        },
+        "ace1b519-cda7-4e2c-839a-6c796b2c36b1": {
+            "mid": [
+                {
+                    "value": 8
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "ace1b519-cda7-4e2c-839a-6c796b2c36b1"
+                }
+            ],
+            "vid": [
+                {
+                    "value": 8
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "bundle": [
+                {
+                    "target_id": "image",
+                    "target_type": "media_type",
+                    "target_uuid": "5e386cd2-796e-4c60-9bcb-a2c197d21122"
+                }
+            ],
+            "revision_created": [
+                {
+                    "value": "2021-04-29T14:11:17+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "revision_user": [],
+            "revision_log_message": [],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "uid": [
+                {
+                    "target_id": 1,
+                    "target_type": "user",
+                    "target_uuid": "6361368e-0ae3-4a16-b792-05cf28408fc4",
+                    "url": "\/user\/1"
+                }
+            ],
+            "name": [
+                {
+                    "value": "Image 2.png"
+                }
+            ],
+            "thumbnail": [
+                {
+                    "target_id": 8,
+                    "alt": "a dog looking up",
+                    "title": null,
+                    "width": 299,
+                    "height": 174,
+                    "target_type": "file",
+                    "target_uuid": "403d98aa-3aa6-4e06-8e7c-6f054c9e5dc4",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2021-04\/Image%202.png"
+                }
+            ],
+            "created": [
+                {
+                    "value": "2021-04-29T14:11:09+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2021-04-29T14:11:09+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": true
+                }
+            ],
+            "revision_translation_affected": [
+                {
+                    "value": true
+                }
+            ],
+            "path": [],
+            "field_media_image": [
+                {
+                    "target_id": 8,
+                    "alt": "a dog looking up",
+                    "title": "",
+                    "width": 299,
+                    "height": 174,
+                    "target_type": "file",
+                    "target_uuid": "403d98aa-3aa6-4e06-8e7c-6f054c9e5dc4",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2021-04\/Image%202.png"
+                }
+            ]
+        },
+        "ae13c0ad-dcd8-492b-a2be-c6e980d1d0a3": {
+            "mid": [
+                {
+                    "value": 5
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "ae13c0ad-dcd8-492b-a2be-c6e980d1d0a3"
+                }
+            ],
+            "vid": [
+                {
+                    "value": 5
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "bundle": [
+                {
+                    "target_id": "image",
+                    "target_type": "media_type",
+                    "target_uuid": "5e386cd2-796e-4c60-9bcb-a2c197d21122"
+                }
+            ],
+            "revision_created": [
+                {
+                    "value": "2021-04-29T13:58:26+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "revision_user": [],
+            "revision_log_message": [],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "uid": [
+                {
+                    "target_id": 1,
+                    "target_type": "user",
+                    "target_uuid": "6361368e-0ae3-4a16-b792-05cf28408fc4",
+                    "url": "\/user\/1"
+                }
+            ],
+            "name": [
+                {
+                    "value": "Hero Photo.png"
+                }
+            ],
+            "thumbnail": [
+                {
+                    "target_id": 5,
+                    "alt": "image of forest at dusk",
+                    "title": null,
+                    "width": 2880,
+                    "height": 1184,
+                    "target_type": "file",
+                    "target_uuid": "09ae8475-accd-4acb-b42d-8ba2d8e5e535",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2021-04\/Hero%20Photo.png"
+                }
+            ],
+            "created": [
+                {
+                    "value": "2021-04-29T13:58:16+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2021-04-29T13:58:16+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": true
+                }
+            ],
+            "revision_translation_affected": [
+                {
+                    "value": true
+                }
+            ],
+            "path": [],
+            "field_media_image": [
+                {
+                    "target_id": 5,
+                    "alt": "image of forest at dusk",
+                    "title": "",
+                    "width": 2880,
+                    "height": 1184,
+                    "target_type": "file",
+                    "target_uuid": "09ae8475-accd-4acb-b42d-8ba2d8e5e535",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2021-04\/Hero%20Photo.png"
+                }
+            ]
+        },
+        "b4dd3ff3-2b50-4c31-833b-6d8fdac81acd": {
+            "mid": [
+                {
+                    "value": 3
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "b4dd3ff3-2b50-4c31-833b-6d8fdac81acd"
+                }
+            ],
+            "vid": [
+                {
+                    "value": 3
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "bundle": [
+                {
+                    "target_id": "image",
+                    "target_type": "media_type",
+                    "target_uuid": "5e386cd2-796e-4c60-9bcb-a2c197d21122"
+                }
+            ],
+            "revision_created": [
+                {
+                    "value": "2021-04-28T00:45:13+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "revision_user": [],
+            "revision_log_message": [],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "uid": [
+                {
+                    "target_id": 1,
+                    "target_type": "user",
+                    "target_uuid": "6361368e-0ae3-4a16-b792-05cf28408fc4",
+                    "url": "\/user\/1"
+                }
+            ],
+            "name": [
+                {
+                    "value": "Article Photo 3.png"
+                }
+            ],
+            "thumbnail": [
+                {
+                    "target_id": 3,
+                    "alt": "team at desk in front of sticky notes",
+                    "title": null,
+                    "width": 272,
+                    "height": 272,
+                    "target_type": "file",
+                    "target_uuid": "5bf8abcc-b0f4-47bf-9ab8-39adbd162a01",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2021-04\/Article%20Photo%203.png"
+                }
+            ],
+            "created": [
+                {
+                    "value": "2021-04-28T00:44:57+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2021-04-28T00:44:57+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": true
+                }
+            ],
+            "revision_translation_affected": [
+                {
+                    "value": true
+                }
+            ],
+            "path": [],
+            "field_media_image": [
+                {
+                    "target_id": 3,
+                    "alt": "team at desk in front of sticky notes",
+                    "title": "",
+                    "width": 272,
+                    "height": 272,
+                    "target_type": "file",
+                    "target_uuid": "5bf8abcc-b0f4-47bf-9ab8-39adbd162a01",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2021-04\/Article%20Photo%203.png"
+                }
+            ]
+        },
+        "c340ea09-dd80-4f70-8583-b3480416d1bd": {
+            "mid": [
+                {
+                    "value": 21
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "c340ea09-dd80-4f70-8583-b3480416d1bd"
+                }
+            ],
+            "vid": [
+                {
+                    "value": 34
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "bundle": [
+                {
+                    "target_id": "image",
+                    "target_type": "media_type",
+                    "target_uuid": "5e386cd2-796e-4c60-9bcb-a2c197d21122"
+                }
+            ],
+            "revision_created": [
+                {
+                    "value": "2021-05-20T19:49:27+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "revision_user": [
+                {
+                    "target_id": 5,
+                    "target_type": "user",
+                    "target_uuid": "955a74e2-9dbd-4873-9260-5e190467823b",
+                    "url": "\/user\/5"
+                }
+            ],
+            "revision_log_message": [],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "uid": [
+                {
+                    "target_id": 5,
+                    "target_type": "user",
+                    "target_uuid": "955a74e2-9dbd-4873-9260-5e190467823b",
+                    "url": "\/user\/5"
+                }
+            ],
+            "name": [
+                {
+                    "value": "55__new_normal_for_2021_drag___drop_drupal_content_editing_1 (2).png"
+                }
+            ],
+            "thumbnail": [
+                {
+                    "target_id": 21,
+                    "alt": "Person displaying Provus",
+                    "title": null,
+                    "width": 2500,
+                    "height": 1314,
+                    "target_type": "file",
+                    "target_uuid": "8ee316da-c6ef-4c53-8fd3-b13c898b885a",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2021-05\/55__new_normal_for_2021_drag___drop_drupal_content_editing_1%20%282%29.png"
+                }
+            ],
+            "created": [
+                {
+                    "value": "2021-05-20T16:40:56+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2021-05-20T19:49:27+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": true
+                }
+            ],
+            "revision_translation_affected": [],
+            "path": [],
+            "field_media_image": [
+                {
+                    "target_id": 21,
+                    "alt": "Person displaying Provus",
+                    "title": "",
+                    "width": 2500,
+                    "height": 1314,
+                    "target_type": "file",
+                    "target_uuid": "8ee316da-c6ef-4c53-8fd3-b13c898b885a",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2021-05\/55__new_normal_for_2021_drag___drop_drupal_content_editing_1%20%282%29.png"
+                }
+            ]
+        },
+        "de7594c9-a008-4e34-8ec4-66f22cd8bf91": {
+            "mid": [
+                {
+                    "value": 16
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "de7594c9-a008-4e34-8ec4-66f22cd8bf91"
+                }
+            ],
+            "vid": [
+                {
+                    "value": 16
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "bundle": [
+                {
+                    "target_id": "image",
+                    "target_type": "media_type",
+                    "target_uuid": "5e386cd2-796e-4c60-9bcb-a2c197d21122"
+                }
+            ],
+            "revision_created": [
+                {
+                    "value": "2021-04-29T14:50:52+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "revision_user": [],
+            "revision_log_message": [],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "uid": [
+                {
+                    "target_id": 1,
+                    "target_type": "user",
+                    "target_uuid": "6361368e-0ae3-4a16-b792-05cf28408fc4",
+                    "url": "\/user\/1"
+                }
+            ],
+            "name": [
+                {
+                    "value": "Event Photo 2.png"
+                }
+            ],
+            "thumbnail": [
+                {
+                    "target_id": 16,
+                    "alt": "woman writing at desk",
+                    "title": null,
+                    "width": 720,
+                    "height": 404,
+                    "target_type": "file",
+                    "target_uuid": "2561fa88-bad8-47e7-8c52-2a75ae18c068",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2021-04\/Event%20Photo%202.png"
+                }
+            ],
+            "created": [
+                {
+                    "value": "2021-04-29T14:50:38+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2021-04-29T14:50:38+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": true
+                }
+            ],
+            "revision_translation_affected": [
+                {
+                    "value": true
+                }
+            ],
+            "path": [],
+            "field_media_image": [
+                {
+                    "target_id": 16,
+                    "alt": "woman writing at desk",
+                    "title": "",
+                    "width": 720,
+                    "height": 404,
+                    "target_type": "file",
+                    "target_uuid": "2561fa88-bad8-47e7-8c52-2a75ae18c068",
+                    "url": "http:\/\/provus.docksal\/sites\/default\/files\/2021-04\/Event%20Photo%202.png"
                 }
             ]
         }
-    ]
+    }
 }
