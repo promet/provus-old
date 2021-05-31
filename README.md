@@ -13,7 +13,7 @@ This is a starter project for Drupal 8/9 projects that provides the following:
   * People
   * Landing page
   
-This is meant as a starter to clone and build off of. It is not meant to be an upstream.
+This is meant as a kicstarter to clone and build off of. It is not meant to be an upstream.
 
 This is a project of [Promet Source](http://prometsource.com). "Provus" is Old English for foresight which is [Promethean](https://en.wikipedia.org/wiki/Prometheus) trait.
 
