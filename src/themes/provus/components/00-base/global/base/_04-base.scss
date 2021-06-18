@@ -13,7 +13,10 @@ body {
 }
 
 .main {
-  @include wrapper;
+
+  @include medium {
+    @include wrapper;
+  }
 
   display: block; /* Fix for IE weirdness */
 }

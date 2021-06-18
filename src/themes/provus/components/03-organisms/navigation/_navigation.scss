@@ -38,12 +38,8 @@
     right: 90px;
     order: 3;
 
-    @include medium {
-      right: 15px;
-    }
-
     @include desktop {
-      right: 90px;
+      right: 100px;
     }
   }
 
@@ -126,6 +122,14 @@
       padding: 0 15px 0 20px;
       color: $white;
       cursor: pointer;
+      font-size: 0.0001em;
+      text-indent: -9999px;
+      margin-right: 20px;
+
+      @include medium  {
+        font-size: 1em;
+        text-indent: 0;
+      }
 
       @include desktop {
         height: 67px;
@@ -241,7 +245,7 @@
     .logo__image {
       max-height: 44px;
       margin-bottom: 0;
-      max-width: 200px;
+      max-width: 40vw;
 
       @include desktop {
         z-index: 999;
