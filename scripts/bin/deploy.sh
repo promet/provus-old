@@ -47,7 +47,14 @@ push()
   set_perms
   git add .
   git commit -m "Build for $1"
-  [[ "$HOSTING_PLATFORM" == "pantheon" ]] && pantheon_conn_switch git  ## Must be 'git mode' in Pantheon to commit.
+  if [ "$HOSTING_PLATFORM" == "pantheon" ]
+  then
+    git push deploy HEAD:$1 --force >> /dev/null
+  elif [ "$HOSTING_PLATFORM" == "acquia" ]
+  then
+   echo "Building for Acquia."
+    git push deploy $1 --force >> /dev/null
+  fi
   git push deploy HEAD:$1 --force
 }
 
