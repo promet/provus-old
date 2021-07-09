@@ -1,22 +1,23 @@
+
 #!/bin/bash
 
 DEV_BRANCH="develop"
-REMOTE="master"
 CURRENT_BRANCH=`git name-rev --name-only HEAD`
 CURRENT_TAG=`git name-rev --tags --name-only $(git rev-parse HEAD)`
 
 auth_hosting()
 {
- if [ "$HOSTING_PLATFORM" == "pantheon" ]
- then
+  if [ "$HOSTING_PLATFORM" == "pantheon" ]
+  then
    TERMINUS_BIN=$PROJECT_ROOT/scripts/vendor/terminus
-
    $TERMINUS_BIN auth:login --machine-token=$SECRET_TERMINUS_TOKEN
- else
-   ## TODO: Support Acquia soon...
-   echo "ERROR: Unknown hosting. Supports Pantheon.io for now."
+  elif [ "$HOSTING_PLATFORM" == "acquia" ]
+  then
+   echo "Building for Acquia."
+  else
+   echo "ERROR: Unknown hosting. Supports Pantheon and Acquia for now."
    exit 1
- fi
+  fi
 }
 
 add_remote()
@@ -24,19 +25,28 @@ add_remote()
   git remote add deploy $REMOTE_GIT_REPO
 }
 
+quiet_git() {
+  stdout=$(tempfile)
+  stderr=$(tempfile)
+
+  if ! git "$@" </dev/null >$stdout 2>$stderr; then
+      cat $stderr >&2
+      rm -f $stdout $stderr
+      exit 1
+  fi
+
+  rm -f $stdout $stderr
+}
+
 set_perms() {
   chmod u+x config/content* -R
+  chmod u+x vendor/drush/drush/drush
   chmod u+x $DOCROOT/sites/default/files
 }
 
 pantheon_conn_switch()
 {
-  $TERMINUS_BIN connection:set ${HOSTING_SITE}.dev $1
-}
-
-storybook_deploy()
-{
-  ${PROJECT_ROOT}/scripts/bin/storybook-deploy.sh
+  $TERMINUS_BIN connection:set ${PANTHEON_SITE_NAME}.dev $1
 }
 
 build()
@@ -44,17 +54,36 @@ build()
   ${PROJECT_ROOT}/scripts/bin/build-artifacts.sh
 }
 
-push()
+storybook_deploy()
+{
+  ${PROJECT_ROOT}/scripts/bin/storybook-deploy.sh
+}
+
+setup()
 {
   add_remote
-  set_perms
   build
-  git add .
-  git commit -m "Build for $1" >> /dev/null
-  [[ "$HOSTING_PLATFORM" == "pantheon" ]] && pantheon_conn_switch git  ## Must be 'git mode' in Pantheon to commit.
-  git push deploy HEAD:$REMOTE --force
-  storybook_deploy
+  set_perms
 }
+
+
+push()
+{
+  quiet_git add --force -A $DOCROOT vendor hooks scripts drush
+  quiet_git commit -m "Build for $1"
+  quiet_git push deploy HEAD:$1 --force
+}
+
+tag ()
+{
+  quiet_git tag -d $CURRENT_TAG
+  quiet_git add --force -A $DOCROOT vendor hooks scripts drush
+  quiet_git commit -m "Pushing tag to $HOSTING_PLATFORM..."
+  quiet_git tag $CURRENT_TAG
+  quiet_git push deploy $CURRENT_TAG --force
+  quiet_git push origin artifact-$CURRENT_TAG --force
+}
+
 
 ## ==============
 ## main() below.
@@ -63,8 +92,11 @@ push()
 auth_hosting
 if [ $CURRENT_TAG != "undefined" ]
 then
-  push $CURRENT_TAG
+  setup
+  tag
 elif [ $CURRENT_BRANCH == $DEV_BRANCH ]
 then
-  push $CURRENT_BRANCH
+  setup
+  push $REMOTE_DEPLOY_BRANCH
+  storybook_deploy
 fi
