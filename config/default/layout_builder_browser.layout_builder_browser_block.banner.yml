@@ -1,0 +1,11 @@
+uuid: 0dfa1823-eb95-4938-b9c4-c4a74c30b371
+langcode: en
+status: true
+dependencies: {  }
+id: banner
+block_id: 'inline_block:banner'
+category: widgets
+label: Banner
+weight: null
+image_path: /themes/custom/provus/images/icons/material/photo_library.svg
+image_alt: 'Banner icon'

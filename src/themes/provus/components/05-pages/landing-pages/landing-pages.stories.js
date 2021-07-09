@@ -12,14 +12,13 @@ import mainMenuData from '../../02-molecules/menus/main-menu/main-menu.yml';
 import breadcrumbData from '../../02-molecules/menus/breadcrumbs/breadcrumbs.yml';
 import socialMenuData from '../../02-molecules/menus/social/social-menu.yml';
 import footerMenuData from '../../03-organisms/site/footer-menu.yml';
+import res from '../../03-organisms/group/quicklinks/quicklinks-icons.yml';
+import topics from '../../03-organisms/group/quicklinks/quicklinks.yml';
 import c3 from '../../03-organisms/group/carousel/3-item/carousel-3-items.yml';
 import c4 from '../../03-organisms/group/4-card-featured-group/4-card-featured-group.yml';
 import cm from '../../03-organisms/group/carousel/multicard/multicard.yml';
 import btn from '../../03-organisms/group/by-the-numbers/by-the-numbers.yml';
 import cr from '../../03-organisms/group/column-row/column-row.yml';
-import tabbed from '../../03-organisms/group/tabbed/tabbed.yml';
-
-bannerData.settings.search = true;
 
 const items = {
   c3,
@@ -27,7 +26,8 @@ const items = {
   cm,
   btn,
   cr,
-  tabbed,
+  res,
+  topics,
 };
 
 // Adds search bar.
@@ -51,8 +51,7 @@ hrefTo('Pages/Content Types', 'Article').then((url) => {
             ...breadcrumbData,
             ...socialMenuData,
             ...footerMenuData,
-            card_link_url: url,
-            card__link__text: 'Click here',
+            url,
           }),
         }}
         />

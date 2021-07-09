@@ -10,7 +10,7 @@ field_name: field_count
 entity_type: block_content
 bundle: link_group
 label: 'Automatic Count'
-description: ''
+description: 'The number of items to display.'
 required: false
 translatable: true
 default_value:

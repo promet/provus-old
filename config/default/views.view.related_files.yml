@@ -421,7 +421,7 @@ display:
           click_sort_column: value
           type: timestamp
           settings:
-            date_format: county_default
+            date_format: provus_default
             custom_date_format: ''
             timezone: ''
           group_column: value

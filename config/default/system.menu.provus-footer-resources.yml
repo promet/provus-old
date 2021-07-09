@@ -1,0 +1,8 @@
+uuid: 0bfb028a-c921-49b1-9739-415dd05ebaeb
+langcode: en
+status: true
+dependencies: {  }
+id: provus-footer-resources
+label: 'Footer Resources'
+description: ''
+locked: false

@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - field.field.node.alert.body
-    - field.field.node.alert.field_alert_broadcast
     - field.field.node.alert.field_alert_visibility
     - node.type.alert
   module:
@@ -19,9 +18,9 @@ content:
     type: text_textarea_with_summary
     weight: 121
     settings:
-      rows: 9
-      summary_rows: 3
+      rows: 3
       placeholder: ''
+      summary_rows: 1
       show_summary: false
     third_party_settings: {  }
     region: content
@@ -31,13 +30,6 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_alert_broadcast:
-    weight: 125
-    settings:
-      display_label: true
-    third_party_settings: {  }
-    type: boolean_checkbox
-    region: content
   field_alert_visibility:
     weight: 124
     settings:
@@ -100,7 +92,7 @@ content:
     third_party_settings: {  }
   url_redirects:
     weight: 50
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden: {  }

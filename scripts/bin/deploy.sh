@@ -50,7 +50,7 @@ push()
   set_perms
   build
   git add .
-  git commit -m "Build for $1"
+  git commit -m "Build for $1" >> /dev/null
   [[ "$HOSTING_PLATFORM" == "pantheon" ]] && pantheon_conn_switch git  ## Must be 'git mode' in Pantheon to commit.
   git push deploy HEAD:$REMOTE --force
   storybook_deploy

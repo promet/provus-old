@@ -1,8 +1,0 @@
-uuid: d6369c29-25a3-4a42-97b2-2c1a3106b295
-langcode: en
-status: true
-dependencies: {  }
-id: county-footer-navigation
-label: 'Footer Navigation'
-description: 'Navigation menu for footer'
-locked: false

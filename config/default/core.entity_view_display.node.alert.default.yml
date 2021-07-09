@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - field.field.node.alert.body
-    - field.field.node.alert.field_alert_broadcast
     - field.field.node.alert.field_alert_visibility
     - node.type.alert
   module:
@@ -21,16 +20,6 @@ content:
     weight: 1
     settings: {  }
     third_party_settings: {  }
-    region: content
-  field_alert_broadcast:
-    weight: 3
-    label: above
-    settings:
-      format: default
-      format_custom_false: ''
-      format_custom_true: ''
-    third_party_settings: {  }
-    type: boolean
     region: content
   links:
     weight: 0

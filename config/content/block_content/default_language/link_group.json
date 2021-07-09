@@ -1,19 +1,19 @@
 {
-    "block_content": [
-        {
+    "block_content": {
+        "1445036e-50a7-41ff-9f22-3e4f5975f309": {
             "id": [
                 {
-                    "value": 39
+                    "value": 12
                 }
             ],
             "uuid": [
                 {
-                    "value": "d5d680f8-fccf-485d-b108-00a944e48f3f"
+                    "value": "1445036e-50a7-41ff-9f22-3e4f5975f309"
                 }
             ],
             "revision_id": [
                 {
-                    "value": 39
+                    "value": 76
                 }
             ],
             "langcode": [
@@ -30,7 +30,7 @@
             ],
             "revision_created": [
                 {
-                    "value": "2020-04-21T09:45:48+00:00",
+                    "value": "2021-04-29T14:22:56+00:00",
                     "format": "Y-m-d\\TH:i:sP"
                 }
             ],
@@ -43,12 +43,143 @@
             ],
             "info": [
                 {
-                    "value": "Promo Card"
+                    "value": "Key Provus Benefits"
                 }
             ],
             "changed": [
                 {
-                    "value": "2020-04-21T09:45:48+00:00",
+                    "value": "2021-05-20T16:22:28+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "reusable": [
+                {
+                    "value": false
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": true
+                }
+            ],
+            "revision_translation_affected": [],
+            "field_automatic_article_type": [],
+            "field_automatic_event_type": [],
+            "field_automatic_location_type": [],
+            "field_automatic_number_per_page": [
+                {
+                    "value": 10
+                }
+            ],
+            "field_automatic_offset": [
+                {
+                    "value": 0
+                }
+            ],
+            "field_automatic_pager": [
+                {
+                    "value": false
+                }
+            ],
+            "field_automatic_person_type": [],
+            "field_automatic_sort": [
+                {
+                    "value": "newest"
+                }
+            ],
+            "field_block_items": [
+                {
+                    "target_id": 11,
+                    "target_type": "block_content",
+                    "target_uuid": "b4b9de50-0cc7-4073-b53f-cf6e58d3d7fb",
+                    "url": "\/block\/11"
+                },
+                {
+                    "target_id": 10,
+                    "target_type": "block_content",
+                    "target_uuid": "24307181-28a6-44b6-87c9-fddcbe2fd3c3",
+                    "url": "\/block\/10"
+                },
+                {
+                    "target_id": 9,
+                    "target_type": "block_content",
+                    "target_uuid": "4b9e22e1-c28d-4b60-91f1-6a857b1a9563",
+                    "url": "\/block\/9"
+                }
+            ],
+            "field_content_references": [],
+            "field_content_type": [],
+            "field_count": [
+                {
+                    "value": 3
+                }
+            ],
+            "field_group_display": [
+                {
+                    "value": "carousel_3"
+                }
+            ],
+            "field_group_source": [
+                {
+                    "value": "manual_inline"
+                }
+            ],
+            "field_item_display": [
+                {
+                    "value": "card"
+                }
+            ],
+            "field_link": []
+        },
+        "1df330cf-f1c8-4fdb-870e-2772785c38cd": {
+            "id": [
+                {
+                    "value": 35
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "1df330cf-f1c8-4fdb-870e-2772785c38cd"
+                }
+            ],
+            "revision_id": [
+                {
+                    "value": 56
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "type": [
+                {
+                    "target_id": "link_group",
+                    "target_type": "block_content_type",
+                    "target_uuid": "3cab7a2a-267b-4264-955b-1698ff79c9b3"
+                }
+            ],
+            "revision_created": [
+                {
+                    "value": "2021-04-30T20:17:52+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "revision_user": [],
+            "revision_log": [],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "info": [
+                {
+                    "value": "Test"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2021-04-30T20:17:52+00:00",
                     "format": "Y-m-d\\TH:i:sP"
                 }
             ],
@@ -67,75 +198,73 @@
                     "value": true
                 }
             ],
-            "field_block_items": [
+            "field_automatic_article_type": [],
+            "field_automatic_event_type": [],
+            "field_automatic_location_type": [],
+            "field_automatic_number_per_page": [
                 {
-                    "target_id": 21,
-                    "target_type": "block_content",
-                    "target_uuid": "a9127945-020c-49b3-880c-10971f4f76e4",
-                    "url": "\/block\/21"
-                },
-                {
-                    "target_id": 23,
-                    "target_type": "block_content",
-                    "target_uuid": "7818f263-bda6-4dc3-b0eb-98f02372917a",
-                    "url": "\/block\/23"
-                },
-                {
-                    "target_id": 22,
-                    "target_type": "block_content",
-                    "target_uuid": "9775676b-56a0-4558-9e2b-145fab056261",
-                    "url": "\/block\/22"
-                },
-                {
-                    "target_id": 24,
-                    "target_type": "block_content",
-                    "target_uuid": "018abc9b-2c7a-46ab-84b2-56ab155d4932",
-                    "url": "\/block\/24"
+                    "value": 4
                 }
             ],
+            "field_automatic_offset": [
+                {
+                    "value": 0
+                }
+            ],
+            "field_automatic_pager": [
+                {
+                    "value": true
+                }
+            ],
+            "field_automatic_person_type": [],
+            "field_automatic_sort": [
+                {
+                    "value": "newest"
+                }
+            ],
+            "field_block_items": [],
             "field_content_references": [],
-            "field_content_type": [],
+            "field_content_type": [
+                {
+                    "value": "provus_article"
+                }
+            ],
             "field_count": [
                 {
-                    "value": 3
+                    "value": 99
                 }
             ],
             "field_group_display": [
                 {
-                    "value": "carousel_3"
+                    "value": "column"
                 }
             ],
             "field_group_source": [
                 {
-                    "value": "manual_inline"
+                    "value": "auto"
                 }
             ],
             "field_item_display": [
                 {
-                    "value": "card_promo"
+                    "value": "card"
                 }
             ],
-            "field_link": [],
-            "field_section_background_style": [
-                {
-                    "value": "none"
-                }
-            ]
+            "field_link": []
         },
-        {
+        "32e6471b-a6e0-40d0-839e-d6307ec12fb3": {
             "id": [
                 {
-                    "value": 40
+                    "value": 24
                 }
             ],
             "uuid": [
                 {
-                    "value": "b212a7a6-9f8f-4d25-8bf3-4ddee070c088"
+                    "value": "32e6471b-a6e0-40d0-839e-d6307ec12fb3"
                 }
             ],
             "revision_id": [
                 {
-                    "value": 40
+                    "value": 79
                 }
             ],
             "langcode": [
@@ -152,15 +281,11 @@
             ],
             "revision_created": [
                 {
-                    "value": "2020-03-23T21:03:47+00:00",
+                    "value": "2021-04-29T14:55:21+00:00",
                     "format": "Y-m-d\\TH:i:sP"
                 }
             ],
-            "revision_user": [
-                {
-                    "target_id": 7231318
-                }
-            ],
+            "revision_user": [],
             "revision_log": [],
             "status": [
                 {
@@ -169,18 +294,18 @@
             ],
             "info": [
                 {
-                    "value": "Southport Highlights (LG: Carousel 3 Item)"
+                    "value": "Upcoming Drupal Training Classes"
                 }
             ],
             "changed": [
                 {
-                    "value": "2020-03-23T21:03:47+00:00",
+                    "value": "2021-05-20T17:07:50+00:00",
                     "format": "Y-m-d\\TH:i:sP"
                 }
             ],
             "reusable": [
                 {
-                    "value": true
+                    "value": false
                 }
             ],
             "default_langcode": [
@@ -193,34 +318,37 @@
                     "value": true
                 }
             ],
-            "field_block_items": [
+            "field_automatic_article_type": [],
+            "field_automatic_event_type": [],
+            "field_automatic_location_type": [],
+            "field_automatic_number_per_page": [
                 {
-                    "target_id": 25,
-                    "target_type": "block_content",
-                    "target_uuid": "c9507961-6c9f-478a-9c76-320013e58baa",
-                    "url": "\/block\/25"
-                },
-                {
-                    "target_id": 26,
-                    "target_type": "block_content",
-                    "target_uuid": "9f6f97bd-43c2-4f9a-886f-bc52642d291b",
-                    "url": "\/block\/26"
-                },
-                {
-                    "target_id": 27,
-                    "target_type": "block_content",
-                    "target_uuid": "1014ef9a-185c-48cc-94c1-a1630d6ccfcd",
-                    "url": "\/block\/27"
-                },
-                {
-                    "target_id": 28,
-                    "target_type": "block_content",
-                    "target_uuid": "aab2e0f4-3257-4ca4-b398-0f6e8ea1f393",
-                    "url": "\/block\/28"
+                    "value": 10
                 }
             ],
+            "field_automatic_offset": [
+                {
+                    "value": 0
+                }
+            ],
+            "field_automatic_pager": [
+                {
+                    "value": false
+                }
+            ],
+            "field_automatic_person_type": [],
+            "field_automatic_sort": [
+                {
+                    "value": "newest"
+                }
+            ],
+            "field_block_items": [],
             "field_content_references": [],
-            "field_content_type": [],
+            "field_content_type": [
+                {
+                    "value": "event"
+                }
+            ],
             "field_count": [
                 {
                     "value": 3
@@ -228,40 +356,41 @@
             ],
             "field_group_display": [
                 {
-                    "value": "carousel_3"
+                    "value": "column"
                 }
             ],
             "field_group_source": [
                 {
-                    "value": "manual_inline"
+                    "value": "auto"
                 }
             ],
             "field_item_display": [
                 {
-                    "value": "card_bordered"
+                    "value": "card_event"
                 }
             ],
-            "field_link": [],
-            "field_section_background_style": [
+            "field_link": [
                 {
-                    "value": "none"
+                    "uri": "https:\/\/www.prometsource.com\/training-classes",
+                    "title": "View more training",
+                    "options": []
                 }
             ]
         },
-        {
+        "59f877a1-383f-444a-941b-69a7ea6ed984": {
             "id": [
                 {
-                    "value": 41
+                    "value": 16
                 }
             ],
             "uuid": [
                 {
-                    "value": "2cf180af-dfe5-4815-8f79-bf5a8f014379"
+                    "value": "59f877a1-383f-444a-941b-69a7ea6ed984"
                 }
             ],
             "revision_id": [
                 {
-                    "value": 41
+                    "value": 82
                 }
             ],
             "langcode": [
@@ -278,15 +407,11 @@
             ],
             "revision_created": [
                 {
-                    "value": "2020-03-23T21:06:28+00:00",
+                    "value": "2021-04-29T14:27:18+00:00",
                     "format": "Y-m-d\\TH:i:sP"
                 }
             ],
-            "revision_user": [
-                {
-                    "target_id": 7231318
-                }
-            ],
+            "revision_user": [],
             "revision_log": [],
             "status": [
                 {
@@ -295,18 +420,18 @@
             ],
             "info": [
                 {
-                    "value": "Headlines (LG: 4 Card Featured)"
+                    "value": "Featured News"
                 }
             ],
             "changed": [
                 {
-                    "value": "2020-03-23T21:06:28+00:00",
+                    "value": "2021-05-20T18:22:16+00:00",
                     "format": "Y-m-d\\TH:i:sP"
                 }
             ],
             "reusable": [
                 {
-                    "value": true
+                    "value": false
                 }
             ],
             "default_langcode": [
@@ -319,37 +444,47 @@
                     "value": true
                 }
             ],
-            "field_block_items": [
+            "field_automatic_article_type": [
                 {
-                    "target_id": 25,
-                    "target_type": "block_content",
-                    "target_uuid": "c9507961-6c9f-478a-9c76-320013e58baa",
-                    "url": "\/block\/25"
-                },
-                {
-                    "target_id": 26,
-                    "target_type": "block_content",
-                    "target_uuid": "9f6f97bd-43c2-4f9a-886f-bc52642d291b",
-                    "url": "\/block\/26"
-                },
-                {
-                    "target_id": 27,
-                    "target_type": "block_content",
-                    "target_uuid": "1014ef9a-185c-48cc-94c1-a1630d6ccfcd",
-                    "url": "\/block\/27"
-                },
-                {
-                    "target_id": 28,
-                    "target_type": "block_content",
-                    "target_uuid": "aab2e0f4-3257-4ca4-b398-0f6e8ea1f393",
-                    "url": "\/block\/28"
+                    "target_id": 1,
+                    "target_type": "taxonomy_term",
+                    "target_uuid": "e0007ae8-646a-49c3-88d3-c72541723512",
+                    "url": "\/news"
                 }
             ],
+            "field_automatic_event_type": [],
+            "field_automatic_location_type": [],
+            "field_automatic_number_per_page": [
+                {
+                    "value": 10
+                }
+            ],
+            "field_automatic_offset": [
+                {
+                    "value": 0
+                }
+            ],
+            "field_automatic_pager": [
+                {
+                    "value": false
+                }
+            ],
+            "field_automatic_person_type": [],
+            "field_automatic_sort": [
+                {
+                    "value": "newest"
+                }
+            ],
+            "field_block_items": [],
             "field_content_references": [],
-            "field_content_type": [],
+            "field_content_type": [
+                {
+                    "value": "provus_article"
+                }
+            ],
             "field_count": [
                 {
-                    "value": 3
+                    "value": 4
                 }
             ],
             "field_group_display": [
@@ -359,7 +494,7 @@
             ],
             "field_group_source": [
                 {
-                    "value": "manual_inline"
+                    "value": "auto"
                 }
             ],
             "field_item_display": [
@@ -369,31 +504,26 @@
             ],
             "field_link": [
                 {
-                    "uri": "internal:\/",
-                    "title": "Some More Link Button",
+                    "uri": "internal:\/news",
+                    "title": "Read More About Provus",
                     "options": []
-                }
-            ],
-            "field_section_background_style": [
-                {
-                    "value": "none"
                 }
             ]
         },
-        {
+        "979bf19e-b711-44f3-a6c5-3160ec63f3bb": {
             "id": [
                 {
-                    "value": 42
+                    "value": 34
                 }
             ],
             "uuid": [
                 {
-                    "value": "92799a2a-0572-4888-ae69-5815f9f91480"
+                    "value": "979bf19e-b711-44f3-a6c5-3160ec63f3bb"
                 }
             ],
             "revision_id": [
                 {
-                    "value": 42
+                    "value": 55
                 }
             ],
             "langcode": [
@@ -410,15 +540,11 @@
             ],
             "revision_created": [
                 {
-                    "value": "2020-05-13T16:03:14+00:00",
+                    "value": "2021-04-30T18:17:38+00:00",
                     "format": "Y-m-d\\TH:i:sP"
                 }
             ],
-            "revision_user": [
-                {
-                    "target_id": 48
-                }
-            ],
+            "revision_user": [],
             "revision_log": [],
             "status": [
                 {
@@ -427,18 +553,18 @@
             ],
             "info": [
                 {
-                    "value": "Quicklinks (LG: Carousel Multi)"
+                    "value": "test"
                 }
             ],
             "changed": [
                 {
-                    "value": "2020-05-13T16:03:14+00:00",
+                    "value": "2021-04-30T18:36:31+00:00",
                     "format": "Y-m-d\\TH:i:sP"
                 }
             ],
             "reusable": [
                 {
-                    "value": true
+                    "value": false
                 }
             ],
             "default_langcode": [
@@ -451,42 +577,176 @@
                     "value": true
                 }
             ],
+            "field_automatic_article_type": [],
+            "field_automatic_event_type": [],
+            "field_automatic_location_type": [],
+            "field_automatic_number_per_page": [
+                {
+                    "value": 2
+                }
+            ],
+            "field_automatic_offset": [
+                {
+                    "value": 0
+                }
+            ],
+            "field_automatic_pager": [
+                {
+                    "value": true
+                }
+            ],
+            "field_automatic_person_type": [],
+            "field_automatic_sort": [
+                {
+                    "value": "title"
+                }
+            ],
+            "field_block_items": [],
+            "field_content_references": [],
+            "field_content_type": [
+                {
+                    "value": "provus_article"
+                }
+            ],
+            "field_count": [
+                {
+                    "value": 8
+                }
+            ],
+            "field_group_display": [
+                {
+                    "value": "column"
+                }
+            ],
+            "field_group_source": [
+                {
+                    "value": "auto"
+                }
+            ],
+            "field_item_display": [
+                {
+                    "value": "card"
+                }
+            ],
+            "field_link": []
+        },
+        "a1093dac-d541-45ce-816e-aa75e7809fca": {
+            "id": [
+                {
+                    "value": 20
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "a1093dac-d541-45ce-816e-aa75e7809fca"
+                }
+            ],
+            "revision_id": [
+                {
+                    "value": 88
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "type": [
+                {
+                    "target_id": "link_group",
+                    "target_type": "block_content_type",
+                    "target_uuid": "3cab7a2a-267b-4264-955b-1698ff79c9b3"
+                }
+            ],
+            "revision_created": [
+                {
+                    "value": "2021-04-29T14:36:08+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "revision_user": [],
+            "revision_log": [],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "info": [
+                {
+                    "value": "Provus Features"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2021-05-20T17:58:35+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "reusable": [
+                {
+                    "value": false
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": true
+                }
+            ],
+            "revision_translation_affected": [],
+            "field_automatic_article_type": [],
+            "field_automatic_event_type": [],
+            "field_automatic_location_type": [],
+            "field_automatic_number_per_page": [
+                {
+                    "value": 10
+                }
+            ],
+            "field_automatic_offset": [
+                {
+                    "value": 0
+                }
+            ],
+            "field_automatic_pager": [
+                {
+                    "value": false
+                }
+            ],
+            "field_automatic_person_type": [],
+            "field_automatic_sort": [
+                {
+                    "value": "newest"
+                }
+            ],
             "field_block_items": [
                 {
-                    "target_id": 25,
+                    "target_id": 18,
                     "target_type": "block_content",
-                    "target_uuid": "c9507961-6c9f-478a-9c76-320013e58baa",
-                    "url": "\/block\/25"
+                    "target_uuid": "86afa4b0-aac3-4bf4-9737-b59595cc6733",
+                    "url": "\/block\/18"
                 },
                 {
-                    "target_id": 26,
+                    "target_id": 19,
                     "target_type": "block_content",
-                    "target_uuid": "9f6f97bd-43c2-4f9a-886f-bc52642d291b",
-                    "url": "\/block\/26"
+                    "target_uuid": "d1be2bcc-b22a-4c0d-a648-26b5df95f21b",
+                    "url": "\/block\/19"
                 },
                 {
-                    "target_id": 27,
+                    "target_id": 21,
                     "target_type": "block_content",
-                    "target_uuid": "1014ef9a-185c-48cc-94c1-a1630d6ccfcd",
-                    "url": "\/block\/27"
+                    "target_uuid": "02cb264d-1e19-4d43-831f-7e4e271dcc70",
+                    "url": "\/block\/21"
                 },
                 {
-                    "target_id": 28,
+                    "target_id": 22,
                     "target_type": "block_content",
-                    "target_uuid": "aab2e0f4-3257-4ca4-b398-0f6e8ea1f393",
-                    "url": "\/block\/28"
+                    "target_uuid": "907f23bc-64f7-4f0e-828f-8f1db94f4662",
+                    "url": "\/block\/22"
                 },
                 {
-                    "target_id": 36,
+                    "target_id": 23,
                     "target_type": "block_content",
-                    "target_uuid": "c8b08746-5033-403d-ac1d-842224b33f10",
-                    "url": "\/block\/36"
-                },
-                {
-                    "target_id": 37,
-                    "target_type": "block_content",
-                    "target_uuid": "eca4da01-24b0-4438-b111-304ee1f4f0c5",
-                    "url": "\/block\/37"
+                    "target_uuid": "f5dc20a7-7c78-4b36-89be-20fba4ab58c6",
+                    "url": "\/block\/23"
                 }
             ],
             "field_content_references": [],
@@ -508,30 +768,25 @@
             ],
             "field_item_display": [
                 {
-                    "value": "card_background"
+                    "value": "card"
                 }
             ],
-            "field_link": [],
-            "field_section_background_style": [
-                {
-                    "value": "gradient"
-                }
-            ]
+            "field_link": []
         },
-        {
+        "b5242df0-1e46-4264-82d6-5a55e265d31e": {
             "id": [
                 {
-                    "value": 43
+                    "value": 8
                 }
             ],
             "uuid": [
                 {
-                    "value": "3738c2db-ce57-4848-8d9f-7f86429dd5a8"
+                    "value": "b5242df0-1e46-4264-82d6-5a55e265d31e"
                 }
             ],
             "revision_id": [
                 {
-                    "value": 43
+                    "value": 20
                 }
             ],
             "langcode": [
@@ -548,13 +803,16 @@
             ],
             "revision_created": [
                 {
-                    "value": "2020-05-21T21:42:12+00:00",
+                    "value": "2021-04-29T14:14:10+00:00",
                     "format": "Y-m-d\\TH:i:sP"
                 }
             ],
             "revision_user": [
                 {
-                    "target_id": 4014
+                    "target_id": 1,
+                    "target_type": "user",
+                    "target_uuid": "6361368e-0ae3-4a16-b792-05cf28408fc4",
+                    "url": "\/user\/1"
                 }
             ],
             "revision_log": [],
@@ -565,12 +823,12 @@
             ],
             "info": [
                 {
-                    "value": "Upcoming Events (LG: Column Row - 3)"
+                    "value": "testtest"
                 }
             ],
             "changed": [
                 {
-                    "value": "2020-05-21T21:42:12+00:00",
+                    "value": "2021-04-29T14:14:10+00:00",
                     "format": "Y-m-d\\TH:i:sP"
                 }
             ],
@@ -589,24 +847,36 @@
                     "value": true
                 }
             ],
+            "field_automatic_article_type": [],
+            "field_automatic_event_type": [],
+            "field_automatic_location_type": [],
+            "field_automatic_number_per_page": [
+                {
+                    "value": 10
+                }
+            ],
+            "field_automatic_offset": [
+                {
+                    "value": 0
+                }
+            ],
+            "field_automatic_pager": [
+                {
+                    "value": false
+                }
+            ],
+            "field_automatic_person_type": [],
+            "field_automatic_sort": [
+                {
+                    "value": "newest"
+                }
+            ],
             "field_block_items": [
                 {
-                    "target_id": 36,
+                    "target_id": 7,
                     "target_type": "block_content",
-                    "target_uuid": "c8b08746-5033-403d-ac1d-842224b33f10",
-                    "url": "\/block\/36"
-                },
-                {
-                    "target_id": 37,
-                    "target_type": "block_content",
-                    "target_uuid": "eca4da01-24b0-4438-b111-304ee1f4f0c5",
-                    "url": "\/block\/37"
-                },
-                {
-                    "target_id": 38,
-                    "target_type": "block_content",
-                    "target_uuid": "b7679fc7-2033-4a6b-9d3e-e9d19f44f5d8",
-                    "url": "\/block\/38"
+                    "target_uuid": "21cde809-650e-43a7-8c69-788010429350",
+                    "url": "\/block\/7"
                 }
             ],
             "field_content_references": [],
@@ -618,7 +888,7 @@
             ],
             "field_group_display": [
                 {
-                    "value": "column"
+                    "value": "carousel_3"
                 }
             ],
             "field_group_source": [
@@ -628,36 +898,25 @@
             ],
             "field_item_display": [
                 {
-                    "value": "card_event"
+                    "value": "card"
                 }
             ],
-            "field_link": [
-                {
-                    "uri": "internal:\/events",
-                    "title": "View All Events",
-                    "options": []
-                }
-            ],
-            "field_section_background_style": [
-                {
-                    "value": "solid"
-                }
-            ]
+            "field_link": []
         },
-        {
+        "e5ed04ed-fb19-45df-90fe-db98d4c594c8": {
             "id": [
                 {
-                    "value": 44
+                    "value": 1
                 }
             ],
             "uuid": [
                 {
-                    "value": "3cc914d1-7adc-401f-81d3-9afd0be36db2"
+                    "value": "e5ed04ed-fb19-45df-90fe-db98d4c594c8"
                 }
             ],
             "revision_id": [
                 {
-                    "value": 44
+                    "value": 13
                 }
             ],
             "langcode": [
@@ -674,15 +933,11 @@
             ],
             "revision_created": [
                 {
-                    "value": "2020-03-23T22:08:36+00:00",
+                    "value": "2021-04-28T00:12:15+00:00",
                     "format": "Y-m-d\\TH:i:sP"
                 }
             ],
-            "revision_user": [
-                {
-                    "target_id": 7231318
-                }
-            ],
+            "revision_user": [],
             "revision_log": [],
             "status": [
                 {
@@ -691,18 +946,18 @@
             ],
             "info": [
                 {
-                    "value": "Popular Topics"
+                    "value": "test"
                 }
             ],
             "changed": [
                 {
-                    "value": "2020-03-23T22:08:36+00:00",
+                    "value": "2021-04-28T03:21:08+00:00",
                     "format": "Y-m-d\\TH:i:sP"
                 }
             ],
             "reusable": [
                 {
-                    "value": true
+                    "value": false
                 }
             ],
             "default_langcode": [
@@ -715,87 +970,73 @@
                     "value": true
                 }
             ],
-            "field_block_items": [
+            "field_automatic_article_type": [],
+            "field_automatic_event_type": [],
+            "field_automatic_location_type": [],
+            "field_automatic_number_per_page": [
                 {
-                    "target_id": 29,
-                    "target_type": "block_content",
-                    "target_uuid": "440ba5cb-fff6-48cf-ae36-29ea58f129c2",
-                    "url": "\/block\/29"
-                },
-                {
-                    "target_id": 30,
-                    "target_type": "block_content",
-                    "target_uuid": "3616a6f6-2713-4e66-92ac-b0275f782b73",
-                    "url": "\/block\/30"
-                },
-                {
-                    "target_id": 31,
-                    "target_type": "block_content",
-                    "target_uuid": "ec746acf-3f6c-458e-960a-4829698006aa",
-                    "url": "\/block\/31"
-                },
-                {
-                    "target_id": 32,
-                    "target_type": "block_content",
-                    "target_uuid": "41012712-ccd4-4549-9d5b-275d5c1ac034",
-                    "url": "\/block\/32"
-                },
-                {
-                    "target_id": 33,
-                    "target_type": "block_content",
-                    "target_uuid": "53bc4dbe-1693-4f38-80c1-d917c0f4bfb5",
-                    "url": "\/block\/33"
-                },
-                {
-                    "target_id": 34,
-                    "target_type": "block_content",
-                    "target_uuid": "377353de-c203-42fe-9fdf-b49b077659b1",
-                    "url": "\/block\/34"
+                    "value": 4
                 }
             ],
+            "field_automatic_offset": [
+                {
+                    "value": 0
+                }
+            ],
+            "field_automatic_pager": [
+                {
+                    "value": true
+                }
+            ],
+            "field_automatic_person_type": [],
+            "field_automatic_sort": [
+                {
+                    "value": "title"
+                }
+            ],
+            "field_block_items": [],
             "field_content_references": [],
-            "field_content_type": [],
+            "field_content_type": [
+                {
+                    "value": "provus_article"
+                }
+            ],
             "field_count": [
                 {
-                    "value": 3
+                    "value": 5
                 }
             ],
             "field_group_display": [
                 {
-                    "value": "grid_3"
+                    "value": "grid_2"
                 }
             ],
             "field_group_source": [
                 {
-                    "value": "manual_inline"
+                    "value": "auto"
                 }
             ],
             "field_item_display": [
                 {
-                    "value": "text_link_icon"
+                    "value": "card_bordered"
                 }
             ],
-            "field_link": [],
-            "field_section_background_style": [
-                {
-                    "value": "none"
-                }
-            ]
+            "field_link": []
         },
-        {
+        "ec8069d6-3c7f-4c7d-899e-a9d5a9e8667e": {
             "id": [
                 {
-                    "value": 45
+                    "value": 25
                 }
             ],
             "uuid": [
                 {
-                    "value": "9bb1bf63-70e6-4ed9-8a89-dbc65b349199"
+                    "value": "ec8069d6-3c7f-4c7d-899e-a9d5a9e8667e"
                 }
             ],
             "revision_id": [
                 {
-                    "value": 45
+                    "value": 40
                 }
             ],
             "langcode": [
@@ -812,15 +1053,11 @@
             ],
             "revision_created": [
                 {
-                    "value": "2020-03-23T22:10:31+00:00",
+                    "value": "2021-04-29T15:07:43+00:00",
                     "format": "Y-m-d\\TH:i:sP"
                 }
             ],
-            "revision_user": [
-                {
-                    "target_id": 7231318
-                }
-            ],
+            "revision_user": [],
             "revision_log": [],
             "status": [
                 {
@@ -829,18 +1066,18 @@
             ],
             "info": [
                 {
-                    "value": "Resources"
+                    "value": "Staff"
                 }
             ],
             "changed": [
                 {
-                    "value": "2020-03-23T22:10:31+00:00",
+                    "value": "2021-04-29T15:08:35+00:00",
                     "format": "Y-m-d\\TH:i:sP"
                 }
             ],
             "reusable": [
                 {
-                    "value": true
+                    "value": false
                 }
             ],
             "default_langcode": [
@@ -853,46 +1090,37 @@
                     "value": true
                 }
             ],
-            "field_block_items": [
+            "field_automatic_article_type": [],
+            "field_automatic_event_type": [],
+            "field_automatic_location_type": [],
+            "field_automatic_number_per_page": [
                 {
-                    "target_id": 34,
-                    "target_type": "block_content",
-                    "target_uuid": "377353de-c203-42fe-9fdf-b49b077659b1",
-                    "url": "\/block\/34"
-                },
-                {
-                    "target_id": 33,
-                    "target_type": "block_content",
-                    "target_uuid": "53bc4dbe-1693-4f38-80c1-d917c0f4bfb5",
-                    "url": "\/block\/33"
-                },
-                {
-                    "target_id": 31,
-                    "target_type": "block_content",
-                    "target_uuid": "ec746acf-3f6c-458e-960a-4829698006aa",
-                    "url": "\/block\/31"
-                },
-                {
-                    "target_id": 32,
-                    "target_type": "block_content",
-                    "target_uuid": "41012712-ccd4-4549-9d5b-275d5c1ac034",
-                    "url": "\/block\/32"
-                },
-                {
-                    "target_id": 30,
-                    "target_type": "block_content",
-                    "target_uuid": "3616a6f6-2713-4e66-92ac-b0275f782b73",
-                    "url": "\/block\/30"
-                },
-                {
-                    "target_id": 29,
-                    "target_type": "block_content",
-                    "target_uuid": "440ba5cb-fff6-48cf-ae36-29ea58f129c2",
-                    "url": "\/block\/29"
+                    "value": 10
                 }
             ],
+            "field_automatic_offset": [
+                {
+                    "value": 0
+                }
+            ],
+            "field_automatic_pager": [
+                {
+                    "value": false
+                }
+            ],
+            "field_automatic_person_type": [],
+            "field_automatic_sort": [
+                {
+                    "value": "title"
+                }
+            ],
+            "field_block_items": [],
             "field_content_references": [],
-            "field_content_type": [],
+            "field_content_type": [
+                {
+                    "value": "person"
+                }
+            ],
             "field_count": [
                 {
                     "value": 3
@@ -905,278 +1133,15 @@
             ],
             "field_group_source": [
                 {
-                    "value": "manual_inline"
+                    "value": "auto"
                 }
             ],
             "field_item_display": [
                 {
-                    "value": "text_link"
+                    "value": "card_circle_image"
                 }
             ],
-            "field_link": [],
-            "field_section_background_style": [
-                {
-                    "value": "none"
-                }
-            ]
-        },
-        {
-            "id": [
-                {
-                    "value": 46
-                }
-            ],
-            "uuid": [
-                {
-                    "value": "8d8227b1-5a03-4770-a0fe-b3b86006baf5"
-                }
-            ],
-            "revision_id": [
-                {
-                    "value": 46
-                }
-            ],
-            "langcode": [
-                {
-                    "value": "en"
-                }
-            ],
-            "type": [
-                {
-                    "target_id": "link_group",
-                    "target_type": "block_content_type",
-                    "target_uuid": "3cab7a2a-267b-4264-955b-1698ff79c9b3"
-                }
-            ],
-            "revision_created": [
-                {
-                    "value": "2020-05-06T12:00:59+00:00",
-                    "format": "Y-m-d\\TH:i:sP"
-                }
-            ],
-            "revision_user": [
-                {
-                    "target_id": 37
-                }
-            ],
-            "revision_log": [],
-            "status": [
-                {
-                    "value": true
-                }
-            ],
-            "info": [
-                {
-                    "value": "Promo Card Example"
-                }
-            ],
-            "changed": [
-                {
-                    "value": "2020-05-06T12:00:59+00:00",
-                    "format": "Y-m-d\\TH:i:sP"
-                }
-            ],
-            "reusable": [
-                {
-                    "value": true
-                }
-            ],
-            "default_langcode": [
-                {
-                    "value": true
-                }
-            ],
-            "revision_translation_affected": [
-                {
-                    "value": true
-                }
-            ],
-            "field_block_items": [
-                {
-                    "target_id": 21,
-                    "target_type": "block_content",
-                    "target_uuid": "a9127945-020c-49b3-880c-10971f4f76e4",
-                    "url": "\/block\/21"
-                },
-                {
-                    "target_id": 23,
-                    "target_type": "block_content",
-                    "target_uuid": "7818f263-bda6-4dc3-b0eb-98f02372917a",
-                    "url": "\/block\/23"
-                },
-                {
-                    "target_id": 22,
-                    "target_type": "block_content",
-                    "target_uuid": "9775676b-56a0-4558-9e2b-145fab056261",
-                    "url": "\/block\/22"
-                },
-                {
-                    "target_id": 24,
-                    "target_type": "block_content",
-                    "target_uuid": "018abc9b-2c7a-46ab-84b2-56ab155d4932",
-                    "url": "\/block\/24"
-                },
-                {
-                    "target_id": 35,
-                    "target_type": "block_content",
-                    "target_uuid": "d488e6cd-c99e-411d-b265-ba31e4ed4624",
-                    "url": "\/block\/35"
-                }
-            ],
-            "field_content_references": [],
-            "field_content_type": [],
-            "field_count": [
-                {
-                    "value": 3
-                }
-            ],
-            "field_group_display": [
-                {
-                    "value": "carousel_promo"
-                }
-            ],
-            "field_group_source": [
-                {
-                    "value": "manual_inline"
-                }
-            ],
-            "field_item_display": [
-                {
-                    "value": "card_promo"
-                }
-            ],
-            "field_link": [],
-            "field_section_background_style": [
-                {
-                    "value": "solid"
-                }
-            ]
-        },
-        {
-            "id": [
-                {
-                    "value": 47
-                }
-            ],
-            "uuid": [
-                {
-                    "value": "767865ea-91e9-4673-ac8a-36679062d064"
-                }
-            ],
-            "revision_id": [
-                {
-                    "value": 47
-                }
-            ],
-            "langcode": [
-                {
-                    "value": "en"
-                }
-            ],
-            "type": [
-                {
-                    "target_id": "link_group",
-                    "target_type": "block_content_type",
-                    "target_uuid": "3cab7a2a-267b-4264-955b-1698ff79c9b3"
-                }
-            ],
-            "revision_created": [
-                {
-                    "value": "2020-05-06T11:57:50+00:00",
-                    "format": "Y-m-d\\TH:i:sP"
-                }
-            ],
-            "revision_user": [
-                {
-                    "target_id": 37
-                }
-            ],
-            "revision_log": [],
-            "status": [
-                {
-                    "value": true
-                }
-            ],
-            "info": [
-                {
-                    "value": "Link Group 4 Images"
-                }
-            ],
-            "changed": [
-                {
-                    "value": "2020-05-06T11:57:50+00:00",
-                    "format": "Y-m-d\\TH:i:sP"
-                }
-            ],
-            "reusable": [
-                {
-                    "value": true
-                }
-            ],
-            "default_langcode": [
-                {
-                    "value": true
-                }
-            ],
-            "revision_translation_affected": [
-                {
-                    "value": true
-                }
-            ],
-            "field_block_items": [
-                {
-                    "target_id": 23,
-                    "target_type": "block_content",
-                    "target_uuid": "7818f263-bda6-4dc3-b0eb-98f02372917a",
-                    "url": "\/block\/23"
-                },
-                {
-                    "target_id": 37,
-                    "target_type": "block_content",
-                    "target_uuid": "eca4da01-24b0-4438-b111-304ee1f4f0c5",
-                    "url": "\/block\/37"
-                },
-                {
-                    "target_id": 25,
-                    "target_type": "block_content",
-                    "target_uuid": "c9507961-6c9f-478a-9c76-320013e58baa",
-                    "url": "\/block\/25"
-                },
-                {
-                    "target_id": 36,
-                    "target_type": "block_content",
-                    "target_uuid": "c8b08746-5033-403d-ac1d-842224b33f10",
-                    "url": "\/block\/36"
-                }
-            ],
-            "field_content_references": [],
-            "field_content_type": [],
-            "field_count": [
-                {
-                    "value": 3
-                }
-            ],
-            "field_group_display": [
-                {
-                    "value": "column"
-                }
-            ],
-            "field_group_source": [
-                {
-                    "value": "manual_inline"
-                }
-            ],
-            "field_item_display": [
-                {
-                    "value": "square_image"
-                }
-            ],
-            "field_link": [],
-            "field_section_background_style": [
-                {
-                    "value": "none"
-                }
-            ]
+            "field_link": []
         }
-    ]
+    }
 }

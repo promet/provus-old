@@ -30,12 +30,12 @@ Drupal.behaviors.navigation = {
           case 'catalog':
             search.setAttribute('name', 'q');
             search.setAttribute('placeholder', 'Find books and more...');
-            frm.action = 'https://catalog.ocpl.org/client/en_US/default/search/results';
+            frm.action = 'https://example.com/catalog';
             break;
-          case 'county':
+          case 'org':
             search.setAttribute('name', 'q');
             search.setAttribute('placeholder', 'Search...');
-            frm.action = 'https://www.ocgov.com/search';
+            frm.action = 'https://example.com/search';
             break;
           case 'agency':
           default:

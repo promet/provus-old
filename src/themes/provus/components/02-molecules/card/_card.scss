@@ -492,6 +492,28 @@
 
 /* Circle Image */
 .circle-img {
+  
+  a:hover {
+    .circle-img__img {
+      .mask {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.8;
+        background-color: $rollover-menu-hover;
+      }
+    }
+
+    .circle-img__content {
+      .circle-img__heading,
+      .circle-img__heading:hover {
+        color: $primary !important;
+        text-decoration: underline !important;
+        font-weight: 700 !important;
+      }
+    }
+  }
 
   &__gral {
     position: relative;
@@ -522,28 +544,6 @@
         text-decoration: none !important;
 
         @include heading-large($font-size: 1.25rem, $line-height: 1.75rem, $margin: 16px 0 0 0);
-      }
-    }
-
-    &:hover {
-      .circle-img__img {
-        .mask {
-          position: absolute;
-          top: 0;
-          width: 100%;
-          height: 100%;
-          opacity: 0.8;
-          background-color: $primary;
-        }
-      }
-
-      .circle-img__content {
-        .circle-img__heading,
-        .circle-img__heading:hover {
-          color: $primary !important;
-          text-decoration: underline !important;
-          font-weight: 700 !important;
-        }
       }
     }
 

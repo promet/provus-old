@@ -12,17 +12,11 @@ type: list_string
 settings:
   allowed_values:
     -
-      value: county_page
+      value: provus_page
       label: Page
     -
-      value: landing_page
-      label: 'Landing Page'
-    -
-      value: county_article-news
-      label: 'Article - News'
-    -
-      value: county_article-press
-      label: 'Article - Press'
+      value: provus_article
+      label: Article
     -
       value: event
       label: Event

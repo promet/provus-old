@@ -10,48 +10,12 @@ dependencies:
     - node.type.landing_page
   module:
     - layout_builder
-    - layout_builder_restrictions
     - smart_trim
     - user
 third_party_settings:
   layout_builder:
     allow_custom: false
     enabled: false
-  layout_builder_restrictions:
-    entity_view_mode_restriction:
-      allowed_blocks:
-        'Content fields': {  }
-        'Custom block types':
-          - accordion
-          - banner
-          - button
-          - columns
-          - link_group
-          - media_item
-          - number_list
-          - social_feed
-          - tabs
-          - text
-        Forms: {  }
-        Help: {  }
-        'Inline blocks':
-          - 'inline_block:accordion'
-          - 'inline_block:banner'
-          - 'inline_block:button'
-          - 'inline_block:columns'
-          - 'inline_block:link_group'
-          - 'inline_block:media_item'
-          - 'inline_block:number_list'
-          - 'inline_block:social_feed'
-          - 'inline_block:tabs'
-          - 'inline_block:text'
-        'Lists (Views)': {  }
-        Menus: {  }
-        System: {  }
-        User: {  }
-        'User fields': {  }
-        core: {  }
-      allowed_layouts: {  }
 id: node.landing_page.text_link_icon
 targetEntityType: node
 bundle: landing_page

@@ -11,6 +11,9 @@ module:
   breakpoint: 0
   calendar_link: 0
   calendar_recurring_event: 0
+  chosen: 0
+  chosen_field: 0
+  chosen_lib: 0
   ckeditor: 0
   color: 0
   components: 0
@@ -18,10 +21,11 @@ module:
   config_filter: 0
   contact: 0
   contextual: 0
-  county_blocks: 0
   crop: 0
   ctools: 0
+  ctools_block: 0
   datetime: 0
+  dblog: 0
   devel: 0
   dropzonejs: 0
   dynamic_page_cache: 0
@@ -54,7 +58,6 @@ module:
   layout_builder: 0
   layout_builder_browser: 0
   layout_builder_modal: 0
-  layout_builder_restrictions: 0
   layout_builder_styles: 0
   layout_discovery: 0
   layout_library: 0
@@ -78,15 +81,18 @@ module:
   path_alias: 0
   pathauto: 0
   pdfpreview: 0
+  provus_blocks: 0
   quickedit: 0
   rdf: 0
   redirect: 0
   redirect_404: 0
   responsive_image: 0
   search_api: 0
+  search_api_db: 0
   search_api_glossary: 0
   search_api_solr: 0
   serialization: 0
+  settings_tray: 0
   shortcut: 0
   simple_instagram_feed: 0
   smart_trim: 0
@@ -104,6 +110,7 @@ module:
   view_unpublished: 0
   views_ui: 0
   viewsreference: 0
+  vocabulary_condition: 0
   webform: 0
   webform_ui: 0
   extlink: 1

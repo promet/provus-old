@@ -1,0 +1,865 @@
+{
+    "node": {
+        "152122f9-93b1-48d5-862d-8a2f0700a604": {
+            "nid": [
+                {
+                    "value": 17
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "152122f9-93b1-48d5-862d-8a2f0700a604"
+                }
+            ],
+            "vid": [
+                {
+                    "value": 59
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "type": [
+                {
+                    "target_id": "provus_page",
+                    "target_type": "node_type",
+                    "target_uuid": "10bff250-d719-4887-af33-265179e86538"
+                }
+            ],
+            "revision_timestamp": [
+                {
+                    "value": "2021-04-29T16:13:42+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "revision_uid": [
+                {
+                    "target_id": 1,
+                    "target_type": "user",
+                    "target_uuid": "6361368e-0ae3-4a16-b792-05cf28408fc4",
+                    "url": "\/user\/1"
+                }
+            ],
+            "revision_log": [],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "uid": [
+                {
+                    "target_id": 1,
+                    "target_type": "user",
+                    "target_uuid": "6361368e-0ae3-4a16-b792-05cf28408fc4",
+                    "url": "\/user\/1"
+                }
+            ],
+            "title": [
+                {
+                    "value": "Staff"
+                }
+            ],
+            "created": [
+                {
+                    "value": "2021-04-29T15:50:35+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2021-04-29T16:13:42+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "promote": [
+                {
+                    "value": false
+                }
+            ],
+            "sticky": [
+                {
+                    "value": false
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": true
+                }
+            ],
+            "revision_translation_affected": [
+                {
+                    "value": true
+                }
+            ],
+            "path": [],
+            "body": [],
+            "field_file": [],
+            "field_media_image": [],
+            "layout_builder__layout": [
+                {
+                    "section": {
+                        "layout_id": "layout_onecol",
+                        "layout_settings": {
+                            "label": ""
+                        },
+                        "components": [
+                            {
+                                "uuid": "0ebf7f53-c901-47ee-98b9-0ef5cb304f3c",
+                                "region": "content",
+                                "configuration": {
+                                    "label_display": "0",
+                                    "context_mapping": {
+                                        "entity": "layout_builder.entity"
+                                    },
+                                    "id": "field_block:node:provus_page:body",
+                                    "formatter": {
+                                        "label": "hidden",
+                                        "type": "text_default",
+                                        "settings": [],
+                                        "third_party_settings": []
+                                    }
+                                },
+                                "additional": [],
+                                "weight": 1
+                            },
+                            {
+                                "uuid": "4a1a2dc8-679e-448f-b233-dca6af1b4c8b",
+                                "region": "content",
+                                "configuration": {
+                                    "id": "inline_block:person_list",
+                                    "label": "Staff",
+                                    "provider": "layout_builder",
+                                    "label_display": 0,
+                                    "view_mode": "full",
+                                    "block_revision_id": "53",
+                                    "block_serialized": null,
+                                    "context_mapping": [],
+                                    "type": "person_list",
+                                    "uuid": "4453de81-db97-4ae3-94e9-d81f27e1f797"
+                                },
+                                "additional": [],
+                                "weight": 2
+                            }
+                        ],
+                        "third_party_settings": []
+                    }
+                },
+                {
+                    "section": {
+                        "layout_id": "layout_twocol_section",
+                        "layout_settings": {
+                            "label": "",
+                            "column_widths": "50-50"
+                        },
+                        "components": [
+                            {
+                                "uuid": "64884b35-db57-4331-a1f6-fab35317ea9d",
+                                "region": "first",
+                                "configuration": {
+                                    "id": "webform_block",
+                                    "label": "Webform",
+                                    "provider": "webform",
+                                    "label_display": 0,
+                                    "webform_id": "contact",
+                                    "default_data": "",
+                                    "redirect": 0,
+                                    "context_mapping": []
+                                },
+                                "additional": [],
+                                "weight": 0
+                            },
+                            {
+                                "uuid": "034f221f-533d-4632-8554-af617c03c26c",
+                                "region": "second",
+                                "configuration": {
+                                    "id": "inline_block:text",
+                                    "label": "Join Us",
+                                    "provider": "layout_builder",
+                                    "label_display": "visible",
+                                    "view_mode": "full",
+                                    "block_revision_id": "49",
+                                    "block_serialized": null,
+                                    "context_mapping": [],
+                                    "type": "text",
+                                    "uuid": "ba4769b3-f3f8-422e-a363-7131ecd369dc"
+                                },
+                                "additional": [],
+                                "weight": 0
+                            }
+                        ],
+                        "third_party_settings": []
+                    }
+                },
+                {
+                    "section": {
+                        "layout_id": "layout_onecol",
+                        "layout_settings": {
+                            "label": ""
+                        },
+                        "components": [
+                            {
+                                "uuid": "7e022e90-b044-47d2-a3fb-0beeec78a555",
+                                "region": "content",
+                                "configuration": {
+                                    "id": "inline_block:photo_gallery",
+                                    "label": "Staff Fun",
+                                    "provider": "layout_builder",
+                                    "label_display": "visible",
+                                    "view_mode": "full",
+                                    "block_revision_id": "50",
+                                    "block_serialized": null,
+                                    "context_mapping": [],
+                                    "type": "photo_gallery",
+                                    "uuid": "857313bd-f201-4ac3-b23b-e5e686cb967a"
+                                },
+                                "additional": [],
+                                "weight": 0
+                            }
+                        ],
+                        "third_party_settings": []
+                    }
+                }
+            ]
+        },
+        "3d915f73-dd26-42a2-90f9-ed29e7f4f2ed": {
+            "nid": [
+                {
+                    "value": 16
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "3d915f73-dd26-42a2-90f9-ed29e7f4f2ed"
+                }
+            ],
+            "vid": [
+                {
+                    "value": 61
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "type": [
+                {
+                    "target_id": "provus_page",
+                    "target_type": "node_type",
+                    "target_uuid": "10bff250-d719-4887-af33-265179e86538"
+                }
+            ],
+            "revision_timestamp": [
+                {
+                    "value": "2021-04-30T18:36:31+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "revision_uid": [
+                {
+                    "target_id": 1,
+                    "target_type": "user",
+                    "target_uuid": "6361368e-0ae3-4a16-b792-05cf28408fc4",
+                    "url": "\/user\/1"
+                }
+            ],
+            "revision_log": [],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "uid": [
+                {
+                    "target_id": 1,
+                    "target_type": "user",
+                    "target_uuid": "6361368e-0ae3-4a16-b792-05cf28408fc4",
+                    "url": "\/user\/1"
+                }
+            ],
+            "title": [
+                {
+                    "value": "Staff"
+                }
+            ],
+            "created": [
+                {
+                    "value": "2021-04-29T15:29:35+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2021-04-30T18:36:31+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "promote": [
+                {
+                    "value": false
+                }
+            ],
+            "sticky": [
+                {
+                    "value": false
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": true
+                }
+            ],
+            "revision_translation_affected": [
+                {
+                    "value": true
+                }
+            ],
+            "path": [],
+            "body": [],
+            "field_file": [],
+            "field_media_image": [],
+            "layout_builder__layout": [
+                {
+                    "section": {
+                        "layout_id": "layout_onecol",
+                        "layout_settings": {
+                            "label": ""
+                        },
+                        "components": [
+                            {
+                                "uuid": "0ebf7f53-c901-47ee-98b9-0ef5cb304f3c",
+                                "region": "content",
+                                "configuration": {
+                                    "label_display": "0",
+                                    "context_mapping": {
+                                        "entity": "layout_builder.entity"
+                                    },
+                                    "id": "field_block:node:provus_page:body",
+                                    "formatter": {
+                                        "label": "hidden",
+                                        "type": "text_default",
+                                        "settings": [],
+                                        "third_party_settings": []
+                                    }
+                                },
+                                "additional": [],
+                                "weight": 1
+                            },
+                            {
+                                "uuid": "12e2c276-148c-4bc0-b765-0344f2fc300f",
+                                "region": "content",
+                                "configuration": {
+                                    "id": "inline_block:person_list",
+                                    "label": "Staff",
+                                    "provider": "layout_builder",
+                                    "label_display": "visible",
+                                    "view_mode": "full",
+                                    "block_revision_id": "45",
+                                    "block_serialized": null,
+                                    "context_mapping": [],
+                                    "type": "person_list",
+                                    "uuid": "0e0fa168-b21c-44a2-8065-ef1a985da0f2"
+                                },
+                                "additional": [],
+                                "weight": 2
+                            },
+                            {
+                                "uuid": "d459e2d7-5224-4507-bf9f-5401b147b694",
+                                "region": "content",
+                                "configuration": {
+                                    "id": "inline_block:photo_gallery",
+                                    "label": "test",
+                                    "provider": "layout_builder",
+                                    "label_display": "visible",
+                                    "view_mode": "full",
+                                    "block_revision_id": "46",
+                                    "block_serialized": null,
+                                    "context_mapping": [],
+                                    "type": "photo_gallery",
+                                    "uuid": "b5b712a0-53d1-438f-80d0-0d2906d3528f"
+                                },
+                                "additional": [],
+                                "weight": 3
+                            }
+                        ],
+                        "third_party_settings": []
+                    }
+                },
+                {
+                    "section": {
+                        "layout_id": "layout_twocol_section",
+                        "layout_settings": {
+                            "label": "",
+                            "column_widths": "50-50"
+                        },
+                        "components": [
+                            {
+                                "uuid": "421220e2-ce1f-4286-83ab-ead7bad51329",
+                                "region": "first",
+                                "configuration": {
+                                    "id": "inline_block:text",
+                                    "label": "Join Us",
+                                    "provider": "layout_builder",
+                                    "label_display": "visible",
+                                    "view_mode": "full",
+                                    "block_revision_id": "47",
+                                    "block_serialized": null,
+                                    "context_mapping": [],
+                                    "type": "text",
+                                    "uuid": "7816c21a-e67d-4d4b-84e0-608328acbe94"
+                                },
+                                "additional": [],
+                                "weight": 0
+                            },
+                            {
+                                "uuid": "f8895d22-12ce-499d-91ba-45c1e3c8b72e",
+                                "region": "second",
+                                "configuration": {
+                                    "id": "webform_block",
+                                    "label": "Sign up now",
+                                    "provider": "webform",
+                                    "label_display": "visible",
+                                    "webform_id": "contact",
+                                    "default_data": "",
+                                    "redirect": 0,
+                                    "context_mapping": []
+                                },
+                                "additional": [],
+                                "weight": 0
+                            }
+                        ],
+                        "third_party_settings": []
+                    }
+                },
+                {
+                    "section": {
+                        "layout_id": "layout_onecol",
+                        "layout_settings": {
+                            "label": ""
+                        },
+                        "components": [
+                            {
+                                "uuid": "2d192733-ceef-45b0-baea-27c363832690",
+                                "region": "content",
+                                "configuration": {
+                                    "id": "inline_block:link_group",
+                                    "label": "test",
+                                    "provider": "layout_builder",
+                                    "label_display": "visible",
+                                    "view_mode": "full",
+                                    "block_revision_id": "55",
+                                    "block_serialized": null,
+                                    "context_mapping": [],
+                                    "type": "link_group",
+                                    "uuid": "979bf19e-b711-44f3-a6c5-3160ec63f3bb"
+                                },
+                                "additional": [],
+                                "weight": 0
+                            }
+                        ],
+                        "third_party_settings": []
+                    }
+                }
+            ]
+        },
+        "581f5cde-9650-4fec-b818-64ec70ece7ae": {
+            "nid": [
+                {
+                    "value": 15
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "581f5cde-9650-4fec-b818-64ec70ece7ae"
+                }
+            ],
+            "vid": [
+                {
+                    "value": 48
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "type": [
+                {
+                    "target_id": "provus_page",
+                    "target_type": "node_type",
+                    "target_uuid": "10bff250-d719-4887-af33-265179e86538"
+                }
+            ],
+            "revision_timestamp": [
+                {
+                    "value": "2021-04-29T15:21:32+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "revision_uid": [
+                {
+                    "target_id": 1,
+                    "target_type": "user",
+                    "target_uuid": "6361368e-0ae3-4a16-b792-05cf28408fc4",
+                    "url": "\/user\/1"
+                }
+            ],
+            "revision_log": [],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "uid": [
+                {
+                    "target_id": 1,
+                    "target_type": "user",
+                    "target_uuid": "6361368e-0ae3-4a16-b792-05cf28408fc4",
+                    "url": "\/user\/1"
+                }
+            ],
+            "title": [
+                {
+                    "value": "People"
+                }
+            ],
+            "created": [
+                {
+                    "value": "2021-04-29T15:05:08+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2021-04-29T15:21:32+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "promote": [
+                {
+                    "value": false
+                }
+            ],
+            "sticky": [
+                {
+                    "value": false
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": true
+                }
+            ],
+            "revision_translation_affected": [
+                {
+                    "value": true
+                }
+            ],
+            "path": [],
+            "body": [
+                {
+                    "value": "<p>This page exhibits the person list.<\/p>\r\n",
+                    "format": "basic_html",
+                    "processed": "<p>This page exhibits the person list.<\/p>",
+                    "summary": ""
+                }
+            ],
+            "field_file": [],
+            "field_media_image": [],
+            "layout_builder__layout": [
+                {
+                    "section": {
+                        "layout_id": "layout_onecol",
+                        "layout_settings": {
+                            "label": ""
+                        },
+                        "components": [
+                            {
+                                "uuid": "a96e7cee-94b8-451d-91ce-eb4ac51404a6",
+                                "region": "content",
+                                "configuration": {
+                                    "id": "inline_block:person_list",
+                                    "label": "Staff",
+                                    "provider": "layout_builder",
+                                    "label_display": "visible",
+                                    "view_mode": "full",
+                                    "block_revision_id": "44",
+                                    "block_serialized": null,
+                                    "context_mapping": [],
+                                    "type": "person_list",
+                                    "uuid": "7dba191f-40b4-49c9-9b57-149ac54fad8f"
+                                },
+                                "additional": [],
+                                "weight": 0
+                            }
+                        ],
+                        "third_party_settings": []
+                    }
+                }
+            ]
+        },
+        "6871e4b4-85e0-4f81-be7c-95540bfe50b6": {
+            "nid": [
+                {
+                    "value": 7
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "6871e4b4-85e0-4f81-be7c-95540bfe50b6"
+                }
+            ],
+            "vid": [
+                {
+                    "value": 139
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "type": [
+                {
+                    "target_id": "provus_page",
+                    "target_type": "node_type",
+                    "target_uuid": "10bff250-d719-4887-af33-265179e86538"
+                }
+            ],
+            "revision_timestamp": [
+                {
+                    "value": "2021-05-20T20:30:07+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "revision_uid": [
+                {
+                    "target_id": 4,
+                    "target_type": "user",
+                    "target_uuid": "cf169566-453e-4787-a833-0ffc97d48d40",
+                    "url": "\/user\/4"
+                }
+            ],
+            "revision_log": [],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "uid": [
+                {
+                    "target_id": 1,
+                    "target_type": "user",
+                    "target_uuid": "6361368e-0ae3-4a16-b792-05cf28408fc4",
+                    "url": "\/user\/1"
+                }
+            ],
+            "title": [
+                {
+                    "value": "Empowering Marketers and Content Editors"
+                }
+            ],
+            "created": [
+                {
+                    "value": "2021-04-29T13:40:38+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2021-05-20T20:30:07+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "promote": [
+                {
+                    "value": false
+                }
+            ],
+            "sticky": [
+                {
+                    "value": false
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": true
+                }
+            ],
+            "revision_translation_affected": [
+                {
+                    "value": true
+                }
+            ],
+            "path": [],
+            "body": [
+                {
+                    "value": "<p><strong>Provus is <a href=\"https:\/\/www.prometsource.com\/provus\">Promet\u2019s Drupal platform<\/a> that provides marketers and content editors with a library of design components so they can quickly build and change pages the way they want - to ensure their site is performing how they want.<\/strong><\/p>\r\n\r\n<h3>A Drupal Site that Lets YOU Take Control<\/h3>\r\n\r\n<p>Marketers need to move quickly to be able to update their websites as priorities change, new products get rolled out, and strategies are revised. Until now though, Drupal websites have moved at a slower pace requiring IT or a web designer\u2019s involvement to make changes to pages and layouts.<\/p>\r\n\r\n<h3>Imagine YOU Holding the Keys to Your Website!<\/h3>\r\n\r\n<p>Committed to empowering fast-moving marketing teams and content editors with the ability to easily edit, revise, and change their sites as needed, Promet Source has developed Provus, a drag-and-drop site building tool. Provus provides a foundation for DIY design and creativity without the need for IT or a web designer while ensuring pages stay within defined brand standards for greater design flexibility and site governance.<\/p>\r\n\r\n<h3>Enter the Code-Free Zone<\/h3>\r\n\r\n<p>Without the need for any coding expertise, marketers can build pages by selecting from curated libraries of high-quality, commonly used components -- such as galleries, maps, lists, blogs, FAQs, and events -- that are flexible enough to be mixed, matched, and rearranged.&nbsp; Simplifying workflows frees up resources for a sharper focus on strategy!<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<blockquote>\r\n<p><strong>Drag and Drop with One-Click Editing<\/strong><br \/>\r\nFlexible content editing capabilities with drag and drop functionality and seamlessly edit components eliminating time-consuming processes<\/p>\r\n<\/blockquote>\r\n\r\n<h3><br \/>\r\nEfficient Development<\/h3>\r\n\r\n<p>Huge cost efficiencies over traditional development methods with one-click editing for content editors while leveraging Drupal\u2019s proven content models.<\/p>\r\n\r\n<h3>Drupal Reimagined<\/h3>\r\n\r\n<p>Provus bridges the CMS divide that had formerly existed between easy-to-create and manage SAAS solutions -- such as WIX or Squarespace -- and Drupal, which provides a scalable solution for complex, enterprise-level sites. &nbsp;This new digital experience platform changes the game by providing intuitive, drag-and-drop content management capabilities that have previously not been possible within enterprise Drupal sites.&nbsp;<\/p>\r\n\r\n<h2><a href=\"https:\/\/www.prometsource.com\/contact\"><strong>Contact us for a full demo today<\/strong><\/a><\/h2>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n",
+                    "format": "full_html",
+                    "processed": "<p><strong>Provus is <a href=\"https:\/\/www.prometsource.com\/provus\">Promet\u2019s Drupal platform<\/a> that provides marketers and content editors with a library of design components so they can quickly build and change pages the way they want - to ensure their site is performing how they want.<\/strong><\/p>\n\n<h3>A Drupal Site that Lets YOU Take Control<\/h3>\n\n<p>Marketers need to move quickly to be able to update their websites as priorities change, new products get rolled out, and strategies are revised. Until now though, Drupal websites have moved at a slower pace requiring IT or a web designer\u2019s involvement to make changes to pages and layouts.<\/p>\n\n<h3>Imagine YOU Holding the Keys to Your Website!<\/h3>\n\n<p>Committed to empowering fast-moving marketing teams and content editors with the ability to easily edit, revise, and change their sites as needed, Promet Source has developed Provus, a drag-and-drop site building tool. Provus provides a foundation for DIY design and creativity without the need for IT or a web designer while ensuring pages stay within defined brand standards for greater design flexibility and site governance.<\/p>\n\n<h3>Enter the Code-Free Zone<\/h3>\n\n<p>Without the need for any coding expertise, marketers can build pages by selecting from curated libraries of high-quality, commonly used components -- such as galleries, maps, lists, blogs, FAQs, and events -- that are flexible enough to be mixed, matched, and rearranged.\u00a0 Simplifying workflows frees up resources for a sharper focus on strategy!<\/p>\n\n<p>\u00a0<\/p>\n\n<blockquote>\n<p><strong>Drag and Drop with One-Click Editing<\/strong><br \/>\nFlexible content editing capabilities with drag and drop functionality and seamlessly edit components eliminating time-consuming processes<\/p>\n<\/blockquote>\n\n<h3><br \/>\nEfficient Development<\/h3>\n\n<p>Huge cost efficiencies over traditional development methods with one-click editing for content editors while leveraging Drupal\u2019s proven content models.<\/p>\n\n<h3>Drupal Reimagined<\/h3>\n\n<p>Provus bridges the CMS divide that had formerly existed between easy-to-create and manage SAAS solutions -- such as WIX or Squarespace -- and Drupal, which provides a scalable solution for complex, enterprise-level sites. \u00a0This new digital experience platform changes the game by providing intuitive, drag-and-drop content management capabilities that have previously not been possible within enterprise Drupal sites.\u00a0<\/p>\n\n<h2><a href=\"https:\/\/www.prometsource.com\/contact\"><strong>Contact us for a full demo today<\/strong><\/a><\/h2>\n\n<p>\u00a0<\/p>\n\n<p>\u00a0<\/p>",
+                    "summary": ""
+                }
+            ],
+            "field_file": [],
+            "field_media_image": [
+                {
+                    "target_id": 16,
+                    "target_type": "media",
+                    "target_uuid": "de7594c9-a008-4e34-8ec4-66f22cd8bf91",
+                    "url": "\/media\/16\/edit"
+                }
+            ],
+            "layout_builder__layout": []
+        },
+        "d775a3fd-8605-463b-8044-3d8bf64ccc5b": {
+            "nid": [
+                {
+                    "value": 18
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "d775a3fd-8605-463b-8044-3d8bf64ccc5b"
+                }
+            ],
+            "vid": [
+                {
+                    "value": 63
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "type": [
+                {
+                    "target_id": "provus_page",
+                    "target_type": "node_type",
+                    "target_uuid": "10bff250-d719-4887-af33-265179e86538"
+                }
+            ],
+            "revision_timestamp": [
+                {
+                    "value": "2021-04-30T20:18:02+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "revision_uid": [
+                {
+                    "target_id": 1,
+                    "target_type": "user",
+                    "target_uuid": "6361368e-0ae3-4a16-b792-05cf28408fc4",
+                    "url": "\/user\/1"
+                }
+            ],
+            "revision_log": [],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "uid": [
+                {
+                    "target_id": 1,
+                    "target_type": "user",
+                    "target_uuid": "6361368e-0ae3-4a16-b792-05cf28408fc4",
+                    "url": "\/user\/1"
+                }
+            ],
+            "title": [
+                {
+                    "value": "test"
+                }
+            ],
+            "created": [
+                {
+                    "value": "2021-04-30T20:16:26+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2021-04-30T20:18:02+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "promote": [
+                {
+                    "value": false
+                }
+            ],
+            "sticky": [
+                {
+                    "value": false
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": true
+                }
+            ],
+            "revision_translation_affected": [
+                {
+                    "value": true
+                }
+            ],
+            "path": [],
+            "body": [],
+            "field_file": [],
+            "field_media_image": [],
+            "layout_builder__layout": [
+                {
+                    "section": {
+                        "layout_id": "layout_onecol",
+                        "layout_settings": {
+                            "label": ""
+                        },
+                        "components": [
+                            {
+                                "uuid": "0ebf7f53-c901-47ee-98b9-0ef5cb304f3c",
+                                "region": "content",
+                                "configuration": {
+                                    "label_display": "0",
+                                    "context_mapping": {
+                                        "entity": "layout_builder.entity"
+                                    },
+                                    "id": "field_block:node:provus_page:body",
+                                    "formatter": {
+                                        "label": "hidden",
+                                        "type": "text_default",
+                                        "settings": [],
+                                        "third_party_settings": []
+                                    }
+                                },
+                                "additional": [],
+                                "weight": 1
+                            },
+                            {
+                                "uuid": "94fdaa49-9cf5-4617-8bc3-94c4d211de24",
+                                "region": "content",
+                                "configuration": {
+                                    "id": "inline_block:link_group",
+                                    "label": "Test",
+                                    "provider": "layout_builder",
+                                    "label_display": "visible",
+                                    "view_mode": "full",
+                                    "block_revision_id": "56",
+                                    "block_serialized": null,
+                                    "context_mapping": [],
+                                    "type": "link_group",
+                                    "uuid": "1df330cf-f1c8-4fdb-870e-2772785c38cd"
+                                },
+                                "additional": [],
+                                "weight": 2
+                            }
+                        ],
+                        "third_party_settings": []
+                    }
+                }
+            ]
+        }
+    }
+}

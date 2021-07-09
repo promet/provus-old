@@ -11,6 +11,9 @@ dist/
 # Ignore Drupal's file directory
 /src/sites/*/files/
 
+# Ignore databases 
+/config/db/
+
 # :::::::::::::::::::::: cut ::::::::::::::::::::::
 
 ###

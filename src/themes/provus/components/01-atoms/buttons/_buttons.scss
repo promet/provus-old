@@ -1,5 +1,5 @@
 @mixin button() {
-  background: linear-gradient(180deg, #00aadf 0%, #094894 100%);
+  background: $primary;
   border: none;
   cursor: pointer;
   padding: 15px 25px;
@@ -43,7 +43,7 @@
 }
 
 @mixin button-primary() {
-  background: linear-gradient(180deg, #00aadf 0%, #094894 100%);
+  background: $primary;
   border: none;
   color: $white;
 
@@ -72,25 +72,26 @@
 
 @mixin button-secondary() {
   background: transparent;
-  border: 3px solid $accent;
-  color: $accent;
+  border: 3px solid $primary;
+  color: $primary;
   outline: 0;
 
   &:hover {
-    background-color: $accent;
-    color: $white;
+    background-color: $white;
+    color: $primary-darker;
+    border: 3px solid $primary-darker;
   }
 
   &:active {
-    background-color: #a52803;
+    background-color: $primary-darker;
     color: $white;
-    border: 2px solid #a52803;
+    border: 2px solid $primary-darker;
   }
 
   &:focus {
     background: $white;
-    color: $accent;
-    border: 3px solid $accent;
+    color: $primary-darker;
+    border: 3px solid $primary-darker;
     box-shadow: 0 0 8px $secondary;
     outline: 0;
   }

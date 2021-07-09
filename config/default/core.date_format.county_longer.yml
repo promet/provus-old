@@ -1,8 +1,0 @@
-uuid: 9dbed4b4-f7d7-412a-a952-e913f42a0e73
-langcode: en
-status: true
-dependencies: {  }
-id: county_longer
-label: 'County Longer'
-locked: false
-pattern: 'l, F j, Y'

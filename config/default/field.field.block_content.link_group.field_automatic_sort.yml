@@ -1,0 +1,23 @@
+uuid: 2815c203-43d5-47d6-87d0-6ff7cc7f9262
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.link_group
+    - field.storage.block_content.field_automatic_sort
+  module:
+    - options
+id: block_content.link_group.field_automatic_sort
+field_name: field_automatic_sort
+entity_type: block_content
+bundle: link_group
+label: 'Automatic Sort'
+description: 'Sort content by newest, oldest, or title. It uses "Published Date" for Articles or created date for other content.'
+required: false
+translatable: false
+default_value:
+  -
+    value: newest
+default_value_callback: ''
+settings: {  }
+field_type: list_string

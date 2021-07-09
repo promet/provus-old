@@ -1,0 +1,11 @@
+uuid: 94188913-0c24-49b1-b535-831d545588a5
+langcode: en
+status: true
+dependencies: {  }
+id: line_separator
+block_id: 'inline_block:line_separator'
+category: design
+label: 'Line Separator'
+weight: -2
+image_path: /themes/custom/provus/images/icons/material/remove.svg
+image_alt: 'Line separator icon'

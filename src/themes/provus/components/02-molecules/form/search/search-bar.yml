@@ -4,5 +4,5 @@ search_bar__placeholder_text: 'Search'
 search_bar__options:
   - title: 'Current Agency'
     value: 'agency'
-  - title: 'Entire County'
-    value: 'county'
+  - title: 'Entire Organization'
+    value: 'org'

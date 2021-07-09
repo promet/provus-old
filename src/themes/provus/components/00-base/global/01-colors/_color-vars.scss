@@ -1,21 +1,23 @@
 // Grayscale
 $white: white;
+$gray-lightest: #eaeaea;
 $gray-light: #747474;
 $gray: #666;
 $gray-dark: #1d2b36;
 $gray-darker: #333;
 $gray-medium: #556575;
-$black: black;
+$black: #15191B;
 
 // Project Colors.
-$primary: #0071bc;
+$primary: #31227C;;
 $primary-half: rgba(0, 113, 188, 0.5);
-$primary-darker: #205493;
+$primary-darker: #1A1242;
 $primary-darkest: #112e51;
 $secondary: #DA3807;
 $accent: #FD5809;
 $accent-half: rgba(253, 88, 9, 0.5);
 $accent-secondary: #f5fafe;
+$alert: #FDCA40;
 
 // General Colors.
 $error: #D53707;
@@ -89,6 +91,10 @@ $opaque-quarter: rgba(255, 255, 255, 0.25);
 
   &--accent-secondary {
     background-color: $accent-secondary;
+  }
+
+  &--alert {
+    background-color: $alert;
   }
 }
 

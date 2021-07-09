@@ -1,0 +1,49 @@
+uuid: 018be14d-3cac-404a-96b1-ff103c330198
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_index
+    - field.field.node.provus_article.body
+    - field.field.node.provus_article.field_file
+    - field.field.node.provus_article.field_media_image
+    - field.field.node.provus_article.field_publish_date
+    - field.field.node.provus_article.field_type
+    - node.type.provus_article
+  module:
+    - datetime
+    - layout_builder
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: node.provus_article.search_index
+targetEntityType: node
+bundle: provus_article
+mode: search_index
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_publish_date:
+    type: datetime_default
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: provus_default
+    third_party_settings: {  }
+hidden:
+  field_file: true
+  field_media_image: true
+  field_type: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

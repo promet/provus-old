@@ -13,8 +13,8 @@ if [[ "${DEBUG}" != "" ]]; then
 fi
 
 fin php-cs
-fin test-content
-fin cypress
+#fin test-content
+#fin cypress
 #fin phpunit
-fin behat
+#fin behat
 #fin pa11y 

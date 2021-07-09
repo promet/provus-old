@@ -24,3 +24,4 @@ See [Drag and Drop Content Management for Government](https://www.drupalgovcon.o
 * [Setup on Pantheon](setup-on-pantheon.md)
 * [Move to Production State](move-to-production-state.md)
 * [Setup Storybook URL](storybook.md)
+* [Create a new link group block](new-link-group-block.md)

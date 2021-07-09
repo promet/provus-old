@@ -1,0 +1,11 @@
+uuid: 82567116-afc1-4181-83d4-926bac999a4e
+langcode: en
+status: true
+dependencies: {  }
+id: photo_gallery
+block_id: 'inline_block:photo_gallery'
+category: widgets
+label: 'Photo Gallery'
+weight: -3
+image_path: /themes/custom/provus/images/icons/material/filter.svg
+image_alt: 'Photo gallery icon'

@@ -4,7 +4,7 @@
 
 <h4 align="center">Customizable Styleguide + Storybook Development + Drupal 8 theme</h4>
 
-county-oc is a full Design System encompassing both a [Storybook](https://storybook.js.org/)/[Webpack](https://webpack.js.org/) development environment, a customizable Styleguide powered by [GatsbyJS](https://www.gatsbyjs.org/) (coming soon), and a Drupal 8 starterkit theme. It can be used as a standalone prototyping tool or inside a Drupal installation. It supports both Twig and React components!!
+Emulsify is a full Design System encompassing both a [Storybook](https://storybook.js.org/)/[Webpack](https://webpack.js.org/) development environment, a customizable Styleguide powered by [GatsbyJS](https://www.gatsbyjs.org/) (coming soon), and a Drupal 8 starterkit theme. It can be used as a standalone prototyping tool or inside a Drupal installation. It supports both Twig and React components!!
 
 ## Documentation
 
