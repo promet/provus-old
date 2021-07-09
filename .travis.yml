@@ -12,6 +12,7 @@ install:
   - env | grep SECRET_TERMINUS_TOKEN > .docksal/docksal-local.env
   - env | grep REMOTE_GIT_REPO >> .docksal/docksal-local.env
   - env | grep GH_TOKEN >> .docksal/docksal-local.env
+  - env | grep TRAVIS_REPO_SLUG >> .docksal/docksal-local.env
   - cp .docksal/docksal-local.yml.sample .docksal/docksal-local.yml
 
 before_script:
@@ -27,6 +28,7 @@ script:
 
 after_success:
   # - fin deploy
+  - fin storybook-deploy
 
 notifications:
     on_success: always # default: change
