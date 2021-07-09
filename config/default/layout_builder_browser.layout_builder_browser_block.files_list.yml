@@ -1,0 +1,11 @@
+uuid: 6b7c507a-20fb-494d-a810-5c46ac19cee4
+langcode: en
+status: true
+dependencies: {  }
+id: files_list
+block_id: 'inline_block:files_list'
+category: media
+label: 'Files List'
+weight: -2
+image_path: /themes/custom/provus/images/icons/material/list.svg
+image_alt: 'Files list icon'

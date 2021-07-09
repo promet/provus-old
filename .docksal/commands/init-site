@@ -10,3 +10,5 @@ fin drush config-set system.site uuid ${UUID} -y
 fin drush cim -y
 fin build-theme
 fin test-content
+fin drush cr 
+fin drush cim -y

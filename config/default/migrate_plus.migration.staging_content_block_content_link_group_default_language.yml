@@ -1,4 +1,4 @@
-uuid: 1fd5e0e7-42de-4331-831c-1525d7e56747
+uuid: 9629f57e-9c95-4efe-9dcc-13c015e08f51
 langcode: en
 status: true
 dependencies: {  }
@@ -49,6 +49,26 @@ process:
     plugin: get
     source: revision_translation_affected
     language: '@langcode'
+  field_automatic_article_type:
+    plugin: migration_lookup
+    migration: staging_content_taxonomy_term_article_type_default_language
+    source: field_automatic_article_type
+  field_automatic_event_type:
+    plugin: migration_lookup
+    migration: staging_content_taxonomy_term_event_type_default_language
+    source: field_automatic_event_type
+  field_automatic_location_type:
+    plugin: migration_lookup
+    migration: staging_content_taxonomy_term_location_type_default_language
+    source: field_automatic_location_type
+  field_automatic_number_per_page: field_automatic_number_per_page
+  field_automatic_offset: field_automatic_offset
+  field_automatic_pager: field_automatic_pager
+  field_automatic_person_type:
+    plugin: migration_lookup
+    migration: staging_content_taxonomy_term_person_type_default_language
+    source: field_automatic_person_type
+  field_automatic_sort: field_automatic_sort
   field_block_items:
     plugin: migration_lookup
     migration: staging_content_block_content_inline_item_default_language
@@ -57,12 +77,11 @@ process:
   field_content_references:
     plugin: migration_lookup
     migration:
-      - staging_content_node_county_article_default_language
       - staging_content_node_event_default_language
       - staging_content_node_faq_default_language
       - staging_content_node_landing_page_default_language
       - staging_content_node_location_default_language
-      - staging_content_node_county_page_default_language
+      - staging_content_node_provus_page_default_language
       - staging_content_node_person_default_language
     source: field_content_references
     language: '@langcode'
@@ -81,7 +100,6 @@ process:
     plugin: get
     source: field_link
     language: '@langcode'
-  field_section_background_style: field_section_background_style
 destination:
   plugin: 'entity:block_content'
 migration_dependencies:

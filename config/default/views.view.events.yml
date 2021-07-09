@@ -71,8 +71,8 @@ display:
           use_entity_fields: 1
           right_buttons:
             agendaWeek: agendaWeek
-            agendaDay: agendaDay
             listYear: listYear
+            agendaDay: 0
           default_view: month
           firstDay: '0'
           nav_links: 1
@@ -89,15 +89,15 @@ display:
           vocabularies: ''
           color_bundle:
             alert: '#3a87ad'
-            county_article: '#3a87ad'
-            county_page: '#3a87ad'
+            provus_article: '#3a87ad'
+            provus_page: '#3a87ad'
             event: '#3b87ae'
             faq: '#3a87ad'
             landing_page: '#3a87ad'
             location: '#3a87ad'
             person: '#3a87ad'
-          business_start: '2020-05-19T08:00:00'
-          business_end: '2020-05-19T18:00:00'
+          business_start: '2021-04-25T08:00:00'
+          business_end: '2021-04-25T18:00:00'
           excluding_dates: title
           bundle_type: event
           classes: ''
@@ -367,57 +367,6 @@ display:
           expose:
             operator_limit_selection: false
             operator_list: {  }
-        field_event_type_target_id:
-          id: field_event_type_target_id
-          table: node__field_event_type
-          field: field_event_type_target_id
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: or
-          value: {  }
-          group: 1
-          exposed: true
-          expose:
-            operator_id: field_event_type_target_id_op
-            label: Type
-            description: ''
-            use_operator: false
-            operator: field_event_type_target_id_op
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: type
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-              anonymous: '0'
-              administrator: '0'
-              content_editor: '0'
-              layout_editor: '0'
-              user_manager: '0'
-              site_builder: '0'
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          reduce_duplicates: false
-          type: select
-          limit: true
-          vid: event_type
-          hierarchy: false
-          error_message: true
-          plugin_id: taxonomy_index_tid
         field_location_target_id:
           id: field_location_target_id
           table: node__field_location
@@ -468,6 +417,57 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           plugin_id: numeric
+        field_type_target_id:
+          id: field_type_target_id
+          table: node__field_type
+          field: field_type_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_type_target_id_op
+            label: Type
+            description: ''
+            use_operator: false
+            operator: field_type_target_id_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_type_target_id
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+              content_editor: '0'
+              layout_editor: '0'
+              user_manager: '0'
+              site_builder: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: event_type
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
       sorts:
         created:
           id: created

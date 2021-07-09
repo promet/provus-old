@@ -1,0 +1,8 @@
+uuid: 0ef4c92a-e6f7-4e2b-9cba-367ce1b53eb2
+langcode: en
+status: true
+dependencies: {  }
+id: provus_default
+label: 'Provus Default'
+locked: false
+pattern: 'F j, Y'

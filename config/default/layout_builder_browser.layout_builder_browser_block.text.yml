@@ -1,0 +1,11 @@
+uuid: 5d1e54d3-8a77-4274-840a-6c390cc48f31
+langcode: en
+status: true
+dependencies: {  }
+id: text
+block_id: 'inline_block:text'
+category: media
+label: Text
+weight: -2
+image_path: /themes/custom/provus/images/icons/material/notes.svg
+image_alt: 'Text icon'

@@ -1,0 +1,29 @@
+uuid: 5b182f43-8d67-4d6e-a768-c4ba4977f078
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_type
+    - node.type.provus_article
+    - taxonomy.vocabulary.article_type
+id: node.provus_article.field_type
+field_name: field_type
+entity_type: node
+bundle: provus_article
+label: Type
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      article_type: article_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,11 @@
+uuid: 1791eb44-e38f-4659-bc2f-bca99cacdd0c
+langcode: en
+status: true
+dependencies: {  }
+id: short_banner
+block_id: 'inline_block:short_banner'
+category: widgets
+label: 'Short Banner'
+weight: -2
+image_path: /themes/custom/provus/images/icons/material/photo_library.svg
+image_alt: 'Short banner icon'

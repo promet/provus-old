@@ -1,0 +1,11 @@
+uuid: 3f49bb6a-fc32-4e56-9dec-6dc22de56cc9
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.provus_article
+id: node.provus_article
+target_entity_type_id: node
+target_bundle: provus_article
+default_langcode: site_default
+language_alterable: false

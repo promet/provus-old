@@ -1,0 +1,12 @@
+name: 'Provus Blocks'
+type: module
+description: 'Custom provus blocks.'
+core: 8.x
+package: 'provus'
+
+dependencies:
+  - drupal:block
+  - drupal:node
+  - drupal:system
+  - drupal:text
+  - layout_builder

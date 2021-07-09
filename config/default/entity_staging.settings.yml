@@ -6,7 +6,7 @@ entity_types:
       accordion: 1
       accordion_item: 1
       banner: 1
-      basic_block: 0
+      basic_block: 1
       button: 1
       columns: 1
       faq_item: 1
@@ -46,13 +46,13 @@ entity_types:
     enable: 1
     bundles:
       alert: 1
-      county_article: 1
-      county_page: 1
       event: 1
       faq: 1
       landing_page: 1
       location: 1
       person: 1
+      provus_article: 1
+      provus_page: 1
   path_alias:
     enable: 1
   redirect:
@@ -68,9 +68,10 @@ entity_types:
   taxonomy_term:
     enable: 1
     bundles:
+      article_type: 1
       event_type: 1
       location_type: 1
-      person_type: 0
+      person_type: 1
       tags: 1
   user:
     enable: 0

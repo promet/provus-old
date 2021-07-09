@@ -1,0 +1,11 @@
+uuid: 02e7c928-1ef1-4216-b252-6a50649e9254
+langcode: en
+status: true
+dependencies: {  }
+id: columns
+block_id: 'inline_block:columns'
+category: design
+label: Columns
+weight: -2
+image_path: /themes/custom/provus/images/icons/material/horizontal_distribute.svg
+image_alt: 'Columns icon'

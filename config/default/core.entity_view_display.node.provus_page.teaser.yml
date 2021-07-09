@@ -1,0 +1,38 @@
+uuid: 3dd2e075-08fa-49ab-9085-d28680feb4d2
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.provus_page.body
+    - field.field.node.provus_page.field_file
+    - field.field.node.provus_page.field_media_image
+    - field.field.node.provus_page.layout_builder__layout
+    - node.type.provus_page
+  module:
+    - text
+    - user
+id: node.provus_page.teaser
+targetEntityType: node
+bundle: provus_page
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_file: true
+  field_media_image: true
+  langcode: true
+  layout_builder__layout: true
+  search_api_excerpt: true

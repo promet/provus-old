@@ -1,0 +1,50 @@
+uuid: c2c14fa0-16c6-48b0-b182-4958f51965ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.card_promo
+    - field.field.node.provus_page.body
+    - field.field.node.provus_page.field_file
+    - field.field.node.provus_page.field_media_image
+    - field.field.node.provus_page.layout_builder__layout
+    - node.type.provus_page
+  module:
+    - layout_builder
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: node.provus_page.card_promo
+targetEntityType: node
+bundle: provus_page
+mode: card_promo
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_media_image:
+    weight: 103
+    label: hidden
+    settings:
+      view_mode: landscape_small
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_file: true
+  langcode: true
+  layout_builder__layout: true
+  search_api_excerpt: true

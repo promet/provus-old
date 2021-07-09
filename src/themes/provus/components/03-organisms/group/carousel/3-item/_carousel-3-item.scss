@@ -38,8 +38,8 @@
 }
 
 .carousel-3-items-wrapper {
-  padding-top: $space-triple;
-  padding-bottom: $space-triple;
+  padding-top: $space-double;
+  padding-bottom: $space-double;
 
   h2.title {
     text-align: center;
@@ -54,6 +54,10 @@
 
     @include medium {
       font-size: 1.875rem;
+    }
+
+    @include desktop {
+      font-size: 2rem;
     }
   }
 
@@ -81,7 +85,7 @@
 
     &:focus {
       .carousel-control-prev-icon {
-        border: 2px solid $ada-blue;
+        border: 2px solid $secondary;
       }
     }
   }
@@ -100,7 +104,7 @@
 
     &:focus {
       .carousel-control-next-icon {
-        border: 2px solid $ada-blue;
+        border: 2px solid $secondary;
       }
     }
   }
@@ -121,7 +125,7 @@
 
   .lightSlider {
     overflow: visible;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
 
     > div {
       padding: 0 15px;
@@ -142,7 +146,7 @@
       li > a {
         width: 9px;
         height: 9px;
-        border: 1px solid $ada-orange;
+        border: 1px solid $primary;
         background: transparent;
         border-radius: 100%;
         box-sizing: content-box;
@@ -152,8 +156,8 @@
 
       li:hover a,
       li.active > a {
-        border: 1px solid $ada-orange;
-        background: $ada-orange;
+        border: 1px solid $primary;
+        background: $primary;
       }
     }
   }

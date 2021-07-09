@@ -1,8 +1,8 @@
 (($) => {
   Drupal.behaviors.carousel3Items = {
     attach() {
-      const breakpointSmall = 480;
-      const breakpointLarge = 960;
+      const breakpointSmall = 720;
+      const breakpointLarge = 980;
       const marginBig = 160;
       const slider = $('.carousel-3-items .lightslider').once().lightSlider({
         onSliderLoad: function maxHeightFunc(el) {

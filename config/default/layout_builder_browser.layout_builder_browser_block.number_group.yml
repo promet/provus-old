@@ -1,0 +1,11 @@
+uuid: d04f4544-3f1e-4933-8f87-40af6e23f5a2
+langcode: en
+status: true
+dependencies: {  }
+id: number_group
+block_id: 'inline_block:number_list'
+category: widgets
+label: 'Number Group'
+weight: null
+image_path: /themes/custom/provus/images/icons/material/exposure_plus_2.svg
+image_alt: 'Number group icon'

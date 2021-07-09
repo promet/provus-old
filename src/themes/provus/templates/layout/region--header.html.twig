@@ -24,8 +24,8 @@
       {% endblock %}
       {% block header__search %}
         {% include "@molecules/form/search/search-bar.twig" with {
-          search_bar__action: search_action,
-          search_bar__keys: search_keys,
+          search_bar__action: '/search',
+          search_bar__keys: 'keys',
           search_bar__placeholder_text: search_placeholder,
           search_bar__options: search_options,
         } %}

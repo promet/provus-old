@@ -1,0 +1,29 @@
+uuid: 65aeec15-0939-4fbc-8817-b93bb7b15c00
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.link_group
+    - field.storage.block_content.field_automatic_location_type
+    - taxonomy.vocabulary.location_type
+id: block_content.link_group.field_automatic_location_type
+field_name: field_automatic_location_type
+entity_type: block_content
+bundle: link_group
+label: 'Automatic Location Type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      location_type: location_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

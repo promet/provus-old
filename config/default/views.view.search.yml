@@ -72,12 +72,12 @@ display:
         options:
           view_modes:
             'entity:node':
-              county_article: search_result
-              county_page: search_result
               event: search_result
               faq: search_result
               location: search_result
               person: search_result
+              provus_article: search_result
+              provus_page: search_result
       fields: {  }
       filters:
         search_api_fulltext:

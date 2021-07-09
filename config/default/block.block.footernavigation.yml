@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - system.menu.county-footer-navigation
+    - system.menu.provus-footer-navigation
   module:
     - menu_block
   theme:
@@ -13,9 +13,9 @@ theme: provus
 region: footer
 weight: 0
 provider: null
-plugin: 'menu_block:county-footer-navigation'
+plugin: 'menu_block:provus-footer-navigation'
 settings:
-  id: 'menu_block:county-footer-navigation'
+  id: 'menu_block:provus-footer-navigation'
   label: Navigation
   provider: menu_block
   label_display: visible
@@ -23,9 +23,10 @@ settings:
   follow_parent: child
   level: 1
   depth: 0
-  expand: false
-  parent: 'county-footer-navigation:'
-  suggestion: county_footer_navigation
+  expand_all_items: false
+  parent: 'provus-footer-navigation:'
+  suggestion: provus_footer_navigation
   label_type: block
   label_link: false
+  expand: false
 visibility: {  }

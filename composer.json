@@ -11,7 +11,19 @@
       {
         "type":"package",
         "package": {
-          "name": "meno/dropzone",
+          "name": "harvesthq/chosen",
+          "version": "1.8.7",
+          "type": "drupal-library",
+          "dist": {
+            "url": "https://github.com/harvesthq/chosen/releases/download/v1.8.7/chosen_v1.8.7.zip",
+            "type": "zip"
+          }
+        }
+      },
+      {
+        "type":"package",
+        "package": {
+          "name": "enyo/dropzone",
           "version": "5.7",
           "type": "drupal-library",
           "dist": {
@@ -34,28 +46,29 @@
       },
       {
         "type": "path",
-        "url": "src/modules/county_blocks"
+        "url": "src/modules/provus_blocks"
       }
     ],
     "require": {
         "composer/installers": "^1.2",
         "cweagans/composer-patches": "^1.6.5",
-        "drupal-composer/drupal-scaffold": "^2.5",
         "drupal/address": "~1.0",
         "drupal/admin_toolbar_tools": "^2.0",
         "drupal/antibot": "^1.4",
         "drupal/auto_entitylabel": "^3.0@beta",
         "drupal/calendar_link": "^1.1",
+        "drupal/chosen": "^3.0",
         "drupal/components": "^1.1",
         "drupal/config_ignore": "^2.2",
         "drupal/console": "^1.0.2",
-        "drupal/core": "^8.7.1",
+        "drupal/core": "^8.9.15",
+        "drupal/core-composer-scaffold": "^8.9",
         "drupal/devel": "^2.1",
         "drupal/dropzonejs": "^2.1",
         "drupal/emulsify_twig": "^1.0",
         "drupal/entity": "~1.0-rc3",
         "drupal/entity_embed": "^1.0",
-        "drupal/entity_staging": "^1.0@alpha",
+        "drupal/entity_staging": "^1.x-dev@dev",
         "drupal/environment_indicator": "^3.7",
         "drupal/extlink": "^1.3",
         "drupal/facets": "^1.4",
@@ -89,14 +102,19 @@
         "drupal/simple_instagram_feed": "^3.8",
         "drupal/smart_trim": "^1.2",
         "drupal/socialfeed": "^1.0",
+        "drupal/stage_file_proxy": "^1.1",
         "drupal/twig_tweak": "^2.5",
         "drupal/view_unpublished": "^1.0@RC",
         "drupal/viewsreference": "^1.4",
+        "drupal/vocabulary_condition": "^1.0",
         "drupal/webform": "^5.9",
         "drush/drush": "^9.0.0",
+        "enyo/dropzone": "5.7",
         "geocoder-php/google-maps-provider": "^4.4",
+        "harvesthq/chosen": "^1.8",
         "jsanahuja/jqueryinstagramfeed": "dev-master",
         "kporras07/composer-symlinks": "dev-master",
+        "oomphinc/composer-installers-extender": "^2.0",
         "symfony/event-dispatcher": "4.3.4 as 3.4.99",
         "vlucas/phpdotenv": "^2.4",
         "webflo/drupal-finder": "^1.0.0",
@@ -146,13 +164,23 @@
         ]
     },
     "extra": {
+       "drupal-scaffold": {
+          "allowed-packages": [
+            "drupal/core"
+          ],
+          "locations": {
+            "web-root": "./web"
+          }
+        },
         "composer-exit-on-patch-failure": true,
         "patchLevel": {
             "drupal/core": "-p2"
         },
         "installer-paths": {
             "web/core": ["type:drupal-core"],
-            "web/libraries/{$name}": ["type:drupal-library"],
+            "web/libraries/{$name}": [
+              "type:drupal-library"
+            ],
             "web/modules/contrib/{$name}": ["type:drupal-module"],
             "web/profiles/contrib/{$name}": ["type:drupal-profile"],
             "web/themes/contrib/{$name}": ["type:drupal-theme"],
@@ -168,10 +196,15 @@
         },
         "patches": {
             "drupal/core": {
-                "Expose Layout Builder data to REST and JSON:API [#2942975]": "https://www.drupal.org/files/issues/2020-07-07/2942975-116.patch"
+                "Block visibility has wrong logic [923934]": "https://www.drupal.org/files/issues/2020-02-11/block_visibility_has_wrong_logic-923934-14-reroll-32-drupal-8.8.2.patch",
+                "Temp workaround for entity_staging to choose block uuid over revision id [#2942975]": "src/patches/2942975-drupal_8_9_x-137.patch"
             },
             "drupal/config_ignore": {
                 "Support config ignore export [#2942975]": "https://www.drupal.org/files/issues/2020-01-11/support-for-export-2857247-44.patch"
+            },
+            "drupal/entity_staging": {
+                "Stream wrapper bug [#3216474]": "https://git.drupalcode.org/project/entity_staging/-/merge_requests/3.diff", 
+                "Unsupported operand types bug [#3145936]": "https://www.drupal.org/files/issues/2020-06-04/entity-staging-unsuported-operand-types-3145936-2.patch"
             },
             "drupal/devel": {
                 "Missing Drush commands [3106091]": "https://www.drupal.org/files/issues/2020-01-29/drush-service-rename-3106091-2.patch"

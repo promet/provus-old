@@ -1,0 +1,29 @@
+uuid: 433944ef-cb22-431a-bd6a-b5927d2779ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.link_group
+    - field.storage.block_content.field_automatic_article_type
+    - taxonomy.vocabulary.article_type
+id: block_content.link_group.field_automatic_article_type
+field_name: field_automatic_article_type
+entity_type: block_content
+bundle: link_group
+label: 'Automatic Article Type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      article_type: article_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

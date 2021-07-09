@@ -51,7 +51,7 @@ content:
     label: hidden
     settings:
       timezone_override: ''
-      format_type: county_default
+      format_type: provus_default
     third_party_settings: {  }
   field_heading:
     weight: 1

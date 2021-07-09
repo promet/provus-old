@@ -1,0 +1,11 @@
+uuid: 5dd91da0-e015-4c9e-ac7a-b7f4c06887cb
+langcode: en
+status: true
+dependencies: {  }
+id: tabs
+block_id: 'inline_block:tabs'
+category: design
+label: Tabs
+weight: -2
+image_path: /themes/custom/provus/images/icons/material/tab.svg
+image_alt: 'Tabs icon'

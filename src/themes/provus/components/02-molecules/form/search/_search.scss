@@ -22,14 +22,18 @@
   }
 
   .form-item--radio {
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    min-width: 100%;
-    border: 1px solid $border-utility;
-    padding: 10px 15px;
-    justify-content: flex-start;
-    order: 5;
+    display: none;
+
+    @include medium {
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: center;
+      min-width: 100%;
+      border: 1px solid $border-utility;
+      padding: 10px 15px;
+      justify-content: flex-start;
+      order: 5;
+    }
 
     @include desktop {
       justify-content: space-between;
@@ -91,7 +95,7 @@
         }
 
         &.error::before {
-          border: 1px solid $ada-orange;
+          border: 1px solid $accent;
           background-color: $white;
         }
 
@@ -155,11 +159,18 @@
       line-height: 22px;
       font-size: 14px;
       font-weight: 600;
-      border: 0;
-      border-radius: 0;
       max-width: 100%;
       height: auto;
       padding: 20px 15px;
+      border: 1px solid $primary;
+      margin-left: 5px;
+      border-radius: 10px;
+
+      @include medium {
+        margin-left: 0;
+        border: 0;
+        border-radius: 0;
+      }
 
       @include desktop {
         height: 64px;
@@ -216,6 +227,10 @@
 }
 
 .search-bar-open {
+  .header__utilities {
+    display: none;
+  }
+
   .search-block-form {
     height: 100% !important;
     min-height: 105px !important;
@@ -360,7 +375,7 @@
 
       &:focus {
         outline: none;
-        box-shadow: 0 0 15px $ada-blue;
+        box-shadow: 0 0 15px $secondary;
       }
     }
   }

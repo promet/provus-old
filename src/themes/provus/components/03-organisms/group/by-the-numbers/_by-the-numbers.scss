@@ -47,14 +47,23 @@
   }
 
   .number-group__inner {
-    .number-group-item-wrapper:nth-child(1),
-    .number-group-item-wrapper:nth-child(3) {
+    .number-group-item-wrapper:nth-child(odd) {
       h2 {
-        color: $accent-orange;
+        color: $primary;
       }
 
       .material-icons {
-        color: $accent-orange-half;
+        color: $primary;
+      }
+    }
+
+    .number-group-item-wrapper:nth-child(even) {
+      h2 {
+        color: $primary-darker;
+      }
+
+      .material-icons {
+        color: $primary-darker;
       }
     }
   }

@@ -1,0 +1,8 @@
+uuid: 26d6837a-91d6-4d33-9bc1-c79fc927bdc5
+langcode: en
+status: true
+dependencies: {  }
+id: provus_long
+label: 'Provus Long'
+locked: false
+pattern: 'D, F j, Y'

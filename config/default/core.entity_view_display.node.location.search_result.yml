@@ -11,24 +11,19 @@ dependencies:
     - field.field.node.location.field_email
     - field.field.node.location.field_file
     - field.field.node.location.field_hours
+    - field.field.node.location.field_lat_long
     - field.field.node.location.field_media_image
     - field.field.node.location.field_phone
+    - field.field.node.location.field_type
     - node.type.location
   module:
     - layout_builder
-    - layout_builder_restrictions
     - smart_trim
     - user
 third_party_settings:
   layout_builder:
     allow_custom: false
     enabled: false
-  layout_builder_restrictions:
-    allowed_block_categories: {  }
-    entity_view_mode_restriction:
-      whitelisted_blocks: {  }
-      blacklisted_blocks: {  }
-      allowed_layouts: {  }
 id: node.location.search_result
 targetEntityType: node
 bundle: location
@@ -66,10 +61,8 @@ hidden:
   field_file: true
   field_hours: true
   field_lat_long: true
-  field_loc_amenities: true
-  field_loc_type: true
-  field_location_type: true
   field_media_image: true
   field_phone: true
+  field_type: true
   langcode: true
   links: true

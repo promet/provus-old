@@ -1,0 +1,40 @@
+---
+---
+
+@import 'jekyll-theme-dinky';
+
+header {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 35px 30px;
+  
+  img {
+    max-width: 100%;
+    border: none;
+    margin: 10px 0;
+  }
+  
+  li {
+    background: linear-gradient(to top, #40348f 0%, #40348f 100%);
+    border: none;
+    box-shadow: inset 0px 1px 1px 0 #40348f;
+    
+    &:hover {
+      background: linear-gradient(to top, #3dc4e5 0%, #3dc4e5 100%);
+    }
+  }
+}
+
+a {
+  color: #40348f;
+  font-weight: 200;
+  text-decoration: underline;
+  
+  &:hover {
+    color: #3dc4e5;
+  }
+}
+
+body {
+  background-color: #FFF;
+}

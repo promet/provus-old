@@ -1,0 +1,69 @@
+uuid: 43b09fe3-3e0e-4f47-a3dd-71bd07bfe521
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.card_background
+    - field.field.node.provus_article.body
+    - field.field.node.provus_article.field_file
+    - field.field.node.provus_article.field_media_image
+    - field.field.node.provus_article.field_publish_date
+    - field.field.node.provus_article.field_type
+    - node.type.provus_article
+  module:
+    - datetime
+    - layout_builder
+    - smart_trim
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: node.provus_article.card_background
+targetEntityType: node
+bundle: provus_article
+mode: card_background
+content:
+  body:
+    label: hidden
+    type: smart_trim
+    weight: 0
+    settings:
+      trim_length: 75
+      trim_type: chars
+      trim_suffix: ...
+      wrap_class: trimmed
+      more_text: More
+      more_class: more-link
+      summary_handler: full
+      wrap_output: false
+      more_link: false
+      trim_options:
+        text: false
+        trim_zero: false
+    third_party_settings: {  }
+    region: content
+  field_media_image:
+    type: entity_reference_entity_view
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      view_mode: landscape_small
+      link: false
+    third_party_settings: {  }
+  field_publish_date:
+    type: datetime_default
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: provus_default
+    third_party_settings: {  }
+hidden:
+  field_file: true
+  field_type: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

@@ -1,19 +1,19 @@
 {
-    "block_content": [
-        {
+    "block_content": {
+        "1b853bd7-c158-4568-a4e1-cba2db7618fd": {
             "id": [
                 {
-                    "value": 12
+                    "value": 47
                 }
             ],
             "uuid": [
                 {
-                    "value": "525836ad-a1d3-463a-bad2-d7862d67b0cc"
+                    "value": "1b853bd7-c158-4568-a4e1-cba2db7618fd"
                 }
             ],
             "revision_id": [
                 {
-                    "value": 12
+                    "value": 89
                 }
             ],
             "langcode": [
@@ -30,15 +30,11 @@
             ],
             "revision_created": [
                 {
-                    "value": "2020-04-14T19:36:45+00:00",
+                    "value": "2021-05-20T19:11:19+00:00",
                     "format": "Y-m-d\\TH:i:sP"
                 }
             ],
-            "revision_user": [
-                {
-                    "target_id": 64253346
-                }
-            ],
+            "revision_user": [],
             "revision_log": [],
             "status": [
                 {
@@ -47,18 +43,18 @@
             ],
             "info": [
                 {
-                    "value": "Media 1845035984"
+                    "value": "Media 557517433"
                 }
             ],
             "changed": [
                 {
-                    "value": "2020-09-18T18:23:44+00:00",
+                    "value": "2021-05-20T19:11:19+00:00",
                     "format": "Y-m-d\\TH:i:sP"
                 }
             ],
             "reusable": [
                 {
-                    "value": true
+                    "value": false
                 }
             ],
             "default_langcode": [
@@ -78,12 +74,12 @@
             ],
             "field_media": [
                 {
-                    "target_id": 13,
+                    "target_id": 20,
                     "target_type": "media",
-                    "target_uuid": "55bbb7ac-d250-47e0-8760-b8696e89780a",
-                    "url": "\/media\/13\/edit"
+                    "target_uuid": "23134d94-aa8b-4c79-b7ac-3e176e906364",
+                    "url": "\/media\/20\/edit"
                 }
             ]
         }
-    ]
+    }
 }

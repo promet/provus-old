@@ -1,0 +1,20 @@
+{
+  "name": "promet/provus_blocks",
+  "description": "Provus Blocks drush commands.",
+  "type": "drupal-module",
+  "autoload": {
+    "psr-4": {
+      "Promet\\provus_blocks\\": "src/"
+    }
+  },
+  "extra": {
+    "drush": {
+      "services": {
+        "drush.services.yml": "^9"
+      }
+    }
+  },
+  "require": {
+    "google/apiclient": "^2.0"
+  }
+}

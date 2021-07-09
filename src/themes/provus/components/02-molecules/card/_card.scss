@@ -492,6 +492,28 @@
 
 /* Circle Image */
 .circle-img {
+  
+  a:hover {
+    .circle-img__img {
+      .mask {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.8;
+        background-color: $rollover-menu-hover;
+      }
+    }
+
+    .circle-img__content {
+      .circle-img__heading,
+      .circle-img__heading:hover {
+        color: $primary !important;
+        text-decoration: underline !important;
+        font-weight: 700 !important;
+      }
+    }
+  }
 
   &__gral {
     position: relative;
@@ -522,28 +544,6 @@
         text-decoration: none !important;
 
         @include heading-large($font-size: 1.25rem, $line-height: 1.75rem, $margin: 16px 0 0 0);
-      }
-    }
-
-    &:hover {
-      .circle-img__img {
-        .mask {
-          position: absolute;
-          top: 0;
-          width: 100%;
-          height: 100%;
-          opacity: 0.8;
-          background-color: $primary;
-        }
-      }
-
-      .circle-img__content {
-        .circle-img__heading,
-        .circle-img__heading:hover {
-          color: $primary !important;
-          text-decoration: underline !important;
-          font-weight: 700 !important;
-        }
       }
     }
 
@@ -584,7 +584,7 @@
       &:hover {
         text-decoration: underline;
         font-weight: 600;
-        color: $ada-orange;
+        color: $accent;
       }
     }
   }
@@ -854,7 +854,7 @@
 
   &__date {
     margin: 17px 0 14px 0;
-    color: $ada-orange;
+    color: $accent;
     font-family: $font-heading;
     font-size: 0.875rem;
     font-weight: bold;
@@ -913,10 +913,10 @@
   flex-wrap: nowrap;
   justify-content: space-between;
   padding: 30px 0;
-  border-top: 1px solid $line-person-card;
+  border-top: 1px solid $gray-light;
 
   &:last-child {
-    border-bottom: 1px solid $line-person-card;
+    border-bottom: 1px solid $gray-light;
   }
 
   .content-main {
@@ -960,7 +960,7 @@
     .content-img {
       height: 50px;
       width: 50px;
-      background-color: $person-initials-bg-blue;
+      background-color: $person-initials-bg;
       color: $primary;
       border-radius: 100%;
       display: flex;

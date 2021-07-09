@@ -26,6 +26,8 @@
  */
 #}
 <div {{ bem('block') }}>
+  {# title_suffix is needed for contextual links to appear when placing the block #}
+  {{ title_suffix }}
   {% block content %}
     {{ content }}
   {% endblock %}

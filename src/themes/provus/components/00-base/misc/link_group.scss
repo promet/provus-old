@@ -1,0 +1,69 @@
+[data-drupal-selector='edit-settings-block-form-field-group-display'] {
+  div.js-form-item {
+    float: left;
+    margin: 10px !important;
+  }
+
+  div.description {
+    clear: both;
+  }
+
+  input {
+    display: none;
+  }
+
+  label {
+    width: 310px;
+    height: 190px;
+    display: block !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 5px 10px !important;
+    border: 1px solid $gray-light;
+
+    &:hover {
+      border: 1px solid $gray;
+    }
+  }
+
+  input[type='radio']:checked {
+    height: 50px;
+  }
+
+  input[type='radio']:checked + label {
+    border: 2px solid $secondary;
+  }
+
+  [value='carousel_multi'] + label {
+    background-image: url('/themes/custom/provus/images/link_group/carousel_multi.png');
+  }
+  [value='carousel_3'] + label {
+    background-image: url('/themes/custom/provus/images/link_group/carousel_3.png');
+  }
+  [value='carousel_promo'] + label {
+    background-image: url('/themes/custom/provus/images/link_group/carousel_promo.png');
+  }
+  [value='featured_4'] + label {
+    background-image: url('/themes/custom/provus/images/link_group/featured_4.png');
+  }
+  [value='card_box'] + label {
+    background-image: url('/themes/custom/provus/images/link_group/card_box.png');
+  }
+  [value='column'] + label {
+    background-image: url('/themes/custom/provus/images/link_group/column.png');
+  }
+  [value='grid_1'] + label {
+    background-image: url('/themes/custom/provus/images/link_group/grid_1.png');
+  }
+  [value='grid_2'] + label {
+    background-image: url('/themes/custom/provus/images/link_group/grid_2.png');
+  }
+  [value='grid_3'] + label {
+    background-image: url('/themes/custom/provus/images/link_group/grid_3.png');
+  }
+  [value='grid_4'] + label {
+    background-image: url('/themes/custom/provus/images/link_group/grid_4.png');
+  }
+}
+

@@ -1,0 +1,11 @@
+uuid: 074c046c-fc5a-492b-be8a-bd1ae187b4ea
+langcode: en
+status: true
+dependencies: {  }
+id: webform
+block_id: webform_block
+category: widgets
+label: Webform
+weight: -1
+image_path: /themes/custom/provus/images/icons/material/dynamic_form.svg
+image_alt: 'Webform icon'

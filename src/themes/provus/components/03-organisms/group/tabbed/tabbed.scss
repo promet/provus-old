@@ -86,12 +86,12 @@
         &#pills-3-tab {
           &:hover {
             font-weight: 700;
-            color: $ada-orange;
+            color: $accent;
           }
 
           &.active {
             color: $gray-dark;
-            border-bottom: 4px solid $ada-orange;
+            border-bottom: 4px solid $accent;
           }
         }
       }
