@@ -34,15 +34,26 @@ pantheon_conn_switch()
   $TERMINUS_BIN connection:set ${HOSTING_SITE}.dev $1
 }
 
+storybook_deploy()
+{
+  ${PROJECT_ROOT}/scripts/bin/storybook-deploy.sh
+}
+
+build()
+{
+  ${PROJECT_ROOT}/scripts/bin/build-artifacts.sh
+}
+
 push()
 {
   add_remote
   set_perms
+  build
   git add .
   git commit -m "Build for $1" >> /dev/null
   [[ "$HOSTING_PLATFORM" == "pantheon" ]] && pantheon_conn_switch git  ## Must be 'git mode' in Pantheon to commit.
   git push deploy HEAD:$REMOTE --force
-  [[ "$HOSTING_PLATFORM" == "pantheon" ]] && pantheon_conn_switch sftp ## Must be 'sftp mode' in Pantheon to install Drupal.
+  storybook_deploy
 }
 
 ## ==============
