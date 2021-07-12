@@ -28,10 +28,15 @@ services:
       - HOSTING_SITE
       # Determines which environment "fin pull db/files" grabs from.
       - HOSTING_ENV
+      # Name of the remote to push DEV_BRANCH updates to.
+      - REMOTE_DEPLOY_BRANCH
+      # Name of branch to listen to push remote branch updates.
+      - DEV_BRANCH       
+      # Name of the theme, for Emulsify only.
       - THEME_NAME
+      # Used for Drupal site uuid.
       - UUID
       - COMPOSER_DEFAULT_VERSION
       - STORYBOOK_FOLDER
       - TRAVIS_REPO_SLUG
       - GH_TOKEN
-
