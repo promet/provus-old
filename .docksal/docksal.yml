@@ -20,7 +20,7 @@ services:
       - DRUPAL_HASH_SALT
       # Git repo for the host that will be pushed to with "fin deploy"
       - REMOTE_GIT_REPO
-      # Git branch that will be pushed to when develop updates.
+      # Git branch that will be pushed to when DEV_BRANCH updates.
       - REMOTE_DEPLOY_BRANCH
       # "pantheon" or "acquia"
       - HOSTING_PLATFORM
@@ -29,8 +29,6 @@ services:
       # Determines which environment "fin pull db/files" grabs from.
       - HOSTING_ENV
       # Name of the remote to push DEV_BRANCH updates to.
-      - REMOTE_DEPLOY_BRANCH
-      # Name of branch to listen to push remote branch updates.
       - DEV_BRANCH       
       # Name of the theme, for Emulsify only.
       - THEME_NAME
