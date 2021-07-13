@@ -1,5 +1,6 @@
 ![Provus Logo](https://user-images.githubusercontent.com/512243/102635812-d482cc00-4121-11eb-9bdc-7dad480403fd.png)
 
+[![Build Status](https://app.travis-ci.com/promet/provus.svg?branch=develop)](https://app.travis-ci.com/promet/provus)
 
 This is a starter project for Drupal 8/9 projects that provides the following:
 
