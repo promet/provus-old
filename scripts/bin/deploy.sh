@@ -1,6 +1,4 @@
-
 #!/bin/bash
-
 CURRENT_BRANCH=`git name-rev --name-only HEAD`
 CURRENT_TAG=`git name-rev --tags --name-only $(git rev-parse HEAD)`
 
@@ -92,7 +90,13 @@ auth_hosting
 if [ $CURRENT_TAG != "undefined" ]
 then
   setup
-  tag
+  if [ "$HOSTING_PLATFORM" == "pantheon" ]
+  then
+    # Pantheon doesn't accept tags. Create a branch with the tag name.
+    push $CURRENT_TAG
+  else
+    tag
+  fi
 elif [ $CURRENT_BRANCH == $DEV_BRANCH ]
 then
   setup
