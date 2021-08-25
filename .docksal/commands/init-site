@@ -7,6 +7,7 @@
 fin composer install
 fin drush si -y --account-pass=admin
 fin drush config-set system.site uuid ${UUID} -y
+fin drush entity:delete shortcut_set
 fin drush cim -y
 fin build-theme
 fin test-content
