@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains link_group.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function link_group_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the link_group module.
+    case 'help.page.link_group':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Create blocks using Views queries, view modes, and a simpler UI for content editors.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function link_group_theme() {
+  return [
+    'link_group' => [
+      'render element' => 'children',
+    ],
+  ];
+}

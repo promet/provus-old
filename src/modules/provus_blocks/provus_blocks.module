@@ -69,12 +69,14 @@ function provus_blocks_preprocess_field(&$vars) {
       if (isset($item['content']['#media'])) {
         $fid = $item['content']['#media']->getSource()->getSourceFieldValue($item['content']['#media']);
         $file = File::load($fid);
-        $url_full = $file->url();
-        $style = ImageStyle::load('thumbnail');
-        $url_thumbnail = $style->buildUrl($file->getFileUri());
-        $vars['items'][$key]['image_thumb_src'] = $url_thumbnail;
-        $vars['items'][$key]['image_src'] = $url_full;
-        $vars['items'][$key]['image_alt'] = $item['content']['#media']->get('field_media_image')->first()->get('alt')->getString();
+        if ($file instanceof File) {
+          $url_full = $file->createFileUrl();
+          $style = ImageStyle::load('thumbnail');
+          $url_thumbnail = $style->buildUrl($file->getFileUri());
+          $vars['items'][$key]['image_thumb_src'] = $url_thumbnail;
+          $vars['items'][$key]['image_src'] = $url_full;
+          $vars['items'][$key]['image_alt'] = $item['content']['#media']->get('field_media_image')->first()->get('alt')->getString();
+        }
       }
     }
   }

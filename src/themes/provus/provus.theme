@@ -10,6 +10,7 @@ use Drupal\Core\Block\BlockPluginInterface;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Render\Element;
 use Drupal\Core\Template\Attribute;
+use Drupal\Core\Entity\EntityRepository;
 use Drupal\Core\Url;
 use Drupal\file\Entity\File;
 use Drupal\image\Entity\ImageStyle;
@@ -1111,7 +1112,7 @@ function _prepare_teaser_search(&$vars, $type = 'node') {
  */
 function _provus_current_path() {
   $current_path = \Drupal::service('path.current')->getPath();
-  $result = \Drupal::service('path.alias_manager')->getAliasByPath($current_path);
+  $result = \Drupal::service('path_alias.manager')->getAliasByPath($current_path);
   return trim($result, '/');
 }
 
@@ -1197,8 +1198,8 @@ function _provus_mainmenu_set_expanded($item, $id) {
   if ($item['in_active_trail']) {
     list($bundle, $uuid) = explode(':', $id);
     // Set expanded setting from item.
-    $menu_link_content_entity = \Drupal::entityManager()
-      ->loadEntityByUuid($bundle, $uuid);
+    $entity_repository = \Drupal::service('entity.repository');
+    $menu_link_content_entity = $entity_repository->loadEntityByUuid($bundle, $uuid);
     $item['is_expanded'] = $menu_link_content_entity->isExpanded();
     if (!$item['is_expanded']) {
       unset($item['below']);

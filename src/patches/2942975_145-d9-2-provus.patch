@@ -1058,3 +1058,144 @@ index 2e21947de9..316b108cfa 100644
          'hunt_and_peck' => ['delay' => '300ms'],
        ]
      );
+diff --git a/core/modules/layout_builder/tests/src/Unit/SectionDataNormalizerTest.php b/core/modules/layout_builder/tests/src/Unit/SectionDataNormalizerTest.php
+new file mode 100644
+index 0000000000..be271dd4f3
+--- /dev/null
++++ b/core/modules/layout_builder/tests/src/Unit/SectionDataNormalizerTest.php
+@@ -0,0 +1,95 @@
++<?php
++
++namespace Drupal\Tests\layout_builder\Unit;
++
++use Drupal\Core\Field\FieldItemInterface;
++use Drupal\Core\TypedData\DataDefinitionInterface;
++use Drupal\layout_builder\Normalizer\SectionDataNormalizer;
++use Drupal\layout_builder\Plugin\DataType\SectionData;
++use Drupal\layout_builder\Section;
++use Drupal\Tests\UnitTestCase;
++
++/**
++ * @coversDefaultClass \Drupal\layout_builder\Normalizer\SectionDataNormalizer
++ * @group layout_builder
++ */
++class SectionDataNormalizerTest extends UnitTestCase {
++
++  /**
++   * The normalizer.
++   *
++   * @var \Drupal\layout_builder\Normalizer\SectionDataNormalizer
++   */
++  protected $normalizer;
++
++  /**
++   * {@inheritdoc}
++   */
++  protected function setUp(): void {
++    parent::setUp();
++    $this->normalizer = new SectionDataNormalizer();
++  }
++
++  /**
++   * @covers ::supportsNormalization
++   */
++  public function testSupportsNormalization() {
++    $section_data = $this->prophesize(SectionData::class);
++    $this->assertTrue($this->normalizer->supportsNormalization($section_data->reveal()));
++  }
++
++  /**
++   * @covers ::supportsDenormalization
++   */
++  public function testSupportsDenormalization() {
++    $this->assertTrue($this->normalizer->supportsDenormalization([], SectionData::class));
++  }
++
++  /**
++   * Tests the normalize function.
++   *
++   * @covers ::normalize
++   */
++  public function testNormalize() {
++    $data = ['foo'];
++    $section_data = $this->prophesize(SectionData::class);
++    $section = $this->prophesize(Section::class);
++    $section->toArray()
++      ->willReturn($data);
++    $section_data->getValue()
++      ->willReturn($section);
++    $this->assertArrayEquals($data, $this->normalizer->normalize($section_data->reveal()));
++  }
++
++  /**
++   * Tests the denormalize function.
++   *
++   * @covers ::denormalize
++   */
++  public function testDenormalize() {
++    $data = [
++      'layout_id' => $this->randomMachineName(),
++      'layout_settings' => [
++        'label' => $this->randomMachineName(),
++      ],
++      'components' => [],
++      'third_party_settings' => [],
++    ];
++    $target_instance = $this->prophesize(FieldItemInterface::class);
++    $target_instance->getDataDefinition()
++      ->willReturn($this->prophesize(DataDefinitionInterface::class));
++    $context = [
++      'target_instance' => [
++        $target_instance,
++      ],
++    ];
++    /** @var \Drupal\layout_builder\Section $section_data */
++    $section_data = $this->normalizer->denormalize($data, SectionData::class, $context);
++    $this->assertEquals($data['layout_id'], $section_data->getLayoutId());
++    $this->assertEquals($data['components'], $section_data->getComponents());
++    foreach ($section_data->getThirdPartyProviders() as $provider) {
++      $this->assertEquals($data['third_party_settings'], $section_data->getThirdPartySettings($provider));
++    }
++  }
++
++}
+diff --git a/core/modules/layout_builder/src/Normalizer/SectionDataNormalizer.php b/core/modules/layout_builder/src/Normalizer/SectionDataNormalizer.php
+new file mode 100644
+index 0000000000..5674439586
+--- /dev/null
++++ b/core/modules/layout_builder/src/Normalizer/SectionDataNormalizer.php
+@@ -0,0 +1,34 @@
++<?php
++
++namespace Drupal\layout_builder\Normalizer;
++
++use Drupal\layout_builder\Plugin\DataType\SectionData;
++use Drupal\layout_builder\Section;
++use Drupal\serialization\Normalizer\TypedDataNormalizer;
++use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
++
++/**
++ * Normalizes section data.
++ */
++class SectionDataNormalizer extends TypedDataNormalizer implements DenormalizerInterface {
++
++  /**
++   * {@inheritdoc}
++   */
++  protected $supportedInterfaceOrClass = SectionData::class;
++
++  /**
++   * {@inheritdoc}
++   */
++  public function normalize($object, $format = NULL, array $context = []) {
++    return $object->getValue()->toArray();
++  }
++
++  /**
++   * {@inheritdoc}
++   */
++  public function denormalize($data, $class, $format = NULL, array $context = []) {
++    return Section::fromArray($data);
++  }
++}
++

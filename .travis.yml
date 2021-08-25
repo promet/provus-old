@@ -16,6 +16,10 @@ install:
   - cp .docksal/docksal-local.yml.sample .docksal/docksal-local.yml
 
 before_script:
+  - fin start
+  - fin run phpcs -i
+  - fin composer install
+  - fin php-cs
   - fin init
   - fin cypress-install
 

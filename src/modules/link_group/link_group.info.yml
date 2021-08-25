@@ -1,0 +1,8 @@
+name: 'Link Group'
+type: module
+description: 'Create blocks using Views queries, view modes, and a simpler UI for content editors.'
+core: 8.x
+package: 'Custom'
+dependencies:
+  - views
+  - block_content
