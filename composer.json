@@ -100,6 +100,7 @@
         "drupal/redirect": "^1.6",
         "drupal/search_api": "^1.16",
         "drupal/search_api_solr": "^1.4",
+        "drupal/search_api_glossary": "4.x-dev@dev",
         "drupal/section_library": "^1.0@beta",
         "drupal/simple_instagram_feed": "^3.8",
         "drupal/smart_trim": "^1.2",
@@ -117,7 +118,6 @@
         "jsanahuja/jqueryinstagramfeed": "dev-master",
         "kporras07/composer-symlinks": "dev-master",
         "oomphinc/composer-installers-extender": "^2.0",
-        "symfony/event-dispatcher": "4.3.4 as 3.4.99",
         "vlucas/phpdotenv": "^2.4",
         "webflo/drupal-finder": "^1.0.0",
         "webmozart/path-util": "^2.3",
@@ -197,8 +197,8 @@
         },
         "patches": {
             "drupal/core": {
-                "Block visibility has wrong logic [923934]": "https://www.drupal.org/files/issues/2020-02-11/block_visibility_has_wrong_logic-923934-14-reroll-32-drupal-8.8.2.patch",
-                "Temp workaround for entity_staging to choose block uuid over revision id [#2942975]": "src/patches/2942975-drupal_8_9_x-137.patch"
+                "Temp workaround for entity_staging to choose block uuid over revision id [#2942975]": "src/patches/2942975_145-d9-2-provus.patch",
+                "Block visibility has wrong logic [923934]": "https://www.drupal.org/files/issues/2021-06-29/923934-44.patch"
             },
             "drupal/config_ignore": {
                 "Support config ignore export [#2942975]": "https://www.drupal.org/files/issues/2020-01-11/support-for-export-2857247-44.patch"
@@ -206,9 +206,6 @@
             "drupal/entity_staging": {
                 "Stream wrapper bug [#3216474]": "https://git.drupalcode.org/project/entity_staging/-/merge_requests/3.diff", 
                 "Unsupported operand types bug [#3145936]": "https://www.drupal.org/files/issues/2020-06-04/entity-staging-unsuported-operand-types-3145936-2.patch"
-            },
-            "drupal/devel": {
-                "Missing Drush commands [3106091]": "https://www.drupal.org/files/issues/2020-01-29/drush-service-rename-3106091-2.patch"
             }
         }
     }

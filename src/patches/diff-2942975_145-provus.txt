@@ -1,0 +1,42 @@
+272c272
+< index 9f347174d3..160ce058d3 100644
+---
+> index 9f347174d3..770852097f 100644
+275c275,287
+< @@ -239,6 +239,10 @@ protected function getEntity() {
+---
+> @@ -229,6 +229,11 @@ protected function getEntity() {
+>        if (!empty($this->configuration['block_serialized'])) {
+>          $this->blockContent = unserialize($this->configuration['block_serialized']);
+>        }
+> +      elseif (!empty($this->configuration['uuid'])) {
+> +        $entity = $this->entityTypeManager->getStorage('block_content')->loadByProperties(['uuid' => $this->configuration['uuid']]);
+> +        $this->blockContent = is_array($entity) ? array_pop($entity) : $entity;
+> +      }
+> +
+>        elseif (!empty($this->configuration['block_revision_id'])) {
+>          $entity = $this->entityTypeManager->getStorage('block_content')->loadRevision($this->configuration['block_revision_id']);
+>          $this->blockContent = $entity;
+> @@ -239,6 +244,10 @@ protected function getEntity() {
+286c298,312
+< @@ -291,6 +295,8 @@ public function saveBlockContent($new_revision = FALSE, $duplicate_block = FALSE
+---
+> @@ -270,7 +279,12 @@ public function buildConfigurationForm(array $form, FormStateInterface $form_sta
+>    public function saveBlockContent($new_revision = FALSE, $duplicate_block = FALSE) {
+>      /** @var \Drupal\block_content\BlockContentInterface $block */
+>      $block = NULL;
+> -    if (!empty($this->configuration['block_serialized'])) {
+> +      if (empty($block) && !empty($this->configuration['uuid'])) {
+> +        $entity = $this->entityTypeManager->getStorage('block_content')->loadByProperties(['uuid' => $this->configuration['uuid']]);
+> +        $block = !empty($entity) ? current($entity) : NULL;
+> +      }
+> +      elseif (empty($block) && !empty($this->configuration['block_revision_id'])) {
+> +
+>        $block = unserialize($this->configuration['block_serialized']);
+>      }
+>      if ($duplicate_block) {
+> @@ -291,6 +305,8 @@ public function saveBlockContent($new_revision = FALSE, $duplicate_block = FALSE
+1175c1201
+< +}
+---
+> +

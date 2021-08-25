@@ -1,0 +1,1060 @@
+diff --git a/core/modules/layout_builder/config/schema/layout_builder.schema.yml b/core/modules/layout_builder/config/schema/layout_builder.schema.yml
+index 862c90ecbe..f657f0ecc3 100644
+--- a/core/modules/layout_builder/config/schema/layout_builder.schema.yml
++++ b/core/modules/layout_builder/config/schema/layout_builder.schema.yml
+@@ -66,6 +66,12 @@ inline_block:
+     block_serialized:
+       type: string
+       label: 'Serialized block'
++    type:
++      type: string
++      label: 'Block type'
++    uuid:
++      type: string
++      label: 'Block UUID'
+ 
+ block.settings.inline_block:*:
+   type: inline_block
+diff --git a/core/modules/layout_builder/layout_builder.services.yml b/core/modules/layout_builder/layout_builder.services.yml
+index bce1734e71..9c1d3b70f3 100644
+--- a/core/modules/layout_builder/layout_builder.services.yml
++++ b/core/modules/layout_builder/layout_builder.services.yml
+@@ -56,3 +56,14 @@ services:
+     arguments: ['@layout_builder.tempstore_repository', '@messenger']
+     tags:
+       - { name: event_subscriber }
++  layout_builder.normalizer.entity_display:
++    class: Drupal\layout_builder\Normalizer\LayoutEntityDisplayNormalizer
++    tags:
++      # Priority must be higher than serializer.normalizer.config_entity.
++      - { name: normalizer, priority: 1 }
++    arguments: ['@entity_type.manager', '@entity_type.repository', '@entity_field.manager']
++  layout_builder.normalizer.section_data:
++    class: Drupal\layout_builder\Normalizer\SectionDataNormalizer
++    tags:
++      # Priority must be higher than serializer.normalizer.typed_data.
++      - { name: normalizer, priority: 1 }
+diff --git a/core/modules/layout_builder/src/Element/LayoutBuilder.php b/core/modules/layout_builder/src/Element/LayoutBuilder.php
+index 98923d7698..fbcf139e53 100644
+--- a/core/modules/layout_builder/src/Element/LayoutBuilder.php
++++ b/core/modules/layout_builder/src/Element/LayoutBuilder.php
+@@ -52,7 +52,7 @@ class LayoutBuilder extends RenderElement implements ContainerFactoryPluginInter
+    *   The messenger service. This is no longer used and will be removed in
+    *   drupal:10.0.0.
+    */
+-  public function __construct(array $configuration, $plugin_id, $plugin_definition, $event_dispatcher, $messenger = NULL) {
++  public function __construct(array $configuration, $plugin_id, $plugin_definition, EventDispatcherInterface $event_dispatcher, $messenger = NULL) {
+     parent::__construct($configuration, $plugin_id, $plugin_definition);
+ 
+     if (!($event_dispatcher instanceof EventDispatcherInterface)) {
+@@ -182,7 +182,10 @@ protected function buildAddSectionLink(SectionStorageInterface $section_storage,
+         $title = $this->t('Add section <span class="visually-hidden">at start of layout</span>');
+       }
+       else {
+-        $title = $this->t('Add section <span class="visually-hidden">between @first and @second</span>', ['@first' => $delta, '@second' => $delta + 1]);
++        $title = $this->t('Add section <span class="visually-hidden">between @first and @second</span>', [
++          '@first' => $delta,
++          '@second' => $delta + 1,
++        ]);
+       }
+     }
+ 
+@@ -272,7 +275,10 @@ protected function buildAdministrativeSection(SectionStorageInterface $section_s
+       $build[$region]['layout_builder_add_block']['link'] = [
+         '#type' => 'link',
+         // Add one to the current delta since it is zero-indexed.
+-        '#title' => $this->t('Add block <span class="visually-hidden">in @section, @region region</span>', ['@section' => $section_label, '@region' => $region_labels[$region]]),
++        '#title' => $this->t('Add block <span class="visually-hidden">in @section, @region region</span>', [
++          '@section' => $section_label,
++          '@region' => $region_labels[$region],
++        ]),
+         '#url' => Url::fromRoute('layout_builder.choose_block',
+           [
+             'section_storage_type' => $storage_type,
+diff --git a/core/modules/layout_builder/src/Entity/LayoutBuilderEntityViewDisplay.php b/core/modules/layout_builder/src/Entity/LayoutBuilderEntityViewDisplay.php
+index c0288297f6..452bc9a65e 100644
+--- a/core/modules/layout_builder/src/Entity/LayoutBuilderEntityViewDisplay.php
++++ b/core/modules/layout_builder/src/Entity/LayoutBuilderEntityViewDisplay.php
+@@ -350,7 +350,11 @@ public function label() {
+     $bundle_info = \Drupal::service('entity_type.bundle.info')->getBundleInfo($this->getTargetEntityTypeId());
+     $bundle_label = $bundle_info[$this->getTargetBundle()]['label'];
+     $target_entity_type = $this->entityTypeManager()->getDefinition($this->getTargetEntityTypeId());
+-    return new TranslatableMarkup('@bundle @label', ['@bundle' => $bundle_label, '@label' => $target_entity_type->getPluralLabel()]);
++    return new TranslatableMarkup('@bundle @label',
++      [
++        '@bundle' => $bundle_label,
++        '@label' => $target_entity_type->getPluralLabel(),
++      ]);
+   }
+ 
+   /**
+@@ -535,7 +539,10 @@ private function getSectionComponentForFieldName($field_name) {
+     foreach ($this->getSections() as $section) {
+       foreach ($section->getComponents() as $component) {
+         $plugin = $component->getPlugin();
+-        if ($plugin instanceof DerivativeInspectionInterface && in_array($plugin->getBaseId(), ['field_block', 'extra_field_block'], TRUE)) {
++        if ($plugin instanceof DerivativeInspectionInterface && in_array($plugin->getBaseId(),
++          [
++            'field_block', 'extra_field_block',
++          ], TRUE)) {
+           // FieldBlock derivative IDs are in the format
+           // [entity_type]:[bundle]:[field].
+           list(, , $field_block_field_name) = explode(PluginBase::DERIVATIVE_SEPARATOR, $plugin->getDerivativeId());
+diff --git a/core/modules/layout_builder/src/EventSubscriber/BlockComponentRenderArray.php b/core/modules/layout_builder/src/EventSubscriber/BlockComponentRenderArray.php
+index d9218b5387..26a8eec8bd 100644
+--- a/core/modules/layout_builder/src/EventSubscriber/BlockComponentRenderArray.php
++++ b/core/modules/layout_builder/src/EventSubscriber/BlockComponentRenderArray.php
+@@ -47,7 +47,9 @@ public function __construct(AccountInterface $current_user) {
+    * {@inheritdoc}
+    */
+   public static function getSubscribedEvents() {
+-    $events[LayoutBuilderEvents::SECTION_COMPONENT_BUILD_RENDER_ARRAY] = ['onBuildRender', 100];
++    $events[LayoutBuilderEvents::SECTION_COMPONENT_BUILD_RENDER_ARRAY] = [
++      'onBuildRender', 100,
++    ];
+     return $events;
+   }
+ 
+diff --git a/core/modules/layout_builder/src/EventSubscriber/PrepareLayout.php b/core/modules/layout_builder/src/EventSubscriber/PrepareLayout.php
+index e335b87ab8..3dae574751 100644
+--- a/core/modules/layout_builder/src/EventSubscriber/PrepareLayout.php
++++ b/core/modules/layout_builder/src/EventSubscriber/PrepareLayout.php
+@@ -11,8 +11,7 @@
+ use Symfony\Component\EventDispatcher\EventSubscriberInterface;
+ 
+ /**
+- * An event subscriber to prepare section storage via the
+- * \Drupal\layout_builder\Event\PrepareLayoutEvent.
++ * An event subscriber to prepare section storage via PrepareLayoutEvent.
+  *
+  * @see \Drupal\layout_builder\Event\PrepareLayoutEvent
+  * @see \Drupal\layout_builder\Element\LayoutBuilder::prepareLayout()
+diff --git a/core/modules/layout_builder/src/Field/LayoutSectionItemList.php b/core/modules/layout_builder/src/Field/LayoutSectionItemList.php
+index 28b17399ab..2b8888e3e6 100644
+--- a/core/modules/layout_builder/src/Field/LayoutSectionItemList.php
++++ b/core/modules/layout_builder/src/Field/LayoutSectionItemList.php
+@@ -101,7 +101,10 @@ public function equals(FieldItemListInterface $list_to_compare) {
+    * @ingroup layout_builder_access
+    */
+   public function defaultAccess($operation = 'view', AccountInterface $account = NULL) {
+-    // @todo Allow access in https://www.drupal.org/node/2942975.
++    if ($operation === 'view') {
++      return parent::defaultAccess($operation, $account);
++    }
++
+     return AccessResult::forbidden();
+   }
+ 
+diff --git a/core/modules/layout_builder/src/Form/MoveBlockForm.php b/core/modules/layout_builder/src/Form/MoveBlockForm.php
+index ef0568ead0..5c257df7fd 100644
+--- a/core/modules/layout_builder/src/Form/MoveBlockForm.php
++++ b/core/modules/layout_builder/src/Form/MoveBlockForm.php
+@@ -155,7 +155,11 @@ public function buildForm(array $form, FormStateInterface $form_state, SectionSt
+     ];
+     $current_section = $sections[$selected_delta];
+ 
+-    $aria_label = $this->t('Blocks in Section: @section, Region: @region', ['@section' => $selected_delta + 1, '@region' => $selected_region]);
++    $aria_label = $this->t('Blocks in Section: @section, Region: @region',
++      [
++        '@section' => $selected_delta + 1,
++        '@region' => $selected_region,
++      ]);
+ 
+     $form['components_wrapper']['components'] = [
+       '#type' => 'table',
+diff --git a/core/modules/layout_builder/src/InlineBlockUsage.php b/core/modules/layout_builder/src/InlineBlockUsage.php
+index ab94d4c535..46c073af73 100644
+--- a/core/modules/layout_builder/src/InlineBlockUsage.php
++++ b/core/modules/layout_builder/src/InlineBlockUsage.php
+@@ -80,7 +80,10 @@ public function deleteUsage(array $block_content_ids) {
+   public function getUsage($block_content_id) {
+     $query = $this->database->select('inline_block_usage');
+     $query->condition('block_content_id', $block_content_id);
+-    $query->fields('inline_block_usage', ['layout_entity_id', 'layout_entity_type']);
++    $query->fields('inline_block_usage',
++      [
++        'layout_entity_id', 'layout_entity_type',
++      ]);
+     $query->range(0, 1);
+     return $query->execute()->fetchObject();
+   }
+diff --git a/core/modules/layout_builder/src/LayoutBuilderServiceProvider.php b/core/modules/layout_builder/src/LayoutBuilderServiceProvider.php
+index f0b078c48e..d5db01dbff 100644
+--- a/core/modules/layout_builder/src/LayoutBuilderServiceProvider.php
++++ b/core/modules/layout_builder/src/LayoutBuilderServiceProvider.php
+@@ -5,8 +5,6 @@
+ use Drupal\Core\DependencyInjection\ContainerBuilder;
+ use Drupal\Core\DependencyInjection\ServiceProviderInterface;
+ use Drupal\layout_builder\EventSubscriber\SetInlineBlockDependency;
+-use Drupal\layout_builder\Normalizer\LayoutEntityDisplayNormalizer;
+-use Symfony\Component\DependencyInjection\ChildDefinition;
+ use Symfony\Component\DependencyInjection\Definition;
+ use Symfony\Component\DependencyInjection\Reference;
+ 
+@@ -40,14 +38,6 @@ public function register(ContainerBuilder $container) {
+       $definition->setPublic(TRUE);
+       $container->setDefinition('layout_builder.get_block_dependency_subscriber', $definition);
+     }
+-    if (isset($modules['serialization'])) {
+-      $definition = (new ChildDefinition('serializer.normalizer.config_entity'))
+-        ->setClass(LayoutEntityDisplayNormalizer::class)
+-        // Ensure that this normalizer takes precedence for Layout Builder data
+-        // over the generic serializer.normalizer.config_entity.
+-        ->addTag('normalizer', ['priority' => 5]);
+-      $container->setDefinition('layout_builder.normalizer.layout_entity_display', $definition);
+-    }
+   }
+ 
+ }
+diff --git a/core/modules/layout_builder/src/Normalizer/LayoutEntityDisplayNormalizer.php b/core/modules/layout_builder/src/Normalizer/LayoutEntityDisplayNormalizer.php
+index 886304fa29..720767e1a4 100644
+--- a/core/modules/layout_builder/src/Normalizer/LayoutEntityDisplayNormalizer.php
++++ b/core/modules/layout_builder/src/Normalizer/LayoutEntityDisplayNormalizer.php
+@@ -3,6 +3,7 @@
+ namespace Drupal\layout_builder\Normalizer;
+ 
+ use Drupal\layout_builder\Entity\LayoutEntityDisplayInterface;
++use Drupal\layout_builder\Section;
+ use Drupal\serialization\Normalizer\ConfigEntityNormalizer;
+ 
+ /**
+@@ -21,13 +22,26 @@ class LayoutEntityDisplayNormalizer extends ConfigEntityNormalizer {
+   /**
+    * {@inheritdoc}
+    */
+-  protected static function getDataWithoutInternals(array $data) {
+-    $data = parent::getDataWithoutInternals($data);
+-    // Do not expose the actual layout sections in normalization.
+-    // @todo Determine what to expose here in
+-    //   https://www.drupal.org/node/2942975.
+-    unset($data['third_party_settings']['layout_builder']['sections']);
++  public function normalize($object, $format = NULL, array $context = []) {
++    $data = static::getDataWithoutInternals($object->toArray());
++    if (!empty($data['third_party_settings']['layout_builder']['sections'])) {
++      $sections = &$data['third_party_settings']['layout_builder']['sections'];
++      $sections = array_map(static function (Section $section) {
++        return $section->toArray();
++      }, $sections);
++    }
+     return $data;
+   }
+ 
++  /**
++   * {@inheritdoc}
++   */
++  public function denormalize($data, $class, $format = NULL, array $context = []) {
++    if (!empty($data['third_party_settings']['layout_builder']['sections'])) {
++      $sections = &$data['third_party_settings']['layout_builder']['sections'];
++      $sections = array_map([Section::class, 'fromArray'], $sections);
++    }
++    return parent::denormalize(static::getDataWithoutInternals($data), $class, $format, $context);
++  }
++
+ }
+diff --git a/core/modules/layout_builder/src/Plugin/Block/FieldBlock.php b/core/modules/layout_builder/src/Plugin/Block/FieldBlock.php
+index 80d9b97315..02d27d3a03 100644
+--- a/core/modules/layout_builder/src/Plugin/Block/FieldBlock.php
++++ b/core/modules/layout_builder/src/Plugin/Block/FieldBlock.php
+@@ -167,7 +167,11 @@ public function build() {
+     }
+     catch (\Exception $e) {
+       $build = [];
+-      $this->logger->warning('The field "%field" failed to render with the error of "%error".', ['%field' => $this->fieldName, '%error' => $e->getMessage()]);
++      $this->logger->warning('The field "%field" failed to render with the error of "%error".',
++        [
++          '%field' => $this->fieldName,
++          '%error' => $e->getMessage(),
++        ]);
+     }
+     CacheableMetadata::createFromRenderArray($build)->addCacheableDependency($this)->applyTo($build);
+     return $build;
+diff --git a/core/modules/layout_builder/src/Plugin/Block/InlineBlock.php b/core/modules/layout_builder/src/Plugin/Block/InlineBlock.php
+index 9f347174d3..770852097f 100644
+--- a/core/modules/layout_builder/src/Plugin/Block/InlineBlock.php
++++ b/core/modules/layout_builder/src/Plugin/Block/InlineBlock.php
+@@ -229,6 +229,11 @@ protected function getEntity() {
+       if (!empty($this->configuration['block_serialized'])) {
+         $this->blockContent = unserialize($this->configuration['block_serialized']);
+       }
++      elseif (!empty($this->configuration['uuid'])) {
++        $entity = $this->entityTypeManager->getStorage('block_content')->loadByProperties(['uuid' => $this->configuration['uuid']]);
++        $this->blockContent = is_array($entity) ? array_pop($entity) : $entity;
++      }
++
+       elseif (!empty($this->configuration['block_revision_id'])) {
+         $entity = $this->entityTypeManager->getStorage('block_content')->loadRevision($this->configuration['block_revision_id']);
+         $this->blockContent = $entity;
+@@ -239,6 +244,10 @@ protected function getEntity() {
+           'reusable' => FALSE,
+         ]);
+       }
++      if (!isset($this->blockContent) && isset($this->configuration['type']) && isset($this->configuration['uuid'])) {
++        $entity = $this->entityTypeManager->getStorage('block_content')->loadByProperties(['uuid' => $this->configuration['uuid']]);
++        $this->blockContent = is_array($entity) ? array_pop($entity) : $entity;
++      }
+       if ($this->blockContent instanceof RefinableDependentAccessInterface && $dependee = $this->getAccessDependency()) {
+         $this->blockContent->setAccessDependency($dependee);
+       }
+@@ -270,7 +279,12 @@ public function buildConfigurationForm(array $form, FormStateInterface $form_sta
+   public function saveBlockContent($new_revision = FALSE, $duplicate_block = FALSE) {
+     /** @var \Drupal\block_content\BlockContentInterface $block */
+     $block = NULL;
+-    if (!empty($this->configuration['block_serialized'])) {
++      if (empty($block) && !empty($this->configuration['uuid'])) {
++        $entity = $this->entityTypeManager->getStorage('block_content')->loadByProperties(['uuid' => $this->configuration['uuid']]);
++        $block = !empty($entity) ? current($entity) : NULL;
++      }
++      elseif (empty($block) && !empty($this->configuration['block_revision_id'])) {
++
+       $block = unserialize($this->configuration['block_serialized']);
+     }
+     if ($duplicate_block) {
+@@ -291,6 +305,8 @@ public function saveBlockContent($new_revision = FALSE, $duplicate_block = FALSE
+       $block->save();
+       $this->configuration['block_revision_id'] = $block->getRevisionId();
+       $this->configuration['block_serialized'] = NULL;
++      $this->configuration['type'] = $block->bundle();
++      $this->configuration['uuid'] = $block->uuid();
+     }
+   }
+ 
+diff --git a/core/modules/layout_builder/src/Plugin/DataType/SectionData.php b/core/modules/layout_builder/src/Plugin/DataType/SectionData.php
+index 8783904d49..4352bae88c 100644
+--- a/core/modules/layout_builder/src/Plugin/DataType/SectionData.php
++++ b/core/modules/layout_builder/src/Plugin/DataType/SectionData.php
+@@ -30,8 +30,18 @@ class SectionData extends TypedData {
+    * {@inheritdoc}
+    */
+   public function setValue($value, $notify = TRUE) {
++
++    if ($value && is_array($value)) {
++      $value = Section::fromArray($value);
++    }
++
+     if ($value && !$value instanceof Section) {
+-      throw new \InvalidArgumentException(sprintf('Value assigned to "%s" is not a valid section', $this->getName()));
++      if (isset($value->value) && !$value->value instanceof Section) {
++        throw new \InvalidArgumentException(sprintf('Value assigned to "%s" is not a valid section', $this->getName()));
++      }
++      else {
++        parent::setValue($value->value, $notify);
++      }
+     }
+     parent::setValue($value, $notify);
+   }
+diff --git a/core/modules/layout_builder/src/Section.php b/core/modules/layout_builder/src/Section.php
+index cd27437cb2..2a170d7012 100644
+--- a/core/modules/layout_builder/src/Section.php
++++ b/core/modules/layout_builder/src/Section.php
+@@ -344,9 +344,9 @@ public function toArray() {
+     return [
+       'layout_id' => $this->getLayoutId(),
+       'layout_settings' => $this->getLayoutSettings(),
+-      'components' => array_map(function (SectionComponent $component) {
++      'components' => array_values(array_map(function (SectionComponent $component) {
+         return $component->toArray();
+-      }, $this->getComponents()),
++      }, $this->getComponents())),
+       'third_party_settings' => $this->thirdPartySettings,
+     ];
+   }
+diff --git a/core/modules/layout_builder/src/SectionStorageInterface.php b/core/modules/layout_builder/src/SectionStorageInterface.php
+index 35b3a9c87b..8cd7b5d38d 100644
+--- a/core/modules/layout_builder/src/SectionStorageInterface.php
++++ b/core/modules/layout_builder/src/SectionStorageInterface.php
+@@ -136,7 +136,9 @@ public function save();
+   public function isApplicable(RefinableCacheableDependencyInterface $cacheability);
+ 
+   /**
+-   * Overrides \Drupal\Component\Plugin\PluginInspectionInterface::getPluginDefinition().
++   * Overrides PluginInspectionInterface::getPluginDefinition().
++   *
++   * @see \Drupal\Component\Plugin\PluginInspectionInterface::getPluginDefinition()
+    *
+    * @return \Drupal\layout_builder\SectionStorage\SectionStorageDefinition
+    *   The section storage definition.
+diff --git a/core/modules/layout_builder/tests/modules/layout_builder_decoration_test/src/Controller/LayoutBuilderDecorationTestHtmlEntityFormController.php b/core/modules/layout_builder/tests/modules/layout_builder_decoration_test/src/Controller/LayoutBuilderDecorationTestHtmlEntityFormController.php
+index 7922024334..9d57e70dcf 100644
+--- a/core/modules/layout_builder/tests/modules/layout_builder_decoration_test/src/Controller/LayoutBuilderDecorationTestHtmlEntityFormController.php
++++ b/core/modules/layout_builder/tests/modules/layout_builder_decoration_test/src/Controller/LayoutBuilderDecorationTestHtmlEntityFormController.php
+@@ -7,7 +7,7 @@
+ use Symfony\Component\HttpFoundation\Request;
+ 
+ /**
+- * Overrides the entity form controller service for layout builder decoration test.
++ * Overrides entity form controller service for layout builder decoration test.
+  */
+ class LayoutBuilderDecorationTestHtmlEntityFormController extends FormController {
+ 
+diff --git a/core/modules/layout_builder/tests/modules/layout_builder_element_test/src/EventSubscriber/TestPrepareLayout.php b/core/modules/layout_builder/tests/modules/layout_builder_element_test/src/EventSubscriber/TestPrepareLayout.php
+index cec4af43bb..c33f193bec 100644
+--- a/core/modules/layout_builder/tests/modules/layout_builder_element_test/src/EventSubscriber/TestPrepareLayout.php
++++ b/core/modules/layout_builder/tests/modules/layout_builder_element_test/src/EventSubscriber/TestPrepareLayout.php
+@@ -12,8 +12,7 @@
+ use Symfony\Component\EventDispatcher\EventSubscriberInterface;
+ 
+ /**
+- * An event subscriber to test altering section storage via the
+- * \Drupal\layout_builder\Event\PrepareLayoutEvent.
++ * An event subscriber to test altering section storage via PrepareLayoutEvent.
+  *
+  * @see \Drupal\layout_builder\Event\PrepareLayoutEvent
+  * @see \Drupal\layout_builder\Element\LayoutBuilder::prepareLayout()
+@@ -54,9 +53,15 @@ public function __construct(LayoutTempstoreRepositoryInterface $layout_tempstore
+    */
+   public static function getSubscribedEvents() {
+     // Act before core's layout builder subscriber.
+-    $events[LayoutBuilderEvents::PREPARE_LAYOUT][] = ['onBeforePrepareLayout', 20];
++    $events[LayoutBuilderEvents::PREPARE_LAYOUT][] = [
++      'onBeforePrepareLayout',
++      20,
++    ];
+     // Act after core's layout builder subscriber.
+-    $events[LayoutBuilderEvents::PREPARE_LAYOUT][] = ['onAfterPrepareLayout', -10];
++    $events[LayoutBuilderEvents::PREPARE_LAYOUT][] = [
++      'onAfterPrepareLayout',
++      -10,
++    ];
+     return $events;
+   }
+ 
+diff --git a/core/modules/layout_builder/tests/modules/layout_builder_test/src/Plugin/Layout/LayoutBuilderTestPlugin.php b/core/modules/layout_builder/tests/modules/layout_builder_test/src/Plugin/Layout/LayoutBuilderTestPlugin.php
+index de0ee7d079..9d25c36839 100644
+--- a/core/modules/layout_builder/tests/modules/layout_builder_test/src/Plugin/Layout/LayoutBuilderTestPlugin.php
++++ b/core/modules/layout_builder/tests/modules/layout_builder_test/src/Plugin/Layout/LayoutBuilderTestPlugin.php
+@@ -5,6 +5,8 @@
+ use Drupal\Core\Layout\LayoutDefault;
+ 
+ /**
++ * Layout Builder Test plugin.
++ *
+  * @Layout(
+  *   id = "layout_builder_test_plugin",
+  *   label = @Translation("Layout Builder Test Plugin"),
+diff --git a/core/modules/layout_builder/tests/src/Functional/Hal/LayoutBuilderEntityViewDisplayHalJsonAnonTest.php b/core/modules/layout_builder/tests/src/Functional/Hal/LayoutBuilderEntityViewDisplayHalJsonAnonTest.php
+index 95c66ddb09..1334a08ea9 100644
+--- a/core/modules/layout_builder/tests/src/Functional/Hal/LayoutBuilderEntityViewDisplayHalJsonAnonTest.php
++++ b/core/modules/layout_builder/tests/src/Functional/Hal/LayoutBuilderEntityViewDisplayHalJsonAnonTest.php
+@@ -6,6 +6,8 @@
+ use Drupal\Tests\rest\Functional\AnonResourceTestTrait;
+ 
+ /**
++ * Provides a class LayoutBuilderEntityViewDisplayHalJsonAnonTest.
++ *
+  * @group layout_builder
+  * @group rest
+  */
+diff --git a/core/modules/layout_builder/tests/src/Functional/Hal/LayoutBuilderEntityViewDisplayHalJsonBasicAuthTest.php b/core/modules/layout_builder/tests/src/Functional/Hal/LayoutBuilderEntityViewDisplayHalJsonBasicAuthTest.php
+index 6721bfaa02..f92408a157 100644
+--- a/core/modules/layout_builder/tests/src/Functional/Hal/LayoutBuilderEntityViewDisplayHalJsonBasicAuthTest.php
++++ b/core/modules/layout_builder/tests/src/Functional/Hal/LayoutBuilderEntityViewDisplayHalJsonBasicAuthTest.php
+@@ -2,14 +2,16 @@
+ 
+ namespace Drupal\Tests\layout_builder\Functional\Hal;
+ 
+-use Drupal\FunctionalTests\Hal\EntityViewDisplayHalJsonAnonTest;
++use Drupal\Tests\layout_builder\Functional\Rest\LayoutBuilderEntityViewDisplayResourceTestBase;
+ use Drupal\Tests\rest\Functional\BasicAuthResourceTestTrait;
+ 
+ /**
++ * Provides a class LayoutBuilderEntityViewDisplayHalJsonBasicAuthTest.
++ *
+  * @group layout_builder
+  * @group rest
+  */
+-class LayoutBuilderEntityViewDisplayHalJsonBasicAuthTest extends EntityViewDisplayHalJsonAnonTest {
++class LayoutBuilderEntityViewDisplayHalJsonBasicAuthTest extends LayoutBuilderEntityViewDisplayResourceTestBase {
+ 
+   use BasicAuthResourceTestTrait;
+ 
+@@ -23,4 +25,9 @@ class LayoutBuilderEntityViewDisplayHalJsonBasicAuthTest extends EntityViewDispl
+    */
+   protected static $auth = 'basic_auth';
+ 
++  /**
++   * {@inheritdoc}
++   */
++  protected $defaultTheme = 'stark';
++
+ }
+diff --git a/core/modules/layout_builder/tests/src/Functional/Hal/LayoutBuilderEntityViewDisplayHalJsonCookieTest.php b/core/modules/layout_builder/tests/src/Functional/Hal/LayoutBuilderEntityViewDisplayHalJsonCookieTest.php
+index ad272d297e..4190821fc5 100644
+--- a/core/modules/layout_builder/tests/src/Functional/Hal/LayoutBuilderEntityViewDisplayHalJsonCookieTest.php
++++ b/core/modules/layout_builder/tests/src/Functional/Hal/LayoutBuilderEntityViewDisplayHalJsonCookieTest.php
+@@ -5,6 +5,8 @@
+ use Drupal\Tests\rest\Functional\CookieResourceTestTrait;
+ 
+ /**
++ * Provides a class LayoutBuilderEntityViewDisplayHalJsonCookieTest.
++ *
+  * @group layout_builder
+  * @group rest
+  */
+diff --git a/core/modules/layout_builder/tests/src/Functional/LayoutBuilderAccessTest.php b/core/modules/layout_builder/tests/src/Functional/LayoutBuilderAccessTest.php
+index d14af0ac93..00b204f172 100644
+--- a/core/modules/layout_builder/tests/src/Functional/LayoutBuilderAccessTest.php
++++ b/core/modules/layout_builder/tests/src/Functional/LayoutBuilderAccessTest.php
+@@ -56,8 +56,6 @@ protected function setUp(): void {
+   /**
+    * Tests Layout Builder access for an entity type that has bundles.
+    *
+-   * @dataProvider providerTestAccessWithBundles
+-   *
+    * @param array $permissions
+    *   An array of permissions to grant to the user.
+    * @param bool $default_access
+@@ -66,6 +64,8 @@ protected function setUp(): void {
+    *   Whether access is expected for a non-editable override.
+    * @param bool $editable_access
+    *   Whether access is expected for an editable override.
++   *
++   * @dataProvider providerTestAccessWithBundles
+    */
+   public function testAccessWithBundles(array $permissions, $default_access, $non_editable_access, $editable_access) {
+     $permissions[] = 'edit own bundle_with_section_field content';
+diff --git a/core/modules/layout_builder/tests/src/Functional/Rest/LayoutBuilderEntityViewDisplayJsonAnonTest.php b/core/modules/layout_builder/tests/src/Functional/Rest/LayoutBuilderEntityViewDisplayJsonAnonTest.php
+index 316c1f8916..ea6493fefc 100644
+--- a/core/modules/layout_builder/tests/src/Functional/Rest/LayoutBuilderEntityViewDisplayJsonAnonTest.php
++++ b/core/modules/layout_builder/tests/src/Functional/Rest/LayoutBuilderEntityViewDisplayJsonAnonTest.php
+@@ -5,6 +5,8 @@
+ use Drupal\Tests\rest\Functional\AnonResourceTestTrait;
+ 
+ /**
++ * Provides a class LayoutBuilderEntityViewDisplayJsonAnonTest.
++ *
+  * @group layout_builder
+  * @group rest
+  */
+diff --git a/core/modules/layout_builder/tests/src/Functional/Rest/LayoutBuilderEntityViewDisplayJsonBasicAuthTest.php b/core/modules/layout_builder/tests/src/Functional/Rest/LayoutBuilderEntityViewDisplayJsonBasicAuthTest.php
+index 099e31ace0..470fd5b34c 100644
+--- a/core/modules/layout_builder/tests/src/Functional/Rest/LayoutBuilderEntityViewDisplayJsonBasicAuthTest.php
++++ b/core/modules/layout_builder/tests/src/Functional/Rest/LayoutBuilderEntityViewDisplayJsonBasicAuthTest.php
+@@ -5,6 +5,8 @@
+ use Drupal\Tests\rest\Functional\BasicAuthResourceTestTrait;
+ 
+ /**
++ * Provides a class LayoutBuilderEntityViewDisplayJsonBasicAuthTest.
++ *
+  * @group layout_builder
+  * @group rest
+  */
+diff --git a/core/modules/layout_builder/tests/src/Functional/Rest/LayoutBuilderEntityViewDisplayJsonCookieTest.php b/core/modules/layout_builder/tests/src/Functional/Rest/LayoutBuilderEntityViewDisplayJsonCookieTest.php
+index de311a7325..8ccebcc091 100644
+--- a/core/modules/layout_builder/tests/src/Functional/Rest/LayoutBuilderEntityViewDisplayJsonCookieTest.php
++++ b/core/modules/layout_builder/tests/src/Functional/Rest/LayoutBuilderEntityViewDisplayJsonCookieTest.php
+@@ -5,6 +5,8 @@
+ use Drupal\Tests\rest\Functional\CookieResourceTestTrait;
+ 
+ /**
++ * Provides a class LayoutBuilderEntityViewDisplayJsonCookieTest.
++ *
+  * @group layout_builder
+  * @group rest
+  */
+diff --git a/core/modules/layout_builder/tests/src/Functional/Rest/LayoutBuilderEntityViewDisplayResourceTestBase.php b/core/modules/layout_builder/tests/src/Functional/Rest/LayoutBuilderEntityViewDisplayResourceTestBase.php
+index 7d28bda963..ac8a4400b5 100644
+--- a/core/modules/layout_builder/tests/src/Functional/Rest/LayoutBuilderEntityViewDisplayResourceTestBase.php
++++ b/core/modules/layout_builder/tests/src/Functional/Rest/LayoutBuilderEntityViewDisplayResourceTestBase.php
+@@ -36,9 +36,37 @@ protected function getExpectedNormalizedEntity() {
+     $expected = parent::getExpectedNormalizedEntity();
+     array_unshift($expected['dependencies']['module'], 'layout_builder');
+     $expected['hidden'][OverridesSectionStorage::FIELD_NAME] = TRUE;
++    /** @var \Drupal\layout_builder\Section[] $sections */
++    $sections = $this->entity->getThirdPartySetting('layout_builder', 'sections');
++    $components = $sections[0]->getComponents();
++    $component = array_pop($components);
+     $expected['third_party_settings']['layout_builder'] = [
+       'enabled' => TRUE,
+       'allow_custom' => TRUE,
++      'sections' => [
++        [
++          'layout_id' => 'layout_onecol',
++          'layout_settings' => [
++            'label' => '',
++          ],
++          'components' => [
++            [
++              'uuid' => $component->getUuid(),
++              'region' => 'content',
++              'configuration' => [
++                'label_display' => '0',
++                'context_mapping' => [
++                  'entity' => 'layout_builder.entity',
++                ],
++                'id' => 'extra_field_block:node:camelids:links',
++              ],
++              'weight' => 0,
++              'additional' => [],
++            ],
++          ],
++          'third_party_settings' => [],
++        ],
++      ],
+     ];
+     return $expected;
+   }
+diff --git a/core/modules/layout_builder/tests/src/Functional/Rest/LayoutBuilderEntityViewDisplayXmlAnonTest.php b/core/modules/layout_builder/tests/src/Functional/Rest/LayoutBuilderEntityViewDisplayXmlAnonTest.php
+index 63d3ba0663..779cf321a3 100644
+--- a/core/modules/layout_builder/tests/src/Functional/Rest/LayoutBuilderEntityViewDisplayXmlAnonTest.php
++++ b/core/modules/layout_builder/tests/src/Functional/Rest/LayoutBuilderEntityViewDisplayXmlAnonTest.php
+@@ -6,6 +6,8 @@
+ use Drupal\Tests\rest\Functional\EntityResource\XmlEntityNormalizationQuirksTrait;
+ 
+ /**
++ * Provides a class LayoutBuilderEntityViewDisplayXmlAnonTest.
++ *
+  * @group layout_builder
+  * @group rest
+  */
+diff --git a/core/modules/layout_builder/tests/src/Functional/Rest/LayoutBuilderEntityViewDisplayXmlBasicAuthTest.php b/core/modules/layout_builder/tests/src/Functional/Rest/LayoutBuilderEntityViewDisplayXmlBasicAuthTest.php
+index 751e8ad3c5..92768dadf9 100644
+--- a/core/modules/layout_builder/tests/src/Functional/Rest/LayoutBuilderEntityViewDisplayXmlBasicAuthTest.php
++++ b/core/modules/layout_builder/tests/src/Functional/Rest/LayoutBuilderEntityViewDisplayXmlBasicAuthTest.php
+@@ -6,6 +6,8 @@
+ use Drupal\Tests\rest\Functional\EntityResource\XmlEntityNormalizationQuirksTrait;
+ 
+ /**
++ * Provides a class LayoutBuilderEntityViewDisplayXmlBasicAuthTest.
++ *
+  * @group layout_builder
+  * @group rest
+  */
+diff --git a/core/modules/layout_builder/tests/src/Functional/Rest/LayoutBuilderEntityViewDisplayXmlCookieTest.php b/core/modules/layout_builder/tests/src/Functional/Rest/LayoutBuilderEntityViewDisplayXmlCookieTest.php
+index fef266ca49..a908febf50 100644
+--- a/core/modules/layout_builder/tests/src/Functional/Rest/LayoutBuilderEntityViewDisplayXmlCookieTest.php
++++ b/core/modules/layout_builder/tests/src/Functional/Rest/LayoutBuilderEntityViewDisplayXmlCookieTest.php
+@@ -6,6 +6,8 @@
+ use Drupal\Tests\rest\Functional\EntityResource\XmlEntityNormalizationQuirksTrait;
+ 
+ /**
++ * Provides a class LayoutBuilderEntityViewDisplayXmlCookieTest.
++ *
+  * @group layout_builder
+  * @group rest
+  */
+diff --git a/core/modules/layout_builder/tests/src/FunctionalJavascript/BlockFilterTest.php b/core/modules/layout_builder/tests/src/FunctionalJavascript/BlockFilterTest.php
+index d50e1fa400..5034b6e929 100644
+--- a/core/modules/layout_builder/tests/src/FunctionalJavascript/BlockFilterTest.php
++++ b/core/modules/layout_builder/tests/src/FunctionalJavascript/BlockFilterTest.php
+@@ -81,7 +81,10 @@ public function testBlockFilter() {
+     // Get the Content Fields category, which will be closed before filtering.
+     $contentFieldsCategory = $page->find('named', ['content', 'Content fields']);
+     // Link that belongs to the Content Fields category, to verify collapse.
+-    $promoteToFrontPageLink = $page->find('named', ['content', 'Promoted to front page']);
++    $promoteToFrontPageLink = $page->find('named', [
++      'content',
++      'Promoted to front page',
++    ]);
+     // Test that front page link is visible until Content Fields collapsed.
+     $this->assertTrue($promoteToFrontPageLink->isVisible());
+     $contentFieldsCategory->click();
+diff --git a/core/modules/layout_builder/tests/src/FunctionalJavascript/BlockFormMessagesTest.php b/core/modules/layout_builder/tests/src/FunctionalJavascript/BlockFormMessagesTest.php
+index 4fccd1c842..b0cc0c6e61 100644
+--- a/core/modules/layout_builder/tests/src/FunctionalJavascript/BlockFormMessagesTest.php
++++ b/core/modules/layout_builder/tests/src/FunctionalJavascript/BlockFormMessagesTest.php
+@@ -44,7 +44,7 @@ protected function setUp(): void {
+    */
+   public function testValidationMessage() {
+     // @todo Work out why this fixes random fails in this test.
+-    //   https://www.drupal.org/project/drupal/issues/3055982
++    // https://www.drupal.org/project/drupal/issues/3055982
+     $this->getSession()->resizeWindow(800, 1000);
+     $assert_session = $this->assertSession();
+     $page = $this->getSession()->getPage();
+diff --git a/core/modules/layout_builder/tests/src/FunctionalJavascript/ContentPreviewToggleTest.php b/core/modules/layout_builder/tests/src/FunctionalJavascript/ContentPreviewToggleTest.php
+index 01b76696c5..d96525f6f3 100644
+--- a/core/modules/layout_builder/tests/src/FunctionalJavascript/ContentPreviewToggleTest.php
++++ b/core/modules/layout_builder/tests/src/FunctionalJavascript/ContentPreviewToggleTest.php
+@@ -94,7 +94,10 @@ public function testContentPreviewToggle() {
+     $this->assertContextualLinks();
+ 
+     // Confirm repositioning blocks works with content preview disabled.
+-    $this->assertOrderInPage([$links_field_placeholder_label, $body_field_placeholder_label]);
++    $this->assertOrderInPage([
++      $links_field_placeholder_label,
++      $body_field_placeholder_label,
++    ]);
+ 
+     $region_content = '.layout__region--content';
+     $links_block = "[data-layout-content-preview-placeholder-label='$links_field_placeholder_label']";
+@@ -110,7 +113,10 @@ public function testContentPreviewToggle() {
+     $assert_session->pageTextNotContains($content_preview_body_text);
+ 
+     // Check that drag successfully repositioned blocks.
+-    $this->assertOrderInPage([$body_field_placeholder_label, $links_field_placeholder_label]);
++    $this->assertOrderInPage([
++      $body_field_placeholder_label,
++      $links_field_placeholder_label,
++    ]);
+ 
+     // Check if block position maintained after enabling content preview.
+     $this->assertTrue($page->hasUncheckedField('layout-builder-content-preview'));
+@@ -118,7 +124,10 @@ public function testContentPreviewToggle() {
+     $this->assertNotEmpty($assert_session->waitForText($content_preview_body_text));
+     $assert_session->pageTextContains($content_preview_body_text);
+     $this->assertNotEmpty($assert_session->waitForText('Placeholder for the "Links" field'));
+-    $this->assertOrderInPage([$content_preview_body_text, 'Placeholder for the "Links" field']);
++    $this->assertOrderInPage([
++      $content_preview_body_text,
++      'Placeholder for the "Links" field',
++    ]);
+   }
+ 
+   /**
+diff --git a/core/modules/layout_builder/tests/src/FunctionalJavascript/InlineBlockTest.php b/core/modules/layout_builder/tests/src/FunctionalJavascript/InlineBlockTest.php
+index bbcd3cf512..3c6fe1f76c 100644
+--- a/core/modules/layout_builder/tests/src/FunctionalJavascript/InlineBlockTest.php
++++ b/core/modules/layout_builder/tests/src/FunctionalJavascript/InlineBlockTest.php
+@@ -209,7 +209,10 @@ public function testInlineBlocksRevisioning() {
+     ]));
+     // Enable layout builder and overrides.
+     $this->drupalGet(static::FIELD_UI_PREFIX . '/display/default');
+-    $this->submitForm(['layout[enabled]' => TRUE, 'layout[allow_custom]' => TRUE], 'Save');
++    $this->submitForm([
++      'layout[enabled]' => TRUE,
++      'layout[allow_custom]' => TRUE,
++    ], 'Save');
+     $this->drupalGet('node/1/layout');
+ 
+     // Add an inline block.
+@@ -271,7 +274,10 @@ public function testInlineBlocksRevisioningIntegrity() {
+       'create and edit custom blocks',
+     ]));
+     $this->drupalGet(static::FIELD_UI_PREFIX . '/display/default');
+-    $this->submitForm(['layout[enabled]' => TRUE, 'layout[allow_custom]' => TRUE], 'Save');
++    $this->submitForm([
++      'layout[enabled]' => TRUE,
++      'layout[allow_custom]' => TRUE,
++    ], 'Save');
+ 
+     $block_1_locator = static::INLINE_BLOCK_LOCATOR;
+     $block_2_locator = sprintf('%s + %s', static::INLINE_BLOCK_LOCATOR, static::INLINE_BLOCK_LOCATOR);
+@@ -486,7 +492,10 @@ public function testAccess() {
+ 
+     // Enable layout builder and overrides.
+     $this->drupalGet(static::FIELD_UI_PREFIX . '/display/default');
+-    $this->submitForm(['layout[enabled]' => TRUE, 'layout[allow_custom]' => TRUE], 'Save');
++    $this->submitForm([
++      'layout[enabled]' => TRUE,
++      'layout[allow_custom]' => TRUE,
++    ], 'Save');
+ 
+     // Ensure we have 2 copies of the block in node overrides.
+     $this->drupalGet('node/1/layout');
+@@ -536,7 +545,10 @@ public function testAddWorkFlow() {
+ 
+     // Enable layout builder and overrides.
+     $this->drupalGet(static::FIELD_UI_PREFIX . '/display/default');
+-    $this->submitForm(['layout[enabled]' => TRUE, 'layout[allow_custom]' => TRUE], 'Save');
++    $this->submitForm([
++      'layout[enabled]' => TRUE,
++      'layout[allow_custom]' => TRUE,
++    ], 'Save');
+ 
+     $layout_default_path = 'admin/structure/types/manage/bundle_with_section_field/display/default/layout';
+     $this->drupalGet($layout_default_path);
+diff --git a/core/modules/layout_builder/tests/src/FunctionalJavascript/InlineBlockTestBase.php b/core/modules/layout_builder/tests/src/FunctionalJavascript/InlineBlockTestBase.php
+index dbf68d6179..75f2e539ca 100644
+--- a/core/modules/layout_builder/tests/src/FunctionalJavascript/InlineBlockTestBase.php
++++ b/core/modules/layout_builder/tests/src/FunctionalJavascript/InlineBlockTestBase.php
+@@ -49,7 +49,10 @@ protected function setUp() {
+ 
+     $this->drupalPlaceBlock('local_tasks_block');
+ 
+-    $this->createContentType(['type' => 'bundle_with_section_field', 'new_revision' => TRUE]);
++    $this->createContentType([
++      'type' => 'bundle_with_section_field',
++      'new_revision' => TRUE,
++    ]);
+     $this->createNode([
+       'type' => 'bundle_with_section_field',
+       'title' => 'The node title',
+diff --git a/core/modules/layout_builder/tests/src/FunctionalJavascript/LayoutBuilderTest.php b/core/modules/layout_builder/tests/src/FunctionalJavascript/LayoutBuilderTest.php
+index 1562216da5..2e04d11a1e 100644
+--- a/core/modules/layout_builder/tests/src/FunctionalJavascript/LayoutBuilderTest.php
++++ b/core/modules/layout_builder/tests/src/FunctionalJavascript/LayoutBuilderTest.php
+@@ -157,7 +157,10 @@ public function testLayoutBuilderUi() {
+ 
+     $assert_session->linkExists('Add section');
+     $this->clickLink('Add section');
+-    $this->assertNotEmpty($assert_session->waitForElementVisible('named', ['link', 'Two column']));
++    $this->assertNotEmpty($assert_session->waitForElementVisible('named', [
++      'link',
++      'Two column',
++    ]));
+ 
+     $this->clickLink('Two column');
+     $assert_session->waitForElementVisible('named', ['button', 'Add section']);
+@@ -293,7 +296,10 @@ public function testConfigurableLayoutSections() {
+     // Add another section.
+     $assert_session->linkExists('Add section');
+     $this->clickLink('Add section');
+-    $assert_session->waitForElementVisible('named', ['link', 'Layout plugin (with settings)']);
++    $assert_session->waitForElementVisible('named', [
++      'link',
++      'Layout plugin (with settings)',
++    ]);
+     $assert_session->elementExists('css', '#drupal-off-canvas');
+ 
+     $assert_session->linkExists('Layout plugin (with settings)');
+@@ -309,7 +315,10 @@ public function testConfigurableLayoutSections() {
+     // Ensure validation error is displayed for ConfigureSectionForm.
+     $assert_session->linkExists('Add section');
+     $this->clickLink('Add section');
+-    $assert_session->waitForElementVisible('named', ['link', 'Layout plugin (with settings)']);
++    $assert_session->waitForElementVisible('named', [
++      'link',
++      'Layout plugin (with settings)',
++    ]);
+     $this->clickLink('Layout plugin (with settings)');
+     $this->assertOffCanvasFormAfterWait('layout_builder_configure_section');
+     $page->fillField('layout_settings[setting_1]', 'Test Validation Error Message');
+@@ -466,7 +475,10 @@ private function openAddBlockForm($block_title) {
+     $assert_session->linkExists('Add block');
+     $this->clickLink('Add block');
+     $assert_session->assertWaitOnAjaxRequest();
+-    $this->assertNotEmpty($assert_session->waitForElementVisible('named', ['link', $block_title]));
++    $this->assertNotEmpty($assert_session->waitForElementVisible('named', [
++      'link',
++      $block_title,
++    ]));
+     $this->clickLink($block_title);
+     $this->assertOffCanvasFormAfterWait('layout_builder_add_block');
+   }
+@@ -481,7 +493,10 @@ private function assertOffCanvasFormAfterWait($expected_form_id) {
+     $this->assertSession()->assertWaitOnAjaxRequest();
+     $off_canvas = $this->assertSession()->waitForElementVisible('css', '#drupal-off-canvas');
+     $this->assertNotNull($off_canvas);
+-    $form_id_element = $off_canvas->find('hidden_field_selector', ['hidden_field', 'form_id']);
++    $form_id_element = $off_canvas->find('hidden_field_selector', [
++      'hidden_field',
++      'form_id',
++    ]);
+     // Ensure the form ID has the correct value and that the form is visible.
+     $this->assertNotEmpty($form_id_element);
+     $this->assertSame($expected_form_id, $form_id_element->getValue());
+diff --git a/core/modules/layout_builder/tests/src/FunctionalJavascript/LayoutBuilderUiTest.php b/core/modules/layout_builder/tests/src/FunctionalJavascript/LayoutBuilderUiTest.php
+index 6523bd6367..0d20caaab9 100644
+--- a/core/modules/layout_builder/tests/src/FunctionalJavascript/LayoutBuilderUiTest.php
++++ b/core/modules/layout_builder/tests/src/FunctionalJavascript/LayoutBuilderUiTest.php
+@@ -22,6 +22,9 @@ class LayoutBuilderUiTest extends WebDriverTestBase {
+    */
+   const FIELD_UI_PREFIX = 'admin/structure/types/manage/bundle_with_section_field';
+ 
++  /**
++   * {@inheritdoc}
++   */
+   protected static $modules = [
+     'layout_builder',
+     'block',
+diff --git a/core/modules/layout_builder/tests/src/FunctionalJavascript/MoveBlockFormTest.php b/core/modules/layout_builder/tests/src/FunctionalJavascript/MoveBlockFormTest.php
+index 3b857b10e5..1d47867c2b 100644
+--- a/core/modules/layout_builder/tests/src/FunctionalJavascript/MoveBlockFormTest.php
++++ b/core/modules/layout_builder/tests/src/FunctionalJavascript/MoveBlockFormTest.php
+@@ -100,7 +100,10 @@ public function testMoveBlock() {
+ 
+     // Reorder body field in current region.
+     $this->openBodyMoveForm(1, 'content', ['Links', 'Body (current)']);
+-    $this->moveBlockWithKeyboard('up', 'Body (current)', ['Body (current)*', 'Links']);
++    $this->moveBlockWithKeyboard('up', 'Body (current)', [
++      'Body (current)*',
++      'Links',
++    ]);
+     $page->pressButton('Move');
+     $expected_block_order = [
+       '.block-field-blocknodebundle-with-section-fieldbody',
+@@ -115,7 +118,10 @@ public function testMoveBlock() {
+     $this->openBodyMoveForm(1, 'content', ['Body (current)', 'Links']);
+     $page->selectFieldOption('Region', '0:first');
+     $this->assertBlockTable(['Powered by Drupal', 'Body (current)']);
+-    $this->moveBlockWithKeyboard('up', 'Body', ['Body (current)*', 'Powered by Drupal']);
++    $this->moveBlockWithKeyboard('up', 'Body', [
++      'Body (current)*',
++      'Powered by Drupal',
++    ]);
+     $page->pressButton('Move');
+     $expected_block_order = [
+       '.block-field-blocknodebundle-with-section-fieldbody',
+@@ -241,7 +247,10 @@ protected function openBodyMoveForm($delta, $region, array $initial_blocks) {
+     $body_field_locator = "[data-layout-delta=\"$delta\"] [data-region=\"$region\"] .block-field-blocknodebundle-with-section-fieldbody";
+     $this->clickContextualLink($body_field_locator, 'Move');
+     $assert_session->assertWaitOnAjaxRequest();
+-    $this->assertNotEmpty($assert_session->waitForElementVisible('named', ['select', 'Region']));
++    $this->assertNotEmpty($assert_session->waitForElementVisible('named', [
++      'select',
++      'Region',
++    ]));
+     $assert_session->fieldValueEquals('Region', "$delta:$region");
+     $this->assertBlockTable($initial_blocks);
+   }
+diff --git a/core/modules/layout_builder/tests/src/FunctionalJavascript/TestMultiWidthLayoutsTest.php b/core/modules/layout_builder/tests/src/FunctionalJavascript/TestMultiWidthLayoutsTest.php
+index 2fd7cd7a78..2b2fdc2a66 100644
+--- a/core/modules/layout_builder/tests/src/FunctionalJavascript/TestMultiWidthLayoutsTest.php
++++ b/core/modules/layout_builder/tests/src/FunctionalJavascript/TestMultiWidthLayoutsTest.php
+@@ -18,6 +18,9 @@ class TestMultiWidthLayoutsTest extends WebDriverTestBase {
+    */
+   const FIELD_UI_PREFIX = 'admin/structure/types/manage/bundle_with_section_field';
+ 
++  /**
++   * {@inheritdoc}
++   */
+   protected static $modules = [
+     'layout_builder',
+     'block',
+diff --git a/core/modules/layout_builder/tests/src/Kernel/LayoutBuilderElementTest.php b/core/modules/layout_builder/tests/src/Kernel/LayoutBuilderElementTest.php
+index 6bcf83e7f3..e27cc073f0 100644
+--- a/core/modules/layout_builder/tests/src/Kernel/LayoutBuilderElementTest.php
++++ b/core/modules/layout_builder/tests/src/Kernel/LayoutBuilderElementTest.php
+@@ -18,6 +18,8 @@
+ class LayoutBuilderElementTest extends KernelTestBase {
+ 
+   /**
++   * Tests TestStore Deprecation Notice.
++   *
+    * @group legacy
+    */
+   public function testConstructorTempStoreDeprecation() {
+@@ -33,6 +35,8 @@ public function testConstructorTempStoreDeprecation() {
+   }
+ 
+   /**
++   * Tests Messenger Deprecation Notice.
++   *
+    * @group legacy
+    */
+   public function testConstructorMessengerDeprecation() {
+diff --git a/core/modules/layout_builder/tests/src/Kernel/LayoutBuilderEntityViewDisplayTest.php b/core/modules/layout_builder/tests/src/Kernel/LayoutBuilderEntityViewDisplayTest.php
+index e806c0a581..4b8e9c74f1 100644
+--- a/core/modules/layout_builder/tests/src/Kernel/LayoutBuilderEntityViewDisplayTest.php
++++ b/core/modules/layout_builder/tests/src/Kernel/LayoutBuilderEntityViewDisplayTest.php
+@@ -37,11 +37,16 @@ protected function getSectionStorage(array $section_data) {
+    */
+   public function testInvalidConfiguration() {
+     $this->expectException(SchemaIncompleteException::class);
+-    $this->sectionStorage->getSection(0)->getComponent('first-uuid')->setConfiguration(['id' => 'foo', 'bar' => 'baz']);
++    $this->sectionStorage->getSection(0)->getComponent('first-uuid')->setConfiguration([
++      'id' => 'foo',
++      'bar' => 'baz',
++    ]);
+     $this->sectionStorage->save();
+   }
+ 
+   /**
++   * Check Layout Builder Enabled or not.
++   *
+    * @dataProvider providerTestIsLayoutBuilderEnabled
+    */
+   public function testIsLayoutBuilderEnabled($expected, $view_mode, $enabled) {
+@@ -69,13 +74,17 @@ public function providerTestIsLayoutBuilderEnabled() {
+     $data['default disabled'] = [FALSE, 'default', FALSE];
+     $data['full enabled'] = [TRUE, 'full', TRUE];
+     $data['full disabled'] = [FALSE, 'full', FALSE];
+-    $data['_custom enabled'] = [FALSE, '_custom', TRUE];
+-    $data['_custom disabled'] = [FALSE, '_custom', FALSE];
++    $data['_custom enabled'] = [
++      FALSE, '_custom', TRUE,
++    ];
++    $data['_custom disabled'] = [
++      FALSE, '_custom', FALSE,
++    ];
+     return $data;
+   }
+ 
+   /**
+-   * Tests that setting overridable enables Layout Builder only when TRUE.
++   * Setting overridable enables Layout Builder only when set to TRUE.
+    */
+   public function testSetOverridable() {
+     // Disable Layout Builder.
+@@ -85,9 +94,11 @@ public function testSetOverridable() {
+     $this->sectionStorage->setOverridable();
+     $this->assertTrue($this->sectionStorage->isLayoutBuilderEnabled());
+ 
+-    // Ensure Layout Builder is still enabled after setting Overridable to FALSE.
++    // Ensure Layout Builder is still enabled
++    // after setting Overridable to FALSE.
+     $this->sectionStorage->setOverridable(FALSE);
+-    $this->assertTrue($this->sectionStorage->isLayoutBuilderEnabled());
++    $this->assertEquals($this->sectionStorage->isLayoutBuilderEnabled(),
++     TRUE);
+   }
+ 
+ }
+diff --git a/core/modules/layout_builder/tests/src/Kernel/OverridesSectionStorageTest.php b/core/modules/layout_builder/tests/src/Kernel/OverridesSectionStorageTest.php
+index ef67ae87ac..3542b98c71 100644
+--- a/core/modules/layout_builder/tests/src/Kernel/OverridesSectionStorageTest.php
++++ b/core/modules/layout_builder/tests/src/Kernel/OverridesSectionStorageTest.php
+@@ -160,10 +160,16 @@ public function providerTestAccess() {
+       FALSE, TRUE, $section_data, ['configure editable entity_test entity_test layout overrides'],
+     ];
+     $data['enabled, no data, bundle edit overrides, edit access'] = [
+-      TRUE, TRUE, [], ['configure editable entity_test entity_test layout overrides', 'administer entity_test content'],
++      TRUE, TRUE, [], [
++        'configure editable entity_test entity_test layout overrides',
++        'administer entity_test content',
++      ],
+     ];
+     $data['enabled, data, bundle edit overrides, edit access'] = [
+-      TRUE, TRUE, $section_data, ['configure editable entity_test entity_test layout overrides', 'administer entity_test content'],
++      TRUE, TRUE, $section_data, [
++        'configure editable entity_test entity_test layout overrides',
++        'administer entity_test content',
++      ],
+     ];
+     return $data;
+   }
+diff --git a/core/modules/layout_builder/tests/src/Kernel/SectionListTraitTest.php b/core/modules/layout_builder/tests/src/Kernel/SectionListTraitTest.php
+index 02be9fefcf..e74444a2c7 100644
+--- a/core/modules/layout_builder/tests/src/Kernel/SectionListTraitTest.php
++++ b/core/modules/layout_builder/tests/src/Kernel/SectionListTraitTest.php
+@@ -31,6 +31,11 @@ public function testAddBlankSection() {
+ 
+ }
+ 
++/**
++ * Defines the interface for an object that stores layout section list.
++ *
++ * @see \Drupal\layout_builder\SectionListInterface
++ */
+ class TestSectionList implements SectionListInterface {
+ 
+   use SectionStorageTrait {
+diff --git a/core/modules/layout_builder/tests/src/Unit/BlockComponentRenderArrayTest.php b/core/modules/layout_builder/tests/src/Unit/BlockComponentRenderArrayTest.php
+index cbd92bf279..0d2fe42b7c 100644
+--- a/core/modules/layout_builder/tests/src/Unit/BlockComponentRenderArrayTest.php
++++ b/core/modules/layout_builder/tests/src/Unit/BlockComponentRenderArrayTest.php
+@@ -477,12 +477,12 @@ public function testOnBuildRenderEmptyBuildWithCacheTags() {
+     $expected_build = [];
+ 
+     $expected_cache = $expected_build + [
+-        '#cache' => [
+-          'contexts' => [],
+-          'tags' => ['empty_build_cache_test', 'test'],
+-          'max-age' => -1,
+-        ],
+-      ];
++      '#cache' => [
++        'contexts' => [],
++        'tags' => ['empty_build_cache_test', 'test'],
++        'max-age' => -1,
++      ],
++    ];
+ 
+     $subscriber->onBuildRender($event);
+     $result = $event->getBuild();
+diff --git a/core/modules/layout_builder/tests/src/Unit/SectionTest.php b/core/modules/layout_builder/tests/src/Unit/SectionTest.php
+index 2e21947de9..316b108cfa 100644
+--- a/core/modules/layout_builder/tests/src/Unit/SectionTest.php
++++ b/core/modules/layout_builder/tests/src/Unit/SectionTest.php
+@@ -38,7 +38,10 @@ protected function setUp(): void {
+         (new SectionComponent('first-uuid', 'ordered-region', ['id' => 'first-block-id']))->setWeight(2),
+       ],
+       [
+-        'bad_judgement' => ['blink_speed' => 'fast', 'spin_direction' => 'clockwise'],
++        'bad_judgement' => [
++          'blink_speed' => 'fast',
++          'spin_direction' => 'clockwise',
++        ],
+         'hunt_and_peck' => ['delay' => '300ms'],
+       ]
+     );
