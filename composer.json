@@ -75,7 +75,7 @@
         "drupal/facets": "^1.4",
         "drupal/field_group": "^3.1",
         "drupal/focal_point": "^1.4",
-        "drupal/fullcalendar_view": "^5.0",
+        "drupal/fullcalendar_view": "^2.8",
         "drupal/geocoder": "^3.6",
         "drupal/geofield": "^1.13",
         "drupal/geofield_map": "^2.63",
