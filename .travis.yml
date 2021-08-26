@@ -15,11 +15,6 @@ install:
   - env | grep TRAVIS_REPO_SLUG >> .docksal/docksal-local.env
 
 before_script:
-  - fin start
-  - fin run phpcs -i
-  - fin composer install
-  - fin run phpcs --standard="Drupal,DrupalPractice" --extensions="php,module,inc,install,test,profile,theme" --ignore="*.features.*,*.pages*.inc"  src/modules
-  - fin php-cs
   - fin init
   - fin cypress-install
 
