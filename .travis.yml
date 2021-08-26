@@ -13,12 +13,12 @@ install:
   - env | grep REMOTE_GIT_REPO >> .docksal/docksal-local.env
   - env | grep GH_TOKEN >> .docksal/docksal-local.env
   - env | grep TRAVIS_REPO_SLUG >> .docksal/docksal-local.env
-  - cp .docksal/docksal-local.yml.sample .docksal/docksal-local.yml
 
 before_script:
   - fin start
   - fin run phpcs -i
   - fin composer install
+  - fin run phpcs --standard="Drupal,DrupalPractice" --extensions="php,module,inc,install,test,profile,theme" --ignore="*.features.*,*.pages*.inc"  src/modules
   - fin php-cs
   - fin init
   - fin cypress-install
