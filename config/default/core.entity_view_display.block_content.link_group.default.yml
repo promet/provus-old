@@ -29,7 +29,7 @@ mode: default
 content:
   field_automatic_article_type:
     weight: 1
-    label: above
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }
@@ -37,7 +37,7 @@ content:
     region: content
   field_automatic_event_type:
     weight: 2
-    label: above
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }
