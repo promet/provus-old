@@ -10,6 +10,7 @@ use Drupal\Core\Block\BlockPluginInterface;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Render\Element;
 use Drupal\Core\Template\Attribute;
+use Drupal\Core\Entity\EntityRepository;
 use Drupal\Core\Url;
 use Drupal\file\Entity\File;
 use Drupal\image\Entity\ImageStyle;
@@ -261,7 +262,7 @@ function provus_preprocess_node(&$vars) {
       $date_format = 'provus_default';
       break;
   }
-  $vars['date'] = format_date($vars['node']->getCreatedTime(), $date_format);
+  $vars['date'] = \Drupal::service('date.formatter')->format($vars['node']->getCreatedTime(), $date_format);
   // For nodes using the publish date in certain view modes, put the publish
   // date into the date var.
   if (array_key_exists('field_publish_date', $vars['content']) && Element::children($vars['content']['field_publish_date'])) {
@@ -460,7 +461,7 @@ function provus_preprocess_field(&$vars) {
       if (isset($item['content']['#media'])) {
         $fid = $item['content']['#media']->getSource()->getSourceFieldValue($item['content']['#media']);
         $file = File::load($fid);
-        $url_full = $file->url();
+        $url_full = $file->createFileUrl();
         $style = ImageStyle::load('thumbnail');
         $url_thumbnail = $style->buildUrl($file->getFileUri());
         $vars['items'][$key]['image_thumb_src'] = $url_thumbnail;
@@ -594,7 +595,7 @@ function provus_preprocess_banner(&$vars, $block) {
   if (!empty($logo_image[0])) {
     $logo_fid = $logo_image[0]->get('field_media_image')->target_id;
     $logo_file = File::load($logo_fid);
-    $vars['logo_src'] = $logo_file->url();
+    $vars['logo_src'] = $logo_file->createFileUrl();
     $vars['logo_alt'] = $logo_image[0]->get('field_media_image')->alt;
   }
   // Get person picture.
@@ -938,7 +939,7 @@ function provus_preprocess_fileslist(&$vars, $block) {
         $item['file__url'] = $file->url();
         $item['file__icon'] = $icon;
         $item['file__size'] = format_size($file->getSize());
-        $item['file__changed'] = format_date($file->getChangedTime(), 'provus_default');
+        $item['file__changed'] = \Drupal::service('date.formatter')->format($file->getChangedTime(), 'county_default');
         $items[] = $item;
       }
     }
@@ -1111,7 +1112,7 @@ function _prepare_teaser_search(&$vars, $type = 'node') {
  */
 function _provus_current_path() {
   $current_path = \Drupal::service('path.current')->getPath();
-  $result = \Drupal::service('path.alias_manager')->getAliasByPath($current_path);
+  $result = \Drupal::service('path_alias.manager')->getAliasByPath($current_path);
   return trim($result, '/');
 }
 
@@ -1197,8 +1198,8 @@ function _provus_mainmenu_set_expanded($item, $id) {
   if ($item['in_active_trail']) {
     list($bundle, $uuid) = explode(':', $id);
     // Set expanded setting from item.
-    $menu_link_content_entity = \Drupal::entityManager()
-      ->loadEntityByUuid($bundle, $uuid);
+    $entity_repository = \Drupal::service('entity.repository');
+    $menu_link_content_entity = $entity_repository->loadEntityByUuid($bundle, $uuid);
     $item['is_expanded'] = $menu_link_content_entity->isExpanded();
     if (!$item['is_expanded']) {
       unset($item['below']);

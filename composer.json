@@ -21,15 +21,16 @@
         }
       },
       {
-        "type":"package",
+        "type": "package",
         "package": {
-          "name": "enyo/dropzone",
-          "version": "5.7",
-          "type": "drupal-library",
-          "dist": {
-            "url": "https://github.com/enyo/dropzone/archive/v5.7.0.zip",
-            "type": "zip"
-          }
+            "name": "library-enyo/dropzone",
+            "version": "5.7.0",
+            "type": "drupal-library",
+            "source": {
+                "url": "https://github.com/enyo/dropzone",
+                "type": "git",
+                "reference": "v5.7.0"
+            }
         }
       },
       {
@@ -58,47 +59,49 @@
         "drupal/auto_entitylabel": "^3.0@beta",
         "drupal/calendar_link": "^1.1",
         "drupal/chosen": "^3.0",
-        "drupal/components": "^1.1",
+        "drupal/components": "^2.2",
         "drupal/config_ignore": "^2.2",
         "drupal/console": "^1.0.2",
-        "drupal/core": "^8.9.15",
-        "drupal/core-composer-scaffold": "^8.9",
-        "drupal/devel": "^2.1",
+        "drupal/core": "^9.1.5",
+        "drupal/core-composer-scaffold": "^9.1",
+        "drupal/devel": "^4.1",
         "drupal/dropzonejs": "^2.1",
-        "drupal/emulsify_twig": "^1.0",
+        "drupal/emulsify_twig": "^2.0",
         "drupal/entity": "~1.0-rc3",
         "drupal/entity_embed": "^1.0",
         "drupal/entity_staging": "^1.x-dev@dev",
-        "drupal/environment_indicator": "^3.7",
+        "drupal/environment_indicator": "^4.0",
         "drupal/extlink": "^1.3",
         "drupal/facets": "^1.4",
+        "drupal/field_group": "^3.1",
         "drupal/focal_point": "^1.4",
-        "drupal/fullcalendar_view": "^2.6",
+        "drupal/fullcalendar_view": "^2.8",
         "drupal/geocoder": "^3.6",
         "drupal/geofield": "^1.13",
         "drupal/geofield_map": "^2.63",
         "drupal/google_analytics": "^3.0",
         "drupal/inline_entity_form": "^1.0",
+        "drupal/layout_builder_at": "^2.11",
         "drupal/layout_builder_browser": "^1.1",
         "drupal/layout_builder_modal": "^1.0",
         "drupal/layout_builder_restrictions": "^2.5",
         "drupal/layout_builder_styles": "^1.0@beta",
         "drupal/layout_library": "^1.0",
-        "drupal/linkit": "^4.3",
+        "drupal/layout_paragraphs": "^1.0@beta",
+        "drupal/linkit": "^6.0@beta",
         "drupal/media_bulk_upload": "^1.0@alpha",
-        "drupal/memcache": "2.0",
+        "drupal/memcache": "^2.3",
         "drupal/menu_block": "1.x-dev",
         "drupal/menu_breadcrumb": "^1.12",
-        "drupal/migrate_directory": "^1.0",
-        "drupal/migrate_plus": "^4.2",
-        "drupal/migrate_tools": "^4.5",
+        "drupal/migrate_plus": "^5.1",
         "drupal/office_hours": "^1.2",
         "drupal/pathauto": "^1.6",
         "drupal/pdfpreview": "^1.0",
         "drupal/redirect": "^1.6",
         "drupal/search_api": "^1.16",
-        "drupal/search_api_glossary": "^4.0",
+        "drupal/search_api_glossary": "4.x-dev@dev",
         "drupal/search_api_solr": "^1.4",
+        "drupal/section_library": "^1.0@beta",
         "drupal/simple_instagram_feed": "^3.8",
         "drupal/smart_trim": "^1.2",
         "drupal/socialfeed": "^1.0",
@@ -107,22 +110,19 @@
         "drupal/view_unpublished": "^1.0@RC",
         "drupal/viewsreference": "^1.4",
         "drupal/vocabulary_condition": "^1.0",
-        "drupal/webform": "^5.9",
-        "drush/drush": "^9.0.0",
-        "enyo/dropzone": "5.7",
+        "drupal/webform": "^6.0",
+        "drush/drush": "^10.4",
         "geocoder-php/google-maps-provider": "^4.4",
         "harvesthq/chosen": "^1.8",
         "jsanahuja/jqueryinstagramfeed": "dev-master",
         "kporras07/composer-symlinks": "dev-master",
         "oomphinc/composer-installers-extender": "^2.0",
-        "symfony/event-dispatcher": "4.3.4 as 3.4.99",
         "vlucas/phpdotenv": "^2.4",
         "webflo/drupal-finder": "^1.0.0",
         "webmozart/path-util": "^2.3",
         "zaporylie/composer-drupal-optimizations": "^1.0"
     },
     "require-dev": {
-        "behat/behat": "3.3",
         "dmore/behat-chrome-extension": "^1.3",
         "drupal/drupal-extension": "^4.0",
         "mglaman/drupal-check": "^1.1"
@@ -196,8 +196,8 @@
         },
         "patches": {
             "drupal/core": {
-                "Block visibility has wrong logic [923934]": "https://www.drupal.org/files/issues/2020-02-11/block_visibility_has_wrong_logic-923934-14-reroll-32-drupal-8.8.2.patch",
-                "Temp workaround for entity_staging to choose block uuid over revision id [#2942975]": "src/patches/2942975-drupal_8_9_x-137.patch"
+                "Temp workaround for entity_staging to choose block uuid over revision id [#2942975]": "src/patches/2942975_145-d9-2-provus.patch",
+                "Block visibility has wrong logic [923934]": "https://www.drupal.org/files/issues/2021-06-29/923934-44.patch"
             },
             "drupal/config_ignore": {
                 "Support config ignore export [#2942975]": "https://www.drupal.org/files/issues/2020-01-11/support-for-export-2857247-44.patch"
@@ -205,9 +205,6 @@
             "drupal/entity_staging": {
                 "Stream wrapper bug [#3216474]": "https://git.drupalcode.org/project/entity_staging/-/merge_requests/3.diff", 
                 "Unsupported operand types bug [#3145936]": "https://www.drupal.org/files/issues/2020-06-04/entity-staging-unsuported-operand-types-3145936-2.patch"
-            },
-            "drupal/devel": {
-                "Missing Drush commands [3106091]": "https://www.drupal.org/files/issues/2020-01-29/drush-service-rename-3106091-2.patch"
             }
         }
     }

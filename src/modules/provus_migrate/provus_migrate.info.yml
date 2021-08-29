@@ -1,7 +1,0 @@
-name: 'provus_migrate'
-type: module
-description: 'Provus Migrate Example'
-core: 8.x
-package: 'provus'
-dependencies:
-  - migrate_tools
