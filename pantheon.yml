@@ -2,3 +2,10 @@
 # For more information, see: https://pantheon.io/docs/pantheon-yml/
 api_version: 1
 web_docroot: true
+
+workflows:
+  deploy:
+    after:
+      - type: webphp
+        description: Run project specific updates. 
+        script: hooks/pantheon/deploy.php
