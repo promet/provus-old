@@ -1,0 +1,29 @@
+uuid: 62e0eaa2-f799-4e63-9256-db9fc2371e02
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.department
+id: department-admin
+label: Admin
+weight: 100
+internal: false
+audience: member
+group_type: department
+permissions_ui: true
+permissions:
+  - 'access content overview'
+  - 'administer group'
+  - 'administer members'
+  - 'delete group'
+  - 'delete group revisions'
+  - 'edit group'
+  - 'leave group'
+  - 'revert group revisions'
+  - 'update own group_membership content'
+  - 'view any unpublished group'
+  - 'view group'
+  - 'view group revisions'
+  - 'view group_membership content'
+  - 'view latest group version'
+  - 'view own unpublished group'

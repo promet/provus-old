@@ -1,0 +1,47 @@
+uuid: f453d127-8fe8-4c53-b28e-04ec7e1df5bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.group.department.field_file
+    - field.field.group.department.field_image
+    - group.type.department
+  module:
+    - entity_reference_revisions
+id: group.department.default
+targetEntityType: group
+bundle: department
+mode: default
+content:
+  field_file:
+    weight: -3
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+  field_image:
+    weight: -4
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+  label:
+    label: hidden
+    type: string
+    weight: -5
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  changed: true
+  created: true
+  langcode: true
+  search_api_excerpt: true
+  uid: true

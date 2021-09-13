@@ -1,0 +1,17 @@
+uuid: e4d2b2d8-b8d8-46c2-8caf-258fb049f298
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.department
+  enforced:
+    config:
+      - user.role.user_manager
+id: department-b2b679d24
+label: 'User Manager'
+weight: 5
+internal: true
+audience: outsider
+group_type: department
+permissions_ui: false
+permissions: {  }

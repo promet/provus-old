@@ -1,0 +1,17 @@
+uuid: 6f239a6e-2f98-4226-8052-abf76f6549c6
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.department
+  enforced:
+    config:
+      - user.role.layout_editor
+id: department-396316984
+label: 'Layout Editor'
+weight: 4
+internal: true
+audience: outsider
+group_type: department
+permissions_ui: false
+permissions: {  }

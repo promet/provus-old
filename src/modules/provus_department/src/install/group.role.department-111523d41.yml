@@ -1,0 +1,17 @@
+uuid: 838cb0c1-4c77-4374-b278-d9d0faaa7df7
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.department
+  enforced:
+    config:
+      - user.role.content_editor
+id: department-111523d41
+label: 'Content Editor'
+weight: 3
+internal: true
+audience: outsider
+group_type: department
+permissions_ui: false
+permissions: {  }

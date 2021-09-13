@@ -1,0 +1,12 @@
+uuid: 23233fd9-5713-46d0-8458-aa266b3ab1ee
+langcode: en
+status: true
+dependencies: {  }
+id: department
+label: Department
+description: ''
+new_revision: true
+creator_membership: true
+creator_wizard: true
+creator_roles:
+  - department-admin

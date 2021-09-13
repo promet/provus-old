@@ -1,0 +1,17 @@
+uuid: cb50f0e7-8220-45cd-9f45-027be990da74
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.department
+  enforced:
+    config:
+      - user.role.site_builder
+id: department-0a2b2969a
+label: 'Site Admin'
+weight: 6
+internal: true
+audience: outsider
+group_type: department
+permissions_ui: false
+permissions: {  }
