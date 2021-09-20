@@ -1,0 +1,6 @@
+name: Provus Workflow
+type: module
+description: Workflow helper module.
+package: Provus
+core: 8.x
+core_version_requirement: ^8 || ^9

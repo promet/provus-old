@@ -111,6 +111,8 @@
         "drupal/viewsreference": "^1.4",
         "drupal/vocabulary_condition": "^1.0",
         "drupal/webform": "^6.0",
+        "drupal/workbench": "^1.3",
+        "drupal/workbench_email": "^2.1",
         "drush/drush": "^10.4",
         "geocoder-php/google-maps-provider": "^4.4",
         "harvesthq/chosen": "^1.8",
