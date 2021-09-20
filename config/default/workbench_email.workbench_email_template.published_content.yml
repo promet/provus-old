@@ -1,0 +1,20 @@
+uuid: ba9d4457-78a8-415b-ab32-747bbc61f5da
+langcode: en
+status: true
+dependencies:
+  module:
+    - provus_workflow
+id: published_content
+label: 'Published Content'
+subject: 'Website content has been published'
+body:
+  value: 'Content [node:title] ([node:url]) has been published.'
+  format: plain_text
+bundles: {  }
+recipient_types:
+  revision_authors_with_optout:
+    id: revision_authors_with_optout
+    provider: provus_workflow
+    status: true
+    settings: {  }
+replyTo: ''

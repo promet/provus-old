@@ -1,0 +1,26 @@
+uuid: 446870f7-3292-4837-b7bf-681d352c8a7a
+langcode: en
+status: true
+dependencies:
+  module:
+    - provus_workflow
+id: review_content
+label: 'For Review Content'
+subject: 'Website content needs review'
+body:
+  value: "Content [node:title] ([node:url]) is ready for review.\r\n\r\nChanges made by user [current-user:display-name]\r\n\r\nClick here to review the changes:\r\n[current-domain:path]/node/[node:nid]/revisions\r\n"
+  format: plain_text
+bundles: {  }
+recipient_types:
+  revision_authors_with_optout:
+    id: revision_authors_with_optout
+    provider: provus_workflow
+    status: true
+    settings: {  }
+  roles_with_optout:
+    id: roles_with_optout
+    provider: provus_workflow
+    status: true
+    settings:
+      roles: {  }
+replyTo: ''

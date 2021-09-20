@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\siu_core\Plugin\RecipientType;
+namespace Drupal\provus_workflow\Plugin\RecipientType;
 
 use Drupal\Core\Entity\ContentEntityInterface;
 use Drupal\Core\Entity\EntityTypeManagerInterface;

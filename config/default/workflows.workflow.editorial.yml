@@ -1,0 +1,123 @@
+uuid: f92b6c52-1f73-40dd-8026-855ec83d8ac8
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.alert
+    - node.type.event
+    - node.type.faq
+    - node.type.landing_page
+    - node.type.location
+    - node.type.person
+    - node.type.provus_article
+    - node.type.provus_page
+  enforced:
+    config:
+      0: workbench_email.workbench_email_template.revision_content
+      2: workbench_email.workbench_email_template.published_content
+  module:
+    - content_moderation
+    - workbench_email
+third_party_settings:
+  workbench_email:
+    workbench_email_templates:
+      send_to_needs_review: {  }
+      send_to_needs_revision:
+        revision_content: revision_content
+      create_new_draft: {  }
+      mark_as_approved: {  }
+      publish:
+        published_content: published_content
+      unpublished: {  }
+_core:
+  default_config_hash: Ln7YAg2WXZ-5wn9ib-v9qOKFxF2YZLnwSKtX-V455hE
+id: editorial
+label: Editorial
+type: content_moderation
+type_settings:
+  states:
+    approved:
+      published: false
+      default_revision: false
+      label: Approved
+      weight: -1
+    draft:
+      label: Draft
+      published: false
+      default_revision: false
+      weight: -3
+    needs_review:
+      published: false
+      default_revision: false
+      label: 'Needs Review'
+      weight: -2
+    published:
+      label: Published
+      published: true
+      default_revision: true
+      weight: 0
+    unpublished:
+      published: false
+      default_revision: false
+      label: Unpublished
+      weight: 1
+  transitions:
+    create_new_draft:
+      label: 'Create New Draft'
+      to: draft
+      weight: -3
+      from:
+        - draft
+    mark_as_approved:
+      label: 'Mark as Approved'
+      from:
+        - draft
+        - needs_review
+        - published
+        - unpublished
+      to: approved
+      weight: 0
+    publish:
+      label: Publish
+      to: published
+      weight: 1
+      from:
+        - approved
+        - draft
+        - needs_review
+        - published
+        - unpublished
+    send_to_needs_review:
+      label: 'Send to Needs Review'
+      from:
+        - approved
+        - draft
+        - published
+        - unpublished
+      to: needs_review
+      weight: -2
+    send_to_needs_revision:
+      label: 'Send to Needs Revision'
+      from:
+        - approved
+        - needs_review
+        - unpublished
+      to: draft
+      weight: -1
+    unpublished:
+      label: Unpublished
+      from:
+        - published
+      to: unpublished
+      weight: 2
+  entity_types:
+    node:
+      - alert
+      - event
+      - faq
+      - landing_page
+      - location
+      - person
+      - provus_article
+      - provus_page
+  default_moderation_state: draft

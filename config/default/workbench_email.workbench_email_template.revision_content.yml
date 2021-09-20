@@ -1,0 +1,20 @@
+uuid: c1b34308-c42b-46ff-9ce8-fa63a264f169
+langcode: en
+status: true
+dependencies:
+  module:
+    - provus_workflow
+id: revision_content
+label: 'For Revision Content'
+subject: 'Website content needs revision'
+body:
+  value: 'The website content you were working on needs further editing. Content [node:title] ([node:url]). Revision notes: [current-domain:path]/node/[node:nid]/revisions Sent back for further revisions by user [current-user:display-name].'
+  format: plain_text
+bundles: {  }
+recipient_types:
+  last_revision_author_with_optout:
+    id: last_revision_author_with_optout
+    provider: provus_workflow
+    status: true
+    settings: {  }
+replyTo: ''
