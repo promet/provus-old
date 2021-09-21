@@ -28,6 +28,8 @@ entity_types:
     bundles:
       feedback: 0
       personal: 0
+  content_moderation_state:
+    enable: 0
   crop:
     enable: 0
     bundles:
@@ -74,7 +76,7 @@ entity_types:
       person_type: 1
       tags: 1
   user:
-    enable: 0
+    enable: 1
   webform_submission:
     enable: 0
     bundles:
