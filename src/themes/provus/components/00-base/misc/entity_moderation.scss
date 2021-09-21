@@ -1,0 +1,7 @@
+.main-content .node {
+  ul.entity-moderation-form:not(.contextual-links) {
+    li::before {
+      content: none;
+    }
+  }
+}
