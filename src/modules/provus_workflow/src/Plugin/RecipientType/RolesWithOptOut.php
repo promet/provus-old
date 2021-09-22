@@ -4,7 +4,6 @@ namespace Drupal\provus_workflow\Plugin\RecipientType;
 
 use Drupal\Core\Entity\ContentEntityInterface;
 use Drupal\Core\Form\FormStateInterface;
-use Drupal\Core\StringTranslation\TranslatableMarkup;
 use Drupal\workbench_email\TemplateInterface;
 use Drupal\workbench_email\Plugin\RecipientType\Role;
 
