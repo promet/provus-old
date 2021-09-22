@@ -7,6 +7,6 @@ describe('Homepage Logged in', function() {
 describe('Homepage', function() {
   it('visits homepage', function() {
     cy.visit('/');
-    cy.get('#block-provus-content').contains('Welcome to Southport County');
+    cy.get('#block-provus-content').contains('Welcome to Provus');
   });
 });

@@ -12,11 +12,56 @@ body:
   format: plain_text
 bundles: {  }
 recipient_types:
+  author:
+    id: author
+    provider: workbench_email
+    status: false
+    settings: {  }
+  email:
+    id: email
+    provider: workbench_email
+    status: false
+    settings:
+      fields: {  }
+  entity_reference_user:
+    id: entity_reference_user
+    provider: workbench_email
+    status: false
+    settings:
+      fields: {  }
+  fixed_email:
+    id: fixed_email
+    provider: workbench_email
+    status: false
+    settings:
+      recipients: ''
+  last_revision_author:
+    id: last_revision_author
+    provider: workbench_email
+    status: false
+    settings: {  }
+  last_revision_author_with_optout:
+    id: last_revision_author_with_optout
+    provider: provus_workflow
+    status: false
+    settings: {  }
   revision_authors_with_optout:
     id: revision_authors_with_optout
     provider: provus_workflow
     status: true
     settings: {  }
+  role:
+    id: role
+    provider: workbench_email
+    status: false
+    settings:
+      roles: {  }
+  roles_with_access:
+    id: roles_with_access
+    provider: workbench_email
+    status: false
+    settings:
+      roles: {  }
   roles_with_optout:
     id: roles_with_optout
     provider: provus_workflow

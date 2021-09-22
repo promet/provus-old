@@ -7,3 +7,10 @@
 fin drush update-migration-config
 fin drush migrate:import --group=entity_staging
 fin drush config-set -y system.site page.front '/node/4'
+
+# Set test user passwords which entity staging doesn't do.
+fin drush upwd contenteditor contenteditor
+fin drush upwd authuser authuser
+fin drush upwd usermanager usermanager 
+fin drush upwd layouteditor layouteditor
+fin drush upwd siteadmin siteadmin 

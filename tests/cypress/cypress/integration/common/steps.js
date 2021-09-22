@@ -2,11 +2,15 @@ import { Given } from "cypress-cucumber-preprocessor/steps";
 import { Then } from "cypress-cucumber-preprocessor/steps";
 
 Then(`I should see {string}`, (title) => {
-  cy.get('.main').contains(title)
+  cy.get('body').contains(title)
 });
 
 Given('I visit {string}', (url) => {
   cy.visit(url)
+});
+
+Given('I visit the Workbench Dashboard', (url) => {
+  cy.visit('/admin/workbench')
 });
 
 Then('I should see the EDU menu', (url) => {
@@ -19,10 +23,32 @@ Given('I visit the .org {string}', (url) => {
   cy.visit(fullUrl)
 });
 
-Then('I should see the ORG menu', (url) => {
-  cy.get('.header__menu').contains("Patient Care")
-  cy.get('.header__menu').contains("For Patients")
-  cy.get('.header__menu').contains("Degree Programs").should('not.exist')
-  cy.get('.header__menu').contains("Academic Departments").should('not.exist')
+Given('I am logged in as {string}', (user) => {
+  cy.visit('/user');
+  cy.get("#block-provus-page-title").then(title => {
+    const text = title.text().trim();
+
+    // Check to see if already logged in.
+    if (text == user) {
+      cy.log("User already logged in.")
+      return;
+    }
+    else if (text == 'Log in') {
+      cy.get('#edit-name').type(user);
+      cy.get('#edit-pass').type(user);
+      cy.get('#user-login-form #edit-submit').click();  
+    }
+    else {
+      cy.log("This should be " + text);
+      // Logout if wrong user.
+      cy.visit('/user/logout');
+      cy.visit('/user');
+      // Log in with right user.
+      cy.get('#edit-name').type(user);
+      cy.get('#edit-pass').type(user);
+      cy.get('#user-login-form #edit-submit').click();  
+    }
+
+  });
 
 });
