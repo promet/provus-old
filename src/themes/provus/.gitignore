@@ -1,6 +1,5 @@
 # Yarn/NPM
 node_modules/
-yarn.lock
 
 # Storybook
 .out
