@@ -13,7 +13,6 @@ services:
 
   cli:
     image: docksal/cli:php7.4-3.0
-    network_mode: host
     environment:
       - IS_DOCKSAL_PROJECT 
       - DRUPAL_HASH_SALT
