@@ -1,6 +1,9 @@
 dist: bionic
 
 language: minimal
+language: php
+php:
+  - 7.4
 
 install:
   ## Update 'get.docksal.io' curl fails from time to time. Added '-k' to ignore cert error.
