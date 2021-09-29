@@ -12,7 +12,7 @@ services:
     image: docksal/mysql:5.7
 
   cli:
-    image: docksal/cli:php7.4-3.0
+    image: docksal/cli:2.13-php7.4
     environment:
       - IS_DOCKSAL_PROJECT 
       - DRUPAL_HASH_SALT
