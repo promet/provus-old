@@ -1,0 +1,8 @@
+name: Provus Group
+type: module
+description: Global group config for Provus
+package: Provus
+core: 8.x
+core_version_requirement: ^8 || ^9
+dependencies:
+  - group
