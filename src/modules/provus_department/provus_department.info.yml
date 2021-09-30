@@ -2,9 +2,30 @@ name: Provus Department
 type: module
 description: Departments as groups for Provus
 package: Provus
-core: 8.x
 core_version_requirement: ^8 || ^9
 dependencies:
   - group
   - entity_reference_revisions
+config_devel:
+  - core.base_field_override.group.department.label
+  - core.entity_form_display.group_content.department-group_membership.default
+  - core.entity_form_display.group.department.default
+  - core.entity_view_display.group_content.department-group_membership.default
+  - core.entity_view_display.group.department.default
+  - field.field.group_content.department-group_membership.group_roles
+  - field.field.group.department.field_file
+  - field.field.group.department.field_image
+  - field.storage.group.field_file
+  - field.storage.group.field_image
+  - group.content_type.department-group_membership
+  - group.role.department-0a2b2969a
+  - group.role.department-111523d41
+  - group.role.department-396316984
+  - group.role.department-a416e6833
+  - group.role.department-admin
+  - group.role.department-anonymous
+  - group.role.department-b2b679d24
+  - group.role.department-member
+  - group.role.department-outsider
+  - group.type.department
 

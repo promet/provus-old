@@ -1,4 +1,3 @@
-uuid: 9c419e40-7c74-4f13-a19e-294fba1e0eb5
 langcode: en
 status: true
 dependencies:
@@ -6,6 +5,7 @@ dependencies:
     - core.entity_form_mode.media.media_library
     - field.field.group.department.field_file
     - field.field.group.department.field_image
+    - field.field.group.department.layout_builder__layout
     - group.type.department
   module:
     - inline_entity_form
@@ -70,4 +70,5 @@ content:
     region: content
     third_party_settings: {  }
 hidden:
+  layout_builder__layout: true
   uid: true

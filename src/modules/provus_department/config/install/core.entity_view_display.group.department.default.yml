@@ -1,4 +1,3 @@
-uuid: f453d127-8fe8-4c53-b28e-04ec7e1df5bf
 langcode: en
 status: true
 dependencies:
@@ -8,6 +7,71 @@ dependencies:
     - group.type.department
   module:
     - entity_reference_revisions
+    - layout_builder
+    - layout_library
+third_party_settings:
+  layout_builder:
+    allow_custom: true
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          -
+            uuid: 7705958e-8b40-4b29-9823-baa6410d5892
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:group:department:label'
+              formatter:
+                label: hidden
+                type: string
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            additional: {  }
+            weight: 0
+          -
+            uuid: 581d2f67-cfdb-4387-bbd7-a565df9af9af
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:group:department:field_image'
+              formatter:
+                label: above
+                settings:
+                  view_mode: default
+                  link: ''
+                third_party_settings: {  }
+                type: entity_reference_revisions_entity_view
+            additional: {  }
+            weight: 1
+          -
+            uuid: 8fccd3e8-c12b-4a5e-b44b-f898d9672da7
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:group:department:field_file'
+              formatter:
+                label: above
+                settings:
+                  view_mode: default
+                  link: ''
+                third_party_settings: {  }
+                type: entity_reference_revisions_entity_view
+            additional: {  }
+            weight: 2
+        third_party_settings: {  }
+  layout_library:
+    enable: false
 id: group.department.default
 targetEntityType: group
 bundle: department
