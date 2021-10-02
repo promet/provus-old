@@ -45,7 +45,28 @@
       <ul {{ bem(menu_class, menu_modifiers, menu_blockname) }}>
       {% block list_content %}
         {% for item in items %}
-          <li {{ bem(item_base_class|default(menu_class ~ '__item'), item_blockname) }}>
+          {% if not item_modifiers %}
+            {% set item_modifiers = [] %}
+          {% endif %}
+          {# Pass original item modifiers down to children #}
+          {% set original_item_modifiers = item_modifiers %}
+
+          {% if item.in_active_trail == TRUE %}
+            {% set item_modifiers = item_modifiers|merge(['active']) %}
+          {% endif %}
+
+          {% if menu_level > 0 %}
+            {% set item_modifiers = item_modifiers|merge(['sub', 'sub-' ~ menu_level]) %}
+          {% endif %}
+
+          {% if item.below %}
+            {% set item_modifiers = item_modifiers|merge(['with-sub']) %}
+          {% endif %}
+          {# below could maybe be done without a loop? #}
+          {% for modifier in item.modifiers %}
+            {% set item_modifiers = item_modifiers|merge([modifier]) %}
+          {% endfor %}
+          <li {{ bem(item_base_class|default(menu_class ~ '__item'), item_modifiers, item_blockname) }}>
             {% block list_item_content %}
               {% include "@atoms/links/link/link.twig" with {
                 "link_content": item.title,
