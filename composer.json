@@ -206,6 +206,10 @@
             "drupal/config_ignore": {
                 "Support config ignore export [#2942975]": "https://www.drupal.org/files/issues/2020-01-11/support-for-export-2857247-44.patch"
             },
+            "drupal/group": {
+              "MORE contexts [2815971]": "https://www.drupal.org/files/issues/2021-02-19/2815971-28.patch",
+              "Group parent tokens [2774827]": "https://www.drupal.org/files/issues/2021-03-11/group-gnode_tokens-2774827-75.patch"
+            },
             "drupal/entity_staging": {
                 "Stream wrapper bug [#3216474]": "https://git.drupalcode.org/project/entity_staging/-/merge_requests/3.diff", 
                 "Unsupported operand types bug [#3145936]": "https://www.drupal.org/files/issues/2020-06-04/entity-staging-unsuported-operand-types-3145936-2.patch"

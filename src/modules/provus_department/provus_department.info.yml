@@ -15,6 +15,8 @@ config_devel:
   - field.field.group_content.department-group_membership.group_roles
   - field.field.group.department.field_file
   - field.field.group.department.field_image
+  - field.field.group.department.layout_builder__layout
+  - field.field.group.intranet.layout_builder__layout
   - field.storage.group.field_file
   - field.storage.group.field_image
   - group.content_type.department-group_membership

@@ -1,0 +1,77 @@
+<?php
+
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\group\Entity\GroupInterface;
+use Drupal\group\Entity\Group;
+
+/**
+ * Implements hook_preprocess_page().
+ */
+function provus_group_preprocess_html(&$vars) {
+  $params = \Drupal::routeMatch()->getParameters()->all();
+  if ($group = provus_group_group_from_route($params)) {
+    // Set global group var for theming.
+    $vars['attributes']['class'][] = 'group-context';
+    $vars['attributes']['class'][] = 'group-' . $group->id();
+  }
+  if (isset($params['view_id']) && isset($params['display_id'])
+    && $params['view_id'] == 'events' && $params['display_id'] == 'page_2') {
+    $vars['attributes']['class'][] = 'group-context';
+    $vars['attributes']['class'][] = 'group-3';
+  }
+}
+
+/**
+ * Gets group entity from the route.
+ *
+ * @param \Drupal\Core\Routing\RouteMatchInterface
+ *
+ * @return bool|\Drupal\group\Entity\GroupInterface
+ * @throws \Drupal\Component\Plugin\Exception\InvalidPluginDefinitionExcepti
+ */
+function provus_group_group_from_route($params) {
+  $entity = FALSE;
+  if (!empty($params['group']) && $params['group'] instanceof GroupInterface) {
+    return $params['group'];
+  }
+  if (!empty($params)) {
+    foreach ($params as $param) {
+      if ($param instanceof EntityInterface) {
+        $entity = $param;
+        break;
+      }
+    }
+  }
+  if ($entity) {
+    return provus_group_get_group_by_entity($entity);
+  }
+  return FALSE;
+}
+
+/**
+ * Retrieves group entity is a part of.
+ *
+ * @param \Drupal\Core\Entity\EntityInterface $entity
+ *
+ * @return bool|\Drupal\group\Entity\GroupInterface
+ * @throws \Drupal\Component\Plugin\Exception\InvalidPluginDefinitionException
+ */
+function provus_group_get_group_by_entity(EntityInterface $entity) {
+  $group = FALSE;
+  if ($entity instanceof GroupInterface) {
+    return $entity;
+  }
+  $entity_type = $entity->getEntityTypeId();
+  // Load all the group content for this entity.
+  /** @var \Drupal\group\Entity\GroupContent $group_content */
+  $group_content = \Drupal::entityTypeManager()->getStorage('group_content')
+    ->loadByProperties([
+      'entity_id' => $entity->id(),
+    ]);
+  // Assuming that the content can be related only to 1 group.
+  $group_content = reset($group_content);
+  if (!empty($group_content)) {
+    $group = $group_content->getGroup();
+  }
+  return $group;
+}

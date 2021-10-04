@@ -1,0 +1,17 @@
+<?php
+
+use Drupal\views\ViewExecutable;
+
+/**
+ * @file
+ * Primary module hooks for Component Block module.
+ */
+
+ /**
+  *
+  */
+function views_component_block_display_views_pre_execute(ViewExecutable $view) {
+  if (isset($view->storage->view_mode)) {
+    $view->rowPlugin->options['view_mode'] = $view->storage->view_mode;
+  }
+}
