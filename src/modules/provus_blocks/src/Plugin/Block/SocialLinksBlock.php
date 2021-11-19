@@ -24,7 +24,9 @@ class SocialLinksBlock extends BlockBase {
 
     $cache = ['contexts' => ['url']];
     if ($node = \Drupal::routeMatch()->getParameter('node')) { // phpcs:ignore
-      $cache['tags'] = $node->getCacheTags();
+      if ($node instanceof \Drupal\node\NodeInterface) {
+        $cache['tags'] = $node->getCacheTags();
+      }
     }
 
     return [
