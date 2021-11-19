@@ -57,7 +57,7 @@
         "drupal/admin_toolbar_tools": "^2.0",
         "drupal/antibot": "^1.4",
         "drupal/auto_entitylabel": "^3.0@beta",
-        "drupal/calendar_link": "^1.1",
+        "drupal/calendar_link": "2.0.0",
         "drupal/chosen": "^3.0",
         "drupal/components": "^2.2",
         "drupal/config_ignore": "^2.2",
