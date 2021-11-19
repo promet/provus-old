@@ -171,31 +171,31 @@ function provus_preprocess_navigation_bar_test($vars, $block) {
   if (isset($block->get('field_first_navigation_icon')->target_id)) {
     $fid = $block->get('field_first_navigation_icon')->target_id;
     $file = File::load($fid);
-    $first_icon = $file->url();
+    $first_icon = $file->createFileUrl(FALSE);
     $first_icon_flag = TRUE;
   }
   if (isset($block->get('field_second_navigation_icon')->target_id)) {
     $fid = $block->get('field_second_navigation_icon')->target_id;
     $file = File::load($fid);
-    $second_icon = $file->url();
+    $second_icon = $file->createFileUrl(FALSE);
     $second_icon_flag = TRUE;
   }
   if (isset($block->get('field_third_navigation_icon')->target_id)) {
     $fid = $block->get('field_third_navigation_icon')->target_id;
     $file = File::load($fid);
-    $third_icon = $file->url();
+    $third_icon = $file->createFileUrl(FALSE);
     $third_icon_flag = TRUE;
   }
   if (isset($block->get('field_fourth_navigation_icon')->target_id)) {
     $fid = $block->get('field_fourth_navigation_icon')->target_id;
     $file = File::load($fid);
-    $fourth_icon = $file->url();
+    $fourth_icon = $file->createFileUrl(FALSE);
     $fourth_icon_flag = TRUE;
   }
   if (isset($block->get('field_fifth_navigation_icon')->target_id)) {
     $fid = $block->get('field_fifth_navigation_icon')->target_id;
     $file = File::load($fid);
-    $fifth_icon = $file->url();
+    $fifth_icon = $file->createFileUrl(FALSE);
     $fifth_icon_flag = TRUE;
   }
 
@@ -576,7 +576,7 @@ function provus_preprocess_short_banner(&$vars, $block) {
   if (!empty($background_image[0])) {
     $background_image_fid = $background_image[0]->get('field_media_image')->target_id;
     $background_image_file = File::load($background_image_fid);
-    $vars['image_src'] = $background_image_file->url();
+    $vars['image_src'] = $background_image_file->createFileUrl(FALSE);
     $vars['image_alt'] = $background_image[0]->get('field_media_image')->alt;
   }
 }
@@ -603,7 +603,7 @@ function provus_preprocess_banner(&$vars, $block) {
   if (!empty($person_picture[0])) {
     $person_picture_fid = $person_picture[0]->get('field_media_image')->target_id;
     $person_picture_file = File::load($person_picture_fid);
-    $vars['picture_src'] = $person_picture_file->url();
+    $vars['picture_src'] = $person_picture_file->createFileUrl(FALSE);
     $vars['picture_alt'] = $person_picture[0]->get('field_media_image')->alt;
     $vars['settings']['picture'] = TRUE;
   }
@@ -931,12 +931,12 @@ function provus_preprocess_fileslist(&$vars, $block) {
       foreach ($media_files as $file) {
         $label = $file->label();
         $label = (strlen($label) > 50) ? substr($label, 0, 50) . '...' : $label;
-        $fileurl = $file->url();
+        $fileurl = $file->createFileUrl(FALSE);
         $ext = pathinfo($fileurl, PATHINFO_EXTENSION);
         $icon = ($ext == 'pdf') ? $ext : $icon;
         $item = [];
         $item['file__name'] = $label;
-        $item['file__url'] = $file->url();
+        $item['file__url'] = $file->createFileUrl(FALSE);
         $item['file__icon'] = $icon;
         $item['file__size'] = format_size($file->getSize());
         $item['file__changed'] = \Drupal::service('date.formatter')->format($file->getChangedTime(), 'county_default');
