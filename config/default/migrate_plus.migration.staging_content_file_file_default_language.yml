@@ -1,4 +1,4 @@
-uuid: 735125fb-8455-4af4-ae7d-ba7ff5baba82
+uuid: 0d83b821-fe95-482a-9fcd-b438a28957da
 langcode: en
 status: true
 dependencies: {  }
@@ -26,12 +26,10 @@ process:
   filesize: filesize
   status: status
   created:
-    plugin: callback
-    callable: strtotime
+    plugin: entity_staging_timestamp
     source: created
   changed:
-    plugin: callback
-    callable: strtotime
+    plugin: entity_staging_timestamp
     source: changed
 destination:
   plugin: 'entity:file'

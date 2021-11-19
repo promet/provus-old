@@ -12,7 +12,32 @@ id: libraries_contact
 title: 'Libraries Contact'
 description: 'Contact form for all individual libraries'
 category: ''
-elements: "date:\n  '#type': date\n  '#title': Date\n  '#default_value': now\n  '#datepicker': true\n  '#datepicker_button': true\nname:\n  '#type': textfield\n  '#title': Name\n  '#required': true\nemail_address:\n  '#type': webform_email_confirm\n  '#title': 'Email Address'\n  '#required': true\nlibrary_card_:\n  '#type': textfield\n  '#title': 'Library Card #'\nmessage:\n  '#type': textarea\n  '#title': 'Your Message'\n  '#required': true\nlibrary:\n  '#type': hidden\n  '#title': Library\n  '#default_value': '[current-page:title]'"
+elements: |-
+  date:
+    '#type': date
+    '#title': Date
+    '#default_value': now
+    '#datepicker': true
+    '#datepicker_button': true
+  name:
+    '#type': textfield
+    '#title': Name
+    '#required': true
+  email_address:
+    '#type': webform_email_confirm
+    '#title': 'Email Address'
+    '#required': true
+  library_card_:
+    '#type': textfield
+    '#title': 'Library Card #'
+  message:
+    '#type': textarea
+    '#title': 'Your Message'
+    '#required': true
+  library:
+    '#type': hidden
+    '#title': Library
+    '#default_value': '[current-page:title]'
 css: ''
 javascript: ''
 settings:

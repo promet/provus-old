@@ -1,4 +1,4 @@
-uuid: bb50ebd2-eb38-42b0-9531-02c1a6a7c503
+uuid: a220623a-41e1-4c94-89f4-95404efc3e9f
 langcode: en
 status: true
 dependencies: {  }
@@ -20,8 +20,7 @@ process:
     language: '@langcode'
   bundle: bundle
   revision_created:
-    plugin: callback
-    callable: strtotime
+    plugin: entity_staging_timestamp
     source: revision_created
   revision_user: revision_user
   revision_log_message: revision_log_message
@@ -46,13 +45,11 @@ process:
   thumbnail/alt: thumbnail_alt
   thumbnail/title: thumbnail_title
   created:
-    plugin: callback
-    callable: strtotime
+    plugin: entity_staging_timestamp
     source: created
     language: '@langcode'
   changed:
-    plugin: callback
-    callable: strtotime
+    plugin: entity_staging_timestamp
     source: changed
     language: '@langcode'
   default_langcode:

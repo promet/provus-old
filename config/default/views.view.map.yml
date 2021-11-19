@@ -184,7 +184,9 @@ display:
                           icon_file: none
                           label: '- Default Value - '
                           legend_exclude: 0
-                description: "This Geofield Map Themer allows the Image Selection of\n * different Marker Icons based on List (Options) Type fields in View."
+                description: |-
+                  This Geofield Map Themer allows the Image Selection of
+                   * different Marker Icons based on List (Options) Type fields in View.
               plugins_descriptions:
                 table: ''
           map_additional_options: ''
