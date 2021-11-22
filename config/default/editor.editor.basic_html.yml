@@ -51,12 +51,13 @@ settings:
             - Table
             - Source
   plugins:
-    language:
-      language_list: un
     stylescombo:
       styles: "td.percent-25|25 Percent TD\r\ntd.percent-50|50 Percent TD\r\ntd.percent-75|75 Percent TD\r\nth.percent-25|25 Percent TH\r\nth.percent-50|50 Percent TH\r\nth.percent-75|75 Percent TH"
-    linkit:
+    drupallink:
+      linkit_enabled: true
       linkit_profile: wysiwyg
+    language:
+      language_list: un
 image_upload:
   status: true
   scheme: public

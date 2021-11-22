@@ -57,7 +57,7 @@
         "drupal/admin_toolbar_tools": "^2.0",
         "drupal/antibot": "^1.4",
         "drupal/auto_entitylabel": "^3.0@beta",
-        "drupal/calendar_link": "^1.1",
+        "drupal/calendar_link": "2.0.0",
         "drupal/chosen": "^3.0",
         "drupal/components": "^2.2",
         "drupal/config_ignore": "^2.2",
@@ -197,14 +197,17 @@
         "patches": {
             "drupal/core": {
                 "Temp workaround for entity_staging to choose block uuid over revision id [#2942975]": "src/patches/2942975_145-d9-2-provus.patch",
-                "Block visibility has wrong logic [923934]": "https://www.drupal.org/files/issues/2021-06-29/923934-44.patch"
+                "Block visibility has wrong logic [923934]": "https://www.drupal.org/files/issues/2021-09-16/923934-50-d92.patch"
             },
             "drupal/config_ignore": {
-                "Support config ignore export [#2942975]": "https://www.drupal.org/files/issues/2020-01-11/support-for-export-2857247-44.patch"
+                "Support for export filtering via Drush [2857247]": "https://www.drupal.org/files/issues/2021-08-18/config_ignore_2857247-75.patch"
             },
             "drupal/entity_staging": {
                 "Stream wrapper bug [#3216474]": "https://git.drupalcode.org/project/entity_staging/-/merge_requests/3.diff", 
                 "Unsupported operand types bug [#3145936]": "https://www.drupal.org/files/issues/2020-06-04/entity-staging-unsuported-operand-types-3145936-2.patch"
+            },
+            "drupal/layout_builder_browser": {
+              "Links in Layout Builder Browser sidebar display inline instead of block [3195016]": "https://www.drupal.org/files/issues/2021-01-27/inline_links-3195016-2.patch"
             }
         }
     }

@@ -1,4 +1,4 @@
-uuid: 60f5802c-f876-4f88-92be-4a56910bc669
+uuid: 71713e59-18ce-44cd-bc28-93aca98a0016
 langcode: en
 status: true
 dependencies: {  }
@@ -21,8 +21,7 @@ process:
     language: '@langcode'
   type: type
   revision_created:
-    plugin: callback
-    callable: strtotime
+    plugin: entity_staging_timestamp
     source: revision_created
   revision_user: revision_user
   revision_log: revision_log
@@ -35,8 +34,7 @@ process:
     source: info
     language: '@langcode'
   changed:
-    plugin: callback
-    callable: strtotime
+    plugin: entity_staging_timestamp
     source: changed
     language: '@langcode'
   reusable: reusable

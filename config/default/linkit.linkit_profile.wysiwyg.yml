@@ -8,7 +8,6 @@ dependencies:
 id: wysiwyg
 label: wysiwyg
 description: ''
-attributes: {  }
 matchers:
   70bbd4e2-ebff-47aa-b8e1-47da4554fb2f:
     uuid: 70bbd4e2-ebff-47aa-b8e1-47da4554fb2f
@@ -26,6 +25,9 @@ matchers:
         person: person
       group_by_bundle: true
       include_unpublished: false
+      metadata: ''
+      substitution_type: canonical
+      limit: 100
   7d48b2e3-e2d2-4cf8-b756-823a1d079dd5:
     uuid: 7d48b2e3-e2d2-4cf8-b756-823a1d079dd5
     id: 'entity:file'
@@ -38,3 +40,8 @@ matchers:
         show_dimensions: false
         show_thumbnail: false
         thumbnail_image_style: null
+      file_extensions: ''
+      file_status: 1
+      substitution_type: file
+      metadata: ''
+      limit: 100
