@@ -4,6 +4,7 @@ namespace Drupal\provus_blocks\Plugin\Block;
 
 use Drupal\Core\Url;
 use Drupal\Core\Block\BlockBase;
+use Drupal\node\NodeInterface;
 
 /**
  * Provides a 'SocialLinksBlock' block.
