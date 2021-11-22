@@ -4,7 +4,6 @@ namespace Drupal\provus_blocks\Plugin\Block;
 
 use Drupal\Core\Url;
 use Drupal\Core\Block\BlockBase;
-use Drupal\node\NodeInterface;
 
 /**
  * Provides a 'SocialLinksBlock' block.
@@ -25,7 +24,7 @@ class SocialLinksBlock extends BlockBase {
 
     $cache = ['contexts' => ['url']];
     if ($node = \Drupal::routeMatch()->getParameter('node')) { // phpcs:ignore
-      if ($node instanceof \Drupal\node\NodeInterface) {
+      if ($node instanceof \Drupal\node\NodeInterface) { // phpcs:ignore
         $cache['tags'] = $node->getCacheTags();
       }
     }
