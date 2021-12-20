@@ -20,7 +20,7 @@ GIT_REPO="${GH_TOKEN}@github.com/${TRAVIS_REPO_SLUG}"
 ##
 git clone --branch ${STORYBOOK_BRANCH} https://${GIT_REPO} $TMPDIR
 
-cp -r ${PROJECT_ROOT}/src/themes/${THEME_NAME} $TMPDIR/${THEME_NAME}
+cp -r ${PROJECT_ROOT}/web/themes/custom/${THEME_NAME} $TMPDIR/${THEME_NAME}
 cd $TMPDIR/${THEME_NAME}
 yarn
 echo "Building docs"

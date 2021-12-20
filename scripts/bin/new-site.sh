@@ -1,14 +1,14 @@
 #!/bin/bash
 
 #1. Copy the theme
-cp -r src/themes/provus src/themes/${THEME_NAME}
+cp -r web/themes/custom/provus web/themes/custom/${THEME_NAME}
 
 #2. Update theme filenames: 
 sudo apt-get update; sudo apt-get install rename
-rename "s/provus/${THEME_NAME}/" src/themes/${THEME_NAME}/*.*
+rename "s/provus/${THEME_NAME}/" web/themes/custom/${THEME_NAME}/*.*
 
 #3. Update theme strings: 
-sed -i 's/provus/${THEME_NAME}/g' $(find src/themes/${THEME_NAME} -type f)
+sed -i 's/provus/${THEME_NAME}/g' $(find web/themes/custom/${THEME_NAME} -type f)
 
 #4. Update blocks 
 sed -i "s/provus/${THEME_NAME}/g" config/default/block.*.yml
