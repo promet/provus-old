@@ -149,9 +149,6 @@
         "prepare-for-build":"DrupalProject\\composer\\ScriptHandler::prepareForBuild",
         "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
         "remove-git-dirs": "DrupalProject\\composer\\ScriptHandler::removeGitDirectories",
-        "project-scaffold": [
-            "Kporras07\\ComposerSymlinks\\ScriptHandler::createSymlinks"
-        ],
         "post-install-cmd": [
             "@project-scaffold",
             "@drupal-scaffold",
@@ -186,17 +183,9 @@
             "web/themes/contrib/{$name}": ["type:drupal-theme"],
             "drush/Commands/{$name}": ["type:drupal-drush"]
         },
-        "symlinks": {
-            "src/modules": "web/modules/custom",
-            "src/themes": "web/themes/custom",
-            "src/profiles": "web/profiles/custom",
-            "src/libraries": "web/libraries/custom",
-            "src/sites": "web/sites",
-            "web/themes/custom/provus/images": "web/images"
-        },
         "patches": {
             "drupal/core": {
-                "Temp workaround for entity_staging to choose block uuid over revision id [#2942975]": "src/patches/2942975_145-d9-2-provus.patch",
+                "Temp workaround for entity_staging to choose block uuid over revision id [#2942975]": "patches/2942975_145-d9-2-provus.patch",
                 "Block visibility has wrong logic [923934]": "https://www.drupal.org/files/issues/2021-09-16/923934-50-d92.patch"
             },
             "drupal/config_ignore": {
