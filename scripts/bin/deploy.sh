@@ -19,6 +19,7 @@ auth_hosting()
 
 add_remote()
 {
+  echo "...Adding desination repo [git remote add deploy $REMOTE_GIT_REPO]"
   git remote add deploy $REMOTE_GIT_REPO
 }
 
@@ -66,7 +67,16 @@ setup()
 
 push()
 {
+  echo "...deleting the files folder we just added"
+  sudo rm -rf /var/www/web/sites/default/files
+  sudo rm -rf /var/www/sites/default/files
   quiet_git add --force -A $DOCROOT vendor hooks scripts drush
+    if [ "$HOSTING_PLATFORM" == "pantheon" ]
+    then
+      echo "...GIT deleting the files folder we just added"
+      sudo git rm -rf web/sites/default/files
+      sudo git rm -rf sites/default/files
+    fi
   quiet_git commit -m "Build for $1"
   quiet_git push deploy HEAD:$1 --force
 }
@@ -101,5 +111,19 @@ elif [ $CURRENT_BRANCH == $DEV_BRANCH ]
 then
   setup
   push $REMOTE_DEPLOY_BRANCH
+    if [ "$HOSTING_PLATFORM" == "pantheon" ]
+    then
+      echo "...Loggin into Pantheon with Terminus"
+      $TERMINUS_BIN auth:login --machine-token=$SECRET_TERMINUS_TOKEN
+      # Make sure Pantheon is ready
+      echo "...Waiting 60s to be sure Pantheonn is ready"
+      sleep 60
+      echo "...PANTHEON: config import for ${HOSTING_SITE}.${REMOTE_DEPLOY_BRANCH}"
+      $TERMINUS_BIN drush -n ${HOSTING_SITE}.${REMOTE_DEPLOY_BRANCH} cim -y
+      echo "...PANTHEON: UPDATE DB"
+      $TERMINUS_BIN drush -n ${HOSTING_SITE}.${REMOTE_DEPLOY_BRANCH} updb -y
+      echo "...PANTHEON: Rebuilding Caches"
+      $TERMINUS_BIN drush ${HOSTING_SITE}.${REMOTE_DEPLOY_BRANCH} cr
+  fi
   storybook_deploy
 fi
