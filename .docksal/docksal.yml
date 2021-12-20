@@ -36,3 +36,6 @@ services:
       - STORYBOOK_FOLDER
       - TRAVIS_REPO_SLUG
       - GH_TOKEN
+
+  vrt:
+    image: backstopjs/backstopjs
