@@ -1,1 +1,0 @@
-"use strict";(function(a){Drupal.behaviors.shareThis={attach:function attach(){a(".ul-share-this__link-link").once().click(function(){var a=document.createElement("input"),b=window.location.href;return document.body.appendChild(a),a.value=b,a.select(),document.execCommand("copy"),document.body.removeChild(a),alert("Copied to clipboard"),!1})}}})(jQuery);
