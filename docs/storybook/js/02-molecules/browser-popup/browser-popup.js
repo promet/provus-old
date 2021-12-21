@@ -1,0 +1,1 @@
+"use strict";(function(a){Drupal.behaviors.browser_detect={attach:function attach(){"Microsoft Internet Explorer"==window.navigator.appName?a("#modal-browser").modal("show"):-1<window.navigator.userAgent.indexOf("Trident")?a("#modal-browser").modal("show"):a("#modal-browser").modal("hide")}}})(jQuery);
