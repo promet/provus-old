@@ -1,0 +1,5 @@
+services:
+  provus_blocks.twig.TwigHtmlSpecialCharsDecode:
+    class: Drupal\provus_blocks\TwigHtmlSpecialCharsDecode
+    tags:
+      - { name: twig.extension }

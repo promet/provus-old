@@ -71,13 +71,12 @@
  */
 #}
 
-
 {% embed "@molecules/card/card-mini.twig" with {
   card__heading: label,
   card__link__url: url,
-  card__date: date,
+  card__date: content.date,
 } %}
   {% block card__img %}
-    {{ content.field_media_image }}
+    {{ content.image }}
   {% endblock %}
 {% endembed %}

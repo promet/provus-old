@@ -71,17 +71,11 @@
  */
 #}
 
-{% embed "@molecules/card/event-card.twig" with {
+{% embed "@molecules/card/circle-img.twig" with {
   card__heading: label,
   card__link__url: url,
-  card__date: content.date,
 } %}
   {% block card__img %}
     {{ content.image }}
-  {% endblock %}
-  {% block card__body %}
-    <div {{ bem('event-card__body') }}>
-      {{ content.body }}
-    </div>
   {% endblock %}
 {% endembed %}

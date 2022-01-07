@@ -1,0 +1,10 @@
+uuid: c354cead-af84-4de1-8824-9346661bfad4
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.card_circle_image
+label: 'Card Circle Image'
+targetEntityType: node
+cache: true

@@ -71,14 +71,13 @@
  */
 #}
 
-
 {% embed "@molecules/card/card-promo.twig" with {
   card__heading: label,
   card__link__url: url,
 } %}
   {% block card__img %}
     <div {{ bem('card-promo__image') }}>
-      {{ content.field_image }}
+      {{ content.image }}
     </div>
   {% endblock %}
 {% endembed %}
