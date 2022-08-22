@@ -1,8 +1,0 @@
-uuid: a97fb1bf-3f89-4fdb-9124-b336a1ed69df
-langcode: en
-status: true
-dependencies: {  }
-id: social_feed
-label: 'Social Feed'
-revision: 1
-description: ''

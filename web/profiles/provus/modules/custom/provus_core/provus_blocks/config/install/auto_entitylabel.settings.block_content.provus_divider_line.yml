@@ -1,0 +1,9 @@
+status: 1
+pattern: '(Divider Line) - [random:number]'
+escape: false
+preserve_titles: false
+dependencies:
+  config:
+    - block_content.type.provus_divider_line
+save: 0
+chunk: '50'

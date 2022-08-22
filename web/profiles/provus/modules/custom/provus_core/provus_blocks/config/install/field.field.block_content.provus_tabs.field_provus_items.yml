@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.provus_tab_item
+    - block_content.type.provus_tabs
+    - field.storage.block_content.field_provus_items
+id: block_content.provus_tabs.field_provus_items
+field_name: field_provus_items
+entity_type: block_content
+bundle: provus_tabs
+label: Items
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:block_content'
+  handler_settings:
+    target_bundles:
+      provus_tab_item: provus_tab_item
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: provus_basic_text
+field_type: entity_reference

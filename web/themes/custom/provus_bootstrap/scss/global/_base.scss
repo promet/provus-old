@@ -1,0 +1,49 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: $font-body;
+}
+
+.main {
+  display: block;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+  word-wrap: normal;
+}
+
+.visually-hidden.focusable.skip-link:focus {
+  z-index: 101;
+  position: relative !important;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0 30px;
+}
+
+.field-link.center {
+  margin-bottom: 0;
+}
+
+hr {
+  height: 1px;
+  color: $primary-shade;
+  margin: rem-calc(80 0);
+  opacity: 1;
+}

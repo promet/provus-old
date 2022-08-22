@@ -1,0 +1,23 @@
+{% if title is not empty %}
+    <h3>{{ title }}</h3>
+{% endif %}
+<div id="views-bootstrap-tab-{{ id }}" {{ attributes.addClass('horizontal-tabs') }}>
+    <ul class="nav nav-{{ tab_type }} {% if justified %}nav-justified{% endif %}" role="tablist">
+        {% for key, tab in tabs %}
+            {% set tab_classes = [loop.first ? 'active'] %}
+            <li class="nav-item horizontal-tabs__menu-item" role="presentation">
+               <a aria-controls="tab-{{ id }}-{{ key }}" class="nav-link tab-clickable {{ tab_classes|join(' ') }}" data-bs-target="#tab-{{ id }}-{{ key }}" id="tab-{{ id }}-{{ key }}-tab" href="#" data-bs-toggle="tab" role="tab">
+                 {{ tab }}
+               </a>
+            </li>
+        {% endfor %}
+    </ul>
+    <div class="tab-content horizontal-tabs__content">
+        {% for key, row in rows %}
+            {% set row_classes = ['tab-pane', loop.first ? 'active'] %}
+            <div role="tabpanel" class="{{ row_classes|join(' ') }} fade{% if loop.first %} show{% endif %}" id="tab-{{ id }}-{{ key }}" {{ row.attributes }}>
+            {{ row.content }}
+        </div>
+        {% endfor %}
+    </div>
+</div>

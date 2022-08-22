@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.card_right
+label: 'Card Image Right'
+targetEntityType: node
+cache: true

@@ -1,0 +1,20 @@
+name: 'Provus Core'
+type: module
+description: 'Custom provus core configuration.'
+core_version_requirement: ^8 || ^9
+package: 'Provus'
+dependencies:
+  - drupal:block
+  - drupal:node
+  - drupal:system
+  - drupal:text
+  - drupal:datetime
+  - bootstrap_layout_builder
+  - bootstrap_styles
+  - ctools
+  - layout_builder
+  - layout_builder_modal
+  - layout_builder_restrictions
+  - pathauto
+  - smart_trim
+  - views_bootstrap

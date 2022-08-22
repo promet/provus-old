@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.provus_heading
+    - field.storage.block_content.field_provus_heading_level
+  module:
+    - options
+id: block_content.provus_heading.field_provus_heading_level
+field_name: field_provus_heading_level
+entity_type: block_content
+bundle: provus_heading
+label: 'Heading Level'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: H2
+default_value_callback: ''
+settings: {  }
+field_type: list_string

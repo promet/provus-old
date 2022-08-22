@@ -1,0 +1,41 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.provus_faq_item
+    - field.field.block_content.provus_faq_item.field_provus_body
+    - field.field.block_content.provus_faq_item.field_provus_title
+  module:
+    - text
+id: block_content.provus_faq_item.default
+targetEntityType: block_content
+bundle: provus_faq_item
+mode: default
+content:
+  field_provus_body:
+    type: text_textarea_with_summary
+    weight: 2
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  field_provus_title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

@@ -1,7 +1,0 @@
-uuid: ca0994b4-bb4e-45c7-9fae-e8674600e1d1
-langcode: en
-status: true
-dependencies: {  }
-id: widgets
-label: Widgets
-weight: null

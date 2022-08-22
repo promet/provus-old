@@ -1,0 +1,87 @@
+// Card styles.
+.card-img-top {
+  overflow: hidden;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.card {
+  border-radius: $card-border-radius;
+  border: 1px solid $card-border-color;
+  .field--type-entity-reference {
+    margin: 0;
+  }
+  .field--name-field-provus-links {
+    .field__item {
+      display: inline-block;
+      margin-right: $card-spacing;
+    }
+  }
+  .card-body,
+  .card-header {
+    padding: $card-spacing;
+  }
+}
+
+.card-header {
+  padding: 1rem $card-spacing;
+}
+
+// 4 Card featured
+.four-card-featured-group-wrapper {
+  display: block;
+  @include media-breakpoint-up(md) {
+    display: flex;
+  }
+  .card {
+    border: none;
+  }
+  .content-left {
+    width: 100%;
+    @include media-breakpoint-up(md) {
+      width: 50%;
+      padding-right: rem-calc(30);
+      .card {
+        .card-body {
+          padding-left: 0;
+        }
+      }
+    }
+  }
+  .content-right {
+    width: 100%;
+    @include media-breakpoint-up(md) {
+      width: 50%;
+      border-left: 1px solid $gray-lightest;
+      padding-left: rem-calc(30);
+      .card {
+        .card-body {
+          padding-top: 0;
+        }
+        margin-bottom: rem-calc(30);
+      }
+    }
+  }
+}
+
+.rounded-circle {
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 0 auto;
+  width: rem-calc(200);
+  height: rem-calc(200);
+  border: 1px solid $gray-lightest;
+}
+
+.card-img-overlay {
+  background: rgba(0,0,0,0.5);
+  color: $white;
+  h2, h3, h4, h5 ,h6 {
+    color: $white;
+  }
+  a {
+    color: $white;
+  }
+}

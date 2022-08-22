@@ -1,0 +1,38 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.provus_blog.body
+    - field.field.node.provus_blog.field_provus_media_files
+    - field.field.node.provus_blog.field_provus_media_image
+    - field.field.node.provus_blog.field_provus_publish_date
+    - field.field.node.provus_blog.field_provus_tags
+    - node.type.provus_blog
+  module:
+    - text
+    - user
+id: node.provus_blog.teaser
+targetEntityType: node
+bundle: provus_blog
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  field_provus_media_files: true
+  field_provus_media_image: true
+  field_provus_publish_date: true
+  field_provus_tags: true

@@ -1,6 +1,0 @@
-card__image__src: 'images/promo-0.png'
-card__image__alt: "This is the card image's alt text"
-card__image__output_image_tag: true
-card__heading: 'My Account'
-card__link__text: 'Read more'
-card__link__url: '#'

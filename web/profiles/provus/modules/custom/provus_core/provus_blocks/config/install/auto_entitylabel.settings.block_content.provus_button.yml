@@ -1,0 +1,9 @@
+status: 1
+pattern: '(Button) - [random:number]'
+escape: false
+preserve_titles: false
+dependencies:
+  config:
+    - block_content.type.provus_button
+save: 0
+chunk: '50'

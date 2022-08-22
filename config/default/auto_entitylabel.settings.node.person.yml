@@ -1,6 +1,0 @@
-status: 1
-pattern: '[node:field_first_name] [node:field_last_name]'
-escape: false
-dependencies:
-  config:
-    - node.type.person

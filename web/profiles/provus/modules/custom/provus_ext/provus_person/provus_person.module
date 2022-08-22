@@ -1,0 +1,44 @@
+<?php
+
+/**
+ * @file
+ * Contains provus_person.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function provus_person_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the provus_person module.
+    case 'help.page.provus_person':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Custom provus node: Person. Provides person content type, view, blocks.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function provus_person_theme() {
+  return [
+    'block__provus_person_list' => [
+      'template' => 'block--provus-person-list',
+      'base hook' => 'block'
+    ],
+    'node__provus_person__card_tall' => [
+      'template' => 'node--provus-person--card-tall',
+      'base hook' => 'node'
+    ],
+    'field__field_provus_people' => [
+      'template' => 'field--field-provus-people',
+      'base hook' => 'field'
+    ],
+  ];
+}

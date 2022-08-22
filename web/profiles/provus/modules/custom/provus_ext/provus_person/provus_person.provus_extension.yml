@@ -1,0 +1,3 @@
+name: 'Provus Content: Person'
+description: 'Custom provus node: Person. Provides person content type and view.'
+default: false

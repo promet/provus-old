@@ -1,7 +1,0 @@
-card__image__src: 'images/img.png'
-card__image__alt: "This is the card image's alt text"
-card__image__output_image_tag: true
-card__heading: 'Tajikistan'
-card__body: 'Logo represents company’s identity. First impression is made by logo or its absence. To know the importance of a logo just answer one question: “How many big, leading and famous companies don’t have logos?” If you company doesn’t have a logo this can raise doubts and negative thoughts. If logo was made by non-professional designer or made by owner of the company it is sometimes worse than no logo at all.'
-card__link__text: 'Read more'
-card__link__url: '#'

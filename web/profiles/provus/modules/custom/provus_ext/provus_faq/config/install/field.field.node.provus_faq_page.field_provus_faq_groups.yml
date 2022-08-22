@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.provus_faq_group
+    - field.storage.node.field_provus_faq_groups
+    - node.type.provus_faq_page
+id: node.provus_faq_page.field_provus_faq_groups
+field_name: field_provus_faq_groups
+entity_type: node
+bundle: provus_faq_page
+label: 'FAQ Groups'
+description: 'An FAQ Group is a grouping of frequent questions and answers.  You can reuse a group or the question/answers.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:block_content'
+  handler_settings:
+    target_bundles:
+      provus_faq_group: provus_faq_group
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

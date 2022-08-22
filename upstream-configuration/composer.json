@@ -1,0 +1,128 @@
+{
+    "name": "provus/upstream-configuration",
+    "type": "project",
+    "minimum-stability": "dev",
+    "version": "2.0.0",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type":"package",
+            "package": {
+              "name": "harvesthq/chosen",
+              "version": "1.8.7",
+              "type": "drupal-library",
+              "dist": {
+                "url": "https://github.com/harvesthq/chosen/releases/download/v1.8.7/chosen_v1.8.7.zip",
+                "type": "zip"
+              }
+            }
+          },
+          {
+            "type": "package",
+            "package": {
+                "name": "library-enyo/dropzone",
+                "version": "5.7.0",
+                "type": "drupal-library",
+                "source": {
+                    "url": "https://github.com/enyo/dropzone",
+                    "type": "git",
+                    "reference": "v5.7.0"
+                }
+            }
+          },
+        {
+            "type": "package",
+            "package": {
+              "name": "jsanahuja/jqueryinstagramfeed",
+              "version": "dev-master",
+              "type": "drupal-library",
+              "dist": {
+                "url": "https://github.com/jsanahuja/jquery.instagramFeed/archive/master.zip",
+                "type": "zip"
+              }
+            }
+          }
+    ],
+    "require": {
+        "drupal/admin_toolbar": "^3.0",
+        "drupal/antibot": "^1.5",
+        "drupal/address": "^1.9",
+        "drupal/bootstrap_layout_builder": "^2.0",
+        "drupal/bootstrap_layouts": "^5.2",
+        "drupal/calendar_link": "^2.1",
+        "drupal/chosen": "^3.0",
+        "drupal/config_ignore": "^2.3",
+        "drupal/devel": "^4.1",
+        "drupal/entity": "^1.2",
+        "drupal/environment_indicator": "^4.0",
+        "drupal/entity_embed": "^1.2",
+        "drupal/extlink": "^1.6",
+        "drupal/facets": "^2.0",
+        "drupal/field_group": "^3.2",
+        "drupal/focal_point": "^1.5",
+        "drupal/geocoder": "^3.24",
+        "drupal/geofield": "^1.36",
+        "drupal/geofield_map": "^2.71",
+        "drupal/google_analytics": "^4.0",
+        "drupal/layout_builder_at": "^2.12",
+        "drupal/layout_builder_browser": "^1.3",
+        "drupal/layout_builder_modal": "^1.1",
+        "drupal/layout_builder_restrictions": "^2.13",
+        "drupal/layout_paragraphs": "^1.0",
+        "drupal/memcache": "^2.3",
+        "drupal/menu_block": "1.x-dev",
+        "drupal/menu_breadcrumb": "^1.16",
+        "drupal/migrate_plus": "^5.2",
+        "drupal/office_hours": "^1.5",
+        "drupal/pathauto": "^1.8",
+        "drupal/pdfpreview": "^1.0",
+        "drupal/redirect": "^1.7",
+        "drupal/search_api": "^1.22",
+        "drupal/search_api_glossary": "^4.1",
+        "drupal/search_api_solr": "^4.2",
+        "drupal/section_library": "^1.0",
+        "drupal/smart_trim": "^1.3",
+        "drupal/twig_tweak": "^3.1",
+        "drupal/view_unpublished": "^1.0",
+        "drupal/viewsreference": "^1.7",
+        "drupal/vocabulary_condition": "^1.0",
+        "drupal/webform": "^6.1",
+        "geocoder-php/google-maps-provider": "^4.6",
+        "harvesthq/chosen": "^1.8",
+        "kporras07/composer-symlinks": "^1.1",
+        "oomphinc/composer-installers-extender": "^2.0",
+        "vlucas/phpdotenv": "^5.4",
+        "webflo/drupal-finder": "^1.2",
+        "webmozart/path-util": "^2.3",
+        "zaporylie/composer-drupal-optimizations": "^1.2",
+        "drupal/gin_login": "1.0",
+        "drupal/date_recur": "3.1.0",
+        "drupal/date_recur_modular": "3.0.1",
+        "drupal/views_bootstrap": "4.3",
+        "drupal/addtoany": "^1.16",
+        "drupal/formtips": "^1.5",
+        "drupal/fontawesome": "^2.22",
+        "drupal/bootstrap_site_alert": "^2.0@beta",
+        "drupal/exclude_node_title": "1.3",
+        "drupal/sitemap": "2.x-dev"
+    },
+    "extra": {
+        "_README": "Do not edit this config file, Use the composer.json in the project root. See https://provus.io/docs/composer for more information."
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true,
+            "oomphinc/composer-installers-extender": true,
+            "zaporylie/composer-drupal-optimizations": true,
+            "cweagans/composer-patches": true
+        }
+    },
+    "require-dev": {
+        "dmore/behat-chrome-extension": "^1.3",
+        "drupal/drupal-extension": "^4.1",
+        "mglaman/drupal-check": "^1.2"
+    }
+}

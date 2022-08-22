@@ -1,6 +1,0 @@
-status: 1
-pattern: 'Media [random:number]'
-escape: false
-dependencies:
-  config:
-    - block_content.type.media_item

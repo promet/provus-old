@@ -1,0 +1,86 @@
+libraries.rrule:
+  remote: https://github.com/jakubroztocil/rrule
+  version: '2.6.4'
+  license:
+    name: python-dateutil
+    url: https://github.com/jakubroztocil/rrule/blob/master/LICENCE
+    gpl-compatible: true
+  cdn:
+    https://cdn.jsdelivr.net/npm/rrule@2.6.6/dist/es5/rrule.min.js
+  js:
+    /libraries/rrule/2.6.4/rrule.min.js: { minified: true }
+
+libraries.rruleGlobal:
+  version: '5.2.0'
+  license:
+    name: python-dateutil
+    url: https://github.com/jakubroztocil/rrule/blob/master/LICENCE
+    gpl-compatible: true
+  cdn:
+    https://cdn.jsdelivr.net/npm/@fullcalendar/rrule@5.2.0/main.global.min.js
+  js:
+    /libraries/rruleGlobal/5.2.0/rruleGlobal.min.js:
+
+libraries.moment:
+  remote: https://github.com/moment/moment/
+  version: '2.26.0'
+  license:
+    name: MIT
+    url: https://raw.githubusercontent.com/moment/moment/develop/LICENSE
+    gpl-compatible: true
+  cdn:
+    https://unpkg.com/moment@2.26.0/min/moment.min.js
+  js:
+    /libraries/moment/2.26.0/moment.min.js: { minified: true }
+
+libraries.fullcalendar-theme:
+  remote: https://fullcalendar.io/
+  version: '5.3.2'
+  license:
+    name: MIT
+    gpl-compatible: true
+  cdn:
+    https://cdn.jsdelivr.net/npm/fullcalendar
+  css:
+    component:
+      /main.min.css: { minified: true }
+
+libraries.fullcalendar:
+  remote: https://fullcalendar.io/
+  version: '5.3.2'
+  license:
+    name: MIT
+    url: https://github.com/fullcalendar/fullcalendar/blob/master/LICENSE.txt
+    gpl-compatible: true
+  cdn:
+    https://cdn.jsdelivr.net/npm/fullcalendar
+  js:
+    /main.min.js: { minified: true }
+    /locales-all.min.js: { minified: true }
+  dependencies:
+    - fullcalendar_view/libraries.fullcalendar-theme
+    - fullcalendar_view/libraries.moment
+    - fullcalendar_view/libraries.rrule
+
+libraries.jsframe:
+  remote: https://github.com/riversun/JSFrame.js
+  version: '1.5.16'
+  license:
+    name: MIT
+    url: https://github.com/riversun/JSFrame.js/blob/master/LICENSE
+    gpl-compatible: true
+  cdn:
+    https://cdn.jsdelivr.net/npm/jsframe.js@1.5.16/lib/jsframe.min.js
+  js:
+    /libraries/JSFrame/1.5.16/jsframe.min.js: { minified: true }
+
+# Feature libraries.
+fullcalendar:
+  js:
+    js/fullcalendar_view.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupalSettings
+    - core/drupal.dialog.ajax
+    - fullcalendar_view/libraries.fullcalendar
+    - fullcalendar_view/libraries.rruleGlobal

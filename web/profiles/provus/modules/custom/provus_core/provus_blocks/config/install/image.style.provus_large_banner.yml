@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: provus_large_banner
+label: 'Large Banner'
+effects:
+  8e510469-f876-4de7-b6cc-70bf6adffb50:
+    uuid: 8e510469-f876-4de7-b6cc-70bf6adffb50
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1440
+      height: 500
+      anchor: center-center

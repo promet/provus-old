@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.provus_card
+    - field.storage.block_content.field_provus_media_image
+    - media.type.image
+id: block_content.provus_card.fieldprovus__media_image
+field_name: field_provus_media_image
+entity_type: block_content
+bundle: provus_card
+label: 'Media Image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

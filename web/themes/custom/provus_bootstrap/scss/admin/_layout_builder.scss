@@ -1,0 +1,59 @@
+// Layout builder admin fixes.
+#drupal-off-canvas {
+  background: $white;
+  ul, ol {
+    li {
+      border: none;
+    }
+  }
+}
+
+.ui-widget.ui-dialog.ui-dialog-off-canvas .ui-dialog-titlebar {
+  background: $gray-lightest !important;
+}
+
+.layout-builder-add-block {
+  .table-striped > tbody > tr:nth-of-type(odd) > * {
+    --bs-table-accent-bg: $white !important;
+  }
+  table tbody tr {
+    border: 1px solid $gray;
+  }
+  .tabledrag-toggle-weight-wrapper {
+    display: none;
+  }
+}
+
+.ui-dialog.ui-layout-builder-modal .ui-dialog-titlebar,
+.ui-dialog .ui-dialog-titlebar {
+  background: $gray-lightest !important;
+}
+
+.ui-dialog .ui-dialog-title {
+  color: $black !important;
+}
+
+#drupal-off-canvas .ajax-progress {
+  display: none;
+}
+
+#layout-builder-modal form > #bs_ui ~ button.button, #layout-builder-modal form > #bs_ui ~ input[type="submit"].button, #layout-builder-modal form > .form-wrapper ~ button.button, #layout-builder-modal form > .form-wrapper ~ input[type="submit"].button {
+  float: none;
+}
+
+// Tooptip fixes.
+.formtips-processed.filter-guidelines, div.description.formtips-processed, .form-item .description.formtips-processed, .form-item__description.formtips-processed {
+  background: $white;
+  color: $body-color;
+}
+.formtips-processed::before {
+  border-bottom-color: $white;
+}
+
+.js-hide {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  display: none;
+}

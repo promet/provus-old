@@ -1,0 +1,25 @@
+// Sidebar menu styles.
+.sidebar {
+  .navbar-nav {
+    li {
+      border-top: 1px solid $primary-shade;
+      a {
+        color: $primary-shade;
+        padding: rem-calc(12.5 20);
+        text-decoration: none;
+        &.active {
+          color: $primary-shade;
+          text-decoration: none;
+          font-weight: bold;
+          border-left: 5px solid $primary-shade;
+        }
+        &:hover,
+        &:focus {
+          text-decoration: underline;
+          background: $gray-lightest;
+          color: $primary-shade;
+        }
+      }
+    }
+  }
+}

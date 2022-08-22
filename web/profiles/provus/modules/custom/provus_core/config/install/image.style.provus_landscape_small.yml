@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: provus_landscape_small
+label: 'Landscape Small'
+effects:
+  30bc13f2-ad7f-4ca2-b5d9-dd6caf93dd8b:
+    uuid: 30bc13f2-ad7f-4ca2-b5d9-dd6caf93dd8b
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 450
+      height: 250
+      anchor: center-center

@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: provus_landscape_medium
+label: 'Landscape Medium'
+effects:
+  8e0f29c0-cdf3-45b1-9123-c3653b30772b:
+    uuid: 8e0f29c0-cdf3-45b1-9123-c3653b30772b
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 680
+      height: 340
+      anchor: center-center

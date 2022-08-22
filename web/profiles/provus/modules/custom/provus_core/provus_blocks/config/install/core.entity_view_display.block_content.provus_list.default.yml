@@ -1,0 +1,41 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.provus_list
+    - field.field.block_content.provus_list.field_provus_list_items
+    - field.field.block_content.provus_list.field_provus_list_orientation
+    - field.field.block_content.provus_list.field_provus_list_style
+  module:
+    - options
+id: block_content.provus_list.default
+targetEntityType: block_content
+bundle: provus_list
+mode: default
+content:
+  field_provus_list_items:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_provus_list_orientation:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_provus_list_style:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  entitygroupfield: true
+  search_api_excerpt: true

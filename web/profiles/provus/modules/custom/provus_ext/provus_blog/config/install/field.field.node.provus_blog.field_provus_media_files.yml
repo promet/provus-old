@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_provus_media_files
+    - media.type.document
+    - node.type.provus_blog
+id: node.provus_blog.field_provus_media_files
+field_name: field_provus_media_files
+entity_type: node
+bundle: provus_blog
+label: 'Related Files'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      document: document
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

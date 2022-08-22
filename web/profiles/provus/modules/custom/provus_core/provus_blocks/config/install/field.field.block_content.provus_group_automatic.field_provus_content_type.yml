@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.provus_group_automatic
+    - field.storage.block_content.field_provus_content_type
+  module:
+    - options
+id: block_content.provus_group_automatic.field_provus_content_type
+field_name: field_provus_content_type
+entity_type: block_content
+bundle: provus_group_automatic
+label: 'Content Type'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

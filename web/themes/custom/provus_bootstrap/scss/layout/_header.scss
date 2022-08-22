@@ -1,0 +1,54 @@
+// Main header styles
+.navbar-brand {
+  img {
+    max-width: rem-calc(200);
+  }
+}
+
+// Top nav provus styles
+#navbar-top {
+  background: $gray-lightest;
+  padding: .5rem 1rem;
+  .nav-link {
+    color: $primary-shade;
+    font-size: rem-calc(14);
+    text-decoration: none;
+    &:hover,
+    &:focus {
+      color: $secondary-shade;
+      text-decoration: underline;
+    }
+  }
+}
+
+// Search collapse in header
+#searchCollapse {
+  right: rem-calc(35);
+  width: rem-calc(460);
+  top: rem-calc(-6);
+  background: $white;
+  .form-search {
+    width: rem-calc(300);
+    padding: rem-calc(11);
+  }
+}
+.navbar-form {
+  position: relative;
+  .nav-link {
+    color: $primary-shade;
+    position: relative;
+    z-index: 99;
+    width: rem-calc(50);
+    .fa-xmark {
+      display: none;
+    }
+    &[aria-expanded="true"] {
+      .fa-xmark {
+        display: inline-block;
+      }
+      .fa-magnifying-glass {
+        display: none;
+      }
+    }
+  }
+}

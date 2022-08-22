@@ -1,0 +1,76 @@
+// Tabs color changes
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+  background: $primary-shade;
+  color: $white;
+}
+
+.nav-item {
+  .nav-link {
+    color: $secondary-shade;
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+      background: $gray-lightest;
+      color: $primary-shade;
+    }
+  }
+}
+
+// Admin nav
+nav.tabs ul {
+  li.nav-item {
+    &.active {
+      a {
+        background: $primary-shade;
+        color: $white;
+      }
+    }
+  }
+}
+
+// Vertical Tabs
+
+.vertical-tabs {
+  font-size: 1rem;
+  border: none;
+  .nav-tabs, &__menu {
+    border: none;
+    .nav-item, &-item {
+      border: none;
+      margin-bottom: rem-calc(20);
+      border-radius: 0.25rem;
+      overflow: hidden;
+      background: transparent;
+      .nav-link, a {
+        padding: rem-calc(15 30);
+        border-radius: 0.25rem;
+        background: transparent;
+        color: $primary-shade;
+        font-weight: bold;
+        border: rem-calc(1) solid $gray-lightest;
+        position: relative;
+        margin-bottom: 0 !important;
+        overflow: hidden;
+        &.active {
+          background: $gray-lightest;
+          &:before {
+            content: '';
+            width: rem-calc(10);
+            height: 100%;
+            background: $primary-shade;
+            position: absolute;
+            left: 0;
+            top: 0;
+          }
+        }
+      }
+    }
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: calc(100% - 150px);
+    padding-left: rem-calc(30);
+  }
+}

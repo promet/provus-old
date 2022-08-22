@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: provus_faq
+label: FAQ
+type: 'canonical_entities:node'
+pattern: 'faq/[node:title]'
+selection_criteria:
+  cd411bd2-9d93-4f1c-8f37-afcb0200a348:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: cd411bd2-9d93-4f1c-8f37-afcb0200a348
+    context_mapping:
+      node: node
+    bundles:
+      provus_faq_page: provus_faq_page
+selection_logic: and
+weight: -5
+relationships: {  }

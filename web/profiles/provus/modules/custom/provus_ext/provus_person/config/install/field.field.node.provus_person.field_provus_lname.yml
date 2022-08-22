@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_provus_lname
+    - node.type.provus_person
+id: node.provus_person.field_provus_lname
+field_name: field_provus_lname
+entity_type: node
+bundle: provus_person
+label: 'Last Name'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

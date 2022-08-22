@@ -1,0 +1,13 @@
+// Page styles.
+.page-link {
+  border: none;
+  color: $body-color;
+  text-decoration: none;
+  font-weight: 600;
+  &:hover,
+  &:focus {
+    color: $primary-shade;
+    text-decoration: underline;
+    background: none;
+  }
+}

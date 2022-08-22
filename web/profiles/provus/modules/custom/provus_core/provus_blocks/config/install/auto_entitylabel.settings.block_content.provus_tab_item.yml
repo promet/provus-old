@@ -1,0 +1,9 @@
+status: 1
+pattern: '[block_content:field_provus_title] (Tab Item) - [random:number]'
+escape: false
+preserve_titles: false
+dependencies:
+  config:
+    - block_content.type.provus_tab_item
+save: 0
+chunk: '50'

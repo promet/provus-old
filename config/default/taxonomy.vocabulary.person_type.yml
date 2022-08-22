@@ -1,8 +1,0 @@
-uuid: 43db95a8-b210-4081-af40-3d5411c09753
-langcode: en
-status: true
-dependencies: {  }
-name: 'Person Type'
-vid: person_type
-description: ''
-weight: 0

@@ -1,0 +1,3 @@
+name: 'Provus Content: Blog'
+description: 'Custom provus node: Blog. Provides blog content type and view.'
+default: false

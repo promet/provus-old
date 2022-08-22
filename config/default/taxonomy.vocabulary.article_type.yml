@@ -1,8 +1,0 @@
-uuid: c7ef66c5-ac27-4132-a25a-f5714f052e08
-langcode: en
-status: true
-dependencies: {  }
-name: 'Article Type'
-vid: article_type
-description: ''
-weight: 0

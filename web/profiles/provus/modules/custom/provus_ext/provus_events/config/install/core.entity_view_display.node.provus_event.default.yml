@@ -1,0 +1,45 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.date_format.medium
+    - field.field.node.provus_event.body
+    - field.field.node.provus_event.field_provus_dates
+    - node.type.provus_event
+  module:
+    - date_recur
+    - text
+    - user
+id: node.provus_event.default
+targetEntityType: node
+bundle: provus_event
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_provus_dates:
+    type: date_recur_basic_formatter
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+      separator: '-'
+      show_next: 5
+      count_per_item: true
+      occurrence_format_type: medium
+      same_end_date_format_type: medium
+      interpreter: null
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

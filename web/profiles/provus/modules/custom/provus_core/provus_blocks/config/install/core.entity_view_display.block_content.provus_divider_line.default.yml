@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.provus_divider_line
+id: block_content.provus_divider_line.default
+targetEntityType: block_content
+bundle: provus_divider_line
+mode: default
+content: {  }
+hidden: {  }

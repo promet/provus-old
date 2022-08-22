@@ -1,0 +1,9 @@
+status: 1
+pattern: '[block_content:field_provus_title] (Short Banner) - [random:number]'
+escape: false
+preserve_titles: false
+dependencies:
+  config:
+    - block_content.type.provus_short_banner
+save: 0
+chunk: '50'

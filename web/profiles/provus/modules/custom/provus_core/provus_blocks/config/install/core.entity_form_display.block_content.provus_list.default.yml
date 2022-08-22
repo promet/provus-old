@@ -1,0 +1,54 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.provus_list
+    - field.field.block_content.provus_list.field_provus_list_items
+    - field.field.block_content.provus_list.field_provus_list_orientation
+    - field.field.block_content.provus_list.field_provus_list_style
+  module:
+    - inline_entity_form
+id: block_content.provus_list.default
+targetEntityType: block_content
+bundle: provus_list
+mode: default
+content:
+  field_provus_list_items:
+    type: inline_entity_form_complex
+    weight: 1
+    region: content
+    settings:
+      form_mode: default
+      override_labels: true
+      label_singular: 'List item'
+      label_plural: 'List items'
+      allow_new: true
+      allow_existing: false
+      match_operator: CONTAINS
+      allow_duplicate: true
+      collapsible: false
+      collapsed: false
+      revision: false
+    third_party_settings: {  }
+  field_provus_list_orientation:
+    type: options_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_provus_list_style:
+    type: options_select
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  entitygroupfield: true

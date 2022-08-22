@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.provus_stat_item
+    - field.storage.block_content.field_provus_description
+id: block_content.provus_stat_item.field_provus_description
+field_name: field_provus_description
+entity_type: block_content
+bundle: provus_stat_item
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

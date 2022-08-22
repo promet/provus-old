@@ -1,0 +1,3 @@
+name: 'Provus Content: Alerts'
+description: 'Enable site alerts.'
+default: false

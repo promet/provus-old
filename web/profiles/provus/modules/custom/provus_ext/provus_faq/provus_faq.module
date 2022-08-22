@@ -1,0 +1,51 @@
+<?php
+
+/**
+ * @file
+ * Contains provus_faq.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function provus_faq_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the provus_faq module.
+    case 'help.page.provus_faq':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Custom provus node: FAQ. Provides faq content type, view, blocks.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function provus_faq_theme() {
+  return [
+    'block__provus_faq_group' => [
+      'template' => 'block--provus-faq-group',
+      'base hook' => 'block'
+    ],
+  ];
+}
+
+/**
+ * Implements hook_preprocess_field().
+ */
+function provus_faq_preprocess_field(&$vars) {
+  if ($vars['entity_type'] == 'node' && $vars['field_name'] == 'field_provus_faq_groups') {
+    $view_builder = \Drupal::entityTypeManager()->getViewBuilder('block_content');
+    foreach ($vars['items'] as $key => $item) {
+      $block_build['content'] = $view_builder->view($item['content']['#block_content'], 'default');
+      $block_build['content']['#view_mode'] = 'default';
+      provus_blocks_get_block($block_build, $item['content']['#block_content']);
+      $vars['items'][$key]['content'] = $block_build;
+    }
+  }
+}

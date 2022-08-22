@@ -1,0 +1,65 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.provus_group
+    - field.field.block_content.provus_group.field_provus_block_items
+    - field.field.block_content.provus_group.field_provus_group_display
+    - field.field.block_content.provus_group.field_provus_item_display
+    - field.field.block_content.provus_group.field_provus_links
+    - field.field.block_content.provus_group.field_provus_title
+  module:
+    - ala
+    - options
+id: block_content.provus_group.default
+targetEntityType: block_content
+bundle: provus_group
+mode: default
+content:
+  field_provus_block_items:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_provus_group_display:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_provus_item_display:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_provus_links:
+    type: ala
+    label: hidden
+    settings:
+      trim_length: '80'
+      ala_link_view_class: element
+      ala_link_view_icon: inside
+      ala_link_view_roles: hide
+      url_only: false
+      url_plain: false
+      rel: 0
+      target: 0
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_provus_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+hidden: {  }

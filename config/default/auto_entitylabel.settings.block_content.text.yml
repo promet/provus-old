@@ -1,6 +1,0 @@
-status: 2
-pattern: 'Text [random:number]'
-escape: false
-dependencies:
-  config:
-    - block_content.type.text

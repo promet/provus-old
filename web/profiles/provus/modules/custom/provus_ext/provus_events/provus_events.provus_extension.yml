@@ -1,0 +1,3 @@
+name: 'Provus Content: Events'
+description: 'Custom provus node: Event. Provides events calendar and views.'
+default: false

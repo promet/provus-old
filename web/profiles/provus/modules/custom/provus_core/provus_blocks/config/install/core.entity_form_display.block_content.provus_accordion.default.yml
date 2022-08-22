@@ -1,0 +1,47 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.provus_accordion
+    - field.field.block_content.provus_accordion.field_provus_items
+    - field.field.block_content.provus_accordion.field_provus_openfirst
+  module:
+    - inline_entity_form
+id: block_content.provus_accordion.default
+targetEntityType: block_content
+bundle: provus_accordion
+mode: default
+content:
+  field_provus_items:
+    type: inline_entity_form_complex
+    weight: 2
+    region: content
+    settings:
+      form_mode: default
+      override_labels: true
+      label_singular: 'Accordion Item'
+      label_plural: 'Accordion Items'
+      allow_new: true
+      allow_existing: false
+      match_operator: CONTAINS
+      allow_duplicate: true
+      collapsible: false
+      collapsed: false
+      revision: false
+    third_party_settings: {  }
+  field_provus_openfirst:
+    type: boolean_checkbox
+    weight: 1
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

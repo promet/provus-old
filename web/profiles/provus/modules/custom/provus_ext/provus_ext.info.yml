@@ -1,0 +1,8 @@
+name: 'Provus Extend'
+description: 'Wrapper module for enabling all of the Provus Extensions.'
+type: module
+core_version_requirement: '^8.8 || ^9'
+package: Provus
+dependencies:
+  - 'provus_core:provus_core'
+  - 'provus_blocks:provus_blocks'

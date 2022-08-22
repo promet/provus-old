@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.provus_short_banner
+    - field.storage.block_content.field_provus_title
+id: block_content.provus_short_banner.field_provus_title
+field_name: field_provus_title
+entity_type: block_content
+bundle: provus_short_banner
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

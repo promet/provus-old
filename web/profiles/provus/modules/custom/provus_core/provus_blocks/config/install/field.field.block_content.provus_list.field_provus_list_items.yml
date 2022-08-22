@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.provus_list
+    - block_content.type.provus_list_item
+    - field.storage.block_content.field_provus_list_items
+id: block_content.provus_list.field_provus_list_items
+field_name: field_provus_list_items
+entity_type: block_content
+bundle: provus_list
+label: 'List Items'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:block_content'
+  handler_settings:
+    target_bundles:
+      provus_list_item: provus_list_item
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

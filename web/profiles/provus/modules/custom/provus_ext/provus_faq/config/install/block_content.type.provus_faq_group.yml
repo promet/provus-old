@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: provus_faq_group
+label: 'FAQ Group'
+revision: 0
+description: ''

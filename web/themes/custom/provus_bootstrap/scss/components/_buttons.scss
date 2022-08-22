@@ -1,0 +1,63 @@
+// Button styles.
+.btn {
+  border-radius: rem-calc(25);
+  padding: rem-calc(15 25);
+  font-size: 1rem;
+  line-height: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+  &-primary {
+    background: $primary-shade;
+    color: $white;
+    border-color: $primary-shade;
+    &:hover,
+    &:focus {
+      background: $primary-dark;
+      color: $white;
+      border-color: $primary-dark;
+    }
+  }
+  &-secondary {
+    background: $secondary-shade;
+    color: $white;
+      border-color: $secondary-shade;
+    &:hover,
+    &:focus {
+      background: $secondary-dark;
+      color: $white;
+      border-color: $secondary-dark;
+    }
+  }
+  &.form-control {
+    width: auto;
+    display: inline-block;
+    margin-right: $card-spacing;
+  }
+}
+
+.btn-outline {
+  &-primary {
+    color: $primary-shade;
+    border-color: $primary-shade;
+    &:hover,
+    &:focus {
+      background: $primary-shade;
+      color: $white;
+      border-color: $primary-shade;
+    }
+  }
+  &-secondary {
+    color: $secondary-shade;
+    border-color: $secondary-shade;
+    &:hover,
+    &:focus {
+      background: $secondary-shade;
+      color: $white;
+      border-color: $secondary-shade;
+    }
+  }
+}
