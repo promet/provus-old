@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_provus_telephone
+    - node.type.provus_person
+  module:
+    - telephone
+id: node.provus_person.field_provus_telephone
+field_name: field_provus_telephone
+entity_type: node
+bundle: provus_person
+label: Telephone
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

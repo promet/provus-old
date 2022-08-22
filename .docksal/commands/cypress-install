@@ -1,7 +1,0 @@
-#!/usr/bin/env bash
-
-## Installs cypress in the CLI 
-
-#: exec_target = cli
-
-./scripts/bin/install-cypress.sh

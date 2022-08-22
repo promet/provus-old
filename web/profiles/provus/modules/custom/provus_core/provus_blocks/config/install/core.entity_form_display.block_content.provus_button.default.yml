@@ -1,0 +1,36 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.provus_button
+    - field.field.block_content.provus_button.field_provus_links
+  module:
+    - ala
+id: block_content.provus_button.default
+targetEntityType: block_content
+bundle: provus_button
+mode: default
+content:
+  field_provus_links:
+    type: ala_field_widget
+    weight: 26
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+      ala_link_class_settings: global
+      ala_link_class: ''
+      ala_link_icon: true
+      ala_link_roles: false
+      ala_link_color: false
+      ala_link_target: '1'
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

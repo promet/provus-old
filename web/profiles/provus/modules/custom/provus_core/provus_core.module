@@ -1,0 +1,159 @@
+<?php
+
+/**
+ * @file
+ * Contains provus_core.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Entity\Display\EntityViewDisplayInterface;
+
+/**
+ * Implements hook_help().
+ */
+function provus_core_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the provus_core module.
+    case 'help.page.provus_core':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Custom provus core configuration.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function provus_core_theme() {
+  return [
+    'node__card' => [
+      'template' => 'node--card',
+      'base hook' => 'node'
+    ],
+    'node__card_basic' => [
+      'template' => 'node--card-basic',
+      'base hook' => 'node'
+    ],
+    'node__card_basic_plus' => [
+      'template' => 'node--card-basic-plus',
+      'base hook' => 'node'
+    ],
+    'node__card_bg' => [
+      'template' => 'node--card-bg',
+      'base hook' => 'node'
+    ],
+    'node__card_image_circle' => [
+      'template' => 'node--card-image-circle',
+      'base hook' => 'node'
+    ],
+    'node__card_left' => [
+      'template' => 'node--card-left',
+      'base hook' => 'node'
+    ],
+    'node__card_right' => [
+      'template' => 'node--card-right',
+      'base hook' => 'node'
+    ],
+  ];
+}
+
+/**
+ * Implements hook_entity_view_display_alter().
+ */
+function provus_core_entity_view_display_alter(EntityViewDisplayInterface $display, array $context) {
+
+  // Get the appropriate display config.
+  $provus_display_config = provus_core_get_provus_displays($context['bundle'], $context['view_mode']);
+
+  if ($context['entity_type'] == 'node' && $provus_display_config) {
+    // First remove all set display components so we only display the
+    // components we want from our provus config.
+    $excluded_fields = [
+      'uid',
+      'title',
+      'created',
+    ];
+    $current_components = $display->getComponents();
+    foreach ($current_components as $component => $options) {
+      if (!in_array($component, $excluded_fields)) {
+        $display->removeComponent($component);
+      }
+    }
+
+    // Adjust the view display settings.
+    foreach ($provus_display_config as $component => $config) {
+      if (is_string($config['options']) && $config['options'] == 'remove') {
+        $display->removeComponent($config['field']);
+      }
+      else {
+        $display->setComponent($config['field'], $config['options']);
+      }
+    }
+  }
+}
+
+/**
+ * Implements hook_preprocess_node().
+ */
+function provus_core_preprocess_node(&$vars) {
+
+  // Get the appropriate display config.
+  $provus_display_config = provus_core_get_provus_displays($vars['node']->getType(), $vars['view_mode']);
+
+  if ($provus_display_config) {
+    // Loop through and fill vars provus components are looking for.
+    foreach ($provus_display_config as $component => $config) {
+      if (isset($vars['content'][$config['field']])) {
+        $vars['content'][$component] = $vars['content'][$config['field']];
+      }
+    }
+  }
+
+  // Get other display settings from card config ymls.
+  $vars['cardstyle'] = provus_blocks_get_cardstyle_from_displaymode($vars['view_mode']);
+}
+
+/**
+ * Returns provus display config based on bundle and view mode.
+ *
+ * @param string $bundle
+ *   Node bundle.
+ * @param string $view_mode
+ *   The view mode of the node.
+ *
+ * @return array
+ *   An array of field formatter config and field name.
+ */
+function provus_core_get_provus_displays($bundle, $view_mode) {
+  // Load the provus display configurations from a file.
+  $provus_displays = \Drupal::config('provus.displays.node_settings')->get('displays');
+
+  if (!isset($provus_displays[$view_mode])) {
+    return FALSE;
+  }
+
+  // Get our view display config.
+  $provus_display_config = $provus_displays[$view_mode];
+
+  // Look for node bundle overrides.
+  if (isset($provus_display_config['overrides'][$bundle])) {
+    // Only update the fields that change.
+    foreach ($provus_display_config['overrides'][$bundle] as $component => $config) {
+      // Update a field change if present.
+      if (isset($config['field'])) {
+        $provus_display_config['content'][$component]['field'] = $config['field'];
+      }
+      // Update options for the formatter if any present.
+      if (isset($config['options'])) {
+        foreach ($config['options'] as $name => $option) {
+          $provus_display_config['content'][$component]['options'][$name] = $option;
+        }
+      }
+    }
+  }
+
+  return $provus_display_config['content'];
+}

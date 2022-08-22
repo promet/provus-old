@@ -1,0 +1,38 @@
+// Group styles.
+.block-provus-stat-group  {
+  .col {
+    text-align: center;
+    &:not(:last-child) .stat-group-item {
+      border-right: 1px solid $gray-lightest;
+    }
+    &:nth-child(odd) .stat-group-item {
+      color: $primary-shade;
+    }
+    &:nth-child(even) .stat-group-item {
+      color: $secondary-shade;
+    }
+    .stat-group-item {
+      .stat-group-icon {
+        font-size: rem-calc(60);
+        opacity: .75;
+      }
+      .stat-group-text {
+        margin: 0 0 25px 0;
+        color: $gray-medium;
+        font-weight: 400;
+        letter-spacing: 0;
+        font-size: rem-calc(20);
+        line-height: rem-calc(24);
+      }
+      .stat-group-number {
+        margin: 5px 0 2px 0;
+        font-size: rem-calc(45);
+        font-weight: 600;
+        line-height: normal;
+        @include media-breakpoint-up(lg) {
+          font-size: rem-calc(82);
+        }
+      }
+    }
+  }
+}

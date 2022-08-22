@@ -1,8 +1,0 @@
-card__image__src: 'images/card-mini.png'
-card__image__alt: "This is the card image's alt text"
-card__image__output_image_tag: true
-card__heading: 'Dame Zandra Rhodes Brings Art and Fashion to John Wayne Aiport'
-card__date: 'February 14, 2020'
-card__link__text: 'Read more'
-card__link__url: ''
-card__link__pdf: '#'

@@ -1,0 +1,60 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.provus_faq_group
+    - field.field.block_content.provus_faq_group.field_provus_body
+    - field.field.block_content.provus_faq_group.field_provus_items
+    - field.field.block_content.provus_faq_group.field_provus_title
+  module:
+    - inline_entity_form
+    - text
+id: block_content.provus_faq_group.default
+targetEntityType: block_content
+bundle: provus_faq_group
+mode: default
+content:
+  field_provus_body:
+    type: text_textarea_with_summary
+    weight: 2
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  field_provus_items:
+    type: inline_entity_form_complex
+    weight: 3
+    region: content
+    settings:
+      form_mode: default
+      override_labels: true
+      label_singular: 'FAQ Item'
+      label_plural: 'FAQ Items'
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      allow_duplicate: false
+      collapsible: false
+      collapsed: false
+      revision: false
+    third_party_settings: {  }
+  field_provus_title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

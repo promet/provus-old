@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.provus_list
+    - field.storage.block_content.field_provus_list_style
+  module:
+    - options
+id: block_content.provus_list.field_provus_list_style
+field_name: field_provus_list_style
+entity_type: block_content
+bundle: provus_list
+label: 'List Style'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: icon-left
+default_value_callback: ''
+settings: {  }
+field_type: list_string

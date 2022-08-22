@@ -1,0 +1,272 @@
+displays:
+  card:
+    content:
+      body:
+        field: body
+        options:
+          label: hidden
+          type: smart_trim
+          weight: 0
+          settings:
+            trim_length: 300
+            trim_type: chars
+            trim_suffix: ...
+            wrap_class: trimmed
+            more_text: More
+            more_class: more-link
+            summary_handler: full
+            wrap_output: false
+            more_link: false
+            trim_options:
+              text: false
+              trim_zero: false
+          third_party_settings: {  }
+          region: content
+      image:
+        field: field_provus_media_image
+        options:
+          type: media_thumbnail
+          label: hidden
+          settings:
+            image_link: ''
+            image_style: provus_landscape_medium
+          third_party_settings: {  }
+          weight: 0
+          region: content
+  card_image_circle:
+    content:
+      body:
+        field: body
+        options:
+          label: hidden
+          type: smart_trim
+          weight: 0
+          settings:
+            trim_length: 300
+            trim_type: chars
+            trim_suffix: ...
+            wrap_class: trimmed
+            more_text: More
+            more_class: more-link
+            summary_handler: full
+            wrap_output: false
+            more_link: false
+            trim_options:
+              text: false
+              trim_zero: false
+          third_party_settings: {  }
+          region: content
+      image:
+        field: field_provus_media_image
+        options:
+          type: media_thumbnail
+          label: hidden
+          settings:
+            image_link: ''
+            image_style: provus_square_medium
+          third_party_settings: {  }
+          weight: 0
+          region: content
+  card_left:
+    content:
+      body:
+        field: body
+        options:
+          label: hidden
+          type: smart_trim
+          weight: 0
+          settings:
+            trim_length: 300
+            trim_type: chars
+            trim_suffix: ...
+            wrap_class: trimmed
+            more_text: More
+            more_class: more-link
+            summary_handler: full
+            wrap_output: false
+            more_link: false
+            trim_options:
+              text: false
+              trim_zero: false
+          third_party_settings: {  }
+          region: content
+      image:
+        field: field_provus_media_image
+        options:
+          type: media_thumbnail
+          label: hidden
+          settings:
+            image_link: ''
+            image_style: provus_square_medium
+          third_party_settings: {  }
+          weight: 0
+          region: content
+  card_right:
+    content:
+      body:
+        field: body
+        options:
+          label: hidden
+          type: smart_trim
+          weight: 0
+          settings:
+            trim_length: 300
+            trim_type: chars
+            trim_suffix: ...
+            wrap_class: trimmed
+            more_text: More
+            more_class: more-link
+            summary_handler: full
+            wrap_output: false
+            more_link: false
+            trim_options:
+              text: false
+              trim_zero: false
+          third_party_settings: {  }
+          region: content
+      image:
+        field: field_provus_media_image
+        options:
+          type: media_thumbnail
+          label: hidden
+          settings:
+            image_link: ''
+            image_style: provus_square_medium
+          third_party_settings: {  }
+          weight: 0
+          region: content
+  card_bg:
+    content:
+      body:
+        field: body
+        options:
+          label: hidden
+          type: smart_trim
+          weight: 0
+          settings:
+            trim_length: 300
+            trim_type: chars
+            trim_suffix: ...
+            wrap_class: trimmed
+            more_text: More
+            more_class: more-link
+            summary_handler: full
+            wrap_output: false
+            more_link: false
+            trim_options:
+              text: false
+              trim_zero: false
+          third_party_settings: {  }
+          region: content
+      image:
+        field: field_provus_media_image
+        options:
+          type: media_thumbnail
+          label: hidden
+          settings:
+            image_link: ''
+            image_style: provus_square_medium
+          third_party_settings: {  }
+          weight: 0
+          region: content
+  card_basic:
+    content:
+      body:
+        field: body
+        options:
+          label: hidden
+          type: smart_trim
+          weight: 0
+          settings:
+            trim_length: 300
+            trim_type: chars
+            trim_suffix: ...
+            wrap_class: trimmed
+            more_text: More
+            more_class: more-link
+            summary_handler: full
+            wrap_output: false
+            more_link: false
+            trim_options:
+              text: false
+              trim_zero: false
+          third_party_settings: {  }
+          region: content
+  card_basic_plus:
+    content:
+      body:
+        field: body
+        options:
+          label: hidden
+          type: smart_trim
+          weight: 0
+          settings:
+            trim_length: 300
+            trim_type: chars
+            trim_suffix: ...
+            wrap_class: trimmed
+            more_text: More
+            more_class: more-link
+            summary_handler: full
+            wrap_output: false
+            more_link: false
+            trim_options:
+              text: false
+              trim_zero: false
+          third_party_settings: {  }
+          region: content
+  card_tall:
+    content:
+      body:
+        field: body
+        options:
+          label: hidden
+          type: smart_trim
+          weight: 0
+          settings:
+            trim_length: 300
+            trim_type: chars
+            trim_suffix: ...
+            wrap_class: trimmed
+            more_text: More
+            more_class: more-link
+            summary_handler: full
+            wrap_output: false
+            more_link: false
+            trim_options:
+              text: false
+              trim_zero: false
+          third_party_settings: {  }
+          region: content
+      image:
+        field: field_provus_media_image
+        options:
+          type: media_thumbnail
+          label: hidden
+          settings:
+            image_link: ''
+            image_style: provus_square_medium
+          third_party_settings: {  }
+          weight: 0
+          region: content
+    overrides:
+      provus_person:
+        titles:
+          field: field_provus_titles
+          options:
+            type: basic_string
+            label: hidden
+            settings: {  }
+            third_party_settings: {  }
+            weight: 0
+            region: content
+        telephone:
+          field: field_provus_telephone
+          options:
+            type: telephone_link
+            label: hidden
+            settings:
+              title: ''
+            third_party_settings: {  }
+            weight: 0
+            region: content

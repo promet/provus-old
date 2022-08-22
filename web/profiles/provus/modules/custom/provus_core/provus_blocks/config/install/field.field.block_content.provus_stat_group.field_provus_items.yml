@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.provus_stat_group
+    - block_content.type.provus_stat_item
+    - field.storage.block_content.field_provus_items
+id: block_content.provus_stat_group.field_provus_items
+field_name: field_provus_items
+entity_type: block_content
+bundle: provus_stat_group
+label: 'Stat Items'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:block_content'
+  handler_settings:
+    target_bundles:
+      provus_stat_item: provus_stat_item
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

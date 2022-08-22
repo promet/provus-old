@@ -1,0 +1,20 @@
+name: 'Provus Blocks'
+type: module
+description: 'Custom provus blocks.'
+core_version_requirement: ^8 || ^9
+package: 'Provus'
+
+dependencies:
+  - drupal:block
+  - drupal:node
+  - drupal:system
+  - drupal:text
+  - layout_builder
+  - inline_entity_form
+  - addtoany
+  - auto_entitylabel
+  - ala
+  - fontawesome_iconpicker_widget
+  - media
+  - media_library
+  - token

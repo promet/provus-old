@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.provus_large_banner
+    - field.storage.block_content.field_provus_large_banner_small
+id: block_content.provus_large_banner.field_provus_large_banner_small
+field_name: field_provus_large_banner_small
+entity_type: block_content
+bundle: provus_large_banner
+label: Small
+description: 'Turning this option on, will make this Large banner a bit smaller in size. '
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

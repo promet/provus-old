@@ -1,6 +1,0 @@
-status: 1
-pattern: 'Accordion [random:number]'
-escape: false
-dependencies:
-  config:
-    - block_content.type.accordion

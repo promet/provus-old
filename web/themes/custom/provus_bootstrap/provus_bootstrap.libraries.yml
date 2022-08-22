@@ -1,0 +1,43 @@
+global-styling:
+  version: VERSION
+  js:
+    js/bootstrap.bundle.min.js: { weight: -48 }
+    js/barrio.js: {}
+    js/custom.js: {}
+    js/admin.js: {}
+  css:
+    component:
+      css/style.css: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/popperjs
+
+lightslider:
+  remote: sachinchoolur/lightslider
+  version: 1.1.6
+  license:
+    name: MIT
+    url: https://raw.githubusercontent.com/sachinchoolur/lightslider/master/LICENSE
+    gpl-compatible: true
+  js:
+    libraries/lightslider/dist/js/lightslider.min.js: { minified: true }
+  css:
+    theme:
+      libraries/lightslider/dist/css/lightslider.min.css: { minified: true }
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/jquery.once
+
+carousel:
+  js:
+    js/carousel.js: {}
+  dependencies:
+    - provus_bootstrap/lightslider
+
+carousel-3-item:
+  js:
+    js/carousel-3-items.js: {}
+  dependencies:
+    - provus_bootstrap/lightslider

@@ -1,7 +1,0 @@
-{
-  "env": {
-    "cyAdminUser": "admin",
-    "cyAdminPassword": "admin"
-  },
-  "testFiles": ["**/*.feature","**/*.spec.js"]
-}

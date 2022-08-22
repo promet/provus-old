@@ -1,0 +1,9 @@
+status: 1
+pattern: '[node:field_provus_fname] [node:field_provus_lname]'
+escape: false
+preserve_titles: false
+dependencies:
+  config:
+    - node.type.provus_person
+save: 0
+chunk: '50'

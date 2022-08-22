@@ -1,0 +1,49 @@
+/* Carousel 3 Items */
+.carousel-3-items {
+  .carousel-inner {
+    padding: 0 40px;
+  }
+}
+.carousel-3-items-wrapper {
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 40px;
+    justify-content: center;
+    cursor: pointer;
+    span, svg, .fa {
+      font-size: rem-calc(30);
+      color: $black;
+    }
+  }
+  .lightSlider {
+    overflow: visible;
+    > div {
+      padding: 0 15px;
+    }
+  }
+  .lSSlideOuter {
+    .lSPager.lSpg {
+      li {
+        padding: 0;
+        &::before {
+          display: none !important;
+        }
+      }
+      li > a {
+        width: 9px;
+        height: 9px;
+        border: 1px solid $primary-shade;
+        background: transparent;
+        border-radius: 100%;
+        box-sizing: content-box;
+        margin-right: 3px;
+        margin-left: 3px;
+      }
+      li:hover a,
+      li.active > a {
+        border: 1px solid $secondary-shade;
+        background: $secondary-shade;
+      }
+    }
+  }
+}

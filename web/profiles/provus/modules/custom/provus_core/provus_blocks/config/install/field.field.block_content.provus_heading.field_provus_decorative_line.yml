@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.provus_heading
+    - field.storage.block_content.field_provus_decorative_line
+id: block_content.provus_heading.field_provus_decorative_line
+field_name: field_provus_decorative_line
+entity_type: block_content
+bundle: provus_heading
+label: 'With Decorative Line'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,9 @@
+name: 'Provus Content: Landing Page'
+type: module
+description: 'Custom provus node: Landing Page.'
+core_version_requirement: ^8 || ^9
+package: 'Provus'
+
+dependencies:
+  - provus_blocks
+  - exclude_node_title

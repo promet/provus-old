@@ -1,0 +1,59 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.provus_heading
+    - field.field.block_content.provus_heading.field_provus_alignment
+    - field.field.block_content.provus_heading.field_provus_decorative_line
+    - field.field.block_content.provus_heading.field_provus_heading_level
+    - field.field.block_content.provus_heading.field_provus_sub_title
+    - field.field.block_content.provus_heading.field_provus_title
+id: block_content.provus_heading.default
+targetEntityType: block_content
+bundle: provus_heading
+mode: default
+content:
+  field_provus_alignment:
+    type: options_buttons
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_provus_decorative_line:
+    type: boolean_checkbox
+    weight: 5
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_provus_heading_level:
+    type: options_buttons
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_provus_sub_title:
+    type: string_textfield
+    weight: 3
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_provus_title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

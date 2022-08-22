@@ -1,0 +1,7 @@
+_core:
+  default_config_hash: OhypfKr4_Eo8XwXg3Sios05lN-LjxOhSdSOSkEN9Ndo
+logo:
+  use_default: false
+  path: themes/custom/provus_bootstrap/logo.png
+brand_image:
+  use_default: true

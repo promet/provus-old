@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.provus_group
+    - field.storage.block_content.field_provus_group_display
+  module:
+    - options
+id: block_content.provus_group.field_provus_group_display
+field_name: field_provus_group_display
+entity_type: block_content
+bundle: provus_group
+label: 'Group Display'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

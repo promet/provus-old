@@ -1,0 +1,15 @@
+uuid: 86bf154b-7d29-4f42-ac46-554b7708da76
+langcode: en
+status: true
+dependencies: {  }
+name: provus_circle_image
+label: 'Provus Circle Image'
+effects:
+  bf0fb14d-3563-436d-b77c-a42a13107a34:
+    uuid: bf0fb14d-3563-436d-b77c-a42a13107a34
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 400
+      height: 400
+      anchor: center-center

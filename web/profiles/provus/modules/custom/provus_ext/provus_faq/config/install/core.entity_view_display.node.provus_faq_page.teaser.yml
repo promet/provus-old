@@ -1,0 +1,32 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.provus_faq_page.body
+    - field.field.node.provus_faq_page.field_provus_faq_groups
+    - node.type.provus_faq_page
+  module:
+    - text
+    - user
+id: node.provus_faq_page.teaser
+targetEntityType: node
+bundle: provus_faq_page
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  field_provus_faq_groups: true

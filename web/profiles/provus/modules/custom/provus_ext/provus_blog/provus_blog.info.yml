@@ -1,0 +1,5 @@
+name: 'Provus Content: Blog'
+type: module
+description: 'Custom provus node: Blog. Provides blog content type and view.'
+core_version_requirement: ^8 || ^9
+package: 'Provus'

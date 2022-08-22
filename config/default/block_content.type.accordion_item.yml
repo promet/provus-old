@@ -1,8 +1,0 @@
-uuid: 97c2dad3-4187-4db3-98b1-25dddfe65599
-langcode: en
-status: true
-dependencies: {  }
-id: accordion_item
-label: 'Accordion Item'
-revision: 1
-description: ''

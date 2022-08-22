@@ -1,0 +1,28 @@
+// Link styles.
+a {
+  color: $secondary-shade;
+  text-decoration: underline;
+  &:hover,
+  &:focus {
+    color: $primary-shade;
+    text-decoration: none;
+  }
+}
+
+// Node Teaser
+.node--view-mode-teaser h2 a {
+  color: $heading-color;
+  &:hover,
+  &:focus {
+    color: $primary-shade;
+  }
+}
+
+// List
+a.list-group-item {
+  color: $secondary-shade;
+  &:hover,
+  &:focus {
+    color: $primary-shade;
+  }
+}

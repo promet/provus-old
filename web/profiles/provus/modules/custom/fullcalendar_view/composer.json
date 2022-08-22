@@ -1,0 +1,13 @@
+{
+  "name": "drupal/fullcalendar_view",
+  "type": "drupal-module",
+  "description": "This is a lightweight View plugin module that provides a calendar view format powered by FullCalendar JavaScript.",
+  "keywords": ["Drupal", "fullcalendar_view"],
+  "license": "GPL-2.0+",
+  "homepage": "http://drupal.org/project/fullcalendar_view",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "http://drupal.org/project/issues/fullcalendar_view",
+    "source": "http://cgit.drupalcode.org/fullcalendar_view"
+  }
+}

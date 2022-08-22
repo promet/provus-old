@@ -1,0 +1,101 @@
+/* VARIABLES */
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap');
+
+// Body Font Family
+$font-body: 'Lato', sans-serif;
+
+// Heading Font Family
+$font-heading: 'Montserrat', sans-serif;
+
+// Primary Color
+$primary-shade: #31227C;
+
+// Secondary Color
+$secondary-shade: #DA3807;
+
+// Accent/Tertiary color
+$accent-shade: #FD5809;
+
+// Heading Colors
+$heading-color: #1d2b36;
+
+// Base Font Size
+$font-size-base: 1rem;
+
+// Border Radius for Cards
+$card-border-radius: .25rem;
+
+// Card Padding
+$card-spacing: 1.25rem;
+
+// Card Border Colors
+$card-border-color: #ddd;
+
+// Site Background Color
+$body-bg: #fff;
+
+// Main Text Color
+$body-color: #343a40;
+
+// Main Colors (Light & Dark)
+$primary-light: lighten($primary-shade, 37%);
+$primary-dark: darken($primary-shade, 12%);
+$secondary-light: lighten($secondary-shade, 37%);
+$secondary-dark: darken($secondary-shade, 12%);
+$accent-light: lighten($accent-shade, 37%);
+$accent-dark: darken($accent-shade, 12%);
+
+// Grayscale Colors
+$white: white;
+$gray-lightest: #eaeaea;
+$gray-light: #747474;
+$gray: #666;
+$gray-darker: #333;
+$gray-medium: #556575;
+$black: #15191B;
+
+// Tables colors
+$table-gray: #f8f8f8;
+$table-border: $card-border-color;
+
+// Reassign color vars to semantic color scheme
+$red: #dc3545;
+$yellow: #ffc107;
+$green: #28a745;
+$cyan: #17a2b8;
+$white: #fff;
+$gray-100: #f8f9fa;
+$gray-800: $body-color;
+$theme-colors: ( primary: $accent-shade, secondary: $primary-shade, success: $green, info: $cyan, warning: $yellow, danger: $red, light: $gray-100, dark: $gray-800);
+$brand-primary: $primary-shade;
+$brand-inverse: $secondary-shade;
+
+// Blockquote Color
+$color-border: $accent-shade;
+
+// Responsive font sizes
+$enable-responsive-font-sizes: true;
+$enable-shadows: false;
+$enable-gradients: false;
+
+// Font Sizes and Weights
+$font-size-lg: $font-size-base * 1.25;
+$font-size-sm: $font-size-base * .875;
+$font-size-xs: $font-size-base * .75;
+$font-weight-normal: normal;
+$font-weight-bold: bold;
+$font-weight-base: $font-weight-normal;
+$line-height-base: 1.5;
+$h1-font-size: $font-size-base * 2.5;
+$h2-font-size: $font-size-base * 2;
+$h3-font-size: $font-size-base * 1.75;
+$h4-font-size: $font-size-base * 1.5;
+$h5-font-size: $font-size-base * 1.25;
+$h6-font-size: $font-size-base;
+
+// Comments
+$comment-spacer-x: 1.25em;
+$comment-spacer-y: 1.25em;

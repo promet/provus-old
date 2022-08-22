@@ -1,8 +1,0 @@
-uuid: 9e89def6-e555-4edb-9bce-c8b9a9211b1a
-langcode: en
-status: true
-dependencies: {  }
-id: inline_item
-label: 'Inline Item'
-revision: 1
-description: ''

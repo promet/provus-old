@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.provus_group_automatic
+    - field.storage.block_content.field_provus_item_display
+  module:
+    - options
+id: block_content.provus_group_automatic.field_provus_item_display
+field_name: field_provus_item_display
+entity_type: block_content
+bundle: provus_group_automatic
+label: 'Item Display'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

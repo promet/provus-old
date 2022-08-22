@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.utility-menu
+  module:
+    - menu_block
+id: utilitymenu
+theme: provus_bootstrap
+region: top_header
+weight: 0
+provider: null
+plugin: 'menu_block:utility-menu'
+settings:
+  id: 'menu_block:utility-menu'
+  label: 'Utility Menu'
+  label_display: '0'
+  provider: menu_block
+  follow: false
+  follow_parent: child
+  label_link: false
+  label_type: block
+  level: 1
+  depth: 0
+  expand_all_items: false
+  parent: 'utility-menu:'
+  suggestion: utility_menu
+visibility: {  }

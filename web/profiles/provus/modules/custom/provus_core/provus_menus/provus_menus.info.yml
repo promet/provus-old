@@ -1,0 +1,8 @@
+name: 'Provus Menus'
+description: 'Base Menus for Provus Core.'
+type: module
+core_version_requirement: '^8.8 || ^9'
+package: Provus
+dependencies:
+  - menu_block
+

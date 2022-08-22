@@ -1,0 +1,38 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.provus_files_list
+    - field.field.block_content.provus_files_list.field_provus_media_files
+    - field.field.block_content.provus_files_list.field_provus_title
+  module:
+    - media_library
+id: block_content.provus_files_list.default
+targetEntityType: block_content
+bundle: provus_files_list
+mode: default
+content:
+  field_provus_media_files:
+    type: media_library_widget
+    weight: 27
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_provus_title:
+    type: string_textfield
+    weight: 26
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

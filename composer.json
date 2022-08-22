@@ -1,211 +1,99 @@
 {
-    "name": "promet/provus",
-    "description": "Example site for Drupal",
+    "name": "promet/provus-drupal",
+    "description": "Install Provus Drupal kickstarter by Promet Source.",
     "type": "project",
-    "license": "GPL-2.0-or-later",
+    "license": "MIT",
     "repositories": [
-      {
-        "type": "composer",
-        "url": "https://packages.drupal.org/8"
-      },
-      {
-        "type":"package",
-        "package": {
-          "name": "harvesthq/chosen",
-          "version": "1.8.7",
-          "type": "drupal-library",
-          "dist": {
-            "url": "https://github.com/harvesthq/chosen/releases/download/v1.8.7/chosen_v1.8.7.zip",
-            "type": "zip"
-          }
+        {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "path",
+            "url": "upstream-configuration"
         }
-      },
-      {
-        "type": "package",
-        "package": {
-            "name": "library-enyo/dropzone",
-            "version": "5.7.0",
-            "type": "drupal-library",
-            "source": {
-                "url": "https://github.com/enyo/dropzone",
-                "type": "git",
-                "reference": "v5.7.0"
-            }
-        }
-      },
-      {
-        "type": "package",
-        "package": {
-          "name": "jsanahuja/jqueryinstagramfeed",
-          "version": "dev-master",
-          "type": "drupal-library",
-          "dist": {
-            "url": "https://github.com/jsanahuja/jquery.instagramFeed/archive/master.zip",
-            "type": "zip"
-          }
-        }
-      },
-      {
-        "type": "path",
-        "url": "src/modules/provus_blocks"
-      }
     ],
     "require": {
-        "composer/installers": "^1.2",
-        "cweagans/composer-patches": "^1.6.5",
-        "drupal/address": "~1.0",
-        "drupal/admin_toolbar_tools": "^2.0",
-        "drupal/antibot": "^1.4",
+        "composer/installers": "^1.9",
+        "cweagans/composer-patches": "^1.7",
+        "drupal/ala": "1.8",
         "drupal/auto_entitylabel": "^3.0@beta",
-        "drupal/calendar_link": "^1.1",
-        "drupal/chosen": "^3.0",
-        "drupal/components": "^2.2",
-        "drupal/config_ignore": "^2.2",
-        "drupal/console": "^1.0.2",
-        "drupal/core": "^9.1.5",
-        "drupal/core-composer-scaffold": "^9.1",
-        "drupal/devel": "^4.1",
-        "drupal/dropzonejs": "^2.1",
-        "drupal/emulsify_twig": "^2.0",
-        "drupal/entity": "~1.0-rc3",
-        "drupal/entity_embed": "^1.0",
-        "drupal/entity_staging": "^1.x-dev@dev",
-        "drupal/environment_indicator": "^4.0",
-        "drupal/extlink": "^1.3",
-        "drupal/facets": "^1.4",
-        "drupal/field_group": "^3.1",
-        "drupal/focal_point": "^1.4",
-        "drupal/fullcalendar_view": "^2.8",
-        "drupal/geocoder": "^3.6",
-        "drupal/geofield": "^1.13",
-        "drupal/geofield_map": "^2.63",
-        "drupal/google_analytics": "^3.0",
-        "drupal/inline_entity_form": "^1.0",
-        "drupal/layout_builder_at": "^2.11",
-        "drupal/layout_builder_browser": "^1.1",
-        "drupal/layout_builder_modal": "^1.0",
-        "drupal/layout_builder_restrictions": "^2.5",
+        "drupal/bootstrap_barrio": "^5.5",
+        "drupal/bootstrap_sass": "^5.0",
+        "drupal/config_distro": "^1.0@alpha",
+        "drupal/config_merge": "^1.0@RC",
+        "drupal/config_provider": "^2.0@RC",
+        "drupal/config_snapshot": "^1.0@RC",
+        "drupal/core-composer-scaffold": "^9.2",
+        "drupal/core-recommended": "^9.2",
+        "drupal/default_content": "^1.0@alpha",
+        "drupal/entity_staging": "1.x-dev@dev",
+        "drupal/gin": "^3.0@alpha",
+        "drupal/gin_toolbar": "^1.0@beta",
+        "drupal/inline_entity_form": "^1.0@RC",
         "drupal/layout_builder_styles": "^1.0@beta",
-        "drupal/layout_library": "^1.0",
-        "drupal/layout_paragraphs": "^1.0@beta",
+        "drupal/layout_library": "^1.0@beta",
         "drupal/linkit": "^6.0@beta",
         "drupal/media_bulk_upload": "^1.0@alpha",
-        "drupal/memcache": "^2.3",
-        "drupal/menu_block": "1.x-dev",
-        "drupal/menu_breadcrumb": "^1.12",
-        "drupal/migrate_plus": "^5.1",
-        "drupal/office_hours": "^1.2",
-        "drupal/pathauto": "^1.6",
-        "drupal/pdfpreview": "^1.0",
-        "drupal/redirect": "^1.6",
-        "drupal/search_api": "^1.16",
-        "drupal/search_api_glossary": "4.x-dev@dev",
-        "drupal/search_api_solr": "^1.4",
-        "drupal/section_library": "^1.0@beta",
-        "drupal/simple_instagram_feed": "^3.8",
-        "drupal/smart_trim": "^1.2",
-        "drupal/socialfeed": "^1.0",
-        "drupal/stage_file_proxy": "^1.1",
-        "drupal/twig_tweak": "^2.5",
-        "drupal/view_unpublished": "^1.0@RC",
-        "drupal/viewsreference": "^1.4",
-        "drupal/vocabulary_condition": "^1.0",
-        "drupal/webform": "^6.0",
-        "drush/drush": "^10.4",
-        "geocoder-php/google-maps-provider": "^4.4",
-        "harvesthq/chosen": "^1.8",
-        "jsanahuja/jqueryinstagramfeed": "dev-master",
-        "kporras07/composer-symlinks": "dev-master",
-        "oomphinc/composer-installers-extender": "^2.0",
-        "vlucas/phpdotenv": "^2.4",
-        "webflo/drupal-finder": "^1.0.0",
-        "webmozart/path-util": "^2.3",
-        "zaporylie/composer-drupal-optimizations": "^1.0"
+        "drush/drush": "^10",
+        "provus/upstream-configuration": "2.0.0"
     },
     "require-dev": {
-        "dmore/behat-chrome-extension": "^1.3",
-        "drupal/drupal-extension": "^4.0",
-        "mglaman/drupal-check": "^1.1"
+        "drupal/core-dev": "^9.2"
     },
     "conflict": {
-        "drupal/drupal": "*"
+            "drupal/drupal": "*"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
-    "config": {
-        "sort-packages": true
-    },
-    "autoload": {
-        "classmap": [
-            "scripts/composer/ScriptHandler.php"
-        ],
-        "files": ["load.environment.php"]
-    },
-    "scripts": {
-        "build-assets": [
-            "@prepare-for-build",
-            "composer install --optimize-autoloader --no-dev"
-        ],
-        "prepare-for-build":"DrupalProject\\composer\\ScriptHandler::prepareForBuild",
-        "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
-        "remove-git-dirs": "DrupalProject\\composer\\ScriptHandler::removeGitDirectories",
-        "project-scaffold": [
-            "Kporras07\\ComposerSymlinks\\ScriptHandler::createSymlinks"
-        ],
-        "post-install-cmd": [
-            "@project-scaffold",
-            "@drupal-scaffold",
-            "@remove-git-dirs"
-        ],
-        "post-update-cmd": [
-            "@project-scaffold",
-            "@drupal-scaffold",
-            "@remove-git-dirs"
-        ]
-    },
     "extra": {
-       "drupal-scaffold": {
-          "allowed-packages": [
-            "drupal/core"
-          ],
-          "locations": {
-            "web-root": "./web"
-          }
+        "drupal-scaffold": {
+            "locations": {
+                "web-root": "./web"
+            },
+            "file-mapping": {
+                "[project-root]/.editorconfig": false,
+                "[project-root]/.gitattributes": false
+            }
+        },
+        "installer-paths": {
+            "web/core": ["type:drupal-core"],
+            "web/libraries/{$name}": ["type:drupal-library"],
+            "web/modules/contrib/{$name}": ["type:drupal-module"],
+            "web/profiles/contrib/{$name}": ["type:drupal-profile"],
+            "web/themes/contrib/{$name}": ["type:drupal-theme"],
+            "drush/Commands/contrib/{$name}": ["type:drupal-drush"],
+            "web/modules/custom/{$name}": ["type:drupal-custom-module"],
+            "web/profiles/custom/{$name}": ["type:drupal-custom-profile"],
+            "web/themes/custom/{$name}": ["type:drupal-custom-theme"],
+            "web/private/scripts/quicksilver/{$name}/": ["type:quicksilver-script"]
         },
         "composer-exit-on-patch-failure": true,
         "patchLevel": {
             "drupal/core": "-p2"
         },
-        "installer-paths": {
-            "web/core": ["type:drupal-core"],
-            "web/libraries/{$name}": [
-              "type:drupal-library"
-            ],
-            "web/modules/contrib/{$name}": ["type:drupal-module"],
-            "web/profiles/contrib/{$name}": ["type:drupal-profile"],
-            "web/themes/contrib/{$name}": ["type:drupal-theme"],
-            "drush/Commands/{$name}": ["type:drupal-drush"]
-        },
-        "symlinks": {
-            "src/modules": "web/modules/custom",
-            "src/themes": "web/themes/custom",
-            "src/profiles": "web/profiles/custom",
-            "src/libraries": "web/libraries/custom",
-            "src/sites": "web/sites",
-            "web/themes/custom/provus/images": "web/images"
-        },
         "patches": {
-            "drupal/core": {
-                "Temp workaround for entity_staging to choose block uuid over revision id [#2942975]": "src/patches/2942975_145-d9-2-provus.patch",
-                "Block visibility has wrong logic [923934]": "https://www.drupal.org/files/issues/2021-06-29/923934-44.patch"
+            "drupal/auto_entitylabel": {
+                "Integration with Layout Builder for custom block types [3065687]": "https://www.drupal.org/files/issues/2021-07-21/auto_entitylabel-layout_builder_component_title-3065687-16.patch"
             },
-            "drupal/config_ignore": {
-                "Support config ignore export [#2942975]": "https://www.drupal.org/files/issues/2020-01-11/support-for-export-2857247-44.patch"
-            },
-            "drupal/entity_staging": {
-                "Stream wrapper bug [#3216474]": "https://git.drupalcode.org/project/entity_staging/-/merge_requests/3.diff", 
-                "Unsupported operand types bug [#3145936]": "https://www.drupal.org/files/issues/2020-06-04/entity-staging-unsuported-operand-types-3145936-2.patch"
+            "drupal/exclude_node_title": {
+                "Deployment erases excluded-node-titles [2974973]": "https://www.drupal.org/files/issues/2018-06-20/2974973-state_api-3.patch"
             }
+        }
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "platform": {
+            "php": "7.4"
+        },
+        "allow-plugins": {
+            "composer/installers": true,
+            "cweagans/composer-patches": true,
+            "oomphinc/composer-installers-extender": true,
+            "zaporylie/composer-drupal-optimizations": true,
+            "drupal/core-composer-scaffold": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true
         }
     }
 }

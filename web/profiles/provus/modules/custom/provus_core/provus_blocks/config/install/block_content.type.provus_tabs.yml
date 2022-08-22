@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: provus_tabs
+label: Tabs
+revision: 0
+description: ''

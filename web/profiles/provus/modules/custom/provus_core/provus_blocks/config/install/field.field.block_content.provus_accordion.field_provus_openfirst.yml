@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.provus_accordion
+    - field.storage.block_content.field_provus_openfirst
+id: block_content.provus_accordion.field_provus_openfirst
+field_name: field_provus_openfirst
+entity_type: block_content
+bundle: provus_accordion
+label: 'Open First Item'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

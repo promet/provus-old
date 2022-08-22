@@ -1,0 +1,43 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.provus_heading
+    - field.field.block_content.provus_heading.field_provus_alignment
+    - field.field.block_content.provus_heading.field_provus_decorative_line
+    - field.field.block_content.provus_heading.field_provus_heading_level
+    - field.field.block_content.provus_heading.field_provus_sub_title
+    - field.field.block_content.provus_heading.field_provus_title
+  module:
+    - options
+id: block_content.provus_heading.default
+targetEntityType: block_content
+bundle: provus_heading
+mode: default
+content:
+  field_provus_heading_level:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_provus_sub_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_provus_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_provus_alignment: true
+  field_provus_decorative_line: true

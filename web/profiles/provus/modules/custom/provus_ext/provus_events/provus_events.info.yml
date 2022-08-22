@@ -1,0 +1,10 @@
+name: 'Provus Content: Events'
+type: module
+description: 'Custom provus node: Event. Provides events calendar and views.'
+core_version_requirement: ^8 || ^9
+package: 'Provus'
+
+dependencies:
+  - fullcalendar_view
+  - date_recur
+  - date_recur_modular

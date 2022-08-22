@@ -1,8 +1,0 @@
-uuid: 02c6244d-9e72-4eb3-8dcc-d9e91d223bc1
-langcode: en
-status: true
-dependencies: {  }
-id: number_item
-label: 'Number Item'
-revision: 1
-description: ''

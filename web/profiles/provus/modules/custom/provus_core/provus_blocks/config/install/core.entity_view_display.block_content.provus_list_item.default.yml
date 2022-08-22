@@ -1,0 +1,47 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.provus_list_item
+    - field.field.block_content.provus_list_item.field_provus_icon
+    - field.field.block_content.provus_list_item.field_provus_link
+    - field.field.block_content.provus_list_item.field_provus_list_text
+  module:
+    - fontawesome
+    - link
+id: block_content.provus_list_item.default
+targetEntityType: block_content
+bundle: provus_list_item
+mode: default
+content:
+  field_provus_icon:
+    type: fontawesome_icon_formatter
+    label: hidden
+    settings:
+      layers: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_provus_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_provus_list_text:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  entitygroupfield: true
+  search_api_excerpt: true

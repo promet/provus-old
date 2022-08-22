@@ -1,6 +1,0 @@
-status: 1
-pattern: '[block_content:field_heading]'
-escape: false
-dependencies:
-  config:
-    - block_content.type.inline_item

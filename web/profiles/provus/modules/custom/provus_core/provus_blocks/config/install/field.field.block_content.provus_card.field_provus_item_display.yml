@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.provus_card
+    - field.storage.block_content.field_provus_item_display
+  module:
+    - options
+id: block_content.provus_card.field_provus_item_display
+field_name: field_provus_item_display
+entity_type: block_content
+bundle: provus_card
+label: Display
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: provus_blocks_item_display_get_default
+settings: {  }
+field_type: list_string

@@ -1,0 +1,29 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.provus_button
+    - field.field.block_content.provus_button.field_provus_links
+  module:
+    - ala
+id: block_content.provus_button.default
+targetEntityType: block_content
+bundle: provus_button
+mode: default
+content:
+  field_provus_links:
+    type: ala
+    label: hidden
+    settings:
+      trim_length: '80'
+      ala_link_view_class: element
+      ala_link_view_icon: inside
+      ala_link_view_roles: hide
+      url_only: false
+      url_plain: false
+      rel: 0
+      target: 0
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

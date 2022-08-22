@@ -1,0 +1,43 @@
+{
+  "name": "barrio_sass",
+  "version": "5.1.0",
+  "description": "Barrio SASS implementation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "SASS",
+    "Bootstrap",
+    "Drupal",
+    "Barrio"
+  ],
+  "author": "@hatuhay",
+  "license": "MIT",
+  "dependencies": {
+    "@popperjs/core": "^2.9.2",
+    "bootstrap": "^5.1.0",
+    "bootstrap-icons": "^1.8.0",
+    "mdbootstrap": "^4.20.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.24.7",
+    "del": "^3.0.0",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-clean-css": "3.9.4",
+    "gulp-concat": "^2.6.1",
+    "gulp-html-replace": "^1.6.2",
+    "gulp-load-plugins": "^2.0.4",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^4.0.1",
+    "gulp-sass-glob": "^1.1.0",
+    "gulp-scss-lint": "^1.0.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.0",
+    "merge-stream": "^1.0.1",
+    "postcss-inline-svg": "^4.1.0",
+    "postcss-pxtorem": "^5.1.1"
+  }
+}

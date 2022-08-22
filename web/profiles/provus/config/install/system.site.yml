@@ -1,0 +1,9 @@
+name: 'Provus'
+mail: admin@example.com
+slogan: 'Drupal kickstarter by Promet Source'
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100

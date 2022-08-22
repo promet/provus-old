@@ -1,0 +1,82 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.provus_cta
+    - field.field.block_content.provus_cta.field_provus_body
+    - field.field.block_content.provus_cta.field_provus_links
+    - field.field.block_content.provus_cta.field_provus_sub_title
+    - field.field.block_content.provus_cta.field_provus_title
+    - field.field.block_content.provus_cta.field_provus_show_icon
+  module:
+    - ala
+    - text
+id: block_content.provus_cta.default
+targetEntityType: block_content
+bundle: provus_cta
+mode: default
+content:
+  field_provus_body:
+    type: text_textarea_with_summary
+    weight: 4
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  field_provus_links:
+    type: ala_field_widget
+    weight: 5
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+      ala_link_class_settings: global
+      ala_link_class: ''
+      ala_link_icon: false
+      ala_link_roles: false
+      ala_link_color: false
+      ala_link_target: '1'
+    third_party_settings: {  }
+  field_provus_sub_title:
+    type: string_textfield
+    weight: 3
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_provus_title:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_provus_show_icon:
+    type: boolean_checkbox
+    weight: 1
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+hidden:
+  entitygroupfield: true

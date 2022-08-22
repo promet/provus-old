@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.provus_tabs
+    - field.storage.block_content.field_provus_orientation
+  module:
+    - options
+id: block_content.provus_tabs.field_provus_orientation
+field_name: field_provus_orientation
+entity_type: block_content
+bundle: provus_tabs
+label: Orientation
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: horizontal
+default_value_callback: ''
+settings: {  }
+field_type: list_string

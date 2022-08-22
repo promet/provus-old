@@ -1,0 +1,8 @@
+name: 'Provus Alerts'
+type: module
+description: 'Create site alerts.'
+core_version_requirement: ^8 || ^9
+package: 'Provus'
+
+dependencies:
+  - bootstrap_site_alert

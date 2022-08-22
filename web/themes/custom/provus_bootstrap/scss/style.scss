@@ -1,0 +1,16 @@
+/*
+Theme Name: Bootstrap 4 Sass
+Description: Bootstrap 4 with Sass
+*/
+
+// import files
+@import "global/_variables.scss";
+@import "bootstrap";
+@import "barrio";
+@import "global/_mixins.scss";
+@import "global/_base.scss";
+@import "admin/*.scss";
+@import "components/*.scss";
+@import "layout/*.scss";
+@import "content-types/*.scss";
+@import "pages/*.scss";

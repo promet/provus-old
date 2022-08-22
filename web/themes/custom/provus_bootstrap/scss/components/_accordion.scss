@@ -1,0 +1,9 @@
+// Accordions styles.
+.accordion-button:not(.collapsed) {
+  background: $primary-shade;
+  color: $white;
+}
+
+.accordion-button:not(.collapsed)::after {
+  filter: brightness(0) invert(1);
+}

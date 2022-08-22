@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_provus_fname
+    - node.type.provus_person
+id: node.provus_person.field_provus_fname
+field_name: field_provus_fname
+entity_type: node
+bundle: provus_person
+label: 'First Name'
+description: 'If using middle names or initials, include them in this field.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

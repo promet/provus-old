@@ -1,0 +1,9 @@
+status: 1
+pattern: '(Tabs) - [random:number]'
+escape: false
+preserve_titles: false
+dependencies:
+  config:
+    - block_content.type.provus_tabs
+save: 0
+chunk: '50'

@@ -1,0 +1,24 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.provus_landing_page.body
+    - field.field.node.provus_landing_page.layout_builder__layout
+    - node.type.provus_landing_page
+  module:
+    - user
+id: node.provus_landing_page.teaser
+targetEntityType: node
+bundle: provus_landing_page
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  body: true
+  layout_builder__layout: true
