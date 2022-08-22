@@ -1,3 +1,5 @@
+# Getting Started - Local Dev Site
+
 We recommend using the composer project to create a Provus based project.
 
 
@@ -5,8 +7,8 @@ We recommend using the composer project to create a Provus based project.
 composer create-project promet/provus-drupal <project-name>
 ```
 
-# Local Dev Tools
-## Docksal
+## Local Dev Tools
+### Docksal
 
 Please read/review the Docksal installation instructions for your platform.
 
@@ -32,7 +34,7 @@ For Docksal:
 ![docksal_db_creds](../images/docksal_db_creds.png)
 
 
-## Lando
+### Lando
 Please read/review the Lando installation instructions for your platform.
 
 
