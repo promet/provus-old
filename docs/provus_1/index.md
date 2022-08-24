@@ -3,7 +3,7 @@ layout: default
 title: Provus Developer Documentation
 ---
 
-# Provus 1.0 Documentation (Depricated)
+# Provus 1.0 Documentation (Deprecated)
 
 Provus provides a kickstart to your Drupal site building. It packages commonly used features like calendaring, FAQs, people, news, blogs, and more with a drag and drop editing experience. Provus also offers a large array of site building components like galleries, maps, content lists that can be added and arranged by non-technical users. Provus combines the ability for non-technical users to build your site with a completely flexible content model.
 
