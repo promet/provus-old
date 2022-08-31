@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: provus_date_only
+label: 'Date only'
+locked: false
+pattern: d

@@ -1,0 +1,26 @@
+<?php
+
+/**
+ * @file
+ * Contains provus_events.module.
+ */
+
+ /**
+  * Implements hook_theme().
+  */
+ function provus_events_theme() {
+   return [
+     'node__provus_event_mini' => [
+       'template' => 'node--provus-event-mini',
+       'base hook' => 'node'
+     ],
+     'node__provus_event_list' => [
+       'template' => 'node--provus-event-list',
+       'base hook' => 'node'
+     ],
+     'node__provus_event__full' => [
+       'template' => 'node--provus-event--full',
+       'base hook' => 'node'
+     ],
+   ];
+ }
