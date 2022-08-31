@@ -145,6 +145,10 @@ function provus_blocks_theme() {
       'template' => 'block--provus-group',
       'base hook' => 'block'
     ],
+    'block__provus_gallery' => [
+      'template' => 'block--provus-gallery',
+      'base hook' => 'block'
+    ],
     'block__provus_group__carousel' => [
       'template' => 'block--provus-group--carousel',
       'base hook' => 'block'

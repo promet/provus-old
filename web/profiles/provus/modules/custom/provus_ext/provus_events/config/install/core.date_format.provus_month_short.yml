@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: provus_month_short
+label: 'Month | Short'
+locked: false
+pattern: M

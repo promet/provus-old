@@ -10,6 +10,8 @@ dependencies:
     - date_recur
     - text
     - user
+_core:
+  default_config_hash: uK79y2lauHdfitQ4cg6JOrfgeOV4QQV61mlRwiKd_F0
 id: node.provus_event.default
 targetEntityType: node
 bundle: provus_event
@@ -20,11 +22,11 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 101
+    weight: 2
     region: content
   field_provus_dates:
     type: date_recur_basic_formatter
-    label: above
+    label: hidden
     settings:
       timezone_override: ''
       format_type: medium
@@ -33,13 +35,14 @@ content:
       count_per_item: true
       occurrence_format_type: medium
       same_end_date_format_type: medium
-      interpreter: null
+      interpreter: ''
     third_party_settings: {  }
-    weight: 102
+    weight: 1
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 0
     region: content
-hidden: {  }
+hidden:
+  addtoany: true

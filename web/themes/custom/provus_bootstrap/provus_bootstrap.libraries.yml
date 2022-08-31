@@ -41,3 +41,26 @@ carousel-3-item:
     js/carousel-3-items.js: {}
   dependencies:
     - provus_bootstrap/lightslider
+
+lightgallery:
+  remote: sachinchoolur/lightGallery
+  version: 2.5.0
+  license:
+    name: MIT
+    url: https://raw.githubusercontent.com/sachinchoolur/lightGallery/master/LICENSE
+    gpl-compatible: true
+  js:
+    libraries/lightgallery/dist/js/lightgallery-all.min.js: { minified: true }
+  css:
+    theme:
+      libraries/lightgallery/dist/css/lightgallery.min.css: { minified: true }
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/jquery.once
+
+photogallery:
+  js:
+    js/gallery.js: {}
+  dependencies:
+    - provus_bootstrap/lightgallery
