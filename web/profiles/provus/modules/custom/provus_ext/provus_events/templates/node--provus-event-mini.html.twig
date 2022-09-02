@@ -95,7 +95,7 @@
         </h3>
       </div>
       <div class="mini-date-fulldate">
-        {{ content.date_full }}
+        {{ node.field_provus_dates.value | date('U') | format_date('provus_event_date') }}
       </div>
     </div>
   </div>

@@ -36,6 +36,10 @@ function provus_person_theme() {
       'template' => 'node--provus-person--card-tall',
       'base hook' => 'node'
     ],
+    'node__provus_person__full' => [
+      'template' => 'node--provus-person--full',
+      'base hook' => 'node'
+    ],
     'field__field_provus_people' => [
       'template' => 'field--field-provus-people',
       'base hook' => 'field'
