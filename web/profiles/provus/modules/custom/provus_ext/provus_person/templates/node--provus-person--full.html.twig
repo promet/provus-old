@@ -59,9 +59,7 @@
  * @see template_preprocess_node()
  */
 #}
-
 {{ attach_library('bootstrap_barrio/node') }}
-
 
 {%
   set classes = [
@@ -74,26 +72,51 @@
     'clearfix',
   ]
 %}
-<div class="card card-event-mini" {{ attributes.addClass(classes) }}>
-  <div class="card-body">
-    <div class="card-date">
-      <div class="card-date-top">
-        {{ node.field_provus_dates.value | date('U') | format_date('provus_month_short') }}
+
+
+<article{{ attributes.addClass(classes) }}>
+  <header>
+    {{ title_prefix }}
+    {% if label and not page %}
+      <h2{{ title_attributes.addClass('node__title') }}>
+        <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+      </h2>
+    {% endif %}
+    {{ title_suffix }}
+  </header>
+  <div{{ content_attributes.addClass('node__content', 'clearfix') }}>
+    <div class="article-body-wrapper person-node">
+      <div class="person-header">
+        <div class="row">
+          <div class="col-md-9">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="person-image">
+                  {{ content.field_provus_media_image }}
+                </div>
+              </div>
+              <div class="col-md-8">
+                <h1>{{ label }}</h1>
+                <h2>{{ content.field_provus_titles }}</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="email">
+              <span class="far fa-envelope"></span>{{ content.field_provus_email }}
+            </div>
+            <div class="phone">
+              <span class="fas fa-phone"></span>{{ content.field_provus_telephone }}
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="card-date-bottom">
-        {{ node.field_provus_dates.value | date('U') | format_date('provus_date_only') }}
+      <div class="node__content clearfix">
+        <div class="content-body">
+          <h2>{{ 'Person details'|t }}</h2>
+          {{ body }}
+        </div>
       </div>
-    </div>
-    <div class="card-title">
-      <h3>
-        <a href="{{ url }}" class="fullclick">{{ label }}</a>
-      </h3>
-    </div>
-    <div class="card-full-date">
-      {{ node.field_provus_dates.value | date('U') | format_date('provus_event_date') }}
-    </div>
-    <div class="card-body-text">
-      {{ content.body['#object'].body.summary }}
     </div>
   </div>
-</div>
+</article>

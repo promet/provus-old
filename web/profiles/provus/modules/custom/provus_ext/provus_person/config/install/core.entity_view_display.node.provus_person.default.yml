@@ -15,6 +15,8 @@ dependencies:
     - telephone
     - text
     - user
+_core:
+  default_config_hash: dxjXcAo25rKV7H7F-OVrhnXvxRYbxP5JYsbxejSVS5Y
 id: node.provus_person.default
 targetEntityType: node
 bundle: provus_person
@@ -29,14 +31,14 @@ content:
     region: content
   field_provus_email:
     type: basic_string
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     weight: 106
     region: content
   field_provus_fname:
     type: string
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
@@ -44,23 +46,24 @@ content:
     region: content
   field_provus_lname:
     type: string
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
     weight: 103
     region: content
   field_provus_media_image:
-    type: entity_reference_label
-    label: above
+    type: entity_reference_entity_view
+    label: hidden
     settings:
-      link: true
+      view_mode: default
+      link: false
     third_party_settings: {  }
     weight: 104
     region: content
   field_provus_tax_cat_person:
     type: entity_reference_label
-    label: above
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }
@@ -68,7 +71,7 @@ content:
     region: content
   field_provus_telephone:
     type: telephone_link
-    label: above
+    label: hidden
     settings:
       title: ''
     third_party_settings: {  }
@@ -76,7 +79,7 @@ content:
     region: content
   field_provus_titles:
     type: basic_string
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     weight: 105
