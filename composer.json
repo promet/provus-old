@@ -73,6 +73,9 @@
             "drupal/core": "-p2"
         },
         "patches": {
+            "drupal/core": {
+                "Allow hiding configured blocks in layout builder [3163197]": "https://www.drupal.org/files/issues/2021-11-15/layout_builder-hide-block-3163197-15.patch"
+            },
             "drupal/auto_entitylabel": {
                 "Integration with Layout Builder for custom block types [3065687]": "https://www.drupal.org/files/issues/2021-07-21/auto_entitylabel-layout_builder_component_title-3065687-16.patch"
             },
