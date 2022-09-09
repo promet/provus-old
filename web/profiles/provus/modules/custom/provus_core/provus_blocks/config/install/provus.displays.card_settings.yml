@@ -17,6 +17,6 @@ displays:
   card_basic:
     name: 'Basic'
     cardstyle: {  }
-  card_basic_plus:
+  provus_card_basic_plus:
     name: 'Basic Plus'
     cardstyle: {  }

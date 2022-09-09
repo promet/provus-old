@@ -192,7 +192,7 @@ displays:
               trim_zero: false
           third_party_settings: {  }
           region: content
-  card_basic_plus:
+  provus_card_basic_plus:
     content:
       body:
         field: body
