@@ -53,8 +53,8 @@ function provus_core_theme() {
       'template' => 'node--provus-card-left',
       'base hook' => 'node'
     ],
-    'node__card_right' => [
-      'template' => 'node--card-right',
+    'node__provus_card_right' => [
+      'template' => 'node--provus-card-right',
       'base hook' => 'node'
     ],
   ];

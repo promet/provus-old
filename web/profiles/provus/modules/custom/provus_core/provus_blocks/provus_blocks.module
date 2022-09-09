@@ -113,8 +113,8 @@ function provus_blocks_theme() {
       'template' => 'block--provus-card--provus-display-provus-card-left',
       'base hook' => 'block'
     ],
-    'block__provus_card__provus_display_card_right' => [
-      'template' => 'block--provus-card--provus-display-card-right',
+    'block__provus_card__provus_display_provus_card_right' => [
+      'template' => 'block--provus-card--provus-display-provus-card-right',
       'base hook' => 'block'
     ],
     'block__provus_card__provus_display_provus_card_bg' => [

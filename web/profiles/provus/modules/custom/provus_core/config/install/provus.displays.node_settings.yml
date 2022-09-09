@@ -101,7 +101,7 @@ displays:
           third_party_settings: {  }
           weight: 0
           region: content
-  card_right:
+  provus_card_right:
     content:
       body:
         field: body

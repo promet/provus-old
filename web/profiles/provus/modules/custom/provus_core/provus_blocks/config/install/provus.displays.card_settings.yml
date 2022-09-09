@@ -8,7 +8,7 @@ displays:
   provus_card_left:
     name: 'Image Left'
     cardstyle: {  }
-  card_right:
+  provus_card_right:
     name: 'Image Right'
     cardstyle: {  }
   provus_card_bg:
