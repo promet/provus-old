@@ -3,7 +3,7 @@ status: true
 dependencies:
   module:
     - node
-id: node.card_left
+id: node.provus_card_left
 label: 'Card Image Left'
 targetEntityType: node
 cache: true

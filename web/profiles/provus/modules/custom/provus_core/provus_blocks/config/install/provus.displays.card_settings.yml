@@ -5,7 +5,7 @@ displays:
   provus_card_image_circle:
     name: 'Image Circle'
     cardstyle: {  }
-  card_left:
+  provus_card_left:
     name: 'Image Left'
     cardstyle: {  }
   card_right:
