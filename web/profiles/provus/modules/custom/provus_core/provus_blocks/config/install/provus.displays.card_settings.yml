@@ -2,7 +2,7 @@ displays:
   provus_card:
     name: 'Default'
     cardstyle: {  }
-  card_image_circle:
+  provus_card_image_circle:
     name: 'Image Circle'
     cardstyle: {  }
   card_left:

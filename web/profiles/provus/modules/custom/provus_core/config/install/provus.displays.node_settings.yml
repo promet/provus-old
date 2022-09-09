@@ -33,7 +33,7 @@ displays:
           third_party_settings: {  }
           weight: 0
           region: content
-  card_image_circle:
+  provus_card_image_circle:
     content:
       body:
         field: body

@@ -45,8 +45,8 @@ function provus_core_theme() {
       'template' => 'node--provus-card-bg',
       'base hook' => 'node'
     ],
-    'node__card_image_circle' => [
-      'template' => 'node--card-image-circle',
+    'node__provus_card_image_circle' => [
+      'template' => 'node--provus-card-image-circle',
       'base hook' => 'node'
     ],
     'node__card_left' => [
