@@ -117,8 +117,8 @@ function provus_blocks_theme() {
       'template' => 'block--provus-card--provus-display-card-right',
       'base hook' => 'block'
     ],
-    'block__provus_card__provus_display_card_bg' => [
-      'template' => 'block--provus-card--provus-display-card-bg',
+    'block__provus_card__provus_display_provus_card_bg' => [
+      'template' => 'block--provus-card--provus-display-provus-card-bg',
       'base hook' => 'block'
     ],
     'block__provus_accordion' => [

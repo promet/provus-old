@@ -11,7 +11,7 @@ displays:
   card_right:
     name: 'Image Right'
     cardstyle: {  }
-  card_bg:
+  provus_card_bg:
     name: 'Image Background'
     cardstyle: {  }
   card_basic:
