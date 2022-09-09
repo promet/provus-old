@@ -33,8 +33,8 @@ function provus_core_theme() {
       'template' => 'node--provus-card',
       'base hook' => 'node'
     ],
-    'node__card_basic' => [
-      'template' => 'node--card-basic',
+    'node__provus_card_basic' => [
+      'template' => 'node--provus-card-basic',
       'base hook' => 'node'
     ],
     'node__provus_card_basic_plus' => [

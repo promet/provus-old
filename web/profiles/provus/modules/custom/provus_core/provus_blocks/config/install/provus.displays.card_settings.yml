@@ -14,7 +14,7 @@ displays:
   provus_card_bg:
     name: 'Image Background'
     cardstyle: {  }
-  card_basic:
+  provus_card_basic:
     name: 'Basic'
     cardstyle: {  }
   provus_card_basic_plus:

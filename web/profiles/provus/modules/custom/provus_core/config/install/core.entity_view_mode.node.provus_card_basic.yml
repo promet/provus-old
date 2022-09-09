@@ -3,7 +3,7 @@ status: true
 dependencies:
   module:
     - node
-id: node.card_basic
+id: node.provus_card_basic
 label: 'Card Basic'
 targetEntityType: node
 cache: true
