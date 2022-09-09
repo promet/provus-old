@@ -215,7 +215,7 @@ displays:
               trim_zero: false
           third_party_settings: {  }
           region: content
-  card_tall:
+  provus_card_tall:
     content:
       body:
         field: body
