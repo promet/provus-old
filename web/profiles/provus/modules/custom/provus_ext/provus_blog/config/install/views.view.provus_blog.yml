@@ -2,7 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.card
+    - core.entity_view_mode.node.provus_card
     - node.type.provus_blog
   module:
     - datetime
@@ -183,7 +183,7 @@ display:
       row:
         type: 'entity:node'
         options:
-          view_mode: card
+          view_mode: provus_card
       query:
         type: views_query
         options:

@@ -1,5 +1,5 @@
 displays:
-  card:
+  provus_card:
     name: 'Default'
     cardstyle: {  }
   card_image_circle:

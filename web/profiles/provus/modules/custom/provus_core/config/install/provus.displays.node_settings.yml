@@ -1,5 +1,5 @@
 displays:
-  card:
+  provus_card:
     content:
       body:
         field: body

@@ -29,8 +29,8 @@ function provus_core_help($route_name, RouteMatchInterface $route_match) {
  */
 function provus_core_theme() {
   return [
-    'node__card' => [
-      'template' => 'node--card',
+    'node__provus_card' => [
+      'template' => 'node--provus-card',
       'base hook' => 'node'
     ],
     'node__card_basic' => [
