@@ -3,7 +3,7 @@ status: true
 dependencies:
   module:
     - node
-id: node.card_tall
-label: 'Card Tall'
+id: node.provus_card_bg
+label: 'Card Image Background'
 targetEntityType: node
 cache: true

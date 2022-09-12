@@ -32,8 +32,8 @@ function provus_person_theme() {
       'template' => 'block--provus-person-list',
       'base hook' => 'block'
     ],
-    'node__provus_person__card_tall' => [
-      'template' => 'node--provus-person--card-tall',
+    'node__provus_person__provus_card_tall' => [
+      'template' => 'node--provus-person--provus-card-tall',
       'base hook' => 'node'
     ],
     'node__provus_person__full' => [

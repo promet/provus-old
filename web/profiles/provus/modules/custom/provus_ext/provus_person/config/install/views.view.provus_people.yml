@@ -2,7 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.card_tall
+    - core.entity_view_mode.node.provus_card_tall
     - node.type.provus_person
   module:
     - node
@@ -176,7 +176,7 @@ display:
         type: 'entity:node'
         options:
           relationship: none
-          view_mode: card_tall
+          view_mode: provus_card_tall
       query:
         type: views_query
         options:

@@ -14,7 +14,7 @@ content:
     type: entity_reference_entity_view
     label: hidden
     settings:
-      view_mode: card_tall
+      view_mode: provus_card_tall
       link: false
     third_party_settings: {  }
     weight: 1

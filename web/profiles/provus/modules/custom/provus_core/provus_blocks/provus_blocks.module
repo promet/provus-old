@@ -97,28 +97,28 @@ function provus_blocks_theme() {
       'template' => 'block--provus-card',
       'base hook' => 'block'
     ],
-    'block__provus_card__provus_display_card_basic' => [
-      'template' => 'block--provus-card--provus-display-card-basic',
+    'block__provus_card__provus_display_provus_card_basic' => [
+      'template' => 'block--provus-card--provus-display-provus-card-basic',
       'base hook' => 'block'
     ],
-    'block__provus_card__provus_display_card_basic_plus' => [
-      'template' => 'block--provus-card--provus-display-card-basic-plus',
+    'block__provus_card__provus_display_provus_card_basic_plus' => [
+      'template' => 'block--provus-card--provus-display-provus-card-basic-plus',
       'base hook' => 'block'
     ],
-    'block__provus_card__provus_display_card_image_circle' => [
-      'template' => 'block--provus-card--provus-display-card-image-circle',
+    'block__provus_card__provus_display_provus_card_image_circle' => [
+      'template' => 'block--provus-card--provus-display-provus-card-image-circle',
       'base hook' => 'block'
     ],
-    'block__provus_card__provus_display_card_left' => [
-      'template' => 'block--provus-card--provus-display-card-left',
+    'block__provus_card__provus_display_provus_card_left' => [
+      'template' => 'block--provus-card--provus-display-provus-card-left',
       'base hook' => 'block'
     ],
-    'block__provus_card__provus_display_card_right' => [
-      'template' => 'block--provus-card--provus-display-card-right',
+    'block__provus_card__provus_display_provus_card_right' => [
+      'template' => 'block--provus-card--provus-display-provus-card-right',
       'base hook' => 'block'
     ],
-    'block__provus_card__provus_display_card_bg' => [
-      'template' => 'block--provus-card--provus-display-card-bg',
+    'block__provus_card__provus_display_provus_card_bg' => [
+      'template' => 'block--provus-card--provus-display-provus-card-bg',
       'base hook' => 'block'
     ],
     'block__provus_accordion' => [
