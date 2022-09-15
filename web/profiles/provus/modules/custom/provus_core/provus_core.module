@@ -129,7 +129,7 @@ function provus_core_preprocess_node(&$vars) {
  */
 function provus_core_get_provus_displays($bundle, $view_mode) {
   // Load the provus display configurations from a file.
-  $provus_displays = \Drupal::config('provus.displays.node_settings')->get('displays');
+  $provus_displays = \Drupal::config('provus_core.displays.node_settings')->get('displays');
 
   if (!isset($provus_displays[$view_mode])) {
     return FALSE;

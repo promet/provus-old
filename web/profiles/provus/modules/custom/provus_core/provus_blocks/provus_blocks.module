@@ -233,7 +233,7 @@ function provus_blocks_form_alter(&$form, FormStateInterface $form_state, $form_
  */
 function provus_blocks_item_display_allowed_values() {
   $options = [];
-  $provus_displays = \Drupal::config('provus.displays.card_settings')->get('displays');
+  $provus_displays = \Drupal::config('provus_core.displays.card_settings')->get('displays');
   foreach ($provus_displays as $key => $display) {
     $options[$key] = $display['name'];
   }
@@ -256,7 +256,7 @@ function provus_blocks_group_content_type_allowed_values() {
  * Returns a default value for card display modes.
  */
 function provus_blocks_item_display_get_default() {
-  $provus_displays = \Drupal::config('provus.displays.card_settings')->get('displays');
+  $provus_displays = \Drupal::config('provus_core.displays.card_settings')->get('displays');
   return array_key_first($provus_displays);
 }
 
@@ -288,7 +288,7 @@ function provus_blocks_get_block(&$block_build, $entity) {
  */
 function provus_blocks_get_cardstyle_from_displaymode($display_mode) {
   // Load the provus display configurations from a file.
-  $provus_displays = \Drupal::config('provus.displays.card_settings')->get('displays');
+  $provus_displays = \Drupal::config('provus_core.displays.card_settings')->get('displays');
 
   if (!empty($provus_displays[$display_mode]['cardstyle'])) {
     return $provus_displays[$display_mode]['cardstyle'];
