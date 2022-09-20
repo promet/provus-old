@@ -13,13 +13,35 @@
     color: $white;
   }
 }
-.bg-gray {
+.bg-gray,
+.bg-grey {
   background: $gray-100;
 }
+
 .bg-white {
   background: $white;
 }
 
 .layout {
-    margin: 5rem 0;
+  margin: rem-calc(80 0);
+  &:first-child {
+    margin: 0;
+  }
+  &.no-margin {
+    margin: 0;
+  }
+  .block {
+    &:not(:first-child) {
+      margin-top: rem-calc(80);
+    }
+  }
+}
+[class^="bg-"] {
+  padding: rem-calc(80 0);
+  @include media-breakpoint-down(md) {
+    padding: rem-calc(40 0);
+  }
+  .layout {
+    margin: 0;
+  }
 }

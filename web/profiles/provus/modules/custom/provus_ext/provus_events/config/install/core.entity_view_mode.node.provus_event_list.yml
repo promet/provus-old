@@ -3,7 +3,7 @@ status: true
 dependencies:
   module:
     - node
-id: node.card
-label: Card
+id: node.provus_event_list
+label: 'Event List'
 targetEntityType: node
 cache: true

@@ -1,5 +1,5 @@
 displays:
-  card:
+  provus_card:
     content:
       body:
         field: body
@@ -33,7 +33,7 @@ displays:
           third_party_settings: {  }
           weight: 0
           region: content
-  card_image_circle:
+  provus_card_image_circle:
     content:
       body:
         field: body
@@ -67,7 +67,7 @@ displays:
           third_party_settings: {  }
           weight: 0
           region: content
-  card_left:
+  provus_card_left:
     content:
       body:
         field: body
@@ -101,7 +101,7 @@ displays:
           third_party_settings: {  }
           weight: 0
           region: content
-  card_right:
+  provus_card_right:
     content:
       body:
         field: body
@@ -135,7 +135,7 @@ displays:
           third_party_settings: {  }
           weight: 0
           region: content
-  card_bg:
+  provus_card_bg:
     content:
       body:
         field: body
@@ -169,7 +169,7 @@ displays:
           third_party_settings: {  }
           weight: 0
           region: content
-  card_basic:
+  provus_card_basic:
     content:
       body:
         field: body
@@ -192,7 +192,7 @@ displays:
               trim_zero: false
           third_party_settings: {  }
           region: content
-  card_basic_plus:
+  provus_card_basic_plus:
     content:
       body:
         field: body
@@ -215,7 +215,7 @@ displays:
               trim_zero: false
           third_party_settings: {  }
           region: content
-  card_tall:
+  provus_card_tall:
     content:
       body:
         field: body

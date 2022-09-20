@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: provus_event_date
+label: 'Event date'
+locked: false
+pattern: 'F d, Y'
