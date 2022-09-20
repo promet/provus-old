@@ -1,22 +1,22 @@
 displays:
-  card:
+  provus_card:
     name: 'Default'
     cardstyle: {  }
-  card_image_circle:
+  provus_card_image_circle:
     name: 'Image Circle'
     cardstyle: {  }
-  card_left:
+  provus_card_left:
     name: 'Image Left'
     cardstyle: {  }
-  card_right:
+  provus_card_right:
     name: 'Image Right'
     cardstyle: {  }
-  card_bg:
+  provus_card_bg:
     name: 'Image Background'
     cardstyle: {  }
-  card_basic:
+  provus_card_basic:
     name: 'Basic'
     cardstyle: {  }
-  card_basic_plus:
+  provus_card_basic_plus:
     name: 'Basic Plus'
     cardstyle: {  }

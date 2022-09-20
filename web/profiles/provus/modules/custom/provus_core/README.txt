@@ -12,10 +12,10 @@ How to install and configure provus node card syles
 * Enable the module (This will add 1 configuration file for managing the modes).
 * Add the node view mode names you want in the interface as you normally would
   at /admin/structure/display-modes/view/add/node.
-* Export the provus.displays.node_settings.yml and add/edit entries for
+* Export the provus_core.displays.node_settings.yml and add/edit entries for
   the different view modes that you previously setup in the previous step.  See
   examples below for how to configure and map.
-* Import this provus.displays.node_settings.yml configuration file back into
+* Import this provus_core.displays.node_settings.yml configuration file back into
   your site.
 * Create a twig file matching a suggestion with your display style in it.  For
   example: node--card-1.html.twig or node--article--card-1.html.twig
