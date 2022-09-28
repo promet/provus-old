@@ -1,9 +1,0 @@
-#!/usr/bin/env bash
-
-#: exec_target = cli
-
-## Deploy docs by pushing to "storybook" branch. 
-##
-## Usage: fin storybook-deploy
-
-${PROJECT_ROOT}/scripts/bin/storybook-deploy.sh

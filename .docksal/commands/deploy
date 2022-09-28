@@ -1,9 +1,0 @@
-#!/usr/bin/env bash
-
-#: exec_target = cli
-
-##  Deploy to dev branch 
-##
-## Usage: fin deploy 
-
-${PROJECT_ROOT}/scripts/bin/deploy.sh

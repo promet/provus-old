@@ -1,8 +1,0 @@
-#!/usr/bin/env bash
-
-## Opens cypress in the local environment.
-
-CYPRESS_BASE_URL=${PROJECT_URL}
-export CYPRESS_BASE_URL
-echo ${CYPRESS_BASE_URL}
-./scripts/bin/open-cypress.sh

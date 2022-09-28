@@ -1,9 +1,0 @@
-#!/usr/bin/env bash
-
-## Imports test content 
-##
-## Usage: fin test-content [$site]
-
-fin drush update-migration-config
-fin drush migrate:import --group=entity_staging
-fin drush config-set -y system.site page.front '/node/4'
