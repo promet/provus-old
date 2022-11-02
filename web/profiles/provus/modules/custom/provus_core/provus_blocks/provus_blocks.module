@@ -453,10 +453,10 @@ function _provus_blocks_groups_format_content($type, $id_array, $storage, $view_
     if (!empty($entity)) {
       $item_display = $vars['display_content'];
       if ($group_display == 'featured_4' && $key == 0) {
-        $item_display = 'card';
+        $item_display = 'provus_card';
       }
       elseif ($group_display == 'featured_4' && $key > 0) {
-        $item_display = 'card_left';
+        $item_display = 'provus_card_left';
       }
       if ($type == 'block') {
         $block_build['content'] = $view_builder->view($entity, 'default');
