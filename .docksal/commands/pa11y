@@ -1,7 +1,0 @@
-#!/usr/bin/env bash
-
-## Test pa11y 
-##
-## Usage: fin pa11y 
-
-fin dc exec pa11y pa11y-ci --config wcag2-config.json
