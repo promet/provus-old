@@ -57,3 +57,17 @@
   opacity: 0;
   display: none;
 }
+
+// Fixes for media library image display in lb modal.
+#drupal-off-canvas .media-library-item,
+#layout-builder-modal .media-library-item {
+  flex-grow: 0;
+}
+#drupal-off-canvas .media-library-item__preview,
+#layout-builder-modal .media-library-item__preview {
+  padding-bottom: 100%;
+}
+#drupal-off-canvas .media-library-item--grid .field--name-thumbnail img,
+#layout-builder-modal .media-library-item--grid .field--name-thumbnail img {
+  object-fit: cover;
+}
