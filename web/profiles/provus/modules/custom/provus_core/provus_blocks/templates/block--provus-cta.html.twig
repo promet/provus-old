@@ -37,6 +37,12 @@
   'block-' ~ 'cta'|clean_class,
 ]
 %}
+{%
+  set backgroundImage = ""
+%}
+{%
+  set backgroundImagePath = ""
+%}
 <div{{ attributes.addClass(classes) }}>
   {{ title_prefix }}
   {% if label %}
@@ -44,12 +50,19 @@
   {% endif %}
   {{ title_suffix }}
   {% block content %}
-    <div class="cta-wrapper">
-      {% if content.field_provus_show_icon.value == '1' %}
-        <div class="cta-icon">
-          <img src="/themes/custom/provus_bootstrap/images/provus-icon.png" alt="Provus logo icon" />
-        </div>
-      {% endif %}
+    {% if (file_url(content.field_provus_cta_background_img['#items'].entity.uri.value)) is not empty %}
+        {%
+          set backgroundImage = 'has-bg-image'
+        %}
+        {%
+          set backgroundImagePath = file_url(content.field_provus_cta_background_img['#items'].entity.uri.value)
+        %}
+        {% endif %}
+        <div class="cta-wrapper {{ backgroundImage }} {{ content.field_provus_cta_background_clr.0 }}">
+        {% if (file_url(content.field_provus_cta_background_img['#items'].entity.uri.value)) is not empty %}
+          <div class="cta-bg-image-container" style="background-image: url({{ backgroundImagePath }})"></div>
+        {% endif %}
+
       {% if content.field_provus_title|render %}
         <h2 class="cta-title">{{ content.field_provus_title }}</h2>
       {% endif %}

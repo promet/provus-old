@@ -1,0 +1,157 @@
+.block-provus-cta {
+  max-width: 100%;
+  flex: 0 0 100%;
+  height: auto;
+
+  .cta-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: rem-calc(32px 27);
+
+    @include media-breakpoint-up(md) {
+      padding: rem-calc(62 39 37);
+    }
+
+    &.Primary {
+      background-color: $primary-shade;
+
+      .cta-title,
+      .cta-body {
+        color: $white;
+      }
+
+      .cta-links {
+        a {
+          border-color: $white;
+          color: $white;
+        }
+      }
+    }
+    &.Secondary {
+      background-color: $secondary-shade;
+
+      .cta-links {
+        a {
+          color: $body-color;
+          border-color: $body-color;
+        }
+      }
+    }
+
+    .cta-title {
+      margin: rem-calc(0 0 24);
+      font-weight: 400;
+      font-size: rem-calc(24);
+      line-height: rem-calc(35);
+      background-color: transparent;
+
+      div.field {
+        background-color: transparent;
+      }
+
+      @include media-breakpoint-up(md) {
+        margin: rem-calc(0 0 30);
+        font-weight: 400;
+        font-size: rem-calc(28);
+        line-height: rem-calc(40);
+      }
+    }
+
+    .cta-body {
+      text-align: center;
+      font-weight: 400;
+      font-size: 1rem;
+      line-height: rem-calc(25);
+      margin-bottom: rem-calc(8);
+
+      @include media-breakpoint-up(md) {
+        margin-bottom: rem-calc(36);
+
+      }
+    }
+
+    .cta-links {
+      .field__item {
+        margin: 0;
+      }
+      a {
+        display: block;
+        border: solid 1px $body-color;
+        border-radius: $card-border-radius;
+        text-align: center;
+        font-family: $font-heading;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: rem-calc(23);
+        letter-spacing: 0.03em;
+        padding: rem-calc(12 24);
+        text-decoration: none;
+        transition: all 0.3s linear;
+
+        &:hover {
+          background-color: rgba(0, 0, 0, 0.3);
+          color: $white;
+        }
+
+        @include media-breakpoint-up(md) {
+          display: inline-block;
+        }
+      }
+    }
+    &.has-bg-image {
+      position: relative;
+
+      .cta-bg-image-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        z-index: 1;
+        opacity: 0;
+        transition: all 0.3s linear;
+
+        &:before {
+          content: "";
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(0deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45));
+        }
+      }
+
+      .cta-title,
+      .cta-body,
+      .cta-links {
+        z-index: 2;
+        position: relative;
+        transition: all 0.3s linear;
+      }
+      &:hover {
+        .cta-bg-image-container {
+          opacity: 1;
+        }
+
+        .cta-title,
+        .cta-body,
+        .cta-links {
+          color: $white;
+        }
+        .cta-links {
+          a {
+            color: $white;
+            border-color: $white;
+          }
+        }
+      }
+    }
+  }
+}
