@@ -93,6 +93,10 @@ function provus_blocks_theme() {
       'template' => 'block--provus-list-item',
       'base hook' => 'block'
     ],
+    'block__provus_cta' => [
+      'template' => 'block--provus-cta',
+      'base hook' => 'block'
+    ],
     'block__provus_card' => [
       'template' => 'block--provus-card',
       'base hook' => 'block'

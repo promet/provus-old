@@ -3,19 +3,40 @@ status: true
 dependencies:
   config:
     - block_content.type.provus_cta
+    - field.field.block_content.provus_cta.field_provus_cta_background_clr
+    - field.field.block_content.provus_cta.field_provus_cta_background_img
     - field.field.block_content.provus_cta.field_provus_body
     - field.field.block_content.provus_cta.field_provus_links
     - field.field.block_content.provus_cta.field_provus_sub_title
     - field.field.block_content.provus_cta.field_provus_title
-    - field.field.block_content.provus_cta.field_provus_show_icon
   module:
     - ala
+    - image
+    - options
     - text
 id: block_content.provus_cta.default
 targetEntityType: block_content
 bundle: provus_cta
 mode: default
 content:
+  field_provus_cta_background_clr:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_provus_cta_background_img:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 6
+    region: content
   field_provus_body:
     type: text_default
     label: hidden
@@ -54,17 +75,6 @@ content:
     third_party_settings: {  }
     weight: 1
     region: content
-  field_provus_show_icon:
-    type: boolean
-    label: hidden
-    settings:
-      format: default
-      format_custom_false: ''
-      format_custom_true: ''
-    third_party_settings: {  }
-    weight: 3
-    region: content
 hidden:
   entitygroupfield: true
-  langcode: true
   search_api_excerpt: true

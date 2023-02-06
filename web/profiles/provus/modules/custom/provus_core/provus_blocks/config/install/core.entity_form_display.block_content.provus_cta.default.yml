@@ -3,19 +3,36 @@ status: true
 dependencies:
   config:
     - block_content.type.provus_cta
+    - field.field.block_content.provus_cta.field_provus_cta_background_clr
+    - field.field.block_content.provus_cta.field_provus_cta_background_img
     - field.field.block_content.provus_cta.field_provus_body
     - field.field.block_content.provus_cta.field_provus_links
     - field.field.block_content.provus_cta.field_provus_sub_title
     - field.field.block_content.provus_cta.field_provus_title
-    - field.field.block_content.provus_cta.field_provus_show_icon
+    - image.style.thumbnail
   module:
     - ala
+    - image
     - text
 id: block_content.provus_cta.default
 targetEntityType: block_content
 bundle: provus_cta
 mode: default
 content:
+  field_provus_cta_background_clr:
+    type: options_select
+    weight: 26
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_provus_cta_background_img:
+    type: image_image
+    weight: 27
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
   field_provus_body:
     type: text_textarea_with_summary
     weight: 4
@@ -56,13 +73,6 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  field_provus_show_icon:
-    type: boolean_checkbox
-    weight: 1
-    region: content
-    settings:
-      display_label: true
-    third_party_settings: {  }
   info:
     type: string_textfield
     weight: 0
@@ -70,13 +80,6 @@ content:
     settings:
       size: 60
       placeholder: ''
-    third_party_settings: {  }
-  langcode:
-    type: language_select
-    weight: 2
-    region: content
-    settings:
-      include_locked: true
     third_party_settings: {  }
 hidden:
   entitygroupfield: true
