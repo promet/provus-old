@@ -63,11 +63,11 @@
           <div class="cta-bg-image-container" style="background-image: url({{ backgroundImagePath }})"></div>
         {% endif %}
 
-      {% if content.field_provus_title|render %}
-        <h2 class="cta-title">{{ content.field_provus_title }}</h2>
-      {% endif %}
       {% if content.field_provus_sub_title|render %}
         <h3 class="cta-sub-title">{{ content.field_provus_sub_title }}</h3>
+      {% endif %}
+      {% if content.field_provus_title|render %}
+        <h2 class="cta-title">{{ content.field_provus_title }}</h2>
       {% endif %}
       {% if content.field_provus_body|render %}
         <div class="cta-body">

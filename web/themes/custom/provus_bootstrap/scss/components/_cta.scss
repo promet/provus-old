@@ -18,6 +18,7 @@
       background-color: $primary-shade;
 
       .cta-title,
+      .cta-sub-title,
       .cta-body {
         color: $white;
       }
@@ -57,6 +58,13 @@
         font-size: rem-calc(28);
         line-height: rem-calc(40);
       }
+    }
+
+    .cta-sub-title {
+      text-align: center;
+      font-size: rem-calc(18);
+      line-height: rem-calc(21);
+      margin-bottom: 0;
     }
 
     .cta-body {
@@ -129,6 +137,7 @@
       }
 
       .cta-title,
+      .cta-sub-title,
       .cta-body,
       .cta-links {
         z-index: 2;
@@ -141,6 +150,7 @@
         }
 
         .cta-title,
+        .cta-sub-title,
         .cta-body,
         .cta-links {
           color: $white;
