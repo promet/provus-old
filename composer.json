@@ -68,7 +68,7 @@
         "drupal/config_snapshot": "^1.0@RC",
         "drupal/core-composer-scaffold": "^9.2",
         "drupal/core-recommended": "^9.2",
-        "drupal/date_recur": "3.2.x-dev@dev",
+        "drupal/date_recur": "^3.2",
         "drupal/date_recur_modular": "^3.0",
         "drupal/default_content": "^1.0@alpha",
         "drupal/devel": "^4.1",
@@ -81,6 +81,7 @@
         "drupal/focal_point": "^1.5",
         "drupal/fontawesome": "^2.22",
         "drupal/formtips": "^1.5",
+        "drupal/fullcalendar_view": "6.x-dev@dev",
         "drupal/geocoder": "^3.24",
         "drupal/geofield": "^1.36",
         "drupal/geofield_map": "^2.71",
@@ -176,9 +177,6 @@
             },
             "drupal/bootstrap_site_alert": {
                 "HTML markup shown as encoded characters [3281928]": "https://git.drupalcode.org/project/bootstrap_site_alert/-/merge_requests/5.diff"
-            },
-            "drupal/bootstrap_barrio": {
-                ".form-row still in use in scss [3311048]": "https://git.drupalcode.org/project/bootstrap_barrio/-/merge_requests/29.diff"
             }
         }
     },
@@ -191,7 +189,8 @@
             "oomphinc/composer-installers-extender": true,
             "zaporylie/composer-drupal-optimizations": true,
             "drupal/core-composer-scaffold": true,
-            "dealerdirect/phpcodesniffer-composer-installer": true
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "php-http/discovery": true
         }
     }
 }
