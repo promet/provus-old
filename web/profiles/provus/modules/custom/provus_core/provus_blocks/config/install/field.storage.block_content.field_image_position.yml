@@ -1,0 +1,27 @@
+uuid: c1c1de0c-f0ac-4cba-bbaf-790f1c4b7390
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - options
+id: block_content.field_image_position
+field_name: field_image_position
+entity_type: block_content
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: right
+      label: Right
+    -
+      value: left
+      label: Left
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

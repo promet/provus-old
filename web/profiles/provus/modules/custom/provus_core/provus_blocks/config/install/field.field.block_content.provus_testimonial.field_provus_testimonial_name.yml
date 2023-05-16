@@ -1,0 +1,19 @@
+uuid: e88d7682-4d6e-4c38-884b-bca2a65dea15
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.provus_testimonial
+    - field.storage.block_content.field_provus_testimonial_name
+id: block_content.provus_testimonial.field_provus_testimonial_name
+field_name: field_provus_testimonial_name
+entity_type: block_content
+bundle: provus_testimonial
+label: 'Testimonial name'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

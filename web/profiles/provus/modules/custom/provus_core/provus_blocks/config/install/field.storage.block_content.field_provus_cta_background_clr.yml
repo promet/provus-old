@@ -1,0 +1,27 @@
+uuid: 1d32f9b3-9340-4aaa-860d-c3716d6391a0
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - options
+id: block_content.field_provus_cta_background_clr
+field_name: field_provus_cta_background_clr
+entity_type: block_content
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: red
+      label: Red
+    -
+      value: beige
+      label: Beige
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

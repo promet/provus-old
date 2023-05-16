@@ -1,0 +1,21 @@
+uuid: 50e14ab8-9447-4954-92db-12ac4e98f74a
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+id: block_content.field_provus_testimonial_role
+field_name: field_provus_testimonial_role
+entity_type: block_content
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

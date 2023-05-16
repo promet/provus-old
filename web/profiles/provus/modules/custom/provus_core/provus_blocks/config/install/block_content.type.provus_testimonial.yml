@@ -1,0 +1,8 @@
+uuid: c6fc5011-43d7-4728-9e69-e88bf0f7364c
+langcode: en
+status: true
+dependencies: {  }
+id: provus_testimonial
+label: Testimonial
+revision: 0
+description: ''
