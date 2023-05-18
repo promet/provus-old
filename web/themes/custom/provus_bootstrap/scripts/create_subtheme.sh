@@ -3,15 +3,15 @@
 
 echo '
 +------------------------------------------------------------------------+
-| With this script you could quickly create a Provus 2.0 sub-theme       |
+| With this script you could quickly create provus sub-theme     |
 | In order to use this:                                                  |
-| - provus theme (this folder) should be in the custom folder            |
+| - provus_bootstrap theme (this folder) should be in the custom folder   |
 +------------------------------------------------------------------------+
 '
-echo 'The machine name of your custom theme? [e.g. CUSTOM_PROVUS]'
+echo 'The machine name of your custom theme? [e.g. provus_mytheme]'
 read CUSTOM_PROVUS
 
-echo 'Your theme name ? [e.g. My Custom Provus Site]'
+echo 'Your theme name ? [e.g. My custom provus site]'
 read CUSTOM_PROVUS_NAME
 
 if [[ ! -e ../../custom ]]; then
@@ -27,11 +27,13 @@ for file in config/*/*provus_bootstrap.*; do mv $file ${file//provus_bootstrap/$
 rm scripts/create_subtheme.sh
 
 # mv {_,}$CUSTOM_PROVUS.theme
-grep -Rl Provus .|xargs sed -i -e "s/provus_bootstrap/$CUSTOM_PROVUS/"
-sed -i -e "s/Provus Bootstrap/$CUSTOM_PROVUS_NAME/" $CUSTOM_PROVUS.info.yml
+grep -Rl provus_bootstrap .|xargs sed -i -e "s/provus_bootstrap/$CUSTOM_PROVUS/"
+sed -i -e "s/Provus starter theme/$CUSTOM_PROVUS_NAME/" $CUSTOM_PROVUS.info.yml
 echo "# Check the themes/custom folder for your new sub-theme."
 
 # Remove the originals
 cd ../$CUSTOM_PROVUS
 rm $CUSTOM_PROVUS.info.yml'-e'
+rm $CUSTOM_PROVUS.libraries.yml'-e'
+rm $CUSTOM_PROVUS.theme'-e'
 rm 'README'.txt'-e'
