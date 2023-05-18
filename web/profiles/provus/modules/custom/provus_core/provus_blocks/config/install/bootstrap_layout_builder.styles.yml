@@ -3,7 +3,7 @@ plugins:
     background_color:
       enabled: 1
     background_media:
-      enabled: 0
+      enabled: 1
   typography:
     text_color:
       enabled: 0
