@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200pt" height="1200pt" version="1.1" viewBox="0 0 1200 1200" xmlns="http://www.w3.org/2000/svg">
+ <g fill="#ffffff">
+  <path d="m378 318h96v96h-96z"/>
+  <path d="m558 348h264v36h-264z"/>
+  <path d="m378 474h96v96h-96z"/>
+  <path d="m558 504h264v36h-264z"/>
+  <path d="m378 630h96v96h-96z"/>
+  <path d="m558 660h264v36h-264z"/>
+  <path d="m378 786h96v96h-96z"/>
+  <path d="m558 816h264v36h-264z"/>
+  <path d="m915 144h-666v912h702v-912zm0 876h-630v-840h630z"/>
+ </g>
+</svg>

@@ -30,3 +30,39 @@ function provus_bootstrap_form_system_theme_settings_alter(&$form, FormStateInte
     'bg-transparent' => t('Transparent'),
   );
 }
+
+/**
+ * Override or insert variables into the html templates.
+ *
+ * @param array $variables
+ *   Variables to pass to the theme template.
+ */
+function provus_bootstrap_preprocess_html(array &$variables) {
+  $path = \Drupal::service('path.current')->getPath();
+  $path_args = explode('/', $path);
+  if (isset($path_args[1]) && isset($path_args[2]) && ($path_args[1] == 'node') && (is_numeric($path_args[2]))) {
+    $variables['attributes']['class'][] = 'page-node-' . $path_args[2];
+  }
+
+  // Add body class called "layout-builder-active" and load custom CSS file if
+  // layout builder is current page.
+  if (isset($path_args[1]) && isset($path_args[2]) && isset($path_args[3]) && ($path_args[1] == 'node') && (is_numeric($path_args[2])) && ($path_args[3] == 'layout')) {
+    $variables['attributes']['class'][] = 'layout-builder-active';
+  }
+}
+
+/**
+ * Implements template_preprocess_links().
+ */
+function provus_bootstrap_preprocess_links(&$vars) {
+  if (!empty($vars['links'])) {
+    foreach ($vars['links'] as &$link) {
+      if (!empty($link['link']['#options']['attributes']['class'])
+        && in_array('js-layout-builder-block-link', $link['link']['#options']['attributes']['class'])
+        && in_array('inline-block-list__item', $link['link']['#options']['attributes']['class'])
+        && !empty($link['link']['#title'])) {
+        $link['link']['#options']['attributes']['class'][] = 'block-type-' . str_replace(' ', '-', strtolower($link['link']['#title']));
+      }
+    }
+  }
+}

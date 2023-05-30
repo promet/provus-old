@@ -68,6 +68,7 @@ install:
   - twig_tweak
   - linkit
   - sitemap
+  - toastify
 
 # Required modules
 # Note that any dependencies of the modules listed here will be installed automatically.

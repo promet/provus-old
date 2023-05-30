@@ -1,0 +1,29 @@
+_core:
+  default_config_hash: qgAXw6Q0OB22ukeCttrV8iImzfz0l44Qh2K_4NwAzIo
+status:
+  duration: '0'
+  color: '#67b99a'
+  color2: '#14746f'
+  colorProgressBar: '#0d514d'
+  direction: 'to right'
+  gravity: top
+  positionLeft: false
+  close: true
+warning:
+  duration: '0'
+  color: '#ffaa00'
+  color2: '#ff6d00'
+  colorProgressBar: '#b24c00'
+  direction: 'to right'
+  gravity: top
+  positionLeft: false
+  close: true
+error:
+  duration: '0'
+  color: '#e01e37'
+  color2: '#a71e34'
+  colorProgressBar: '#741424'
+  direction: 'to right'
+  gravity: top
+  positionLeft: false
+  close: true

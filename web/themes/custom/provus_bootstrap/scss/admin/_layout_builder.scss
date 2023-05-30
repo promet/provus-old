@@ -8,10 +8,6 @@
   }
 }
 
-.ui-widget.ui-dialog.ui-dialog-off-canvas .ui-dialog-titlebar {
-  background: $gray-lightest !important;
-}
-
 .layout-builder-add-block {
   .table-striped > tbody > tr:nth-of-type(odd) > * {
     --bs-table-accent-bg: $white !important;
@@ -58,6 +54,46 @@
   display: none;
 }
 
+
+.media-library-widget-modal .media-library-item--grid .field--name-thumbnail img {
+  position: relative;
+}
+
+#layout-builder-modal .media-library-item--grid .field--name-thumbnail img {
+  position: relative;
+}
+
+.media-library-item .media-library-item__preview {
+  padding: 0;
+}
+
+#drupal-off-canvas .fieldgroup.blb_container_type .fieldset-wrapper > div > div .input-icon.container-extra:after, #layout-builder-modal .fieldgroup.blb_container_type .fieldset-wrapper > div > div .input-icon.container-extra:after {
+    width: 40%;
+}
+
+.layout-builder-block {
+  background: transparent;
+}
+
+#drupal-off-canvas .inline-block-create-button {
+  display: block;
+  width: auto;
+}
+
+#drupal-off-canvas .inline-block-list li {
+    width: calc(50% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+#drupal-off-canvas summary a {
+  color: #26A5FF !important;
+}
+
+#layout-builder-modal a.tabledrag-handle .handle {
+  background-size: auto !important;
+}
+
 // Fixes for media library image display in lb modal.
 #drupal-off-canvas .media-library-item,
 #layout-builder-modal .media-library-item {
@@ -70,4 +106,553 @@
 #drupal-off-canvas .media-library-item--grid .field--name-thumbnail img,
 #layout-builder-modal .media-library-item--grid .field--name-thumbnail img {
   object-fit: cover;
+}
+
+
+// =============================================================================
+// LAYOUT BUILDER
+// =============================================================================
+
+.layout-builder-active {
+
+  .hidden {
+    display: block;
+  }
+
+  // Show blocks hiddin by country.
+  [class*="hide-for-country"] {
+    display: block !important;
+  }
+
+  .region-content {
+    padding-top: 20px;
+
+    // Help block.
+    .block-help-block {
+      background: $gray;
+      border: 1px solid $gray-800;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 20px !important;
+      max-width: 1320px - (50 * 2) !important;
+      padding: 50px;
+
+      // Remove bottom margin from last element in the block.
+      *:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  // Layout builder wrapper.
+  .layout-builder {
+    position: relative;
+  }
+
+  // Layouts.
+  .layout-builder__layout {
+    margin-top: 0;
+
+    // Hover.
+    &:hover {
+
+      // Display "Add block" button.
+      .layout-builder__add-block {
+        opacity: 1;
+      }
+    }
+  }
+
+  // Section row.
+  .section-row {
+    position: relative;
+
+    // Two and three column.
+    &.l--two-column,
+    &.l--three-column {
+      .layout-builder__region {
+        position: relative;
+      }
+    }
+  }
+
+  // "Add block" section.
+  .layout-builder__add-block {
+    // @include horizontal-center;
+    bottom: 10px;
+    opacity: 0;
+    transition: opacity .3s ease;
+
+    // "Add" buttons.
+    .layout-builder__link--add,
+    .layout-builder__link--add:not(:focus) {
+      background: $primary-shade !important;
+      border-radius: $card-border-radius !important;
+      border: 1px solid transparent !important;
+      box-shadow: 0 2px 8px 0 rgba($black, .35) !important;
+      color: $white !important;
+      display: inline-block !important;
+      font-size: 16px !important;
+      margin: 0 auto !important;
+      line-height: 1 !important;
+      padding: 15px 25px !important;
+      transition: border-color .3s ease;
+      text-decoration: none;
+      width: auto;
+
+      // Hover and focus.
+      &:focus {
+        border-color: rgba($white, .75) !important;
+        text-decoration: underline;
+      }
+
+      &:hover {
+        background: $primary-dark !important;
+        text-decoration: underline;
+      }
+
+      // +
+      &:before {
+        content: "+";
+        font-weight: 700;
+        margin-left: -.25em;
+        padding-right: .25em;
+      }
+    }
+  }
+
+  .layout-builder__add-block {
+    padding: 0;
+    background: transparent;
+  }
+
+  .layout-builder {
+    padding: 0;
+    border: none;
+  }
+
+  .layout-builder__section {
+    position: relative;
+    margin: 0;
+    &:hover {
+      // Display "Add block" button.
+      .layout-builder__add-block {
+        opacity: 1;
+      }
+    }
+  }
+
+  .layout-builder-block {
+    background: transparent;
+  }
+
+  // "Add setion" section.
+  .layout-builder__add-section {
+    background: transparent;
+    display: block !important;
+    margin: -20px 0 0 0;
+    position: absolute;
+    right: 0;
+    width: auto;
+    z-index: 2;
+    outline: none;
+    padding: 0;
+
+    // "Add" buttons.
+    .layout-builder__link--add,
+    .layout-builder__link--add:not(:focus) {
+      background: $primary-shade !important;
+      border-radius: $card-border-radius !important;
+      border: 2px solid transparent !important;
+      box-shadow: 0 2px 8px 0 rgba($black, .35) !important;
+      color: $white !important;
+      display: inline-block !important;
+      font-size: 14px !important;
+      margin: 0 !important;
+      line-height: 1 !important;
+      padding: 10px 25px !important;
+      transition: border-color .3s ease;
+      margin: 0 auto;
+      width: auto;
+
+      &:focus {
+        border-color: rgba($white, .75) !important;
+        background: $primary-dark !important;
+        text-decoration: underline;
+      }
+
+      &:hover {
+        background: $primary-dark !important;
+        text-decoration: underline;
+      }
+
+
+      // +
+      &:before {
+        content: "+";
+        font-weight: 700;
+        margin-left: -.25em;
+        padding-right: .25em;
+      }
+    }
+  }
+
+  // Remove and configure.
+  .layout-builder__link--remove,
+  .layout-builder__link--configure {
+    opacity: 0;
+    transition: opacity .3s ease;
+    top: 50px;
+    z-index: 2;
+
+    &:after {
+      display: none;
+    }
+  }
+
+  // Remove.
+  .layout-builder__link--remove,
+  .layout-builder__link--remove:visited {
+    border: 2px solid transparent !important;
+    box-shadow: 0 2px 8px 0 rgba($black, .35) !important;
+    display: block !important;
+    height: 38px;
+    margin: 0 !important;
+    mask-image: none !important;
+    padding: 10px 15px !important;
+    text-indent: -999em;
+    transition: border-color .3s ease;
+    width: 38px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+
+    // Hover and focus.
+    &:focus {
+      border-color: rgba($white, .75) !important;
+    }
+  }
+
+  // Configure.
+  .layout-builder__link--configure,
+  .layout-builder__link--configure:visited {
+    background: $primary-shade !important;
+    border-radius: $card-border-radius !important;
+    border: 2px solid transparent !important;
+    box-shadow: 0 2px 8px 0 rgba($black, .35) !important;
+    color: $white !important;
+    display: block !important;
+    font-size: 14px !important;
+    font-weight: 700;
+    line-height: 1 !important;
+    margin: 0 !important;
+    padding: 10px 15px !important;
+    text-decoration: none;
+    transition: border-color .3s ease;
+    display: inline-block !important;
+    position: absolute;
+    top: 10px;
+    left: 55px;
+
+    // Hover and focus.
+    &:focus {
+      border-color: rgba($white, .75) !important;
+      text-decoration: underline;
+      background: $primary-dark !important;
+    }
+    &:hover {
+      text-decoration: underline;
+      background: $primary-dark !important;
+    }
+  }
+
+  // Section.
+  .layout-builder__section {
+
+    // Hover.
+    &:hover {
+
+      // "Remove" and "Cofigure" buttons.
+      .layout-builder__link--remove,
+      .layout-builder__link--configure {
+        opacity: 1;
+      }
+    }
+  }
+
+  .layout-builder__section:not(.gin-lb--disable-section-focus):hover:after {
+    border: 0 !important;
+    box-shadow: 0 2px 8px 0 rgba($black, .35);
+    outline: 2px solid $primary-shade;
+    z-index: 1;
+  }
+
+  // Markup block.
+  .c--markup-block-block {
+    min-height: 50px;
+  }
+}
+
+.layout .block:not(:first-child) {
+  margin: 0;
+}
+
+// Layout Builder form.
+.glb-toolbar .layout-builder-form {
+
+  // Make the submit button obvious when disabled by content_lock.
+  .form-submit {
+    &.is-disabled {
+      background-color: #8b0000 !important;
+      width: 80%;
+      height: 400px;
+    }
+  }
+}
+
+// Modal.
+#layout-builder-modal {
+
+  // Form item.
+  .form-item {
+    max-width: none;
+  }
+}
+
+// Discard changes page.
+.layout-builder-discard-changes {
+  // @include container;
+
+  // Buttons.
+  .form-actions {
+    .form-input-wrapper {
+      display: inline-block;
+    }
+
+    // "Cancel" button.
+    #edit-cancel {
+      // @include button--3;
+    }
+  }
+}
+
+// UI styles.
+.ui-dialog {
+  .layout-builder-remove-section .button,
+  .layout-builder-remove-section .button:not(:focus),
+  .layout-builder-remove-section .form-actions .button,
+  .layout-builder-remove-section .action-link--icon-trash.action-link  {
+    background-color: $white !important;
+    border-color: $black !important;
+    color: $black !important;
+  }
+
+  .layout-builder-remove-section .button:hover {
+    background-color: rgba($white, .8) !important;
+    color: $primary-shade !important;
+  }
+
+  .layout-builder-remove-section .button:focus {
+    background-color: $white !important;
+    box-shadow: 0 0 0 2px rgba($white, .2) !important;
+  }
+}
+
+#drupal-off-canvas li {
+  margin: 0;
+  .inline-block-list__item {
+    background-color: $white !important;
+    background-size: 50% !important;
+    background-repeat: no-repeat !important;
+    background-position: center 15px !important;
+    justify-content: flex-end;
+    border: 2px solid $primary-shade !important;
+    padding: 20px 15px !important;
+    color: $primary-shade !important;
+    font-weight: bold;
+    font-size: 16px;
+    padding-top: 35px !important;
+    height: 55px !important;
+    &.block-type-{
+      &accordion {
+        background-image: url('../images/components/accordion.svg') !important;
+      }
+      &basic-text {
+        background-image: url('../images/components/basic.svg') !important;
+      }
+      &button {
+        background-image: url('../images/components/button.svg') !important;
+      }
+      &card {
+        background-image: url('../images/components/card.svg') !important;
+      }
+      &cta {
+        background-image: url('../images/components/cta.svg') !important;
+      }
+      &divider-line {
+        background-image: url('../images/components/divider.svg') !important;
+      }
+      &files-list {
+        background-image: url('../images/components/files-list.svg') !important;
+      }
+      &group {
+        background-image: url('../images/components/group.svg') !important;
+      }
+      &group---automatic {
+        background-image: url('../images/components/group-auto.svg') !important;
+      }
+      &heading {
+        background-image: url('../images/components/heading.svg') !important;
+      }
+      &large-banner {
+        background-image: url('../images/components/banner.svg') !important;
+      }
+      &list {
+        background-image: url('../images/components/list.svg') !important;
+      }
+      &list-item {
+        display: none !important;
+      }
+      &media {
+        background-image: url('../images/components/media.svg') !important;
+      }
+      &short-banner {
+        background-image: url('../images/components/banner.svg') !important;
+      }
+      &stat-group {
+        background-image: url('../images/components/stat.svg') !important;
+      }
+      &stat-item {
+        display: none !important;
+      }
+      &tab-item {
+        display: none !important;
+      }
+      &tabs {
+        background-image: url('../images/components/tabs.svg') !important;
+      }
+      &testimonial {
+        background-image: url('../images/components/testimonial.svg') !important;
+      }
+    }
+    &:hover,
+    &:hover {
+      background-color: $primary-shade !important;
+      color: $white !important;
+      text-decoration: underline;
+      filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.3));
+      &.block-type-{
+        &accordion {
+          background-image: url('../images/components/accordion-white.svg') !important;
+        }
+        &basic-text {
+          background-image: url('../images/components/basic-white.svg') !important;
+        }
+        &button {
+          background-image: url('../images/components/button-white.svg') !important;
+        }
+        &card {
+          background-image: url('../images/components/card-white.svg') !important;
+        }
+        &cta {
+          background-image: url('../images/components/cta-white.svg') !important;
+        }
+        &divider-line {
+          background-image: url('../images/components/divider-white.svg') !important;
+        }
+        &files-list {
+          background-image: url('../images/components/files-list-white.svg') !important;
+        }
+        &group {
+          background-image: url('../images/components/group-white.svg') !important;
+        }
+        &group---automatic {
+          background-image: url('../images/components/group-auto-white.svg') !important;
+        }
+        &heading {
+          background-image: url('../images/components/heading-white.svg') !important;
+        }
+        &large-banner {
+          background-image: url('../images/components/banner-white.svg') !important;
+        }
+        &list {
+          background-image: url('../images/components/list-white.svg') !important;
+        }
+        &media {
+          background-image: url('../images/components/media-white.svg') !important;
+        }
+        &short-banner {
+          background-image: url('../images/components/banner-white.svg') !important;
+        }
+        &stat-group {
+          background-image: url('../images/components/stat-white.svg') !important;
+        }
+        &tabs {
+          background-image: url('../images/components/tabs-white.svg') !important;
+        }
+        &testimonial {
+          background-image: url('../images/components/testimonial-white.svg') !important;
+        }
+      }
+    }
+  }
+}
+
+.layout-builder__region {
+  border-radius: $card-border-radius;
+  padding: rem-calc(20);
+  outline: 1px dashed;
+}
+
+.toastify.on {
+  padding-right: rem-calc(50);
+  button {
+    top: rem-calc(12);
+  }
+}
+
+.layout-builder-active {
+  #drupal-off-canvas .inline-block-create-button {
+    background: $primary-shade !important;
+  }
+  .ui-resizable-handle.ui-resizable-w {
+    display: none !important;
+  }
+  .button--primary {
+    @extend .btn;
+    @extend .btn-primary;
+    border-radius: $card-border-radius !important;
+  }
+  #edit-discard-changes {
+    @extend .btn;
+    @extend .btn-secondary;
+    border-radius: $card-border-radius !important;
+  }
+  #edit-revert {
+    @extend .btn;
+    @extend .btn-outline-primary;
+    border-radius: $card-border-radius !important;
+  }
+  .ui-widget.ui-dialog.ui-dialog-off-canvas {
+    border-left: 1px solid $primary-shade !important;
+  }
+  .layout-builder__message {
+    display: none;
+  }
+  .layout .block:not(:first-child) {
+    margin-top: 0 !important;
+  }
+  .layout-builder-form .form-type-vertical-tabs {
+    display: none;
+  }
+  .ui-widget.ui-dialog.ui-dialog-off-canvas .ui-dialog-titlebar {
+    background: $primary-shade !important;
+    .ui-dialog-title {
+      color: $white !important;
+    }
+  }
+}
+
+#drupal-off-canvas .inline-block-list li {
+  margin-bottom: 0;
 }

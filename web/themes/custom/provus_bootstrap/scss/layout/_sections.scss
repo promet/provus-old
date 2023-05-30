@@ -1,13 +1,13 @@
 // Background Colors.
 .bg-primary {
-  background: $primary-shade;
+  background: #098ecd !important;
   color: $white;
   h1,h2,h3,h4,h5,h6 {
     color: $white;
   }
 }
 .bg-secondary {
-  background: $secondary-shade;
+  background: linear-gradient(90deg, $primary-shade, $primary-dark);
   color: $white;
   h1,h2,h3,h4,h5,h6 {
     color: $white;
@@ -15,7 +15,7 @@
 }
 .bg-gray,
 .bg-grey {
-  background: $gray-100;
+  background: $gray-100 !important;
 }
 
 .bg-white {

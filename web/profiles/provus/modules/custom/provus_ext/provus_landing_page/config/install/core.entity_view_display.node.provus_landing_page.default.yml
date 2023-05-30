@@ -49,6 +49,49 @@ third_party_settings:
         - 'bootstrap_layout_builder:blb_col_2'
         - 'bootstrap_layout_builder:blb_col_3'
         - 'bootstrap_layout_builder:blb_col_4'
+      denylisted_blocks: {  }
+      allowlisted_blocks:
+        'Custom block types':
+          - provus_accordion
+          - provus_basic_text
+          - provus_button
+          - provus_card
+          - provus_cta
+          - provus_divider_line
+          - provus_files_list
+          - provus_group
+          - provus_group_automatic
+          - provus_heading
+          - provus_large_banner
+          - provus_list
+          - provus_media
+          - provus_short_banner
+          - provus_stat_group
+          - provus_tabs
+          - provus_testimonial
+        'Inline blocks':
+          - 'inline_block:provus_accordion'
+          - 'inline_block:provus_basic_text'
+          - 'inline_block:provus_button'
+          - 'inline_block:provus_card'
+          - 'inline_block:provus_cta'
+          - 'inline_block:provus_divider_line'
+          - 'inline_block:provus_files_list'
+          - 'inline_block:provus_group'
+          - 'inline_block:provus_group_automatic'
+          - 'inline_block:provus_heading'
+          - 'inline_block:provus_large_banner'
+          - 'inline_block:provus_list'
+          - 'inline_block:provus_media'
+          - 'inline_block:provus_short_banner'
+          - 'inline_block:provus_stat_group'
+          - 'inline_block:provus_tabs'
+          - 'inline_block:provus_testimonial'
+      restricted_categories:
+        - 'Content fields'
+        - Help
+        - User
+        - core
       blacklisted_blocks:
         'Inline blocks':
           - 'inline_block:provus_faq_item'
@@ -56,11 +99,6 @@ third_party_settings:
           - 'inline_block:provus_stat_item'
           - 'inline_block:provus_tab_item'
       whitelisted_blocks: {  }
-      restricted_categories:
-        - 'Content fields'
-        - Help
-        - User
-        - core
 id: node.provus_landing_page.default
 targetEntityType: node
 bundle: provus_landing_page
