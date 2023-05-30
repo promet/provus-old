@@ -65,7 +65,6 @@ install:
   - gin_login
   - responsive_image
   - workflows
-  - formtips
   - twig_tweak
   - linkit
   - sitemap
