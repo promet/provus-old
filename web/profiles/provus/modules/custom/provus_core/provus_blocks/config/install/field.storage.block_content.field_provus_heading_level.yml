@@ -11,6 +11,9 @@ type: list_string
 settings:
   allowed_values:
     -
+      value: H1
+      label: H1
+    -
       value: H2
       label: H2
     -

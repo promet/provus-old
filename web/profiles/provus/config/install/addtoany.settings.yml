@@ -1,5 +1,3 @@
-_core:
-  default_config_hash: QUZHrnAKd4ixgLLVtD3JrrBMlwbmJ6VU-qKcOMDKatw
 buttons_size: 32
 additional_html: "<a href=\"#\" class=\"a2a_button_facebook\"><span class=\"a2a_label\">Share this on Facebook</span></a>\r\n<a href=\"#\" class=\"a2a_button_twitter\"><span class=\"a2a_label\">Share this on Twitter</span></a>\r\n<a href=\"#\" class=\"a2a_button_linkedin\"><span class=\"a2a_label\">Share this on LinkedIn</span></a>\r\n<a href=\"#\" class=\"a2a_button_email\"><span class=\"a2a_label\">Share this on Email</span></a>\r\n<a href=\"#\" class=\"a2a_button_print\"><span class=\"a2a_label\">Print this</span></a>"
 additional_css: ''

@@ -5,15 +5,34 @@
 
 $color-heading: $heading-color;
 
-@mixin heading-xl($font-family: $font-heading, $font-size: 2.875rem, $line-height: 3.625rem, $color: $color-heading, $color-link: inherit, $color-link-hover: inherit, $font-weight: 600, $margin: 0) {
+@mixin heading-xl($font-family: $font-heading, $font-size: $h1-font-size, $line-height: 5.5rem, $color: $color-heading, $color-link: inherit, $color-link-hover: inherit, $font-weight: 600, $margin: 0) {
   color: $color;
   font-family: $font-family;
   font-weight: $font-weight;
   font-style: normal;
   font-size: $font-size;
   line-height: $line-height;
-  margin: $margin;
-  margin-bottom: $font-size;
+  margin: 1rem $margin;
+  width: auto;
+  letter-spacing: -1.776px;
+
+  &__link {
+    color: $color-link;
+
+    &:hover {
+      color: $color-link-hover;
+    }
+  }
+}
+
+@mixin heading-large($font-family: $font-heading, $font-size: $h2-font-size, $line-height: 2.75rem, $color: $color-heading, $color-link: inherit, $color-link-hover: inherit, $font-weight: 500, $margin: 0) {
+  color: $color;
+  font-family: $font-family;
+  font-weight: $font-weight;
+  font-style: normal;
+  font-size: $font-size;
+  line-height: $line-height;
+  margin: 1rem $margin;
   width: auto;
 
   &__link {
@@ -25,15 +44,14 @@ $color-heading: $heading-color;
   }
 }
 
-@mixin heading-large($font-family: $font-heading, $font-size: 2rem, $line-height: 2.625rem, $color: $color-heading, $color-link: inherit, $color-link-hover: inherit, $font-weight: 600, $margin: 0) {
+@mixin heading-medium($font-family: $font-heading, $font-size: $h3-font-size, $line-height: 2rem, $color: $color-heading, $color-link: inherit, $color-link-hover: inherit, $font-weight: 600, $margin: 0) {
   color: $color;
   font-family: $font-family;
   font-weight: $font-weight;
   font-style: normal;
   font-size: $font-size;
   line-height: $line-height;
-  margin: $margin;
-  margin-bottom: $font-size;
+  margin: 1rem $margin;
   width: auto;
 
   &__link {
@@ -45,15 +63,14 @@ $color-heading: $heading-color;
   }
 }
 
-@mixin heading-medium($font-family: $font-heading, $font-size: 1.25rem, $line-height: 1.75rem, $color: $color-heading, $color-link: inherit, $color-link-hover: inherit, $font-weight: 600, $margin: 0) {
+@mixin heading-small($font-family: $font-heading, $font-size: $h4-font-size, $line-height: 1.75rem, $color: $color-heading, $color-link: inherit, $color-link-hover: inherit, $font-weight: 500, $margin: 0) {
   color: $color;
   font-family: $font-family;
   font-weight: $font-weight;
   font-style: normal;
   font-size: $font-size;
   line-height: $line-height;
-  margin: $margin;
-  margin-bottom: $font-size;
+  margin: 1rem $margin;
   width: auto;
 
   &__link {
@@ -65,27 +82,7 @@ $color-heading: $heading-color;
   }
 }
 
-@mixin heading-small($font-family: $font-heading, $font-size: 1rem, $line-height: 1.5rem, $color: $color-heading, $color-link: inherit, $color-link-hover: inherit, $font-weight: 600, $margin: 0) {
-  color: $color;
-  font-family: $font-family;
-  font-weight: $font-weight;
-  font-style: normal;
-  font-size: $font-size;
-  line-height: $line-height;
-  margin: $margin;
-  margin-bottom: $font-size;
-  width: auto;
-
-  &__link {
-    color: $color-link;
-
-    &:hover {
-      color: $color-link-hover;
-    }
-  }
-}
-
-@mixin heading-xs($font-family: $font-heading, $font-size: 1rem, $line-height: 1.5rem, $color: $color-heading, $color-link: inherit, $color-link-hover: inherit, $font-weight: 600, $margin: 0) {
+@mixin heading-xs($font-family: $font-heading, $font-size: $font-size-base, $line-height: 1.5rem, $color: $color-heading, $color-link: inherit, $color-link-hover: inherit, $font-weight: 600, $margin: 0) {
   color: $color;
   font-family: $font-family;
   font-weight: $font-weight;
@@ -177,17 +174,15 @@ a {
 .block-provus-heading {
   h2,h3,h4,h5,h6 {
     position: relative;
-    background: $white;
-    margin: rem-calc(60 0);
     div.field {
       position: relative;
-      background: $white;
       display: inline-block;
       z-index: 2;
     }
   }
   .line-on {
     h2,h3,h4,h5,h6 {
+      background: $white;
       &:before {
         width: 100%;
         height: rem-calc(2);
@@ -196,6 +191,9 @@ a {
         background: $accent-shade;
         z-index: 1;
         position: absolute;
+      }
+      div.field {
+        background: $white;
       }
     }
   }
@@ -243,9 +241,10 @@ a {
   }
   .subheading {
     font-weight: 600;
-    font-size: rem-calc(22);
-    line-height: rem-calc(31);
-    color: $body-color;
-    margin-top: rem-calc(-20);
+    font-size: rem-calc(11);
+    line-height: rem-calc(12);
+    text-transform: uppercase;
+    letter-spacing: 0.4em;
+    color: $secondary-shade;
   }
 }

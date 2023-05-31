@@ -1,9 +1,70 @@
 // Accordions styles.
-.accordion-button:not(.collapsed) {
-  background: $primary-shade;
-  color: $white;
-}
-
-.accordion-button:not(.collapsed)::after {
-  filter: brightness(0) invert(1);
+.accordion-item {
+  border: none;
+  border-radius: 0;
+  .accordion-header {
+    margin: 0;
+    display: flex;
+    background: $white;
+    &::before {
+      content:'';
+      width: rem-calc(13);
+    }
+    &:hover {
+      background: $primary-light-hover;
+      &::before {
+        background: $primary-light;
+      }
+    }
+    .accordion-button {
+      border-radius: 0;
+      font-size: rem-calc(18);
+      line-height: rem-calc(28);
+      color: $text-primary;
+      font-weight: 500;
+      align-items: flex-start;
+      background: transparent;
+      padding: rem-calc(26 22);
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid $border-color;
+      &::after {
+        display: none;
+      }
+      .open-close {
+        color: $primary-light;
+        font-size: rem-calc(24);
+        margin-right: rem-calc(16);
+      }
+      &.collapsed {
+        border-radius: 0;
+        .fa-minus {
+          display: none;
+        }
+        .fa-plus {
+          display: block;
+        }
+      }
+      &:not(.collapsed) {
+        color: $text-primary;
+        border-bottom: none;
+        box-shadow: none;
+        .fa-minus {
+          display: block;
+        }
+        .fa-plus {
+          display: none;
+        }
+        .open-close {
+          margin-right: rem-calc(54);
+        }
+      }
+    }
+  }
+  .accordion-collapse {
+    padding: rem-calc(20 170 20 110);
+    @include media-breakpoint-down(md) {
+      padding: rem-calc(20 36 20 36);
+    }
+  }
 }

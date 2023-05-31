@@ -1,21 +1,10 @@
 // Background Colors.
 .bg-primary {
-  background: #098ecd !important;
-  color: $white;
-  h1,h2,h3,h4,h5,h6 {
-    color: $white;
-  }
-}
-.bg-secondary {
-  background: linear-gradient(90deg, $primary-shade, $primary-dark);
-  color: $white;
-  h1,h2,h3,h4,h5,h6 {
-    color: $white;
-  }
+  background-color: $primary-background !important;
 }
 .bg-gray,
 .bg-grey {
-  background: $gray-100 !important;
+  background: $gray-100;
 }
 
 .bg-white {
@@ -30,11 +19,6 @@
   &.no-margin {
     margin: 0;
   }
-  .block {
-    &:not(:first-child) {
-      margin-top: rem-calc(80);
-    }
-  }
 }
 [class^="bg-"] {
   padding: rem-calc(80 0);
@@ -43,5 +27,93 @@
   }
   .layout {
     margin: 0;
+  }
+}
+
+.background-local-video {
+  height: rem-calc(540) !important;
+  h1, h2, h3, h4, h5, h6, p, .subheading {
+    color: $white;
+    text-shadow: 0 0 rem-calc(8) $black, 0 0 rem-calc(20) $black;
+    text-align: center;
+  }
+  .video-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  // Special processing for search form inside a background video section.
+  .search-block-form {
+    form {
+      .form-actions {
+        display: none;
+      }
+    }
+  }
+}
+
+.section-background-image {
+  min-height: rem-calc(350);
+  padding: rem-calc(100 0);
+  h1, h2, h3, h4, h5, h6, p, .subheading {
+    color: $white;
+    text-shadow: 0 0 rem-calc(8) $black, 0 0 rem-calc(20) $black;
+    text-align: center;
+  }
+}
+
+// Special processing for list of icon cards.
+.section-overlap-icon-list {
+  position: relative;
+  margin-top: rem-calc(-80);
+  z-index: 1;
+  .block-provus-list {
+    display: flex;
+    justify-content: center;
+    .column-row {
+      .row {
+        gap: rem-calc(2);
+        > div {
+          width: 100%;
+          height: rem-calc(160);
+          padding: 0;
+          background: $white;
+          box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.08), 0px 0px 2px rgba(0, 0, 0, 0.04);
+          > div {
+            height: 100%;
+            a {
+              display: block;
+              height: 100%;
+              text-decoration: none;
+              color: $primary-shade;
+              .list {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0;
+                gap: rem-calc(20);
+                height: 100%;
+                .list-icon {
+                  font-size: rem-calc(36);
+                  background: transparent;
+                }
+                .list-text {
+                  font-size: rem-calc(16);
+                  line-height: rem-calc(24);
+                  text-transform: uppercase;
+                }
+              }
+              &:hover {
+                background: $primary-medium;
+                color: $white;
+              }
+            }
+          }
+          @include media-breakpoint-up(lg) {
+            width: rem-calc(194);
+          }
+        }
+      }
+    }
   }
 }

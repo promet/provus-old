@@ -1,8 +1,56 @@
 footer.site-footer {
-  background-color: $black;
+  background-color: $primary-background;
   padding: rem-calc(60 0);
-  color: $white;
-  a, h2, h3, h4, h5, h6 {
-    color: $white;
+  color: $text-primary;
+  font-size: rem-calc(14);
+  h2 {
+    @include heading-small;
+  }
+  a.nav-link {
+    color: $text-primary;
+    padding: 0;
+  }
+  a.navbar-brand {
+    margin-bottom: rem-calc(24);
+  }
+  .site-footer__top {
+    ul.nav {
+      display: block;
+      li {
+        margin-bottom: rem-calc(12);
+      }
+    }
+    .region-footer-first {
+      ul.nav {
+        display: flex;
+        gap: rem-calc(24);
+      }
+    }
+  }
+  .site-footer__bottom {
+    border-top: 1px solid $hr-color;
+    padding-top: rem-calc(32);
+    margin-top: rem-calc(64);
+    section {
+      justify-content: space-between;
+      > * {
+        width: auto;
+      }
+    }
+    ul.nav {
+      gap: rem-calc(32);
+    }
+  }
+  .block-provus-button {
+    .field--name-field-provus-links {
+      display: flex;
+      gap: rem-calc(30);
+      a {
+        color: $text-primary;
+        &:hover {
+          color: $primary-shade;
+        }
+      }
+    }
   }
 }

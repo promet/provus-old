@@ -1,0 +1,24 @@
+.node--view-mode-full {
+  &.node--type-provus-blog, &.node--type-provus-news, &.node--type-provus-event {
+    margin-bottom: rem-calc(48);
+  }
+  &.node--type-provus-blog, &.node--type-provus-news {
+    .field--name-field-provus-publish-date {
+      margin: rem-calc(16 0);
+      font-weight: 600;
+    }
+    .addtoany_list > a:first-child {
+      padding-left: 0;
+    }
+  }
+}
+
+body.node--type-provus-blog, body.node--type-provus-news {
+  main.main-content {
+    @include media-breakpoint-up(md) {
+      margin-left: 8.33333%;
+      width: 83.33333%;
+      max-width: 83.33333%;
+    }
+  }
+}

@@ -99,7 +99,7 @@
           {% endif %}
             {{ page.header }}
             {% if page.primary_menu or page.header_form %}
-              <button class="navbar-toggler collapsed" type="button" data-bs-toggle="{{ navbar_collapse_btn_data }}" data-bs-target="#CollapsingNavbar" aria-controls="CollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"><span class="fas fa-bars"></span></span></button>
+              <button class="navbar-toggler collapsed" type="button" data-bs-toggle="{{ navbar_collapse_btn_data }}" data-bs-target="#CollapsingNavbar" aria-controls="CollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
               <div class="{{ navbar_collapse_class }}" id="CollapsingNavbar">
                 {% if navbar_offcanvas %}
                   <div class="offcanvas-header">
@@ -113,7 +113,7 @@
                     <div class="collapse position-absolute" id="searchCollapse">
                       {{ page.header_form }}
                     </div>
-                    <a class="nav-link" data-bs-toggle="collapse" href="#searchCollapse" role="button" aria-expanded="false" aria-controls="searchCollapse">
+                    <a class="nav-link" title="Toggle Search Bar" data-bs-toggle="collapse" href="#searchCollapse" role="button" aria-expanded="false" aria-controls="searchCollapse">
                       <span class="fas fa-search"></span>
                       <span class="fas fa-times"></span>
                     </a>
@@ -152,11 +152,20 @@
     <div id="main-wrapper" class="layout-main-wrapper clearfix">
       {% block content %}
         <div id="main">
-          {{ page.breadcrumb }}
+          {% if page.breadcrumb %}
+            <div class="container">
+              {{ page.breadcrumb }}
+            </div>
+          {% endif %}
           <div class="row row-offcanvas row-offcanvas-left clearfix">
               <main{{ content_attributes }}>
                 <section class="section">
                   <a id="main-content" tabindex="-1"></a>
+                  {% if page.title %}
+                    <div class="title-container container">
+                      {{ page.title }}
+                    </div>
+                  {% endif %}
                   {{ page.content }}
                 </section>
               </main>
@@ -192,16 +201,16 @@
         <div class="{{ container }}">
           {% if page.footer_first or page.footer_second or page.footer_third or page.footer_fourth %}
             <div class="site-footer__top row clearfix">
-              <div class="col-sm-3">
+              <div class="col-sm-6 col-md-4">
                 {{ page.footer_first }}
               </div>
-              <div class="col-sm-3">
+              <div class="col-sm-2 offset-md-1">
                 {{ page.footer_second }}
               </div>
-              <div class="col-sm-3">
+              <div class="col-sm-2">
                 {{ page.footer_third }}
               </div>
-              <div class="col-sm-3">
+              <div class="col-sm-2">
                 {{ page.footer_fourth }}
               </div>
             </div>

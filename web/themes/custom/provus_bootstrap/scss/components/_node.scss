@@ -1,0 +1,13 @@
+/* Node */
+.node__content {
+  margin-top: 0;
+}
+.exclude-node-title {
+  .block-page-title-block {
+    display: none;
+  }
+}
+.node .field--type-image {
+  float: none;
+  margin: 0;
+}

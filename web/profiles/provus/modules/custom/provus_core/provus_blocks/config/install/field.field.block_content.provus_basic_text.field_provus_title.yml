@@ -4,7 +4,7 @@ dependencies:
   config:
     - block_content.type.provus_basic_text
     - field.storage.block_content.field_provus_title
-id: block_content.basic_text.field_provus_title
+id: block_content.provus_basic_text.field_provus_title
 field_name: field_provus_title
 entity_type: block_content
 bundle: provus_basic_text

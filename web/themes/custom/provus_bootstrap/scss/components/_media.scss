@@ -1,0 +1,9 @@
+/* Media */
+.block-provus-media {
+  margin-top: rem-calc(32);
+  margin-bottom: rem-calc(32);
+  @include media-breakpoint-up(lg) {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}

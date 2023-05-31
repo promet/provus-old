@@ -48,3 +48,62 @@
     }
   }
 }
+
+/* Carousel 2 Item 1 Rotate */
+.carousel-2-item-1-rotate {
+  position: relative;
+  .carousel-inner {
+    padding: 0;
+  }
+}
+.carousel-2-item-1-rotate-wrapper {
+  .carousel-controls {
+    margin-top: rem-calc(32);
+    display: flex;
+    justify-content: flex-end;
+
+    .carousel-control-prev,
+    .carousel-control-next {
+      position: relative;
+      width: 40px;
+      justify-content: center;
+      cursor: pointer;
+
+      span, svg, .fa {
+        font-size: rem-calc(30);
+        color: $black;
+      }
+    }
+  }
+  .lightSlider {
+    overflow: visible;
+    > div {
+      padding: 0;
+    }
+  }
+  .lSSlideOuter {
+    .lSPager.lSpg {
+      li {
+        padding: 0;
+        &::before {
+          display: none !important;
+        }
+      }
+      li > a {
+        width: 9px;
+        height: 9px;
+        border: 1px solid $primary-shade;
+        background: transparent;
+        border-radius: 100%;
+        box-sizing: content-box;
+        margin-right: 3px;
+        margin-left: 3px;
+      }
+      li:hover a,
+      li.active > a {
+        border: 1px solid $secondary-shade;
+        background: $secondary-shade;
+      }
+    }
+  }
+}

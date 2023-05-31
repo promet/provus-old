@@ -37,17 +37,17 @@
   ]
 %}
 <div{{ attributes.addClass(classes) }}>
-  <div class="header-align-{{ content.field_provus_alignment.0 }} line-{{ content.field_provus_decorative_line[0]['#markup']|lower|striptags }}">
+  <div class="header-align-{{ alignment }} line-{{ decorative_line }}">
     {{ title_prefix }}
     {% if label %}
       <h2{{ title_attributes }}>{{ label }}</h2>
     {% endif %}
     {{ title_suffix }}
     {% block content %}
-      <{{ content.field_provus_heading_level[0]['#markup'] }} class="title">{{ content.field_provus_title }}</{{ content.field_provus_heading_level[0]['#markup'] }}>
       <div class="subheading">
         {{ content.field_provus_sub_title }}
       </div>
+      <{{ content.field_provus_heading_level[0]['#markup'] }} class="title">{{ content.field_provus_title }}</{{ content.field_provus_heading_level[0]['#markup'] }}>
     {% endblock %}
   </div>
 </div>

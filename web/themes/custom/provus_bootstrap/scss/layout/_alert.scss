@@ -5,3 +5,162 @@
     border-radius: 0;
   }
 }
+.bs-site-alert {
+  display: flex;
+  align-items: center;
+  gap: rem-calc(16);
+  padding: rem-calc(14 32 14 14);
+  margin-top: rem-calc(16);
+  margin-bottom: rem-calc(16);
+  > * {
+    margin: 0;
+  }
+  &.alert-primary {
+    color: $white;
+    background-color: $primary-shade;
+    border-color: $primary-shade;
+    &::before {
+      color: $white;
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      font-size: rem-calc(20);
+      content: "\f05a";
+      background: none;
+    }
+    p, h2, h3, h4, h5, h6 {
+      color: $white;
+    }
+  }
+  &.alert-secondary {
+    color: $white;
+    background-color: $secondary-shade;
+    border-color: $secondary-shade;
+    &::before {
+      color: $white;
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      font-size: rem-calc(20);
+      content: "\f05a";
+      background: none;
+    }
+    p, h2, h3, h4, h5, h6 {
+      color: $white;
+    }
+  }
+  &.alert-success {
+    color: $white;
+    background-color: #148500;
+    border-color: #148500;
+    &::before {
+      color: $white;
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      font-size: rem-calc(20);
+      content: "\f14a";
+      background: none;
+    }
+    p, h2, h3, h4, h5, h6 {
+      color: $white;
+    }
+  }
+  &.alert-danger {
+    color: $white;
+    background-color: #de0700;
+    border-color: #de0700;
+    &::before {
+      color: $white;
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      font-size: rem-calc(20);
+      content: "\f071";
+      background: none;
+    }
+    p, h2, h3, h4, h5, h6 {
+      color: $white;
+    }
+  }
+  &.alert-warning {
+    color: $text-primary;
+    background-color: #fff3cd;
+    border-color: #fff3cd;
+    &::before {
+      color: $text-primary;
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      font-size: rem-calc(20);
+      content: "\f071";
+      background: none;
+    }
+    p, h2, h3, h4, h5, h6 {
+      color: $text-primary;
+    }
+  }
+  &.alert-info {
+    color: $text-primary;
+    background-color: $gray-lightest;
+    border-color: $gray-lightest;
+    &::before {
+      color: $text-primary;
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      font-size: rem-calc(20);
+      content: "\f05a";
+      background: none;
+    }
+    p, h2, h3, h4, h5, h6 {
+      color: $text-primary;
+    }
+  }
+  &.alert-light {
+    color: $text-primary;
+    background-color: $white;
+    border-color: $white;
+    &::before {
+      color: $text-primary;
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      font-size: rem-calc(20);
+      content: "\f05a";
+      background: none;
+    }
+    p, h2, h3, h4, h5, h6 {
+      color: $text-primary;
+    }
+  }
+  &.alert-dark {
+    color: $white;
+    background-color: $text-primary;
+    border-color: $text-primary;
+    &::before {
+      color: $white;
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      font-size: rem-calc(20);
+      content: "\f05a";
+      background: none;
+    }
+    p, h2, h3, h4, h5, h6 {
+      color: $white;
+    }
+  }
+  &.alert-dismissible {
+    .btn-close {
+      background: none;
+      opacity: 1;
+      padding: rem-calc(0 8);
+      height: 100%;
+      &::before {
+        color: $white;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-size: 14px;
+        content: "\f00d";
+      }
+    }
+    &.alert-warning, &.alert-light, &.alert-info {
+      .btn-close::before {
+        color: $text-primary;
+      }
+    }
+  }
+}

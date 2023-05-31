@@ -2,30 +2,53 @@
   .list-style {
     &.icon-left {
       .list {
-        display: flex;
         align-items: center;
         margin-bottom: rem-calc(18);
-        &-icon {
-          width: rem-calc(54);
-          height: rem-calc(54);
-          background: $white;
-          border-radius: 50%;
-          overflow: hidden;
-          display: flex;
-          align-content: center;
-          justify-content: center;
-          align-items: center;
-          span {
-            color: $primary-shade;
-          }
-        }
         &-text {
           padding-left: rem-calc(18);
-          font-weight: 600;
-          font-size: rem-calc(18);
-          line-height: rem-calc(32);
-          letter-spacing: rem-calc(1);
         }
+      }
+    }
+    &.icon-top {
+      .list {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+    &.column-row {
+      .row {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        @include media-breakpoint-up(lg) {
+          flex-wrap: nowrap;
+        }
+        > div {
+          width: auto;
+        }
+      }
+    }
+    .list {
+      display: flex;
+      margin-bottom: rem-calc(18);
+      &-icon {
+        width: rem-calc(54);
+        height: rem-calc(54);
+        background: $white;
+        border-radius: 50%;
+        overflow: hidden;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        span {
+          color: $primary-shade;
+        }
+      }
+      &-text {
+        font-weight: 600;
+        font-size: rem-calc(18);
+        line-height: rem-calc(32);
+        letter-spacing: rem-calc(1);
       }
     }
   }

@@ -12,11 +12,11 @@
 
       // Custom code here
       $('#searchCollapse').on('shown.bs.collapse', function () {
-        $('#edit-keys').focus()
+        $('#searchCollapse .form-search').focus()
       });
 
       $('#searchCollapse').on('hidden.bs.collapse', function () {
-        $('#edit-keys').blur();
+        $('#searchCollapse .form-search').blur();
       });
     }
   }

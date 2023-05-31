@@ -19,6 +19,9 @@ settings:
     -
       value: grid_3
       label: 'Grid 3'
+    -
+      value: column-row
+      label: 'Column Row'
   allowed_values_function: ''
 module: options
 locked: false

@@ -67,3 +67,4 @@ content:
     region: content
 hidden:
   field_item_display: true
+  field_provus_item_display: true

@@ -5,7 +5,7 @@ dependencies:
     - block_content.type.provus_card
     - field.storage.block_content.field_provus_media_image
     - media.type.image
-id: block_content.provus_card.fieldprovus__media_image
+id: block_content.provus_card.field_provus_media_image
 field_name: field_provus_media_image
 entity_type: block_content
 bundle: provus_card

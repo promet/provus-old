@@ -7,16 +7,31 @@
 
 // Top nav provus styles
 #navbar-top {
-  background: $gray-lightest;
+  background: $primary-medium;
   padding: .5rem 1rem;
+  > .container {
+    justify-content: flex-end;
+  }
   .nav-link {
-    color: $primary-shade;
+    color: $text-contrast;
     font-size: rem-calc(14);
     text-decoration: none;
     &:hover,
     &:focus {
-      color: $secondary-shade;
+      color: $text-contrast;
       text-decoration: underline;
+    }
+  }
+  .block-provus-button {
+    .field--name-field-provus-links {
+      display: flex;
+      gap: rem-calc(30);
+      a {
+        color: $white;
+        &:hover {
+          color: $primary-light;
+        }
+      }
     }
   }
 }
@@ -25,17 +40,17 @@
 #searchCollapse {
   right: rem-calc(35);
   width: rem-calc(460);
-  top: rem-calc(-6);
+  top: rem-calc(-14);
   background: $white;
-  .form-search {
+  @include media-breakpoint-down(lg) {
     width: rem-calc(300);
-    padding: rem-calc(11);
   }
 }
 .navbar-form {
   position: relative;
+  display: flex;
   .nav-link {
-    color: $primary-shade;
+    color: $primary-medium;
     position: relative;
     z-index: 99;
     width: rem-calc(50);
@@ -49,6 +64,13 @@
       .fa-magnifying-glass {
         display: none;
       }
+    }
+  }
+  @include media-breakpoint-down(lg) {
+    height: 40px;
+    a[aria-expanded="false"] {
+      width: 100%;
+      text-align: center;
     }
   }
 }

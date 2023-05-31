@@ -37,6 +37,9 @@
 ]
 %}
 <div{{ attributes.addClass(classes) }}>
+  {% if content.field_provus_link[0]['#url'] %}
+    <a href="{{ content.field_provus_link[0]['#url'] }}">
+  {% endif %}
   {{ title_prefix }}
   {% if label %}
     <h2{{ title_attributes }}>{{ label }}</h2>
@@ -48,14 +51,11 @@
         {{ content.field_provus_icon }}
       </div>
       <div class="list-text">
-        {% if content.field_provus_link[0]['#url'] %}
-          <a href="{{ content.field_provus_link[0]['#url'] }}">
-        {% endif %}
-          {{ content.field_provus_list_text.0 }}
-        {% if content.field_provus_link[0]['#url'] %}
-          </a>
-        {% endif %}
+        {{ content.field_provus_list_text.0 }}
       </div>
     </div>
   {% endblock %}
+  {% if content.field_provus_link[0]['#url'] %}
+    </a>
+  {% endif %}
 </div>

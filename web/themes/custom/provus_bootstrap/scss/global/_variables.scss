@@ -1,20 +1,31 @@
 /* VARIABLES */
 
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Inter:100,200,300,400,500,600,700,800,900&display=swap');
 
 // Body Font Family
-$font-body: 'Lato', sans-serif;
+$font-body: 'Inter', sans-serif;
 
 // Heading Font Family
-$font-heading: 'Montserrat', sans-serif;
+$font-heading: 'Inter', sans-serif;
 
 // Primary Color
-$primary-shade: #31227C;
+$primary-shade: #2563EB;
+
+// Primary Light Color
+$primary-light: #3B82F6;
+
+// Primary Light Hover Color
+$primary-light-hover: #3B82F610;
+
+// Primary Medium Color
+$primary-medium: #293E7A;
+
+// Primary Background Color
+$primary-background: #EFF6FF;
 
 // Secondary Color
-$secondary-shade: #DA3807;
+$secondary-shade: #007b92;
 
 // Accent/Tertiary color
 $accent-shade: #FD5809;
@@ -38,10 +49,24 @@ $card-border-color: #ddd;
 $body-bg: #fff;
 
 // Main Text Color
-$body-color: #343a40;
+$body-color: #2C2E30;
+
+// Text Primary Color
+$text-primary: #2C2E30;
+
+// Text Secondary Color
+$text-secondary: #646F79;
+
+// Text Contrast Color
+$text-contrast: #FFFFFF;
+
+// HR Color
+$hr-color: #2C2E30;
+
+// Border Color
+$border-color: #C2D1D9;
 
 // Main Colors (Light & Dark)
-$primary-light: lighten($primary-shade, 37%);
 $primary-dark: darken($primary-shade, 12%);
 $secondary-light: lighten($secondary-shade, 37%);
 $secondary-dark: darken($secondary-shade, 12%);
@@ -89,11 +114,11 @@ $font-weight-normal: normal;
 $font-weight-bold: bold;
 $font-weight-base: $font-weight-normal;
 $line-height-base: 1.5;
-$h1-font-size: $font-size-base * 2.5;
-$h2-font-size: $font-size-base * 2;
-$h3-font-size: $font-size-base * 1.75;
-$h4-font-size: $font-size-base * 1.5;
-$h5-font-size: $font-size-base * 1.25;
+$h1-font-size: $font-size-base * 5;
+$h2-font-size: $font-size-base * 2.25;
+$h3-font-size: $font-size-base * 1.5;
+$h4-font-size: $font-size-base * 1.125;
+$h5-font-size: $font-size-base;
 $h6-font-size: $font-size-base;
 
 // Comments

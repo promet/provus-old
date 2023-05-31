@@ -200,6 +200,7 @@ function provus_blocks_theme() {
        _provus_preprocess_blocks($vars, $block, 'field_provus_list_items');
        // Get list orientation display.
        $group_display = $block->get('field_provus_list_orientation')->value;
+       $vars['group_display'] = $group_display;
        $display_type = explode('_', $group_display);
        $vars['group_number'] = !empty($display_type[1]) ? $display_type[1] : NULL;
      }

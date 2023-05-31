@@ -15,6 +15,23 @@ targetEntityType: block_content
 bundle: provus_heading
 mode: default
 content:
+  field_provus_alignment:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_provus_decorative_line:
+    type: boolean
+    label: hidden
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 4
+    region: content
   field_provus_heading_level:
     type: list_default
     label: hidden
@@ -38,6 +55,4 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
-hidden:
-  field_provus_alignment: true
-  field_provus_decorative_line: true
+hidden: {  }

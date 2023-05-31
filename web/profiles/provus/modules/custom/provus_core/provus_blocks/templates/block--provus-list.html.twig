@@ -45,7 +45,7 @@
   {{ title_suffix }}
   {% block content %}
   <div class="list-wrapper">
-    <div class="list-style {{ content.field_provus_list_style.0 }}">
+    <div class="list-style {{ content.field_provus_list_style.0 }} {{ group_display }}">
       <div{{ content_attributes.addClass(rowclass) }}>
         {% for block in blocks %}
           <div class="{% if group_number is not null %}col{% endif %}">

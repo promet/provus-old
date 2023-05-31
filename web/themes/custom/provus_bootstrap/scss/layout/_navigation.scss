@@ -1,11 +1,12 @@
 // Main Navigation
 #navbar-main .navbar-nav {
+  margin-top: rem-calc(20);
+  gap: rem-calc(20);
   .nav-item {
-    padding: rem-calc(0 28);
     .nav-link {
-      color: $primary-shade;
-      font-size: 0.875rem;
-      line-height: 1.0625rem;
+      color: $primary-medium;
+      font-size: rem-calc(15);
+      line-height: rem-calc(22);
       padding: 0;
       text-transform: uppercase;
       text-decoration: none;
@@ -14,9 +15,13 @@
       &:hover,
       &:focus {
         text-decoration: underline;
-        color: $secondary-shade;
+        color: $primary-shade;
         background: none;
       }
     }
+  }
+  @include media-breakpoint-up(lg) {
+    margin-top: 0;
+    gap: rem-calc(40);
   }
 }

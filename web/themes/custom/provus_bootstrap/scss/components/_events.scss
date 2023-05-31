@@ -1,5 +1,6 @@
 .mini-date {
   display: flex;
+  align-items: center;
   margin-bottom: rem-calc(32);
   &-left {
     background: $white;
@@ -7,11 +8,12 @@
     padding: rem-calc(36 40 32 40);
     position: relative;
     margin-right: rem-calc(26);
-    border-radius: rem-calc(12);
+    border-radius: $card-border-radius;
     border: 1px solid $card-border-color;
     width: rem-calc(128);
     min-width: rem-calc(128);
     text-align: center;
+    height: 140px;
     &:before {
       content: '';
       position: absolute;
@@ -19,7 +21,7 @@
       top: 0;
       height: 1rem;
       width: 100%;
-      background: $primary-shade;
+      background: $secondary-shade;
     }
     .mini-date {
       &-top {
@@ -44,9 +46,10 @@
     .mini-date {
       &-title {
         h3 {
-          margin-bottom: rem-calc(16);
+          margin-top: 0;
+          margin-bottom: rem-calc(8);
           a {
-            color: $heading-color;
+            color: $text-primary;
             text-decoration: none;
             &:hover,
             &:focus {
@@ -57,8 +60,22 @@
         }
       }
       &-fulldate {
-        font-size: rem-calc(18);
+        font-size: rem-calc(14);
         line-height: rem-calc(23);
+        color: $text-secondary;
+        &::before {
+          color: $secondary-shade;
+          font-family: "Font Awesome 5 Free";
+          font-weight: 900;
+          font-size: rem-calc(20);
+          content: "\f017";
+          background: none;
+          margin-right: rem-calc(8);
+          font-size: rem-calc(14);
+        }
+      }
+      &-text {
+        margin-top: rem-calc(8);
       }
     }
   }
@@ -66,7 +83,7 @@
 
 .card {
  &.card-event-mini {
-   border-radius: rem-calc(16);
+   border-radius: $card-border-radius;
    padding-top: rem-calc(16);
    position: relative;
    overflow: hidden;
@@ -127,4 +144,17 @@
      line-height: rem-calc(23);
    }
  }
+}
+.fc {
+  .fc-daygrid-day:not(.fc-day-other) {
+    .fc-daygrid-day-top {
+      font-weight: 600;
+    }
+  }
+  .fc-day-other .fc-daygrid-day-top {
+    opacity: 1 !important;
+  }
+  .fc-daygrid-event {
+    overflow: hidden;
+  }
 }

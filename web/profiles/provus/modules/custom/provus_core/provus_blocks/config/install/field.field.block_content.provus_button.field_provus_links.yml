@@ -6,7 +6,7 @@ dependencies:
     - field.storage.block_content.field_provus_links
   module:
     - link
-id: block_content.button.field_provus_links
+id: block_content.provus_button.field_provus_links
 field_name: field_provus_links
 entity_type: block_content
 bundle: provus_button

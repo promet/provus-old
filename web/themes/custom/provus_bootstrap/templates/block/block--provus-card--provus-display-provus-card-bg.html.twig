@@ -1,0 +1,64 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a block.
+ *
+ * Available variables:
+ * - plugin_id: The ID of the block implementation.
+ * - label: The configured label of the block if visible.
+ * - configuration: A list of the block's configuration values.
+ *   - label: The configured label for the block.
+ *   - label_display: The display settings for the label.
+ *   - provider: The module or other provider that provided this block plugin.
+ *   - Block plugin specific settings will also be stored here.
+ * - content: The content of this block.
+ * - attributes: array of HTML attributes populated by modules, intended to
+ *   be added to the main container tag of this template.
+ *   - id: A valid HTML ID and guaranteed unique.
+ * - title_attributes: Same as attributes, except applied to the main title
+ *   tag that appears in the template.
+ * - content_attributes: Same as attributes, except applied to the main content
+ *   tag that appears in the template.
+ * - title_prefix: Additional output populated by modules, intended to be
+ *   displayed in front of the main title tag that appears in the template.
+ * - title_suffix: Additional output populated by modules, intended to be
+ *   displayed after the main title tag that appears in the template.
+ *
+ * @see template_preprocess_block()
+ *
+ * @ingroup themeable
+ */
+#}
+{%
+  set classes = [
+    'block',
+    'block-' ~ configuration.provider|clean_class,
+    'block-' ~ plugin_id|clean_class,
+    'card-wrapper',
+  ]
+%}
+
+<div{{ attributes.addClass(classes) }}>
+  {% if content.field_provus_links[0]['#url'] %}
+    <a href="{{ content.field_provus_links[0]['#url'] }}">
+  {% endif %}
+  {{ title_prefix }}
+  {% if label %}
+    <h2{{ title_attributes }}>{{ label }}</h2>
+  {% endif %}
+  {{ title_suffix }}
+  {% block content %}
+    <div{{ content_attributes.addClass('card') }} style="background-image:url('{{ file_url(content.field_provus_media_image.0['#item'].entity.uri.value | image_style('provus_square_medium')) }}');">
+      <div class="card-img-overlay">
+        <div class="card-body">
+          {% if content.field_provus_title|render %}
+          <h3 class="card-title">{{ content.field_provus_title }}</h3>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  {% endblock %}
+  {% if content.field_provus_links[0]['#url'] %}
+    </a>
+  {% endif %}
+</div>

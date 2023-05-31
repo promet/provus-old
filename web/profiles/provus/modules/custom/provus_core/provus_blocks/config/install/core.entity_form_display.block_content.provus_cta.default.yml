@@ -19,6 +19,16 @@ targetEntityType: block_content
 bundle: provus_cta
 mode: default
 content:
+  field_provus_body:
+    type: text_textarea_with_summary
+    weight: 4
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
   field_provus_cta_background_clr:
     type: options_select
     weight: 26
@@ -32,16 +42,6 @@ content:
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
-    third_party_settings: {  }
-  field_provus_body:
-    type: text_textarea_with_summary
-    weight: 4
-    region: content
-    settings:
-      rows: 9
-      summary_rows: 3
-      placeholder: ''
-      show_summary: false
     third_party_settings: {  }
   field_provus_links:
     type: ala_field_widget

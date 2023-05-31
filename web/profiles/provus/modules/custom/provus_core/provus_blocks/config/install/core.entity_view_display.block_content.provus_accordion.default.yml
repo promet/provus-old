@@ -21,3 +21,4 @@ content:
     region: content
 hidden:
   field_openfirst: true
+  field_provus_openfirst: true

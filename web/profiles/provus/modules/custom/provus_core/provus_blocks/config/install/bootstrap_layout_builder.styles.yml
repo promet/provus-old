@@ -11,9 +11,9 @@ plugins:
       enabled: 0
   spacing:
     padding:
-      enabled: 0
+      enabled: 1
     margin:
-      enabled: 0
+      enabled: 1
   border:
     border:
       enabled: 0

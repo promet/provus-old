@@ -44,18 +44,22 @@
   {{ title_suffix }}
   {% block content %}
     {% if content.field_provus_title|render %}
-      <h3 class="card-title">{{ content.field_provus_title }}</h3>
+      <h2 class="group-title">{{ content.field_provus_title }}</h2>
     {% endif %}
     {% if content.field_provus_body|render %}
-      <div class="card-text">{{ content.field_provus_body }}</div>
+      <div class="group-text">{{ content.field_provus_body }}</div>
     {% endif %}
     <div class="accordion" id="accordion{{ id }}">
       {% for key, item in items %}
         <div class="accordion-item">
           <h2 class="accordion-header" id="heading{{ id }}-{{ key }}">
-              <button class="accordion-button{% if ((openfirst == true) and (key != 0)) or (openfirst == false) %} collapsed{% endif %}" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{{ id }}-{{ key }}" aria-expanded="{% if (openfirst == true) and (key == 0) %}true{% else %}false{% endif %}" aria-controls="collapse{{ id }}-{{ key }}">
-                {{ item.title }}
-              </button>
+            <button class="accordion-button{% if ((openfirst == true) and (key != 0)) or (openfirst == false) %} collapsed{% endif %}" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{{ id }}-{{ key }}" aria-expanded="{% if (openfirst == true) and (key == 0) %}true{% else %}false{% endif %}" aria-controls="collapse{{ id }}-{{ key }}">
+              <div class="open-close">
+                <i class="fa-solid fa-plus"></i>
+                <i class="fa-solid fa-minus"></i>
+              </div>
+              {{ item.title }}
+            </button>
           </h2>
 
           <div id="collapse{{ id }}-{{ key }}" class="accordion-collapse collapse{% if (openfirst == true) and (key == 0) %} show{% endif %}" data-bs-parent="#accordion{{ id }}">

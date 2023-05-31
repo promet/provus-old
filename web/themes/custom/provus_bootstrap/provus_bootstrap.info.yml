@@ -23,6 +23,7 @@ regions:
   highlighted: Highlighted
   featured_top: 'Featured top'
   breadcrumb: Breadcrumb
+  title: Title
   content: Content
   sidebar_first: 'Sidebar first'
   sidebar_second: 'Sidebar second'

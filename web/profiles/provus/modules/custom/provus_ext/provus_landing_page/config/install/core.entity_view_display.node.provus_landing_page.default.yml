@@ -49,7 +49,7 @@ third_party_settings:
         - 'bootstrap_layout_builder:blb_col_2'
         - 'bootstrap_layout_builder:blb_col_3'
         - 'bootstrap_layout_builder:blb_col_4'
-      denylisted_blocks: {  }
+      denylisted_blocks: { }
       allowlisted_blocks:
         'Custom block types':
           - provus_accordion
@@ -98,7 +98,7 @@ third_party_settings:
           - 'inline_block:provus_list_item'
           - 'inline_block:provus_stat_item'
           - 'inline_block:provus_tab_item'
-      whitelisted_blocks: {  }
+      whitelisted_blocks: { }
 id: node.provus_landing_page.default
 targetEntityType: node
 bundle: provus_landing_page

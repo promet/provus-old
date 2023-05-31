@@ -1,10 +1,10 @@
 layout_builder_theme: light
-background_colors: "bg-primary|Primary\r\nbg-secondary|Seconary\r\nbg-white|White\r\nbg-grey|Grey"
+background_colors: "bg-primary|Primary\r\nbg-secondary|Secondary\r\nbg-white|White\r\nbg-grey|Grey"
 background_image:
   bundle: image
   field: field_media_image
 background_local_video:
-  bundle: image
+  bundle: local_video
   field: field_media_video_file
 text_colors: "bs-text-white|White\r\nbs-text-black|Black"
 text_alignment: "bs-text-left|Left\r\nbs-text-center|Center\r\nbs-text-right|Right\r\nbs-text-justify|Justify"

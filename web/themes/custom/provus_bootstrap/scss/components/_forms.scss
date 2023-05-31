@@ -1,1 +1,56 @@
 // Custom form styles.
+.form-control {
+  padding: rem-calc(11);
+}
+.form-control::placeholder {
+  color: $text-secondary;
+}
+.form-control::-webkit-input-placeholder {
+  color: $text-secondary;
+}
+.search-block-form {
+  .content {
+    width: 100%;
+  }
+  form {
+    display: flex;
+    .form-type-search {
+      width: 100%;
+      position: relative;
+      margin-bottom: 0 !important;
+      &::before {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-size: 14px;
+        color: $text-secondary;
+        content: "\f002";
+        position: absolute;
+        top: rem-calc(14);
+        left: rem-calc(20);
+      }
+      .form-search {
+        padding-left: rem-calc(40);
+      }
+    }
+    .form-actions {
+      flex-shrink: 4;
+      margin-bottom: 0 !important;
+    }
+  }
+}
+.webform-submission-email-subscribe-form-form {
+  max-width: rem-calc(682);
+  margin: 0 auto;
+  position: relative;
+  .form-email.form-control {
+    padding: rem-calc(19 26);
+  }
+  .form-actions {
+    position: absolute;
+    top: 8px;
+    right: 6px;
+    .btn.form-control {
+      margin-right: 0;
+    }
+  }
+}

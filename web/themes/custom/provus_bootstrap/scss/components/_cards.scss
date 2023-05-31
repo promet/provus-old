@@ -1,4 +1,9 @@
 // Card styles.
+.card-wrapper {
+  height: 100%;
+  width: 100%;
+}
+
 .card-img-top {
   overflow: hidden;
   img {
@@ -10,7 +15,6 @@
 .card {
   border-radius: $card-border-radius;
   border: 1px solid $card-border-color;
-  margin-bottom: rem-calc(30);
   display: flex;
   height: 100%;
   .field--type-entity-reference {
@@ -78,101 +82,56 @@
   border: 1px solid $gray-lightest;
 }
 
-.card-img-overlay {
-  background: rgba(0,0,0,0.5);
-  color: $white;
-  h2, h3, h4, h5 ,h6 {
-    color: $white;
+.block-provus-card.card-wrapper {
+  .card {
+    min-height: 240px;
+    border-radius: $card-border-radius;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
   }
-  a {
+  .card-img-overlay {
+    background: rgba(0, 0, 0, 0.5);
     color: $white;
+    display: flex;
+    align-items: flex-end;
+
+    h2, h3, h4, h5, h6 {
+      color: $white;
+    }
+  }
+  a:hover {
+    .card-img-overlay {
+      background: rgba(41, 62, 122, 0.85);
+    }
   }
 }
 
-// Testimonial card
-.card.card-testimonial {
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.08), 0px 0px 2px rgba(0, 0, 0, 0.04);
-  border-radius: $card-border-radius;
-  background: $primary-shade;
-  .testimonial-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
-    padding: rem-calc(40 24);
-    @include media-breakpoint-up(md) {
-      padding: rem-calc(75 0 75 75);
-    }
+.node--type-provus-blog.node--view-mode-provus-card-tall {
+  .card {
+    border: none;
   }
-  .testimonial-body {
-    font-weight: 700;
-    font-size: rem-calc(20);
-    line-height: rem-calc(26);
-    letter-spacing: rem-calc(-0.784);
-    margin-bottom: rem-calc(40);
-    color: $white;
-    @include media-breakpoint-up(md) {
-      font-size: rem-calc(36);
-      line-height: rem-calc(44);
-    }
-    &:before {
-      display: inline-block;
-      content: '“';
-    }
-    &:after {
-      display: inline-block;
-      content: '“';
-    }
+  .card-body {
+    padding: 0;
   }
-  .testimonial-name,
-  .testimonial-role {
-    font-weight: 500;
-    font-size: rem-calc(12);
-    line-height: rem-calc(19);
-    letter-spacing: 0.25em;
-    text-transform: uppercase;
-  }
-  .testimonial-name {
-    color: $gray-medium;
-  }
-  .testimonial-role {
-    color: $secondary-shade;
-  }
-  .testimonial-image {
-    text-align: right;
-    height: 100%;
-    display: flex;
-    flex-direction: row-reverse;
-    align-content: flex-end;
-    img {
-      width: 80%;
-      height: auto;
-      margin-top: rem-calc(100);
-      @include media-breakpoint-up(lg) {
-        height: 100%;
-        width: auto;
-        margin-top: 0;
+  .card-title {
+    margin-top: rem-calc(8);
+    a {
+      color: $text-primary;
+      text-decoration: none;
+      &:hover {
+        color: $primary-shade;
+        text-decoration: underline;
       }
     }
   }
-  .image-location-right & {
-    background: $primary-shade;
-    .col-md-6:first-child {
-      order: inherit;
-      @include media-breakpoint-up(md) {
-        order: 2;
-      }
-      .testimonial-content {
-        padding: rem-calc(40 24);
-        @include media-breakpoint-up(md) {
-          padding: rem-calc(75);
-        }
-      }
-    }
-    .testimonial-image {
-      text-align: center;
-      flex-direction: row;
-      justify-content: center;
-    }
+  .card-date {
+    margin: rem-calc(16 0 8);
+    font-size: rem-calc(14);
+    color: $text-secondary;
+    text-decoration: none;
+  }
+  .card-img-top {
+    border-radius: $card-border-radius;
   }
 }

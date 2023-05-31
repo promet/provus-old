@@ -19,6 +19,13 @@ targetEntityType: block_content
 bundle: provus_cta
 mode: default
 content:
+  field_provus_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
   field_provus_cta_background_clr:
     type: list_default
     label: above
@@ -36,13 +43,6 @@ content:
         attribute: lazy
     third_party_settings: {  }
     weight: 6
-    region: content
-  field_provus_body:
-    type: text_default
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    weight: 0
     region: content
   field_provus_links:
     type: ala

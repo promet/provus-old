@@ -8,6 +8,8 @@ dependencies:
     - field.field.block_content.provus_stat_item.field_provus_title
   module:
     - fontawesome
+_core:
+  default_config_hash: m1JsjbsJdkAGCxrzINvPeTWVbIpQ8_btCplPHX7NGx8
 id: block_content.provus_stat_item.default
 targetEntityType: block_content
 bundle: provus_stat_item
