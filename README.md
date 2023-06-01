@@ -1,12 +1,8 @@
-# provus-drupal
+# About
 Provus Drupal kickstarter by Promet Source
-
-## Installation
-
-We recommend using composer to start your Provus project
-```composer create-project promet/provus-drupal <site-name>```
-
-Use your favorite dev tools to host it locally.
+https://www.drupal.org/project/provus
 
 ## Documentation
-TBA
+For installation and general usage, please read full documentation here
+https://promet-source.gitbook.io/provus/
+
