@@ -56,7 +56,7 @@
         "drupal/antibot": "1.5",
         "drupal/auto_entitylabel": "3.0",
         "drupal/bootstrap_barrio": "5.5.12",
-        "drupal/bootstrap_layout_builder": "2.1.1",
+        "drupal/bootstrap_layout_builder": "2.0.1",
         "drupal/bootstrap_layouts": "5.3",
         "drupal/bootstrap_sass": "5.0.6",
         "drupal/bootstrap_site_alert": "2.0.0-beta11",
