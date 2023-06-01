@@ -236,7 +236,7 @@ displays:
             trim_options:
               text: false
               trim_zero: false
-          third_party_settings: {  }
+          third_party_settings: { }
           region: content
       image:
         field: field_provus_media_image
@@ -245,19 +245,31 @@ displays:
           label: hidden
           settings:
             image_link: ''
-            image_style: provus_square_medium
-          third_party_settings: {  }
+            image_style: provus_portrait_medium
+          third_party_settings: { }
           weight: 0
           region: content
     overrides:
+      provus_blog:
+        date:
+          field: field_provus_publish_date
+          options:
+            type: datetime_custom
+            label: hidden
+            settings:
+              timezone_override: ''
+              date_format: 'F j, Y'
+            third_party_settings: { }
+            weight: 1
+            region: content
       provus_person:
         titles:
           field: field_provus_titles
           options:
             type: basic_string
             label: hidden
-            settings: {  }
-            third_party_settings: {  }
+            settings: { }
+            third_party_settings: { }
             weight: 0
             region: content
         telephone:
@@ -267,7 +279,7 @@ displays:
             label: hidden
             settings:
               title: ''
-            third_party_settings: {  }
+            third_party_settings: { }
             weight: 0
             region: content
   provus_event_mini:

@@ -1,0 +1,6 @@
+services:
+  provus_core.lb_render_block_component_subscriber:
+    class: Drupal\provus_core\EventSubscriber\LbBlockComponentRenderArray
+    arguments: [ '@current_user' ]
+    tags:
+      - { name: event_subscriber }
