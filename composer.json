@@ -23,24 +23,23 @@
         {
             "type": "package",
             "package": {
-                "name": "library-enyo/dropzone",
-                "version": "5.7.0",
+                "name": "fontawesome/fontawesome",
+                "version": "6.1.0",
                 "type": "drupal-library",
-                "source": {
-                    "url": "https://github.com/enyo/dropzone",
-                    "type": "git",
-                    "reference": "v5.7.0"
+                "dist": {
+                    "url": "https://use.fontawesome.com/releases/v6.1.0/fontawesome-free-6.1.0-web.zip",
+                    "type": "zip"
                 }
             }
         },
         {
             "type": "package",
             "package": {
-                "name": "jsanahuja/jqueryinstagramfeed",
-                "version": "dev-master",
-                "type": "drupal-library",
+                "name": "fonticonpicker/fonticonpicker--fonticonpicker",
+                "version": "3.1.1",
+                "type": "drupal-library-fonticonpicker",
                 "dist": {
-                    "url": "https://github.com/jsanahuja/jquery.instagramFeed/archive/master.zip",
+                    "url": "https://github.com/fontIconPicker/fontIconPicker/releases/download/v3.1.1/fontIconPicker.zip",
                     "type": "zip"
                 }
             }
@@ -118,6 +117,8 @@
         "drupal/vocabulary_condition": "1.0.2",
         "drupal/webform": "6.1.4",
         "drush/drush": "10.6.2",
+        "fontawesome/fontawesome": "6.1.0",
+        "fonticonpicker/fonticonpicker--fonticonpicker": "3.1.1",
         "geocoder-php/google-maps-provider": "4.7.1",
         "harvesthq/chosen": "1.8.7",
         "kporras07/composer-symlinks": "v1.2",
@@ -152,6 +153,7 @@
         "installer-paths": {
             "web/core": ["type:drupal-core"],
             "web/libraries/{$name}": ["type:drupal-library"],
+            "web/libraries/{$name}/dist": ["type:drupal-library-fonticonpicker"],
             "web/modules/contrib/{$name}": ["type:drupal-module"],
             "web/profiles/contrib/{$name}": ["type:drupal-profile"],
             "web/themes/contrib/{$name}": ["type:drupal-theme"],
@@ -190,7 +192,8 @@
             "zaporylie/composer-drupal-optimizations": true,
             "drupal/core-composer-scaffold": true,
             "dealerdirect/phpcodesniffer-composer-installer": true,
-            "php-http/discovery": true
+            "php-http/discovery": true,
+            "phpstan/extension-installer": true
         }
     }
 }
