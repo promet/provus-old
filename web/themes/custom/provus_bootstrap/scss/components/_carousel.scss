@@ -1,11 +1,11 @@
 /* Carousel 3 Items */
-.carousel-3-items {
-  position: relative;
-  .carousel-inner {
-    padding: 0 40px;
-  }
-}
 .carousel-3-items-wrapper {
+  .carousel-3-items {
+    position: relative;
+    .carousel-inner {
+      padding: 0;
+    }
+  }
   .carousel-control-prev,
   .carousel-control-next {
     width: 40px;
@@ -16,13 +16,46 @@
       color: $black;
     }
   }
-  .lightSlider {
-    overflow: visible;
-    > div {
-      padding: 0 15px;
-    }
-  }
   .lSSlideOuter {
+    position: relative;
+    overflow: visible;
+    .lSSlideWrapper {
+      position: static;
+      margin-left: rem-calc(40);
+      margin-right: rem-calc(40);
+      .lSAction {
+        a {
+          width: rem-calc(20);
+          height: (40);
+          top: calc(50% - 25px);
+          background: none;
+          opacity: .5;
+          text-decoration: none;
+          &:before {
+            color: $black;
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            background: none;
+            font-size: rem-calc(40);
+          }
+          &:hover {
+            opacity: .9;
+          }
+        }
+        .lSPrev {
+          left: 4px;
+          &:before {
+            content: "\f104";
+          }
+        }
+        .lSNext {
+          right: 4px;
+          &:before {
+            content: "\f105";
+          }
+        }
+      }
+    }
     .lSPager.lSpg {
       li {
         padding: 0;

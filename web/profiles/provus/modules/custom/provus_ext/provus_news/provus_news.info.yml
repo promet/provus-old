@@ -1,5 +1,5 @@
 name: 'Provus Content: News'
 type: module
 description: 'Custom provus node: News. Provides news content type and view.'
-core_version_requirement: ^8 || ^9
+core_version_requirement: ^8 || ^9 || ^10
 package: 'Provus'

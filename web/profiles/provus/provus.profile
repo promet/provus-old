@@ -78,7 +78,6 @@ function provus_install_extensions(array &$install_state) {
     $batch['operations'][] = ['provus_install_module', (array) 'search'];
     // Enable default permissions for system roles.
     user_role_grant_permissions(AccountInterface::ANONYMOUS_ROLE, [
-      'use search',
       'search content',
     ]);
   }

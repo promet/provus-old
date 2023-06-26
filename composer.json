@@ -9,18 +9,6 @@
             "url": "https://packages.drupal.org/8"
         },
         {
-            "type":"package",
-            "package": {
-                "name": "harvesthq/chosen",
-                "version": "1.8.7",
-                "type": "drupal-library",
-                "dist": {
-                    "url": "https://github.com/harvesthq/chosen/releases/download/v1.8.7/chosen_v1.8.7.zip",
-                    "type": "zip"
-                }
-            }
-        },
-        {
             "type": "package",
             "package": {
                 "name": "fontawesome/fontawesome",
@@ -48,81 +36,44 @@
     "require": {
         "composer/installers": "1.12",
         "cweagans/composer-patches": "1.7.3",
-        "drupal/address": "1.11",
-        "drupal/addtoany": "1.18",
-        "drupal/admin_toolbar": "3.3.2",
-        "drupal/ala": "1.8",
-        "drupal/antibot": "1.5",
+        "drupal/addtoany": "2.0.4",
+        "drupal/admin_toolbar": "3.4.1",
+        "drupal/ala": "2.5",
         "drupal/auto_entitylabel": "3.0",
         "drupal/bootstrap_barrio": "5.5.12",
-        "drupal/bootstrap_layout_builder": "2.0.1",
-        "drupal/bootstrap_layouts": "5.3",
+        "drupal/bootstrap_layout_builder": "2.1.1",
         "drupal/bootstrap_sass": "5.0.6",
         "drupal/bootstrap_site_alert": "2.0.0-beta11",
-        "drupal/calendar_link": "2.1.4",
-        "drupal/chosen": "3.0.5",
-        "drupal/config_ignore": "2.4.0",
-        "drupal/config_merge": "1.0",
-        "drupal/config_provider": "2.0.0-rc4",
-        "drupal/config_snapshot": "1.0.0-rc2",
-        "drupal/core-composer-scaffold": "9.5.9",
-        "drupal/core-recommended": "9.5.9",
+        "drupal/core": "10.1.0",
+        "drupal/core-composer-scaffold": "10.1.0",
         "drupal/date_recur": "3.2.0",
-        "drupal/date_recur_modular": "3.0.2",
-        "drupal/default_content": "1.0.0-alpha9",
-        "drupal/devel": "4.2.1",
+        "drupal/date_recur_modular": "3.1.0",
+        "drupal/default_content": "2.0.0-alpha2",
+        "drupal/devel": "5.0.2",
         "drupal/entity": "1.4",
-        "drupal/environment_indicator": "4.0.14",
-        "drupal/exclude_node_title": "1.3",
-        "drupal/extlink": "1.7",
-        "drupal/facets": "2.0.6",
-        "drupal/field_group": "3.4",
-        "drupal/focal_point": "1.5",
+        "drupal/exclude_node_title": "1.4",
         "drupal/fontawesome": "2.25",
-        "drupal/fullcalendar_view": "dev-6.x",
-        "drupal/geocoder": "3.34",
-        "drupal/geofield": "1.53",
-        "drupal/geofield_map": "2.90",
+        "drupal/fullcalendar_view": "5.1.12",
         "drupal/gin": "3.0.0-rc3",
-        "drupal/gin_login": "1.0",
+        "drupal/gin_login": "2.0.2",
         "drupal/gin_toolbar": "1.0.0-rc1",
-        "drupal/google_analytics": "4.0.2",
         "drupal/inline_entity_form": "1.0.0-rc15",
-        "drupal/layout_builder_at": "2.13",
-        "drupal/layout_builder_browser": "1.5",
         "drupal/layout_builder_modal": "1.2",
-        "drupal/layout_builder_restrictions": "2.17",
-        "drupal/layout_builder_styles": "1.0.0",
-        "drupal/layout_library": "1.0.0-beta4",
-        "drupal/layout_paragraphs": "1.0.0",
-        "drupal/linkit": "6.0.0-rc1",
-        "drupal/media_bulk_upload": "1.0.0-alpha28",
-        "drupal/memcache": "2.5.0",
+        "drupal/layout_builder_restrictions": "2.18",
+        "drupal/linkit": "6.1.0-rc1",
         "drupal/menu_block": "dev-1.x",
-        "drupal/menu_breadcrumb": "1.16",
-        "drupal/office_hours": "1.8",
         "drupal/pathauto": "1.11",
-        "drupal/pdfpreview": "1.1",
-        "drupal/redirect": "1.8",
-        "drupal/search_api": "1.29",
-        "drupal/search_api_solr": "4.2.10",
-        "drupal/section_library": "1.1.0",
         "drupal/sitemap": "dev-2.x",
-        "drupal/smart_trim": "1.3",
+        "drupal/smart_trim": "2.1.0",
         "drupal/toastify": "1.0.0-beta6",
         "drupal/twig_tweak": "3.2.1",
-        "drupal/view_unpublished": "1.1",
-        "drupal/views_bootstrap": "4.3",
-        "drupal/viewsreference": "1.8",
-        "drupal/vocabulary_condition": "1.0.2",
-        "drupal/webform": "6.1.4",
-        "drush/drush": "10.6.2",
+        "drupal/views_bootstrap": "4.4",
+        "drush/drush": "12.1.0",
         "fontawesome/fontawesome": "6.1.0",
         "fonticonpicker/fonticonpicker--fonticonpicker": "3.1.1",
-        "geocoder-php/google-maps-provider": "4.7.1",
-        "harvesthq/chosen": "1.8.7",
         "kporras07/composer-symlinks": "v1.2",
         "oomphinc/composer-installers-extender": "2.0.1",
+        "psr/log": "3.0.0",
         "rlanvin/php-rrule": "2.4",
         "vlucas/phpdotenv": "5.5",
         "webflo/drupal-finder": "1.2.2",
@@ -131,9 +82,8 @@
     },
     "require-dev": {
         "dmore/behat-chrome-extension": "1.4",
-        "drupal/drupal-extension": "v4.2.1",
         "mglaman/drupal-check": "1.4",
-        "drupal/core-dev": "9.5.9"
+        "drupal/core-dev": "10.0.9"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -168,17 +118,24 @@
             "drupal/core": "-p2"
         },
         "patches": {
-            "drupal/core": {
-                "Allow hiding configured blocks in layout builder [3163197]": "https://www.drupal.org/files/issues/2021-11-15/layout_builder-hide-block-3163197-15.patch"
-            },
             "drupal/auto_entitylabel": {
                 "Integration with Layout Builder for custom block types [3065687]": "https://www.drupal.org/files/issues/2022-12-22/auto_entitylabel-layout_builder_component_title-3065687-17.patch"
             },
-            "drupal/exclude_node_title": {
-                "Deployment erases excluded-node-titles [2974973]": "https://www.drupal.org/files/issues/2018-06-20/2974973-state_api-3.patch"
-            },
             "drupal/bootstrap_site_alert": {
                 "HTML markup shown as encoded characters [3281928]": "https://git.drupalcode.org/project/bootstrap_site_alert/-/merge_requests/5.diff"
+            },
+            "drupal/fontawesome": {
+                "Iconpicker Widget wont show on Drupal 10 [3352478]": "https://git.drupalcode.org/project/fontawesome/-/merge_requests/25.patch"
+            },
+            "drupal/bootstrap_layout_builder": {
+                "3335356: Fix Module does not work in D10": "https://www.drupal.org/files/issues/2023-01-25/issue_3335356_drupal10.patch",
+                "3335356: Clean up UI for 2x branch": "https://git.drupalcode.org/project/bootstrap_layout_builder/-/merge_requests/24.diff"
+            },
+            "drupal/bootstrap_styles": {
+                "3315218: Fix not loading bootstrap_styles/aos.local or bootstrap_styles/aos.remote library.": "https://www.drupal.org/files/issues/2023-01-25/3315218-17--1-0-x.patch",
+                "3330458: [Drupal 10] Change of JS jquery/once to drupal core/once, migrate JS API.": "https://www.drupal.org/files/issues/2023-03-07/bootstrap_styles-3330458-8.patch",
+                "3282082: Support Bootstrap 5 on bootstrap_styles module.": "https://www.drupal.org/files/issues/2022-06-14/Fix-support-bootstrap-5-on-bootstrap-styles-3282082-%233.patch",
+                "3361091: Clean up UI for 1x branch.": "https://git.drupalcode.org/project/bootstrap_styles/-/merge_requests/57.diff"
             }
         }
     },

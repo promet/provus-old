@@ -1,9 +1,7 @@
 name: Provus
 type: theme
 description: 'SASS starter kit for a Bootstrap Barrio SubTheme.'
-# version: VERSION
-core: 8.x
-core_version_requirement: ^8 || ^9
+core_version_requirement: ^8 || ^9 || ^10
 base theme: bootstrap_barrio
 
 libraries:
@@ -35,8 +33,3 @@ regions:
   footer_third: 'Footer third'
   footer_fourth: 'Footer fourth'
   footer_fifth: 'Footer fifth'
-
-# Information added by Drupal.org packaging script on 2021-10-11
-version: '5.0.5'
-project: 'provus'
-datestamp: 1633918678

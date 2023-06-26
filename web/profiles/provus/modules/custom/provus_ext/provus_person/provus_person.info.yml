@@ -1,7 +1,7 @@
 name: 'Provus Content: Person'
 type: module
 description: 'Custom provus node: Person. Provides person content type, view, blocks.'
-core_version_requirement: ^8 || ^9
+core_version_requirement: ^8 || ^9 || ^10
 package: 'Provus'
 dependencies:
   - drupal:telephone

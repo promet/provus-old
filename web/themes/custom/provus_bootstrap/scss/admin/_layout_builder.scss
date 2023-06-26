@@ -1,13 +1,4 @@
 // Layout builder admin fixes.
-#drupal-off-canvas {
-  background: $white;
-  ul, ol {
-    li {
-      border: none;
-    }
-  }
-}
-
 .layout-builder-add-block {
   .table-striped > tbody > tr:nth-of-type(odd) > * {
     --bs-table-accent-bg: $white !important;
@@ -84,6 +75,8 @@
     width: calc(50% - 20px);
     padding: 10px;
     margin-bottom: 20px;
+    height: 120px;
+    flex: none !important;
 }
 
 #drupal-off-canvas summary a {
@@ -467,12 +460,11 @@
     background-position: center 15px !important;
     justify-content: flex-end;
     border: 2px solid $primary-shade !important;
-    padding: 20px 15px !important;
     color: $primary-shade !important;
     font-weight: bold;
-    font-size: 16px;
-    padding-top: 35px !important;
-    height: 55px !important;
+    font-size: 13px;
+    height: 100% !important;
+    padding: 6px !important;
     &.block-type-{
       &accordion {
         background-image: url('../images/components/accordion.svg') !important;
@@ -612,9 +604,6 @@
 }
 
 .layout-builder-active {
-  #drupal-off-canvas .inline-block-create-button {
-    background: $primary-shade !important;
-  }
   .ui-resizable-handle.ui-resizable-w {
     display: none !important;
   }
@@ -655,4 +644,8 @@
 
 #drupal-off-canvas .inline-block-list li {
   margin-bottom: 0;
+}
+
+.icons-selector {
+  color: #383A40;
 }

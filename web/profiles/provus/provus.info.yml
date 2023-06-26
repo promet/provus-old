@@ -1,7 +1,7 @@
 name: Provus
 type: profile
 description: 'Provus by Promet Source. Kick start your website!'
-core_version_requirement: '^8.8 || ^9'
+core_version_requirement: '^10.1'
 
 # Optional: Declare your installation profile as a distribution
 # This will make the installer auto-select this installation profile.
@@ -30,45 +30,40 @@ distribution:
 install:
   - admin_toolbar
   - admin_toolbar_tools
-  - history
   - block_content
   - breakpoint
-  - color
+  - ckeditor5
   - config
   - comment
   - contextual
   - contact
-  - quickedit
-  - help
-  - image
-  - options
-  - path
-  - taxonomy
   - default_content
-  - hal
-  - serialization
-  - dblog
-  - menu_ui
-  - search
-  - shortcut
-  - toolbar
+  - editor
   - field_ui
   - file
-  - rdf
-  - views
-  - views_ui
-  - editor
-  - ckeditor
+  - gin_login
+  - gin_toolbar
+  - help
+  - history
+  - image
+  - linkit
+  - menu_ui
+  - options
+  - path
   - provus_core
   - provus_blocks
-  - gin_toolbar
-  - gin_login
   - responsive_image
-  - workflows
-  - twig_tweak
-  - linkit
+  - search
+  - serialization
+  - shortcut
   - sitemap
+  - taxonomy
   - toastify
+  - toolbar
+  - twig_tweak
+  - views
+  - views_ui
+  - workflows
 
 # Required modules
 # Note that any dependencies of the modules listed here will be installed automatically.

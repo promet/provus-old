@@ -28,7 +28,7 @@ lightslider:
   dependencies:
     - core/drupal
     - core/jquery
-    - core/jquery.once
+    - core/once
 
 carousel:
   js:
@@ -57,7 +57,7 @@ lightgallery:
   dependencies:
     - core/drupal
     - core/jquery
-    - core/jquery.once
+    - core/once
 
 photogallery:
   js:
