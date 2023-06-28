@@ -1,0 +1,9 @@
+status: 1
+pattern: '(Photo Gallery) - [random:number]'
+escape: false
+preserve_titles: false
+save: false
+chunk: 50
+dependencies:
+  config:
+    - block_content.type.provus_photo_gallery

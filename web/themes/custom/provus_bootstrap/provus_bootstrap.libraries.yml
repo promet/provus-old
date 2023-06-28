@@ -60,7 +60,16 @@ lightgallery:
     - core/jquery.once
 
 photogallery:
+  css:
+    theme:
+      https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lightgallery-bundle.min.css: {}
+      https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.css: {}
   js:
+    https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/lightgallery.umd.min.js: {}
+    https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/plugins/mediumZoom/lg-medium-zoom.umd.min.js: {}
+    https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.js: {}
+    https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/plugins/thumbnail/lg-thumbnail.umd.min.js: {}
     js/gallery.js: {}
   dependencies:
-    - provus_bootstrap/lightgallery
+    - core/drupal
+    - core/jquery

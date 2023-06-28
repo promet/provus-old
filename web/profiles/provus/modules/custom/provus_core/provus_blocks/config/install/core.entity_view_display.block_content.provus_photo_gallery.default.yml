@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.provus_photo_gallery
+    - field.field.block_content.provus_photo_gallery.field_provus_photos
+    - image.style.provus_photo_gallery_800_x_400
+  module:
+    - media
+    - text
+id: block_content.provus_photo_gallery.default
+targetEntityType: block_content
+bundle: provus_photo_gallery
+mode: default
+content:
+  field_provus_photos:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: provus_photo_gallery_800_x_400
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  search_api_excerpt: true

@@ -1,0 +1,44 @@
+.lg-backdrop,
+.lg-outer {
+  max-height: 100vh;
+}
+
+body.lg-on {
+  overflow-y: hidden;
+  #page-wrapper {
+    overflow: hidden;
+  }
+}
+
+.gallery-container{
+  &:not(.justified-gallery) {
+    display: flex;
+    gap: rem-calc(10);
+    flex-wrap: wrap;
+    a {
+      flex: 0 0 24%;
+      max-width: 24%;
+      max-height: rem-calc(180);
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        max-height: rem-calc(180);
+      }
+    }
+  }
+}
+
+.lg-close:after{
+  background-color: black;
+  box-shadow: 0 0 0 rem-calc(3) black;
+}
+
+.lg-counter {
+  padding: rem-calc(5) !important;
+  height: auto !important;
+  margin-left: rem-calc(20);
+  margin-top: rem-calc(12);
+  background-color: black;
+  box-shadow: 0 0 0 rem-calc(3) black;
+}
