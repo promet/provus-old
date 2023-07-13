@@ -4,14 +4,12 @@ dependencies:
   config:
     - core.date_format.medium
     - field.field.node.provus_event.body
-    - field.field.node.provus_event.field_provus_dates
+    - field.field.node.provus_event.field_provus_smartdate
     - node.type.provus_event
   module:
-    - date_recur
+    - smart_date
     - text
     - user
-_core:
-  default_config_hash: uK79y2lauHdfitQ4cg6JOrfgeOV4QQV61mlRwiKd_F0
 id: node.provus_event.default
 targetEntityType: node
 bundle: provus_event
@@ -24,20 +22,27 @@ content:
     third_party_settings: {  }
     weight: 2
     region: content
-  field_provus_dates:
-    type: date_recur_basic_formatter
-    label: hidden
+  field_provus_smartdate:
+    type: smartdate_default
+    label: above
     settings:
       timezone_override: ''
       format_type: medium
-      separator: '-'
-      show_next: 5
-      count_per_item: true
-      occurrence_format_type: medium
-      same_end_date_format_type: medium
-      interpreter: ''
+      format: default
+      force_chronological: false
+      add_classes: false
+      time_wrapper: true
+      localize: false
+      parts:
+        - start
+        - end
+      duration:
+        separator: ' | '
+        unit: ''
+        decimals: 2
+        suffix: h
     third_party_settings: {  }
-    weight: 1
+    weight: 3
     region: content
   links:
     settings: {  }

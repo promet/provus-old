@@ -3,11 +3,11 @@ status: true
 dependencies:
   config:
     - field.field.node.provus_event.body
-    - field.field.node.provus_event.field_provus_dates
+    - field.field.node.provus_event.field_provus_smartdate
     - node.type.provus_event
   module:
-    - date_recur_modular
     - path
+    - smart_date
     - text
 id: node.provus_event.default
 targetEntityType: node
@@ -30,11 +30,22 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_provus_dates:
-    type: date_recur_modular_alpha
-    weight: 122
+  field_provus_smartdate:
+    type: smartdate_default
+    weight: 123
     region: content
-    settings: {  }
+    settings:
+      modal: false
+      default_duration: 60
+      default_duration_increments: |-
+        30
+        60|1 hour
+        90
+        120|2 hours
+        custom
+      show_extra: false
+      hide_date: true
+      allday: true
     third_party_settings: {  }
   path:
     type: path

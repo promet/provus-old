@@ -2,20 +2,16 @@ langcode: en
 status: true
 dependencies:
   config:
-    - core.date_format.medium
     - field.storage.node.body
-    - field.storage.node.field_provus_dates
     - node.type.provus_event
   module:
-    - date_recur
-    - datetime
-    - fullcalendar_view
     - node
+    - smart_date
     - text
     - user
     - views_bootstrap
-id: events
-label: Events
+id: provus_events
+label: 'Provus Events'
 module: views
 description: ''
 tag: ''
@@ -67,146 +63,6 @@ display:
           type: string
           settings:
             link_to_entity: true
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-        field_provus_dates:
-          id: field_provus_dates
-          table: node__field_provus_dates
-          field: field_provus_dates
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: field
-          label: ''
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: date_recur_basic_formatter
-          settings:
-            timezone_override: ''
-            format_type: medium
-            separator: '-'
-            show_next: 5
-            count_per_item: true
-            occurrence_format_type: medium
-            same_end_date_format_type: medium
-            interpreter: ''
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-        field_provus_dates_1:
-          id: field_provus_dates_1
-          table: node__field_provus_dates
-          field: field_provus_dates
-          relationship: none
-          group_type: group
-          admin_label: 'Dates Repeating Rule'
-          plugin_id: field
-          label: ''
-          exclude: false
-          alter:
-            alter_text: true
-            text: '{{ field_provus_dates_1__rrule }}'
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: date_recur_basic_formatter
-          settings:
-            timezone_override: ''
-            format_type: medium
-            separator: '-'
-            show_next: 5
-            count_per_item: true
-            occurrence_format_type: medium
-            same_end_date_format_type: medium
-            interpreter: ''
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -285,42 +141,16 @@ display:
             operator_limit_selection: false
             operator_list: {  }
       style:
-        type: fullcalendar_view_display
+        type: views_bootstrap_grid
         options:
-          default_date_source: now
-          defaultDate: ''
-          start: field_provus_dates
-          end: field_provus_dates
-          title: title
-          right_buttons: 'dayGridMonth,timeGridWeek,timeGridDay,listYear'
-          left_buttons: 'prev,next today'
-          eventLimit: '2'
-          more_event_link: day
-          default_view: dayGridMonth
-          firstDay: '0'
-          nav_links: 1
-          timeFormat: 'hh:mm a'
-          allowEventOverlap: 1
-          updateAllowed: 0
-          updateConfirm: 0
-          defaultLanguage: en
-          languageSelector: 0
-          businesshoursfieldset:
-            businessHours: 0
-            businessHoursDaysOfWeek: ''
-            startTimeDaysOfWeek: ''
-            endTimeDaysOfWeek: ''
-          openEntityInNewTab: 0
-          createEventLink: 0
-          tax_field: ''
-          vocabularies: ''
-          color_bundle:
-            landing_page: '#337ab7'
-            provus_event: '#337ab7'
-          rrule: field_provus_dates_1
-          duration: ''
-          bundle_type: provus_event
-          classes: ''
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
+          col_xs: none
+          col_sm: none
+          col_md: none
+          col_lg: none
+          col_xl: none
       row:
         type: fields
       query:
@@ -342,35 +172,14 @@ display:
         - 'languages:language_interface'
         - 'user.node_grants:view'
         - user.permissions
-      tags:
-        - 'config:field.storage.node.field_provus_dates'
-  block_calendar:
-    id: block_calendar
-    display_title: Calendar
-    display_plugin: block
-    position: 1
-    display_options:
-      defaults:
-        css_class: false
-      css_class: mb-5
-      display_description: ''
-      display_extenders: {  }
-    cache_metadata:
-      max-age: -1
-      contexts:
-        - 'languages:language_content'
-        - 'languages:language_interface'
-        - 'user.node_grants:view'
-        - user.permissions
-      tags:
-        - 'config:field.storage.node.field_provus_dates'
+      tags: {  }
   block_events_list:
     id: block_events_list
-    display_title: 'Events list'
+    display_title: 'All Events List'
     display_plugin: block
     position: 2
     display_options:
-      title: 'Events List'
+      title: 'All Events'
       fields:
         title:
           id: title
@@ -437,214 +246,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        field_provus_dates_value:
-          id: field_provus_dates_value
-          table: date_recur__node__field_provus_dates
-          field: field_provus_dates_value
-          relationship: field_provus_dates_occurrences
-          group_type: group
-          admin_label: ''
-          plugin_id: date_recur_date
-          label: ''
-          exclude: true
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          date_format: provus_month_short
-          custom_date_format: ''
-          timezone: ''
-        field_provus_dates_value_1:
-          id: field_provus_dates_value_1
-          table: date_recur__node__field_provus_dates
-          field: field_provus_dates_value
-          relationship: field_provus_dates_occurrences
-          group_type: group
-          admin_label: ''
-          plugin_id: date_recur_date
-          label: ''
-          exclude: true
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          date_format: provus_date_only
-          custom_date_format: ''
-          timezone: ''
-        field_provus_dates_value_2:
-          id: field_provus_dates_value_2
-          table: date_recur__node__field_provus_dates
-          field: field_provus_dates_value
-          relationship: field_provus_dates_occurrences
-          group_type: group
-          admin_label: ''
-          plugin_id: date_recur_date
-          label: ''
-          exclude: true
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          date_format: custom
-          custom_date_format: 'g:ia'
-          timezone: ''
-        field_provus_dates_end_value:
-          id: field_provus_dates_end_value
-          table: date_recur__node__field_provus_dates
-          field: field_provus_dates_end_value
-          relationship: field_provus_dates_occurrences
-          group_type: group
-          admin_label: ''
-          plugin_id: date_recur_date
-          label: ''
-          exclude: true
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          date_format: custom
-          custom_date_format: 'g:ia'
-          timezone: ''
         body:
           id: body
           table: node__body
@@ -707,6 +308,214 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+        field_provus_smartdate_end_value:
+          id: field_provus_smartdate_end_value
+          table: node__field_provus_smartdate
+          field: field_provus_smartdate_end_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: date
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          date_format: custom
+          custom_date_format: 'g:ia'
+          timezone: ''
+        field_provus_smartdate_value:
+          id: field_provus_smartdate_value
+          table: node__field_provus_smartdate
+          field: field_provus_smartdate_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: date
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          date_format: provus_month_short
+          custom_date_format: ''
+          timezone: ''
+        field_provus_smartdate_value_1:
+          id: field_provus_smartdate_value_1
+          table: node__field_provus_smartdate
+          field: field_provus_smartdate_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: date
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          date_format: provus_date_only
+          custom_date_format: ''
+          timezone: ''
+        field_provus_smartdate_value_2:
+          id: field_provus_smartdate_value_2
+          table: node__field_provus_smartdate
+          field: field_provus_smartdate_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: date
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          date_format: custom
+          custom_date_format: 'g:ia'
+          timezone: ''
         nothing:
           id: nothing
           table: views
@@ -719,7 +528,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<article>\r\n  <div class=\"mini-date\">\r\n    <div class=\"mini-date-left\">\r\n      <div class=\"mini-date-top\">\r\n        {{ field_provus_dates_value }}\r\n      </div>\r\n      <div class=\"mini-date-bottom\">\r\n        {{ field_provus_dates_value_1 }}\r\n      </div>\r\n    </div>\r\n    <div class=\"mini-date-right\">\r\n      <div class=\"mini-date-title\">\r\n        <h3>\r\n         {{ title }} \r\n        </h3>\r\n      </div>\r\n      <div class=\"mini-date-fulldate\">\r\n        {{ field_provus_dates_value_2 }} - {{ field_provus_dates_end_value }}      \r\n      </div>\r\n    </div>\r\n  </div>\r\n</article>"
+            text: "<article>\r\n  <div class=\"mini-date\">\r\n    <div class=\"mini-date-left\">\r\n      <div class=\"mini-date-top\">\r\n        {{ field_provus_smartdate_value }}\r\n      </div>\r\n      <div class=\"mini-date-bottom\">\r\n        {{ field_provus_smartdate_value_1 }}\r\n      </div>\r\n    </div>\r\n    <div class=\"mini-date-right\">\r\n      <div class=\"mini-date-title\">\r\n        <h3>\r\n         {{ title }} \r\n        </h3>\r\n      </div>\r\n      <div class=\"mini-date-fulldate\">\r\n        {{ field_provus_smartdate_value_2 }} - {{ field_provus_smartdate_end_value }}    \r\n      </div>\r\n    </div>\r\n  </div>\r\n</article>"
             make_link: false
             path: ''
             absolute: false
@@ -778,45 +587,15 @@ display:
             offset_label: Offset
           quantity: 9
       sorts:
-        field_provus_dates_value:
-          id: field_provus_dates_value
-          table: date_recur__node__field_provus_dates
-          field: field_provus_dates_value
-          relationship: field_provus_dates_occurrences
-          group_type: group
-          admin_label: ''
-          plugin_id: datetime
-          order: ASC
-          expose:
-            label: ''
-            field_identifier: ''
-          exposed: false
-          granularity: second
-        field_provus_dates_value_1:
-          id: field_provus_dates_value_1
-          table: node__field_provus_dates
-          field: field_provus_dates_value
+        field_provus_smartdate_value:
+          id: field_provus_smartdate_value
+          table: node__field_provus_smartdate
+          field: field_provus_smartdate_value
           relationship: none
           group_type: group
           admin_label: ''
-          plugin_id: datetime
-          order: ASC
-          expose:
-            label: ''
-            field_identifier: ''
-          exposed: false
-          granularity: second
-        created:
-          id: created
-          table: node_field_data
-          field: created
-          relationship: none
-          group_type: group
-          admin_label: ''
-          entity_type: node
-          entity_field: created
           plugin_id: date
-          order: DESC
+          order: ASC
           expose:
             label: ''
             field_identifier: ''
@@ -848,20 +627,21 @@ display:
           expose:
             operator_limit_selection: false
             operator_list: {  }
-        field_provus_dates_value:
-          id: field_provus_dates_value
-          table: date_recur__node__field_provus_dates
-          field: field_provus_dates_value
-          relationship: field_provus_dates_occurrences
+        field_provus_smartdate_end_value:
+          id: field_provus_smartdate_end_value
+          table: node__field_provus_smartdate
+          field: field_provus_smartdate_end_value
+          relationship: none
           group_type: group
           admin_label: ''
-          plugin_id: datetime
+          plugin_id: date
           operator: '>='
           value:
             min: ''
             max: ''
             value: today
             type: offset
+            granularity: second
           group: 1
           exposed: false
           expose:
@@ -943,17 +723,7 @@ display:
         sorts: false
         filters: false
         filter_groups: false
-      relationships:
-        field_provus_dates_occurrences:
-          id: field_provus_dates_occurrences
-          table: node_field_data
-          field: field_provus_dates_occurrences
-          relationship: none
-          group_type: group
-          admin_label: 'Occurrences of Dates'
-          entity_type: node
-          plugin_id: standard
-          required: false
+      relationships: {  }
       display_description: ''
       use_more: false
       use_more_always: true
@@ -971,13 +741,13 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.body'
-  block_upcoming_events:
-    id: block_upcoming_events
-    display_title: 'Upcoming events'
+  block_events_upcoming:
+    id: block_events_upcoming
+    display_title: 'Upcoming Events List'
     display_plugin: block
     position: 2
     display_options:
-      title: 'Upcoming events'
+      title: 'Upcoming Events'
       fields:
         title:
           id: title
@@ -1044,214 +814,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        field_provus_dates_value:
-          id: field_provus_dates_value
-          table: date_recur__node__field_provus_dates
-          field: field_provus_dates_value
-          relationship: field_provus_dates_occurrences
-          group_type: group
-          admin_label: ''
-          plugin_id: date_recur_date
-          label: ''
-          exclude: true
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          date_format: provus_month_short
-          custom_date_format: ''
-          timezone: ''
-        field_provus_dates_value_1:
-          id: field_provus_dates_value_1
-          table: date_recur__node__field_provus_dates
-          field: field_provus_dates_value
-          relationship: field_provus_dates_occurrences
-          group_type: group
-          admin_label: ''
-          plugin_id: date_recur_date
-          label: ''
-          exclude: true
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          date_format: provus_date_only
-          custom_date_format: ''
-          timezone: ''
-        field_provus_dates_value_2:
-          id: field_provus_dates_value_2
-          table: date_recur__node__field_provus_dates
-          field: field_provus_dates_value
-          relationship: field_provus_dates_occurrences
-          group_type: group
-          admin_label: ''
-          plugin_id: date_recur_date
-          label: ''
-          exclude: true
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          date_format: custom
-          custom_date_format: 'g:ia'
-          timezone: ''
-        field_provus_dates_end_value:
-          id: field_provus_dates_end_value
-          table: date_recur__node__field_provus_dates
-          field: field_provus_dates_end_value
-          relationship: field_provus_dates_occurrences
-          group_type: group
-          admin_label: ''
-          plugin_id: date_recur_date
-          label: ''
-          exclude: true
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          date_format: custom
-          custom_date_format: 'g:ia'
-          timezone: ''
         body:
           id: body
           table: node__body
@@ -1314,6 +876,214 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+        field_provus_smartdate_end_value:
+          id: field_provus_smartdate_end_value
+          table: node__field_provus_smartdate
+          field: field_provus_smartdate_end_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: date
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          date_format: custom
+          custom_date_format: 'g:ia'
+          timezone: ''
+        field_provus_smartdate_value:
+          id: field_provus_smartdate_value
+          table: node__field_provus_smartdate
+          field: field_provus_smartdate_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: date
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          date_format: provus_month_short
+          custom_date_format: ''
+          timezone: ''
+        field_provus_smartdate_value_1:
+          id: field_provus_smartdate_value_1
+          table: node__field_provus_smartdate
+          field: field_provus_smartdate_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: date
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          date_format: provus_date_only
+          custom_date_format: ''
+          timezone: ''
+        field_provus_smartdate_value_2:
+          id: field_provus_smartdate_value_2
+          table: node__field_provus_smartdate
+          field: field_provus_smartdate_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: date
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          date_format: custom
+          custom_date_format: 'g:ia'
+          timezone: ''
         nothing:
           id: nothing
           table: views
@@ -1326,7 +1096,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<article>\r\n  <div class=\"mini-date\">\r\n    <div class=\"mini-date-left\">\r\n      <div class=\"mini-date-top\">\r\n        {{ field_provus_dates_value }}\r\n      </div>\r\n      <div class=\"mini-date-bottom\">\r\n        {{ field_provus_dates_value_1 }}\r\n      </div>\r\n    </div>\r\n    <div class=\"mini-date-right\">\r\n      <div class=\"mini-date-title\">\r\n        <h3>\r\n         {{ title }} \r\n        </h3>\r\n      </div>\r\n      <div class=\"mini-date-fulldate\">\r\n        {{ field_provus_dates_value_2 }} - {{ field_provus_dates_end_value }}      \r\n      </div>\r\n    </div>\r\n  </div>\r\n</article>"
+            text: "<article>\r\n  <div class=\"mini-date\">\r\n    <div class=\"mini-date-left\">\r\n      <div class=\"mini-date-top\">\r\n        {{ field_provus_smartdate_value }}\r\n      </div>\r\n      <div class=\"mini-date-bottom\">\r\n        {{ field_provus_smartdate_value_1 }}\r\n      </div>\r\n    </div>\r\n    <div class=\"mini-date-right\">\r\n      <div class=\"mini-date-title\">\r\n        <h3>\r\n         {{ title }} \r\n        </h3>\r\n      </div>\r\n      <div class=\"mini-date-fulldate\">\r\n        {{ field_provus_smartdate_value_2 }} - {{ field_provus_smartdate_end_value }}    \r\n      </div>\r\n    </div>\r\n  </div>\r\n</article>"
             make_link: false
             path: ''
             absolute: false
@@ -1369,45 +1139,15 @@ display:
           offset: 0
           items_per_page: 3
       sorts:
-        field_provus_dates_value:
-          id: field_provus_dates_value
-          table: date_recur__node__field_provus_dates
-          field: field_provus_dates_value
-          relationship: field_provus_dates_occurrences
-          group_type: group
-          admin_label: ''
-          plugin_id: datetime
-          order: ASC
-          expose:
-            label: ''
-            field_identifier: ''
-          exposed: false
-          granularity: second
-        field_provus_dates_value_1:
-          id: field_provus_dates_value_1
-          table: node__field_provus_dates
-          field: field_provus_dates_value
+        field_provus_smartdate_value:
+          id: field_provus_smartdate_value
+          table: node__field_provus_smartdate
+          field: field_provus_smartdate_value
           relationship: none
           group_type: group
           admin_label: ''
-          plugin_id: datetime
-          order: ASC
-          expose:
-            label: ''
-            field_identifier: ''
-          exposed: false
-          granularity: second
-        created:
-          id: created
-          table: node_field_data
-          field: created
-          relationship: none
-          group_type: group
-          admin_label: ''
-          entity_type: node
-          entity_field: created
           plugin_id: date
-          order: DESC
+          order: ASC
           expose:
             label: ''
             field_identifier: ''
@@ -1439,20 +1179,21 @@ display:
           expose:
             operator_limit_selection: false
             operator_list: {  }
-        field_provus_dates_value:
-          id: field_provus_dates_value
-          table: date_recur__node__field_provus_dates
-          field: field_provus_dates_value
-          relationship: field_provus_dates_occurrences
+        field_provus_smartdate_end_value:
+          id: field_provus_smartdate_end_value
+          table: node__field_provus_smartdate
+          field: field_provus_smartdate_end_value
+          relationship: none
           group_type: group
           admin_label: ''
-          plugin_id: datetime
+          plugin_id: date
           operator: '>='
           value:
             min: ''
             max: ''
             value: today
             type: offset
+            granularity: second
           group: 1
           exposed: false
           expose:
@@ -1488,19 +1229,6 @@ display:
         operator: AND
         groups:
           1: AND
-      style:
-        type: default
-        options:
-          grouping: {  }
-          row_class: ''
-          default_row_class: true
-      row:
-        type: fields
-        options:
-          default_field_elements: true
-          inline: {  }
-          separator: ''
-          hide_empty: false
       defaults:
         title: false
         pager: false
@@ -1509,24 +1237,14 @@ display:
         use_more_text: false
         link_display: false
         link_url: false
-        style: false
-        row: false
+        style: true
+        row: true
         relationships: false
         fields: false
         sorts: false
         filters: false
         filter_groups: false
-      relationships:
-        field_provus_dates_occurrences:
-          id: field_provus_dates_occurrences
-          table: node_field_data
-          field: field_provus_dates_occurrences
-          relationship: none
-          group_type: group
-          admin_label: 'Occurrences of Dates'
-          entity_type: node
-          plugin_id: standard
-          required: false
+      relationships: {  }
       display_description: ''
       use_more: false
       use_more_always: true

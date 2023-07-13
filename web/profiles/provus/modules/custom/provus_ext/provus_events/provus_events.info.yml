@@ -5,6 +5,6 @@ core_version_requirement: ^8 || ^9 || ^10
 package: 'Provus'
 
 dependencies:
-  - fullcalendar_view
-  - date_recur
-  - date_recur_modular
+  - fullcalendar_block
+  - smart_date_recur
+  - rest
