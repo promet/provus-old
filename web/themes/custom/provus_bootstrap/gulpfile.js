@@ -8,7 +8,6 @@ let gulp = require('gulp'),
   postcss = require('gulp-postcss'),
   autoprefixer = require('autoprefixer'),
   postcssInlineSvg = require('postcss-inline-svg'),
-  browserSync = require('browser-sync').create()
   pxtorem = require('postcss-pxtorem'),
 	postcssProcessors = [
 		postcssInlineSvg({
@@ -65,23 +64,17 @@ function styles () {
     .pipe(cleanCss())
     .pipe(rename({ suffix: '.min' }))
     .pipe(gulp.dest(paths.scss.dest))
-    .pipe(browserSync.stream())
 }
 
 // Move the javascript files into our js folder
 function js () {
   return gulp.src([paths.js.bootstrap, paths.js.popper, paths.js.barrio])
     .pipe(gulp.dest(paths.js.dest))
-    .pipe(browserSync.stream())
 }
 
 // Static Server + watching scss/html files
 function serve () {
-  browserSync.init({
-    proxy: 'https://provus2.ddev.site/',
-  })
-
-  gulp.watch([paths.scss.watch, paths.scss.bootstrap], styles).on('change', browserSync.reload)
+  gulp.watch([paths.scss.watch, paths.scss.bootstrap],{interval: 1000, usePolling: true}, styles)
 }
 
 const build = gulp.series(styles, gulp.parallel(js, serve))
