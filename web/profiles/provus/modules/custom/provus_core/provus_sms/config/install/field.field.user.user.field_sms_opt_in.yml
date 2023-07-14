@@ -1,0 +1,24 @@
+uuid: 5efc5d11-0203-4db1-89b6-97c7f1115349
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_sms_opt_in
+  module:
+    - user
+id: user.user.field_sms_opt_in
+field_name: field_sms_opt_in
+entity_type: user
+bundle: user
+label: 'Subscribe to notifications'
+description: 'Receive SMS notifications and alerts from the site.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

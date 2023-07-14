@@ -1,0 +1,5 @@
+provus_core.admin:
+  title: 'Provus'
+  description: 'Configure how your site uses Provus.'
+  route_name: provus_core.admin
+  parent: system.admin_config

@@ -1,0 +1,96 @@
+<?php
+
+/**
+ * @file
+ * Contains provus_sms.module.
+ */
+
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function provus_sms_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the provus_sms module.
+    case 'help.page.provus_sms':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Gives users ability to subscribe and receive alerts via SMS.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/*
+ * Implements hook_entity_type_build().
+ */
+function provus_sms_entity_type_build(array &$entity_types) {
+  // Register new user notifications form mode.
+  if (isset($entity_types['user'])) {
+    $entity_types['user']->setFormClass('notifications', 'Drupal\user\ProfileForm');
+  }
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function provus_sms_form_user_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  // Remove access to SMS field on the default user profile form.
+  $form['automated_opt_out']['#access'] = FALSE;
+  $form['field_sms_opt_in']['#access'] = FALSE;
+  $form['phone_number']['#access'] = FALSE;
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function provus_sms_form_user_notifications_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  // Toggle phone number visibility based on subscription checkbox.
+  $form['field_sms_opt_in']['#access'] = TRUE;
+  $form['phone_number']['#access'] = TRUE;
+  $form['phone_number']['widget'][0]['value']['#description'] = t('Please include the country code prepended by <em>+</em>.');
+  $form['phone_number']['widget'][0]['value']['#disabled'] = FALSE;
+  $form['phone_number']['widget'][0]['value']['#states'] = [
+    'visible' => [
+      'input.form-checkbox[name="field_sms_opt_in[value]"]' => ['checked' => TRUE],
+    ],
+    'enabled' => [
+      'input.form-checkbox[name="field_sms_opt_in[value]"]' => ['checked' => TRUE],
+    ],
+    'required' => [
+      'input.form-checkbox[name="field_sms_opt_in[value]"]' => ['checked' => TRUE],
+    ],
+  ];
+
+  // @todo: Make sure phone validation is applied.
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_presave().
+ */
+function provus_sms_node_presave(EntityInterface $entity) {
+  // Send notifications.
+  if ($entity->isPublished() &&
+     (!$entity->hasField('field_bs_alert_active') ||
+       ($entity->hasField('field_bs_alert_active') &&
+         $entity->get('field_bs_alert_active')->value))) {
+    \Drupal::service('provus_sms.notifications')
+      ->send($entity);
+  }
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_presave().
+ */
+function provus_sms_user_presave(EntityInterface $entity) {
+  // Make sure Opt In and Opt Out values are always reversed.
+  if ($entity->hasField('automated_opt_out') &&
+    $entity->hasField('field_sms_opt_in')) {
+    $sms_opt_in = (bool) $entity->get('field_sms_opt_in')->value;
+    $entity->set('automated_opt_out', !$sms_opt_in);
+  }
+}

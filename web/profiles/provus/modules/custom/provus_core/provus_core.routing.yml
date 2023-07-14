@@ -1,0 +1,7 @@
+provus_core.admin:
+  path: '/admin/config/provus'
+  defaults:
+    _controller: '\Drupal\system\Controller\SystemController::systemAdminMenuBlockPage'
+    _title: 'Provus'
+  requirements:
+    _permission: 'access administration pages'

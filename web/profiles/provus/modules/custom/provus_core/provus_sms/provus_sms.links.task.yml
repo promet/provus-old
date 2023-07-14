@@ -1,0 +1,5 @@
+provus_sms.notifications:
+  title: 'Notifications'
+  route_name: provus_sms.notifications
+  base_route: entity.user.canonical
+  weight: 10

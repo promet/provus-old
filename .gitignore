@@ -71,3 +71,6 @@
 .idea
 .vscode
 /.drush-lock-update
+
+# Dotenv
+.env

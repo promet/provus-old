@@ -1,0 +1,17 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - sms_twilio
+id: twilio
+label: Twilio
+plugin: twilio
+settings:
+  account_sid: ''
+  auth_token: ''
+  from: ''
+skip_queue: false
+incoming_push_path: /sms/incoming/receive/p6ByNiN9aZPaEzjy-V8dAA
+reports_push_path: /sms/delivery-report/receive/_unQv2wx29xTiFYfdRVSAA
+retention_duration_incoming: 0
+retention_duration_outgoing: 0

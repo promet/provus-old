@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.automated_opt_out
+  module:
+    - user
+id: user.user.automated_opt_out
+field_name: automated_opt_out
+entity_type: user
+bundle: user
+label: 'Opt out of SMS notifications.'
+description: 'SMS notifications requested by you are exempt.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'Do not receive SMS messages from this site.'
+  off_label: 'Receive SMS messages from this site.'
+field_type: boolean

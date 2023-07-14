@@ -1,0 +1,37 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.user.notifications
+    - field.field.user.user.automated_opt_out
+    - field.field.user.user.field_sms_opt_in
+    - field.field.user.user.phone_number
+  module:
+    - telephone
+    - user
+id: user.user.notifications
+targetEntityType: user
+bundle: user
+mode: notifications
+content:
+  field_sms_opt_in:
+    type: boolean_checkbox
+    weight: 0
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  phone_number:
+    type: telephone_default
+    weight: 1
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  account: true
+  automated_opt_out: true
+  contact: true
+  language: true
+  path: true
+  timezone: true

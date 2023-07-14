@@ -1,0 +1,20 @@
+provus_sms.settings:
+  path: '/admin/config/provus/sms'
+  defaults:
+    _form: '\Drupal\provus_sms\Form\ProvusSmsSettingsForm'
+    _title: 'SMS settings'
+  requirements:
+    _permission: 'administer sms notifications'
+
+provus_sms.notifications:
+  path: '/user/{user}/notifications'
+  defaults:
+    _entity_form: user.notifications
+    _title: 'Notifications'
+  options:
+    parameters:
+      user:
+        type: entity:user
+    _admin_route: TRUE
+  requirements:
+    _custom_access: '\Drupal\provus_sms\Controller\NotificationsController::access'

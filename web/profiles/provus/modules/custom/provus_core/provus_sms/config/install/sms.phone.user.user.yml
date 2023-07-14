@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.user.user.automated_opt_out
+    - field.field.user.user.phone_number
+id: user.user
+entity_type: user
+bundle: user
+automated_optout: null
+verification_message: "Your verification code is '[sms-message:verification-code]'.\r\nGo to [sms:verification-url] to verify your phone number.\r\n- [site:name]"
+verification_code_lifetime: 3600
+purge_verification_phone_number: true
+fields:
+  phone_number: phone_number
+  automated_opt_out: automated_opt_out

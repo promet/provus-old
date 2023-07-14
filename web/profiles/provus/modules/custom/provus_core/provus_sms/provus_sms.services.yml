@@ -1,0 +1,3 @@
+services:
+  provus_sms.notifications:
+    class: Drupal\provus_sms\NotificationsHelper

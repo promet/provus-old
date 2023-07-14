@@ -1,0 +1,7 @@
+administer sms notifications:
+  title: 'Administer SMS notifications'
+  description: 'Allows user to administer and configure templates for SMS notifications.'
+
+subscribe to sms notifications:
+  title: 'Subscribe to SMS notifications'
+  description: 'Allows user to subscribe and unsubscribe to SMS notifications.'

@@ -1,0 +1,4 @@
+types:
+  bootstrap_site_alert: bootstrap_site_alert
+templates:
+  default_template: '[node:title]'

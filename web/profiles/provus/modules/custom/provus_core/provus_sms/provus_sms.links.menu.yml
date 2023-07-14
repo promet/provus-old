@@ -1,0 +1,6 @@
+provus_sms.settings:
+  title: 'SMS settings'
+  description: 'Specific settings for Provus SMS.'
+  route_name: provus_sms.settings
+  parent: provus_core.admin
+  weight: 0

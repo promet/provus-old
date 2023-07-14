@@ -1,0 +1,71 @@
+<?php
+
+/**
+ * @file
+ * Install and uninstall functions for the Provus SMS module.
+ */
+
+/**
+ * Implements hook_install().
+ *
+ * Perform actions to set up the SMS Framework.
+ *
+ * @see system_install()
+ */
+function provus_sms_install() {
+  _provus_sms_set_framework();
+}
+
+
+/**
+ * Implements hook_uninstall().
+ *
+ * Perform actions to set up the SMS Framework after module 
+ * uninstallation.
+ */
+function provus_sms_uninstall() {
+  $config_factory = \Drupal::service('config.factory');
+
+  // Remove Provus SMS-related settings.
+  $configs = [
+    'core.entity_form_display.user.user.notifications',
+    'core.entity_form_mode.user.notifications',
+    'field.field.user.user.automated_opt_out',
+    'field.field.user.user.field_sms_opt_in',
+    'field.field.user.user.phone_number',
+    'field.storage.user.automated_opt_out',
+    'field.storage.user.field_sms_opt_in',
+    'field.storage.user.phone_number',
+    'provus_sms.settings',
+    'sms.gateway.twilio',
+    'sms.phone.user.user',
+  ];
+  foreach ($configs as $config) {
+    $config_factory
+      ->getEditable($config)
+      ->delete();
+  }
+  
+  // Set SMS Framework to logger.
+  _provus_sms_set_framework('log');
+}
+
+/**
+ * Setup the SMS framework.
+ * 
+ * @param string $gateway
+ *  The SMS gateway to use.
+ */
+function _provus_sms_set_framework($gateway = 'twilio') {
+  $module_handler = \Drupal::moduleHandler();
+  $config_factory = \Drupal::service('config.factory');
+
+  // Set SMS Framework to preferred framework.
+  if ($module_handler
+    ->moduleExists('sms')) {
+    $sms_config = $config_factory
+      ->getEditable('sms.settings');
+    $sms_config->set('fallback_gateway', $gateway);
+    $sms_config->save(); 
+  }
+}
