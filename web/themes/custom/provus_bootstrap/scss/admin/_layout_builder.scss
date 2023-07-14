@@ -526,6 +526,9 @@
       &testimonial {
         background-image: url('../images/components/testimonial.svg') !important;
       }
+      &photo-gallery {
+        background-image: url('../images/components/photogallery.svg') !important;
+      }
     }
     &:hover,
     &:hover {
@@ -584,6 +587,9 @@
         }
         &testimonial {
           background-image: url('../images/components/testimonial-white.svg') !important;
+        }
+        &photo-gallery {
+          background-image: url('../images/components/photogallery-white.svg') !important;
         }
       }
     }

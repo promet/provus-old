@@ -49,7 +49,7 @@ third_party_settings:
         - 'bootstrap_layout_builder:blb_col_2'
         - 'bootstrap_layout_builder:blb_col_3'
         - 'bootstrap_layout_builder:blb_col_4'
-      denylisted_blocks: { }
+      denylisted_blocks: {  }
       allowlisted_blocks:
         'Custom block types':
           - provus_accordion
@@ -65,6 +65,7 @@ third_party_settings:
           - provus_large_banner
           - provus_list
           - provus_media
+          - provus_photo_gallery
           - provus_short_banner
           - provus_stat_group
           - provus_tabs
@@ -83,6 +84,7 @@ third_party_settings:
           - 'inline_block:provus_large_banner'
           - 'inline_block:provus_list'
           - 'inline_block:provus_media'
+          - 'inline_block:provus_photo_gallery'
           - 'inline_block:provus_short_banner'
           - 'inline_block:provus_stat_group'
           - 'inline_block:provus_tabs'
@@ -98,7 +100,7 @@ third_party_settings:
           - 'inline_block:provus_list_item'
           - 'inline_block:provus_stat_item'
           - 'inline_block:provus_tab_item'
-      whitelisted_blocks: { }
+      whitelisted_blocks: {  }
 id: node.provus_landing_page.default
 targetEntityType: node
 bundle: provus_landing_page

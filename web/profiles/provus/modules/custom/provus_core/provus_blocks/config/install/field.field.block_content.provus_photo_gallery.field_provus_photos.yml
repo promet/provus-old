@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.provus_photo_gallery
+    - field.storage.block_content.field_provus_photos
+    - media.type.image
+id: block_content.provus_photo_gallery.field_provus_photos
+field_name: field_provus_photos
+entity_type: block_content
+bundle: provus_photo_gallery
+label: Photos
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

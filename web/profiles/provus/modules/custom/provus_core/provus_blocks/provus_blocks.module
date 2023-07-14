@@ -149,9 +149,13 @@ function provus_blocks_theme() {
       'template' => 'block--provus-group',
       'base hook' => 'block'
     ],
-    'block__provus_gallery' => [
-      'template' => 'block--provus-gallery',
+    'block__provus_photo_gallery' => [
+      'template' => 'block--provus-photo-gallery',
       'base hook' => 'block'
+    ],
+    'field__block_content__provus_photo_gallery' => [
+      'template' => 'field--block-content--provus-photo-gallery',
+      'base hook' => 'field'
     ],
     'block__provus_group__carousel' => [
       'template' => 'block--provus-group--carousel',
