@@ -5,6 +5,8 @@ core_version_requirement: ^8 || ^9
 package: 'Provus'
 dependencies:
   - drupal:node
+  - drupal:telephone
   - drupal:user
   - sms
   - sms_twilio
+  - telephone_validation

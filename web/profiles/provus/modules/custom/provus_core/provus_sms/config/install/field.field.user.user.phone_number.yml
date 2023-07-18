@@ -5,7 +5,12 @@ dependencies:
     - field.storage.user.phone_number
   module:
     - telephone
+    - telephone_validation
     - user
+third_party_settings:
+  telephone_validation:
+    format: 0
+    country: {  }
 id: user.user.phone_number
 field_name: phone_number
 entity_type: user
