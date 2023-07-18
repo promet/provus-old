@@ -1,3 +1,4 @@
 services:
   provus_sms.notifications:
     class: Drupal\provus_sms\NotificationsHelper
+    arguments: ["@entity_type.manager"]
