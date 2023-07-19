@@ -10,3 +10,4 @@ dependencies:
   - sms
   - sms_twilio
   - telephone_validation
+  - token

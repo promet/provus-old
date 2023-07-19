@@ -75,11 +75,10 @@ function provus_sms_form_user_notifications_form_alter(&$form, FormStateInterfac
 function provus_sms_node_presave(EntityInterface $entity) {
   // Send notifications.
   if ($entity->isPublished() &&
-     (!$entity->hasField('field_bs_alert_active') ||
-       ($entity->hasField('field_bs_alert_active') &&
-         $entity->get('field_bs_alert_active')->value))) {
-    \Drupal::service('provus_sms.notifications')
-      ->send($entity);
+    (!$entity->hasField('field_bs_alert_active') ||
+      ($entity->hasField('field_bs_alert_active') &&
+        $entity->get('field_bs_alert_active')->value))) {
+    \Drupal::service('provus_sms.notifications')->send($entity);
   }
 }
 

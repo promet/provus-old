@@ -134,10 +134,8 @@ class ProvusSmsSettingsForm extends ConfigFormBase {
     }
 
     // Display the list of available placeholders if token module is installed.
-    if ($this
-      ->moduleHandler
+    if ($this->moduleHandler
       ->moduleExists('token')) {
-
       $form['templates']['token_help'] = array(
         '#theme' => 'token_tree_link',
         '#global_types' => TRUE,
