@@ -5,8 +5,9 @@
  * Contains provus_core.module.
  */
 
-use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Cache\RefinableCacheableDependencyInterface;
 use Drupal\Core\Entity\Display\EntityViewDisplayInterface;
+use Drupal\Core\Routing\RouteMatchInterface;
 
 /**
  * Implements hook_help().
@@ -114,6 +115,19 @@ function provus_core_preprocess_node(&$vars) {
 
   // Get other display settings from card config ymls.
   $vars['cardstyle'] = provus_blocks_get_cardstyle_from_displaymode($vars['view_mode']);
+}
+
+/**
+ * Implements hook_menu_local_tasks_alter().
+ */
+function provus_core_menu_local_tasks_alter(&$data, $route_name, RefinableCacheableDependencyInterface &$cacheability) {
+  // Reorder local user menu tabs.
+  if (isset($data['tabs'][0]['entity.user.contact_form'])) {
+    $data['tabs'][0]['entity.user.contact_form']['#weight'] = 5;
+  }
+  if (isset($data['tabs'][0]['shortcut.set_switch'])) {
+    $data['tabs'][0]['shortcut.set_switch']['#weight'] = 15;
+  }
 }
 
 /**
