@@ -31,31 +31,31 @@ function provus_core_theme() {
   return [
     'node__provus_card' => [
       'template' => 'node--provus-card',
-      'base hook' => 'node'
+      'base hook' => 'node',
     ],
     'node__provus_card_basic' => [
       'template' => 'node--provus-card-basic',
-      'base hook' => 'node'
+      'base hook' => 'node',
     ],
     'node__provus_card_basic_plus' => [
       'template' => 'node--provus-card-basic-plus',
-      'base hook' => 'node'
+      'base hook' => 'node',
     ],
     'node__provus_card_bg' => [
       'template' => 'node--provus-card-bg',
-      'base hook' => 'node'
+      'base hook' => 'node',
     ],
     'node__provus_card_image_circle' => [
       'template' => 'node--provus-card-image-circle',
-      'base hook' => 'node'
+      'base hook' => 'node',
     ],
     'node__provus_card_left' => [
       'template' => 'node--provus-card-left',
-      'base hook' => 'node'
+      'base hook' => 'node',
     ],
     'node__provus_card_right' => [
       'template' => 'node--provus-card-right',
-      'base hook' => 'node'
+      'base hook' => 'node',
     ],
   ];
 }

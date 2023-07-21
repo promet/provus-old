@@ -25,7 +25,7 @@ function provus_sms_help($route_name, RouteMatchInterface $route_match) {
   }
 }
 
-/*
+/**
  * Implements hook_entity_type_build().
  */
 function provus_sms_entity_type_build(array &$entity_types) {
@@ -65,8 +65,6 @@ function provus_sms_form_user_notifications_form_alter(&$form, FormStateInterfac
       'input.form-checkbox[name="field_sms_opt_in[value]"]' => ['checked' => TRUE],
     ],
   ];
-
-  // @todo: Make sure phone validation is applied.
 }
 
 /**

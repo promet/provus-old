@@ -12,14 +12,14 @@ use Drupal\sms\Provider\SmsProviderInterface;
 use Drupal\token\TokenInterface;
 
 /**
- * Notifications service.
+ * Notifications service sends out notifications to subscribers.
  */
 class Notifications {
 
   /**
    * Subscribe permision.
    */
-  CONST SUBSCRIBER_PERMISSION = 'subscribe to sms notifications';
+  const SUBSCRIBER_PERMISSION = 'subscribe to sms notifications';
 
   /**
    * The config factory.
@@ -44,7 +44,7 @@ class Notifications {
 
   /**
    * The token service.
-   * 
+   *
    * @var \Drupal\token\Token
    */
   protected $tokenService;
@@ -58,7 +58,7 @@ class Notifications {
    *   The entity type manager.
    * @param \Drupal\sms\Provider\SmsProviderInterface $sms_provider
    *   The SMS provider.
-   * @param \Drupal\token\TokenInterface $tokenService
+   * @param \Drupal\token\TokenInterface $token_service
    *   The token service.
    */
   public function __construct(ConfigFactoryInterface $config_factory, EntityTypeManagerInterface $entity_type_manager, SmsProviderInterface $sms_provider, TokenInterface $token_service) {
@@ -74,17 +74,17 @@ class Notifications {
    * @param \Drupal\node\NodeInterface $node
    *   The node entity object.
    *
-   * @return string $message
+   * @return string
    *   A message with token already replaced.
    */
   private function getMessageTemplate(NodeInterface $node) {
     $message = '';
-    
+
     // Get the appropriate message template of the node bundle.
     $config = $this->configFactory
       ->get('provus_sms.settings');
     $templates = $config->get('templates');
-    $template = isset($templates[ $node->bundle() . '_template']) && !empty($templates[ $node->bundle() . '_template']) ?
+    $template = isset($templates[$node->bundle() . '_template']) && !empty($templates[$node->bundle() . '_template']) ?
       $templates[$node->bundle() . '_template'] :
       $templates['default_template'];
 
@@ -94,19 +94,19 @@ class Notifications {
         'node' => $node,
       ]);
 
-    return $message; 
+    return $message;
   }
-  
+
   /**
    * Gets the list of subscribers.
-   * 
-   * @return array $subscribers
+   *
+   * @return array
    *   The list of subscribers.
    */
   private function getSubscribers() {
     $user_storage = $this->entityTypeManager
       ->getStorage('user');
-    
+
     // Get a list of active users who subscribed and has a phone number.
     $subscribers = [];
     $query = $user_storage->getQuery()
@@ -136,8 +136,8 @@ class Notifications {
 
   /**
    * Gets the list of subscriber roles.
-   * 
-   * @return array $roles
+   *
+   * @return array
    *   The list of subscriber roles.
    */
   private function getSubscriberRoles() {
@@ -161,7 +161,7 @@ class Notifications {
    * @param \Drupal\node\NodeInterface $node
    *   The node entity object.
    *
-   * @return boolean $allowed
+   * @return bool
    *   Whether the node is allowed to send out notifications or not.
    */
   private function isNodeAllowedNotifications(NodeInterface $node) {
@@ -170,7 +170,11 @@ class Notifications {
     $config = $this->configFactory
       ->get('provus_sms.settings');
     $types = $config->get('types');
-    $types = array_filter($types, function($type) { return ($type !== 0); });
+    $types = array_filter($types,
+      function ($type) {
+        return ($type !== 0);
+      }
+    );
     // If there are no types enabled, it will be enabled to all.
     // Otherwise check if the bundle is enabled.
     if (empty($types) ||
@@ -186,6 +190,9 @@ class Notifications {
    *
    * @param \Drupal\node\NodeInterface $node
    *   The node entity object.
+   *
+   * @todo Add a RecipientRouteException handling.
+   * @todo Add an Exception handling.
    */
   public function send(NodeInterface $node) {
     if ($this->isNodeAllowedNotifications($node)) {
@@ -202,10 +209,10 @@ class Notifications {
             ->queue($sms);
         }
         catch (RecipientRouteException $e) {
-          // @todo: Add a receipient route exception here.
+          // Add a RecipientRouteException handling.
         }
         catch (\Exception $e) {
-          // @todo: Add an exception here.
+          // Add an Exception handling.
         }
       }
     }

@@ -103,12 +103,12 @@ class ProvusSmsSettingsForm extends ConfigFormBase {
       '#type' => 'fieldset',
       '#title' => $this->t('Message templates'),
     ];
-    
+
     $templates = $config->get('templates');
     $form['templates']['default_template'] = [
       '#type' => 'textarea',
       '#title' => $this->t('Default'),
-      '#default_value' => isset($templates['default_template']) ? $templates['default_template'] : '',
+      '#default_value' => isset($templates['default_template']) ?? $templates['default_template'],
       '#required' => TRUE,
     ];
 
@@ -129,18 +129,18 @@ class ProvusSmsSettingsForm extends ConfigFormBase {
 
       $form['templates'][$type][$type . '_template'] = [
         '#type' => 'textarea',
-        '#default_value' => isset($templates[$type . '_template']) ? $templates[$type . '_template'] : '',
+        '#default_value' => isset($templates[$type . '_template']) ?? $templates[$type . '_template'],
       ];
     }
 
     // Display the list of available placeholders if token module is installed.
     if ($this->moduleHandler
       ->moduleExists('token')) {
-      $form['templates']['token_help'] = array(
+      $form['templates']['token_help'] = [
         '#theme' => 'token_tree_link',
         '#global_types' => TRUE,
         '#token_types' => ['node'],
-      );
+      ];
     }
 
     return $form;

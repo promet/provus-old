@@ -16,11 +16,10 @@ function provus_sms_install() {
   _provus_sms_set_framework();
 }
 
-
 /**
  * Implements hook_uninstall().
  *
- * Perform actions to set up the SMS Framework after module 
+ * Perform actions to set up the SMS Framework after module
  * uninstallation.
  */
 function provus_sms_uninstall() {
@@ -45,16 +44,16 @@ function provus_sms_uninstall() {
       ->getEditable($config)
       ->delete();
   }
-  
+
   // Set SMS Framework to logger.
   _provus_sms_set_framework('log');
 }
 
 /**
  * Setup the SMS framework.
- * 
+ *
  * @param string $gateway
- *  The SMS gateway to use.
+ *   The SMS gateway to use.
  */
 function _provus_sms_set_framework($gateway = 'twilio') {
   $module_handler = \Drupal::moduleHandler();
@@ -66,6 +65,6 @@ function _provus_sms_set_framework($gateway = 'twilio') {
     $sms_config = $config_factory
       ->getEditable('sms.settings');
     $sms_config->set('fallback_gateway', $gateway);
-    $sms_config->save(); 
+    $sms_config->save();
   }
 }
