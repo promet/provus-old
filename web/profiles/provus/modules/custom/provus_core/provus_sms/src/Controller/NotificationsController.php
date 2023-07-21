@@ -28,7 +28,7 @@ class NotificationsController extends ControllerBase {
     // Adding NULL handling for $user and set NULL default value for $user in
     // the argument.
     if (!($user instanceof UserInterface)) {
-      return AccessResult::neutral();
+      return AccessResult::forbidden();
     }
 
     return AccessResult::allowedIf($account->hasPermission('subscribe to sms notifications') && $account->id() == $user->id());

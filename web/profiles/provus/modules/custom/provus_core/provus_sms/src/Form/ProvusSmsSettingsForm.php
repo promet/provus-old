@@ -15,14 +15,14 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
 class ProvusSmsSettingsForm extends ConfigFormBase {
 
   /**
-   * Drupal\Core\Entity\EntityTypeManagerInterface definition.
+   * The entity type manager.
    *
    * @var \Drupal\Core\Entity\EntityTypeManagerInterface
    */
   protected $entityTypeManager;
 
   /**
-   * Drupal\Core\Extension\ModuleHandlerInterface definition.
+   * The module handler.
    *
    * @var \Drupal\Core\Extension\ModuleHandlerInterface
    */

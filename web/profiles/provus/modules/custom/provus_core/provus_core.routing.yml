@@ -4,4 +4,4 @@ provus_core.admin:
     _controller: '\Drupal\system\Controller\SystemController::systemAdminMenuBlockPage'
     _title: 'Provus'
   requirements:
-    _permission: 'access administration pages'
+    _custom_access: '\Drupal\provus_core\Controller\OverviewController::access'

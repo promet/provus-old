@@ -50,7 +50,7 @@ class Notifications {
   protected $tokenService;
 
   /**
-   * Constructor.
+   * Constructs a new Notifications.
    *
    * @param \Drupal\Core\Config\ConfigFactoryInterface $config_factory
    *   The factory for configuration objects.
