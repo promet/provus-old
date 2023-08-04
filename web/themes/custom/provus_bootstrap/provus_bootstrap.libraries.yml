@@ -73,3 +73,22 @@ photogallery:
   dependencies:
     - core/drupal
     - core/jquery
+    - provus_bootstrap/lightgallery
+
+slick:
+  js:
+    /libraries/slick/slick/slick.min.js : { minified: true }
+  css:
+    theme:
+      /libraries/slick/slick/slick.css : { minified: true }
+      /libraries/slick/slick/slick-theme.css : { minified: true }
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - blazy/blazy
+
+slideshow:
+  js:
+    js/slideshow.js : { minified: true }
+  dependencies:
+    - provus_bootstrap/slick

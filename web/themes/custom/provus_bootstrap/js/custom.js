@@ -18,6 +18,8 @@
       $('#searchCollapse').on('hidden.bs.collapse', function () {
         $('#searchCollapse .form-search').blur();
       });
+
+
     }
   }
 

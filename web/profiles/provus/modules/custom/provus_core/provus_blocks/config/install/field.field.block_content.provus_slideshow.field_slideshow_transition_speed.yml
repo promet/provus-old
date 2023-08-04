@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.provus_slideshow
+    - field.storage.block_content.field_slideshow_transition_speed
+id: block_content.provus_slideshow.field_slideshow_transition_speed
+field_name: field_slideshow_transition_speed
+entity_type: block_content
+bundle: provus_slideshow
+label: 'Transition speed'
+description: '* in milliseconds'
+required: false
+translatable: false
+default_value:
+  -
+    value: '2000'
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.provus_slideshow
+    - block_content.type.provus_slideshow_item
+    - field.storage.block_content.field_slide_item
+id: block_content.provus_slideshow.field_slide_item
+field_name: field_slide_item
+entity_type: block_content
+bundle: provus_slideshow
+label: 'Slide item'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:block_content'
+  handler_settings:
+    target_bundles:
+      provus_slideshow_item: provus_slideshow_item
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

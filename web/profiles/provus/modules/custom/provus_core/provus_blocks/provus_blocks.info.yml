@@ -18,3 +18,5 @@ dependencies:
   - media
   - media_library
   - token
+  - slick
+  - slick_ui

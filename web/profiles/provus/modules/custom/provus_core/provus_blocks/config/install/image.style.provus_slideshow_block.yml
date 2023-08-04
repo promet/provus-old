@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies: {  }
+name: provus_slideshow_block
+label: 'Slideshow Block | Desktop'
+effects:
+  2624c041-6e2c-471b-9d95-c43ef01d50c1:
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1439
+      height: 592
+      anchor: center-center

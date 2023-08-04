@@ -1,0 +1,36 @@
+provus_bootstrap.xsmall:
+  label: Smallest
+  mediaQuery: 'all and (max-width: 575px)'
+  weight: 0
+  multipliers:
+    - 1x
+provus_bootstrap.small:
+  label: Small
+  mediaQuery: 'all and (min-width: 576px) and (max-width: 767px)'
+  weight: 0
+  multipliers:
+    - 1x
+provus_bootstrap.medium:
+  label: Medium
+  mediaQuery: 'all and (min-width: 768px) and (max-width: 1109px)'
+  weight: 0
+  multipliers:
+    - 1x
+provus_bootstrap.large:
+  label: Large
+  mediaQuery: 'all and (min-width: 1110px) and (max-width: 1299px)'
+  weight: 2
+  multipliers:
+    - 1x
+provus_bootstrap.xlarge:
+  label: X-Large
+  mediaQuery: 'all and (min-width: 1300px) and (max-width: 1551px)'
+  weight: 3
+  multipliers:
+    - 1x
+provus_bootstrap.xxlarge:
+  label: XX-Large
+  mediaQuery: 'all and (min-width: 1552px)'
+  weight: 3
+  multipliers:
+    - 1x

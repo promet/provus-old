@@ -67,6 +67,7 @@ third_party_settings:
           - provus_media
           - provus_photo_gallery
           - provus_short_banner
+          - provus_slideshow
           - provus_stat_group
           - provus_tabs
           - provus_testimonial
@@ -86,6 +87,7 @@ third_party_settings:
           - 'inline_block:provus_media'
           - 'inline_block:provus_photo_gallery'
           - 'inline_block:provus_short_banner'
+          - 'inline_block:provus_slideshow'
           - 'inline_block:provus_stat_group'
           - 'inline_block:provus_tabs'
           - 'inline_block:provus_testimonial'
@@ -98,6 +100,7 @@ third_party_settings:
         'Inline blocks':
           - 'inline_block:provus_faq_item'
           - 'inline_block:provus_list_item'
+          - 'inline_block:provus_slideshow_item'
           - 'inline_block:provus_stat_item'
           - 'inline_block:provus_tab_item'
       whitelisted_blocks: {  }
