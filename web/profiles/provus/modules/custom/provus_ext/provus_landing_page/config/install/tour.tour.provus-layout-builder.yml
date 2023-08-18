@@ -1,0 +1,100 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - provus_core
+id: provus-layout-builder
+label: 'Layout Builder'
+module: provus_core
+routes:
+  -
+    route_name: layout_builder.overrides.node.view
+tips:
+  welcome-to-layout-builder:
+    id: welcome-to-layout-builder
+    plugin: text
+    label: 'Layout Builder Tour'
+    weight: -100
+    position: top-start
+    body: 'You are now editing the layout of this page in a draggable interface.'
+    attributes: null
+  section:
+    id: section
+    plugin: text
+    label: 'Section'
+    weight: -99
+    position: top-start
+    selector: .layout-builder__section
+    body: "This dotted box is called a section.  It is used to layout the page.  There are 1 column, 2 column, 3 column, and 4 column options."
+  add-a-section:
+    id: add-a-section
+    plugin: text
+    label: 'Add a Section'
+    weight: -99
+    position: top-start
+    selector: '.layout-builder__add-section .layout-builder__link--add'
+    body: "Click 'Add section' to add new section to the page. Use the button above the current section to add above and the button below the current section to add below."
+  import-a-section:
+    id: import-a-section
+    plugin: text
+    label: 'Import a Section/s'
+    weight: -98
+    position: top-start
+    selector: '.layout-builder__add-section .layout-builder__link--import-from-library'
+    body: "Click 'Import from Library' to add new sections based of preconfigured templates to the page. You can also import a full page of sections."
+  configure-a-section:
+    id: configure-a-section
+    plugin: text
+    label: 'Configure a Section'
+    weight: -98
+    position: top-start
+    selector: '.layout-builder__section .layout-builder__link--configure'
+    body: "Click 'Configure' to add configure the section once it is on the page."
+  remove-a-section:
+    id: remove-a-section
+    plugin: text
+    label: 'Remove a Section'
+    weight: -98
+    position: top-start
+    selector: '.layout-builder__section .layout-builder__link--remove'
+    body: "Click 'X' to remove this section from the page."
+  add-a-block:
+    id: add-a-block
+    plugin: text
+    label: 'Add a Block'
+    weight: -97
+    position: top-start
+    selector: .layout-builder__add-block
+    body: "Click 'Add block' to add new component blocks to this section on the page."
+  editing-blocks:
+    id: editing-blocks
+    plugin: text
+    label: 'Editing Blocks'
+    weight: -96
+    position: top-start
+    selector: '.js-layout-builder-block button'
+    body: "<p>Once you add blocks to the page, you can edit them again by clicking the pencil icon in the top right of the block when you hover over the block, then clicking Configure.</p>\r\n<p>You can also move blocks around by dragging them up and down or by clicking the Move link inside the dialog when you click the pencil icon.</p>"
+  submit:
+    id: submit
+    plugin: text
+    label: 'Save layout'
+    weight: -95
+    position: right-start
+    selector: '.layout-builder-form #edit-submit'
+    body: 'Clicking this button will save your layout work and publish it to the public.'
+  discard-changes:
+    id: discard-changes
+    plugin: text
+    label: 'Discard changes'
+    weight: -94
+    position: right-start
+    selector: '.layout-builder-form #edit-discard-changes'
+    body: 'Clicking this will forget the changes you have been making here and go back to the last saved layout of the page that the public can currently see.'
+  revert-to-defaults:
+    id: revert-to-defaults
+    plugin: text
+    label: 'Revert to defaults'
+    weight: -93
+    position: right-start
+    selector: '.layout-builder-form #edit-revert'
+    body: 'Clicking this button will clear all of the blocks off of the page except for the body field.  Be very careful with this option!'

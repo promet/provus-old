@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies: {  }
+id: provus_events_calendar
+block_id: fullcalendar_block
+category: provus_views
+label: 'Events Calendar'
+image_path: ''
+image_alt: ''
+weight: 40

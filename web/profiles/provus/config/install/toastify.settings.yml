@@ -1,5 +1,5 @@
 status:
-  duration: '0'
+  duration: '3000'
   color: '#67b99a'
   color2: '#14746f'
   colorProgressBar: '#0d514d'
@@ -8,7 +8,7 @@ status:
   positionLeft: false
   close: true
 warning:
-  duration: '0'
+  duration: '3000'
   color: '#ffaa00'
   color2: '#ff6d00'
   colorProgressBar: '#b24c00'
@@ -17,7 +17,7 @@ warning:
   positionLeft: false
   close: true
 error:
-  duration: '0'
+  duration: '3000'
   color: '#e01e37'
   color2: '#a71e34'
   colorProgressBar: '#741424'

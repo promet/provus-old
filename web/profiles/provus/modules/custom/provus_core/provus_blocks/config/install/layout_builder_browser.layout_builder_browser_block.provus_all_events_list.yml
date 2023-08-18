@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies: {  }
+id: provus_all_events_list
+block_id: 'views_block:provus_events-block_events_list'
+category: provus_views
+label: 'All Events List'
+image_path: ''
+image_alt: ''
+weight: 30

@@ -31,6 +31,7 @@ install:
   - admin_toolbar
   - admin_toolbar_tools
   - block_content
+  - bootstrap_layout_builder
   - breakpoint
   - ckeditor5
   - config
@@ -39,6 +40,7 @@ install:
   - contact
   - default_content
   - editor
+  - exclude_node_title
   - field_ui
   - file
   - gin_login
@@ -60,6 +62,7 @@ install:
   - taxonomy
   - toastify
   - toolbar
+  - tour
   - twig_tweak
   - views
   - views_ui

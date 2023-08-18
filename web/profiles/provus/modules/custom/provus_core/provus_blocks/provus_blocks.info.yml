@@ -18,3 +18,4 @@ dependencies:
   - media
   - media_library
   - token
+  - layout_builder_browser

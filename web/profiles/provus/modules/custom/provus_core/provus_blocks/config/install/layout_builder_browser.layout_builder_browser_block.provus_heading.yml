@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies: {  }
+id: provus_heading
+block_id: 'inline_block:provus_heading'
+category: provus_simple_content
+label: Heading
+image_path: /themes/custom/provus_bootstrap/images/components/heading-white.svg
+image_alt: ''
+weight: -100

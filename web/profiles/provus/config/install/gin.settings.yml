@@ -5,17 +5,21 @@ features:
   comment_user_verification: true
   favicon: true
   node_user_picture: true
+logo:
+  path: themes/custom/provus_bootstrap/provus_icon.png
+  use_default: false
 third_party_settings:
   shortcut:
     module_link: true
 preset_accent_color: blue
 preset_focus_color: gin
-enable_darkmode: false
-classic_toolbar: vertical
-icon_default: false
-icon_path: themes/custom/provus_bootstrap/provus_icon.png
+enable_darkmode: '0'
+classic_toolbar: classic
+secondary_toolbar_frontend: false
 high_contrast_mode: false
 accent_color: ''
 focus_color: ''
-icon_upload: ''
+layout_density: ''
+show_description_toggle: false
 show_user_theme_settings: false
+icon_upload: ''

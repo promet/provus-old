@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies: {  }
+id: provus_files_list
+block_id: 'inline_block:provus_files_list'
+category: provus_grouped_content
+label: 'Files List'
+image_path: /themes/custom/provus_bootstrap/images/components/files-list-white.svg
+image_alt: ''
+weight: -99

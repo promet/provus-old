@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies: {  }
+id: provus_basic_text
+block_id: 'inline_block:provus_basic_text'
+category: provus_simple_content
+label: 'Basic Text'
+image_path: /themes/custom/provus_bootstrap/images/components/basic-white.svg
+image_alt: ''
+weight: -80

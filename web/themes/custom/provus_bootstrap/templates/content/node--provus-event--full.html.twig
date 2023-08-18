@@ -83,19 +83,20 @@
     {{ title_suffix }}
   </header>
   <div{{ content_attributes.addClass('node__content', 'clearfix') }}>
-  <div class="row">
-    <div class="col-md-6">
-      {% if content.field_provus_dates %}
-        <h2>{{ 'Dates'|t }}</h2>
-        {{ content.field_provus_dates }}
-      {% endif %}
-    </div>
-    <div class="col-md-6">
+    <div class="row">
+      <div class="col-md-6">
+        {% if content.field_provus_smartdate %}
+          <h2>{{ 'Dates'|t }}</h2>
+          {{ content.field_provus_smartdate }}
+        {% endif %}
+      </div>
+      <div class="col-md-6">
 
+      </div>
     </div>
-  </div>
-  <div class="row">
-    <h2>{{ 'Event details'|t }}</h2>
-    {{ content.body }}
+    <div class="row">
+      <h2>{{ 'Event details'|t }}</h2>
+      {{ content.body }}
+    </div>
   </div>
 </article>

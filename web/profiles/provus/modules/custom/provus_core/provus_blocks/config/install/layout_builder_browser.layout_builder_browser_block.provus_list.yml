@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies: {  }
+id: provus_list
+block_id: 'inline_block:provus_list'
+category: provus_grouped_content
+label: List
+image_path: /themes/custom/provus_bootstrap/images/components/list-white.svg
+image_alt: ''
+weight: -100

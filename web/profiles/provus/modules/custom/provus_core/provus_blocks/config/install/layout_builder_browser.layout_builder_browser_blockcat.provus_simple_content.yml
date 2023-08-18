@@ -1,0 +1,6 @@
+langcode: en
+status: true
+dependencies: {  }
+id: provus_simple_content
+label: 'Simple Content'
+weight: -10

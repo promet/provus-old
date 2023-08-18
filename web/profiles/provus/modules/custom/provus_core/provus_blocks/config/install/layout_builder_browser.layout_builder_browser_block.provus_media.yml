@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies: {  }
+id: provus_media
+block_id: 'inline_block:provus_media'
+category: provus_simple_content
+label: Media
+image_path: /themes/custom/provus_bootstrap/images/components/media-white.svg
+image_alt: ''
+weight: -70

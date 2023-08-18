@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies: {  }
+id: provus_large_banner
+block_id: 'inline_block:provus_large_banner'
+category: provus_complex_content
+label: 'Large Banner'
+image_path: /themes/custom/provus_bootstrap/images/components/banner-white.svg
+image_alt: ''
+weight: -80

@@ -1,0 +1,36 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - provus_core
+id: provus-node-revisions
+label: 'Node Revisions'
+module: provus_core
+routes:
+  -
+    route_name: entity.node.version_history
+tips:
+  viewing-revisions:
+    id: viewing-revisions
+    plugin: text
+    label: 'Viewing revisions'
+    weight: -100
+    position: top-start
+    body: 'On this page, you can see every revision ever made to this page since it was first created.'
+    attributes: null
+  each-revision:
+    id: each-revision
+    plugin: text
+    label: 'Each revision'
+    weight: -99
+    position: top-start
+    selector: .revision-current
+    body: "When you click on the title of the revision date, it will load a page where you can see what that page looked like on that date."
+  each-revision-2:
+    id: each-revision-2
+    plugin: text
+    label: 'Each revision'
+    weight: -98
+    position: top-start
+    selector: .revision-current
+    body: "If there are multiple revisions, then there is are operations available on the right that let you Revert to that revision.  By clicking Revert, it will make a new copy of that revision and put it first and make that one public."

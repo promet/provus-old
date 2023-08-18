@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies: {  }
+id: provus_accordion
+block_id: 'inline_block:provus_accordion'
+category: provus_grouped_content
+label: Accordion
+image_path: /themes/custom/provus_bootstrap/images/components/accordion-white.svg
+image_alt: ''
+weight: -98
