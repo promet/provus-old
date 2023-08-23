@@ -25,3 +25,8 @@
     gap: rem-calc(40);
   }
 }
+
+.navbar-toggler .navbar-toggler-icon {
+  background-image: url(../images/mobile.svg);
+  filter: brightness(0) saturate(100%) invert(24%) sepia(11%) saturate(3991%) hue-rotate(189deg) brightness(94%) contrast(95%);
+}
