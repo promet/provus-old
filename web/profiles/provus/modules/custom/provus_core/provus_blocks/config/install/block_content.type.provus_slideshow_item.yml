@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: provus_slideshow_item
+label: 'Slideshow Item'
+revision: 0
+description: ''

@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.provus_slideshow
+    - field.storage.block_content.field_provus_slideshow_autoplay
+id: block_content.provus_slideshow.field_provus_slideshow_autoplay
+field_name: field_provus_slideshow_autoplay
+entity_type: block_content
+bundle: provus_slideshow
+label: 'Slideshow autoplay'
+description: '* check to activate'
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'true'
+  off_label: 'false'
+field_type: boolean

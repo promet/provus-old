@@ -1,0 +1,67 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.provus_slideshow_item
+    - field.field.block_content.provus_slideshow_item.field_provus_body
+    - field.field.block_content.provus_slideshow_item.field_provus_button_text
+    - field.field.block_content.provus_slideshow_item.field_provus_media
+    - field.field.block_content.provus_slideshow_item.field_provus_title
+    - field.field.block_content.provus_slideshow_item.field_provus_url_slide_show_item
+  module:
+    - link
+    - media
+    - text
+id: block_content.provus_slideshow_item.default
+targetEntityType: block_content
+bundle: provus_slideshow_item
+mode: default
+content:
+  field_provus_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_provus_button_text:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_provus_media:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_provus_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_provus_url_slide_show_item:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 5
+    region: content
+hidden:
+  search_api_excerpt: true

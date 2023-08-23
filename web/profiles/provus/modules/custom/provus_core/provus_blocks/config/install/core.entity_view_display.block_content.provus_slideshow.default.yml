@@ -1,0 +1,52 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.provus_slideshow
+    - field.field.block_content.provus_slideshow.field_provus_body
+    - field.field.block_content.provus_slideshow.field_provus_slide_item
+    - field.field.block_content.provus_slideshow.field_provus_slideshow_autoplay
+    - field.field.block_content.provus_slideshow.field_provus_slideshow_speed
+  module:
+    - text
+id: block_content.provus_slideshow.default
+targetEntityType: block_content
+bundle: provus_slideshow
+mode: default
+content:
+  field_provus_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_provus_slide_item:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_provus_slideshow_autoplay:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_provus_slideshow_speed:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  search_api_excerpt: true

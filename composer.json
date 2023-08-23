@@ -31,6 +31,18 @@
                     "type": "zip"
                 }
             }
+        },
+        {
+            "type":"package",
+            "package": {
+                "name": "kenwheeler/slick",
+                "version": "1.6.0",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://github.com/kenwheeler/slick/archive/refs/tags/1.6.0.zip",
+                    "type": "zip"
+                }
+            }
         }
     ],
     "require": {
@@ -63,6 +75,7 @@
         "drupal/menu_block": "dev-1.x",
         "drupal/pathauto": "1.11",
         "drupal/section_library": "1.1.1",
+        "drupal/slick": "2.9",
         "drupal/sitemap": "dev-2.x",
         "drupal/smart_date": "4.0.3",
         "drupal/smart_trim": "2.1.0",
@@ -72,6 +85,7 @@
         "drush/drush": "12.1.0",
         "fontawesome/fontawesome": "6.1.0",
         "fonticonpicker/fonticonpicker--fonticonpicker": "3.1.1",
+        "kenwheeler/slick": "1.6.0",
         "kporras07/composer-symlinks": "v1.2",
         "oomphinc/composer-installers-extender": "2.0.1",
         "psr/log": "3.0.0",

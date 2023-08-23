@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.provus_slideshow_item
+    - field.storage.block_content.field_provus_button_text
+id: block_content.provus_slideshow_item.field_provus_button_text
+field_name: field_provus_button_text
+entity_type: block_content
+bundle: provus_slideshow_item
+label: 'Button text'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 'Read more'
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -3,11 +3,11 @@ status: true
 dependencies:
   config:
     - block_content.type.provus_testimonial
-    - field.storage.block_content.field_image_position
+    - field.storage.block_content.field_provus_image_position
   module:
     - options
-id: block_content.provus_testimonial.field_image_position
-field_name: field_image_position
+id: block_content.provus_testimonial.field_provus_image_position
+field_name: field_provus_image_position
 entity_type: block_content
 bundle: provus_testimonial
 label: 'Image position'

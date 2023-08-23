@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.provus_slideshow_item
+    - field.storage.block_content.field_provus_media
+    - media.type.image
+id: block_content.provus_slideshow_item.field_provus_media
+field_name: field_provus_media
+entity_type: block_content
+bundle: provus_slideshow_item
+label: Image
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

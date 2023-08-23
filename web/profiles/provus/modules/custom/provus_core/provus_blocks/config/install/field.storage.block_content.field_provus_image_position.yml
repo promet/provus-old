@@ -4,8 +4,8 @@ dependencies:
   module:
     - block_content
     - options
-id: block_content.field_image_position
-field_name: field_image_position
+id: block_content.field_provus_image_position
+field_name: field_provus_image_position
 entity_type: block_content
 type: list_string
 settings:

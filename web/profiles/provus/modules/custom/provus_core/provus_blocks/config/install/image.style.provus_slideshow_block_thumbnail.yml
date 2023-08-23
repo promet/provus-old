@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies: {  }
+name: provus_slideshow_block_thumbnail
+label: 'Slideshow Block | thumbnail'
+effects:
+  e921420e-1d62-4811-98b5-3d4f2fdf2189:
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 300
+      height: 150
+      anchor: center-center
