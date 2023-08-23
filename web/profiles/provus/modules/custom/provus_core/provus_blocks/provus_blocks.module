@@ -169,6 +169,10 @@ function provus_blocks_theme() {
       'template' => 'block--provus-group--featured-4',
       'base hook' => 'block'
     ],
+    'block__provus_testimonial' => [
+      'template' => 'block--provus-testimonial',
+      'base hook' => 'block'
+    ],
   ];
 }
 

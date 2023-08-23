@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies: {  }
+id: provus_testimonial
+block_id: 'inline_block:provus_testimonial'
+category: provus_complex_content
+label: 'Testimonial'
+image_path: /themes/custom/provus_bootstrap/images/components/testimonial-white.svg
+image_alt: ''
+weight: -100

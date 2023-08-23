@@ -34,7 +34,7 @@
   'block',
   'block-' ~ configuration.provider|clean_class,
   'block-' ~ plugin_id|clean_class,
-  'image-location-' ~ content.field_image_position['#items'].getString(),
+  'image-location-' ~ content.field_provus_image_position['#items'].getString(),
 ]
 %}
 
@@ -47,7 +47,11 @@
   {% block content %}
     <div{{ content_attributes.addClass('card card-testimonial') }}>
       <div class="row">
-        <div class="col-lg-6">
+        {% if content.field_provus_media_image.0 %}
+          <div class="col-lg-6">
+        {% else %}
+          <div class="col-lg-12">
+        {% endif %}
           <div class="testimonial-content">
             {% if content.field_provus_testimonial_body.0 %}
               <div class="testimonial-body">
@@ -66,13 +70,13 @@
             {% endif %}
           </div>
         </div>
-        <div class="col-lg-6">
-          {% if content.field_provus_media_image.0 %}
-            <div class="testimonial-image">
-              {{ content.field_provus_media_image }}
-            </div>
-          {% endif %}
-        </div>
+        {% if content.field_provus_media_image.0 %}
+          <div class="col-lg-6">
+              <div class="testimonial-image">
+                {{ content.field_provus_media_image }}
+              </div>
+          </div>
+        {% endif %}
       </div>
     </div>
   {% endblock %}

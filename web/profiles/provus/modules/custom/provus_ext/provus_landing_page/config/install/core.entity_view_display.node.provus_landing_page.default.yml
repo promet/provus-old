@@ -108,6 +108,7 @@ third_party_settings:
           - provus_card
           - provus_cta
           - provus_divider_line
+          - provus_faq_group
           - provus_files_list
           - provus_group
           - provus_group_automatic
@@ -115,6 +116,7 @@ third_party_settings:
           - provus_large_banner
           - provus_list
           - provus_media
+          - provus_person_list
           - provus_photo_gallery
           - provus_short_banner
           - provus_slideshow
@@ -128,6 +130,7 @@ third_party_settings:
           - 'inline_block:provus_card'
           - 'inline_block:provus_cta'
           - 'inline_block:provus_divider_line'
+          - 'inline_block:provus_faq_group'
           - 'inline_block:provus_files_list'
           - 'inline_block:provus_group'
           - 'inline_block:provus_group_automatic'
@@ -135,6 +138,7 @@ third_party_settings:
           - 'inline_block:provus_large_banner'
           - 'inline_block:provus_list'
           - 'inline_block:provus_media'
+          - 'inline_block:provus_person_list'
           - 'inline_block:provus_photo_gallery'
           - 'inline_block:provus_short_banner'
           - 'inline_block:provus_slideshow'
