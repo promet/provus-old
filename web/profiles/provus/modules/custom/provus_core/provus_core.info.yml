@@ -13,8 +13,11 @@ dependencies:
   - bootstrap_styles
   - ctools
   - layout_builder
+  - layout_builder_browser
   - layout_builder_modal
   - layout_builder_restrictions
   - pathauto
+  - section_library
   - smart_trim
+  - tour
   - views_bootstrap

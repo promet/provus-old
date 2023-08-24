@@ -1,0 +1,26 @@
+<?php
+
+/**
+ * @file
+ * Install and uninstall functions for the Provus Landing Pages.
+ */
+
+/**
+ * Implements hook_install().
+ */
+function provus_landing_page_install() {
+  // Turn on exlude node title settings for landing pages by default.
+  $config = \Drupal::service('config.factory')->getEditable('exclude_node_title.settings');
+  // Set content types to include landing pages.
+  $content_types = [
+    'provus_landing_page' => 'user'
+  ];
+  $config->set('content_types', $content_types)->save();
+  // Set the view modes for full for landing pages.
+  $content_type_modes = [
+    'provus_landing_page' => ['full']
+  ];
+  $config->set('content_type_modes', $content_type_modes)->save();
+  // Set type to remove.
+  $config->set('type', 'remove')->save();
+}

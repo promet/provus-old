@@ -1,0 +1,20 @@
+finlangcode: en
+status: true
+dependencies:
+  module:
+    - provus_core
+id: provus-node-view
+label: 'Node view'
+module: provus_core
+routes:
+  -
+    route_name: entity.node.canonical
+tips:
+  edit-tab:
+    id: edit-tab
+    plugin: text
+    label: 'Tabs to manage this page'
+    weight: -100
+    position: bottom-start
+    selector: .nav.primary.nav-tabs
+    body: 'These are the tabs that will let you manage this page.  Clicking View will always get you back to this public view of the page.  Clicking Edit will let you edit the field data.  Clicking Delete will delete this page forever.  Clicking Layout will let you alter the layout of the page and add customizable component blocks, if you have permissions.  Clicking Revisions will allow you to see the revisions that have been made to this page and revert if necessary.'

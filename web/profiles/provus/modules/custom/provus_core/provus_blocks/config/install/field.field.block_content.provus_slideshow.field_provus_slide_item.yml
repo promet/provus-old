@@ -4,9 +4,9 @@ dependencies:
   config:
     - block_content.type.provus_slideshow
     - block_content.type.provus_slideshow_item
-    - field.storage.block_content.field_slide_item
-id: block_content.provus_slideshow.field_slide_item
-field_name: field_slide_item
+    - field.storage.block_content.field_provus_slide_item
+id: block_content.provus_slideshow.field_provus_slide_item
+field_name: field_provus_slide_item
 entity_type: block_content
 bundle: provus_slideshow
 label: 'Slide item'

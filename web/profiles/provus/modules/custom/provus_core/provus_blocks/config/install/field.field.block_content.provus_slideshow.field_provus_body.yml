@@ -3,11 +3,11 @@ status: true
 dependencies:
   config:
     - block_content.type.provus_slideshow
-    - field.storage.block_content.body
+    - field.storage.block_content.field_provus_body
   module:
     - text
-id: block_content.provus_slideshow.body
-field_name: body
+id: block_content.provus_slideshow.field_provus_body
+field_name: field_provus_body
 entity_type: block_content
 bundle: provus_slideshow
 label: Body

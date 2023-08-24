@@ -1,0 +1,6 @@
+langcode: en
+status: true
+dependencies: {  }
+id: provus_grouped_content
+label: 'Grouped Content'
+weight: -8

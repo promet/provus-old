@@ -9,30 +9,6 @@
             "url": "https://packages.drupal.org/8"
         },
         {
-            "type":"package",
-            "package": {
-                "name": "harvesthq/chosen",
-                "version": "1.8.7",
-                "type": "drupal-library",
-                "dist": {
-                    "url": "https://github.com/harvesthq/chosen/releases/download/v1.8.7/chosen_v1.8.7.zip",
-                    "type": "zip"
-                }
-            }
-        },
-        {
-            "type":"package",
-            "package": {
-                "name": "kenwheeler/slick",
-                "version": "1.6.0",
-                "type": "drupal-library",
-                "dist": {
-                    "url": "https://github.com/kenwheeler/slick/archive/refs/tags/1.6.0.zip",
-                    "type": "zip"
-                }
-            }
-        },
-        {
             "type": "package",
             "package": {
                 "name": "fontawesome/fontawesome",
@@ -55,28 +31,31 @@
                     "type": "zip"
                 }
             }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "kenwheeler/slick",
+                "version": "1.6.0",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://github.com/kenwheeler/slick/archive/refs/tags/1.6.0.zip",
+                    "type": "zip"
+                }
+            }
         }
     ],
     "require": {
         "composer/installers": "1.12",
         "cweagans/composer-patches": "1.7.3",
-        "drupal/address": "1.11",
         "drupal/addtoany": "1.18",
         "drupal/admin_toolbar": "3.3.2",
         "drupal/ala": "1.8",
-        "drupal/antibot": "1.5",
         "drupal/auto_entitylabel": "3.0",
         "drupal/bootstrap_barrio": "5.5.12",
         "drupal/bootstrap_layout_builder": "2.0.1",
-        "drupal/bootstrap_layouts": "5.3",
         "drupal/bootstrap_sass": "5.0.6",
         "drupal/bootstrap_site_alert": "2.0.0-beta11",
-        "drupal/calendar_link": "2.1.4",
-        "drupal/chosen": "3.0.5",
-        "drupal/config_ignore": "2.4.0",
-        "drupal/config_merge": "1.0",
-        "drupal/config_provider": "2.0.0-rc4",
-        "drupal/config_snapshot": "1.0.0-rc2",
         "drupal/core-composer-scaffold": "9.5.9",
         "drupal/core-recommended": "9.5.9",
         "drupal/date_recur": "3.2.0",
@@ -84,56 +63,29 @@
         "drupal/default_content": "1.0.0-alpha9",
         "drupal/devel": "4.2.1",
         "drupal/entity": "1.4",
-        "drupal/environment_indicator": "4.0.14",
         "drupal/exclude_node_title": "1.3",
-        "drupal/extlink": "1.7",
-        "drupal/facets": "2.0.6",
-        "drupal/field_group": "3.4",
-        "drupal/focal_point": "1.5",
         "drupal/fontawesome": "2.25",
         "drupal/fullcalendar_view": "dev-6.x",
-        "drupal/geocoder": "3.34",
-        "drupal/geofield": "1.53",
-        "drupal/geofield_map": "2.90",
         "drupal/gin": "3.0.0-rc3",
         "drupal/gin_login": "1.0",
         "drupal/gin_toolbar": "1.0.0-rc1",
-        "drupal/google_analytics": "4.0.2",
         "drupal/inline_entity_form": "1.0.0-rc15",
-        "drupal/layout_builder_at": "2.13",
         "drupal/layout_builder_browser": "1.5",
         "drupal/layout_builder_modal": "1.2",
         "drupal/layout_builder_restrictions": "2.17",
-        "drupal/layout_builder_styles": "1.0.0",
-        "drupal/layout_library": "1.0.0-beta4",
-        "drupal/layout_paragraphs": "1.0.0",
         "drupal/linkit": "6.0.0-rc1",
-        "drupal/media_bulk_upload": "1.0.0-alpha28",
-        "drupal/memcache": "2.5.0",
         "drupal/menu_block": "dev-1.x",
-        "drupal/menu_breadcrumb": "1.16",
-        "drupal/office_hours": "1.8",
         "drupal/pathauto": "1.11",
-        "drupal/pdfpreview": "1.1",
-        "drupal/redirect": "1.8",
-        "drupal/search_api": "1.29",
-        "drupal/search_api_solr": "4.2.10",
         "drupal/section_library": "1.1.0",
         "drupal/slick": "2.9",
         "drupal/sitemap": "dev-2.x",
         "drupal/smart_trim": "1.3",
         "drupal/toastify": "1.0.0-beta6",
         "drupal/twig_tweak": "3.2.1",
-        "drupal/view_unpublished": "1.1",
         "drupal/views_bootstrap": "4.3",
-        "drupal/viewsreference": "1.8",
-        "drupal/vocabulary_condition": "1.0.2",
-        "drupal/webform": "6.1.4",
         "drush/drush": "10.6.2",
         "fontawesome/fontawesome": "6.1.0",
         "fonticonpicker/fonticonpicker--fonticonpicker": "3.1.1",
-        "geocoder-php/google-maps-provider": "4.7.1",
-        "harvesthq/chosen": "1.8.7",
         "kenwheeler/slick": "1.6.0",
         "kporras07/composer-symlinks": "v1.2",
         "oomphinc/composer-installers-extender": "2.0.1",
@@ -145,7 +97,6 @@
     },
     "require-dev": {
         "dmore/behat-chrome-extension": "1.4",
-        "drupal/drupal-extension": "v4.2.1",
         "mglaman/drupal-check": "1.4",
         "drupal/core-dev": "9.5.9"
     },

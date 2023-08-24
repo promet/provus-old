@@ -3,10 +3,10 @@ status: true
 dependencies:
   config:
     - block_content.type.provus_slideshow
-    - field.field.block_content.provus_slideshow.body
-    - field.field.block_content.provus_slideshow.field_slide_item
-    - field.field.block_content.provus_slideshow.field_slideshow_autoplay
-    - field.field.block_content.provus_slideshow.field_slideshow_transition_speed
+    - field.field.block_content.provus_slideshow.field_provus_body
+    - field.field.block_content.provus_slideshow.field_provus_slide_item
+    - field.field.block_content.provus_slideshow.field_provus_slideshow_autoplay
+    - field.field.block_content.provus_slideshow.field_provus_slideshow_speed
   module:
     - text
 id: block_content.provus_slideshow.default
@@ -14,14 +14,14 @@ targetEntityType: block_content
 bundle: provus_slideshow
 mode: default
 content:
-  body:
+  field_provus_body:
     type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
     weight: 0
     region: content
-  field_slide_item:
+  field_provus_slide_item:
     type: entity_reference_entity_view
     label: above
     settings:
@@ -30,7 +30,7 @@ content:
     third_party_settings: {  }
     weight: 1
     region: content
-  field_slideshow_autoplay:
+  field_provus_slideshow_autoplay:
     type: boolean
     label: above
     settings:
@@ -40,7 +40,7 @@ content:
     third_party_settings: {  }
     weight: 3
     region: content
-  field_slideshow_transition_speed:
+  field_provus_slideshow_speed:
     type: string
     label: above
     settings:

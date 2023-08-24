@@ -169,6 +169,11 @@ function provus_blocks_theme() {
       'template' => 'block--provus-group--featured-4',
       'base hook' => 'block'
     ],
+    'block__provus_testimonial' => [
+      'template' => 'block--provus-testimonial',
+      'base hook' => 'block'
+    ],
+
   ];
 }
 
@@ -505,6 +510,7 @@ function _provus_blocks_groups_automatic_get_ids($content_type, $options) {
   $query = \Drupal::entityQuery('node')
     ->condition('status', 1)
     ->condition('type', $content_type);
+  $query->accessCheck(TRUE);
   $query->range(0, $options['count']);
   $query->sort('created', 'DESC');
   $ids = $query->execute();

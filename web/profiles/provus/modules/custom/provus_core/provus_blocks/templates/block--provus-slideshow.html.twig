@@ -48,8 +48,8 @@
   {{ title_suffix }}
   {% block content %}
     <div{{ content_attributes.addClass('content') }}>
-      <div class="slide-show-with-items-container" data-autoplay="{{ content.field_slideshow_autoplay.0['#markup'] }}" data-slide-speed="{{content.field_slideshow_transition_speed.0}}">
-      {% for key, item in content.field_slide_item if key|first != '#' %}
+      <div class="slide-show-with-items-container" data-autoplay="{{ content.field_provus_slideshow_autoplay.0['#markup'] }}" data-slide-speed="{{content.field_provus_slideshow_speed.0}}">
+      {% for key, item in content.field_provus_slide_item if key|first != '#' %}
         <div class="slide-show-item-content">
           <div class="image-container">
             <picture>
@@ -62,8 +62,8 @@
               <div class="title">
                 {{ item.field_provus_title.0 }}
               </div>
-              {% if item.field_url_slide_show_item.0 is not empty %}
-                <a href="{{ item.field_url_slide_show_item[0]['#url'] }}" class="btn btn-primary">{{ item.field_button_text.0 }}</a>
+              {% if item.field_provus_url_slide_show_item.0 is not empty %}
+                <a href="{{ item.field_provus_url_slide_show_item[0]['#url'] }}" class="btn btn-primary">{{ item.field_provus_button_text.0 }}</a>
               {% endif %}
             </div>
           </div>

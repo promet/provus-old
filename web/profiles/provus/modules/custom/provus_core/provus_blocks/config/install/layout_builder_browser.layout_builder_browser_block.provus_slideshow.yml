@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies: {  }
+id: provus_slideshow
+block_id: 'inline_block:provus_slideshow'
+category: provus_grouped_content
+label: Slideshow
+image_path: /themes/custom/provus_bootstrap/images/components/slideshow-white.svg
+image_alt: ''
+weight: -60

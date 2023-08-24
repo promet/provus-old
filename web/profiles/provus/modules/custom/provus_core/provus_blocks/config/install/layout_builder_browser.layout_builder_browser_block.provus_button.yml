@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies: {  }
+id: provus_button
+block_id: 'inline_block:provus_button'
+category: provus_simple_content
+label: Button
+image_path: /themes/custom/provus_bootstrap/images/components/button-white.svg
+image_alt: ''
+weight: -90

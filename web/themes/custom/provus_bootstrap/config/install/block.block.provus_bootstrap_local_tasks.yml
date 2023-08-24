@@ -5,7 +5,7 @@ dependencies:
     - bootstrap_barrio
 id: provus_bootstrap_local_tasks
 theme: provus_bootstrap
-region: content
+region: title
 weight: -40
 provider: null
 plugin: local_tasks_block

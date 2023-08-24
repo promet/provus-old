@@ -3,11 +3,11 @@ status: true
 dependencies:
   config:
     - block_content.type.provus_slideshow_item
-    - field.field.block_content.provus_slideshow_item.body
-    - field.field.block_content.provus_slideshow_item.field_button_text
+    - field.field.block_content.provus_slideshow_item.field_provus_body
+    - field.field.block_content.provus_slideshow_item.field_provus_button_text
     - field.field.block_content.provus_slideshow_item.field_provus_media
     - field.field.block_content.provus_slideshow_item.field_provus_title
-    - field.field.block_content.provus_slideshow_item.field_url_slide_show_item
+    - field.field.block_content.provus_slideshow_item.field_provus_url_slide_show_item
   module:
     - link
     - media
@@ -17,14 +17,14 @@ targetEntityType: block_content
 bundle: provus_slideshow_item
 mode: default
 content:
-  body:
+  field_provus_body:
     type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
     weight: 1
     region: content
-  field_button_text:
+  field_provus_button_text:
     type: string
     label: hidden
     settings:
@@ -51,7 +51,7 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
-  field_url_slide_show_item:
+  field_provus_url_slide_show_item:
     type: link
     label: hidden
     settings:

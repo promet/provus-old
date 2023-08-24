@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies: {  }
+id: provus_addtoany_share_buttons
+block_id: addtoany_block
+category: provus_system_blocks
+label: 'AddToAny Share Buttons'
+image_path: ''
+image_alt: ''
+weight: null

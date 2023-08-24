@@ -1,0 +1,56 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.provus_testimonial
+    - field.field.block_content.provus_testimonial.field_provus_image_position
+    - field.field.block_content.provus_testimonial.field_provus_media_image
+    - field.field.block_content.provus_testimonial.field_provus_testimonial_body
+    - field.field.block_content.provus_testimonial.field_provus_testimonial_name
+    - field.field.block_content.provus_testimonial.field_provus_testimonial_role
+  module:
+    - media_library
+id: block_content.provus_testimonial.default
+targetEntityType: block_content
+bundle: provus_testimonial
+mode: default
+content:
+  field_provus_image_position:
+    type: options_select
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_provus_media_image:
+    type: media_library_widget
+    weight: 3
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_provus_testimonial_body:
+    type: string_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_provus_testimonial_name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_provus_testimonial_role:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  info: true

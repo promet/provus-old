@@ -3,9 +3,9 @@ status: true
 dependencies:
   config:
     - block_content.type.provus_slideshow
-    - field.storage.block_content.field_slideshow_transition_speed
-id: block_content.provus_slideshow.field_slideshow_transition_speed
-field_name: field_slideshow_transition_speed
+    - field.storage.block_content.field_provus_slideshow_speed
+id: block_content.provus_slideshow.field_provus_slideshow_speed
+field_name: field_provus_slideshow_speed
 entity_type: block_content
 bundle: provus_slideshow
 label: 'Transition speed'

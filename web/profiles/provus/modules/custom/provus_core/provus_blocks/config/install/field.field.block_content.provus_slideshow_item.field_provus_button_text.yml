@@ -3,9 +3,9 @@ status: true
 dependencies:
   config:
     - block_content.type.provus_slideshow_item
-    - field.storage.block_content.field_button_text
-id: block_content.provus_slideshow_item.field_button_text
-field_name: field_button_text
+    - field.storage.block_content.field_provus_button_text
+id: block_content.provus_slideshow_item.field_provus_button_text
+field_name: field_provus_button_text
 entity_type: block_content
 bundle: provus_slideshow_item
 label: 'Button text'

@@ -1,0 +1,78 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - provus_core
+id: provus-node-edit
+label: 'Node Edit'
+module: provus_core
+routes:
+  -
+    route_name: entity.node.edit_form
+  -
+    route_name: node.add
+tips:
+  editing-your-page:
+    id: editing-your-page
+    plugin: text
+    label: 'Editing your page'
+    weight: -100
+    position: top-start
+    body: 'Filling out the fields on this page will save your data into the website.  Then when you view the page, it will pull the data from what you enter here and present it to the public in a specific designed manner.'
+    attributes: null
+  scheduling-options:
+    id: scheduling-options
+    plugin: text
+    label: 'Scheduling options'
+    weight: -88
+    position: left-start
+    selector: '#edit-scheduler-settings'
+    body: 'Use this area if you want to schedule the publishing and/or unpublishing of this page.  If you want to schedule this page to publish in the future, put in a date here for publishing and be sure to uncheck the Publish button at the bottom of the page.'
+  editing-fields:
+    id: editing-fields
+    plugin: text
+    label: 'Editing fields'
+    weight: -99
+    position: bottom-start
+    selector: '#edit-title-0-value'
+    body: "<p>When editing fields, notice the red * means it is a required field.  The page can't be saved without this field populated.</p>\r\n<p>The Title field is important to all pages on the site as it is the main heading on the page.</p>"
+  publish-status:
+    id: publish-status
+    plugin: text
+    label: 'Publish status'
+    weight: -97
+    position: top-start
+    selector: '#edit-status-value'
+    body: "The publish status determines if the public can see this page or not.  Publish means it can be seen, unpublished means it can't be seen."
+  save-button:
+    id: save-button
+    plugin: text
+    label: 'Save button'
+    weight: -95
+    position: top-start
+    selector: '#edit-actions'
+    body: 'By clicking the Save button, the changes you have made will be saved as a new revision of the page and will be delivered to the public immediately.'
+  revision-log:
+    id: revision-log
+    plugin: text
+    label: 'Revision log'
+    weight: -92
+    position: left-start
+    selector: '#edit-revision-log-0-value'
+    body: 'When you create changes to your page, also known as revisions, you can also make notes about what you are doing in this revision with a note in the Revision Log.'
+  adding-page-to-the-menu:
+    id: adding-page-to-the-menu
+    plugin: text
+    label: 'Adding page to the Menu'
+    weight: -90
+    position: left-start
+    selector: '#edit-menu'
+    body: "<p>If you would like this page to be added to the main menu, click here and then click 'Provide a menu link'.  You need to provide a Menu Link Title (what shows to the public in the menu) and you need to decide where in the menu it will show up.  You do this by picking the Parent menu item.</p>\r\n\r\n<p>So, if I had a top structure of About, Services, Contact, and I wanted it to show up directly underneath About, I would choose the About page as the parent.</p>"
+  editing-the-url-alias:
+    id: editing-the-url-alias
+    plugin: text
+    label: 'Editing the url alias'
+    weight: -89
+    position: left-start
+    selector: '#edit-path-0'
+    body: "<p>When you save a page it automatically creates a url for this page based on patterns set in the site.  If it is in the menu, then it follows the menu structure down to create an alias.  For example if the page was titled 'Mission' and it lived underneath 'About' in the menu, then the url alias would be /about/mission.  If it does not live in a menu, then the pattern is the type of page it is and then the title, like /page/title.</p>\r\n<p>You can also override this per page and pick a unique alias.  Do this by unchecking 'Generate automatic URL alias' here and then typing in your own alias starting with a forward slash /.</p>"

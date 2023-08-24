@@ -5,8 +5,6 @@
  * Install and uninstall functions for the Provus installation profile.
  */
 
-use Drupal\menu_link_content\Entity\MenuLinkContent;
-
 /**
  * Implements hook_install().
  *
@@ -23,16 +21,16 @@ function provus_install() {
  * Setup the themes.
  */
 function _provus_setup_themes() {
-    // Set the default and admin theme.
-    \Drupal::configFactory()
-      ->getEditable('system.theme')
-      ->set('default', 'provus_bootstrap')
-      ->set('admin', 'gin')
-      ->save(TRUE);
+  // Set the default and admin theme.
+  \Drupal::configFactory()
+    ->getEditable('system.theme')
+    ->set('default', 'provus_bootstrap')
+    ->set('admin', 'gin')
+    ->save(TRUE);
 
-    // Enable the admin theme.
-    \Drupal::configFactory()
-      ->getEditable('node.settings')
-      ->set('use_admin_theme', TRUE)
-      ->save(TRUE);
-  }
+  // Enable the admin theme.
+  \Drupal::configFactory()
+    ->getEditable('node.settings')
+    ->set('use_admin_theme', TRUE)
+    ->save(TRUE);
+}

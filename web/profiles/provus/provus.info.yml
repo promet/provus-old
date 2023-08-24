@@ -30,45 +30,43 @@ distribution:
 install:
   - admin_toolbar
   - admin_toolbar_tools
-  - history
   - block_content
+  - bootstrap_layout_builder
   - breakpoint
-  - color
+  - ckeditor
   - config
   - comment
   - contextual
   - contact
-  - quickedit
-  - help
-  - image
-  - options
-  - path
-  - taxonomy
   - default_content
-  - hal
-  - serialization
-  - dblog
-  - menu_ui
-  - search
-  - shortcut
-  - toolbar
+  - editor
+  - exclude_node_title
   - field_ui
   - file
-  - rdf
-  - views
-  - views_ui
-  - editor
-  - ckeditor
+  - gin_login
+  - gin_toolbar
+  - help
+  - history
+  - image
+  - linkit
+  - menu_ui
+  - options
+  - path
   - provus_core
   - provus_blocks
-  - gin_toolbar
-  - gin_login
   - responsive_image
-  - workflows
-  - twig_tweak
-  - linkit
+  - search
+  - serialization
+  - shortcut
   - sitemap
+  - taxonomy
   - toastify
+  - toolbar
+  - tour
+  - twig_tweak
+  - views
+  - views_ui
+  - workflows
 
 # Required modules
 # Note that any dependencies of the modules listed here will be installed automatically.

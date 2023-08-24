@@ -9,11 +9,7 @@
 
   Drupal.behaviors.provusAdmin = {
     attach: function(context, settings) {
-      $(document).ajaxComplete(function() {
-        $('#drupal-off-canvas details').each(function(){
-          $(this).removeAttr('open');
-        });
-      });
+
     }
   }
 

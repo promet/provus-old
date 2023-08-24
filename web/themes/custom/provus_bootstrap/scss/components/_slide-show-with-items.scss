@@ -61,9 +61,14 @@
           line-height: rem-calc(46);
           width: 100%;
           padding: rem-calc(0 15);
-          padding-bottom: rem-calc(30);
+          padding-bottom: rem-calc(20);
           margin-bottom: 0;
           text-align: center;
+        }
+      }
+      .btn {
+        @include media-breakpoint-down(md) {
+          margin: 0 auto;
         }
       }
     }

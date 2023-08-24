@@ -1,13 +1,4 @@
 // Layout builder admin fixes.
-#drupal-off-canvas {
-  background: $white;
-  ul, ol {
-    li {
-      border: none;
-    }
-  }
-}
-
 .layout-builder-add-block {
   .table-striped > tbody > tr:nth-of-type(odd) > * {
     --bs-table-accent-bg: $white !important;
@@ -84,6 +75,8 @@
     width: calc(50% - 20px);
     padding: 10px;
     margin-bottom: 20px;
+    height: 120px;
+    flex: none !important;
 }
 
 #drupal-off-canvas summary a {
@@ -114,6 +107,31 @@
 // =============================================================================
 
 .layout-builder-active {
+
+  #block-provus-bootstrap-help {
+    display: none;
+  }
+
+  .layout-builder-form {
+    max-width: 540px;
+    width: 100%;
+    padding-right: var(--bs-gutter-x,0.75rem);
+    padding-left: var(--bs-gutter-x,0.75rem);
+    margin-right: auto;
+    margin-left: auto;
+    @include media-breakpoint-up(md) {
+      max-width: 720px;
+    }
+    @include media-breakpoint-up(lg) {
+      max-width: 960px;
+    }
+    @include media-breakpoint-up(xl) {
+      max-width: 1140px;
+    }
+    @include media-breakpoint-up(xxl) {
+      max-width: 1320px;
+    }
+  }
 
   .hidden {
     display: block;
@@ -246,7 +264,7 @@
     background: transparent;
   }
 
-  // "Add setion" section.
+  // "Add section" section.
   .layout-builder__add-section {
     background: transparent;
     display: block !important;
@@ -259,8 +277,8 @@
     padding: 0;
 
     // "Add" buttons.
-    .layout-builder__link--add,
-    .layout-builder__link--add:not(:focus) {
+    a,
+    a:not(:focus) {
       background: $primary-shade !important;
       border-radius: $card-border-radius !important;
       border: 2px solid transparent !important;
@@ -268,11 +286,10 @@
       color: $white !important;
       display: inline-block !important;
       font-size: 14px !important;
-      margin: 0 !important;
+      margin: 0 5px !important;
       line-height: 1 !important;
       padding: 10px 25px !important;
       transition: border-color .3s ease;
-      margin: 0 auto;
       width: auto;
 
       &:focus {
@@ -299,7 +316,8 @@
 
   // Remove and configure.
   .layout-builder__link--remove,
-  .layout-builder__link--configure {
+  .layout-builder__link--configure,
+  .layout-builder__link--add-section-to-library {
     opacity: 0;
     transition: opacity .3s ease;
     top: 50px;
@@ -341,6 +359,39 @@
     border: 2px solid transparent !important;
     box-shadow: 0 2px 8px 0 rgba($black, .35) !important;
     color: $white !important;
+    display: inline-block !important;
+    font-size: 14px !important;
+    font-weight: 700;
+    line-height: 1 !important;
+    margin: 0 !important;
+    padding: 10px 15px !important;
+    text-decoration: none;
+    transition: border-color .3s ease;
+    display: block !important;
+    position: absolute;
+    top: 10px;
+    left: 55px;
+
+    // Hover and focus.
+    &:focus {
+      border-color: rgba($white, .75) !important;
+      text-decoration: underline;
+      background: $primary-dark !important;
+    }
+    &:hover {
+      text-decoration: underline;
+      background: $primary-dark !important;
+    }
+  }
+
+  // Add section to library.
+  .layout-builder__link--add-section-to-library,
+  .layout-builder__link--add-section-to-library:visited {
+    background: $primary-shade !important;
+    border-radius: $card-border-radius !important;
+    border: 2px solid transparent !important;
+    box-shadow: 0 2px 8px 0 rgba($black, .35) !important;
+    color: $white !important;
     display: block !important;
     font-size: 14px !important;
     font-weight: 700;
@@ -352,7 +403,7 @@
     display: inline-block !important;
     position: absolute;
     top: 10px;
-    left: 55px;
+    left: 233px;
 
     // Hover and focus.
     &:focus {
@@ -374,7 +425,8 @@
 
       // "Remove" and "Cofigure" buttons.
       .layout-builder__link--remove,
-      .layout-builder__link--configure {
+      .layout-builder__link--configure,
+      .layout-builder__link--add-section-to-library {
         opacity: 1;
       }
     }
@@ -390,6 +442,26 @@
   // Markup block.
   .c--markup-block-block {
     min-height: 50px;
+  }
+
+  // Layout Builder Browser.
+  #drupal-off-canvas .block-categories {
+    details .details-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      gap: rem-calc(0 20);
+
+      a {
+        flex-basis: 40%;
+        box-shadow: 0 0 0 1px #41A5FF;
+        padding: rem-calc(8);
+        font-size: rem-calc(12);
+
+        img {
+          width: 100%;
+        }
+      }
+    }
   }
 }
 
@@ -467,12 +539,11 @@
     background-position: center 15px !important;
     justify-content: flex-end;
     border: 2px solid $primary-shade !important;
-    padding: 20px 15px !important;
     color: $primary-shade !important;
     font-weight: bold;
-    font-size: 16px;
-    padding-top: 35px !important;
-    height: 55px !important;
+    font-size: 13px;
+    height: 100% !important;
+    padding: 6px !important;
     &.block-type-{
       &accordion {
         background-image: url('../images/components/accordion.svg') !important;
@@ -536,9 +607,6 @@
       }
       &photo-gallery {
         background-image: url('../images/components/photogallery.svg') !important;
-      }
-      &slideshow {
-        background-image: url('../images/components/slideshow.svg') !important;
       }
     }
     &:hover,
@@ -621,9 +689,6 @@
 }
 
 .layout-builder-active {
-  #drupal-off-canvas .inline-block-create-button {
-    background: $primary-shade !important;
-  }
   .ui-resizable-handle.ui-resizable-w {
     display: none !important;
   }
@@ -664,4 +729,8 @@
 
 #drupal-off-canvas .inline-block-list li {
   margin-bottom: 0;
+}
+
+.icons-selector {
+  color: #383A40;
 }

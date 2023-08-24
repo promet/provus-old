@@ -1,8 +1,8 @@
 langcode: en
 status: true
 dependencies: {  }
-id: slideshow_block
-name: slideshow_block
+id: provus_slideshow_block
+name: provus_slideshow_block
 weight: 0
 label: 'Slideshow Block'
 group: ''

@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies: {  }
+id: provus_photo_gallery
+block_id: 'inline_block:provus_photo_gallery'
+category: provus_grouped_content
+label: 'Photo Gallery'
+image_path: /themes/custom/provus_bootstrap/images/components/photogallery-white.svg
+image_alt: ''
+weight: -98

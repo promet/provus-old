@@ -3,11 +3,11 @@ status: true
 dependencies:
   config:
     - block_content.type.provus_slideshow_item
-    - field.storage.block_content.field_url_slide_show_item
+    - field.storage.block_content.field_provus_url_slide_show_item
   module:
     - link
-id: block_content.provus_slideshow_item.field_url_slide_show_item
-field_name: field_url_slide_show_item
+id: block_content.provus_slideshow_item.field_provus_url_slide_show_item
+field_name: field_provus_url_slide_show_item
 entity_type: block_content
 bundle: provus_slideshow_item
 label: URL

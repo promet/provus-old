@@ -11,7 +11,7 @@ third_party_settings:
 preset_accent_color: blue
 preset_focus_color: gin
 enable_darkmode: false
-classic_toolbar: vertical
+classic_toolbar: classic
 icon_default: false
 icon_path: themes/custom/provus_bootstrap/provus_icon.png
 high_contrast_mode: false

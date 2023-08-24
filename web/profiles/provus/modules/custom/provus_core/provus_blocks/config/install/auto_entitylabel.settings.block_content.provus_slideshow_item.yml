@@ -1,5 +1,5 @@
 status: 1
-pattern: 'Slideshow - [random:number]'
+pattern: 'Slideshow Item - [random:number]'
 escape: false
 preserve_titles: false
 save: false
