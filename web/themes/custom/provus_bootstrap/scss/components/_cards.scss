@@ -1,7 +1,8 @@
 // Card styles.
 .card-wrapper {
-  height: 100%;
+  height: calc(100% - 20px);
   width: 100%;
+  margin-bottom: 20px;
 }
 
 .card-img-top {
@@ -82,7 +83,8 @@
   border: 1px solid $gray-lightest;
 }
 
-.block-provus-card.card-wrapper {
+// Card bg.
+.card-wrapper.provus-card-bg {
   .card {
     min-height: 240px;
     border-radius: $card-border-radius;
@@ -107,7 +109,32 @@
   }
 }
 
-.node--type-provus-blog.node--view-mode-provus-card-tall {
+// Card left and Card right.
+.card-wrapper {
+  &.provus-card-left,
+  &.provus-card-right {
+    .card-img {
+      height: 100%;
+      div {
+        height: 100%;
+        img {
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
+
+// Card image circle.
+.card-wrapper.provus-card-image-circle {
+  .card-img-top {
+    margin-top: rem-calc(20);
+  }
+}
+
+// Card tall
+.provus-card-tall {
   .card {
     border: none;
   }

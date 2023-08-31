@@ -66,7 +66,18 @@
  * @see template_preprocess_node()
  */
 #}
-
+{%
+  set classes = [
+  'node',
+  'node--type-' ~ node.bundle|clean_class,
+  node.isPromoted() ? 'node--promoted',
+  node.isSticky() ? 'node--sticky',
+  not node.isPublished() ? 'node--unpublished',
+  view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
+  'card-wrapper',
+  'provus-card-right',
+]
+%}
 <div{{ attributes.addClass(classes) }}>
   {% block content %}
     <div{{ content_attributes.addClass('card') }}>

@@ -66,23 +66,28 @@
  * @see template_preprocess_node()
  */
 #}
-
+{%
+  set classes = [
+  'node',
+  'node--type-' ~ node.bundle|clean_class,
+  node.isPromoted() ? 'node--promoted',
+  node.isSticky() ? 'node--sticky',
+  not node.isPublished() ? 'node--unpublished',
+  view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
+  'card-wrapper',
+  'provus-card-bg',
+]
+%}
 <div{{ attributes.addClass(classes) }}>
-  {% block content %}
-    <div{{ content_attributes.addClass('card') }}>
-      {% if content.image|render %}
-        <div class="card-img">
-          {{ content.image }}
-        </div>
-      {% endif %}
-      <div class="card-img-overlay">
-        <div class="card-body">
-          <h3 class="card-title"><a href="{{ url }}" rel="bookmark">{{ label }}</a></h3>
-          {% if content.body|render %}
-            <div class="card-text">{{ content.body }}</div>
-          {% endif %}
+  <a href="{{ url }}">
+    {% block content %}
+      <div{{ content_attributes.addClass('card') }} style="background-image:url('{{ file_url(content.image.0['#item'].entity.uri.value | image_style('provus_square_medium')) }}');">
+        <div class="card-img-overlay">
+          <div class="card-body">
+            <h3 class="card-title">{{ label }}</h3>
+          </div>
         </div>
       </div>
-    </div>
-  {% endblock %}
+    {% endblock %}
+  </a>
 </div>

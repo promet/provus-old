@@ -3,16 +3,16 @@ status: true
 dependencies:
   config:
     - block_content.type.provus_cta
+    - field.field.block_content.provus_cta.field_provus_body
     - field.field.block_content.provus_cta.field_provus_cta_background_clr
     - field.field.block_content.provus_cta.field_provus_cta_background_img
-    - field.field.block_content.provus_cta.field_provus_body
     - field.field.block_content.provus_cta.field_provus_links
     - field.field.block_content.provus_cta.field_provus_sub_title
     - field.field.block_content.provus_cta.field_provus_title
     - image.style.thumbnail
   module:
     - ala
-    - image
+    - focal_point
     - text
 id: block_content.provus_cta.default
 targetEntityType: block_content
@@ -36,12 +36,14 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_provus_cta_background_img:
-    type: image_image
+    type: image_focal_point
     weight: 27
     region: content
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
+      preview_link: true
+      offsets: '50,50'
     third_party_settings: {  }
   field_provus_links:
     type: ala_field_widget
@@ -55,6 +57,7 @@ content:
       ala_link_icon: false
       ala_link_roles: false
       ala_link_color: false
+      ala_link_extra: false
       ala_link_target: '1'
     third_party_settings: {  }
   field_provus_sub_title:

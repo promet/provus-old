@@ -1,14 +1,16 @@
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - focal_point
 name: provus_photo_gallery_800_x_400
 label: 'Photo Gallery - 800 x 400'
 effects:
   3a7834b5-0324-4a52-ac8b-df4ac4161d6b:
     uuid: 3a7834b5-0324-4a52-ac8b-df4ac4161d6b
-    id: image_scale_and_crop
+    id: focal_point_scale_and_crop
     weight: 1
     data:
       width: 800
       height: 400
-      anchor: center-center
+      crop_type: focal_point

@@ -1,0 +1,80 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.provus_card
+    - core.entity_view_mode.block_content.full
+    - field.field.block_content.provus_card.field_provus_body
+    - field.field.block_content.provus_card.field_provus_header
+    - field.field.block_content.provus_card.field_provus_item_display
+    - field.field.block_content.provus_card.field_provus_links
+    - field.field.block_content.provus_card.field_provus_media_image
+    - field.field.block_content.provus_card.field_provus_title
+    - image.style.provus_landscape_medium
+  module:
+    - ala
+    - layout_builder
+    - media
+    - text
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: block_content.provus_card.full
+targetEntityType: block_content
+bundle: provus_card
+mode: full
+content:
+  field_provus_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_provus_header:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_provus_links:
+    type: ala
+    label: hidden
+    settings:
+      trim_length: '80'
+      ala_link_view_class: element
+      ala_link_view_icon: inside
+      ala_link_view_roles: hide
+      url_only: false
+      url_plain: false
+      rel: 0
+      target: 0
+      ala_link_view_icon_position: left
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_provus_media_image:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: provus_landscape_medium
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_provus_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  field_item_display: true
+  field_provus_item_display: true

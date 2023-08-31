@@ -38,11 +38,13 @@ install:
   - comment
   - contextual
   - contact
+  - crop
   - default_content
   - editor
   - exclude_node_title
   - field_ui
   - file
+  - focal_point
   - gin_login
   - gin_toolbar
   - help
