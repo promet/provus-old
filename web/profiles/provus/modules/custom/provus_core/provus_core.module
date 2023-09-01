@@ -57,6 +57,10 @@ function provus_core_theme() {
       'template' => 'node--provus-card-right',
       'base hook' => 'node'
     ],
+    'node__provus_card_tall' => [
+      'template' => 'node--provus-card-tall',
+      'base hook' => 'node'
+    ],
   ];
 }
 
@@ -69,7 +73,7 @@ function provus_core_entity_view_display_alter(EntityViewDisplayInterface $displ
   $provus_display_config = provus_core_get_provus_displays($context['bundle'], $context['view_mode']);
 
   if ($context['entity_type'] == 'node' && $provus_display_config) {
-    // First remove all set display components so we only display the
+    // First remove all set display components, so we only display the
     // components we want from our provus config.
     $excluded_fields = [
       'uid',

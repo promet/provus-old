@@ -31,34 +31,41 @@
 #}
 {%
   set classes = [
-    'block',
-    'block-' ~ configuration.provider|clean_class,
-    'block-' ~ plugin_id|clean_class,
-    'card-wrapper',
-  ]
+  'block',
+  'block-' ~ configuration.provider|clean_class,
+  'block-' ~ plugin_id|clean_class,
+  'card-wrapper',
+  'provus-card',
+]
 %}
 
 <div{{ attributes.addClass(classes) }}>
-  {% if content.field_provus_links[0]['#url'] %}
-    <a href="{{ content.field_provus_links[0]['#url'] }}">
-  {% endif %}
   {{ title_prefix }}
   {% if label %}
     <h2{{ title_attributes }}>{{ label }}</h2>
   {% endif %}
   {{ title_suffix }}
   {% block content %}
-    <div{{ content_attributes.addClass('card') }} style="background-image:url('{{ file_url(content.field_provus_media_image.0['#item'].entity.uri.value | image_style('provus_square_medium')) }}');">
-      <div class="card-img-overlay">
-        <div class="card-body">
-          {% if content.field_provus_title|render %}
-          <h3 class="card-title">{{ content.field_provus_title }}</h3>
-          {% endif %}
+    <div{{ content_attributes.addClass('card', 'test') }}>
+      {% if content.field_provus_header|render %}
+        <div class="card-header">
+          {{ content.field_provus_header }}
         </div>
+      {% endif %}
+      {% if content.field_provus_media_image|render %}
+        <div class="card-img-top">
+          {{ content.field_provus_media_image }}
+        </div>
+      {% endif %}
+      <div class="card-body">
+        {% if content.field_provus_title|render %}
+          <h3 class="card-title">{{ content.field_provus_title }}</h3>
+        {% endif %}
+        {% if content.field_provus_body|render %}
+          <div class="card-text">{{ content.field_provus_body }}</div>
+        {% endif %}
+        {{ content|without('field_provus_title', 'field_provus_body', 'field_provus_media_image', 'field_provus_header') }}
       </div>
     </div>
   {% endblock %}
-  {% if content.field_provus_links[0]['#url'] %}
-    </a>
-  {% endif %}
 </div>

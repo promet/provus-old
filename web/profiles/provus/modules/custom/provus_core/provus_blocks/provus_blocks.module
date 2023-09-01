@@ -9,6 +9,7 @@ use Drupal\Component\Utility\Html;
 use Drupal\Core\Block\BlockPluginInterface;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Entity\EntityInterface;
 
 /**
  * Implements hook_help().
@@ -23,6 +24,25 @@ function provus_blocks_help($route_name, RouteMatchInterface $route_match) {
       return $output;
 
     default:
+  }
+}
+
+/**
+ * Implements hook_entity_view_mode_alter().
+ */
+function provus_blocks_entity_view_mode_alter(&$view_mode, EntityInterface $entity) {
+  // Set the card view mode to use item display when not in group.
+  if ($entity->getEntityTypeId() == 'block_content') {
+    if ($entity->bundle() == 'provus_card') {
+      if (!empty($entity->field_provus_item_display->value)) {
+        if (strpos($view_mode, 'provus-group-') === 0) {
+          $view_mode = substr($view_mode, 13);
+        }
+        else {
+          $view_mode = $entity->field_provus_item_display->value;
+        }
+      }
+    }
   }
 }
 
@@ -101,6 +121,14 @@ function provus_blocks_theme() {
       'template' => 'block--provus-card',
       'base hook' => 'block'
     ],
+    'block__provus_card__provus_display_provus_card' => [
+      'template' => 'block--provus-card--provus-display-provus-card',
+      'base hook' => 'block'
+    ],
+    'block__provus_card__provus_display_provus_card_tall' => [
+      'template' => 'block--provus-card--provus-display-provus-card-tall',
+      'base hook' => 'block'
+    ],
     'block__provus_card__provus_display_provus_card_basic' => [
       'template' => 'block--provus-card--provus-display-provus-card-basic',
       'base hook' => 'block'
@@ -173,7 +201,6 @@ function provus_blocks_theme() {
       'template' => 'block--provus-testimonial',
       'base hook' => 'block'
     ],
-
   ];
 }
 
@@ -242,7 +269,23 @@ function provus_blocks_form_alter(&$form, FormStateInterface $form_state, $form_
       $form['settings']['admin_label']['#access'] = FALSE;
       $form['settings']['label_display']['#default_value'] = FALSE;
       $form['settings']['label_display']['#access'] = FALSE;
+      $form['settings']['view_mode']['#access'] = FALSE;
     }
+  }
+}
+
+/**
+ * Perform alterations before an entity form is included in the IEF widget.
+ *
+ * @param array $entity_form
+ *   Nested array of form elements that comprise the entity form.
+ * @param \Drupal\Core\Form\FormStateInterface $form_state
+ *   The form state of the parent form.
+ */
+function provus_blocks_inline_entity_form_entity_form_alter(array &$entity_form, FormStateInterface &$form_state) {
+  // Don't display the item display field when card is in group form.
+  if ($entity_form['#entity_type'] == 'block_content' && $entity_form['#bundle'] == 'provus_card') {
+    $entity_form['field_provus_item_display']['#access'] = FALSE;
   }
 }
 
@@ -477,7 +520,9 @@ function _provus_blocks_groups_format_content($type, $id_array, $storage, $view_
         $item_display = 'provus_card_left';
       }
       if ($type == 'block') {
-        $block_build['content'] = $view_builder->view($entity, 'default');
+        // Add a special term 'provus-group-' so we can not change view mode
+        // in view_mode_alter.
+        $block_build['content'] = $view_builder->view($entity, 'provus-group-' . $item_display);
         // Add a custom variable to check in block preprocess.
         $block_build['content']['#provus_group_item_display'] = $item_display;
         provus_blocks_get_block($block_build, $entity);

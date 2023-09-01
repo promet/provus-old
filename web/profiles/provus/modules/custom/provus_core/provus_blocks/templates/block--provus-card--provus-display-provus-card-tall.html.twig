@@ -34,9 +34,11 @@
   'block',
   'block-' ~ configuration.provider|clean_class,
   'block-' ~ plugin_id|clean_class,
+  'card-wrapper',
+  'provus-card-tall',
 ]
 %}
-{%  set rowclass = 'row row-cols-1 row-cols-md-' ~ group_number  %}
+
 <div{{ attributes.addClass(classes) }}>
   {{ title_prefix }}
   {% if label %}
@@ -44,16 +46,20 @@
   {% endif %}
   {{ title_suffix }}
   {% block content %}
-    {% if content.field_provus_title|render %}
-      <h2 class="card-title">{{ content.field_provus_title }}</h2>
-    {% endif %}
-    <div{{ content_attributes.addClass(rowclass) }}>
-      {% for block in blocks %}
-        <div class="col">
-          {{ block }}
+    <div{{ content_attributes.addClass('card') }}>
+      {% if content.field_provus_media_image|render %}
+        <div class="card-img-top">
+          {{ content.field_provus_media_image }}
         </div>
-      {% endfor %}
+      {% endif %}
+      <div class="card-body">
+        {% if content.date|render %}
+          <div class="card-date">{{ content.date }}</div>
+        {% endif %}
+        {% if content.field_provus_title|render %}
+          <h3 class="card-title"><a href="{{ content.field_provus_links[0]['#url'] }}" rel="bookmark">{{ content.field_provus_title }}</a></h3>
+        {% endif %}
+      </div>
     </div>
-    {{ content.field_provus_links }}
   {% endblock %}
 </div>

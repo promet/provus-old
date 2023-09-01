@@ -679,6 +679,9 @@
   border-radius: $card-border-radius;
   padding: rem-calc(20);
   outline: 1px dashed;
+  .card-wrapper {
+    height: auto;
+  }
 }
 
 .toastify.on {

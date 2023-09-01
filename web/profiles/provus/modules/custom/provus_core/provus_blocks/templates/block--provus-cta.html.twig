@@ -51,34 +51,36 @@
   {{ title_suffix }}
   {% block content %}
     {% if (file_url(content.field_provus_cta_background_img['#items'].entity.uri.value)) is not empty %}
-        {%
-          set backgroundImage = 'has-bg-image'
-        %}
-        {%
-          set backgroundImagePath = file_url(content.field_provus_cta_background_img['#items'].entity.uri.value)
-        %}
-        {% endif %}
-        <div class="cta-wrapper {{ backgroundImage }} {{ content.field_provus_cta_background_clr.0 }}">
-        {% if (file_url(content.field_provus_cta_background_img['#items'].entity.uri.value)) is not empty %}
-          <div class="cta-bg-image-container" style="background-image: url({{ backgroundImagePath }})"></div>
-        {% endif %}
+      {% set backgroundImage = 'has-bg-image' %}
+      {% set backgroundImagePath = file_url(content.field_provus_cta_background_img['#items'].entity.uri.value|image_style('provus_large_banner')) %}
+    {% endif %}
+
+    <div class="cta-wrapper {{ backgroundImage }} {{ content.field_provus_cta_background_clr.0 }}">
+
+      {% if (file_url(content.field_provus_cta_background_img['#items'].entity.uri.value)) is not empty %}
+        <div class="cta-bg-image-container" style="background-image: url({{ backgroundImagePath }})"></div>
+      {% endif %}
 
       {% if content.field_provus_sub_title|render %}
         <h3 class="cta-sub-title">{{ content.field_provus_sub_title }}</h3>
       {% endif %}
+
       {% if content.field_provus_title|render %}
         <h2 class="cta-title">{{ content.field_provus_title }}</h2>
       {% endif %}
+
       {% if content.field_provus_body|render %}
         <div class="cta-body">
           {{ content.field_provus_body }}
         </div>
       {% endif %}
+
       {% if content.field_provus_links|render %}
         <div class="cta-links">
           {{ content.field_provus_links }}
         </div>
       {% endif %}
+
     </div>
   {% endblock %}
 </div>

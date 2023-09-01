@@ -1,14 +1,16 @@
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - focal_point
 name: provus_square_medium
 label: 'Square Medium'
 effects:
   c8a60bad-e6c0-4323-8d3e-25c9794af1f3:
     uuid: c8a60bad-e6c0-4323-8d3e-25c9794af1f3
-    id: image_scale_and_crop
+    id: focal_point_scale_and_crop
     weight: 1
     data:
       width: 680
       height: 680
-      anchor: center-center
+      crop_type: focal_point
