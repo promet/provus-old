@@ -30,6 +30,7 @@ distribution:
 install:
   - admin_toolbar
   - admin_toolbar_tools
+  - better_normalizers
   - block_content
   - bootstrap_layout_builder
   - breakpoint
@@ -39,7 +40,7 @@ install:
   - contextual
   - contact
   - crop
-  - default_content
+  - default_content_deploy
   - editor
   - exclude_node_title
   - field_ui
@@ -51,6 +52,7 @@ install:
   - history
   - image
   - linkit
+  - menu_block
   - menu_ui
   - options
   - path

@@ -52,6 +52,7 @@
         "drupal/admin_toolbar": "3.3.2",
         "drupal/ala": "1.8",
         "drupal/auto_entitylabel": "3.0",
+        "drupal/better_normalizers": "1.0-beta5",
         "drupal/bootstrap_barrio": "5.5.12",
         "drupal/bootstrap_layout_builder": "2.0.1",
         "drupal/bootstrap_sass": "5.0.6",
@@ -61,6 +62,7 @@
         "drupal/date_recur": "3.2.0",
         "drupal/date_recur_modular": "3.0.2",
         "drupal/default_content": "1.0.0-alpha9",
+        "drupal/default_content_deploy": "2.0.0",
         "drupal/devel": "4.2.1",
         "drupal/entity": "1.4",
         "drupal/exclude_node_title": "1.3",
@@ -135,16 +137,20 @@
         },
         "patches": {
             "drupal/core": {
-                "Allow hiding configured blocks in layout builder [3163197]": "https://www.drupal.org/files/issues/2021-11-15/layout_builder-hide-block-3163197-15.patch"
+                "3163197: Allow hiding configured blocks in layout builder": "https://www.drupal.org/files/issues/2021-11-15/layout_builder-hide-block-3163197-15.patch",
+                "2942975: Expose Layout Builder data to REST and JSON:API": "https://www.drupal.org/files/issues/2023-02-08/2942975-230.patch"
             },
             "drupal/auto_entitylabel": {
-                "Integration with Layout Builder for custom block types [3065687]": "https://www.drupal.org/files/issues/2022-12-22/auto_entitylabel-layout_builder_component_title-3065687-17.patch"
+                "3065687: Integration with Layout Builder for custom block types": "https://www.drupal.org/files/issues/2022-12-22/auto_entitylabel-layout_builder_component_title-3065687-17.patch"
             },
             "drupal/exclude_node_title": {
-                "Deployment erases excluded-node-titles [2974973]": "https://www.drupal.org/files/issues/2018-06-20/2974973-state_api-3.patch"
+                "2974973: Deployment erases excluded-node-titles": "https://www.drupal.org/files/issues/2018-06-20/2974973-state_api-3.patch"
             },
             "drupal/bootstrap_site_alert": {
-                "HTML markup shown as encoded characters [3281928]": "https://git.drupalcode.org/project/bootstrap_site_alert/-/merge_requests/5.diff"
+                "3281928: HTML markup shown as encoded characters": "https://git.drupalcode.org/project/bootstrap_site_alert/-/merge_requests/5.diff"
+            },
+            "drupal/default_content_deploy": {
+                "3376835: Fix layout builder references to inline blocks": "https://www.drupal.org/files/issues/2023-07-25/default_content_deploy-layout-builder-inline-blocks-reference-3376835-2.patch"
             }
         }
     },

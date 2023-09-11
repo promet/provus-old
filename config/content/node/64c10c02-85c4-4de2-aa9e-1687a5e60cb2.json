@@ -1,0 +1,161 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/provus-local.docksal.site\/events\/some-event-2?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/provus-local.docksal.site\/rest\/type\/node\/provus_event"
+        },
+        "http:\/\/provus-local.docksal.site\/rest\/relation\/node\/provus_event\/revision_uid": [
+            {
+                "href": "http:\/\/provus-local.docksal.site\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/provus-local.docksal.site\/rest\/relation\/node\/provus_event\/uid": [
+            {
+                "href": "http:\/\/provus-local.docksal.site\/user\/1?_format=hal_json",
+                "lang": "en"
+            }
+        ]
+    },
+    "nid": [
+        {
+            "value": 8
+        }
+    ],
+    "uuid": [
+        {
+            "value": "64c10c02-85c4-4de2-aa9e-1687a5e60cb2"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "provus_event"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2023-09-11T21:17:26+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/provus-local.docksal.site\/rest\/relation\/node\/provus_event\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/provus-local.docksal.site\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/provus-local.docksal.site\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "ab44efbc-1e43-499b-baff-f4edc4c87b18"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/provus-local.docksal.site\/rest\/relation\/node\/provus_event\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/provus-local.docksal.site\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/provus-local.docksal.site\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "ab44efbc-1e43-499b-baff-f4edc4c87b18"
+                    }
+                ],
+                "lang": "en"
+            }
+        ]
+    },
+    "status": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "title": [
+        {
+            "value": "Some event 2",
+            "lang": "en"
+        }
+    ],
+    "created": [
+        {
+            "value": "2023-09-11T21:15:33+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2023-09-11T21:17:26+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "sticky": [
+        {
+            "value": false,
+            "lang": "en"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/events\/some-event-2",
+            "pid": 8,
+            "langcode": "en",
+            "lang": "en"
+        }
+    ],
+    "body": [
+        {
+            "value": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p>\r\n",
+            "format": "basic_html",
+            "processed": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p>",
+            "summary": "",
+            "lang": "en"
+        }
+    ],
+    "field_provus_dates": [
+        {
+            "value": "2023-09-19T14:00:00+00:00",
+            "end_value": "2023-09-19T15:00:00+00:00",
+            "rrule": null,
+            "timezone": "America\/Chicago",
+            "infinite": false
+        }
+    ]
+}

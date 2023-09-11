@@ -1,0 +1,31 @@
+uuid: cdd1f63c-7769-46bb-a7ea-c9db498270c4
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.provus-footer-menu-2
+  module:
+    - menu_block
+  theme:
+    - provus_bootstrap
+id: provus_bootstrap_footermenu2
+theme: provus_bootstrap
+region: footer_third
+weight: 0
+provider: null
+plugin: 'menu_block:provus-footer-menu-2'
+settings:
+  id: 'menu_block:provus-footer-menu-2'
+  label: Resources
+  label_display: visible
+  provider: menu_block
+  follow: false
+  follow_parent: child
+  label_link: false
+  label_type: block
+  level: 1
+  depth: 0
+  expand_all_items: false
+  parent: 'provus-footer-menu-2:'
+  suggestion: provus_footer_menu_2
+visibility: {  }

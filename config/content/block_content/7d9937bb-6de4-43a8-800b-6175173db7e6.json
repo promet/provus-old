@@ -1,0 +1,87 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/provus-local.docksal.site\/admin\/content\/block\/30?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/provus-local.docksal.site\/rest\/type\/block_content\/provus_button"
+        }
+    },
+    "id": [
+        {
+            "value": 30
+        }
+    ],
+    "uuid": [
+        {
+            "value": "7d9937bb-6de4-43a8-800b-6175173db7e6"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "provus_button"
+        }
+    ],
+    "revision_created": [
+        {
+            "value": "2023-08-11T20:55:30+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "status": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "info": [
+        {
+            "value": "(Button) - 1434512800",
+            "lang": "en"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2023-08-11T20:55:30+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "reusable": [
+        {
+            "value": false
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "field_provus_links": [
+        {
+            "uri": "internal:#",
+            "title": "Read more about this",
+            "options": {
+                "attributes": {
+                    "target": ""
+                },
+                "icon": "",
+                "class": "btn btn-primary"
+            },
+            "lang": "en"
+        }
+    ]
+}

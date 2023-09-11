@@ -1,0 +1,8 @@
+uuid: bc3de525-044c-430b-8e3e-fd14f9afb278
+langcode: en
+status: true
+dependencies: {  }
+id: provus-footer-menu-2
+label: 'Footer Menu 2'
+description: ''
+locked: false

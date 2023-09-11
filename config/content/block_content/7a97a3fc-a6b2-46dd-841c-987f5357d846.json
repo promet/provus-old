@@ -1,0 +1,123 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/provus-local.docksal.site\/admin\/content\/block\/10?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/provus-local.docksal.site\/rest\/type\/block_content\/provus_stat_item"
+        }
+    },
+    "id": [
+        {
+            "value": 10
+        }
+    ],
+    "uuid": [
+        {
+            "value": "7a97a3fc-a6b2-46dd-841c-987f5357d846"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "provus_stat_item"
+        }
+    ],
+    "revision_created": [
+        {
+            "value": "2023-08-11T21:03:23+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "status": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "info": [
+        {
+            "value": "343 (Stat Item) - 1028320180",
+            "lang": "en"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2023-08-11T21:03:23+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "reusable": [
+        {
+            "value": true
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "field_provus_description": [
+        {
+            "value": "Teachers"
+        }
+    ],
+    "field_provus_icon": [
+        {
+            "icon_name": "apple-whole",
+            "style": "fas",
+            "settings": {
+                "duotone": {
+                    "swap-opacity": 0,
+                    "opacity": {
+                        "primary": "",
+                        "secondary": ""
+                    },
+                    "inherit-color": 0,
+                    "color": {
+                        "primary": "#000000",
+                        "secondary": "#000000"
+                    }
+                },
+                "masking": {
+                    "mask": "",
+                    "style": ""
+                },
+                "power_transforms": {
+                    "scale": {
+                        "type": "",
+                        "value": ""
+                    },
+                    "position_y": {
+                        "type": "",
+                        "value": ""
+                    },
+                    "position_x": {
+                        "type": "",
+                        "value": ""
+                    }
+                }
+            },
+            "lang": "en"
+        }
+    ],
+    "field_provus_title": [
+        {
+            "value": "343",
+            "lang": "en"
+        }
+    ]
+}
