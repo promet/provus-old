@@ -753,6 +753,11 @@ $settings['entity_update_backup'] = TRUE;
 $settings['migrate_node_migrate_type_classic'] = FALSE;
 
 /**
+ * Default content deploy settings.
+ */
+$settings['default_content_deploy_content_directory'] = '../config/content';
+
+/**
  * Load local development override configuration, if available.
  *
  * Create a settings.local.php file to override variables on secondary (staging,

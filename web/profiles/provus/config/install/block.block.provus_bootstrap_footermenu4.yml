@@ -1,0 +1,31 @@
+uuid: 303f3c55-f632-433e-9d6c-d331cb944211
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.provus-footer-menu-4
+  module:
+    - menu_block
+  theme:
+    - provus_bootstrap
+id: provus_bootstrap_footermenu4
+theme: provus_bootstrap
+region: footer_fifth
+weight: -8
+provider: null
+plugin: 'menu_block:provus-footer-menu-4'
+settings:
+  id: 'menu_block:provus-footer-menu-4'
+  label: 'Footer Menu 4'
+  label_display: '0'
+  provider: menu_block
+  follow: false
+  follow_parent: child
+  label_link: false
+  label_type: block
+  level: 1
+  depth: 0
+  expand_all_items: false
+  parent: 'provus-footer-menu-4:'
+  suggestion: provus_footer_menu_4
+visibility: {  }

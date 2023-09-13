@@ -1,0 +1,163 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/provus-local.docksal.site\/events\/some-event-2?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/provus-local.docksal.site\/rest\/type\/node\/provus_event"
+        },
+        "http:\/\/provus-local.docksal.site\/rest\/relation\/node\/provus_event\/revision_uid": [
+            {
+                "href": "http:\/\/provus-local.docksal.site\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/provus-local.docksal.site\/rest\/relation\/node\/provus_event\/uid": [
+            {
+                "href": "http:\/\/provus-local.docksal.site\/user\/1?_format=hal_json",
+                "lang": "en"
+            }
+        ]
+    },
+    "nid": [
+        {
+            "value": 9
+        }
+    ],
+    "uuid": [
+        {
+            "value": "73f20065-d527-45e5-96d7-d8ca1558eb46"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "provus_event"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2023-09-11T16:17:36+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/provus-local.docksal.site\/rest\/relation\/node\/provus_event\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/provus-local.docksal.site\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/provus-local.docksal.site\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "2bc02951-e1d9-4c98-a883-d6ebda691417"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/provus-local.docksal.site\/rest\/relation\/node\/provus_event\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/provus-local.docksal.site\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/provus-local.docksal.site\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "2bc02951-e1d9-4c98-a883-d6ebda691417"
+                    }
+                ],
+                "lang": "en"
+            }
+        ]
+    },
+    "status": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "title": [
+        {
+            "value": "Some event 2",
+            "lang": "en"
+        }
+    ],
+    "created": [
+        {
+            "value": "2023-09-11T16:17:02+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2023-09-11T16:17:36+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "sticky": [
+        {
+            "value": false,
+            "lang": "en"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/events\/some-event-2",
+            "pid": 9,
+            "langcode": "en",
+            "lang": "en"
+        }
+    ],
+    "body": [
+        {
+            "value": "<p>Quam id leo in vitae turpis massa sed. Sapien et ligula ullamcorper malesuada proin libero. Diam quis enim lobortis scelerisque. Rutrum quisque non tellus orci ac auctor augue. Nunc id cursus metus aliquam. Vel eros donec ac odio tempor orci dapibus. Cursus turpis massa tincidunt dui ut. Egestas tellus rutrum tellus pellentesque eu tincidunt tortor aliquam. Posuere morbi leo urna molestie at elementum eu facilisis sed. Leo vel fringilla est ullamcorper. Nascetur ridiculus mus mauris vitae ultricies leo integer malesuada nunc. Eget lorem dolor sed viverra ipsum nunc. Enim tortor at auctor urna nunc id cursus. Lobortis scelerisque fermentum dui faucibus in ornare quam viverra orci. Dignissim cras tincidunt lobortis feugiat vivamus. Dignissim diam quis enim lobortis scelerisque fermentum dui. Sed blandit libero volutpat sed cras. Rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant.<\/p><p>Sed euismod nisi porta lorem mollis aliquam ut porttitor leo. Nisl pretium fusce id velit ut tortor pretium viverra. Massa tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin. Dignissim cras tincidunt lobortis feugiat vivamus at augue. Lectus urna duis convallis convallis tellus id interdum velit laoreet. Tellus molestie nunc non blandit. Leo vel orci porta non pulvinar neque. Odio ut enim blandit volutpat maecenas volutpat blandit. Felis donec et odio pellentesque diam volutpat. Viverra suspendisse potenti nullam ac tortor vitae purus. Id cursus metus aliquam eleifend mi in nulla posuere.<\/p>",
+            "format": "basic_html",
+            "processed": "<p>Quam id leo in vitae turpis massa sed. Sapien et ligula ullamcorper malesuada proin libero. Diam quis enim lobortis scelerisque. Rutrum quisque non tellus orci ac auctor augue. Nunc id cursus metus aliquam. Vel eros donec ac odio tempor orci dapibus. Cursus turpis massa tincidunt dui ut. Egestas tellus rutrum tellus pellentesque eu tincidunt tortor aliquam. Posuere morbi leo urna molestie at elementum eu facilisis sed. Leo vel fringilla est ullamcorper. Nascetur ridiculus mus mauris vitae ultricies leo integer malesuada nunc. Eget lorem dolor sed viverra ipsum nunc. Enim tortor at auctor urna nunc id cursus. Lobortis scelerisque fermentum dui faucibus in ornare quam viverra orci. Dignissim cras tincidunt lobortis feugiat vivamus. Dignissim diam quis enim lobortis scelerisque fermentum dui. Sed blandit libero volutpat sed cras. Rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant.<\/p><p>Sed euismod nisi porta lorem mollis aliquam ut porttitor leo. Nisl pretium fusce id velit ut tortor pretium viverra. Massa tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin. Dignissim cras tincidunt lobortis feugiat vivamus at augue. Lectus urna duis convallis convallis tellus id interdum velit laoreet. Tellus molestie nunc non blandit. Leo vel orci porta non pulvinar neque. Odio ut enim blandit volutpat maecenas volutpat blandit. Felis donec et odio pellentesque diam volutpat. Viverra suspendisse potenti nullam ac tortor vitae purus. Id cursus metus aliquam eleifend mi in nulla posuere.<\/p>",
+            "summary": "",
+            "lang": "en"
+        }
+    ],
+    "field_provus_smartdate": [
+        {
+            "value": "2023-09-29T13:00:00+00:00",
+            "end_value": "2023-09-29T15:00:00+00:00",
+            "duration": 120,
+            "rrule": null,
+            "rrule_index": null,
+            "timezone": "",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ]
+}

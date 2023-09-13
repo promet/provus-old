@@ -1,0 +1,23 @@
+uuid: f84e3b3a-8e57-401f-a4ef-a0afe7238fb0
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - provus_bootstrap
+id: provus_bootstrap_sitebranding
+theme: provus_bootstrap
+region: footer_first
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }

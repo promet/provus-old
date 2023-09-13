@@ -1,0 +1,179 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/provus-local.docksal.site\/news\/some-news-item-title-1?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/provus-local.docksal.site\/rest\/type\/node\/provus_news"
+        },
+        "http:\/\/provus-local.docksal.site\/rest\/relation\/node\/provus_news\/revision_uid": [
+            {
+                "href": "http:\/\/provus-local.docksal.site\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/provus-local.docksal.site\/rest\/relation\/node\/provus_news\/uid": [
+            {
+                "href": "http:\/\/provus-local.docksal.site\/user\/1?_format=hal_json",
+                "lang": "en"
+            }
+        ],
+        "http:\/\/provus-local.docksal.site\/rest\/relation\/node\/provus_news\/field_provus_media_image": [
+            {
+                "href": "http:\/\/provus-local.docksal.site\/media\/1\/edit?_format=hal_json"
+            }
+        ]
+    },
+    "nid": [
+        {
+            "value": 4
+        }
+    ],
+    "uuid": [
+        {
+            "value": "e2542ec9-d17b-4ce2-acfa-1f6f1d0bd933"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "provus_news"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2023-09-11T16:13:49+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/provus-local.docksal.site\/rest\/relation\/node\/provus_news\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/provus-local.docksal.site\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/provus-local.docksal.site\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "2bc02951-e1d9-4c98-a883-d6ebda691417"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/provus-local.docksal.site\/rest\/relation\/node\/provus_news\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/provus-local.docksal.site\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/provus-local.docksal.site\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "2bc02951-e1d9-4c98-a883-d6ebda691417"
+                    }
+                ],
+                "lang": "en"
+            }
+        ],
+        "http:\/\/provus-local.docksal.site\/rest\/relation\/node\/provus_news\/field_provus_media_image": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/provus-local.docksal.site\/media\/1\/edit?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/provus-local.docksal.site\/rest\/type\/media\/image"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "47c8fa7b-bfd4-4597-a992-cea1b3a5828a"
+                    }
+                ]
+            }
+        ]
+    },
+    "status": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "title": [
+        {
+            "value": "Some News Item Title 1",
+            "lang": "en"
+        }
+    ],
+    "created": [
+        {
+            "value": "2023-09-11T16:13:06+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2023-09-11T16:13:49+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "sticky": [
+        {
+            "value": false,
+            "lang": "en"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/news\/some-news-item-title-1",
+            "pid": 4,
+            "langcode": "en",
+            "lang": "en"
+        }
+    ],
+    "body": [
+        {
+            "value": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Turpis nunc eget lorem dolor sed viverra ipsum nunc. Est lorem ipsum dolor sit amet consectetur adipiscing. Donec adipiscing tristique risus nec feugiat. Elementum integer enim neque volutpat. Id semper risus in hendrerit. In massa tempor nec feugiat nisl pretium fusce id velit. Semper feugiat nibh sed pulvinar proin. Turpis in eu mi bibendum neque egestas congue quisque egestas.<\/p><p>Imperdiet sed euismod nisi porta lorem mollis. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam erat. Vel pharetra vel turpis nunc eget lorem dolor sed viverra. Dui faucibus in ornare quam. Interdum velit euismod in pellentesque massa placerat duis. Sed odio morbi quis commodo odio. Semper auctor neque vitae tempus. Ut enim blandit volutpat maecenas volutpat. Consequat interdum varius sit amet mattis vulputate enim nulla aliquet. Auctor urna nunc id cursus metus aliquam eleifend mi. Tellus molestie nunc non blandit massa enim. Lacus sed turpis tincidunt id aliquet. Malesuada proin libero nunc consequat interdum. Mauris a diam maecenas sed enim ut. Lobortis mattis aliquam faucibus purus. Iaculis urna id volutpat lacus laoreet non. Faucibus ornare suspendisse sed nisi lacus. Faucibus vitae aliquet nec ullamcorper. Eu mi bibendum neque egestas. Vitae semper quis lectus nulla at volutpat.<\/p><p>At imperdiet dui accumsan sit amet nulla facilisi morbi. Urna neque viverra justo nec ultrices dui. Non blandit massa enim nec dui nunc mattis enim ut. Aliquam sem et tortor consequat id porta nibh. Urna duis convallis convallis tellus. Quam adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus. Pellentesque sit amet porttitor eget dolor morbi non arcu. Vitae sapien pellentesque habitant morbi tristique. Ante in nibh mauris cursus mattis molestie a iaculis. Suspendisse potenti nullam ac tortor vitae purus faucibus. Odio eu feugiat pretium nibh ipsum.<\/p><p>Quam id leo in vitae turpis massa sed. Sapien et ligula ullamcorper malesuada proin libero. Diam quis enim lobortis scelerisque. Rutrum quisque non tellus orci ac auctor augue. Nunc id cursus metus aliquam. Vel eros donec ac odio tempor orci dapibus. Cursus turpis massa tincidunt dui ut. Egestas tellus rutrum tellus pellentesque eu tincidunt tortor aliquam. Posuere morbi leo urna molestie at elementum eu facilisis sed. Leo vel fringilla est ullamcorper. Nascetur ridiculus mus mauris vitae ultricies leo integer malesuada nunc. Eget lorem dolor sed viverra ipsum nunc. Enim tortor at auctor urna nunc id cursus. Lobortis scelerisque fermentum dui faucibus in ornare quam viverra orci. Dignissim cras tincidunt lobortis feugiat vivamus. Dignissim diam quis enim lobortis scelerisque fermentum dui. Sed blandit libero volutpat sed cras. Rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant.<\/p><p>Sed euismod nisi porta lorem mollis aliquam ut porttitor leo. Nisl pretium fusce id velit ut tortor pretium viverra. Massa tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin. Dignissim cras tincidunt lobortis feugiat vivamus at augue. Lectus urna duis convallis convallis tellus id interdum velit laoreet. Tellus molestie nunc non blandit. Leo vel orci porta non pulvinar neque. Odio ut enim blandit volutpat maecenas volutpat blandit. Felis donec et odio pellentesque diam volutpat. Viverra suspendisse potenti nullam ac tortor vitae purus. Id cursus metus aliquam eleifend mi in nulla posuere.<\/p>",
+            "format": "basic_html",
+            "processed": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Turpis nunc eget lorem dolor sed viverra ipsum nunc. Est lorem ipsum dolor sit amet consectetur adipiscing. Donec adipiscing tristique risus nec feugiat. Elementum integer enim neque volutpat. Id semper risus in hendrerit. In massa tempor nec feugiat nisl pretium fusce id velit. Semper feugiat nibh sed pulvinar proin. Turpis in eu mi bibendum neque egestas congue quisque egestas.<\/p><p>Imperdiet sed euismod nisi porta lorem mollis. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam erat. Vel pharetra vel turpis nunc eget lorem dolor sed viverra. Dui faucibus in ornare quam. Interdum velit euismod in pellentesque massa placerat duis. Sed odio morbi quis commodo odio. Semper auctor neque vitae tempus. Ut enim blandit volutpat maecenas volutpat. Consequat interdum varius sit amet mattis vulputate enim nulla aliquet. Auctor urna nunc id cursus metus aliquam eleifend mi. Tellus molestie nunc non blandit massa enim. Lacus sed turpis tincidunt id aliquet. Malesuada proin libero nunc consequat interdum. Mauris a diam maecenas sed enim ut. Lobortis mattis aliquam faucibus purus. Iaculis urna id volutpat lacus laoreet non. Faucibus ornare suspendisse sed nisi lacus. Faucibus vitae aliquet nec ullamcorper. Eu mi bibendum neque egestas. Vitae semper quis lectus nulla at volutpat.<\/p><p>At imperdiet dui accumsan sit amet nulla facilisi morbi. Urna neque viverra justo nec ultrices dui. Non blandit massa enim nec dui nunc mattis enim ut. Aliquam sem et tortor consequat id porta nibh. Urna duis convallis convallis tellus. Quam adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus. Pellentesque sit amet porttitor eget dolor morbi non arcu. Vitae sapien pellentesque habitant morbi tristique. Ante in nibh mauris cursus mattis molestie a iaculis. Suspendisse potenti nullam ac tortor vitae purus faucibus. Odio eu feugiat pretium nibh ipsum.<\/p><p>Quam id leo in vitae turpis massa sed. Sapien et ligula ullamcorper malesuada proin libero. Diam quis enim lobortis scelerisque. Rutrum quisque non tellus orci ac auctor augue. Nunc id cursus metus aliquam. Vel eros donec ac odio tempor orci dapibus. Cursus turpis massa tincidunt dui ut. Egestas tellus rutrum tellus pellentesque eu tincidunt tortor aliquam. Posuere morbi leo urna molestie at elementum eu facilisis sed. Leo vel fringilla est ullamcorper. Nascetur ridiculus mus mauris vitae ultricies leo integer malesuada nunc. Eget lorem dolor sed viverra ipsum nunc. Enim tortor at auctor urna nunc id cursus. Lobortis scelerisque fermentum dui faucibus in ornare quam viverra orci. Dignissim cras tincidunt lobortis feugiat vivamus. Dignissim diam quis enim lobortis scelerisque fermentum dui. Sed blandit libero volutpat sed cras. Rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant.<\/p><p>Sed euismod nisi porta lorem mollis aliquam ut porttitor leo. Nisl pretium fusce id velit ut tortor pretium viverra. Massa tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin. Dignissim cras tincidunt lobortis feugiat vivamus at augue. Lectus urna duis convallis convallis tellus id interdum velit laoreet. Tellus molestie nunc non blandit. Leo vel orci porta non pulvinar neque. Odio ut enim blandit volutpat maecenas volutpat blandit. Felis donec et odio pellentesque diam volutpat. Viverra suspendisse potenti nullam ac tortor vitae purus. Id cursus metus aliquam eleifend mi in nulla posuere.<\/p>",
+            "summary": "",
+            "lang": "en"
+        }
+    ],
+    "field_provus_publish_date": [
+        {
+            "value": "2023-09-01"
+        }
+    ]
+}

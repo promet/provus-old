@@ -43,6 +43,18 @@
                     "type": "zip"
                 }
             }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "drupaloverride/better_normalizers",
+                "version": "dev-master",
+                "type": "drupal-module",
+                "dist": {
+                    "url": "https://git.drupalcode.org/api/v4/projects/project%2Fbetter_normalizers/repository/archive.zip?sha=312e16",
+                    "type": "zip"
+                }
+            }
         }
     ],
     "require": {
@@ -59,6 +71,7 @@
         "drupal/core": "10.1.2",
         "drupal/core-composer-scaffold": "10.1.2",
         "drupal/default_content": "2.0.0-alpha2",
+        "drupal/default_content_deploy": "2.0.0",
         "drupal/devel": "5.0.2",
         "drupal/entity": "1.4",
         "drupal/exclude_node_title": "1.4",
@@ -94,7 +107,8 @@
         "vlucas/phpdotenv": "5.5",
         "webflo/drupal-finder": "1.2.2",
         "webmozart/path-util": "2.3",
-        "zaporylie/composer-drupal-optimizations": "1.2"
+        "zaporylie/composer-drupal-optimizations": "1.2",
+        "drupaloverride/better_normalizers": "dev-master"
     },
     "require-dev": {
         "dmore/behat-chrome-extension": "1.4",
@@ -134,15 +148,21 @@
             "drupal/core": "-p2"
         },
         "patches": {
+            "drupal/core": {
+                "2942975: Expose Layout Builder data to REST and JSON:API": "https://www.drupal.org/files/issues/2023-02-08/2942975-230.patch"
+            },
             "drupal/auto_entitylabel": {
-                "Integration with Layout Builder for custom block types [3065687]": "https://www.drupal.org/files/issues/2022-12-22/auto_entitylabel-layout_builder_component_title-3065687-17.patch"
+                "3065687: Integration with Layout Builder for custom block types": "https://www.drupal.org/files/issues/2022-12-22/auto_entitylabel-layout_builder_component_title-3065687-17.patch"
             },
             "drupal/bootstrap_site_alert": {
-                "HTML markup shown as encoded characters [3281928]": "https://git.drupalcode.org/project/bootstrap_site_alert/-/merge_requests/5.diff"
+                "3281928: HTML markup shown as encoded characters": "https://git.drupalcode.org/project/bootstrap_site_alert/-/merge_requests/5.diff"
             },
             "drupal/bootstrap_styles": {
                 "3282082: Support Bootstrap 5 on bootstrap_styles module.": "https://www.drupal.org/files/issues/2022-06-14/Fix-support-bootstrap-5-on-bootstrap-styles-3282082-%233.patch",
                 "3361091: Clean up UI for 1x branch.": "https://git.drupalcode.org/project/bootstrap_styles/-/merge_requests/57.diff"
+            },
+            "drupal/default_content_deploy": {
+                "3376835: Fix layout builder references to inline blocks": "https://www.drupal.org/files/issues/2023-07-25/default_content_deploy-layout-builder-inline-blocks-reference-3376835-2.patch"
             }
         }
     },

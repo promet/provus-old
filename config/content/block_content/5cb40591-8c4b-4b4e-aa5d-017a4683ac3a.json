@@ -1,0 +1,123 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/provus-local.docksal.site\/admin\/content\/block\/16?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/provus-local.docksal.site\/rest\/type\/block_content\/provus_stat_item"
+        }
+    },
+    "id": [
+        {
+            "value": 16
+        }
+    ],
+    "uuid": [
+        {
+            "value": "5cb40591-8c4b-4b4e-aa5d-017a4683ac3a"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "provus_stat_item"
+        }
+    ],
+    "revision_created": [
+        {
+            "value": "2023-08-11T21:06:11+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "status": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "info": [
+        {
+            "value": "20 (Stat Item) - 330711208",
+            "lang": "en"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2023-08-11T21:06:11+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "reusable": [
+        {
+            "value": true
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "field_provus_description": [
+        {
+            "value": "Bus Routes"
+        }
+    ],
+    "field_provus_icon": [
+        {
+            "icon_name": "bus-simple",
+            "style": "fas",
+            "settings": {
+                "duotone": {
+                    "swap-opacity": 0,
+                    "opacity": {
+                        "primary": "",
+                        "secondary": ""
+                    },
+                    "inherit-color": 0,
+                    "color": {
+                        "primary": "#000000",
+                        "secondary": "#000000"
+                    }
+                },
+                "masking": {
+                    "mask": "",
+                    "style": ""
+                },
+                "power_transforms": {
+                    "scale": {
+                        "type": "",
+                        "value": ""
+                    },
+                    "position_y": {
+                        "type": "",
+                        "value": ""
+                    },
+                    "position_x": {
+                        "type": "",
+                        "value": ""
+                    }
+                }
+            },
+            "lang": "en"
+        }
+    ],
+    "field_provus_title": [
+        {
+            "value": "20",
+            "lang": "en"
+        }
+    ]
+}
