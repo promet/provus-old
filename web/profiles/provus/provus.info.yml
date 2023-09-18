@@ -34,7 +34,7 @@ install:
   - block_content
   - bootstrap_layout_builder
   - breakpoint
-  - ckeditor
+  - ckeditor5
   - config
   - comment
   - contextual
