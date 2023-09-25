@@ -64,6 +64,7 @@
         "drupal/admin_toolbar": "3.4.1",
         "drupal/ala": "2.5",
         "drupal/auto_entitylabel": "3.0",
+        "drupal/blazy": "2.18",
         "drupal/bootstrap_barrio": "5.5.12",
         "drupal/bootstrap_layout_builder": "2.1.2",
         "drupal/bootstrap_sass": "5.0.6",
@@ -90,12 +91,13 @@
         "drupal/pathauto": "1.11",
         "drupal/section_library": "1.1.1",
         "drupal/sitemap": "dev-2.x",
-        "drupal/slick": "2.9",
+        "drupal/slick": "2.10",
         "drupal/smart_date": "4.0.3",
         "drupal/smart_trim": "2.1.0",
         "drupal/toastify": "1.0.0-beta6",
         "drupal/twig_tweak": "3.2.1",
         "drupal/views_bootstrap": "4.4",
+        "drupaloverride/better_normalizers": "dev-master",
         "drush/drush": "12.1.0",
         "fontawesome/fontawesome": "6.1.0",
         "fonticonpicker/fonticonpicker--fonticonpicker": "3.1.1",
@@ -107,8 +109,7 @@
         "vlucas/phpdotenv": "5.5",
         "webflo/drupal-finder": "1.2.2",
         "webmozart/path-util": "2.3",
-        "zaporylie/composer-drupal-optimizations": "1.2",
-        "drupaloverride/better_normalizers": "dev-master"
+        "zaporylie/composer-drupal-optimizations": "1.2"
     },
     "require-dev": {
         "dmore/behat-chrome-extension": "1.4",
