@@ -11,9 +11,9 @@
       width: rem-calc(13);
     }
     &:hover {
-      background: $primary-light-hover;
+      background: $primary-contrast;
       &::before {
-        background: $primary-light;
+        background: $primary;
       }
     }
     .accordion-button {
@@ -32,7 +32,7 @@
         display: none;
       }
       .open-close {
-        color: $primary-light;
+        color: $primary;
         font-size: rem-calc(24);
         margin-right: rem-calc(16);
       }

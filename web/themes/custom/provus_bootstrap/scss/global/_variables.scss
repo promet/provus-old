@@ -2,76 +2,81 @@
 
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Inter:100,200,300,400,500,600,700,800,900&display=swap');
-
-// Body Font Family
 $font-body: 'Inter', sans-serif;
-
-// Heading Font Family
 $font-heading: 'Inter', sans-serif;
 
-// Primary Color
-$primary-shade: #2563EB;
+// Primary Colors.
+$primary: #2563EB;
+$primary-hover: #114CAE;
+$primary-contrast: #ffffff;
+$primary-accent: #1C2B54;
 
-// Primary Light Color
-$primary-light: #3B82F6;
+// Secondary Colors.
+$secondary: #00869E;
+$secondary-hover: #045F70;
+$secondary-contrast: #404758;
+$secondary-accent: #5BCDE2;
 
-// Primary Light Hover Color
-$primary-light-hover: #3B82F610;
+// Background Colors.
+$background-white: #ffffff;
+$background-light: #FBFBFC;
+$background-grey: #D6D6D6;
+$background-lightblue: #EFF6FF;
+$background-lightteal: #E7F6F9;
+$background-gradient: linear-gradient(45deg, #2BAEC6, #094FC2);
 
-// Primary Medium Color
-$primary-medium: #293E7A;
-
-// Primary Background Color
-$primary-background: #EFF6FF;
-
-// Secondary Color
-$secondary-shade: #007b92;
-
-// Accent/Tertiary color
-$accent-shade: #FD5809;
-
-// Heading Colors
-$heading-color: #1d2b36;
-
-// Base Font Size
-$font-size-base: 1rem;
-
-// Border Radius for Cards
-$card-border-radius: .25rem;
-
-// Card Padding
-$card-spacing: 1.25rem;
-
-// Card Border Colors
-$card-border-color: #ddd;
-
-// Site Background Color
-$body-bg: #fff;
-
-// Main Text Color
+// Text.
+$text-primary: #2C2E30;
+$text-secondary: #646F79;
+$text-contrast: #FFFFFF;
+$text-hint: #747474;
 $body-color: #2C2E30;
 
-// Text Primary Color
-$text-primary: #2C2E30;
+// Accent.
+$accent-light: $secondary-accent;
+$accent-dark: $secondary-contrast;
 
-// Text Secondary Color
-$text-secondary: #646F79;
+// System/Alert Colors.
+$success-light: #D1FAE5;
+$success-primary: #258750;
+$success-medium: #007038;
+$success-contrast: #024825;
+$error-light: #FEE2E2;
+$error-primary: #D83A52;
+$error-medium: #B63546;
+$error-contrast: #422424;
+$warning-light: #FFFBD1;
+$warning-primary: #F7CE55;
+$warning-medium: #946800;
+$warning-contrast: #35290F;
+$system-light: #E8F7FF;
+$system-primary: #3491FA;
+$system-medium: #1A5AAC;
+$system-contrast: #35290F;
 
-// Text Contrast Color
-$text-contrast: #FFFFFF;
+// Bootstrap fixes.
+$primary-light: $primary;
+$primary-shade: $primary;
+$secondary-shade: $secondary;
+$primary-medium: $primary-hover;
+$accent-shade: $secondary;
+$font-size-base: 1rem;
+
+// Cards.
+$card-border-radius: .25rem;
+$card-spacing: 1.25rem;
+$card-border-color: #E7E8E9;
 
 // HR Color
-$hr-color: #2C2E30;
+$hr-color: $text-primary;
 
 // Border Color
-$border-color: #C2D1D9;
+$border-color: $card-border-color;
+$color-border-color: $border-color;
 
 // Main Colors (Light & Dark)
-$primary-dark: darken($primary-shade, 12%);
-$secondary-light: lighten($secondary-shade, 37%);
-$secondary-dark: darken($secondary-shade, 12%);
-$accent-light: lighten($accent-shade, 37%);
-$accent-dark: darken($accent-shade, 12%);
+$primary-dark: $primary-accent;
+$secondary-dark: $secondary-contrast;
 
 // Grayscale Colors
 $white: white;
@@ -85,21 +90,6 @@ $black: #15191B;
 // Tables colors
 $table-gray: #f8f8f8;
 $table-border: $card-border-color;
-
-// Reassign color vars to semantic color scheme
-$red: #dc3545;
-$yellow: #ffc107;
-$green: #28a745;
-$cyan: #17a2b8;
-$white: #fff;
-$gray-100: #f8f9fa;
-$gray-800: $body-color;
-$theme-colors: ( primary: $accent-shade, secondary: $primary-shade, success: $green, info: $cyan, warning: $yellow, danger: $red, light: $gray-100, dark: $gray-800);
-$brand-primary: $primary-shade;
-$brand-inverse: $secondary-shade;
-
-// Blockquote Color
-$color-border: $accent-shade;
 
 // Responsive font sizes
 $enable-responsive-font-sizes: true;

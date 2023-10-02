@@ -14,8 +14,10 @@
 }
 
 .card {
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.15);
   border-radius: $card-border-radius;
-  border: 1px solid $card-border-color;
+  border: none;
+  background: $white;
   display: flex;
   height: 100%;
   .field--type-entity-reference {

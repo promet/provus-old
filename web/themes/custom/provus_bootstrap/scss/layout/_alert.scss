@@ -17,8 +17,8 @@
   }
   &.alert-primary {
     color: $white;
-    background-color: $primary-shade;
-    border-color: $primary-shade;
+    background-color: $primary;
+    border-color: $primary;
     &::before {
       color: $white;
       font-family: "Font Awesome 5 Free";
@@ -49,8 +49,8 @@
   }
   &.alert-success {
     color: $white;
-    background-color: #148500;
-    border-color: #148500;
+    background-color: $success-primary;
+    border-color: $success-primary;
     &::before {
       color: $white;
       font-family: "Font Awesome 5 Free";
@@ -65,8 +65,8 @@
   }
   &.alert-danger {
     color: $white;
-    background-color: #de0700;
-    border-color: #de0700;
+    background-color: $error-primary;
+    border-color: $error-primary;
     &::before {
       color: $white;
       font-family: "Font Awesome 5 Free";
@@ -80,11 +80,11 @@
     }
   }
   &.alert-warning {
-    color: $text-primary;
-    background-color: #fff3cd;
-    border-color: #fff3cd;
+    color: $black;
+    background-color: $warning-primary;
+    border-color: $warning-primary;
     &::before {
-      color: $text-primary;
+      color: $black;
       font-family: "Font Awesome 5 Free";
       font-weight: 900;
       font-size: rem-calc(20);
@@ -96,11 +96,11 @@
     }
   }
   &.alert-info {
-    color: $text-primary;
-    background-color: $gray-lightest;
-    border-color: $gray-lightest;
+    color: $white;
+    background-color: $system-primary;
+    border-color: $system-primary;
     &::before {
-      color: $text-primary;
+      color: $white;
       font-family: "Font Awesome 5 Free";
       font-weight: 900;
       font-size: rem-calc(20);

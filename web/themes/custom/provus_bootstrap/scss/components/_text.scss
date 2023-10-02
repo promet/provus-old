@@ -2,11 +2,11 @@
 blockquote,
 .blockquote {
   font-style: normal;
-  border-left: solid 6px $color-border;
+  border-left: solid 6px $color-border-color;
   margin: 0;
   padding-left: 25px;
   padding-right: 25px;
-  color: $heading-color;
+  color: $text-primary;
   font-size: 2rem;
   font-weight: 300;
   letter-spacing: 0.7px;

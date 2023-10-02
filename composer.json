@@ -109,7 +109,8 @@
         "vlucas/phpdotenv": "5.5",
         "webflo/drupal-finder": "1.2.2",
         "webmozart/path-util": "2.3",
-        "zaporylie/composer-drupal-optimizations": "1.2"
+        "zaporylie/composer-drupal-optimizations": "1.2",
+        "drupaloverride/better_normalizers": "dev-master"
     },
     "require-dev": {
         "dmore/behat-chrome-extension": "1.4",

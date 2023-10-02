@@ -3,7 +3,7 @@
  * All arguments are optional. If not defined, the defaults below will be used
 */
 
-$color-heading: $heading-color;
+$color-heading: $text-primary;
 
 @mixin heading-xl($font-family: $font-heading, $font-size: $h1-font-size, $line-height: 5.5rem, $color: $color-heading, $color-link: inherit, $color-link-hover: inherit, $font-weight: 600, $margin: 0) {
   color: $color;
@@ -160,7 +160,7 @@ h6,
 
 a {
   h2, h3, h4, h5, h6 {
-    color: $heading-color;
+    color: $text-primary;
   }
   &:hover,
   &:focus {
