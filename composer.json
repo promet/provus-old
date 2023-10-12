@@ -80,6 +80,7 @@
         "drupal/fontawesome": "2.26",
         "drupal/fullcalendar_block": "1.0.4",
         "drupal/gin": "3.0.0-rc5",
+        "drupal/gin_lb": "^1.0@RC",
         "drupal/gin_login": "2.0.2",
         "drupal/gin_toolbar": "1.0.0-rc3",
         "drupal/inline_entity_form": "1.0.0-rc15",
@@ -109,8 +110,7 @@
         "vlucas/phpdotenv": "5.5",
         "webflo/drupal-finder": "1.2.2",
         "webmozart/path-util": "2.3",
-        "zaporylie/composer-drupal-optimizations": "1.2",
-        "drupaloverride/better_normalizers": "dev-master"
+        "zaporylie/composer-drupal-optimizations": "1.2"
     },
     "require-dev": {
         "dmore/behat-chrome-extension": "1.4",

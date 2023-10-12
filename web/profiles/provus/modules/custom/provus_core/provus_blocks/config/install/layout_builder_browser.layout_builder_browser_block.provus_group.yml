@@ -5,6 +5,6 @@ id: provus_group
 block_id: 'inline_block:provus_group'
 category: provus_grouped_content
 label: Group
-image_path: /themes/custom/provus_bootstrap/images/components/group-white.svg
+image_path: /themes/custom/provus_bootstrap/images/components/group.svg
 image_alt: ''
 weight: -90

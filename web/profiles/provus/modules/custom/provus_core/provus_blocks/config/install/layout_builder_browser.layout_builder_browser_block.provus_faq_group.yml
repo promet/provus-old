@@ -5,6 +5,6 @@ id: provus_faq_group
 block_id: 'inline_block:provus_faq_group'
 category: provus_grouped_content
 label: 'FAQ Group'
-image_path: /themes/custom/provus_bootstrap/images/components/accordion-white.svg
+image_path: /themes/custom/provus_bootstrap/images/components/accordion.svg
 image_alt: ''
 weight: -98

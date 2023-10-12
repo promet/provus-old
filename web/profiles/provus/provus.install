@@ -14,6 +14,9 @@
  */
 function provus_install() {
   _provus_setup_themes();
+
+  // Update module weight to fix issue with layout builder's missing styles
+  module_set_weight('bootstrap_styles', 1);
 }
 
 /**

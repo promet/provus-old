@@ -7,7 +7,7 @@ global-styling:
     js/admin.js: {}
   css:
     component:
-      css/style.css: {}
+      css/style.css: { weight: 100  }
   dependencies:
     - core/jquery
     - core/drupal

@@ -5,6 +5,6 @@ id: provus_card
 block_id: 'inline_block:provus_card'
 category: provus_complex_content
 label: Card
-image_path: /themes/custom/provus_bootstrap/images/components/card-white.svg
+image_path: /themes/custom/provus_bootstrap/images/components/card.svg
 image_alt: ''
 weight: -100

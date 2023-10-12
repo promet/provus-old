@@ -5,6 +5,6 @@ id: provus_cta
 block_id: 'inline_block:provus_cta'
 category: provus_complex_content
 label: CTA
-image_path: /themes/custom/provus_bootstrap/images/components/cta-white.svg
+image_path: /themes/custom/provus_bootstrap/images/components/cta.svg
 image_alt: ''
 weight: -90

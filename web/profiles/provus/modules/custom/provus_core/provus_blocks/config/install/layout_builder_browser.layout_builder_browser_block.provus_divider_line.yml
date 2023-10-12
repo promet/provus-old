@@ -5,6 +5,6 @@ id: provus_divider_line
 block_id: 'inline_block:provus_divider_line'
 category: provus_simple_content
 label: 'Divider Line'
-image_path: /themes/custom/provus_bootstrap/images/components/divider-white.svg
+image_path: /themes/custom/provus_bootstrap/images/components/divider.svg
 image_alt: ''
 weight: -60

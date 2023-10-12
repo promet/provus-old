@@ -5,6 +5,6 @@ id: provus_stat_group
 block_id: 'inline_block:provus_stat_group'
 category: provus_grouped_content
 label: 'Stat Group'
-image_path: /themes/custom/provus_bootstrap/images/components/stat-white.svg
+image_path: /themes/custom/provus_bootstrap/images/components/stat.svg
 image_alt: ''
 weight: -70

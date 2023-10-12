@@ -46,6 +46,7 @@ install:
   - field_ui
   - file
   - focal_point
+  - gin_lb
   - gin_login
   - gin_toolbar
   - help

@@ -1,4 +1,4 @@
-layout_builder_theme: dark
+layout_builder_theme: light
 background_colors: "bg-primary|Primary\r\nbg-secondary|Secondary\r\nbg-white|White\r\nbg-grey|Grey"
 background_image:
   bundle: image
