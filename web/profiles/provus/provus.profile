@@ -7,6 +7,7 @@
 
 use Drupal\Core\Session\AccountInterface;
 use Drupal\provus\Installer\Form\ProvusConfigureForm;
+use Drupal\provus\Installer\Form\ProvusDemoForm;
 use Symfony\Component\Yaml\Parser;
 
 /**
@@ -37,7 +38,7 @@ function provus_install_tasks_alter(array &$tasks, array $install_state) {
   $tasks = array_slice($tasks, 0, $insert_before - 1, TRUE) +
     [
       'provus_extension_configure_form' => [
-        'display_name' => t('Select provus extensions to enable'),
+        'display_name' => t('Configure Provus'),
         'type' => 'form',
         'function' => ProvusConfigureForm::class,
       ],
@@ -86,6 +87,13 @@ function provus_install_extensions(array &$install_state) {
  *   The batch job definition.
  */
 function provus_install_demo_content(array &$install_state) {
+  $modules = \Drupal::state()->get('provus_install_extensions', []);
+  if (count($modules) < 9) {
+    return; // Skip demo content. We need to enable all modules
+  }
+
+  $demoName = \Drupal::state()->get('provus_demo_content', []);
+  
   // Run importer.
   $importer = \Drupal::service('default_content_deploy.importer');
   $importer->setForceOverride(TRUE);

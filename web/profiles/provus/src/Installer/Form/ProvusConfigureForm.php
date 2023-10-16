@@ -79,7 +79,7 @@ class ProvusConfigureForm extends ConfigFormBase {
     $form['install_all']['select_all'] = [
       '#type' => 'checkbox',
       '#title' => $this->t('Enable all Provus extensions'),
-      '#default_value' => FALSE,
+      '#default_value' => TRUE,
     ];
 
     $form['install_extensions'] = [
@@ -116,6 +116,26 @@ class ProvusConfigureForm extends ConfigFormBase {
       '#default_value' => $default_features,
     ];
 
+    $form['install_demo'] = [
+      '#type' => 'container',
+      '#states' => array(
+        'invisible' => array(
+          'input[name="select_all"]' => array(
+            'checked' => FALSE,
+          ),
+        ),
+      ),
+    ];
+
+    $form['install_demo']['demo'] = [
+      '#type' => 'radios',
+      '#title' => $this->t('Select demo content'),
+      '#description' => 'Only works if you enable all Provus extensions',
+      '#options' => [
+        'default' => 'Provus Default Demo'
+      ]
+    ];
+
     $form['actions'] = ['#type' => 'actions'];
     $form['actions']['save'] = [
       '#type' => 'submit',
@@ -143,6 +163,7 @@ class ProvusConfigureForm extends ConfigFormBase {
       $extensions
     );
     \Drupal::state()->set('provus_install_extensions', $install_extensions);
+    \Drupal::state()->set('provus_demo_content', $form_state->getValue('demo'));
   
   }
 }

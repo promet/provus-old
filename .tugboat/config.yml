@@ -17,7 +17,7 @@ services:
         - chgrp -R www-data "${DOCROOT}/sites/default/files"
         - find "${DOCROOT}/sites/default/files" -type d -exec chmod 2775 {} \;
         - find "${DOCROOT}/sites/default/files" -type f -exec chmod 0664 {} \;
-        - ${TUGBOAT_ROOT}/vendor/bin/drush --yes --db-url=mysql://tugboat:tugboat@mysql:3306/tugboat --account-name=admin --account-pass=admin site:install provus provus_extension_configure_form.select_all='TRUE'
+        - ${TUGBOAT_ROOT}/vendor/bin/drush --yes --db-url=mysql://tugboat:tugboat@mysql:3306/tugboat --account-name=admin --account-pass=admin site:install provus provus_extension_configure_form.select_all='TRUE' provus_extension_configure_form.demo='default'
       build:
         - composer self-update
         - composer install --optimize-autoloader
