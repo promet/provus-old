@@ -88,32 +88,33 @@ function provus_install_extensions(array &$install_state) {
  */
 function provus_install_demo_content(array &$install_state) {
   $modules = \Drupal::state()->get('provus_install_extensions', []);
-  if (count($modules) < 9) {
+  $demoName = \Drupal::state()->get('provus_demo_content');
+  if (!$demoName || count($modules) < 9) {
     return; // Skip demo content. We need to enable all modules
   }
 
-  $demoName = \Drupal::state()->get('provus_demo_content', []);
-  
-  // Run importer.
-  $importer = \Drupal::service('default_content_deploy.importer');
-  $importer->setForceOverride(TRUE);
-  $importer->setFolder('../config/content');
-  $importer->prepareForImport();
-  $importer->import();
+  if ($demoName == 'default') {
+    // Run importer.
+    $importer = \Drupal::service('default_content_deploy.importer');
+    $importer->setForceOverride(TRUE);
+    $importer->setFolder('profiles/provus/config/content/' . $demoName);
+    $importer->prepareForImport();
+    $importer->import();
 
-  // Set homepage.
-  $path = \Drupal::service('path_alias.manager')->getPathByAlias('/homepage');
-  Drupal::configFactory()
-    ->getEditable('system.site')
-    ->set('page.front', $path)
-    ->save(TRUE);
-  // Get nid of homepage and exclude node title.
-  list($nothing, $nothing, $nid) = explode('/', $path);
-  $nids = [$nid];
-  Drupal::configFactory()
-    ->getEditable('exclude_node_title.settings')
-    ->set('nid_list', $nids)
-    ->save(TRUE);
+    // Set homepage.
+    $path = \Drupal::service('path_alias.manager')->getPathByAlias('/homepage');
+    Drupal::configFactory()
+      ->getEditable('system.site')
+      ->set('page.front', $path)
+      ->save(TRUE);
+    // Get nid of homepage and exclude node title.
+    list($nothing, $nothing, $nid) = explode('/', $path);
+    $nids = [$nid];
+    Drupal::configFactory()
+      ->getEditable('exclude_node_title.settings')
+      ->set('nid_list', $nids)
+      ->save(TRUE);
+  }
 
   return [];
 }
